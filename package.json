@@ -1,0 +1,19 @@
+{
+  "name": "sentinelpress",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Multi-tenant AI content automation engine with human-approval gate before publishing to Instagram.",
+  "scripts": {
+    "research": "node scripts/research.mjs",
+    "generate": "node scripts/generate.mjs",
+    "render": "node scripts/render-carousel.mjs",
+    "notify": "node scripts/notify-telegram.mjs",
+    "publish": "node scripts/publish-instagram.mjs"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "engines": {
+    "node": ">=20"
+  }
+}

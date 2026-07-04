@@ -1,0 +1,52 @@
+{
+  "accountId": "cybershieldalerts",
+  "displayName": "CyberShield Alerts",
+  "active": true,
+
+  "instagram": {
+    "businessAccountIdEnvVar": "CYBERSHIELDALERTS_IG_BUSINESS_ID",
+    "accessTokenEnvVar": "CYBERSHIELDALERTS_IG_ACCESS_TOKEN"
+  },
+
+  "telegram": {
+    "chatIdEnvVar": "TELEGRAM_CHAT_ID"
+  },
+
+  "posting": {
+    "postsPerDay": 1,
+    "scheduleCronUTC": "30 2 * * *"
+  },
+
+  "sources": [
+    {
+      "name": "The Hacker News",
+      "url": "https://feeds.feedburner.com/TheHackersNews",
+      "category": "Hacking News"
+    },
+    {
+      "name": "Cyber Security News",
+      "url": "https://cybersecuritynews.com/feed/",
+      "category": "Cybersecurity"
+    },
+    {
+      "name": "CyberPress",
+      "url": "https://cyberpress.org/feed/",
+      "category": "News"
+    }
+  ],
+
+  "content": {
+    "maxArticleAgeDays": 3,
+    "brand": {
+      "primaryColor": "#00F5FF",
+      "secondaryColor": "#00FF88",
+      "backgroundColor": "#05050A",
+      "logo": "assets/cybershieldalerts-logo.png"
+    },
+    "prompts": {
+      "caption": "prompts/caption.txt",
+      "script": "prompts/script.txt",
+      "carousel": "prompts/carousel.txt"
+    }
+  }
+}

@@ -1,0 +1,55 @@
+name: Daily Content Pipeline
+
+on:
+  schedule:
+    - cron: '30 2 * * *'   # 02:30 UTC = 08:00 IST
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  run-pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm ci
+
+      # Milestone 2
+      - name: Research + select today's story
+        run: npm run research
+
+      # Milestone 3
+      - name: Generate content (LLM)
+        run: npm run generate
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GROQ_API_KEY: ${{ secrets.GROQ_API_KEY }}
+
+      # Milestone 4
+      - name: Render carousel images
+        run: npm run render
+
+      # Milestone 5
+      - name: Send to Telegram for approval
+        run: npm run notify
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+
+      - name: Commit generated content
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/ accounts/
+            git commit -m "chore: pipeline run $(date -u +'%Y-%m-%d')"
+            git push origin HEAD:main
+          else
+            echo "Nothing to commit."
+          fi

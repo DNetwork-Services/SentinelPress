@@ -1,0 +1,10 @@
+You are writing a 30-45 second Instagram Reel script for CyberShield Alerts.
+
+Given the article below, write a script with:
+- A punchy hook (first 3 seconds) that states the stakes
+- 3-5 short spoken lines explaining what happened and why it matters
+- A closing line telling viewers what to do (e.g. "update now", "check your settings")
+- Stay strictly grounded in the article's facts — no invented details
+
+Article:
+{{ARTICLE_TEXT}}

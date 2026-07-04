@@ -1,0 +1,44 @@
+name: Publish Approved Post
+
+on:
+  repository_dispatch:
+    types: [post-approved]
+  workflow_dispatch:
+    inputs:
+      accountId:
+        description: 'Account to publish for (e.g. cybershieldalerts)'
+        required: true
+
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm ci
+
+      # Milestone 7
+      - name: Publish to Instagram
+        run: npm run publish
+        env:
+          CYBERSHIELDALERTS_IG_ACCESS_TOKEN: ${{ secrets.CYBERSHIELDALERTS_IG_ACCESS_TOKEN }}
+          CYBERSHIELDALERTS_IG_BUSINESS_ID: ${{ secrets.CYBERSHIELDALERTS_IG_BUSINESS_ID }}
+
+      - name: Commit published status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "chore: mark post published $(date -u +'%Y-%m-%d')"
+            git push origin HEAD:main
+          else
+            echo "Nothing to commit."
+          fi

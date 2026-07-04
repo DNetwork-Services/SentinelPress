@@ -1,0 +1,36 @@
+{
+  "accountId": "REPLACE_WITH_ACCOUNT_ID",
+  "displayName": "REPLACE_WITH_DISPLAY_NAME",
+  "active": false,
+
+  "instagram": {
+    "businessAccountIdEnvVar": "REPLACE_IG_BUSINESS_ID_ENV_VAR",
+    "accessTokenEnvVar": "REPLACE_IG_ACCESS_TOKEN_ENV_VAR"
+  },
+
+  "telegram": {
+    "chatIdEnvVar": "TELEGRAM_CHAT_ID"
+  },
+
+  "posting": {
+    "postsPerDay": 1,
+    "scheduleCronUTC": "REPLACE_CRON_UTC"
+  },
+
+  "sources": [],
+
+  "content": {
+    "maxArticleAgeDays": 3,
+    "brand": {
+      "primaryColor": "#000000",
+      "secondaryColor": "#000000",
+      "backgroundColor": "#FFFFFF",
+      "logo": "assets/REPLACE-logo.png"
+    },
+    "prompts": {
+      "caption": "prompts/caption.txt",
+      "script": "prompts/script.txt",
+      "carousel": "prompts/carousel.txt"
+    }
+  }
+}

@@ -1,0 +1,20 @@
+You are writing the slide-by-slide text for a CyberShield Alerts Instagram carousel (5-8 slides).
+
+Given the article below, output STRICT JSON in this shape:
+{
+  "slides": [
+    { "type": "title", "text": "..." },
+    { "type": "body", "heading": "...", "text": "..." },
+    { "type": "cta", "text": "..." }
+  ]
+}
+
+Rules:
+- Slide 1 is always type "title" — a short, attention-grabbing headline
+- Middle slides are type "body" — one idea per slide, plain language
+- Final slide is always type "cta" — tells the reader to follow/save/share
+- Stay strictly grounded in the article's facts — no invented details
+- Output ONLY the JSON, no other text
+
+Article:
+{{ARTICLE_TEXT}}
