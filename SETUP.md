@@ -124,6 +124,25 @@ Run the full pipeline once (`npm run research && npm run generate && npm run ren
 
 Actual Instagram publishing is still Milestone 7 — for now the "Attempt publish" step in that workflow just logs its stub message.
 
+## 5. Milestone 7 — Instagram publishing (now live)
+
+A real constraint you should know about: Instagram's API doesn't accept direct file uploads for containers — it fetches each image from a **public HTTPS URL** you give it. That's why `handle-approval.yml` now pushes the approved images to GitHub *first* (so they're live at a `raw.githubusercontent.com` URL), then calls Instagram referencing that exact commit, then commits again afterward to record the published status. Three commits per approval is intentional, not a bug.
+
+**One genuine uncertainty to watch for:** Meta's own documentation currently shows conflicting hosts/versions for the Graph API (`graph.facebook.com` vs the newer `graph.instagram.com`, `v21.0` vs `v25.0`) depending on which doc page you land on. I've defaulted to `graph.facebook.com` / `v21.0`, matching the Facebook-Login flow your account was set up with. If your first real publish attempt fails with an error mentioning the API version or an unrecognized endpoint, add these two secrets to override it:
+
+| Secret name | Value to try |
+|---|---|
+| `GRAPH_API_HOST` | `graph.instagram.com` |
+| `GRAPH_API_VERSION` | `v25.0` |
+
+No code changes needed — `scripts/lib/instagram.mjs` reads both as env vars with the current defaults as fallback.
+
+### Testing it for real
+
+Approve a post via Telegram as usual. Watch the **Actions** tab for the "Handle Approval" run — it should show three green steps in sequence (resolve → commit → publish → commit) and the post should actually appear on your Instagram account as a carousel. Check `data/cybershieldalerts/queue/published/` for the moved JSON with `igMediaId` recorded.
+
+If it fails, the post stays in `approved/` (not lost) so the next approval run — or a manual `workflow_dispatch` of `handle-approval.yml` — will retry it automatically.
+
 
 
 ## 4. Adding a new account later (e.g. The English Vault)

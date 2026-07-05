@@ -35,21 +35,38 @@ jobs:
           DISPATCH_APPROVAL_HASH: ${{ github.event.client_payload.approvalHash || github.event.inputs.approvalHash }}
           DISPATCH_ACTION: ${{ (github.event.action == 'post-approved' && 'approve') || (github.event.action == 'post-rejected' && 'reject') || github.event.inputs.action }}
 
-      # Milestone 7 will make this actually call the Instagram Graph API
-      # for anything sitting in data/<accountId>/queue/approved/.
-      - name: Attempt publish
-        run: npm run publish
-        env:
-          CYBERSHIELDALERTS_IG_ACCESS_TOKEN: ${{ secrets.CYBERSHIELDALERTS_IG_ACCESS_TOKEN }}
-          CYBERSHIELDALERTS_IG_BUSINESS_ID: ${{ secrets.CYBERSHIELDALERTS_IG_BUSINESS_ID }}
-
-      - name: Commit queue changes
+      - name: Commit the move (so approved images are live before we reference them)
+        id: commit_move
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           if [ -n "$(git status --porcelain data/)" ]; then
             git add data/
             git commit -m "chore: resolve approval $(date -u +'%Y-%m-%d %H:%M')"
+            git push origin HEAD:main
+          else
+            echo "Nothing to commit."
+          fi
+          echo "sha=$(git rev-parse HEAD)" >> "$GITHUB_OUTPUT"
+
+      # Instagram's API fetches images from a public URL server-side — it
+      # does not accept direct file uploads. Referencing the exact commit
+      # SHA we just pushed (rather than "main") avoids any raw.githubusercontent.com
+      # CDN cache ambiguity between the push above and this read.
+      - name: Publish to Instagram
+        run: npm run publish
+        env:
+          IMAGE_BASE_URL: https://raw.githubusercontent.com/${{ github.repository }}/${{ steps.commit_move.outputs.sha }}/data
+          CYBERSHIELDALERTS_IG_ACCESS_TOKEN: ${{ secrets.CYBERSHIELDALERTS_IG_ACCESS_TOKEN }}
+          CYBERSHIELDALERTS_IG_BUSINESS_ID: ${{ secrets.CYBERSHIELDALERTS_IG_BUSINESS_ID }}
+
+      - name: Commit published status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "chore: mark published $(date -u +'%Y-%m-%d %H:%M')"
             git push origin HEAD:main
           else
             echo "Nothing to commit."
