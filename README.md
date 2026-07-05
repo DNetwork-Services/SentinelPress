@@ -33,8 +33,8 @@ data/<accountId>/queue/             pending/ -> approved/ -> published/
 
 - [x] Milestone 0 — Instagram Graph API access set up
 - [x] Milestone 1 — Repo scaffold, config schema, multi-tenant structure
-- [ ] Milestone 2 — Research + dedupe engine (RSS -> candidate JSON)
-- [ ] Milestone 3 — LLM content generation (Gemini/Groq)
+- [x] Milestone 2 — Research + dedupe engine (RSS -> candidate JSON)
+- [x] Milestone 3 — LLM content generation (Gemini/Groq)
 - [ ] Milestone 4 — Carousel image renderer
 - [ ] Milestone 5 — Telegram notifier
 - [ ] Milestone 6 — Cloudflare Worker webhook + approve/reject buttons

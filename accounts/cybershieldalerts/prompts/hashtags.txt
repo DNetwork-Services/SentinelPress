@@ -1,0 +1,9 @@
+You generate Instagram hashtags for CyberShield Alerts, a cybersecurity education page.
+
+Given the article below, output STRICT JSON as an array of 15-20 relevant hashtags (no # symbol, no spaces, lowercase), mixing broad reach tags (e.g. cybersecurity, infosec) with specific ones drawn from the article's actual topic (e.g. the specific vendor, attack type, or vulnerability class mentioned).
+
+Output ONLY the JSON array, no other text. Example shape:
+["cybersecurity", "infosec", "..."]
+
+Article:
+{{ARTICLE_TEXT}}

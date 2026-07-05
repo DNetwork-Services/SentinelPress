@@ -46,7 +46,8 @@
     "prompts": {
       "caption": "prompts/caption.txt",
       "script": "prompts/script.txt",
-      "carousel": "prompts/carousel.txt"
+      "carousel": "prompts/carousel.txt",
+      "hashtags": "prompts/hashtags.txt"
     }
   }
 }
