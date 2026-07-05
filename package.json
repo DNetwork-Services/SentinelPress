@@ -8,6 +8,7 @@
     "research": "node scripts/research.mjs",
     "generate": "node scripts/generate.mjs",
     "render": "node scripts/render-carousel.mjs",
+    "render-reel": "node scripts/render-reel.mjs",
     "notify": "node scripts/notify-telegram.mjs",
     "resolve-approval": "node scripts/resolve-approval.mjs",
     "publish": "node scripts/publish-instagram.mjs"

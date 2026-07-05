@@ -143,6 +143,20 @@ Approve a post via Telegram as usual. Watch the **Actions** tab for the "Handle 
 
 If it fails, the post stays in `approved/` (not lost) so the next approval run — or a manual `workflow_dispatch` of `handle-approval.yml` — will retry it automatically.
 
+## 6. Milestone 8 — Reel video assembly
+
+`npm run render-reel` turns the same carousel slide PNGs into a vertical (1080x1920) MP4: each slide gets a slow Ken-Burns zoom for a few seconds, letterboxed to 9:16 with a blurred fill of the same image (not stark black bars), crossfading into the next slide. No extra setup needed — ffmpeg ships pre-installed on GitHub's runners, and the daily pipeline now runs this step automatically after `npm run render`.
+
+**Deliberately not wired up yet:** the reel video isn't sent to Telegram for approval or published to Instagram. A silent video isn't very useful to review or post — Milestone 9 adds a voiceover (reading the reel script aloud) and background music, and *then* extends the approval/publish flow to handle reels alongside carousels. Until then, the `.mp4` just sits in the queue folder as a preview of the visual side.
+
+### Testing it for real
+
+```bash
+npm run research && npm run generate && npm run render && npm run render-reel
+```
+
+Then check `data/cybershieldalerts/queue/pending/*-reel.mp4` — download it and play it locally to see the pan/zoom/crossfade in action.
+
 
 
 ## 4. Adding a new account later (e.g. The English Vault)
