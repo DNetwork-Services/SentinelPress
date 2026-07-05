@@ -1,12 +1,7 @@
 {
-<<<<<<< HEAD
-  "processedUrls": [],
-  "lastUpdated": null
-=======
   "processedUrls": [
     "https://thehackernews.com/2026/07/us-government-entity-paid-kairos-group.html",
     "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html"
   ],
   "lastUpdated": "2026-07-05T11:54:59.359Z"
->>>>>>> 802f44aa425d1117de3988bb4c28cfc66deec482
 }
