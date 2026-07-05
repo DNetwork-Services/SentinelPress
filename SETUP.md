@@ -47,6 +47,17 @@ cat data/cybershieldalerts/queue/pending/*.json
 
 Check the output looks grounded in the actual article — no invented CVEs, stats, or quotes. If the carousel step fails with "did not return valid JSON," that's usually the model wrapping its answer in prose despite instructions — rerun, or try switching `GEMINI_MODEL`/`GROQ_MODEL` env vars to a different model.
 
+## 3c. Testing Milestone 4 (carousel rendering) for real
+
+```bash
+npm run render
+```
+
+Renders every post at `status: "generated"` into branded PNGs (1080x1350) using the account's brand colors from `config.json`, and saves them alongside the post JSON in `data/<accountId>/queue/pending/`. Open one to check text isn't overflowing and colors match your brand.
+
+Font: bundled `Poppins` (static weights, `assets/fonts/`) — Satori needs raw TTF/OTF data, not system fonts or variable fonts (variable fonts from Google Fonts' current `Inter` release failed to parse — a known Satori/opentype.js compatibility gap), so static-weight files are committed to the repo rather than fetched at runtime. To change the typeface, swap in different static-weight TTF files and update `loadFonts()` in `scripts/render-carousel.mjs`.
+
+
 
 ## 4. Adding a new account later (e.g. The English Vault)
 

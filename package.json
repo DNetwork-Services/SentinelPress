@@ -11,8 +11,10 @@
     "notify": "node scripts/notify-telegram.mjs",
     "publish": "node scripts/publish-instagram.mjs"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2",
+    "satori": "^0.26.0"
+  },
   "engines": {
     "node": ">=20"
   }
