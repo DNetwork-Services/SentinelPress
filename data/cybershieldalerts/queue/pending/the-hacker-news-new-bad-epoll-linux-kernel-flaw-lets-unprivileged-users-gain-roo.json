@@ -1,0 +1,121 @@
+{
+  "id": "the-hacker-news-new-bad-epoll-linux-kernel-flaw-lets-unprivileged-users-gain-roo",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "New \"Bad Epoll\" Linux Kernel Flaw Lets Unprivileged Users Gain Root, Hits Android",
+    "link": "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
+    "description": "A newly disclosed Linux kernel flaw called Bad Epoll (CVE-2026-46242) lets an ordinary user with no special access take full control of a machine as root. It affects Linux desktops, servers, and Android, and a fix is out. Bad Epoll sits in the same small stretch of kernel code where Anthropic's most powerful AI model, Mythos, recently found a different bug. The AI caught one flaw and missed",
+    "content": "",
+    "pubDate": "Sat, 04 Jul 2026 01:10:01 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEggOXDckpE46PYIzBnXsx_kyHzFvlcB3l8qEr6feRNBhRQMKc2p5r2pQArl-NrsoB2z6vE917nXVHpuuMZOgZcRDMlwbVYC0ocK3uIsb-h59qed_kuvDKwvukQCAs-VDcE5Ail8mTRSPpnNfrPzKv5oAMQ9fJCDNE_2PpPrN9a9mOwGUIs0TnWq6_r58HM/s1600/root-linux.gif"
+  },
+  "score": 0.7763914243827161,
+  "selectedAt": "2026-07-05T11:54:59.358Z",
+  "generated": {
+    "caption": "Here's an Instagram caption for CyberShield Alerts:\n\nYour Android phone or Linux PC could be at risk from a new serious flaw! 🚨\n\nA critical new security vulnerability, dubbed \"Bad Epoll\" (CVE-2026-46242), has been discovered in the core of the Linux operating system. This flaw allows an ordinary user without any special permissions to take complete control of a vulnerable machine, gaining \"root\" access.\n\nThis affects a wide range of systems, including Linux desktops, servers, and popular Android devices.\n\nThe good news? A fix has already been released! So, make sure your systems are updated promptly to protect yourself.\n\nInterestingly, this bug was found in the same section of code where Anthropic's powerful AI model, Mythos, previously identified a *different* vulnerability. While Mythos caught one, it didn't spot \"Bad Epoll\" itself – highlighting the ongoing complexity of security even with advanced AI tools.\n\nStay safe and keep your software updated! 💪\nDouble-tap if you found this useful! 👇 Save this post to remember to check your updates, and share it with someone who uses Linux or Android. Follow @CyberShieldAlerts for daily cybersecurity and AI security insights!",
+    "script": "Here's an Instagram Reel script for CyberShield Alerts:\n\n---\n\n**Reel Script: Bad Epoll Linux Flaw**\n\n**(Visuals: Fast-paced, urgent graphics. Think flashing \"ALERT\" text, data streams, icons of phones/servers, red/yellow warning colors.)**\n\n**(0-3 seconds - PUNCHY HOOK)**\n*   **Voiceover (Urgent, direct):** \"URGENT Cyber Alert! If you use Linux or Android, listen up!\"\n*   **On-screen text:** CRITICAL FLAW DETECTED!\n\n**(4-29 seconds - EXPLANATION & WHY IT MATTERS)**\n*   **Voiceover:** \"A critical new Linux kernel flaw, called 'Bad Epoll' (CVE-2026-46242), has just been discovered.\"\n*   **On-screen text:** \"Bad Epoll\" (CVE-2026-46242)\n*   **Voiceover:** \"This isn't minor. It allows *any ordinary user* to gain full root control of your machine, no special access needed.\"\n*   **On-screen text:** Unprivileged User -> ROOT ACCESS!\n*   **Voiceover:** \"That means a complete takeover is possible! This impacts Linux desktops, servers, AND your Android devices.\"\n*   **On-screen text:** Affects: Linux Desktops, Servers, Android Phones\n*   **Voiceover:** \"The good news? A fix for 'Bad Epoll' is already available.\"\n*   **On-screen text:** FIX IS OUT!\n\n**(30-35 seconds - CALL TO ACTION)**\n*   **Voiceover:** \"Don't wait. Update your Linux systems and Android devices *immediately* to stay protected!\"\n*   **On-screen text (Bold, prominent):** UPDATE NOW!\n\n---\n\n**Estimated Timing:**\n*   Hook: ~3 seconds\n*   Explanation: ~25 seconds (4 distinct lines)\n*   Call to action: ~7 seconds\n*   **Total: ~35 seconds** (Well within the 30-45 second range)",
+    "hashtags": [
+      "cybersecurity",
+      "infosec",
+      "cyberthreat",
+      "vulnerability",
+      "exploit",
+      "securityalert",
+      "systemsecurity",
+      "datasecurity",
+      "computersecurity",
+      "cybernews",
+      "badepoll",
+      "linuxkernel",
+      "cve202646242",
+      "rootaccess",
+      "privilegeescalation",
+      "linuxflaw",
+      "androidsecurity",
+      "patchnow",
+      "kernelvulnerability",
+      "linuxvulnerability"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "New Linux Flaw: Unprivileged Users Can Gain Root!",
+        "imageQuery": "red warning alert screen"
+      },
+      {
+        "type": "body",
+        "heading": "What is 'Bad Epoll'?",
+        "text": "A critical new Linux kernel flaw, officially known as CVE-2026-46242, has just been revealed.",
+        "imageQuery": "magnifying glass code screen"
+      },
+      {
+        "type": "body",
+        "heading": "Full Control for Attackers!",
+        "text": "This 'Bad Epoll' vulnerability allows an ordinary user, even without special permissions, to gain complete root control of your machine.",
+        "imageQuery": "hacker dark room typing"
+      },
+      {
+        "type": "body",
+        "heading": "Who's Affected?",
+        "text": "Linux desktops, servers, and even Android devices running vulnerable kernel versions are all at risk from this flaw.",
+        "imageQuery": "worried person looking at laptop"
+      },
+      {
+        "type": "body",
+        "heading": "Good News: Fix Is Out!",
+        "text": "The good news? A patch to fix the Bad Epoll vulnerability has already been released. Update your systems now!",
+        "imageQuery": "person smiling relieved laptop"
+      },
+      {
+        "type": "cta",
+        "text": "Stay secure! Follow @CyberShieldAlerts for critical updates and tips.",
+        "imageQuery": "confident person using phone"
+      }
+    ],
+    "generatedAt": "2026-07-05T11:55:28.364Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-new-bad-epoll-linux-kernel-flaw-lets-unprivileged-users-gain-roo-slide-01.png",
+      "the-hacker-news-new-bad-epoll-linux-kernel-flaw-lets-unprivileged-users-gain-roo-slide-02.png",
+      "the-hacker-news-new-bad-epoll-linux-kernel-flaw-lets-unprivileged-users-gain-roo-slide-03.png",
+      "the-hacker-news-new-bad-epoll-linux-kernel-flaw-lets-unprivileged-users-gain-roo-slide-04.png",
+      "the-hacker-news-new-bad-epoll-linux-kernel-flaw-lets-unprivileged-users-gain-roo-slide-05.png",
+      "the-hacker-news-new-bad-epoll-linux-kernel-flaw-lets-unprivileged-users-gain-roo-slide-06.png"
+    ],
+    "photoCredits": [
+      {
+        "photographer": "Polina Zimmerman",
+        "url": "https://www.pexels.com/photo/close-up-photo-of-black-smartphone-3747159/"
+      },
+      {
+        "photographer": "cottonbro studio",
+        "url": "https://www.pexels.com/photo/photo-of-cryptic-character-codes-7319085/"
+      },
+      {
+        "photographer": "Sora Shimazaki",
+        "url": "https://www.pexels.com/photo/ethnic-computer-geek-typing-on-keyboard-at-dusk-5935785/"
+      },
+      {
+        "photographer": "Alex Green",
+        "url": "https://www.pexels.com/photo/worried-young-black-man-working-online-on-laptop-in-kitchen-5699831/"
+      },
+      {
+        "photographer": "www.kaboompics.com",
+        "url": "https://www.pexels.com/photo/woman-laughing-and-looking-at-laptop-screen-5237976/"
+      },
+      {
+        "photographer": "Darlene Alderson",
+        "url": "https://www.pexels.com/photo/photo-of-a-woman-in-a-green-coat-using-her-cell-phone-while-looking-at-the-camera-7971601/"
+      }
+    ],
+    "renderedAt": "2026-07-05T11:55:33.608Z"
+  },
+  "approvalHash": "44ddabb58b018558",
+  "notifiedAt": "2026-07-05T11:55:37.539Z"
+}
