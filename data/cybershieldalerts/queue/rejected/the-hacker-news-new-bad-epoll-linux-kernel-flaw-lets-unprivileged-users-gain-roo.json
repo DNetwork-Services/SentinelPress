@@ -1,7 +1,7 @@
 {
   "id": "the-hacker-news-new-bad-epoll-linux-kernel-flaw-lets-unprivileged-users-gain-roo",
   "accountId": "cybershieldalerts",
-  "status": "awaiting_approval",
+  "status": "rejected",
   "source": {
     "name": "The Hacker News",
     "category": "Hacking News"
@@ -117,5 +117,6 @@
     "renderedAt": "2026-07-05T11:55:33.608Z"
   },
   "approvalHash": "44ddabb58b018558",
-  "notifiedAt": "2026-07-05T11:55:37.539Z"
+  "notifiedAt": "2026-07-05T11:55:37.539Z",
+  "rejectedAt": "2026-07-05T11:56:58.989Z"
 }
