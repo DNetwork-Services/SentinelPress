@@ -32,3 +32,42 @@ export function listQueue(accountId, stage) {
     .filter((f) => f.endsWith('.json'))
     .map((f) => JSON.parse(fs.readFileSync(path.join(dir, f), 'utf-8')));
 }
+
+/**
+ * Moves a post's JSON and any associated slide images from one queue
+ * stage to another (e.g. pending -> approved). Used by resolve-approval.mjs
+ * when a Telegram approve/reject tap comes back through the webhook.
+ */
+export function movePost(accountId, post, fromStage, toStage) {
+  const fromDir = queueDir(accountId, fromStage);
+  const toDir = queueDir(accountId, toStage);
+
+  const imageFiles = post.render?.slideImages ?? [];
+  for (const fileName of imageFiles) {
+    const src = path.join(fromDir, fileName);
+    if (fs.existsSync(src)) {
+      fs.renameSync(src, path.join(toDir, fileName));
+    }
+  }
+
+  const oldJsonPath = path.join(fromDir, `${post.id}.json`);
+  if (fs.existsSync(oldJsonPath)) {
+    fs.unlinkSync(oldJsonPath);
+  }
+
+  const newJsonPath = path.join(toDir, `${post.id}.json`);
+  fs.writeFileSync(newJsonPath, JSON.stringify(post, null, 2) + '\n');
+}
+
+/**
+ * Searches every active account's pending queue for a post with a
+ * matching approvalHash. Returns { account, post } or null.
+ */
+export function findPendingByApprovalHash(accounts, approvalHash) {
+  for (const account of accounts) {
+    const pending = listQueue(account.accountId, 'pending');
+    const match = pending.find((p) => p.approvalHash === approvalHash);
+    if (match) return { account, post: match };
+  }
+  return null;
+}

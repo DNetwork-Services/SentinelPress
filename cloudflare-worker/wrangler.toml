@@ -1,0 +1,11 @@
+name = "sentinelpress-telegram-webhook"
+main = "src/index.mjs"
+compatibility_date = "2026-06-01"
+
+# Secrets (set via `wrangler secret put <NAME>`, never in this file):
+#   TELEGRAM_BOT_TOKEN     - your bot's token
+#   TELEGRAM_WEBHOOK_SECRET - a random string you make up, also passed to
+#                             Telegram's setWebhook call as secret_token
+#   GITHUB_PAT             - a fine-grained GitHub PAT with
+#                             "Contents: write" on this one repo
+#   GITHUB_REPO            - e.g. "DNetwork-Services/SentinelPress"

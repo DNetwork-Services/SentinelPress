@@ -9,6 +9,7 @@
     "generate": "node scripts/generate.mjs",
     "render": "node scripts/render-carousel.mjs",
     "notify": "node scripts/notify-telegram.mjs",
+    "resolve-approval": "node scripts/resolve-approval.mjs",
     "publish": "node scripts/publish-instagram.mjs"
   },
   "dependencies": {

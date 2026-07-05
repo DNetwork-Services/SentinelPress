@@ -69,6 +69,60 @@ You should get a Telegram message from your bot: the carousel images as an album
 
 One thing to get right before this works: your bot can only message you if you've started a conversation with it first. Search for your bot's username in Telegram and hit **Start** once — otherwise `sendMediaGroup`/`sendMessage` will fail with a "chat not found" error.
 
+## 4. Milestone 6 — deploying the Cloudflare Worker (the always-on piece)
+
+This is the one component that isn't GitHub Actions. It's small (~100 lines), free, and only does one job: catch your Telegram button tap and relay it.
+
+### 4a. Create a GitHub PAT for the Worker to use
+
+The Worker needs to trigger a `repository_dispatch` on this repo, which requires its own token (separate from `GITHUB_TOKEN`, which only works *inside* Actions, not from an external caller like Cloudflare).
+
+1. GitHub → **Settings** (your account, not the repo) → **Developer settings** → **Personal access tokens** → **Fine-grained tokens** → **Generate new token**.
+2. Repository access: **Only select repositories** → `SentinelPress`.
+3. Permissions: **Contents: Read and write** (this alone covers repository_dispatch).
+4. Generate, copy the token — you won't see it again.
+
+### 4b. Deploy the Worker
+
+```bash
+cd cloudflare-worker
+npm install -g wrangler   # one-time, free Cloudflare account needed
+wrangler login
+wrangler deploy
+```
+
+Then set its secrets (prompts for the value, doesn't take it as an argument — so it's never in your shell history):
+
+```bash
+wrangler secret put TELEGRAM_BOT_TOKEN
+wrangler secret put TELEGRAM_WEBHOOK_SECRET   # make up any random string, e.g. `openssl rand -hex 32`
+wrangler secret put GITHUB_PAT                # the token from step 4a
+wrangler secret put GITHUB_REPO               # e.g. DNetwork-Services/SentinelPress
+```
+
+`wrangler deploy` prints a URL like `https://sentinelpress-telegram-webhook.<your-subdomain>.workers.dev` — save it, needed next.
+
+### 4c. Point Telegram at the Worker
+
+Run this once (replace the placeholders) — it tells Telegram to POST button taps to your Worker instead of you having to poll for them:
+
+```bash
+curl -X POST "https://api.telegram.org/bot<TELEGRAM_BOT_TOKEN>/setWebhook" \
+  -H "Content-Type: application/json" \
+  -d '{"url": "<YOUR_WORKER_URL>", "secret_token": "<SAME_RANDOM_STRING_FROM_4b>"}'
+```
+
+A `{"ok":true,...}` response confirms it's wired up.
+
+### 4d. Test it
+
+Run the full pipeline once (`npm run research && npm run generate && npm run render && npm run notify`, or trigger `daily-pipeline.yml` manually from the Actions tab), then tap **✅ Approve** or **❌ Reject** on the Telegram message. You should see:
+- The message updates to show "✅ APPROVED" or "❌ REJECTED" with the buttons removed
+- A new "Handle Approval" workflow run appears in your Actions tab within a few seconds
+- The post JSON moves from `data/cybershieldalerts/queue/pending/` to `.../approved/` or `.../rejected/`
+
+Actual Instagram publishing is still Milestone 7 — for now the "Attempt publish" step in that workflow just logs its stub message.
+
 
 
 ## 4. Adding a new account later (e.g. The English Vault)
