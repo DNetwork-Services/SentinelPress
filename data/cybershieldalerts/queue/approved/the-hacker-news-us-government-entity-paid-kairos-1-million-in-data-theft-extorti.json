@@ -1,7 +1,7 @@
 {
   "id": "the-hacker-news-us-government-entity-paid-kairos-1-million-in-data-theft-extorti",
   "accountId": "cybershieldalerts",
-  "status": "awaiting_approval",
+  "status": "approved",
   "source": {
     "name": "The Hacker News",
     "category": "Hacking News"
@@ -91,5 +91,6 @@
     "renderedAt": "2026-07-05T07:21:44.325Z"
   },
   "approvalHash": "fa07b0d5133b2d60",
-  "notifiedAt": "2026-07-05T07:21:54.304Z"
+  "notifiedAt": "2026-07-05T07:21:54.304Z",
+  "approvedAt": "2026-07-05T07:22:30.550Z"
 }
