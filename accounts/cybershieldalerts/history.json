@@ -1,4 +1,12 @@
 {
+<<<<<<< HEAD
   "processedUrls": [],
   "lastUpdated": null
+=======
+  "processedUrls": [
+    "https://thehackernews.com/2026/07/us-government-entity-paid-kairos-group.html",
+    "https://cyberpress.org/crownx-ransomware-attack/"
+  ],
+  "lastUpdated": "2026-07-05T06:24:04.064Z"
+>>>>>>> 9fa42ced0476c0ae629eedb7ef9b7f1f32b6a0c7
 }

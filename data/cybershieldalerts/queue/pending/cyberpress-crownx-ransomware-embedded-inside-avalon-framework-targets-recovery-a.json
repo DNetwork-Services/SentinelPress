@@ -1,0 +1,99 @@
+{
+  "id": "cyberpress-crownx-ransomware-embedded-inside-avalon-framework-targets-recovery-a",
+  "accountId": "cybershieldalerts",
+  "status": "rendered",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "CrownX Ransomware Embedded Inside Avalon Framework Targets Recovery and Backup Systems",
+    "link": "https://cyberpress.org/crownx-ransomware-attack/",
+    "description": "A previously undocumented multi-stage malware framework, tracked as Avalon, that embeds a ransomware component internally labeled CrownX and specifically targets recovery and backup systems. By placing malicious content inside an ISO image rather than attaching an executable directly, the actor avoided email-layer scanning and social-engineered victims into mounting a seemingly legitimate “Secure Document” package. A [&#8230;] The post CrownX Ransomware Embedded Inside Avalon Framework Targets Recovery and Backup Systems appeared first on Cyber Security News.",
+    "content": "A previously undocumented multi-stage malware framework, tracked as Avalon, that embeds a ransomware component internally labeled CrownX and specifically targets recovery and backup systems. By placing malicious content inside an ISO image rather than attaching an executable directly, the actor avoided email-layer scanning and social-engineered victims into mounting a seemingly legitimate “Secure Document” package. A document‑themed shortcut (.lnk) inside the mounted ISO launched a staged MSBuild project (zfighv.tmp) which used CodeTaskFactory to compile inline C# and reconstruct an encrypted managed downloader entirely in memory, avoiding disk‑backed artifacts and conventional detection. The managed downloader disabled telemetry and inspection pathways before fetching the next stage over HTTPS: it resolved ETW and AMSI entry points and prepared short return stubs to force success. A permissive certificate validation callback, and sent requests with a browser‑like User‑Agent plus a custom X‑Edge‑Cache header to distinguish campaign traffic. The response contained an encrypted PE plus a 32‑byte HMAC‑SHA256 tag; the loader validated and decrypted the payload using an offset‑based HMAC keystream, then manually mapped the PE into the MSBuild process memory. Manual mapping reproduced relocation, import resolution, exception registration, and Control Flow Guard setup so the final native x64 implant executed without a separate file on disk. The intrusion chain began with a spoofed legal-document email that directed recipients to a password‑protected archive hosted on Proton Drive. Blackpoint’s Adversary Pursuit Group (APG) identified malware framework, now tracked as Avalon, delivered through a multi-stage phishing chain. Staging archive hosted on Proton Drive (Source : Blackpoint). The recovered implant self‑identified as Avalon and served as a central orchestration layer: credential harvesting, persistence, lateral movement, telemetry reduction, and final‑stage extortion were all integrated. CrownX Ransomware Attack Collection routines copied browser and wallet databases (Chromium/Firefox Login Data, Cookies; MetaMask, Ledger Live, Electrum, Coinbase paths), extracted DPAPI material via CryptUnprotectData, and harvested VPN, SSH, RDP, Wi‑Fi, and Windows Credential Manager artifacts. Inside the archive was an ISO image named Secure_Document_CA-283505_pdf.iso. Mounting the image exposed a shortcut named Secure Document CA-283505.pdf.lnk. Contents within the malicious ISO (Source : Blackpoint). A local credential validation module used LogonUserW and local SAM enumeration with built‑in password lists to convert weak credentials into usable access. C2 communications used WinHTTP POSTs to /api/v2/tasking on helloxcherry[.]com, with form fields separating LSASS, SAM, and general exfiltration payloads. Avalon prioritized high‑value targets for lateral propagation domain controllers, backup platforms, and virtualization infrastructure searching for strings associated with Veeam, Acronis, NetApp, Synology, vCenter, Hyper‑V and Exchange. Simplified decryption routine (Source : Blackpoint). Remote staging used administrative shares and trusted Microsoft utilities (MSBuild.exe, csc.exe, InstallUtil.exe) to compile or load .NET components on remote hosts. Execution options included scheduled tasks, remote service launches, and PsExec‑style methods. The ransomware module, CrownX, implemented robust cryptography and recovery disruption. CrownX used BCrypt APIs with AES‑GCM for authenticated encryption, file mapping for efficient processing, and transaction‑aware APIs for controlled file operations. It targeted a broad set of formats including VM images, databases, source files, engineering CAD files, and creative projects while appending structured metadata (nonce, auth tag, segment info) to enable decryption if keys were supplied. CrownX also attempted multiple methods to display ransom notes and included countdown timers to pressure payment. Critically, Avalon attacked recovery mechanisms: it stopped VSS, deleted shadow copies via COM, modified registry recovery settings, and targeted WinRE images and restore configuration. An anti‑forensic subsystem purged Prefetch, AmCache, SRUM, ShimCache, Jump Lists, PowerShell history, USN journal and other investigator artifacts. The framework even contained a direct physical‑drive write capability capable of corrupting partition or boot structures, extending impact beyond encryption into potential disk‑level destruction. Avalon demonstrates an operational consolidation credential theft, persistence, lateral movement and extortion unified in one recovered payload lowering defenders’ window for disruption. Indicators of Compromise (IoCs) Type Indicator Context ISO image Secure_Document_CA-283505_pdf.iso Mounted image containing the fake PDF shortcut and MSBuild project. Shortcut Secure Document CA-283505.pdf.lnk Fake PDF shortcut launched cmd.exe and used a Microsoft Edge icon. MSBuild project Mimecast Secure File Logs\\zfighv.tmp Malicious MSBuild XML project copied from the ISO. Decoy file Mimecast Secure File Logs\\verification.txt Decoy text file in the ISO. Decoy file Mimecast Secure File Logs\\manifest.xml Decoy XML file in the ISO. Temporary project path %TEMP%\\ngen0cc9.dat Temporary copy of the MSBuild project executed by MSBuild.exe. Staging domain helloxcherry[.]com Remote staging domain contacted by the managed loader. Staging URL hxxps://helloxcherry[.]com/cdn/static/c3587edc48c37656b29bcd3da9458eea/update Encrypted remote object retrieved by the managed loader. URL was unavailable during later sandbox testing. HTTP header X-Edge-Cache: e3ec5926a167d6e3359f98cdfb7ac3b2cce97652843056505d02e6d2898573c6 Custom header sent by the managed loader during remote stage retrieval. User agent Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 User agent sent by the managed loader. Encrypted file extension .8hn2yc Extension associated with CrownX encrypted files. Cryptocurrency address bc1qq9tx6p99jpqcj9p6nr3mwc3f9q3sxmj45l4anz Bitcoin address embedded in the ransom note. Note: IP addresses and domains are intentionally defanged (e.g., [.]) to prevent accidental resolution or hyperlinking. Re-fang only within controlled threat intelligence platforms such as MISP, VirusTotal, or your SIEM. Follow us on Google News, LinkedIn, and X to Get Instant Updates and Set GBH as a Preferred Source in Google. The post CrownX Ransomware Embedded Inside Avalon Framework Targets Recovery and Backup Systems appeared first on Cyber Security News.",
+    "pubDate": "Sat, 04 Jul 2026 07:16:24 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/07/Untitled-design-2026-07-04T121027.899.webp"
+  },
+  "score": 0.8715122484567901,
+  "selectedAt": "2026-07-05T06:24:04.063Z",
+  "generated": {
+    "caption": "Imagine ransomware not only encrypting your files but also *destroying* your backups and recovery systems. That's the terrifying reality of the new #CrownXRansomware! 😱\n\nA sophisticated new malware framework, dubbed #Avalon, has been discovered. It starts with a phishing email disguised as a legal document. Instead of a direct attachment, it tricks victims into opening a password-protected archive with a hidden ISO image inside. This \"Secure Document\" image contains a shortcut that, when clicked, secretly launches malicious code directly in memory – making it incredibly hard for traditional defenses to detect. It even disables security monitoring to stay hidden!\n\nAvalon is a master of stealth. It steals your login details (from browsers, crypto wallets, VPNs, and more) and then moves across your network, specifically targeting critical systems like domain controllers, backup servers (Veeam, Acronis, NetApp, Synology), and virtualization platforms (vCenter, Hyper-V, Exchange).\n\nBut the scariest part? Once it takes hold, the #CrownX component kicks in. It encrypts a wide range of files – from VM images to databases and CAD files. Crucially, Avalon goes a terrifying step further by actively disabling and destroying your recovery mechanisms, including Windows' own backup services and shadow copies. It can even corrupt your system's boot structures, potentially leading to irreversible data loss, not just encryption.\n\nThis multi-stage threat was identified by Blackpoint's Adversary Pursuit Group. It's a stark reminder that even robust backup systems need advanced protection.\n\nStay informed, stay safe! Save this post to remember these crucial details and share it with your team. Follow @CyberShieldAlerts for daily cybersecurity and threat intelligence updates!\n\n#Cybersecurity #Ransomware #ThreatIntelligence #Infosec #BackupSecurity #Phishing #MalwareAlert",
+    "script": "Here's an Instagram Reel script for CyberShield Alerts, 30-45 seconds in length, strictly grounded in the article's facts:\n\n---\n\n**Instagram Reel Script: CrownX Ransomware Targets Backups**\n\n**(Visuals: Fast-paced, urgent graphics. Quick cuts. Text overlays for key points.)**\n\n**(0-3 seconds) HOOK - [Upbeat, urgent electronic music starts]**\n**Speaker (Energetic, urgent):** \"Your backups aren't safe! URGENT RANSOMWARE ALERT: Avalon is designed to destroy your recovery systems!\"\n*(Text Overlay: \"BACKUPS AT RISK! NEW AVALON RANSOMWARE\")*\n\n**(3-12 seconds) LINE 1 & 2**\n**Speaker:** \"Meet Avalon, a new, highly sophisticated multi-stage malware framework carrying CrownX ransomware.\"\n*(Text Overlay: \"AVALON: NEW, SOPHISTICATED THREAT\")*\n**Speaker:** \"It spreads through spoofed legal document emails, using hidden ISO images to bypass email scans and conventional detection methods by compiling in memory.\"\n*(Text Overlay: \"HIDES IN FAKE ISOs / IN-MEMORY EXECUTION\")*\n\n**(12-25 seconds) LINE 3 & 4**\n**Speaker:** \"But here's the critical threat: Avalon doesn't just encrypt your data. It *actively targets* high-value systems like domain controllers, backup platforms, and *then destroys* your vital recovery mechanisms!\"\n*(Text Overlay: \"TARGETS & DESTROYS RECOVERY SYSTEMS\")*\n**Speaker:** \"It wipes shadow copies, corrupts recovery settings, and even has a direct physical-drive write capability, extending impact to potential disk-level destruction!\"\n*(Text Overlay: \"WIPES SHADOW COPIES / DISK DESTRUCTION\")*\n\n**(25-35 seconds) CLOSING LINE - [Music builds slightly then resolves with a decisive beat]**\n**Speaker:** \"STAY VIGILANT! Always scrutinize *all* email attachments, especially legal documents. And *immediately test and isolate your recovery systems*!\"\n*(Text Overlay: \"ACTION: VERIFY EMAILS. ISOLATE & TEST BACKUPS!\")*\n\n---",
+    "hashtags": [
+      "cybersecurity",
+      "infosec",
+      "ransomware",
+      "malware",
+      "cyberattack",
+      "phishing",
+      "datasecurity",
+      "crownx",
+      "avalonframework",
+      "backupsystems",
+      "recovery",
+      "isoimage",
+      "msbuild",
+      "inmemoryattack",
+      "blackpoint",
+      "credentialtheft",
+      "anti-forensics",
+      "vss",
+      "protondrive",
+      "enterpriseattack"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "CrownX Ransomware: New Threat Targets Your Backup Systems!"
+      },
+      {
+        "type": "body",
+        "heading": "Meet Avalon & CrownX",
+        "text": "A newly discovered multi-stage malware framework, named Avalon, now embeds the CrownX ransomware. Its primary target? Your vital recovery and backup systems."
+      },
+      {
+        "type": "body",
+        "heading": "How It Spreads",
+        "text": "The attack begins with spoofed legal document emails, directing victims to a password-protected Proton Drive archive. Inside, an ISO image disguised as a 'Secure Document' leads to a malicious shortcut."
+      },
+      {
+        "type": "body",
+        "heading": "Advanced Evasion Tactics",
+        "text": "The malware avoids detection by embedding malicious content in an ISO (bypassing email scans) and executes largely in memory, creating no disk artifacts. It even disables system telemetry and inspection pathways."
+      },
+      {
+        "type": "body",
+        "heading": "Avalon's Deep Capabilities",
+        "text": "Avalon acts as a central control hub, performing extensive credential harvesting from browsers, crypto wallets, and VPNs. It targets high-value assets like domain controllers, backup platforms (Veeam, Acronis), and virtualization infrastructure."
+      },
+      {
+        "type": "body",
+        "heading": "CrownX Destroys Recovery",
+        "text": "CrownX uses strong AES-GCM encryption on a wide range of files. Crucially, it actively attacks recovery mechanisms: stopping VSS, deleting shadow copies, modifying restore settings, and can even corrupt partition structures."
+      },
+      {
+        "type": "body",
+        "heading": "Anti-Forensic Measures",
+        "text": "To hide its tracks, the framework purges various investigator artifacts like Prefetch files, AmCache, SRUM, and PowerShell history, making incident response even harder."
+      },
+      {
+        "type": "cta",
+        "text": "Stay ahead of cyber threats! Follow @CyberShieldAlerts for the latest updates and security tips. Save & Share this post!"
+      }
+    ],
+    "generatedAt": "2026-07-05T06:24:44.854Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-crownx-ransomware-embedded-inside-avalon-framework-targets-recovery-a-slide-01.png",
+      "cyberpress-crownx-ransomware-embedded-inside-avalon-framework-targets-recovery-a-slide-02.png",
+      "cyberpress-crownx-ransomware-embedded-inside-avalon-framework-targets-recovery-a-slide-03.png",
+      "cyberpress-crownx-ransomware-embedded-inside-avalon-framework-targets-recovery-a-slide-04.png",
+      "cyberpress-crownx-ransomware-embedded-inside-avalon-framework-targets-recovery-a-slide-05.png",
+      "cyberpress-crownx-ransomware-embedded-inside-avalon-framework-targets-recovery-a-slide-06.png",
+      "cyberpress-crownx-ransomware-embedded-inside-avalon-framework-targets-recovery-a-slide-07.png",
+      "cyberpress-crownx-ransomware-embedded-inside-avalon-framework-targets-recovery-a-slide-08.png"
+    ],
+    "renderedAt": "2026-07-05T06:25:18.271Z"
+  }
+}
