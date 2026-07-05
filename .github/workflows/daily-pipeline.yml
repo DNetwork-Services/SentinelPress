@@ -37,9 +37,9 @@ jobs:
         env:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
 
-      # # Milestone 8
-      # - name: Assemble reel video
-      #   run: npm run render-reel
+      # Milestone 8
+      - name: Assemble reel video
+        run: npm run render-reel
 
       # Milestone 5
       - name: Send to Telegram for approval
