@@ -36,7 +36,7 @@ data/<accountId>/queue/             pending/ -> approved/ -> published/
 - [x] Milestone 2 — Research + dedupe engine (RSS -> candidate JSON)
 - [x] Milestone 3 — LLM content generation (Gemini/Groq)
 - [x] Milestone 4 — Carousel image renderer
-- [ ] Milestone 5 — Telegram notifier
+- [x] Milestone 5 — Telegram notifier
 - [ ] Milestone 6 — Cloudflare Worker webhook + approve/reject buttons
 - [ ] Milestone 7 — Instagram publish agent
 - [ ] Milestone 8 — Analytics agent + weekly summary

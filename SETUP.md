@@ -57,6 +57,18 @@ Renders every post at `status: "generated"` into branded PNGs (1080x1350) using 
 
 Font: bundled `Poppins` (static weights, `assets/fonts/`) — Satori needs raw TTF/OTF data, not system fonts or variable fonts (variable fonts from Google Fonts' current `Inter` release failed to parse — a known Satori/opentype.js compatibility gap), so static-weight files are committed to the repo rather than fetched at runtime. To change the typeface, swap in different static-weight TTF files and update `loadFonts()` in `scripts/render-carousel.mjs`.
 
+## 3d. Testing Milestone 5 (Telegram notifier) for real
+
+With `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` set:
+
+```bash
+npm run notify
+```
+
+You should get a Telegram message from your bot: the carousel images as an album, followed by a text message with the caption/hashtags and **✅ Approve** / **❌ Reject** buttons. Tapping them won't do anything yet — that wiring is Milestone 6. This step just confirms delivery looks right.
+
+One thing to get right before this works: your bot can only message you if you've started a conversation with it first. Search for your bot's username in Telegram and hit **Start** once — otherwise `sendMediaGroup`/`sendMessage` will fail with a "chat not found" error.
+
 
 
 ## 4. Adding a new account later (e.g. The English Vault)
