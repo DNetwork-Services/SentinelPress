@@ -5,6 +5,7 @@ import { Resvg } from '@resvg/resvg-js';
 import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, writePendingPost, queueDir } from './lib/queue.mjs';
 import { buildSlideElement } from '../templates/carousel/slideTemplates.mjs';
+import { fetchTopicPhoto } from './lib/stockphoto.mjs';
 
 const FONTS_DIR = path.join(process.cwd(), 'assets', 'fonts');
 
@@ -23,7 +24,7 @@ async function renderSlideToPng(slide, ctx, fonts) {
   return resvg.render().asPng();
 }
 
-async function renderPost(account, post, fonts) {
+async function renderPost(account, post, fonts, pexelsApiKey) {
   const slides = post.generated?.slides;
   if (!slides || slides.length === 0) {
     throw new Error('No slides found in generated content.');
@@ -33,11 +34,24 @@ async function renderPost(account, post, fonts) {
   const accountHandle = `@${account.accountId}`;
   const categoryLabel = post.source?.category;
 
+  const backgroundPhoto = await fetchTopicPhoto(post.article, categoryLabel, pexelsApiKey);
+  if (backgroundPhoto) {
+    console.log(`    Using photo by ${backgroundPhoto.photographer} (${backgroundPhoto.pexelsUrl})`);
+  }
+
   const imagePaths = [];
   for (let i = 0; i < slides.length; i++) {
+    const isTitle = slides[i].type === 'title';
     const png = await renderSlideToPng(
       slides[i],
-      { brand: account.content.brand, accountHandle, categoryLabel, total: slides.length, index: i + 1 },
+      {
+        brand: account.content.brand,
+        accountHandle,
+        categoryLabel,
+        total: slides.length,
+        index: i + 1,
+        backgroundPhoto: isTitle ? backgroundPhoto : null,
+      },
       fonts
     );
     const fileName = `${post.id}-slide-${String(i + 1).padStart(2, '0')}.png`;
@@ -46,10 +60,10 @@ async function renderPost(account, post, fonts) {
     imagePaths.push(fileName);
   }
 
-  return imagePaths;
+  return { imagePaths, photoCredit: backgroundPhoto ? { photographer: backgroundPhoto.photographer, url: backgroundPhoto.pexelsUrl } : null };
 }
 
-async function renderForAccount(account, fonts) {
+async function renderForAccount(account, fonts, pexelsApiKey) {
   console.log(`\n=== ${account.displayName} ===`);
 
   const pending = listQueue(account.accountId, 'pending').filter((p) => p.status === 'generated');
@@ -62,11 +76,11 @@ async function renderForAccount(account, fonts) {
   for (const post of pending) {
     try {
       console.log(`  Rendering ${post.generated.slides.length} slide(s) for: "${post.article.title}"`);
-      const imagePaths = await renderPost(account, post, fonts);
+      const { imagePaths, photoCredit } = await renderPost(account, post, fonts, pexelsApiKey);
       writePendingPost(account.accountId, {
         ...post,
         status: 'rendered',
-        render: { slideImages: imagePaths, renderedAt: new Date().toISOString() },
+        render: { slideImages: imagePaths, photoCredit, renderedAt: new Date().toISOString() },
       });
       console.log(`  Done: ${imagePaths.join(', ')}`);
       done++;
@@ -82,10 +96,11 @@ async function renderForAccount(account, fonts) {
 async function main() {
   const fonts = loadFonts();
   const accounts = loadActiveAccounts();
+  const pexelsApiKey = process.env.PEXELS_API_KEY;
 
   let total = 0;
   for (const account of accounts) {
-    total += await renderForAccount(account, fonts);
+    total += await renderForAccount(account, fonts, pexelsApiKey);
   }
   console.log(`\nDone. ${total} post(s) rendered.`);
 }

@@ -70,6 +70,7 @@ function buildApprovalKeyboard(approvalHash) {
 
 function buildCaptionMessage(post) {
   const hashtagLine = (post.generated.hashtags || []).map((h) => `#${h}`).join(' ');
+  const photoCredit = post.render?.photoCredit;
   const parts = [
     `📰 ${post.article.title}`,
     '',
@@ -77,6 +78,9 @@ function buildCaptionMessage(post) {
     '',
     hashtagLine,
   ];
+  if (photoCredit) {
+    parts.push('', `📷 Photo by ${photoCredit.photographer} on Pexels`);
+  }
   return parts.join('\n').slice(0, TELEGRAM_CAPTION_LIMIT);
 }
 

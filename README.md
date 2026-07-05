@@ -38,10 +38,13 @@ data/<accountId>/queue/             pending/ -> approved/ -> published/
 - [x] Milestone 4 — Carousel image renderer
 - [x] Milestone 5 — Telegram notifier
 - [x] Milestone 6 — Cloudflare Worker webhook + approve/reject buttons
+- [x] Milestone 4b — Real topic photos on title slides (Pexels, free tier)
 - [ ] Milestone 7 — Instagram publish agent
-- [ ] Milestone 8 — Analytics agent + weekly summary
-- [ ] Milestone 9 — Hardening: retries, error alerts, docs
-- [ ] Milestone 10 — Add The English Vault as a second account
+- [ ] Milestone 8 — Reel video assembly (ffmpeg: pans/zooms/crossfades from slides)
+- [ ] Milestone 9 — Reel voiceover (Piper TTS) + royalty-free background music mixing
+- [ ] Milestone 10 — Analytics agent + weekly summary
+- [ ] Milestone 11 — Hardening: retries, error alerts, docs
+- [ ] Milestone 12 — Add The English Vault as a second account
 
 ## License
 

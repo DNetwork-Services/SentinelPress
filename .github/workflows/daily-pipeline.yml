@@ -34,6 +34,8 @@ jobs:
       # Milestone 4
       - name: Render carousel images
         run: npm run render
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
 
       # Milestone 5
       - name: Send to Telegram for approval

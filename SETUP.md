@@ -12,6 +12,7 @@ Go to **Settings → Secrets and variables → Actions → New repository secret
 | `TELEGRAM_CHAT_ID` | Your personal Telegram chat ID | Milestone 5 |
 | `GEMINI_API_KEY` | Free-tier key from **Google AI Studio** (ai.google.dev) | Milestone 3 — now required |
 | `GROQ_API_KEY` | Free-tier key from **console.groq.com** | Milestone 3 — optional but recommended as automatic fallback |
+| `PEXELS_API_KEY` | Free key from **pexels.com/api** (instant, no card) | Adds a real topic photo to each carousel's title slide. Optional — renders a plain background if unset. |
 
 None of these ever get written into a code file — scripts read them only via `process.env.X` at runtime, and the workflow files map `secrets.X` to that env var. I (Claude) will never see or ask for the actual values.
 

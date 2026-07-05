@@ -114,38 +114,93 @@ function footer(brand, index, total) {
   };
 }
 
-export function buildTitleSlide(slide, { brand, accountHandle, categoryLabel, index, total }) {
-  return {
-    element: baseFrame(brand, [
-      header(brand, accountHandle, categoryLabel),
-      {
+export function buildTitleSlide(slide, { brand, accountHandle, categoryLabel, index, total, backgroundPhoto }) {
+  const backgroundLayer = backgroundPhoto
+    ? {
+        type: 'img',
+        props: {
+          src: backgroundPhoto.dataUri,
+          style: {
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+          },
+        },
+      }
+    : null;
+
+  const overlayLayer = backgroundPhoto
+    ? {
         type: 'div',
         props: {
           style: {
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            // Gradient keeps the top readable for the header row and
+            // fades darker toward the bottom where the title text sits.
+            backgroundImage: `linear-gradient(180deg, ${brand.backgroundColor}CC 0%, ${brand.backgroundColor}66 35%, ${brand.backgroundColor}F2 75%)`,
             display: 'flex',
-            flex: 1,
-            alignItems: 'center',
-            justifyContent: 'center',
           },
-          children: {
-            type: 'div',
-            props: {
-              style: {
-                fontSize: 76,
-                fontWeight: 700,
-                lineHeight: 1.15,
-                textAlign: 'center',
-                display: 'flex',
-              },
-              children: slide.text,
+        },
+      }
+    : null;
+
+  const frameChildren = [
+    header(brand, accountHandle, categoryLabel),
+    {
+      type: 'div',
+      props: {
+        style: {
+          display: 'flex',
+          flex: 1,
+          alignItems: 'center',
+          justifyContent: 'center',
+        },
+        children: {
+          type: 'div',
+          props: {
+            style: {
+              fontSize: 76,
+              fontWeight: 700,
+              lineHeight: 1.15,
+              textAlign: 'center',
+              display: 'flex',
+              textShadow: backgroundPhoto ? '0 4px 24px rgba(0,0,0,0.6)' : 'none',
             },
+            children: slide.text,
           },
         },
       },
-      footer(brand, index, total),
-    ]),
-    canvas: CANVAS,
-  };
+    },
+    footer(brand, index, total),
+  ];
+
+  const frame = backgroundPhoto
+    ? {
+        type: 'div',
+        props: {
+          style: {
+            width: '100%',
+            height: '100%',
+            display: 'flex',
+            flexDirection: 'column',
+            position: 'relative',
+            padding: 64,
+            fontFamily: 'Poppins',
+            color: '#FFFFFF',
+          },
+          children: [backgroundLayer, overlayLayer, ...frameChildren.map((c) => ({ ...c, props: { ...c.props, style: { ...c.props.style, position: 'relative' } } }))],
+        },
+      }
+    : baseFrame(brand, frameChildren);
+
+  return { element: frame, canvas: CANVAS };
 }
 
 export function buildBodySlide(slide, { brand, accountHandle, categoryLabel, index, total }) {
