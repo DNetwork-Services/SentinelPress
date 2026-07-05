@@ -1,7 +1,7 @@
 {
   "id": "cyberpress-crownx-ransomware-embedded-inside-avalon-framework-targets-recovery-a",
   "accountId": "cybershieldalerts",
-  "status": "rendered",
+  "status": "awaiting_approval",
   "source": {
     "name": "CyberPress",
     "category": "News"
@@ -95,5 +95,7 @@
       "cyberpress-crownx-ransomware-embedded-inside-avalon-framework-targets-recovery-a-slide-08.png"
     ],
     "renderedAt": "2026-07-05T06:25:18.271Z"
-  }
+  },
+  "approvalHash": "fc129b9626e8dc6d",
+  "notifiedAt": "2026-07-05T07:21:47.982Z"
 }
