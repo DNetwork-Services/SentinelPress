@@ -2,9 +2,11 @@
 // 1 post/day needs. Auth header takes the raw key, NOT "Bearer <key>".
 // https://www.pexels.com/api/documentation/
 
-function buildQuery(article, sourceCategory) {
-  // Keep it generic/topical rather than pulling exact vendor/product names,
-  // which tend to return zero stock-photo results.
+function buildQuery(slide, sourceCategory) {
+  if (slide?.imageQuery) return slide.imageQuery;
+
+  // Fallback for slides without an imageQuery (e.g. hand-written test data,
+  // or older posts generated before this field existed).
   const genericTerms = {
     Vulnerability: 'cybersecurity hacker code',
     Hacking: 'hacker dark computer',
@@ -18,10 +20,10 @@ function buildQuery(article, sourceCategory) {
  * or null if the search fails / returns nothing (caller should fall back
  * to a plain background rather than fail the whole render).
  */
-export async function fetchTopicPhoto(article, sourceCategory, apiKey) {
+export async function fetchTopicPhoto(slide, sourceCategory, apiKey) {
   if (!apiKey) return null;
 
-  const query = buildQuery(article, sourceCategory);
+  const query = buildQuery(slide, sourceCategory);
   try {
     const res = await fetch(
       `https://api.pexels.com/v1/search?query=${encodeURIComponent(query)}&orientation=portrait&per_page=5`,

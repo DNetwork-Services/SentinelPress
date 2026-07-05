@@ -10,10 +10,11 @@ function requireEnv(name) {
 
 function buildCaption(post) {
   const hashtagLine = (post.generated.hashtags || []).map((h) => `#${h}`).join(' ');
-  const photoCredit = post.render?.photoCredit;
+  const photoCredits = post.render?.photoCredits || [];
   const parts = [post.generated.caption, '', hashtagLine];
-  if (photoCredit) {
-    parts.push('', `📷 Photo by ${photoCredit.photographer} on Pexels`);
+  if (photoCredits.length > 0) {
+    const creditLine = photoCredits.map((c) => c.photographer).join(', ');
+    parts.push('', `📷 Photos by ${creditLine} on Pexels`);
   }
   // Instagram caption limit is 2200 characters.
   return parts.join('\n').slice(0, 2200);

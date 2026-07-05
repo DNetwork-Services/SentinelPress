@@ -34,14 +34,15 @@ async function renderPost(account, post, fonts, pexelsApiKey) {
   const accountHandle = `@${account.accountId}`;
   const categoryLabel = post.source?.category;
 
-  const backgroundPhoto = await fetchTopicPhoto(post.article, categoryLabel, pexelsApiKey);
-  if (backgroundPhoto) {
-    console.log(`    Using photo by ${backgroundPhoto.photographer} (${backgroundPhoto.pexelsUrl})`);
-  }
-
+  const photoCredits = [];
   const imagePaths = [];
   for (let i = 0; i < slides.length; i++) {
-    const isTitle = slides[i].type === 'title';
+    const backgroundPhoto = await fetchTopicPhoto(slides[i], categoryLabel, pexelsApiKey);
+    if (backgroundPhoto) {
+      console.log(`    Slide ${i + 1} photo: "${slides[i].imageQuery}" — by ${backgroundPhoto.photographer}`);
+      photoCredits.push({ photographer: backgroundPhoto.photographer, url: backgroundPhoto.pexelsUrl });
+    }
+
     const png = await renderSlideToPng(
       slides[i],
       {
@@ -50,7 +51,7 @@ async function renderPost(account, post, fonts, pexelsApiKey) {
         categoryLabel,
         total: slides.length,
         index: i + 1,
-        backgroundPhoto: isTitle ? backgroundPhoto : null,
+        backgroundPhoto,
       },
       fonts
     );
@@ -60,7 +61,11 @@ async function renderPost(account, post, fonts, pexelsApiKey) {
     imagePaths.push(fileName);
   }
 
-  return { imagePaths, photoCredit: backgroundPhoto ? { photographer: backgroundPhoto.photographer, url: backgroundPhoto.pexelsUrl } : null };
+  // De-duplicate credits (Pexels' terms just require crediting each
+  // distinct photographer used, not one line per slide).
+  const uniqueCredits = Array.from(new Map(photoCredits.map((c) => [c.photographer, c])).values());
+
+  return { imagePaths, photoCredits: uniqueCredits };
 }
 
 async function renderForAccount(account, fonts, pexelsApiKey) {
@@ -76,11 +81,11 @@ async function renderForAccount(account, fonts, pexelsApiKey) {
   for (const post of pending) {
     try {
       console.log(`  Rendering ${post.generated.slides.length} slide(s) for: "${post.article.title}"`);
-      const { imagePaths, photoCredit } = await renderPost(account, post, fonts, pexelsApiKey);
+      const { imagePaths, photoCredits } = await renderPost(account, post, fonts, pexelsApiKey);
       writePendingPost(account.accountId, {
         ...post,
         status: 'rendered',
-        render: { slideImages: imagePaths, photoCredit, renderedAt: new Date().toISOString() },
+        render: { slideImages: imagePaths, photoCredits, renderedAt: new Date().toISOString() },
       });
       console.log(`  Done: ${imagePaths.join(', ')}`);
       done++;

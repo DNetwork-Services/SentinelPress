@@ -3,9 +3,9 @@ You are writing the slide-by-slide text for a CyberShield Alerts Instagram carou
 Given the article below, output STRICT JSON in this shape:
 {
   "slides": [
-    { "type": "title", "text": "..." },
-    { "type": "body", "heading": "...", "text": "..." },
-    { "type": "cta", "text": "..." }
+    { "type": "title", "text": "...", "imageQuery": "..." },
+    { "type": "body", "heading": "...", "text": "...", "imageQuery": "..." },
+    { "type": "cta", "text": "...", "imageQuery": "..." }
   ]
 }
 
@@ -14,7 +14,17 @@ Rules:
 - Middle slides are type "body" — one idea per slide, plain language
 - Final slide is always type "cta" — tells the reader to follow/save/share
 - Stay strictly grounded in the article's facts — no invented details
-- Output ONLY the JSON, no other text
+
+For "imageQuery" on EVERY slide, write a short stock-photo search phrase (3-6 words) that captures the EMOTIONAL BEAT of that specific slide, not just its topic. Think about what a reader should feel at that moment and describe a photo that evokes it:
+- A slide revealing the threat/danger → something tense, alarming, or unsettling (e.g. "hacker dark room typing", "red warning alert screen")
+- A slide explaining impact/scale → something that conveys urgency or concern (e.g. "worried person looking at laptop")
+- A slide with a fix/solution/good news → something relieved or positive (e.g. "person smiling relieved laptop", "IT professional confident office")
+- A neutral explainer slide → something curious or intriguing rather than generic (e.g. "close up circuit board glowing", "magnifying glass code screen")
+- The CTA slide → something forward-looking or empowering (e.g. "confident person using phone")
+
+Each slide's imageQuery should be DIFFERENT from the others and specific to what that slide says — avoid reusing the same query across slides.
+
+Output ONLY the JSON, no other text.
 
 Article:
 {{ARTICLE_TEXT}}

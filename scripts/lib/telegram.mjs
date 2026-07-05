@@ -70,7 +70,7 @@ function buildApprovalKeyboard(approvalHash) {
 
 function buildCaptionMessage(post) {
   const hashtagLine = (post.generated.hashtags || []).map((h) => `#${h}`).join(' ');
-  const photoCredit = post.render?.photoCredit;
+  const photoCredits = post.render?.photoCredits || [];
   const parts = [
     `📰 ${post.article.title}`,
     '',
@@ -78,8 +78,9 @@ function buildCaptionMessage(post) {
     '',
     hashtagLine,
   ];
-  if (photoCredit) {
-    parts.push('', `📷 Photo by ${photoCredit.photographer} on Pexels`);
+  if (photoCredits.length > 0) {
+    const creditLine = photoCredits.map((c) => c.photographer).join(', ');
+    parts.push('', `📷 Photos by ${creditLine} on Pexels`);
   }
   return parts.join('\n').slice(0, TELEGRAM_CAPTION_LIMIT);
 }
