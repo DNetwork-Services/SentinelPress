@@ -1,0 +1,136 @@
+{
+  "id": "cyberpress-kb5072911-windows-11-issue-causes-explorer-and-xaml-apps-to-crash-on",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "KB5072911: Windows 11 Issue Causes Explorer and XAML Apps to Crash on Enterprise PCs",
+    "link": "https://cyberpress.org/kb5072911-windows-11-xaml-apps/",
+    "description": "Microsoft has confirmed a critical shell reliability issue affecting Windows 11 enterprise deployments, in which core system components, including Explorer, the Start menu, and other XAML-dependent applications, fail to launch or crash unexpectedly. The issue impacts devices running Windows 11 version 24H2 and 25H2 after installing cumulative updates released on or after July 2025, including [&#8230;] The post KB5072911: Windows 11 Issue Causes Explorer and XAML Apps to Crash on Enterprise PCs appeared first on Cyber Security News.",
+    "content": "Microsoft has confirmed a critical shell reliability issue affecting Windows 11 enterprise deployments, in which core system components, including Explorer, the Start menu, and other XAML-dependent applications, fail to launch or crash unexpectedly. The issue impacts devices running Windows 11 version 24H2 and 25H2 after installing cumulative updates released on or after July 2025, including KB5062553 and KB5065789. Microsoft states the issue &#8220;primarily affects a limited number of enterprise or managed environments&#8221; and is &#8220;very unlikely to occur on personal devices used by individuals.&#8221; Windows 11 Update Breaks Shell Components It surfaces in two provisioning scenarios: first-time user logon on persistent OS installations, and every user logon on non-persistent installations, such as virtual desktop infrastructure (VDI), where application packages must be reinstalled each session. The crashes stem from a timing failure in dependency registration. Built-in packages hosting XAML components, namely MicrosoftWindows.Client.CBS, Microsoft.UI.Xaml.CBS, and MicrosoftWindows.Client.Core, do not register in time after Windows updates are applied, leaving downstream shell processes unable to initialize when the OS loads the desktop experience. Explorer.exe failures manifest as a black screen at logon, a Start menu that won&#8217;t open, Explorer crashing on launch, or a taskbar that fails to render. StartMenuExperienceHost failures cause the Start menu to fail with a critical error message instead of opening normally. The shellhost.exe process crashes outright in affected sessions. Consent.exe, the binary behind the User Account Control prompt, fails silently, potentially blocking elevation requests entirely. System Settings is also affected, with Start > Settings > System failing to open silently. Other XAML-dependent apps can crash during XAML view initialization or when XAML island components attempt to load. Microsoft has addressed the root cause starting with updates released June 23, 2026, identified as KB5095093. The fix is rolling out gradually and is expected to reach full availability by late July 2026 as part of the standard monthly update cycle. Microsoft recommends installing the latest cumulative update, as it includes this fix along with other stability improvements. For organizations still running updates released before the fix, Microsoft has published two mitigation paths. The first involves manual package registration, where IT administrators re-register the affected packages within an active user session using Add-AppxPackage with the Register flag against each package&#8217;s appxmanifest.xml, then restart SiHost so the Immersive Shell can detect the newly registered components. The second applies to non-persistent environments such as VDI, where Microsoft recommends a batch script wrapper that executes synchronously before Explorer launches, blocking Explorer.exe from starting prematurely until all required packages have finished provisioning. Enterprises managing golden images, VDI pools, or Autopilot-provisioned fleets should audit their current update level and prioritize deploying KB5095093 once broadly available. Until then, embedding the provided PowerShell remediation into logon scripts or provisioning packages is advised to prevent shell failures during the critical first-logon window. Follow us on Google News , LinkedIn and X to Get More Instant Updates. Set Cyberpress as a Preferred Source in Google. The post KB5072911: Windows 11 Issue Causes Explorer and XAML Apps to Crash on Enterprise PCs appeared first on Cyber Security News.",
+    "pubDate": "Mon, 06 Jul 2026 08:09:57 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/07/kb5072911-windows-11-issue-causes-explorer-and-xaml-apps-to-crash-on-enterprise-pcs-6a4b5b846fa41.webp"
+  },
+  "score": 0.9959857283950617,
+  "selectedAt": "2026-07-06T08:53:18.248Z",
+  "generated": {
+    "caption": "\"Windows 11 users are experiencing crashes with Explorer and other core apps due to a critical shell reliability issue. This issue affects devices running Windows 11 version 24H2 and 25H2 after installing certain updates, primarily in enterprise environments. Microsoft has addressed the issue with an update, but it's not yet widely available. To stay safe, install the latest cumulative update when available. Save this post and share with your IT team to stay informed. Follow us for daily cybersecurity updates and threat intelligence! #CyberShieldAlerts #Windows11 #CyberSecurity\"",
+    "script": "Your Windows 11 could be at risk, with a critical issue causing Explorer and other apps to crash, putting your productivity and data in jeopardy. This problem affects enterprise PCs running Windows 11 versions 24H2 and 25H2, after installing certain updates, including KB5062553 and KB5065789. The issue primarily affects managed environments, with crashes stemming from a timing failure in dependency registration. To protect your system, update now with the latest cumulative update, KB5095093, which includes the fix for this critical issue.",
+    "hashtags": [
+      "cybersecurity",
+      "infosec",
+      "windows11",
+      "microsoft",
+      "kb5072911",
+      "explorer",
+      "xamlapps",
+      "shellcomponents",
+      "startmenu",
+      "enterpriseit",
+      "vdi",
+      "patchmanagement",
+      "systemstability",
+      "itadmins",
+      "windowsupdate",
+      "kb5095093",
+      "techalert",
+      "osissue",
+      "microsoftwindows",
+      "itnews"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "Windows 11 Alert: Critical Shell Issue Found",
+        "imageQuery": "hacker dark room typing"
+      },
+      {
+        "type": "body",
+        "heading": "What's Happening",
+        "text": "A critical shell reliability issue is affecting Windows 11 enterprise deployments, causing Explorer and XAML apps to crash unexpectedly.",
+        "imageQuery": "red warning alert screen"
+      },
+      {
+        "type": "body",
+        "heading": "Who's Affected",
+        "text": "The issue primarily affects a limited number of enterprise or managed environments, and is very unlikely to occur on personal devices used by individuals.",
+        "imageQuery": "worried person looking at laptop"
+      },
+      {
+        "type": "body",
+        "heading": "The Cause",
+        "text": "The crashes stem from a timing failure in dependency registration, where built-in packages hosting XAML components do not register in time after Windows updates are applied.",
+        "imageQuery": "close up circuit board glowing"
+      },
+      {
+        "type": "body",
+        "heading": "The Fix",
+        "text": "Microsoft has addressed the root cause starting with updates released June 23, 2026, and recommends installing the latest cumulative update for stability improvements.",
+        "imageQuery": "person smiling relieved laptop"
+      },
+      {
+        "type": "body",
+        "heading": "Mitigation Paths",
+        "text": "For organizations still running updates released before the fix, Microsoft has published two mitigation paths: manual package registration and a batch script wrapper.",
+        "imageQuery": "IT professional confident office"
+      },
+      {
+        "type": "cta",
+        "text": "Stay ahead of the latest cybersecurity news and updates - follow us and save this post for future reference!",
+        "imageQuery": "confident person using phone"
+      }
+    ],
+    "generatedAt": "2026-07-06T08:53:29.238Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-kb5072911-windows-11-issue-causes-explorer-and-xaml-apps-to-crash-on-slide-01.png",
+      "cyberpress-kb5072911-windows-11-issue-causes-explorer-and-xaml-apps-to-crash-on-slide-02.png",
+      "cyberpress-kb5072911-windows-11-issue-causes-explorer-and-xaml-apps-to-crash-on-slide-03.png",
+      "cyberpress-kb5072911-windows-11-issue-causes-explorer-and-xaml-apps-to-crash-on-slide-04.png",
+      "cyberpress-kb5072911-windows-11-issue-causes-explorer-and-xaml-apps-to-crash-on-slide-05.png",
+      "cyberpress-kb5072911-windows-11-issue-causes-explorer-and-xaml-apps-to-crash-on-slide-06.png",
+      "cyberpress-kb5072911-windows-11-issue-causes-explorer-and-xaml-apps-to-crash-on-slide-07.png"
+    ],
+    "photoCredits": [
+      {
+        "photographer": "Sora Shimazaki",
+        "url": "https://www.pexels.com/photo/ethnic-computer-geek-typing-on-keyboard-at-dusk-5935785/"
+      },
+      {
+        "photographer": "Polina Zimmerman",
+        "url": "https://www.pexels.com/photo/close-up-photo-of-black-smartphone-3747159/"
+      },
+      {
+        "photographer": "Alex Green",
+        "url": "https://www.pexels.com/photo/worried-young-black-man-working-online-on-laptop-in-kitchen-5699831/"
+      },
+      {
+        "photographer": "Mikhail Nilov",
+        "url": "https://www.pexels.com/photo/motherboard-behind-wire-mesh-8108712/"
+      },
+      {
+        "photographer": "www.kaboompics.com",
+        "url": "https://www.pexels.com/photo/woman-laughing-and-looking-at-laptop-screen-5237976/"
+      },
+      {
+        "photographer": "Mizuno K",
+        "url": "https://www.pexels.com/photo/portrait-of-man-in-office-12903019/"
+      },
+      {
+        "photographer": "Darlene Alderson",
+        "url": "https://www.pexels.com/photo/photo-of-a-woman-in-a-green-coat-using-her-cell-phone-while-looking-at-the-camera-7971601/"
+      }
+    ],
+    "renderedAt": "2026-07-06T08:53:33.682Z",
+    "reelVideo": "cyberpress-kb5072911-windows-11-issue-causes-explorer-and-xaml-apps-to-crash-on-reel.mp4",
+    "reelDurationSeconds": 40.73940999999999,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "3db4f17f96d2c9c4",
+  "notifiedAt": "2026-07-06T08:55:13.273Z"
+}
