@@ -7,6 +7,41 @@ import { mixNarrationWithMusic } from './lib/audiomix.mjs';
 import { getDurationSeconds } from './lib/media.mjs';
 import { assembleReel } from './lib/reel.mjs';
 
+// Backstop cleanup in case the LLM still slips in a conversational
+// preamble or structural label despite the prompt now explicitly
+// forbidding it — this is what was causing Piper to narrate things like
+// "Here's your reel script:" before the actual content.
+function cleanScriptForNarration(script) {
+  let cleaned = script.trim();
+
+  // Strip a leading conversational preamble line (e.g. "Here's your script:",
+  // "Sure, here's a 30-second reel script:") — these end in a colon and
+  // precede the real content, unlike the narration itself.
+  const preambleMatch = cleaned.match(/^(here'?s?|sure|okay|certainly)[^\n]{0,80}:\s*\n+/i);
+  if (preambleMatch) {
+    cleaned = cleaned.slice(preambleMatch[0].length);
+  }
+
+  // Strip structural labels at the start of a line. Extended whitelist
+  // rather than a fully generic "any capitalized word + colon" pattern —
+  // the latter risks stripping legitimate spoken phrasing that happens to
+  // start with "Word:" (e.g. "Update: patch your VPN now" as an actual
+  // spoken line, not a label).
+  const knownLabels = [
+    'hook', 'intro', 'introduction', 'opening', 'closing', 'outro', 'cta',
+    'call to action', 'scene\\s*\\d*', 'line\\s*\\d*', 'part\\s*\\d*', 'step\\s*\\d*',
+    'what happened', 'why it matters', 'the fix', 'the impact', 'bottom line',
+    'takeaway', 'summary', 'narration', 'voiceover', 'script',
+  ];
+  cleaned = cleaned.replace(new RegExp(`^(${knownLabels.join('|')})\\s*:\\s*`, 'gim'), '');
+  cleaned = cleaned.replace(/^[\[(][^\])]+[\])]\s*/gm, '');
+
+  // Strip wrapping quotes if the whole thing got quoted.
+  cleaned = cleaned.replace(/^["'](.*)["']$/s, '$1');
+
+  return cleaned.trim();
+}
+
 async function addVoiceoverForAccount(account) {
   console.log(`\n=== ${account.displayName} ===`);
 
@@ -25,8 +60,9 @@ async function addVoiceoverForAccount(account) {
     try {
       console.log(`  Adding voiceover for: "${post.article.title}"`);
 
+      const narrationText = cleanScriptForNarration(post.generated.script);
       const narrationPath = path.join(dir, `${post.id}-narration.wav`);
-      await synthesizeSpeech(post.generated.script, narrationPath);
+      await synthesizeSpeech(narrationText, narrationPath);
       const narrationDuration = await getDurationSeconds(narrationPath);
       console.log(`    Narration: ${narrationDuration.toFixed(1)}s`);
 
