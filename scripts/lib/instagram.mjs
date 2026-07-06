@@ -55,10 +55,31 @@ async function waitForContainerReady(containerId, accessToken, { timeoutMs = 600
 }
 
 /**
- * Publishes a single video as an Instagram Reel. Video processing takes
- * longer than images, hence the longer timeout on the status poll.
- * Returns the published media's Instagram ID.
+ * Fetches insights (reach, likes, comments, etc.) for one published media
+ * item. Metric sets are configurable via env vars since Meta has renamed/
+ * deprecated Insights metrics multiple times (most recently Jan 2025) —
+ * if a future change breaks this, no code change is needed, just update
+ * the env var. Returns a flat { metricName: value } object.
  */
+export async function getMediaInsights(mediaId, accessToken, metrics) {
+  const { data } = await graphGet(`${mediaId}/insights`, { metric: metrics.join(',') }, accessToken);
+  const result = {};
+  for (const entry of data) {
+    result[entry.name] = entry.values?.[0]?.value ?? entry.total_value?.value ?? null;
+  }
+  return result;
+}
+
+const FEED_METRICS = (process.env.ANALYTICS_METRICS_FEED || 'reach,likes,comments,saved,shares').split(',');
+const REEL_METRICS = (process.env.ANALYTICS_METRICS_REEL || 'reach,likes,comments,saved,shares,views').split(',');
+
+export async function getCarouselInsights(mediaId, accessToken) {
+  return getMediaInsights(mediaId, accessToken, FEED_METRICS);
+}
+
+export async function getReelInsights(mediaId, accessToken) {
+  return getMediaInsights(mediaId, accessToken, REEL_METRICS);
+}
 export async function publishReel({ igBusinessAccountId, accessToken, videoUrl, caption }) {
   const { id: containerId } = await graphPost(
     `${igBusinessAccountId}/media`,

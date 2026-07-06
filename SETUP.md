@@ -175,6 +175,24 @@ npm run research && npm run generate && npm run render && npm run render-reel &&
 
 Then `npm run notify` to see the full Telegram flow: carousel images, reel video with sound, caption, and buttons — approve it and watch `handle-approval.yml` publish both formats.
 
+## 8. Milestone 10 — Analytics
+
+`npm run analytics` fetches insights (reach, likes, comments, saves, shares) for everything published in the last 7 days, saves a snapshot to `data/cybershieldalerts/analytics/`, and sends you a weekly Telegram summary with totals and a "best performer" callout. Runs automatically every Monday.
+
+**One extra permission needed — your current token doesn't have it yet.** Milestone 0's permission set (`instagram_basic`, `instagram_content_publishing`, `pages_read_engagement`, `business_management`, `pages_show_list`) doesn't include insights access. Go back to your Meta app → **Instagram → API setup with Facebook login → Permissions and features**, and add **`instagram_manage_insights`**. Then re-generate your access token the same way you did in Milestone 0 (old tokens don't retroactively gain new permissions) and update the `CYBERSHIELDALERTS_IG_ACCESS_TOKEN` secret.
+
+**A metric-naming note:** Meta has renamed/deprecated Instagram Insights metrics multiple times (most recently January 2025). I've used what's currently documented as stable (`reach, likes, comments, saved, shares` for feed posts; same plus `views` for Reels), but if a future Meta change breaks this, you don't need a code change — override `ANALYTICS_METRICS_FEED` / `ANALYTICS_METRICS_REEL` as GitHub Secrets with whatever metric names are current.
+
+### Testing it for real
+
+Once you've added the insights permission and refreshed your token:
+
+```bash
+npm run analytics
+```
+
+Requires at least one post to have been published more than a few hours ago (Instagram needs time to accumulate stats) — if nothing's published yet, it'll just say so and exit cleanly.
+
 
 
 ## 4. Adding a new account later (e.g. The English Vault)

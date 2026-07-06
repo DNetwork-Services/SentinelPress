@@ -1,0 +1,45 @@
+name: Weekly Analytics
+
+on:
+  schedule:
+    - cron: '0 4 * * 1'   # 04:00 UTC Monday = 9:30 AM IST Monday
+  workflow_dispatch:
+
+concurrency:
+  group: weekly-analytics
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  analytics:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - run: npm ci
+
+      - name: Collect insights and send weekly summary
+        run: npm run analytics
+        env:
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          CYBERSHIELDALERTS_IG_ACCESS_TOKEN: ${{ secrets.CYBERSHIELDALERTS_IG_ACCESS_TOKEN }}
+          CYBERSHIELDALERTS_IG_BUSINESS_ID: ${{ secrets.CYBERSHIELDALERTS_IG_BUSINESS_ID }}
+
+      - name: Commit analytics snapshot
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -n "$(git status --porcelain data/)" ]; then
+            git add data/
+            git commit -m "chore: weekly analytics snapshot $(date -u +'%Y-%m-%d')"
+            git pull --rebase origin main && git push origin HEAD:main
+          else
+            echo "Nothing to commit."
+          fi

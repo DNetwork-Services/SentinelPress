@@ -101,6 +101,32 @@ export async function sendReelPreview(botToken, chatId, videoAbsolutePath) {
 }
 
 /**
+ * Sends a weekly performance summary: totals across all posts published
+ * in the last 7 days, plus a callout of the best-performing one by reach.
+ */
+export async function sendWeeklySummary(botToken, chatId, account, summary) {
+  const { totals, best, postCount } = summary;
+
+  const lines = [
+    `📊 Weekly summary — ${account.displayName}`,
+    '',
+    `${postCount} post(s) published in the last 7 days.`,
+    '',
+    `Reach: ${totals.reach}`,
+    `Likes: ${totals.likes}`,
+    `Comments: ${totals.comments}`,
+    `Saves: ${totals.saved}`,
+    `Shares: ${totals.shares}`,
+  ];
+
+  if (best) {
+    lines.push('', `🏆 Best performer: "${best.title}"`);
+  }
+
+  await telegramCall(botToken, 'sendMessage', { chat_id: chatId, text: lines.join('\n') });
+}
+
+/**
  * Sends the full preview for one pending post: carousel images, then
  * the reel video (if rendered), then a text message with caption +
  * hashtags + Approve/Reject buttons covering the whole post.

@@ -9,6 +9,12 @@ export function queueDir(accountId, stage) {
   return dir;
 }
 
+export function analyticsDir(accountId) {
+  const dir = path.join(DATA_DIR, accountId, 'analytics');
+  fs.mkdirSync(dir, { recursive: true });
+  return dir;
+}
+
 export function slugify(text, maxLen = 80) {
   return text
     .toLowerCase()

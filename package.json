@@ -12,7 +12,8 @@
     "render-voiceover": "node scripts/render-voiceover.mjs",
     "notify": "node scripts/notify-telegram.mjs",
     "resolve-approval": "node scripts/resolve-approval.mjs",
-    "publish": "node scripts/publish-instagram.mjs"
+    "publish": "node scripts/publish-instagram.mjs",
+    "analytics": "node scripts/analytics.mjs"
   },
   "dependencies": {
     "@resvg/resvg-js": "^2.6.2",
