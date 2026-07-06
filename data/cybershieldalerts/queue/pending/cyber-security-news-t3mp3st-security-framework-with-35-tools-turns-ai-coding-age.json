@@ -1,0 +1,133 @@
+{
+  "id": "cyber-security-news-t3mp3st-security-framework-with-35-tools-turns-ai-coding-age",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "T3MP3ST Security Framework With 35 Tools, Turns AI Coding Agents Into 0-Day Bug Hunters",
+    "link": "https://cybersecuritynews.com/t3mp3st-security-framework/",
+    "description": "A newly released open-source security framework called T3MP3ST is turning general-purpose AI coding agents like Claude Code, OpenAI&#8217;s Codex, and Hermes into autonomous red-teaming operators without requiring new API keys, cloud infrastructure, or additional billing. Built by researcher elder-plinius, T3MP3ST acts as a multi-agent orchestration layer rather than shipping its own model, coordinating multiple agent [&#8230;] The post T3MP3ST Security Framework With 35 Tools, Turns AI Coding Agents Into 0-Day Bug Hunters appeared first on Cyber Security News.",
+    "content": "A newly released open-source security framework called T3MP3ST is turning general-purpose AI coding agents like Claude Code, OpenAI&#8217;s Codex, and Hermes into autonomous red-teaming operators without requiring new API keys, cloud infrastructure, or additional billing. Built by researcher elder-plinius, T3MP3ST acts as a multi-agent orchestration layer rather than shipping its own model, coordinating multiple agent instances through a reconnaissance-to-exploit-to-report kill chain. Users point the framework at an authorized target through a web-based &#8220;War Room&#8221; interface or CLI, and the AI coding agent already running on their machine becomes the operational brain driving the mission. The framework is described as &#8220;keyless warfare,&#8221; leveraging existing agent sessions instead of demanding separate provider keys, and it enforces egress-scope containment so networked tools automatically refuse to touch off-scope public hosts. T3MP3ST Security Framework T3MP3ST claims a 90.1% pass@1 score on XBOW&#8217;s 104-challenge XBEN suite, a black-box benchmark that XBOW itself self-reports at roughly 85%, with every solve graded against a committed flag oracle that a &#8220;verify-claims&#8221; command recomputes on demand for reproducibility. On Cybench, a 40-task academic benchmark, the framework&#8217;s single-agent ReAct loop hit 23/40 hint-free solves. More notably, on a held-out set of 10 real CVEs disclosed in 2026 across seven programming languages, a single agent pinned 8 of 10 vulnerabilities to the exact file, line, and CWE classification, while the broader tool pack surfaced all 10 results the developers frame as directional given the small sample size but meaningful because the bugs postdate the model&#8217;s training cutoff, ruling out memorization The framework&#8217;s design maps an 8-operator kill chain Recon, Scanner, Exploiter, Infiltrator, Exfiltrator, Ghost, Coordinator, and Analyst onto MITRE ATT&CK tactics and the Cyber Kill Chain, though only the recon engine and single-agent exploit loop are currently benchmarked and stable and can be cloned from GitHub. Downstream operators run the same tool-backed reasoning loop as recon but remain classified as experimental, since end-to-end coordinated-swarm exploitation hasn&#8217;t yet been validated at scale. DomainStatusWeb apps (XBEN suite)Stable, benchmarkedCTF challenges (Cybench)Stable, benchmarkedEmbedded/OT/robotics OSSPipeline stable, coordinated disclosureSource code (white-box)Experimental, Python-only ingestSmart contracts (DeFi)Experimental, reproduction onlyCloud, mobile, AD, binary RERoadmap/in development Security researchers on platforms like Reddit&#8217;s blueteamsec community have flagged the release as notable for autonomous red-teaming, tracking it alongside broader industry momentum toward AI-driven security tooling. This follows related developments such as Anthropic&#8217;s Mythos model, which XBOW separately evaluated as substantially improving vulnerability-led generation and source-code security analysis, cutting false negatives by 42% in comparable exploit benchmarks. The developers highlight that T3MP3ST is strictly for authorized testing, research, and education, released under the AGPL-3.0 license with no warranty. Unauthorized use against systems without explicit written permission remains illegal in most jurisdictions, and responsibility for staying within legal and rules-of-engagement boundaries rests entirely with the operator. Strengthen Your SOC by Accelerating Threat Detection & Rapid Investigations. -> Integrate ANY.RUN With Your SOC Now. The post T3MP3ST Security Framework With 35 Tools, Turns AI Coding Agents Into 0-Day Bug Hunters appeared first on Cyber Security News.",
+    "pubDate": "Sun, 05 Jul 2026 16:03:23 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/07/T3MP3ST-Security-Framework.webp"
+  },
+  "score": 0.9348690030864197,
+  "selectedAt": "2026-07-06T03:46:47.887Z",
+  "generated": {
+    "caption": "\"Cyberattacks just got more sophisticated: a new open-source security framework called T3MP3ST is using AI coding agents to hunt for 0-day bugs. This framework turns AI agents into autonomous red-teaming operators, finding vulnerabilities without needing new API keys or cloud infrastructure. It's been tested on real-world bugs and shown promising results. Stay ahead of threats like this by staying informed! Save this post and follow us for daily cybersecurity updates #cybersecurity #AIsecurity\"",
+    "script": "Here's a script for a 30-45 second Instagram Reel:\n\n(0s-3s)\n\"Your cybersecurity is at stake: a new AI-powered tool can hunt down 0-day bugs in seconds.\"\n\n(4s-10s)\n\"Meet T3MP3ST, an open-source security framework that turns AI coding agents into autonomous red-teaming operators. It can scan for vulnerabilities without needing new API keys or cloud infrastructure.\"\n\n(11s-18s)\n\"With a 90.1% pass rate on black-box benchmarks, T3MP3ST is a game-changer. It can even pinpoint exact file and line vulnerabilities in real-world CVEs.\"\n\n(19s-25s)\n\"But remember, T3MP3ST is for authorized testing and research only. Using it without permission is illegal, so stay within legal boundaries.\"\n\n(26s-35s)\n\"Stay ahead of the threat landscape: learn more about T3MP3ST and how to integrate AI-driven security tools into your cybersecurity strategy, and update your threat detection systems now.\"",
+    "hashtags": [
+      "cybersecurity",
+      "infosec",
+      "aiinscecurity",
+      "t3mp3st",
+      "redteaming",
+      "autonomoussecurity",
+      "aicode",
+      "codex",
+      "openai",
+      "artificialintelligence",
+      "securityframework",
+      "zerodaybugs",
+      "vulnerabilitymanagement",
+      "mitreattack",
+      "cyberkillchain",
+      "securityresearch",
+      "opensecurity"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "Revolutionary T3MP3ST Security Framework: AI-Powered 0-Day Bug Hunting",
+        "imageQuery": "futuristic coding laboratory"
+      },
+      {
+        "type": "body",
+        "heading": "What is T3MP3ST?",
+        "text": "T3MP3ST is an open-source security framework that turns AI coding agents into autonomous red-teaming operators, leveraging existing agent sessions without requiring new API keys or cloud infrastructure.",
+        "imageQuery": "close up circuit board glowing"
+      },
+      {
+        "type": "body",
+        "heading": "Key Features and Benefits",
+        "text": "T3MP3ST acts as a multi-agent orchestration layer, coordinating multiple agent instances through a reconnaissance-to-exploit-to-report kill chain, and enforces egress-scope containment for secure operation.",
+        "imageQuery": "security expert analyzing data"
+      },
+      {
+        "type": "body",
+        "heading": "Impressive Results and Validation",
+        "text": "T3MP3ST claims a 90.1% pass@1 score on XBOW's 104-challenge XBEN suite and successfully pinned 8 of 10 vulnerabilities to the exact file, line, and CWE classification in a held-out set of real CVEs.",
+        "imageQuery": "worried person looking at laptop"
+      },
+      {
+        "type": "body",
+        "heading": "Future Development and Potential",
+        "text": "The framework's design maps onto MITRE ATT&CK tactics and the Cyber Kill Chain, with plans for further stabilization and expansion of its capabilities, including end-to-end coordinated-swarm exploitation.",
+        "imageQuery": "innovative tech cityscape"
+      },
+      {
+        "type": "body",
+        "heading": "Important Notes and Reminders",
+        "text": "T3MP3ST is strictly for authorized testing, research, and education, and unauthorized use against systems without explicit written permission remains illegal in most jurisdictions.",
+        "imageQuery": "warning sign on computer screen"
+      },
+      {
+        "type": "cta",
+        "text": "Stay ahead of the curve with the latest cybersecurity news and updates. Follow us for more information on T3MP3ST and other innovative security frameworks.",
+        "imageQuery": "confident person using phone"
+      }
+    ],
+    "generatedAt": "2026-07-06T03:46:52.177Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-t3mp3st-security-framework-with-35-tools-turns-ai-coding-age-slide-01.png",
+      "cyber-security-news-t3mp3st-security-framework-with-35-tools-turns-ai-coding-age-slide-02.png",
+      "cyber-security-news-t3mp3st-security-framework-with-35-tools-turns-ai-coding-age-slide-03.png",
+      "cyber-security-news-t3mp3st-security-framework-with-35-tools-turns-ai-coding-age-slide-04.png",
+      "cyber-security-news-t3mp3st-security-framework-with-35-tools-turns-ai-coding-age-slide-05.png",
+      "cyber-security-news-t3mp3st-security-framework-with-35-tools-turns-ai-coding-age-slide-06.png",
+      "cyber-security-news-t3mp3st-security-framework-with-35-tools-turns-ai-coding-age-slide-07.png"
+    ],
+    "photoCredits": [
+      {
+        "photographer": "Beyza Kaplan",
+        "url": "https://www.pexels.com/photo/photo-of-codes-on-walls-8134609/"
+      },
+      {
+        "photographer": "Mikhail Nilov",
+        "url": "https://www.pexels.com/photo/motherboard-behind-wire-mesh-8108712/"
+      },
+      {
+        "photographer": "cottonbro studio",
+        "url": "https://www.pexels.com/photo/man-with-binary-code-projected-on-his-face-5474040/"
+      },
+      {
+        "photographer": "Alex Green",
+        "url": "https://www.pexels.com/photo/worried-young-black-man-working-online-on-laptop-in-kitchen-5699831/"
+      },
+      {
+        "photographer": "Zetong Li",
+        "url": "https://www.pexels.com/photo/futuristic-skyline-of-illuminated-city-at-night-33175694/"
+      },
+      {
+        "photographer": "Ron Lach",
+        "url": "https://www.pexels.com/photo/tape-on-a-monitor-9830823/"
+      },
+      {
+        "photographer": "Darlene Alderson",
+        "url": "https://www.pexels.com/photo/photo-of-a-woman-in-a-green-coat-using-her-cell-phone-while-looking-at-the-camera-7971601/"
+      }
+    ],
+    "renderedAt": "2026-07-06T03:46:58.831Z",
+    "reelVideo": "cyber-security-news-t3mp3st-security-framework-with-35-tools-turns-ai-coding-age-reel.mp4",
+    "reelDurationSeconds": 58.897415,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "6cf16442f27ff9c2",
+  "notifiedAt": "2026-07-06T03:48:52.379Z"
+}
