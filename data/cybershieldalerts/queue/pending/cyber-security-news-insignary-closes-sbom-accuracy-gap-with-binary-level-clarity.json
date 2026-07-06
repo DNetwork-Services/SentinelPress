@@ -1,0 +1,136 @@
+{
+  "id": "cyber-security-news-insignary-closes-sbom-accuracy-gap-with-binary-level-clarity",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Insignary Closes SBOM Accuracy Gap With Binary-Level Clarity for Regulatory Risk",
+    "link": "https://cybersecuritynews.com/insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-for-regulatory-risk/",
+    "description": "Toronto, Canada, July 6th, 2026, CyberNewswire Most software composition analysis tools read what developers declare. Insignary Clarity’s patented binary-first platform analyzes what is actually built, shipped, and deployed — including the open-source components that never appear in any manifest. Insignary, Inc., whose patented binary fingerprint technology has been cited in four Gartner research reports, today [&#8230;] The post Insignary Closes SBOM Accuracy Gap With Binary-Level Clarity for Regulatory Risk appeared first on Cyber Security News.",
+    "content": "Toronto, Canada, July 6th, 2026, CyberNewswire Most software composition analysis tools read what developers declare. Insignary Clarity’s patented binary-first platform analyzes what is actually built, shipped, and deployed — including the open-source components that never appear in any manifest. Insignary, Inc., whose patented binary fingerprint technology has been cited in four Gartner research reports, today announced its recognition as a Sample Vendor for Reachability Analysis in the Gartner Hype Cycle for Secure Software Engineering, 2026. According to Gartner: “Open-source and third-party components may contain a long list of vulnerabilities, but not all of them directly impact your code base. Reachability analysis helps in triaging the vulnerabilities based on their exploitability.”*1 The urgency is clear across independent industry research. A 2024 Venafi survey of 800 security decision-makers across the U.S., U.K., Germany, and France found that 92% are concerned about AI-generated code, and 63% have considered banning it outright over security risk.*2 The U.S. National Vulnerability Database recorded more than 48,000 CVEs in 2025 — roughly 130 every day. AI coding assistants are accelerating the growth of unmanaged open-source dependencies. As organizations adopt these tools at scale, they face a widening challenge: understanding which open-source components enter production software, whether those components can be trusted, and how the resulting security and compliance risks are managed. The problem is structural. Most SCA tools read what developers declare — not what actually runs. AI-generated code, vendor libraries, and third-party binaries frequently bypass package managers and never appear in a manifest. “SBOMs are increasingly becoming a regulatory requirement around the world. However, software transparency is only as reliable as the accuracy of an SBOM itself. You cannot verify an SBOM by reading the manifest that created it. You verify an SBOM by examining the software that was actually built, shipped, and deployed. As software supply-chain regulations increasingly depend on SBOMs, the ability to validate software at the binary level becomes essential for organizations operating in regulated industries, critical infrastructure, and AI-enabled software environments.” — Taek Wan Kim, President & CEO, Insignary INSIGNARY CLARITY: BINARY-FIRST. AI-AWARE. Insignary Clarity scans both source and binary to build a complete Software Bill of Materials (SBOM) for the applications teams build, the third-party components they incorporate, and the IT infrastructure that bypasses the traditional secure development lifecycle. Key capabilities include: Binary SCA — identifies open-source components, vulnerabilities, and license obligations directly from compiled binaries, without requiring source code or package manifests AIBOM Generation — produces an AI Bill of Materials for software containing AI-generated or AI-assisted code, covering components that bypass traditional dependency declarations Reachability Analysis — determines which disclosed vulnerabilities actually reach executable code paths, enabling risk-based prioritization rather than raw CVE-count triage Continuous Vulnerability Alerting — monitors stored SBOMs against updated vulnerability databases and delivers automated alerts when newly disclosed CVEs match deployed components, without requiring a rescan “An SBOM is foundational to managing the complexity and securability of modern software deployments.”*3 RECOGNITION IN FOUR GARTNER REPORTS Insignary has been cited in four Gartner research reports*, Gartner Hype Cycle for Secure Software Engineering,2026, Gartner Hype Cycle for Application Security,2025, Gartner Scale Application Security With AI-Augmented Vulnerability Remediation,2025, and Gartner 3 Steps for Assessing an Open-Source Software Project, 2025. SUPPORTING GLOBAL SOFTWARE SUPPLY CHAIN REQUIREMENTS Insignary Clarity supports organisations meeting software supply-chain security requirements across North America and globally: U.S. Executive Order 14028 and OMB Memorandum M-26-05 — federal agencies may now independently verify vendor SBOMs rather than accepting a standard attestation form, raising the bar for all software sold into the U.S. government FDA Section 524B — every connected medical device premarket submission must include a binary-verified SBOM covering all compiled software components Canada&#8217;s Bill C-8 Critical Cyber Systems Protection Act (CCSPA), effective June 2026 — mandatory supply chain risk management for banking, telecommunications, energy, and transportation operators Additional frameworks: CISA and NSA SBOM guidance, NIST SSDF, Australia&#8217;s Information Security Manual (ISM), U.S. Connected Vehicle Rule, EU Cyber Resilience Act. TRUSTED BY GOVERNMENTS AND GLOBAL ENTERPRISES Globally, BearingPoint — one of Europe’s leading management and technology consulting firms and a strategic investor in Insignary — serves as the company’s exclusive distributor across Europe. Cybertrust Japan, another strategic investor, and its reselling partner TechMatrix drive adoption across Japanese manufacturing under a joint SBOM initiative. Customers include government organizations and global leaders across the electronics, defense, financial services, automotive, manufacturing, medical, and other technology sectors. GARTNER and Hype Cycle are trademarks of Gartner, Inc. and/or its affiliates. Gartner does not endorse any vendor, product or service depicted in its research publications, and does not advise technology users to select only those vendors with the highest ratings or other designation. Gartner research publications consist of the opinions of Gartner’s research organization and should not be construed as statements of fact. Gartner disclaims all warranties, expressed or implied, with respect to this research, including any warranties of merchantability or fitness for a particular purpose. ABOUT INSIGNARY Insignary Inc. is a Toronto-based cybersecurity company specializing in binary composition analysis and software supply chain security. Its patented technology enables organizations to identify open-source software components, vulnerabilities, and software provenance directly from compiled binaries without requiring access to source code. The company’s flagship platform, Insignary Clarity, provides binary analysis and software composition analysis capabilities that enable organizations to verify the contents of deployed software and strengthen software supply chain governance. Insignary Clarity AIR extends this capability to the AI domain by helping organizations identify, assess, and manage risks associated with AI models, AI-generated software, and AI-driven development environments. The company serves enterprises, governments, and software vendors worldwide and is supported by strategic investors and partners including BearingPoint in Europe, Cybertrust Japan and TechMatrix in Japan, and TMA Solutions. Through its global partner ecosystem, Insignary supports software supply chain security initiatives across North America, Europe, and Asia. Website: https://insignary.com/ Full report: Gartner Hype Cycle for Secure Software Engineering, 2026 References: Gartner, Hype Cycle for Secure Software Engineering 2026 Venafi, &#8220;Machine Identity Management Development Survey,&#8221; 2024 Gartner, “Emerging Tech: A Software Bill of Materials Is Critical to Software Supply Chain Management.” Contact Principal Solutions Architect Jessica DY Lee Insignary jessicalee@insignary.com The post Insignary Closes SBOM Accuracy Gap With Binary-Level Clarity for Regulatory Risk appeared first on Cyber Security News.",
+    "pubDate": "Mon, 06 Jul 2026 14:23:51 +0000",
+    "image": "https://i2.wp.com/blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjprYPh_SjPwV8EmCMXizGzzUCdZAJ7dSBZitkVTwraZeDdaCEwbqD4L4VrngaDuRG87j2V8-RAMdsZGpC7gfkdfLiEu9PXEpxmUYnuNNB5Mrn1nlN1DNekhWx_dj0K4f30wH8s7reeedcdAgf1Z1VJoHVcGatVkB96VTSyeFcYD5VYUrfEtD9JAQaoSlE/s1600/TTT%20-%202026-07-06T184108.684.webp?ssl=1"
+  },
+  "score": 0.9957785879629629,
+  "selectedAt": "2026-07-06T15:09:26.475Z",
+  "generated": {
+    "caption": "Your software might be hiding dangerous secrets! 🕵️‍♀️\n\nMost software security tools only look at the ingredients developers *say* are in the code. But what about the hidden open-source components, AI-generated code, or third-party bits that slip in unnoticed? This gap means your Software Bill of Materials (SBOM) – like an ingredient list for software – could be inaccurate, leaving you vulnerable.\n\nAnd the risks are real:\n⚠️ Over 48,000 known software weaknesses (CVEs) were recorded in 2025, about 130 every single day.\n🤖 A 2024 survey found 92% of security decision-makers are concerned about AI-generated code, with 63% considering banning it due to risk.\n\nEnter Insignary Clarity. This platform doesn't just read the recipe; it scans the *actual finished software* at the binary level. This \"binary-first\" approach finds *everything* built, shipped, and deployed, even the parts that never show up in traditional manifests.\n\nWhy does this matter?\n✅ **Accurate SBOMs:** Finally get a complete picture of your software's components.\n✅ **Real Risk Prioritization:** Their \"Reachability Analysis\" (recognized by Gartner!) helps you identify which of those 48,000+ vulnerabilities *actually* affect your code, so you can fix what matters most.\n✅ **Regulatory Compliance:** With global regulations like the U.S. Executive Order 14028, FDA 524B for medical devices, and Canada's Bill C-8 for critical systems, truly verifiable SBOMs are becoming mandatory.\n\nInsignary Clarity is closing the accuracy gap, helping organizations secure their software supply chain, especially in critical infrastructure and AI environments.\n\nDon't let hidden components become your next big threat!\nSave this post for later and share it with your team. Follow @CyberShieldAlerts for daily cybersecurity insights and threat intelligence!",
+    "script": "Your software has hidden vulnerabilities most tools miss entirely. Most only read declared components, overlooking what's actually built and deployed. With over 48,000 CVEs last year and skyrocketing AI-generated code, that's a dangerous gap. But Insignary Clarity, recognized by Gartner, now offers patented binary-first analysis. It scans compiled software directly, revealing hidden open-source, AI code, and true exploitability. This clarity is essential for new regulations and securing critical systems. Don't rely on incomplete manifests. Verify your software at the binary level.",
+    "hashtags": [
+      "cybersecurity",
+      "infosec",
+      "softwaresecurity",
+      "supplychainsecurity",
+      "sbom",
+      "insignary",
+      "insignaryclarity",
+      "binaryanalysis",
+      "opensourcesecurity",
+      "vulnerabilitymanagement",
+      "regulatorycompliance",
+      "riskmanagement",
+      "aigeneratedcode",
+      "aibom",
+      "reachabilityanalysis",
+      "cves",
+      "criticalinfrastructure",
+      "softwaretransparency",
+      "applicationsecurity",
+      "eucyberresilience"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "Is Your Software Hiding Secrets?",
+        "imageQuery": "magnifying glass binary code"
+      },
+      {
+        "type": "body",
+        "heading": "The Software Blind Spot",
+        "text": "Most tools only read what developers declare. But what about open-source components, AI-generated code, or vendor libraries that never appear in a manifest?",
+        "imageQuery": "missing puzzle piece software"
+      },
+      {
+        "type": "body",
+        "heading": "A Growing Tsunami of Risk",
+        "text": "With 48,000+ CVEs in 2025 and rising concerns over AI-generated code, knowing what's *actually* in your software is critical for security.",
+        "imageQuery": "red warning alert screen"
+      },
+      {
+        "type": "body",
+        "heading": "Insignary: Binary-First Clarity",
+        "text": "Insignary Clarity's patented platform analyzes what's actually built, shipped, and deployed – closing the crucial SBOM accuracy gap.",
+        "imageQuery": "bright light binary code"
+      },
+      {
+        "type": "body",
+        "heading": "Deep Dive into Your Code",
+        "text": "Key capabilities include Binary SCA (no source needed!), AIBOM generation for AI code, and Reachability Analysis to prioritize real threats.",
+        "imageQuery": "IT professional confident office"
+      },
+      {
+        "type": "body",
+        "heading": "Meeting Global Regulations",
+        "text": "From US Executive Orders to FDA medical device requirements and Canada's CCSPA, Insignary helps organizations meet stringent supply chain security mandates.",
+        "imageQuery": "regulatory documents checkmark"
+      },
+      {
+        "type": "cta",
+        "text": "Secure your software supply chain. Follow CyberShield Alerts for more insights!",
+        "imageQuery": "confident person using phone"
+      }
+    ],
+    "generatedAt": "2026-07-06T15:10:03.080Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-slide-01.png",
+      "cyber-security-news-insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-slide-02.png",
+      "cyber-security-news-insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-slide-03.png",
+      "cyber-security-news-insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-slide-04.png",
+      "cyber-security-news-insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-slide-05.png",
+      "cyber-security-news-insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-slide-06.png",
+      "cyber-security-news-insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-slide-07.png"
+    ],
+    "photoCredits": [
+      {
+        "photographer": "cottonbro studio",
+        "url": "https://www.pexels.com/photo/photo-of-cryptic-character-codes-7319085/"
+      },
+      {
+        "photographer": "Ann H",
+        "url": "https://www.pexels.com/photo/close-up-shot-of-wooden-puzzle-pieces-6275821/"
+      },
+      {
+        "photographer": "Polina Zimmerman",
+        "url": "https://www.pexels.com/photo/close-up-photo-of-black-smartphone-3747159/"
+      },
+      {
+        "photographer": "Connor Scott McManus",
+        "url": "https://www.pexels.com/photo/transparent-numbers-on-wall-12623603/"
+      },
+      {
+        "photographer": "Mizuno K",
+        "url": "https://www.pexels.com/photo/portrait-of-man-in-office-12903019/"
+      },
+      {
+        "photographer": "Tara Winstead",
+        "url": "https://www.pexels.com/photo/tick-mark-in-square-boxes-8850720/"
+      },
+      {
+        "photographer": "Darlene Alderson",
+        "url": "https://www.pexels.com/photo/photo-of-a-woman-in-a-green-coat-using-her-cell-phone-while-looking-at-the-camera-7971601/"
+      }
+    ],
+    "renderedAt": "2026-07-06T15:10:12.433Z",
+    "reelVideo": "cyber-security-news-insignary-closes-sbom-accuracy-gap-with-binary-level-clarity-reel.mp4",
+    "reelDurationSeconds": 36.10702899999999,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "1b40dd4230f9a3a6",
+  "notifiedAt": "2026-07-06T15:12:03.984Z"
+}
