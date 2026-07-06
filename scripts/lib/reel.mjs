@@ -19,6 +19,9 @@ function runFfmpeg(args) {
     const proc = spawn('ffmpeg', ['-y', ...args]);
     let stderr = '';
     proc.stderr.on('data', (chunk) => { stderr += chunk.toString(); });
+    proc.on('error', (err) => {
+      reject(new Error(`Failed to start ffmpeg (is it installed and on PATH?): ${err.message}`));
+    });
     proc.on('close', (code) => {
       if (code === 0) resolve();
       else reject(new Error(`ffmpeg exited with code ${code}:\n${stderr.slice(-2000)}`));

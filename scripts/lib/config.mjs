@@ -31,13 +31,29 @@ export function loadActiveAccounts() {
 
 /**
  * Read an account's dedupe history (list of already-processed article URLs).
+ * If the file is corrupted (bad JSON — e.g. a bad manual edit, or a race
+ * between two workflow runs writing it at once), logs a warning and falls
+ * back to empty history rather than crashing the whole pipeline. Losing
+ * dedupe history is recoverable (worst case: an old article gets
+ * reconsidered); crashing every future run is not.
  */
 export function loadHistory(account) {
   const historyPath = path.join(account._dir, 'history.json');
   if (!fs.existsSync(historyPath)) {
     return { processedUrls: [], lastUpdated: null };
   }
-  return JSON.parse(fs.readFileSync(historyPath, 'utf-8'));
+
+  const raw = fs.readFileSync(historyPath, 'utf-8');
+  try {
+    return JSON.parse(raw);
+  } catch (err) {
+    console.warn(
+      `[config] WARNING: ${historyPath} contains invalid JSON (${err.message}). ` +
+        `Falling back to empty history — dedupe state for this account was reset. ` +
+        `Check for a bad manual edit or a race between overlapping workflow runs.`
+    );
+    return { processedUrls: [], lastUpdated: null };
+  }
 }
 
 /**

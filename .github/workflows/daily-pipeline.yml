@@ -5,6 +5,10 @@ on:
     - cron: '30 2 * * *'   # 02:30 UTC = 08:00 IST
   workflow_dispatch:
 
+concurrency:
+  group: daily-pipeline
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -38,6 +42,9 @@ jobs:
           PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
 
       # Milestone 8
+      - name: Install ffmpeg
+        run: sudo apt-get update && sudo apt-get install -y ffmpeg
+
       - name: Assemble reel video
         run: npm run render-reel
 
@@ -68,7 +75,7 @@ jobs:
           if [ -n "$(git status --porcelain data/)" ]; then
             git add data/ accounts/
             git commit -m "chore: pipeline run $(date -u +'%Y-%m-%d')"
-            git push origin HEAD:main
+            git pull --rebase origin main && git push origin HEAD:main
           else
             echo "Nothing to commit."
           fi

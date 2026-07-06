@@ -14,6 +14,10 @@ on:
         type: choice
         options: [approve, reject]
 
+concurrency:
+  group: handle-approval
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -43,7 +47,7 @@ jobs:
           if [ -n "$(git status --porcelain data/)" ]; then
             git add data/
             git commit -m "chore: resolve approval $(date -u +'%Y-%m-%d %H:%M')"
-            git push origin HEAD:main
+            git pull --rebase origin main && git push origin HEAD:main
           else
             echo "Nothing to commit."
           fi
@@ -67,7 +71,7 @@ jobs:
           if [ -n "$(git status --porcelain data/)" ]; then
             git add data/
             git commit -m "chore: mark published $(date -u +'%Y-%m-%d %H:%M')"
-            git push origin HEAD:main
+            git pull --rebase origin main && git push origin HEAD:main
           else
             echo "Nothing to commit."
           fi

@@ -12,6 +12,9 @@ export function getDurationSeconds(filePath) {
     let stderr = '';
     proc.stdout.on('data', (c) => { stdout += c.toString(); });
     proc.stderr.on('data', (c) => { stderr += c.toString(); });
+    proc.on('error', (err) => {
+      reject(new Error(`Failed to start ffprobe (is it installed and on PATH?): ${err.message}`));
+    });
     proc.on('close', (code) => {
       if (code !== 0) return reject(new Error(`ffprobe failed: ${stderr}`));
       resolve(parseFloat(stdout.trim()));
