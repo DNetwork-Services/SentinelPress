@@ -1,6 +1,6 @@
 import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, movePost } from './lib/queue.mjs';
-import { publishCarousel } from './lib/instagram.mjs';
+import { publishCarousel, publishReel } from './lib/instagram.mjs';
 
 function requireEnv(name) {
   const value = process.env[name];
@@ -42,14 +42,32 @@ async function publishForAccount(account, imageBaseUrl) {
 
       console.log(`  Publishing "${post.article.title}" (${imageUrls.length} slides)...`);
       const igMediaId = await publishCarousel({ igBusinessAccountId, accessToken, imageUrls, caption });
+      console.log(`  Carousel published! Instagram media ID: ${igMediaId}`);
+
+      // Reel publish is isolated in its own try/catch: the carousel has
+      // already succeeded at this point, so a reel failure must NOT throw
+      // here — that would leave the post at status "approved" and cause
+      // the carousel to be published a second time on retry.
+      let igReelMediaId = null;
+      let reelPublishError = null;
+      if (post.render.reelVideo) {
+        try {
+          const videoUrl = `${imageBaseUrl}/${account.accountId}/queue/approved/${post.render.reelVideo}`;
+          console.log(`  Publishing reel version...`);
+          igReelMediaId = await publishReel({ igBusinessAccountId, accessToken, videoUrl, caption });
+          console.log(`  Reel published! Instagram media ID: ${igReelMediaId}`);
+        } catch (err) {
+          console.error(`  Reel publish FAILED (carousel already published, not retrying it): ${err.message}`);
+          reelPublishError = err.message;
+        }
+      }
 
       movePost(
         account.accountId,
-        { ...post, status: 'published', igMediaId, publishedAt: new Date().toISOString() },
+        { ...post, status: 'published', igMediaId, igReelMediaId, reelPublishError, publishedAt: new Date().toISOString() },
         'approved',
         'published'
       );
-      console.log(`  Published! Instagram media ID: ${igMediaId}`);
       published++;
     } catch (err) {
       // Leave at status "approved" so the next run retries — publishing

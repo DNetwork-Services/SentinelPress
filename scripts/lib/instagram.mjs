@@ -55,10 +55,27 @@ async function waitForContainerReady(containerId, accessToken, { timeoutMs = 600
 }
 
 /**
- * Publishes a carousel post: creates one container per image, waits for
- * each to finish, creates the parent carousel container, then publishes.
+ * Publishes a single video as an Instagram Reel. Video processing takes
+ * longer than images, hence the longer timeout on the status poll.
  * Returns the published media's Instagram ID.
  */
+export async function publishReel({ igBusinessAccountId, accessToken, videoUrl, caption }) {
+  const { id: containerId } = await graphPost(
+    `${igBusinessAccountId}/media`,
+    { media_type: 'REELS', video_url: videoUrl, caption },
+    accessToken
+  );
+
+  await waitForContainerReady(containerId, accessToken, { timeoutMs: 180000, intervalMs: 5000 });
+
+  const { id: publishedId } = await graphPost(
+    `${igBusinessAccountId}/media_publish`,
+    { creation_id: containerId },
+    accessToken
+  );
+
+  return publishedId;
+}
 export async function publishCarousel({ igBusinessAccountId, accessToken, imageUrls, caption }) {
   if (imageUrls.length < 2) {
     throw new Error(`Carousel requires at least 2 images, got ${imageUrls.length}.`);

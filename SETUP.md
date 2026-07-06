@@ -157,6 +157,24 @@ npm run research && npm run generate && npm run render && npm run render-reel
 
 Then check `data/cybershieldalerts/queue/pending/*-reel.mp4` — download it and play it locally to see the pan/zoom/crossfade in action.
 
+## 7. Milestone 9 — Voiceover, music, and publishing reels
+
+`npm run render-voiceover` synthesizes the reel script into speech (Piper TTS — fully offline, no API key, no cost), optionally mixes in background music from `assets/music/` at low volume, then rebuilds the reel video timed to match the narration exactly (the fixed guesses from Milestone 8 were just a placeholder). The daily pipeline now runs this automatically, and Telegram notifications include the finished reel alongside the carousel — one Approve/Reject decision covers publishing both.
+
+**Background music is opt-in and manual on purpose.** `assets/music/` ships empty with a README pointing to a few sources (YouTube Audio Library, Pixabay Music) where you can read and accept the license yourself — that's not something worth automating sight-unseen. Reels work fine with voice-only narration if you never add any tracks.
+
+**First run downloads a ~60MB voice model** (Piper's `en_US-lessac-medium` by default, configurable via `PIPER_VOICE`) from Hugging Face — the workflow caches it afterward so it's not re-downloaded daily.
+
+**Publishing:** when you approve a post, `publish-instagram.mjs` now publishes the carousel *and* the reel as two separate Instagram posts from one approval. If the reel publish fails after the carousel already succeeded, that failure is isolated and recorded (`reelPublishError` in the post JSON) rather than retried — retrying would otherwise re-publish the carousel a second time, since the whole post is only marked "published" once both attempts (successful or not) are done.
+
+### Testing it for real
+
+```bash
+npm run research && npm run generate && npm run render && npm run render-reel && npm run render-voiceover
+```
+
+Then `npm run notify` to see the full Telegram flow: carousel images, reel video with sound, caption, and buttons — approve it and watch `handle-approval.yml` publish both formats.
+
 
 
 ## 4. Adding a new account later (e.g. The English Vault)

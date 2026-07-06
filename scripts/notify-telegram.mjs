@@ -12,7 +12,9 @@ function resolveEnvVar(name) {
 async function notifyForAccount(account, botToken) {
   console.log(`\n=== ${account.displayName} ===`);
 
-  const pending = listQueue(account.accountId, 'pending').filter((p) => p.status === 'rendered');
+  const pending = listQueue(account.accountId, 'pending').filter(
+    (p) => p.status === 'rendered' && (!p.render?.reelVideo || p.render?.hasVoiceover)
+  );
   if (pending.length === 0) {
     console.log('No posts awaiting approval notification.');
     return 0;
@@ -25,8 +27,9 @@ async function notifyForAccount(account, botToken) {
   for (const post of pending) {
     try {
       const imagePaths = post.render.slideImages.map((f) => path.join(dir, f));
-      console.log(`  Sending "${post.article.title}" (${imagePaths.length} slides) to Telegram...`);
-      const approvalHash = await sendPostForApproval(botToken, chatId, post, imagePaths);
+      const reelPath = post.render.reelVideo ? path.join(dir, post.render.reelVideo) : null;
+      console.log(`  Sending "${post.article.title}" (${imagePaths.length} slides${reelPath ? ' + reel' : ''}) to Telegram...`);
+      const approvalHash = await sendPostForApproval(botToken, chatId, post, imagePaths, reelPath);
 
       writePendingPost(account.accountId, {
         ...post,

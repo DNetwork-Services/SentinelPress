@@ -41,7 +41,7 @@ data/<accountId>/queue/             pending/ -> approved/ -> published/
 - [x] Milestone 4b — Real topic photos on title slides (Pexels, free tier)
 - [x] Milestone 7 — Instagram publish agent
 - [x] Milestone 8 — Reel video assembly (ffmpeg: pans/zooms/crossfades from slides)
-- [ ] Milestone 9 — Reel voiceover (Piper TTS) + music, then wire reels into Telegram approval + Instagram publish
+- [x] Milestone 9 — Reel voiceover (Piper TTS) + music, reels wired into Telegram approval + Instagram publish
 - [ ] Milestone 10 — Analytics agent + weekly summary
 - [ ] Milestone 11 — Hardening: retries, error alerts, docs
 - [ ] Milestone 12 — Add The English Vault as a second account

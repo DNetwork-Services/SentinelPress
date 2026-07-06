@@ -42,8 +42,10 @@ export function movePost(accountId, post, fromStage, toStage) {
   const fromDir = queueDir(accountId, fromStage);
   const toDir = queueDir(accountId, toStage);
 
-  const imageFiles = post.render?.slideImages ?? [];
-  for (const fileName of imageFiles) {
+  const filesToMove = [...(post.render?.slideImages ?? [])];
+  if (post.render?.reelVideo) filesToMove.push(post.render.reelVideo);
+
+  for (const fileName of filesToMove) {
     const src = path.join(fromDir, fileName);
     if (fs.existsSync(src)) {
       fs.renameSync(src, path.join(toDir, fileName));

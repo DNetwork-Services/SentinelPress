@@ -71,11 +71,18 @@ function buildXfadeChain(slideDurations) {
 
 /**
  * Assembles a vertical (9:16) reel video from a sequence of slide PNGs.
- * No audio track yet (Milestone 9 adds voiceover + music) — a silent
- * track is included so the file is a well-formed video+audio container,
- * which some platforms/players expect even when there's nothing to hear.
+ *
+ * By default, produces a silent (well, silent-track) video using fixed
+ * per-slide-type durations — this is what Milestone 8 produces standalone.
+ *
+ * When called with targetTotalDuration (Milestone 9, to match narration
+ * length), per-slide durations are scaled so the FINAL total (after
+ * crossfade overlaps, which don't scale) lands on that target — solving
+ * targetTotalDuration = scale*sum(baseDurations) - CROSSFADE_SEC*(n-1)
+ * for scale, rather than naively scaling by a duration ratio, which
+ * undershoots because the fixed crossfade overlap doesn't shrink with it.
  */
-export async function assembleReel(slideImagePaths, slides, outputPath) {
+export async function assembleReel(slideImagePaths, slides, outputPath, { audioPath, targetTotalDuration } = {}) {
   if (slideImagePaths.length !== slides.length) {
     throw new Error('slideImagePaths and slides must be the same length.');
   }
@@ -83,21 +90,33 @@ export async function assembleReel(slideImagePaths, slides, outputPath) {
     throw new Error('Need at least 2 slides to build a reel with transitions.');
   }
 
-  const durations = slides.map(durationForSlide);
-  const inputArgs = slideImagePaths.flatMap((p) => ['-loop', '1', '-i', p]);
+  const baseDurations = slides.map(durationForSlide);
+  const n = baseDurations.length;
+  const baseSum = baseDurations.reduce((a, b) => a + b, 0);
 
+  const scale = targetTotalDuration
+    ? (targetTotalDuration + CROSSFADE_SEC * (n - 1)) / baseSum
+    : 1;
+  const durations = baseDurations.map((d) => d * scale);
+
+  const inputArgs = slideImagePaths.flatMap((p) => ['-loop', '1', '-i', p]);
   const perSlideFilters = slideImagePaths.map((_, i) => buildSlideClipFilter(i, durations[i]));
   const xfadeChain = buildXfadeChain(durations);
   const filterComplex = [...perSlideFilters, xfadeChain].join(';');
 
-  const totalDuration = durations.reduce((a, b) => a + b, 0) - CROSSFADE_SEC * (durations.length - 1);
+  const totalDuration = durations.reduce((a, b) => a + b, 0) - CROSSFADE_SEC * (n - 1);
+
+  const audioInputArgs = audioPath
+    ? ['-i', audioPath]
+    : ['-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=44100'];
+  const audioMapIndex = slideImagePaths.length;
 
   await runFfmpeg([
     ...inputArgs,
-    '-f', 'lavfi', '-i', `anullsrc=channel_layout=stereo:sample_rate=44100`,
+    ...audioInputArgs,
     '-filter_complex', filterComplex,
     '-map', '[outv]',
-    '-map', `${slideImagePaths.length}:a`,
+    '-map', `${audioMapIndex}:a`,
     '-t', totalDuration.toFixed(2),
     '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', String(FPS),
     '-c:a', 'aac', '-shortest',

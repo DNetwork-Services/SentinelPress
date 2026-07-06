@@ -41,6 +41,19 @@ jobs:
       - name: Assemble reel video
         run: npm run render-reel
 
+      # Milestone 9
+      - name: Install Piper TTS
+        run: pip install piper-tts --break-system-packages
+
+      - name: Cache Piper voice model
+        uses: actions/cache@v4
+        with:
+          path: .piper-voices
+          key: piper-voice-${{ env.PIPER_VOICE || 'en_US-lessac-medium' }}
+
+      - name: Add voiceover + music to reel
+        run: npm run render-voiceover
+
       # Milestone 5
       - name: Send to Telegram for approval
         run: npm run notify

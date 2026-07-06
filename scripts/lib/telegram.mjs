@@ -86,12 +86,32 @@ function buildCaptionMessage(post) {
 }
 
 /**
- * Sends the full preview for one pending post: images first, then a
- * text message with caption + hashtags + Approve/Reject buttons.
+ * Sends the reel video (if one exists) as a preview alongside the
+ * carousel. Same approval decision (the buttons on the follow-up caption
+ * message) covers publishing both formats — one review per story, not
+ * a separate approval per format.
+ */
+export async function sendReelPreview(botToken, chatId, videoAbsolutePath) {
+  const form = new FormData();
+  form.append('chat_id', String(chatId));
+  form.append('caption', '🎬 Reel version');
+  const buf = fs.readFileSync(videoAbsolutePath);
+  form.append('video', new Blob([buf], { type: 'video/mp4' }), 'reel.mp4');
+  return telegramCall(botToken, 'sendVideo', form);
+}
+
+/**
+ * Sends the full preview for one pending post: carousel images, then
+ * the reel video (if rendered), then a text message with caption +
+ * hashtags + Approve/Reject buttons covering the whole post.
  * Returns the approvalHash so the caller can persist it on the post.
  */
-export async function sendPostForApproval(botToken, chatId, post, imageAbsolutePaths) {
+export async function sendPostForApproval(botToken, chatId, post, imageAbsolutePaths, reelAbsolutePath) {
   await sendMediaGroup(botToken, chatId, imageAbsolutePaths);
+
+  if (reelAbsolutePath) {
+    await sendReelPreview(botToken, chatId, reelAbsolutePath);
+  }
 
   const approvalHash = computeApprovalHash(post.accountId, post.id);
   await telegramCall(botToken, 'sendMessage', {
