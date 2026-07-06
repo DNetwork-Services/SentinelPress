@@ -1,7 +1,7 @@
 {
   "id": "cyber-security-news-t3mp3st-security-framework-with-35-tools-turns-ai-coding-age",
   "accountId": "cybershieldalerts",
-  "status": "awaiting_approval",
+  "status": "approved",
   "source": {
     "name": "Cyber Security News",
     "category": "Cybersecurity"
@@ -129,5 +129,6 @@
     "musicTrack": null
   },
   "approvalHash": "6cf16442f27ff9c2",
-  "notifiedAt": "2026-07-06T03:48:52.379Z"
+  "notifiedAt": "2026-07-06T03:48:52.379Z",
+  "approvedAt": "2026-07-06T03:54:46.105Z"
 }
