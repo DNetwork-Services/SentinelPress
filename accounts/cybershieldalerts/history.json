@@ -1,13 +1,4 @@
 {
-<<<<<<< HEAD
-  "processedUrls": [
-    "https://thehackernews.com/2026/07/us-government-entity-paid-kairos-group.html",
-    "https://thehackernews.com/2026/07/new-bad-epoll-linux-kernel-flaw-lets.html",
-    "https://thehackernews.com/2026/07/new-avalon-malware-framework-packs.html"
-  ],
-  "lastUpdated": "2026-07-05T16:51:13.286Z"
-=======
   "processedUrls": [],
   "lastUpdated": null
->>>>>>> 0358a69 ( milestone 9 completed)
 }
