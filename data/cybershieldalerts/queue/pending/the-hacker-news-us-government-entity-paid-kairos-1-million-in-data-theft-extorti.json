@@ -1,0 +1,122 @@
+{
+  "id": "the-hacker-news-us-government-entity-paid-kairos-1-million-in-data-theft-extorti",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "U.S. Government Entity Paid Kairos $1 Million in Data-Theft Extortion Case",
+    "link": "https://thehackernews.com/2026/07/us-government-entity-paid-kairos-group.html",
+    "description": "A U.S. government entity paid about $1 million to keep stolen files from being leaked, according to a new case study by Rakesh Krishnan for Ransom-ISAC, built on a leaked negotiation chat and the blockchain trail the payment left. The odd part: the group that took the money calls itself Kairos, but it may not be a ransomware gang at all. Krishnan found no sign that it ever locked a single",
+    "content": "",
+    "pubDate": "Sat, 04 Jul 2026 18:17:53 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiEfi15-eigOUF4SV157a0LsEW4uNvhRyEIhWWYVNo8tn0tfMjuJ0Cr6zYUDeVh6VfzA-7MpWgIVX8sJgieRMD6e0KSBmB2zNmTU1ko1KPMbkBd-JHMBluVBUOjV06SebkYq4AKFssmEQ6DdGw4yy4X3qesVYJcwwgZSsQFUu4Wfy3un9alrX2Qy8IjacE/s1600/county-hacked.jpg"
+  },
+  "score": 0.7662573703703703,
+  "selectedAt": "2026-07-06T06:52:18.224Z",
+  "generated": {
+    "caption": "Imagine your government paying $1 MILLION just to keep stolen data private... 🤯\n\nThat's exactly what a U.S. government entity recently did! A new case study by Rakesh Krishnan for Ransom-ISAC revealed they paid around $1 million to prevent confidential files from being leaked online.\n\nThe group behind this? 'Kairos.' But here's the twist: Kairos isn't your typical ransomware gang. Researchers found no evidence that they encrypted any files. Instead, they focused solely on *stealing* data and demanding payment to stop its public release – a pure data-theft extortion play.\n\nThis unique incident highlights a growing trend where attackers skip the encryption step entirely, focusing directly on the value of sensitive information and the fear of exposure. The case study used leaked negotiation chats and blockchain payment trails to uncover the details.\n\nStay informed about evolving cyber threats!\n👉 Save this post to remember this critical insight.\n👉 Share it with someone who needs to know.\n👉 Follow @CyberShieldAlerts for daily cybersecurity, AI security, and threat intelligence updates.\n\n#Cybersecurity #DataTheft #Extortion #GovernmentSecurity #CyberThreats #InfoSec #CyberAttack #Ransomware #ThreatIntelligence #CyberShieldAlerts",
+    "script": "Here's your 30-45 second Instagram Reel script for CyberShield Alerts:\n\n---\n\n**Video Style:** Fast-paced, urgent graphics, potentially showing text overlays like \"DATA THEFT!\" or \"GOVT. EXTORTION!\"\n\n**(0-3 seconds - Punchy Hook)**\n**Voiceover (energetic, urgent):** \"Government secrets for sale?! A U.S. entity just paid $1 MILLION in an extortion case!\"\n\n**(4-35 seconds - Explanation)**\n**Voiceover:** \"That's right, a U.S. government entity paid a staggering $1 million to an extortion group called Kairos.\"\n**Voiceover:** \"They paid this hefty sum to prevent highly sensitive government files from being leaked online.\"\n**Voiceover:** \"The shocking twist? Kairos isn't a traditional ransomware gang. They never locked a single system!\"\n**Voiceover:** \"Instead, their specialty is pure data theft and extortion, threatening to expose confidential information without any encryption.\"\n**Voiceover:** \"This case, exposed by Ransom-ISAC based on leaked chats and blockchain trails, highlights a critical new threat model.\"\n**Voiceover:** \"It's no longer just about ransomware; it's about gangs stealing data and demanding payment just to keep it quiet!\"\n\n**(36-45 seconds - Call to Action)**\n**Voiceover:** \"Is your data truly secure? Protect your sensitive information! Implement robust data loss prevention and continuous monitoring *today*!\"\n\n---",
+    "hashtags": [
+      "cybersecurity",
+      "infosec",
+      "datatheft",
+      "extortion",
+      "kairos",
+      "ransomisac",
+      "usgovernment",
+      "cybercrime",
+      "blockchain",
+      "negotiationchat",
+      "leakedfiles",
+      "ransomware",
+      "malware",
+      "securitybreach",
+      "incidentresponse",
+      "threatintelligence",
+      "cyberattack"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "US Gov Paid $1M in Data-Theft Extortion",
+        "imageQuery": "hacker demanding money screen"
+      },
+      {
+        "type": "body",
+        "heading": "The Extortion Case",
+        "text": "A US government entity paid $1 million to prevent stolen files from being leaked, according to a case study by Rakesh Krishnan.",
+        "imageQuery": "worried person looking at laptop"
+      },
+      {
+        "type": "body",
+        "heading": "The Perpetrators",
+        "text": "The group behind the extortion calls itself Kairos, but it may not be a traditional ransomware gang, as no evidence of file locking was found.",
+        "imageQuery": "close up circuit board glowing"
+      },
+      {
+        "type": "body",
+        "heading": "Investigation Findings",
+        "text": "The case study is based on a leaked negotiation chat and a blockchain trail left by the payment, which totals around $1 million.",
+        "imageQuery": "magnifying glass code screen"
+      },
+      {
+        "type": "body",
+        "heading": "Uncertainty Surrounds Kairos",
+        "text": "Researchers found no sign that Kairos has ever engaged in typical ransomware activities, such as locking files, raising questions about their true intentions.",
+        "imageQuery": "red warning alert screen"
+      },
+      {
+        "type": "cta",
+        "text": "Stay ahead of threats like Kairos - follow us for the latest cybersecurity updates and alerts!",
+        "imageQuery": "confident person using phone"
+      }
+    ],
+    "generatedAt": "2026-07-06T06:52:37.997Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-us-government-entity-paid-kairos-1-million-in-data-theft-extorti-slide-01.png",
+      "the-hacker-news-us-government-entity-paid-kairos-1-million-in-data-theft-extorti-slide-02.png",
+      "the-hacker-news-us-government-entity-paid-kairos-1-million-in-data-theft-extorti-slide-03.png",
+      "the-hacker-news-us-government-entity-paid-kairos-1-million-in-data-theft-extorti-slide-04.png",
+      "the-hacker-news-us-government-entity-paid-kairos-1-million-in-data-theft-extorti-slide-05.png",
+      "the-hacker-news-us-government-entity-paid-kairos-1-million-in-data-theft-extorti-slide-06.png"
+    ],
+    "photoCredits": [
+      {
+        "photographer": "Tima Miroshnichenko",
+        "url": "https://www.pexels.com/photo/man-in-black-sweater-holding-100-us-dollar-bill-6266307/"
+      },
+      {
+        "photographer": "Alex Green",
+        "url": "https://www.pexels.com/photo/worried-young-black-man-working-online-on-laptop-in-kitchen-5699831/"
+      },
+      {
+        "photographer": "Mikhail Nilov",
+        "url": "https://www.pexels.com/photo/motherboard-behind-wire-mesh-8108712/"
+      },
+      {
+        "photographer": "cottonbro studio",
+        "url": "https://www.pexels.com/photo/photo-of-cryptic-character-codes-7319085/"
+      },
+      {
+        "photographer": "Polina Zimmerman",
+        "url": "https://www.pexels.com/photo/close-up-photo-of-black-smartphone-3747159/"
+      },
+      {
+        "photographer": "Darlene Alderson",
+        "url": "https://www.pexels.com/photo/photo-of-a-woman-in-a-green-coat-using-her-cell-phone-while-looking-at-the-camera-7971601/"
+      }
+    ],
+    "renderedAt": "2026-07-06T06:52:41.318Z",
+    "reelVideo": "the-hacker-news-us-government-entity-paid-kairos-1-million-in-data-theft-extorti-reel.mp4",
+    "reelDurationSeconds": 104.315646,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "fa07b0d5133b2d60",
+  "notifiedAt": "2026-07-06T06:55:01.175Z"
+}
