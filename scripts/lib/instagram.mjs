@@ -6,6 +6,8 @@
 // with a version/host-shaped error, try switching GRAPH_API_HOST to
 // "graph.instagram.com" and GRAPH_API_VERSION to a newer version — see
 // SETUP.md.
+import { withRetry, isTransientHttpError } from './retry.mjs';
+
 const GRAPH_HOST = process.env.GRAPH_API_HOST || 'graph.facebook.com';
 const GRAPH_VERSION = process.env.GRAPH_API_VERSION || 'v21.0';
 
@@ -14,28 +16,38 @@ function graphUrl(path) {
 }
 
 async function graphPost(path, params, accessToken) {
-  const url = new URL(graphUrl(path));
-  const body = new URLSearchParams({ ...params, access_token: accessToken });
+  return withRetry(
+    async () => {
+      const url = new URL(graphUrl(path));
+      const body = new URLSearchParams({ ...params, access_token: accessToken });
 
-  const res = await fetch(url, { method: 'POST', body });
-  const data = await res.json();
-  if (!res.ok || data.error) {
-    throw new Error(`Graph API error on ${path}: ${JSON.stringify(data.error || data)}`);
-  }
-  return data;
+      const res = await fetch(url, { method: 'POST', body });
+      const data = await res.json();
+      if (!res.ok || data.error) {
+        throw new Error(`Graph API error on ${path}: ${JSON.stringify(data.error || data)}`);
+      }
+      return data;
+    },
+    { isRetryable: isTransientHttpError, label: `POST ${path}` }
+  );
 }
 
 async function graphGet(path, params, accessToken) {
-  const url = new URL(graphUrl(path));
-  for (const [k, v] of Object.entries(params)) url.searchParams.set(k, v);
-  url.searchParams.set('access_token', accessToken);
+  return withRetry(
+    async () => {
+      const url = new URL(graphUrl(path));
+      for (const [k, v] of Object.entries(params)) url.searchParams.set(k, v);
+      url.searchParams.set('access_token', accessToken);
 
-  const res = await fetch(url);
-  const data = await res.json();
-  if (!res.ok || data.error) {
-    throw new Error(`Graph API error on ${path}: ${JSON.stringify(data.error || data)}`);
-  }
-  return data;
+      const res = await fetch(url);
+      const data = await res.json();
+      if (!res.ok || data.error) {
+        throw new Error(`Graph API error on ${path}: ${JSON.stringify(data.error || data)}`);
+      }
+      return data;
+    },
+    { isRetryable: isTransientHttpError, label: `GET ${path}` }
+  );
 }
 
 /**
@@ -55,17 +67,25 @@ async function waitForContainerReady(containerId, accessToken, { timeoutMs = 600
 }
 
 /**
- * Fetches insights (reach, likes, comments, etc.) for one published media
- * item. Metric sets are configurable via env vars since Meta has renamed/
- * deprecated Insights metrics multiple times (most recently Jan 2025) —
- * if a future change breaks this, no code change is needed, just update
- * the env var. Returns a flat { metricName: value } object.
+ * Fetches insights for one media item, one metric at a time rather than
+ * one combined request. Meta deprecates/renames Insights metrics fairly
+ * often (several were removed in Jan 2025's v21 changes) — a combined
+ * request fails entirely if even one metric name is invalid for that
+ * media type/version, losing ALL metrics for that post. Per-metric calls
+ * mean a single stale metric name just gets skipped (and logged) instead.
  */
 export async function getMediaInsights(mediaId, accessToken, metrics) {
-  const { data } = await graphGet(`${mediaId}/insights`, { metric: metrics.join(',') }, accessToken);
   const result = {};
-  for (const entry of data) {
-    result[entry.name] = entry.values?.[0]?.value ?? entry.total_value?.value ?? null;
+  for (const metric of metrics) {
+    try {
+      const { data } = await graphGet(`${mediaId}/insights`, { metric }, accessToken);
+      const entry = data?.[0];
+      if (entry) {
+        result[entry.name] = entry.values?.[0]?.value ?? entry.total_value?.value ?? null;
+      }
+    } catch (err) {
+      console.warn(`    Metric "${metric}" unavailable for ${mediaId}: ${err.message.slice(0, 150)}`);
+    }
   }
   return result;
 }

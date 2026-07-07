@@ -4,7 +4,7 @@ A multi-tenant AI content automation engine: it researches trustworthy sources, 
 
 Built to run entirely on free infrastructure — GitHub Actions for scheduled/triggered compute, the git repo itself as the database, Cloudflare Workers for the one always-on piece (catching Telegram approvals). No server to keep running, no hosting bill.
 
-**Status:** Milestone 1 (scaffold) complete. See `SETUP.md` for what to configure, and the roadmap below for what's next.
+**Status:** Milestones 0–11 complete. See `SETUP.md` for what to configure, and the roadmap below for what's next.
 
 ## How it works
 
@@ -43,8 +43,28 @@ data/<accountId>/queue/             pending/ -> approved/ -> published/
 - [x] Milestone 8 — Reel video assembly (ffmpeg: pans/zooms/crossfades from slides)
 - [x] Milestone 9 — Reel voiceover (Piper TTS) + music, reels wired into Telegram approval + Instagram publish
 - [x] Milestone 10 — Analytics agent + weekly summary
-- [ ] Milestone 11 — Hardening: retries, error alerts, docs
+- [x] Milestone 11 — Hardening: retries, error alerts, docs
 - [ ] Milestone 12 — Add The English Vault as a second account
+
+## Troubleshooting
+
+**A step failed and I got a 🚨 Telegram alert — now what?**
+Check the **Actions** tab for that workflow run; the alert includes the failing script's name and the first 500 characters of the error, but the full log (including any retry attempts leading up to it) is in the run itself.
+
+**"No pending post found with approvalHash..." in the Handle Approval log.**
+Not a bug — this means the tap was already processed (Telegram retries webhook delivery on any non-2xx response, so a duplicate delivery is expected occasionally) or the post was somehow already moved. Safe to ignore if it only happens occasionally.
+
+**A script failed with a JSON parse error on `history.json`.**
+`loadHistory()` catches this and falls back to empty history rather than crashing — check the warning log for which account's file is corrupted, then fix it manually on GitHub (valid shape: `{"processedUrls": [], "lastUpdated": null}`).
+
+**Gemini/Groq/Telegram/Instagram calls failing intermittently.**
+These now retry automatically (exponential backoff, up to 3 attempts) for transient failures — network errors, 429 rate limits, 5xx server errors. A call that fails immediately without retrying means the error was classified as non-transient (e.g. a genuine 401/403 auth problem, or bad request parameters) — check the error message for what's actually wrong rather than assuming it'll resolve itself.
+
+**ffmpeg / Piper not found.**
+Both are installed fresh in each workflow run (`apt-get install ffmpeg`, `pip install piper-tts`) rather than assumed pre-installed — if either step is missing from a workflow you're editing, that's why a later step would fail with an ENOENT-style error.
+
+**No Telegram alert arrived for a failed step.**
+`TELEGRAM_BOT_TOKEN`/`TELEGRAM_CHAT_ID` need to be set at the **job level** (not just on individual steps) for `alertFailure()` to reach them regardless of which step fails — this is already how `daily-pipeline.yml` and `handle-approval.yml` are set up; keep that pattern if you add new steps.
 
 ## License
 

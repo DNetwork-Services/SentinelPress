@@ -1,5 +1,6 @@
 import fs from 'fs';
 import crypto from 'crypto';
+import { withRetry, isTransientHttpError } from './retry.mjs';
 
 const TELEGRAM_CAPTION_LIMIT = 4096; // sendMessage text limit
 
@@ -8,18 +9,23 @@ function apiUrl(botToken, method) {
 }
 
 async function telegramCall(botToken, method, body) {
-  const isForm = body instanceof FormData;
-  const res = await fetch(apiUrl(botToken, method), {
-    method: 'POST',
-    headers: isForm ? undefined : { 'Content-Type': 'application/json' },
-    body: isForm ? body : JSON.stringify(body),
-  });
+  return withRetry(
+    async () => {
+      const isForm = body instanceof FormData;
+      const res = await fetch(apiUrl(botToken, method), {
+        method: 'POST',
+        headers: isForm ? undefined : { 'Content-Type': 'application/json' },
+        body: isForm ? body : JSON.stringify(body),
+      });
 
-  const data = await res.json();
-  if (!data.ok) {
-    throw new Error(`Telegram API error (${method}): ${data.description || res.status}`);
-  }
-  return data.result;
+      const data = await res.json();
+      if (!data.ok) {
+        throw new Error(`Telegram API error (${method}): ${data.description || res.status}`);
+      }
+      return data.result;
+    },
+    { isRetryable: isTransientHttpError, label: `Telegram ${method}` }
+  );
 }
 
 /**

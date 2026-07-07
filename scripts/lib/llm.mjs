@@ -4,55 +4,67 @@
 //
 // Both are called via plain fetch — no SDK dependency, keeps package.json empty.
 
+import { withRetry, isTransientHttpError } from './retry.mjs';
+
 const GEMINI_MODEL = process.env.GEMINI_MODEL || 'gemini-2.5-flash';
 const GROQ_MODEL = process.env.GROQ_MODEL || 'llama-3.3-70b-versatile';
 
 async function callGemini(prompt, apiKey) {
-  const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
-  const res = await fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      'x-goog-api-key': apiKey,
+  return withRetry(
+    async () => {
+      const url = `https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:generateContent`;
+      const res = await fetch(url, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'x-goog-api-key': apiKey,
+        },
+        body: JSON.stringify({
+          contents: [{ role: 'user', parts: [{ text: prompt }] }],
+        }),
+      });
+
+      if (!res.ok) {
+        const body = await res.text().catch(() => '');
+        throw new Error(`Gemini API error ${res.status}: ${body.slice(0, 300)}`);
+      }
+
+      const data = await res.json();
+      const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text).join('') ?? '';
+      if (!text) throw new Error('Gemini returned an empty response.');
+      return text;
     },
-    body: JSON.stringify({
-      contents: [{ role: 'user', parts: [{ text: prompt }] }],
-    }),
-  });
-
-  if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(`Gemini API error ${res.status}: ${body.slice(0, 300)}`);
-  }
-
-  const data = await res.json();
-  const text = data?.candidates?.[0]?.content?.parts?.map((p) => p.text).join('') ?? '';
-  if (!text) throw new Error('Gemini returned an empty response.');
-  return text;
+    { isRetryable: isTransientHttpError, label: 'Gemini call' }
+  );
 }
 
 async function callGroq(prompt, apiKey) {
-  const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-      Authorization: `Bearer ${apiKey}`,
+  return withRetry(
+    async () => {
+      const res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+          model: GROQ_MODEL,
+          messages: [{ role: 'user', content: prompt }],
+        }),
+      });
+
+      if (!res.ok) {
+        const body = await res.text().catch(() => '');
+        throw new Error(`Groq API error ${res.status}: ${body.slice(0, 300)}`);
+      }
+
+      const data = await res.json();
+      const text = data?.choices?.[0]?.message?.content ?? '';
+      if (!text) throw new Error('Groq returned an empty response.');
+      return text;
     },
-    body: JSON.stringify({
-      model: GROQ_MODEL,
-      messages: [{ role: 'user', content: prompt }],
-    }),
-  });
-
-  if (!res.ok) {
-    const body = await res.text().catch(() => '');
-    throw new Error(`Groq API error ${res.status}: ${body.slice(0, 300)}`);
-  }
-
-  const data = await res.json();
-  const text = data?.choices?.[0]?.message?.content ?? '';
-  if (!text) throw new Error('Groq returned an empty response.');
-  return text;
+    { isRetryable: isTransientHttpError, label: 'Groq call' }
+  );
 }
 
 /**

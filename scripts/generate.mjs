@@ -3,6 +3,7 @@ import path from 'path';
 import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, writePendingPost } from './lib/queue.mjs';
 import { callLLM, callLLMForJSON } from './lib/llm.mjs';
+import { alertFailure } from './lib/alert.mjs';
 
 function loadPrompt(account, promptRelPath) {
   const fullPath = path.join(account._dir, promptRelPath);
@@ -97,7 +98,8 @@ async function main() {
   console.log(`\nDone. ${total} post(s) generated.`);
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error('[generate] Fatal error:', err);
+  await alertFailure('generate', err);
   process.exit(1);
 });

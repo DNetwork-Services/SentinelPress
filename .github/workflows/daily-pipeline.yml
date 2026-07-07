@@ -15,6 +15,11 @@ permissions:
 jobs:
   run-pipeline:
     runs-on: ubuntu-latest
+    env:
+      # Job-level (not step-level) so alertFailure() can send a Telegram
+      # alert no matter which step fails, not just the "notify" step.
+      TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+      TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
     steps:
       - uses: actions/checkout@v4
 
@@ -64,9 +69,6 @@ jobs:
       # Milestone 5
       - name: Send to Telegram for approval
         run: npm run notify
-        env:
-          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
-          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
 
       - name: Commit generated content
         run: |

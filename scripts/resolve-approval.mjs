@@ -1,5 +1,6 @@
 import { loadActiveAccounts } from './lib/config.mjs';
 import { movePost, findPendingByApprovalHash } from './lib/queue.mjs';
+import { alertFailure } from './lib/alert.mjs';
 
 function requireEnv(name) {
   const value = process.env[name];
@@ -35,7 +36,8 @@ async function main() {
   console.log(`Moved "${post.article.title}" (${account.displayName}) to ${toStage}/.`);
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error('[resolve-approval] Fatal error:', err);
+  await alertFailure('resolve-approval', err);
   process.exit(1);
 });

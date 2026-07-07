@@ -2,6 +2,7 @@ import { loadActiveAccounts, loadHistory, saveHistory } from './lib/config.mjs';
 import { fetchFeed } from './lib/rss.mjs';
 import { pickTopArticles } from './lib/rank.mjs';
 import { writePendingPost, slugify } from './lib/queue.mjs';
+import { alertFailure } from './lib/alert.mjs';
 
 async function researchAccount(account) {
   console.log(`\n=== ${account.displayName} ===`);
@@ -89,7 +90,8 @@ async function main() {
   console.log(`\nDone. ${totalQueued} post(s) queued across all accounts.`);
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error('[research] Fatal error:', err);
+  await alertFailure('research', err);
   process.exit(1);
 });

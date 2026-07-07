@@ -1,6 +1,7 @@
 import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, movePost } from './lib/queue.mjs';
 import { publishCarousel, publishReel } from './lib/instagram.mjs';
+import { alertFailure } from './lib/alert.mjs';
 
 function requireEnv(name) {
   const value = process.env[name];
@@ -93,7 +94,8 @@ async function main() {
   console.log(`\nDone. ${total} post(s) published.`);
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error('[publish-instagram] Fatal error:', err);
+  await alertFailure('publish-instagram', err);
   process.exit(1);
 });

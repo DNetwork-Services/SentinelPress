@@ -2,6 +2,7 @@ import path from 'path';
 import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, writePendingPost, queueDir } from './lib/queue.mjs';
 import { sendPostForApproval } from './lib/telegram.mjs';
+import { alertFailure } from './lib/alert.mjs';
 
 function resolveEnvVar(name) {
   const value = process.env[name];
@@ -59,7 +60,8 @@ async function main() {
   console.log(`\nDone. ${total} post(s) sent for approval.`);
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error('[notify-telegram] Fatal error:', err);
+  await alertFailure('notify-telegram', err);
   process.exit(1);
 });

@@ -6,6 +6,7 @@ import { synthesizeSpeech } from './lib/tts.mjs';
 import { mixNarrationWithMusic } from './lib/audiomix.mjs';
 import { getDurationSeconds } from './lib/media.mjs';
 import { assembleReel } from './lib/reel.mjs';
+import { alertFailure } from './lib/alert.mjs';
 
 // Backstop cleanup in case the LLM still slips in a conversational
 // preamble or structural label despite the prompt now explicitly
@@ -107,7 +108,8 @@ async function main() {
   console.log(`\nDone. ${total} reel(s) got a voiceover.`);
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error('[render-voiceover] Fatal error:', err);
+  await alertFailure('render-voiceover', err);
   process.exit(1);
 });

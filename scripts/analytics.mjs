@@ -4,6 +4,7 @@ import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, analyticsDir } from './lib/queue.mjs';
 import { getCarouselInsights, getReelInsights } from './lib/instagram.mjs';
 import { sendWeeklySummary } from './lib/telegram.mjs';
+import { alertFailure } from './lib/alert.mjs';
 
 function requireEnv(name) {
   const value = process.env[name];
@@ -98,7 +99,8 @@ async function main() {
   }
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error('[analytics] Fatal error:', err);
+  await alertFailure('analytics', err);
   process.exit(1);
 });

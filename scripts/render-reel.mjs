@@ -2,6 +2,7 @@ import path from 'path';
 import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, writePendingPost, queueDir } from './lib/queue.mjs';
 import { assembleReel } from './lib/reel.mjs';
+import { alertFailure } from './lib/alert.mjs';
 
 async function renderReelForAccount(account) {
   console.log(`\n=== ${account.displayName} ===`);
@@ -46,7 +47,8 @@ async function main() {
   console.log(`\nDone. ${total} reel(s) assembled.`);
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error('[render-reel] Fatal error:', err);
+  await alertFailure('render-reel', err);
   process.exit(1);
 });

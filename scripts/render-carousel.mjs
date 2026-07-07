@@ -6,6 +6,7 @@ import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, writePendingPost, queueDir } from './lib/queue.mjs';
 import { buildSlideElement } from '../templates/carousel/slideTemplates.mjs';
 import { fetchTopicPhoto } from './lib/stockphoto.mjs';
+import { alertFailure } from './lib/alert.mjs';
 
 const FONTS_DIR = path.join(process.cwd(), 'assets', 'fonts');
 
@@ -110,7 +111,8 @@ async function main() {
   console.log(`\nDone. ${total} post(s) rendered.`);
 }
 
-main().catch((err) => {
+main().catch(async (err) => {
   console.error('[render-carousel] Fatal error:', err);
+  await alertFailure('render-carousel', err);
   process.exit(1);
 });
