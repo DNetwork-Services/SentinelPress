@@ -1,0 +1,125 @@
+{
+  "id": "the-hacker-news-beyondtrust-patches-critical-auth-bypass-flaws-in-remote-support",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "BeyondTrust Patches Critical Auth Bypass Flaws in Remote Support and PRA",
+    "link": "https://thehackernews.com/2026/07/beyondtrust-patches-critical-auth.html",
+    "description": "BeyondTrust has released updates to address two critical security flaws affecting Remote Support (RS) and Privileged Remote Access (PRA) products that, if successfully exploited, could allow unauthenticated attackers to take control of susceptible devices. The vulnerabilities are listed below - CVE-2026-40138 (CVSS score: 9.2) - A pre-authentication vulnerability exists in the",
+    "content": "",
+    "pubDate": "Tue, 07 Jul 2026 10:46:51 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEim5I3ndx1DHNKSznD7AT_CM4ApiaXDfZcQAwsCSDnHq7u8dkGcOzway-IBZJ44bFJintaRMSry4yHbaacESRFOJsRC_UBV6N9l_K4ICcqWsZ2E4zQ5BGibAkxjxm0qPYiiLEvAvDizmPZVYwXC6jN9pgB5G-3xZ9ifiEWisKsZoi9rBjJN1mepJjPl61s9/s1600/bt.jpg"
+  },
+  "score": 0.9932881589506173,
+  "selectedAt": "2026-07-07T06:29:20.273Z",
+  "generated": {
+    "caption": "Here's your Instagram caption:\n\nImagine an attacker taking control of your remote support tools without even needing a password! 🤯\n\nBeyondTrust has just released urgent updates to patch two critical security flaws in their Remote Support (RS) and Privileged Remote Access (PRA) products. These serious vulnerabilities, if exploited, could allow unauthenticated attackers to completely take over susceptible devices.\n\nOne of the issues, identified as CVE-2026-40138 (with a high CVSS score of 9.2), is a pre-authentication vulnerability. This means an attacker could potentially bypass login requirements to gain unauthorized access.\n\nIf your organization uses BeyondTrust RS or PRA, it's absolutely critical to apply these updates immediately to protect your systems from potential compromise. Don't delay!\n\nStay secure and informed! Save this post, share it with colleagues who use BeyondTrust, and follow @CyberShieldAlerts for daily cybersecurity, AI security, and threat intelligence updates!",
+    "script": "Major security alert! Unauthenticated attackers could be taking full control of your devices. BeyondTrust just patched two critical security flaws in their Remote Support and Privileged Remote Access products. These vulnerabilities, including CVE-2026-40138, have a CVSS score of 9.2. This means bad actors could exploit them without needing any login credentials, allowing them to seize complete control of your susceptible systems. The risk of full system takeover is extremely high. Protect your network now. Update your BeyondTrust Remote Support and PRA products immediately to patch these critical flaws and secure your systems.",
+    "hashtags": [
+      "cybersecurity",
+      "infosec",
+      "beyondtrust",
+      "remotesupport",
+      "pra",
+      "privilegedremoteaccess",
+      "authbypass",
+      "authenticationbypass",
+      "vulnerability",
+      "cve202640138",
+      "securitypatch",
+      "cyberalert",
+      "cybernews",
+      "criticalvulnerability",
+      "exploit",
+      "hacking",
+      "securityawareness",
+      "cyberthreat",
+      "remoteaccesssecurity",
+      "patchmanagement"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "BeyondTrust Critical Flaws Patched!",
+        "imageQuery": "urgent red warning light"
+      },
+      {
+        "type": "body",
+        "heading": "Urgent Security Alert!",
+        "text": "BeyondTrust has fixed critical vulnerabilities in their Remote Support (RS) and Privileged Remote Access (PRA) products.",
+        "imageQuery": "digital lock breaking apart"
+      },
+      {
+        "type": "body",
+        "heading": "What's the Danger?",
+        "text": "These flaws could allow unauthenticated attackers to take full control of affected devices. A severe access bypass.",
+        "imageQuery": "shadowy figure keyboard screen"
+      },
+      {
+        "type": "body",
+        "heading": "Critical Risk Confirmed",
+        "text": "One vulnerability, CVE-2026-40138, scored 9.2 CVSS – highlighting its extreme severity.",
+        "imageQuery": "red glowing critical error"
+      },
+      {
+        "type": "body",
+        "heading": "BeyondTrust Released Updates!",
+        "text": "Crucial updates are available now. Apply them immediately to secure your systems.",
+        "imageQuery": "person relieved looking laptop"
+      },
+      {
+        "type": "cta",
+        "text": "Stay CyberSafe! Follow @CyberShieldAlerts for vital security updates and tips. Save this post to share with your team!",
+        "imageQuery": "secure digital shield glowing"
+      }
+    ],
+    "generatedAt": "2026-07-07T06:29:43.705Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-beyondtrust-patches-critical-auth-bypass-flaws-in-remote-support-slide-01.png",
+      "the-hacker-news-beyondtrust-patches-critical-auth-bypass-flaws-in-remote-support-slide-02.png",
+      "the-hacker-news-beyondtrust-patches-critical-auth-bypass-flaws-in-remote-support-slide-03.png",
+      "the-hacker-news-beyondtrust-patches-critical-auth-bypass-flaws-in-remote-support-slide-04.png",
+      "the-hacker-news-beyondtrust-patches-critical-auth-bypass-flaws-in-remote-support-slide-05.png",
+      "the-hacker-news-beyondtrust-patches-critical-auth-bypass-flaws-in-remote-support-slide-06.png"
+    ],
+    "photoCredits": [
+      {
+        "photographer": "Ann H",
+        "url": "https://www.pexels.com/photo/an-exit-sign-on-a-wall-21294046/"
+      },
+      {
+        "photographer": "Felix Möller",
+        "url": "https://www.pexels.com/photo/close-up-of-combination-lock-dial-numbers-36750789/"
+      },
+      {
+        "photographer": "Tima Miroshnichenko",
+        "url": "https://www.pexels.com/photo/monochrome-photo-of-a-mysterious-hacker-shown-in-black-flat-screen-monitor-5380837/"
+      },
+      {
+        "photographer": "Polina Zimmerman",
+        "url": "https://www.pexels.com/photo/close-up-photo-of-black-smartphone-3747159/"
+      },
+      {
+        "photographer": "Tiger Lily",
+        "url": "https://www.pexels.com/photo/photo-of-a-woman-smiling-while-looking-up-8259513/"
+      },
+      {
+        "photographer": "cottonbro studio",
+        "url": "https://www.pexels.com/photo/side-view-of-a-bearded-man-wearing-eyeglasses-5474024/"
+      }
+    ],
+    "renderedAt": "2026-07-07T06:29:48.819Z",
+    "reelVideo": "the-hacker-news-beyondtrust-patches-critical-auth-bypass-flaws-in-remote-support-reel.mp4",
+    "reelDurationSeconds": 41.37795899999999,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "9ffdd456515ae38b",
+  "notifiedAt": "2026-07-07T06:31:38.042Z"
+}
