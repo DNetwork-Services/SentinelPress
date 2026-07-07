@@ -1,3 +1,5 @@
+import { buildMoodBackground } from './moodBackground.mjs';
+
 // Builds Satori element trees (plain object form, no JSX) for each slide type.
 // Canvas is 1080x1350 (4:5 portrait — Instagram's tallest supported ratio,
 // maximizes readable space for carousels).
@@ -97,55 +99,15 @@ function footer(brand, index, total) {
 }
 
 /**
- * Wraps a slide's content in the shared frame: header, the content itself,
- * footer. If a backgroundPhoto is provided, it's laid in behind everything
- * with a dark gradient overlay (heavier toward the bottom, where text
- * usually sits) so text stays readable regardless of the photo underneath.
- * Every slide type uses this — title, body, and CTA all support photos now.
+ * Wraps a slide's content in the shared frame: a procedural mood
+ * background (gradient wash + glowing orbs, themed to the slide's
+ * imageQuery) sits behind the header/content/footer. Every slide gets
+ * this — no external photo dependency, no attribution requirement, and
+ * each slide's colors match its specific emotional beat rather than one
+ * repeated photo across the whole carousel.
  */
-function buildFrame(brand, contentChildren, backgroundPhoto) {
-  if (!backgroundPhoto) {
-    return {
-      type: 'div',
-      props: {
-        style: {
-          width: '100%',
-          height: '100%',
-          display: 'flex',
-          flexDirection: 'column',
-          backgroundColor: brand.backgroundColor,
-          color: '#FFFFFF',
-          fontFamily: 'Poppins',
-          padding: 64,
-          position: 'relative',
-        },
-        children: contentChildren,
-      },
-    };
-  }
-
-  const backgroundLayer = {
-    type: 'img',
-    props: {
-      src: backgroundPhoto.dataUri,
-      style: { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' },
-    },
-  };
-
-  const overlayLayer = {
-    type: 'div',
-    props: {
-      style: {
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        width: '100%',
-        height: '100%',
-        backgroundImage: `linear-gradient(180deg, ${brand.backgroundColor}D9 0%, ${brand.backgroundColor}80 30%, ${brand.backgroundColor}F5 78%)`,
-        display: 'flex',
-      },
-    },
-  };
+function buildFrame(brand, contentChildren, imageQuery) {
+  const backgroundLayers = buildMoodBackground(imageQuery, brand);
 
   return {
     type: 'div',
@@ -159,17 +121,16 @@ function buildFrame(brand, contentChildren, backgroundPhoto) {
         padding: 64,
         fontFamily: 'Poppins',
         color: '#FFFFFF',
+        overflow: 'hidden',
       },
-      children: [backgroundLayer, overlayLayer, ...contentChildren],
+      children: [...backgroundLayers, ...contentChildren],
     },
   };
 }
 
-function textShadowIfPhoto(backgroundPhoto) {
-  return backgroundPhoto ? '0 4px 24px rgba(0,0,0,0.6)' : 'none';
-}
+const TEXT_SHADOW = '0 4px 20px rgba(0,0,0,0.5)'; // always on now — text sits over gradient art, not a flat color
 
-export function buildTitleSlide(slide, { brand, accountHandle, categoryLabel, index, total, backgroundPhoto }) {
+export function buildTitleSlide(slide, { brand, accountHandle, categoryLabel, index, total }) {
   const children = [
     header(brand, accountHandle, categoryLabel),
     {
@@ -185,7 +146,7 @@ export function buildTitleSlide(slide, { brand, accountHandle, categoryLabel, in
               lineHeight: 1.15,
               textAlign: 'center',
               display: 'flex',
-              textShadow: textShadowIfPhoto(backgroundPhoto),
+              textShadow: TEXT_SHADOW,
             },
             children: slide.text,
           },
@@ -194,10 +155,10 @@ export function buildTitleSlide(slide, { brand, accountHandle, categoryLabel, in
     },
     footer(brand, index, total),
   ];
-  return { element: buildFrame(brand, children, backgroundPhoto), canvas: CANVAS };
+  return { element: buildFrame(brand, children, slide.imageQuery), canvas: CANVAS };
 }
 
-export function buildBodySlide(slide, { brand, accountHandle, categoryLabel, index, total, backgroundPhoto }) {
+export function buildBodySlide(slide, { brand, accountHandle, categoryLabel, index, total }) {
   const children = [
     header(brand, accountHandle, categoryLabel),
     {
@@ -215,7 +176,7 @@ export function buildBodySlide(slide, { brand, accountHandle, categoryLabel, ind
                     color: brand.primaryColor,
                     marginBottom: 32,
                     display: 'flex',
-                    textShadow: textShadowIfPhoto(backgroundPhoto),
+                    textShadow: TEXT_SHADOW,
                   },
                   children: slide.heading,
                 },
@@ -229,7 +190,7 @@ export function buildBodySlide(slide, { brand, accountHandle, categoryLabel, ind
                 fontWeight: 400,
                 lineHeight: 1.4,
                 display: 'flex',
-                textShadow: textShadowIfPhoto(backgroundPhoto),
+                textShadow: TEXT_SHADOW,
               },
               children: slide.text,
             },
@@ -239,10 +200,10 @@ export function buildBodySlide(slide, { brand, accountHandle, categoryLabel, ind
     },
     footer(brand, index, total),
   ];
-  return { element: buildFrame(brand, children, backgroundPhoto), canvas: CANVAS };
+  return { element: buildFrame(brand, children, slide.imageQuery), canvas: CANVAS };
 }
 
-export function buildCtaSlide(slide, { brand, accountHandle, categoryLabel, index, total, backgroundPhoto }) {
+export function buildCtaSlide(slide, { brand, accountHandle, categoryLabel, index, total }) {
   const children = [
     header(brand, accountHandle, categoryLabel),
     {
@@ -266,7 +227,7 @@ export function buildCtaSlide(slide, { brand, accountHandle, categoryLabel, inde
                 textAlign: 'center',
                 marginBottom: 40,
                 display: 'flex',
-                textShadow: textShadowIfPhoto(backgroundPhoto),
+                textShadow: TEXT_SHADOW,
               },
               children: slide.text,
             },
@@ -291,7 +252,7 @@ export function buildCtaSlide(slide, { brand, accountHandle, categoryLabel, inde
     },
     footer(brand, index, total),
   ];
-  return { element: buildFrame(brand, children, backgroundPhoto), canvas: CANVAS };
+  return { element: buildFrame(brand, children, slide.imageQuery), canvas: CANVAS };
 }
 
 export function buildSlideElement(slide, ctx) {

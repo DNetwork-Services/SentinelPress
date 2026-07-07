@@ -12,7 +12,6 @@ Go to **Settings → Secrets and variables → Actions → New repository secret
 | `TELEGRAM_CHAT_ID` | Your personal Telegram chat ID | Milestone 5 |
 | `GEMINI_API_KEY` | Free-tier key from **Google AI Studio** (ai.google.dev) | Milestone 3 — now required |
 | `GROQ_API_KEY` | Free-tier key from **console.groq.com** | Milestone 3 — optional but recommended as automatic fallback |
-| `PEXELS_API_KEY` | Free key from **pexels.com/api** (instant, no card) | Adds a real topic photo to each carousel's title slide. Optional — renders a plain background if unset. |
 
 None of these ever get written into a code file — scripts read them only via `process.env.X` at runtime, and the workflow files map `secrets.X` to that env var. I (Claude) will never see or ask for the actual values.
 
@@ -56,6 +55,8 @@ npm run render
 
 Renders every post at `status: "generated"` into branded PNGs (1080x1350) using the account's brand colors from `config.json`, and saves them alongside the post JSON in `data/<accountId>/queue/pending/`. Open one to check text isn't overflowing and colors match your brand.
 
+**Backgrounds are procedurally generated, not stock photos.** Each slide's `imageQuery` (written by the LLM alongside its text — see `prompts/carousel.txt`) gets classified into an emotional mood (alarm/urgent/relief/curious/empowering) and rendered as a themed gradient-and-glow background — no external photo API, no attribution requirements, no network dependency to fail. See `templates/carousel/moodBackground.mjs` to adjust the mood palettes or add new mood buckets.
+
 Font: bundled `Poppins` (static weights, `assets/fonts/`) — Satori needs raw TTF/OTF data, not system fonts or variable fonts (variable fonts from Google Fonts' current `Inter` release failed to parse — a known Satori/opentype.js compatibility gap), so static-weight files are committed to the repo rather than fetched at runtime. To change the typeface, swap in different static-weight TTF files and update `loadFonts()` in `scripts/render-carousel.mjs`.
 
 ## 3d. Testing Milestone 5 (Telegram notifier) for real
@@ -66,7 +67,7 @@ With `TELEGRAM_BOT_TOKEN` and `TELEGRAM_CHAT_ID` set:
 npm run notify
 ```
 
-You should get a Telegram message from your bot: the carousel images as an album, followed by a text message with the caption/hashtags and **✅ Approve** / **❌ Reject** buttons. Tapping them won't do anything yet — that wiring is Milestone 6. This step just confirms delivery looks right.
+You should get a Telegram message from your bot: the carousel images as an album, then the reel video (if rendered), followed by a text message with the caption/hashtags and buttons: **📱 Post Carousel** / **🎬 Post Reel** / **❌ Reject**. You choose exactly one format to actually publish — never both from the same review. Tapping them won't do anything yet — that wiring is Milestone 6. This step just confirms delivery looks right.
 
 One thing to get right before this works: your bot can only message you if you've started a conversation with it first. Search for your bot's username in Telegram and hit **Start** once — otherwise `sendMediaGroup`/`sendMessage` will fail with a "chat not found" error.
 

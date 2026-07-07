@@ -11,9 +11,13 @@ function requireEnv(name) {
 async function main() {
   const approvalHash = requireEnv('DISPATCH_APPROVAL_HASH');
   const action = requireEnv('DISPATCH_ACTION'); // "approve" | "reject"
+  const format = process.env.DISPATCH_FORMAT || null; // "carousel" | "reel" | null (reject)
 
   if (!['approve', 'reject'].includes(action)) {
     throw new Error(`Unknown action "${action}" — expected "approve" or "reject".`);
+  }
+  if (action === 'approve' && !['carousel', 'reel'].includes(format)) {
+    throw new Error(`Approve action requires DISPATCH_FORMAT to be "carousel" or "reel", got "${format}".`);
   }
 
   const accounts = loadActiveAccounts();
@@ -31,9 +35,14 @@ async function main() {
   const toStage = action === 'approve' ? 'approved' : 'rejected';
 
   const timestampField = action === 'approve' ? 'approvedAt' : 'rejectedAt';
-  movePost(account.accountId, { ...post, status: toStage, [timestampField]: new Date().toISOString() }, 'pending', toStage);
+  movePost(
+    account.accountId,
+    { ...post, status: toStage, approvedFormat: format, [timestampField]: new Date().toISOString() },
+    'pending',
+    toStage
+  );
 
-  console.log(`Moved "${post.article.title}" (${account.displayName}) to ${toStage}/.`);
+  console.log(`Moved "${post.article.title}" (${account.displayName}) to ${toStage}/${format ? ` as ${format}` : ''}.`);
 }
 
 main().catch(async (err) => {

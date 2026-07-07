@@ -34,7 +34,7 @@ async function editMessage(botToken, chatId, messageId, newText) {
   });
 }
 
-async function dispatchToGitHub(env, eventType, approvalHash) {
+async function dispatchToGitHub(env, eventType, approvalHash, format) {
   const res = await fetch(`https://api.github.com/repos/${env.GITHUB_REPO}/dispatches`, {
     method: 'POST',
     headers: {
@@ -44,7 +44,7 @@ async function dispatchToGitHub(env, eventType, approvalHash) {
     },
     body: JSON.stringify({
       event_type: eventType,
-      client_payload: { approvalHash },
+      client_payload: { approvalHash, format },
     }),
   });
 
@@ -81,7 +81,7 @@ export default {
     }
 
     const [prefix, action, approvalHash] = callbackQuery.data.split(':');
-    if (prefix !== 'sp' || !['approve', 'reject'].includes(action) || !approvalHash) {
+    if (prefix !== 'sp' || !['carousel', 'reel', 'reject'].includes(action) || !approvalHash) {
       return new Response('OK', { status: 200 });
     }
 
@@ -89,22 +89,26 @@ export default {
     const messageId = callbackQuery.message.message_id;
     const originalText = callbackQuery.message.text || '';
 
+    const feedback = {
+      carousel: 'Posting as Carousel 📱',
+      reel: 'Posting as Reel 🎬',
+      reject: 'Rejected ❌',
+    }[action];
+    const statusLine = {
+      carousel: '✅ POSTING AS CAROUSEL',
+      reel: '✅ POSTING AS REEL',
+      reject: '❌ REJECTED',
+    }[action];
+
     try {
       // Acknowledge fast so Telegram doesn't show a loading spinner / timeout error.
-      await answerCallbackQuery(
-        env.TELEGRAM_BOT_TOKEN,
-        callbackQuery.id,
-        action === 'approve' ? 'Approved ✅' : 'Rejected ❌'
-      );
+      await answerCallbackQuery(env.TELEGRAM_BOT_TOKEN, callbackQuery.id, feedback);
 
-      await editMessage(
-        env.TELEGRAM_BOT_TOKEN,
-        chatId,
-        messageId,
-        `${originalText}\n\n${action === 'approve' ? '✅ APPROVED' : '❌ REJECTED'}`
-      );
+      await editMessage(env.TELEGRAM_BOT_TOKEN, chatId, messageId, `${originalText}\n\n${statusLine}`);
 
-      await dispatchToGitHub(env, action === 'approve' ? 'post-approved' : 'post-rejected', approvalHash);
+      const eventType = action === 'reject' ? 'post-rejected' : 'post-approved';
+      const format = action === 'reject' ? null : action; // 'carousel' | 'reel'
+      await dispatchToGitHub(env, eventType, approvalHash, format);
 
       return new Response('OK', { status: 200 });
     } catch (err) {

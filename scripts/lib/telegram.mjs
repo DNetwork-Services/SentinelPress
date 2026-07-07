@@ -63,20 +63,21 @@ export function computeApprovalHash(accountId, postId) {
   return crypto.createHash('sha1').update(`${accountId}:${postId}`).digest('hex').slice(0, 16);
 }
 
-function buildApprovalKeyboard(approvalHash) {
+function buildApprovalKeyboard(approvalHash, hasReel) {
+  const row = [{ text: '📱 Post Carousel', callback_data: `sp:carousel:${approvalHash}` }];
+  if (hasReel) {
+    row.push({ text: '🎬 Post Reel', callback_data: `sp:reel:${approvalHash}` });
+  }
   return {
     inline_keyboard: [
-      [
-        { text: '✅ Approve', callback_data: `sp:approve:${approvalHash}` },
-        { text: '❌ Reject', callback_data: `sp:reject:${approvalHash}` },
-      ],
+      row,
+      [{ text: '❌ Reject', callback_data: `sp:reject:${approvalHash}` }],
     ],
   };
 }
 
 function buildCaptionMessage(post) {
   const hashtagLine = (post.generated.hashtags || []).map((h) => `#${h}`).join(' ');
-  const photoCredits = post.render?.photoCredits || [];
   const parts = [
     `📰 ${post.article.title}`,
     '',
@@ -84,10 +85,6 @@ function buildCaptionMessage(post) {
     '',
     hashtagLine,
   ];
-  if (photoCredits.length > 0) {
-    const creditLine = photoCredits.map((c) => c.photographer).join(', ');
-    parts.push('', `📷 Photos by ${creditLine} on Pexels`);
-  }
   return parts.join('\n').slice(0, TELEGRAM_CAPTION_LIMIT);
 }
 
@@ -135,7 +132,8 @@ export async function sendWeeklySummary(botToken, chatId, account, summary) {
 /**
  * Sends the full preview for one pending post: carousel images, then
  * the reel video (if rendered), then a text message with caption +
- * hashtags + Approve/Reject buttons covering the whole post.
+ * hashtags + a choice of Post Carousel / Post Reel / Reject — you pick
+ * ONE format to actually publish, never both from the same review.
  * Returns the approvalHash so the caller can persist it on the post.
  */
 export async function sendPostForApproval(botToken, chatId, post, imageAbsolutePaths, reelAbsolutePath) {
@@ -146,10 +144,12 @@ export async function sendPostForApproval(botToken, chatId, post, imageAbsoluteP
   }
 
   const approvalHash = computeApprovalHash(post.accountId, post.id);
+  const text = buildCaptionMessage(post) + (reelAbsolutePath ? '\n\n👆 Choose which format to publish:' : '');
+
   await telegramCall(botToken, 'sendMessage', {
     chat_id: chatId,
-    text: buildCaptionMessage(post),
-    reply_markup: buildApprovalKeyboard(approvalHash),
+    text,
+    reply_markup: buildApprovalKeyboard(approvalHash, Boolean(reelAbsolutePath)),
   });
 
   return approvalHash;

@@ -38,7 +38,7 @@ data/<accountId>/queue/             pending/ -> approved/ -> published/
 - [x] Milestone 4 — Carousel image renderer
 - [x] Milestone 5 — Telegram notifier
 - [x] Milestone 6 — Cloudflare Worker webhook + approve/reject buttons
-- [x] Milestone 4b — Real topic photos on title slides (Pexels, free tier)
+- [x] Milestone 4b — Procedural mood-based backgrounds (replaced Pexels — no attribution requirement, no network dependency, and each slide's colors now match its specific emotional beat)
 - [x] Milestone 7 — Instagram publish agent
 - [x] Milestone 8 — Reel video assembly (ffmpeg: pans/zooms/crossfades from slides)
 - [x] Milestone 9 — Reel voiceover (Piper TTS) + music, reels wired into Telegram approval + Instagram publish
@@ -65,6 +65,18 @@ Both are installed fresh in each workflow run (`apt-get install ffmpeg`, `pip in
 
 **No Telegram alert arrived for a failed step.**
 `TELEGRAM_BOT_TOKEN`/`TELEGRAM_CHAT_ID` need to be set at the **job level** (not just on individual steps) for `alertFailure()` to reach them regardless of which step fails — this is already how `daily-pipeline.yml` and `handle-approval.yml` are set up; keep that pattern if you add new steps.
+
+**Tapping Approve/Reject does nothing, and nothing posts to Instagram.**
+Since the Cloudflare Worker runs outside this repo, I can't see its logs directly — work through this in order, it'll be one of these:
+
+1. **Is a "Handle Approval" run appearing in the Actions tab at all after you tap a button?**
+   - **No run appears** → the problem is between Telegram and the Worker, or the Worker and GitHub. Run `wrangler tail` in the `cloudflare-worker/` folder, then tap a button — this streams the Worker's live logs and will show exactly what happened (or didn't).
+   - **A run appears but fails** → open it and read the failing step's log directly; skip to the specific error.
+2. **Check the webhook is actually registered:** `curl https://api.telegram.org/bot<TOKEN>/getWebhookInfo` — confirm `url` matches your deployed Worker's URL, and check `last_error_message` for clues if it's non-empty.
+3. **Check your GitHub PAT hasn't expired or lost permission** — fine-grained PATs expire on the date you set (commonly 90 days). Settings → Developer settings → Personal access tokens → confirm it's still active with **Contents: Read and write** on this repo. If expired, generate a new one and `wrangler secret put GITHUB_PAT` again.
+4. **Check `main` doesn't have a branch-protection rule requiring PRs** — Settings → Rules → Rulesets on this repo. This exact issue broke direct pushes on the other website repo earlier; if a similar rule exists here, `git push` in the commit steps will fail outright. Either remove the rule or add a bypass for `github-actions`.
+5. **Double check the Worker's 4 secrets are all set correctly**: `wrangler secret list` shows names but not values — if you're unsure a value is right, `wrangler secret put <NAME>` again to overwrite it.
+
 
 ## License
 

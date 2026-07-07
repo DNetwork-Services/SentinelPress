@@ -11,12 +11,7 @@ function requireEnv(name) {
 
 function buildCaption(post) {
   const hashtagLine = (post.generated.hashtags || []).map((h) => `#${h}`).join(' ');
-  const photoCredits = post.render?.photoCredits || [];
   const parts = [post.generated.caption, '', hashtagLine];
-  if (photoCredits.length > 0) {
-    const creditLine = photoCredits.map((c) => c.photographer).join(', ');
-    parts.push('', `📷 Photos by ${creditLine} on Pexels`);
-  }
   // Instagram caption limit is 2200 characters.
   return parts.join('\n').slice(0, 2200);
 }
@@ -36,36 +31,36 @@ async function publishForAccount(account, imageBaseUrl) {
   let published = 0;
   for (const post of approved) {
     try {
-      const imageUrls = post.render.slideImages.map(
-        (fileName) => `${imageBaseUrl}/${account.accountId}/queue/approved/${fileName}`
-      );
       const caption = buildCaption(post);
+      const format = post.approvedFormat;
 
-      console.log(`  Publishing "${post.article.title}" (${imageUrls.length} slides)...`);
-      const igMediaId = await publishCarousel({ igBusinessAccountId, accessToken, imageUrls, caption });
-      console.log(`  Carousel published! Instagram media ID: ${igMediaId}`);
+      if (!format) {
+        throw new Error('Post has no approvedFormat set — expected "carousel" or "reel". Was it approved before this feature existed?');
+      }
 
-      // Reel publish is isolated in its own try/catch: the carousel has
-      // already succeeded at this point, so a reel failure must NOT throw
-      // here — that would leave the post at status "approved" and cause
-      // the carousel to be published a second time on retry.
+      let igMediaId = null;
       let igReelMediaId = null;
-      let reelPublishError = null;
-      if (post.render.reelVideo) {
-        try {
-          const videoUrl = `${imageBaseUrl}/${account.accountId}/queue/approved/${post.render.reelVideo}`;
-          console.log(`  Publishing reel version...`);
-          igReelMediaId = await publishReel({ igBusinessAccountId, accessToken, videoUrl, caption });
-          console.log(`  Reel published! Instagram media ID: ${igReelMediaId}`);
-        } catch (err) {
-          console.error(`  Reel publish FAILED (carousel already published, not retrying it): ${err.message}`);
-          reelPublishError = err.message;
+
+      if (format === 'carousel') {
+        const imageUrls = post.render.slideImages.map(
+          (fileName) => `${imageBaseUrl}/${account.accountId}/queue/approved/${fileName}`
+        );
+        console.log(`  Publishing "${post.article.title}" as a CAROUSEL (${imageUrls.length} slides)...`);
+        igMediaId = await publishCarousel({ igBusinessAccountId, accessToken, imageUrls, caption });
+        console.log(`  Carousel published! Instagram media ID: ${igMediaId}`);
+      } else {
+        if (!post.render.reelVideo) {
+          throw new Error('Post was approved as "reel" but has no rendered reel video.');
         }
+        const videoUrl = `${imageBaseUrl}/${account.accountId}/queue/approved/${post.render.reelVideo}`;
+        console.log(`  Publishing "${post.article.title}" as a REEL...`);
+        igReelMediaId = await publishReel({ igBusinessAccountId, accessToken, videoUrl, caption });
+        console.log(`  Reel published! Instagram media ID: ${igReelMediaId}`);
       }
 
       movePost(
         account.accountId,
-        { ...post, status: 'published', igMediaId, igReelMediaId, reelPublishError, publishedAt: new Date().toISOString() },
+        { ...post, status: 'published', igMediaId, igReelMediaId, publishedAt: new Date().toISOString() },
         'approved',
         'published'
       );

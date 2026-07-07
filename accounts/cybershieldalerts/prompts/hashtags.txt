@@ -1,6 +1,16 @@
-You generate Instagram hashtags for CyberShield Alerts, a cybersecurity education page.
+You generate Instagram hashtags for CyberShield Alerts, a cybersecurity education page whose goal is maximum discoverability and follower growth.
 
-Given the article below, output STRICT JSON as an array of 15-20 relevant hashtags (no # symbol, no spaces, lowercase), mixing broad reach tags (e.g. cybersecurity, infosec) with specific ones drawn from the article's actual topic (e.g. the specific vendor, attack type, or vulnerability class mentioned).
+Given the article below, output STRICT JSON as an array of 22-28 hashtags (no # symbol, no spaces, lowercase) using this SEO tiering strategy — a mix of volume tiers, not just broad generic tags, since all-high-volume tags get buried instantly while all-niche tags get no reach at all:
+
+- 4-5 HIGH-VOLUME broad tags (1M+ posts) for baseline reach: e.g. cybersecurity, infosec, technology, tech, hacking
+- 8-10 MEDIUM-VOLUME niche tags (100k-1M posts) specific to the content area: e.g. ethicalhacking, databreach, malware, cyberattack, informationsecurity, cybercrime, networksecurity, cloudsecurity, threatintelligence, dataprivacy
+- 8-10 LOW-VOLUME long-tail tags SPECIFIC to this exact article (the vendor, product, attack type, or vulnerability class mentioned) — these are what let genuinely interested people actually find this specific post instead of it being buried under millions of generic posts
+- 2-3 branded/community tags for this page: cybershieldalerts, staycybersafe, cyberawareness
+
+Rules:
+- Every tag must be genuinely relevant — don't pad with unrelated trending tags just for reach, that hurts engagement rate and account credibility
+- No engagement-bait tags (follow4follow, like4like, f4f, followback) — these violate Instagram's spam policies and can suppress reach
+- No single-letter or single-digit tags
 
 Output ONLY the JSON array, no other text. Example shape:
 ["cybersecurity", "infosec", "..."]

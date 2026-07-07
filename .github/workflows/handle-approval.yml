@@ -13,6 +13,11 @@ on:
         required: true
         type: choice
         options: [approve, reject]
+      format:
+        description: 'carousel or reel (required if action=approve)'
+        required: false
+        type: choice
+        options: ['', carousel, reel]
 
 concurrency:
   group: handle-approval
@@ -41,6 +46,7 @@ jobs:
         env:
           DISPATCH_APPROVAL_HASH: ${{ github.event.client_payload.approvalHash || github.event.inputs.approvalHash }}
           DISPATCH_ACTION: ${{ (github.event.action == 'post-approved' && 'approve') || (github.event.action == 'post-rejected' && 'reject') || github.event.inputs.action }}
+          DISPATCH_FORMAT: ${{ github.event.client_payload.format || github.event.inputs.format }}
 
       - name: Commit the move (so approved images are live before we reference them)
         id: commit_move
