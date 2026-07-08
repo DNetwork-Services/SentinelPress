@@ -43,6 +43,8 @@ jobs:
       # Milestone 4
       - name: Render carousel images
         run: npm run render
+        env:
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
 
       # Milestone 8
       - name: Install ffmpeg

@@ -47,7 +47,7 @@ function header(brand, accountHandle, categoryLabel) {
   };
 }
 
-function footer(brand, index, total) {
+function footer(brand, index, total, photoCredit) {
   return {
     type: 'div',
     props: {
@@ -62,27 +62,46 @@ function footer(brand, index, total) {
         {
           type: 'div',
           props: {
-            style: {
-              width: 200,
-              height: 6,
-              borderRadius: 3,
-              backgroundColor: '#222233',
-              display: 'flex',
-              position: 'relative',
-            },
+            style: { display: 'flex', flexDirection: 'column' },
             children: [
               {
                 type: 'div',
                 props: {
                   style: {
-                    width: `${Math.round((index / total) * 200)}px`,
+                    width: 200,
                     height: 6,
                     borderRadius: 3,
-                    backgroundColor: brand.primaryColor,
+                    backgroundColor: '#222233',
                     display: 'flex',
+                    position: 'relative',
                   },
+                  children: [
+                    {
+                      type: 'div',
+                      props: {
+                        style: {
+                          width: `${Math.round((index / total) * 200)}px`,
+                          height: 6,
+                          borderRadius: 3,
+                          backgroundColor: brand.primaryColor,
+                          display: 'flex',
+                        },
+                      },
+                    },
+                  ],
                 },
               },
+              // Small, unobtrusive on-image credit — satisfies Pexels' API
+              // attribution requirement without cluttering the caption.
+              photoCredit
+                ? {
+                    type: 'div',
+                    props: {
+                      style: { fontSize: 15, color: 'rgba(255,255,255,0.55)', marginTop: 10, display: 'flex' },
+                      children: `Photo: ${photoCredit.photographer} / Pexels`,
+                    },
+                  }
+                : { type: 'div', props: { children: '' } },
             ],
           },
         },
@@ -99,15 +118,39 @@ function footer(brand, index, total) {
 }
 
 /**
- * Wraps a slide's content in the shared frame: a procedural mood
- * background (gradient wash + glowing orbs, themed to the slide's
- * imageQuery) sits behind the header/content/footer. Every slide gets
- * this — no external photo dependency, no attribution requirement, and
- * each slide's colors match its specific emotional beat rather than one
- * repeated photo across the whole carousel.
+ * Wraps a slide's content in the shared frame. Background priority:
+ *   1. A real photo (Pexels, matched to the slide's imageQuery) if one
+ *      was successfully fetched — this is the primary look.
+ *   2. The procedural mood-gradient background as an automatic fallback
+ *      when no photo is available (API key missing, fetch failed, or
+ *      nothing matched the search) — so a slide never renders plain.
  */
-function buildFrame(brand, contentChildren, imageQuery) {
-  const backgroundLayers = buildMoodBackground(imageQuery, brand);
+function buildFrame(brand, contentChildren, imageQuery, backgroundPhoto) {
+  const backgroundLayers = backgroundPhoto
+    ? [
+        {
+          type: 'img',
+          props: {
+            src: backgroundPhoto.dataUri,
+            style: { position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover' },
+          },
+        },
+        {
+          type: 'div',
+          props: {
+            style: {
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%',
+              backgroundImage: `linear-gradient(180deg, ${brand.backgroundColor}D9 0%, ${brand.backgroundColor}70 32%, ${brand.backgroundColor}F5 80%)`,
+              display: 'flex',
+            },
+          },
+        },
+      ]
+    : buildMoodBackground(imageQuery, brand);
 
   return {
     type: 'div',
@@ -128,9 +171,9 @@ function buildFrame(brand, contentChildren, imageQuery) {
   };
 }
 
-const TEXT_SHADOW = '0 4px 20px rgba(0,0,0,0.5)'; // always on now — text sits over gradient art, not a flat color
+const TEXT_SHADOW = '0 4px 20px rgba(0,0,0,0.55)';
 
-export function buildTitleSlide(slide, { brand, accountHandle, categoryLabel, index, total }) {
+export function buildTitleSlide(slide, { brand, accountHandle, categoryLabel, index, total, backgroundPhoto }) {
   const children = [
     header(brand, accountHandle, categoryLabel),
     {
@@ -153,12 +196,12 @@ export function buildTitleSlide(slide, { brand, accountHandle, categoryLabel, in
         },
       },
     },
-    footer(brand, index, total),
+    footer(brand, index, total, backgroundPhoto),
   ];
-  return { element: buildFrame(brand, children, slide.imageQuery), canvas: CANVAS };
+  return { element: buildFrame(brand, children, slide.imageQuery, backgroundPhoto), canvas: CANVAS };
 }
 
-export function buildBodySlide(slide, { brand, accountHandle, categoryLabel, index, total }) {
+export function buildBodySlide(slide, { brand, accountHandle, categoryLabel, index, total, backgroundPhoto }) {
   const children = [
     header(brand, accountHandle, categoryLabel),
     {
@@ -198,12 +241,12 @@ export function buildBodySlide(slide, { brand, accountHandle, categoryLabel, ind
         ],
       },
     },
-    footer(brand, index, total),
+    footer(brand, index, total, backgroundPhoto),
   ];
-  return { element: buildFrame(brand, children, slide.imageQuery), canvas: CANVAS };
+  return { element: buildFrame(brand, children, slide.imageQuery, backgroundPhoto), canvas: CANVAS };
 }
 
-export function buildCtaSlide(slide, { brand, accountHandle, categoryLabel, index, total }) {
+export function buildCtaSlide(slide, { brand, accountHandle, categoryLabel, index, total, backgroundPhoto }) {
   const children = [
     header(brand, accountHandle, categoryLabel),
     {
@@ -250,9 +293,9 @@ export function buildCtaSlide(slide, { brand, accountHandle, categoryLabel, inde
         ],
       },
     },
-    footer(brand, index, total),
+    footer(brand, index, total, backgroundPhoto),
   ];
-  return { element: buildFrame(brand, children, slide.imageQuery), canvas: CANVAS };
+  return { element: buildFrame(brand, children, slide.imageQuery, backgroundPhoto), canvas: CANVAS };
 }
 
 export function buildSlideElement(slide, ctx) {

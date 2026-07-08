@@ -38,7 +38,7 @@ data/<accountId>/queue/             pending/ -> approved/ -> published/
 - [x] Milestone 4 — Carousel image renderer
 - [x] Milestone 5 — Telegram notifier
 - [x] Milestone 6 — Cloudflare Worker webhook + approve/reject buttons
-- [x] Milestone 4b — Procedural mood-based backgrounds (replaced Pexels — no attribution requirement, no network dependency, and each slide's colors now match its specific emotional beat)
+- [x] Milestone 4b — Real photo per slide (Pexels, matched to each slide's mood), with a procedural gradient background as automatic fallback when a photo isn't available. On-image credit (not in caption) satisfies Pexels' API attribution terms without cluttering the post.
 - [x] Milestone 7 — Instagram publish agent
 - [x] Milestone 8 — Reel video assembly (ffmpeg: pans/zooms/crossfades from slides)
 - [x] Milestone 9 — Reel voiceover (Piper TTS) + music, reels wired into Telegram approval + Instagram publish
