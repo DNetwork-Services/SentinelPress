@@ -1,0 +1,84 @@
+{
+  "id": "the-english-vault-curriculum-ubiquitous",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Vocabulary"
+  },
+  "article": {
+    "title": "Ubiquitous",
+    "link": "topic://englishvault/vocab-ubiquitous",
+    "description": "Meaning: present, appearing, or found everywhere. Pronunciation: yoo-BIK-wi-tuhs. Example: 'Smartphones have become ubiquitous in modern life.' Register: formal/academic, common in IELTS Writing Task 2 essays about technology or globalization.",
+    "content": "Meaning: present, appearing, or found everywhere. Pronunciation: yoo-BIK-wi-tuhs. Example: 'Smartphones have become ubiquitous in modern life.' Register: formal/academic, common in IELTS Writing Task 2 essays about technology or globalization.",
+    "pubDate": "2026-07-08T06:12:35.993Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-08T06:12:35.993Z",
+  "generated": {
+    "caption": "How do you describe something that's literally everywhere you look? 🤔 Let's boost your vocabulary today with a powerful word: **Ubiquitous**!\n\nMeaning: This fantastic adjective means \"present, appearing, or found everywhere.\" Think about things you see all the time, no matter where you go!\n\nPronunciation: It's pronounced **yoo-BIK-wi-tuhs**. Give it a try!\n\nWhy is this word great? It has a formal and academic register, making it perfect for discussions where you want to sound precise and educated. It's especially common in IELTS Writing Task 2 essays when you're discussing big topics like technology or globalization.\n\nExample: 'Smartphones have become ubiquitous in modern life.' (So true, right?!)\n\nReady to make \"ubiquitous\" a part of your vocabulary?\n✨ Save this post so you can practice and remember it!\n📲 Share it with a friend who's working on their English!\n🔔 Follow @TheEnglishVault for daily lessons to master your English!",
+    "script": "Tired of saying 'everywhere' all the time? Here's a word to elevate your English. The word is 'ubiquitous', pronounced yoo-BIK-wi-tuhs. It means present, appearing, or found everywhere. This is a formal and academic word, perfect for essays, especially in IELTS Writing Task 2 when you're discussing topics like technology or globalization. For example, 'Smartphones have become ubiquitous in modern life.' Challenge yourself to use 'ubiquitous' today, and follow The English Vault for more powerful vocabulary!",
+    "hashtags": [
+      "ubiquitous",
+      "ieltstask2",
+      "academicvocabulary",
+      "ieltsvocabulary",
+      "learnenglish"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "Master a word you'll find everywhere!",
+        "imageQuery": "person looking curiously up"
+      },
+      {
+        "type": "body",
+        "heading": "What does 'Ubiquitous' mean?",
+        "text": "Ubiquitous (yoo-BIK-wi-tuhs) means 'present, appearing, or found everywhere.'",
+        "imageQuery": "world map global presence"
+      },
+      {
+        "type": "body",
+        "heading": "Pronunciation practice!",
+        "text": "It's pronounced: yoo-BIK-wi-tuhs. Try saying it out loud!",
+        "imageQuery": "person speaking into microphone"
+      },
+      {
+        "type": "body",
+        "heading": "See it in action!",
+        "text": "Example: 'Smartphones have become ubiquitous in modern life.' They're literally everywhere you look!",
+        "imageQuery": "people using smartphones public"
+      },
+      {
+        "type": "body",
+        "heading": "When to use it?",
+        "text": "This word is formal/academic. It's common in IELTS Writing Task 2 essays about technology or globalization.",
+        "imageQuery": "student writing academic essay"
+      },
+      {
+        "type": "cta",
+        "text": "Boost your English vocabulary! Follow @TheEnglishVault for daily word power!",
+        "imageQuery": "person smiling learning on tablet"
+      }
+    ],
+    "generatedAt": "2026-07-08T06:14:09.945Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-ubiquitous-slide-01.png",
+      "the-english-vault-curriculum-ubiquitous-slide-02.png",
+      "the-english-vault-curriculum-ubiquitous-slide-03.png",
+      "the-english-vault-curriculum-ubiquitous-slide-04.png",
+      "the-english-vault-curriculum-ubiquitous-slide-05.png",
+      "the-english-vault-curriculum-ubiquitous-slide-06.png"
+    ],
+    "renderedAt": "2026-07-08T06:14:25.660Z",
+    "reelVideo": "the-english-vault-curriculum-ubiquitous-reel.mp4",
+    "reelDurationSeconds": 28.456054,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "81999fcf0df25e0f",
+  "notifiedAt": "2026-07-08T06:18:58.111Z"
+}
