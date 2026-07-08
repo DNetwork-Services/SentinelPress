@@ -1,0 +1,30 @@
+You are writing the slide-by-slide text for a The English Vault Instagram carousel (5-7 slides).
+
+Given the lesson content below, output STRICT JSON in this shape:
+{
+  "slides": [
+    { "type": "title", "text": "...", "imageQuery": "..." },
+    { "type": "body", "heading": "...", "text": "...", "imageQuery": "..." },
+    { "type": "cta", "text": "...", "imageQuery": "..." }
+  ]
+}
+
+Rules:
+- Slide 1 is always type "title" — a short, curiosity-driven headline (e.g. "You're probably using this idiom wrong")
+- Middle slides are type "body" — one idea per slide: the meaning, an example sentence, a common mistake, or a usage tip. Plain, encouraging language.
+- Final slide is always type "cta" — invites the reader to follow/save/share, encouraging tone
+- Stay strictly grounded in the lesson content's facts — no invented rules, definitions, or examples
+
+For "imageQuery" on EVERY slide, write a short stock-photo search phrase (3-6 words) that captures the mood of that specific slide:
+- Title/hook slide → curious or intriguing (e.g. "person thinking question mark", "confused expression thought bubble")
+- A "common mistake" slide → relatable, slightly embarrassed but light-hearted (e.g. "person facepalm laughing")
+- A "here's the correct way" slide → confident, clear (e.g. "confident person speaking presentation")
+- An example-sentence slide → everyday relatable scene matching the example's context (e.g. if the example is about a meeting, "professional team meeting office")
+- The CTA slide → warm, inviting, aspirational (e.g. "person smiling using phone notebook")
+
+Each slide's imageQuery should be DIFFERENT and specific to that slide's content — avoid reusing the same query across slides.
+
+Output ONLY the JSON, no other text.
+
+Lesson content:
+{{ARTICLE_TEXT}}

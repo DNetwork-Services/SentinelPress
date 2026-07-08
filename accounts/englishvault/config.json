@@ -1,0 +1,37 @@
+{
+  "accountId": "englishvault",
+  "displayName": "The English Vault",
+  "active": true,
+
+  "instagram": {
+    "businessAccountIdEnvVar": "ENGLISHVAULT_IG_BUSINESS_ID",
+    "accessTokenEnvVar": "ENGLISHVAULT_IG_ACCESS_TOKEN"
+  },
+
+  "telegram": {
+    "chatIdEnvVar": "TELEGRAM_CHAT_ID"
+  },
+
+  "posting": {
+    "postsPerDay": 1,
+    "scheduleCronUTC": "30 2 * * *"
+  },
+
+  "sources": [],
+  "topicBank": "topics.json",
+
+  "content": {
+    "brand": {
+      "primaryColor": "#FF6B9D",
+      "secondaryColor": "#FFC75F",
+      "backgroundColor": "#1A1025",
+      "logo": "assets/englishvault-logo.png"
+    },
+    "prompts": {
+      "caption": "prompts/caption.txt",
+      "script": "prompts/script.txt",
+      "carousel": "prompts/carousel.txt",
+      "hashtags": "prompts/hashtags.txt"
+    }
+  }
+}

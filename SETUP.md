@@ -197,11 +197,45 @@ Requires at least one post to have been published more than a few hours ago (Ins
 
 
 
-## 4. Adding a new account later (e.g. The English Vault)
+## 4. Milestone 12 — The English Vault is live
 
-1. Copy `accounts/_template/config.example.json` to `accounts/the-english-vault/config.json`.
-2. Fill in the placeholders, set `"active": true`.
-3. Add its Instagram/Telegram secrets following the same naming pattern.
-4. Add its prompt files under `accounts/the-english-vault/prompts/`.
+The English Vault is a fundamentally different content type than CyberShieldAlerts — it's not news, so there's nothing to fetch from an RSS feed. Instead, `accounts/englishvault/topics.json` is a curated curriculum (24 entries across Vocabulary, Idioms, Phrasal Verbs, Grammar, IELTS, and Business English), and `research.mjs` now picks the next unused topic from it instead of fetching a feed — same dedupe mechanism (a synthetic `topic://` URL stands in for a real article link), same downstream pipeline, no other engine changes. This is also the pattern to follow if you ever add a third non-news account.
 
-No engine code changes needed — `loadActiveAccounts()` picks it up automatically.
+### 4a. Set up Instagram for The English Vault
+
+Same process as Milestone 0, reusing your existing Meta Developer App (no need to create a second app):
+
+1. Convert **@the_english__vault** to a Business account and link it to a Facebook Page (create one if needed).
+2. In your existing Meta app dashboard → **API setup with Facebook login** → **Add account** → authorize this second Instagram account the same way you did the first.
+3. Generate its own long-lived access token and note its Business Account ID (same `graph.instagram.com/.../me` trick as before).
+
+### 4b. Add its secrets
+
+| Secret name | Value |
+|---|---|
+| `ENGLISHVAULT_IG_ACCESS_TOKEN` | The English Vault's Instagram access token |
+| `ENGLISHVAULT_IG_BUSINESS_ID` | The English Vault's Instagram Business Account ID |
+
+`TELEGRAM_BOT_TOKEN`/`TELEGRAM_CHAT_ID` are already shared across both accounts — you'll get approval messages for both in the same Telegram chat, just distinguishable by the account handle shown in each post's header.
+
+### 4c. Test it
+
+```bash
+npm run research   # picks a topic from the curriculum instead of fetching RSS
+npm run generate
+npm run render
+npm run render-reel
+npm run render-voiceover
+npm run notify
+```
+
+You should see both accounts processed in each script's output (`=== CyberShield Alerts ===` and `=== The English Vault ===`), and two separate approval messages in Telegram — English Vault's using its own pink/gold/purple brand colors, distinct from CyberShieldAlerts' cyan/dark look.
+
+### Adding a third account later
+
+1. Copy `accounts/_template/config.example.json` to `accounts/<new-account>/config.json`, fill in placeholders, set `"active": true`.
+2. Either add real RSS `sources`, or set `topicBank` to a new curriculum JSON file (copy `accounts/englishvault/topics.json` as a starting shape).
+3. Add its prompt files under `accounts/<new-account>/prompts/`.
+4. Add its Instagram secrets following the same naming pattern.
+
+No engine code changes needed — `loadActiveAccounts()` and `research.mjs`'s RSS/topic-bank branch pick it up automatically.

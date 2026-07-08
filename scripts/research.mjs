@@ -1,17 +1,13 @@
 import { loadActiveAccounts, loadHistory, saveHistory } from './lib/config.mjs';
 import { fetchFeed } from './lib/rss.mjs';
 import { pickTopArticles } from './lib/rank.mjs';
+import { pickNextTopics } from './lib/topicbank.mjs';
 import { writePendingPost, slugify } from './lib/queue.mjs';
 import { alertFailure } from './lib/alert.mjs';
 
-async function researchAccount(account) {
-  console.log(`\n=== ${account.displayName} ===`);
-
-  const history = loadHistory(account);
-  const alreadyProcessed = new Set(history.processedUrls);
+async function researchFromRss(account, alreadyProcessed) {
   const maxAgeMs = (account.content?.maxArticleAgeDays ?? 3) * 24 * 60 * 60 * 1000;
   const now = Date.now();
-
   let allCandidates = [];
 
   for (const source of account.sources) {
@@ -33,13 +29,29 @@ async function researchAccount(account) {
     }
   }
 
-  if (allCandidates.length === 0) {
-    console.log('No new candidate articles today — nothing queued.');
+  const postsPerDay = account.posting?.postsPerDay ?? 1;
+  return pickTopArticles(allCandidates, postsPerDay);
+}
+
+async function researchAccount(account) {
+  console.log(`\n=== ${account.displayName} ===`);
+
+  const history = loadHistory(account);
+  const alreadyProcessed = new Set(history.processedUrls);
+
+  // Two content source types, same downstream pipeline either way:
+  // RSS accounts (news-grounded, e.g. CyberShieldAlerts) fetch and rank
+  // live articles; topic-bank accounts (curriculum-grounded, e.g. The
+  // English Vault) pick from a curated JSON instead — there's no "news"
+  // to fetch for a vocabulary lesson.
+  const chosen = account.sources.length > 0
+    ? await researchFromRss(account, alreadyProcessed)
+    : pickNextTopics(account, alreadyProcessed, account.posting?.postsPerDay ?? 1);
+
+  if (chosen.length === 0) {
+    console.log('No new candidates today — nothing queued.');
     return 0;
   }
-
-  const postsPerDay = account.posting?.postsPerDay ?? 1;
-  const chosen = pickTopArticles(allCandidates, postsPerDay);
 
   let queued = 0;
   for (const article of chosen) {

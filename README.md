@@ -44,7 +44,7 @@ data/<accountId>/queue/             pending/ -> approved/ -> published/
 - [x] Milestone 9 — Reel voiceover (Piper TTS) + music, reels wired into Telegram approval + Instagram publish
 - [x] Milestone 10 — Analytics agent + weekly summary
 - [x] Milestone 11 — Hardening: retries, error alerts, docs
-- [ ] Milestone 12 — Add The English Vault as a second account
+- [x] Milestone 12 — Add The English Vault as a second account (topic-bank content source, new engine capability for non-news accounts)
 
 ## Troubleshooting
 
