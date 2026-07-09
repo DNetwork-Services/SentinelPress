@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-look-forward-to",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Phrasal Verbs"
@@ -16,6 +16,63 @@
   },
   "score": 1,
   "selectedAt": "2026-07-09T03:08:21.979Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever said \"I look forward to see you\" and gotten a strange look? Don't worry, it's an easy mistake! \"Look forward to\" is a preposition phrase where we use a gerund (-ing) like \"I look forward to seeing you\" or \"I'm looking forward to the weekend\". Follow us for daily English tips and save this for later! #EnglishVault",
+    "script": "Are you making this common mistake when talking about upcoming events, saying 'I look forward to see' instead of 'I look forward to seeing'? Look forward to is a phrasal verb that means to feel excited about something that is going to happen, and it's followed by a noun or a gerund, that's a verb ending in -ing. For example, I'm looking forward to the weekend. Remember, 'to' here is a preposition, so use it with a noun or a gerund, like 'I look forward to seeing you', and use this phrase today to sound more natural in English, and follow us for more tips like this.",
+    "hashtags": [
+      "phrasalverblookforwardto",
+      "learnenglishphrasalverbs",
+      "englishgrammarprepositions",
+      "vocabularybuilder",
+      "hinditoenglish"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "You're probably getting this idiom wrong",
+        "imageQuery": "confused person thinking"
+      },
+      {
+        "type": "body",
+        "heading": "What does it mean?",
+        "text": "to feel excited about something that is going to happen",
+        "hindiMeaning": "किसी होने वाली चीज़ के बारे में उत्साहित महसूस करना",
+        "imageQuery": "clear calendar planning"
+      },
+      {
+        "type": "comparison",
+        "wrong": "I look forward to see you",
+        "right": "I look forward to seeing you",
+        "imageQuery": "laughing at mistake moment"
+      },
+      {
+        "type": "body",
+        "heading": "Example usage",
+        "text": "I'm looking forward to the weekend.",
+        "imageQuery": "relaxing weekend scene"
+      },
+      {
+        "type": "cta",
+        "text": "Practice with us and improve your English skills!",
+        "imageQuery": "smiling friends learning together"
+      }
+    ],
+    "generatedAt": "2026-07-09T06:29:33.795Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-look-forward-to-slide-01.png",
+      "the-english-vault-curriculum-look-forward-to-slide-02.png",
+      "the-english-vault-curriculum-look-forward-to-slide-03.png",
+      "the-english-vault-curriculum-look-forward-to-slide-04.png",
+      "the-english-vault-curriculum-look-forward-to-slide-05.png"
+    ],
+    "renderedAt": "2026-07-09T06:29:51.163Z",
+    "reelVideo": "the-english-vault-curriculum-look-forward-to-reel.mp4",
+    "reelDurationSeconds": 29.965350999999995,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "a223957fc969b3fb",
+  "notifiedAt": "2026-07-09T06:33:29.326Z"
 }
