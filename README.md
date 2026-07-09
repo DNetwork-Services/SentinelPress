@@ -1,5 +1,8 @@
 # SentinelPress
 
+<img width="1774" height="887" alt="ChatGPT Image Jul 9, 2026, 08_35_29 AM" src="https://github.com/user-attachments/assets/dd032005-c4df-43ec-82c2-6e50ea765e7f" />
+
+
 An AI content automation engine that researches sources, drafts Instagram content (carousel + Reel with voiceover), sends it to you on Telegram for a one-tap review, and publishes only what you approve. Runs entirely on free infrastructure — no server to keep running, no hosting bill.
 
 Currently powers two accounts: **CyberShieldAlerts** (cybersecurity/DevOps/tech news) and **The English Vault** (English lessons with Hindi translations).
