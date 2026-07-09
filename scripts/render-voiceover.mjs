@@ -6,7 +6,10 @@ import { synthesizeSpeech } from './lib/tts.mjs';
 import { mixNarrationWithMusic } from './lib/audiomix.mjs';
 import { getDurationSeconds } from './lib/media.mjs';
 import { assembleReel } from './lib/reel.mjs';
+import { chunkScriptForCaptions } from './lib/captions.mjs';
 import { alertFailure } from './lib/alert.mjs';
+
+const CAPTION_FONT_PATH = path.join(process.cwd(), 'assets', 'fonts', 'Poppins-Bold.ttf');
 
 // Backstop cleanup in case the LLM still slips in a conversational
 // preamble or structural label despite the prompt now explicitly
@@ -71,6 +74,12 @@ async function addVoiceoverForAccount(account) {
       const { usedMusic, trackName } = await mixNarrationWithMusic(narrationPath, narrationDuration, mixedAudioPath);
       if (usedMusic) console.log(`    Mixed with music: ${trackName}`);
 
+      // Burned-in captions — an explicit Instagram ranking factor, and
+      // most viewers watch muted. Timed proportionally by word count
+      // across the narration's real duration (see captions.mjs for why
+      // this approximation is reasonable without word-level timestamps).
+      const captionChunks = chunkScriptForCaptions(narrationText, narrationDuration);
+
       // Rebuild the reel video at the narration's actual length (silent
       // durations were an arbitrary guess in Milestone 8) using the real
       // mixed audio track instead of silence.
@@ -79,6 +88,8 @@ async function addVoiceoverForAccount(account) {
       const { durationSeconds } = await assembleReel(slideImagePaths, post.generated.slides, reelPath, {
         audioPath: mixedAudioPath,
         targetTotalDuration: narrationDuration,
+        captionChunks,
+        fontPath: CAPTION_FONT_PATH,
       });
 
       // Clean up intermediate files — only the final reel + queue JSON

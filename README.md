@@ -235,6 +235,16 @@ Both are installed fresh in each workflow run rather than assumed pre-installed.
 
 ---
 
+## Watch time optimization
+
+Instagram's own ranking signals (confirmed by Adam Mosseri) prioritize watch time, completion rate, and rewatches above almost everything else — and captions are an explicit ranking factor since most viewers watch muted. Reels now include:
+
+- **Burned-in captions**, timed to the narration and positioned above the slide's own footer so nothing overlaps. Escaping for ffmpeg's `drawtext` filter was tested directly against apostrophes, colons, and commas (the characters most likely to break a naive implementation) before shipping.
+- **Ken Burns motion** on every slide (already existed) — static slideshows perform worse than content with continuous movement.
+- **Original content only** — no reposts, which Instagram's 2026 ranking explicitly rewards (40-60% more distribution) over aggregated content.
+
+Deliberately NOT implemented, since they violate Instagram's policies and risk account suppression: engagement pods, follow/unfollow schemes, purchased views/likes, or engagement-bait captions ("like if you agree"). These are excluded on purpose, not by oversight.
+
 ## Status
 
 All 12 original milestones complete: research -> LLM generation -> carousel + Reel rendering (photos, AI illustrations, or procedural art, always with a fallback) -> Telegram approval (choose Carousel or Reel, never both) -> Instagram publishing -> weekly analytics -> retry/alerting hardening -> a second account (The English Vault, with Hindi-translation support) running through the same account-agnostic engine.

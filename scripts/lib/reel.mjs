@@ -1,4 +1,5 @@
 import { spawn } from 'child_process';
+import { buildCaptionFilters } from './captions.mjs';
 
 const REEL_WIDTH = 1080;
 const REEL_HEIGHT = 1920; // 9:16 — Instagram Reels' native ratio
@@ -85,7 +86,7 @@ function buildXfadeChain(slideDurations) {
  * for scale, rather than naively scaling by a duration ratio, which
  * undershoots because the fixed crossfade overlap doesn't shrink with it.
  */
-export async function assembleReel(slideImagePaths, slides, outputPath, { audioPath, targetTotalDuration } = {}) {
+export async function assembleReel(slideImagePaths, slides, outputPath, { audioPath, targetTotalDuration, captionChunks, fontPath } = {}) {
   if (slideImagePaths.length !== slides.length) {
     throw new Error('slideImagePaths and slides must be the same length.');
   }
@@ -105,7 +106,28 @@ export async function assembleReel(slideImagePaths, slides, outputPath, { audioP
   const inputArgs = slideImagePaths.flatMap((p) => ['-loop', '1', '-i', p]);
   const perSlideFilters = slideImagePaths.map((_, i) => buildSlideClipFilter(i, durations[i]));
   const xfadeChain = buildXfadeChain(durations);
-  const filterComplex = [...perSlideFilters, xfadeChain].join(';');
+
+  // Burned-in captions are an explicit Instagram ranking factor (most
+  // viewers watch muted) — chained onto the final [outv] label as a
+  // series of timed drawtext filters, one per caption chunk.
+  let filterComplex;
+  let finalLabel = 'outv';
+  if (captionChunks && captionChunks.length > 0 && fontPath) {
+    const captionFilters = buildCaptionFilters(captionChunks, fontPath, REEL_WIDTH, REEL_HEIGHT);
+    // drawtext filters chain sequentially, each taking the previous
+    // stage's output — [outv] -> [cap0] -> [cap1] -> ... -> [capN]
+    const captionChain = captionFilters
+      .map((filter, i) => {
+        const inLabel = i === 0 ? 'outv' : `cap${i - 1}`;
+        const outLabel = i === captionFilters.length - 1 ? 'captioned' : `cap${i}`;
+        return `[${inLabel}]${filter}[${outLabel}]`;
+      })
+      .join(';');
+    filterComplex = [...perSlideFilters, xfadeChain, captionChain].join(';');
+    finalLabel = 'captioned';
+  } else {
+    filterComplex = [...perSlideFilters, xfadeChain].join(';');
+  }
 
   const totalDuration = durations.reduce((a, b) => a + b, 0) - CROSSFADE_SEC * (n - 1);
 
@@ -118,7 +140,7 @@ export async function assembleReel(slideImagePaths, slides, outputPath, { audioP
     ...inputArgs,
     ...audioInputArgs,
     '-filter_complex', filterComplex,
-    '-map', '[outv]',
+    '-map', `[${finalLabel}]`,
     '-map', `${audioMapIndex}:a`,
     '-t', totalDuration.toFixed(2),
     '-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', String(FPS),
