@@ -1,0 +1,98 @@
+{
+  "id": "cyberpress-rogue-agent-flaw-lets-attackers-hijack-google-dialogflow-cx-chatbots",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Rogue Agent Flaw Lets Attackers Hijack Google Dialogflow CX Chatbots",
+    "link": "https://cyberpress.org/rogue-agent-attack-abuses-dialogflow/",
+    "description": "A critical flaw in Google Cloud Platform&#8217;s Dialogflow CX let attackers hijack customer conversations and run phishing campaigns undetected. Varonis Threat Labs disclosed the vulnerability, dubbed Rogue Agent, which exploited Dialogflow&#8217;s Code Blocks feature to inject persistent malicious code into an agent&#8217;s execution pipeline on the conversational AI service powering enterprise chatbots and voice assistants. [&#8230;] The post Rogue Agent Flaw Lets Attackers Hijack Google Dialogflow CX Chatbots appeared first on Cyber Security News.",
+    "content": "A critical flaw in Google Cloud Platform&#8217;s Dialogflow CX let attackers hijack customer conversations and run phishing campaigns undetected. Varonis Threat Labs disclosed the vulnerability, dubbed Rogue Agent, which exploited Dialogflow&#8217;s Code Blocks feature to inject persistent malicious code into an agent&#8217;s execution pipeline on the conversational AI service powering enterprise chatbots and voice assistants. Dialogflow CX Playbooks let developers embed custom Python logic via Code Blocks to process input, call APIs, and manipulate conversation data. Rogue Agent Vulnerability These blocks execute inside a Google-managed Cloud Run service shared across all agents in a project, a design that simplifies operations but strips customers of visibility into the runtime environment. Varonis researchers found this shared environment had public network egress, a writable filesystem, and elevated execution privileges. With only the dialogflow.playbooks.update permission, which can be granted at a single-agent level, an attacker could overwrite a core file called code_execution_env.py that uses Python&#8217;s exec() function to run Playbook code. Because injected code shared scope with internal variables like history (full conversation logs) and state (session data), attackers gained direct access to live conversations and could call internal functions like respond() to impersonate legitimate agent replies. Rogue Agent attack flow (Source: varonis) The exploit chain worked by having the attacker upload a malicious version of code_execution_env.py to a public GCS bucket, then configure a Code Block to download and overwrite the original file inside the Cloud Run container. This malicious logic persisted across every subsequent user interaction, and the attacker could then restore the original Code Block configuration so the Dialogflow Console appeared untouched. Critically, Cloud Logging never recorded the overwrite or the injected logic, making the compromise nearly invisible to defenders. Varonis also identified two additional flaws: VPC-SC bypass: Since Cloud Run&#8217;s execution environment sits outside the VPC Service Controls perimeter, attackers used standard libraries like urllib to establish outbound C2 channels that fully bypass data exfiltration protections intended to satisfy GDPR/HIPAA compliance. IMDS credential exposure: The Instance Metadata Service was reachable from within Cloud Run, leaking access tokens for a Google-managed service account, a violation of isolation principles that could enable privilege escalation if broader permissions were ever granted. Varonis reported Rogue Agent to Google in November 2025. Google shipped an initial fix in April 2026 and fully resolved the issue by June 2026. There&#8217;s no evidence of in-the-wild exploitation before the patch. This marks the latest in Varonis&#8217;s string of AI agent disclosures, following Reprompt (Microsoft Copilot Personal) and SearchLeak (Copilot Enterprise). Mitigation Organizations using Dialogflow CX should enable DATA_WRITE audit logs and review historical Playbook update events for suspicious activity, correlating any changes with anomalous IP addresses, unusual access times, or rare user activity. Security teams should also query Cloud Logging for failed requests tied to Code Block exceptions and manually review each agent&#8217;s Playbook configurations to confirm that only approved, whitelisted code blocks remain in place. Rogue Agent underscores a broader lesson: as AI agents become embedded in enterprise infrastructure, a single overlooked permission can compromise an entire fleet of shared services, demanding layered defenses that go well beyond perimeter security alone. Follow us on Google News , LinkedIn and X to Get More Instant Updates. Set Cyberpress as a Preferred Source in Google. The post Rogue Agent Flaw Lets Attackers Hijack Google Dialogflow CX Chatbots appeared first on Cyber Security News.",
+    "pubDate": "Wed, 08 Jul 2026 05:42:27 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/07/rogue-agent-flaw-lets-attackers-hijack-google-dialogflow-cx-chatbots-6a4de093157fd.webp"
+  },
+  "score": 0.9972083472222222,
+  "selectedAt": "2026-07-08T06:12:35.991Z",
+  "generated": {
+    "caption": "Your customer support chatbot could have been talking to a hacker! 😱\n\nA critical flaw called \"Rogue Agent\" in Google's Dialogflow CX, a service powering enterprise chatbots and voice assistants, allowed attackers to hijack customer conversations and run undetected phishing campaigns.\n\nDiscovered by Varonis Threat Labs, this vulnerability exploited Dialogflow's \"Code Blocks\" feature. Attackers with just a single permission could inject persistent malicious code into the chatbot's system. This gave them direct access to live conversations and the ability to impersonate the bot's replies.\n\nWhat made it worse?\n1.  **Invisible Threat:** Cloud Logging didn't record the malicious changes, making the compromise nearly impossible to detect.\n2.  **Data Bypass:** It could bypass data exfiltration protections (VPC-SC bypass), allowing attackers to establish outbound connections.\n3.  **Credential Leak:** It exposed internal access tokens (IMDS credential exposure), which could lead to further privilege escalation.\n\nVaronis reported the flaw in November 2025, and Google fully resolved it by June 2026. Thankfully, there's no evidence of this exploit being used in the wild before it was patched.\n\nThis incident highlights how a single overlooked permission in AI systems can compromise entire fleets of shared services. It's a reminder that security needs to go beyond just the perimeter.\n\nStay informed!\n👉 Save this post to remember this critical lesson.\n➡️ Share with your team to spread awareness.\n➕ Follow @CyberShieldAlerts for daily cybersecurity, AI security, and threat intel updates!\n\n#Cybersecurity #AISecurity #ChatbotSecurity #GoogleCloud #DialogflowCX #RogueAgent #Varonis #ThreatIntelligence #Infosec #CyberShieldAlerts",
+    "script": "Your Google chatbot was vulnerable to silent hijacking and phishing! A critical flaw called \"Rogue Agent\" in Google Dialogflow CX allowed attackers to inject malicious code. They could hijack live customer conversations, run undetected phishing campaigns, and impersonate your agents. The exploit was nearly invisible, bypassing Cloud Logging and even allowing data exfiltration. This shows how a single overlooked permission can compromise an entire fleet of shared services. If you use Dialogflow CX, enable DATA_WRITE audit logs and review Playbook update events for suspicious activity. Query Cloud Logging for Code Block exceptions and manually verify all agent configurations now!",
+    "hashtags": [
+      "rogueagent",
+      "googledialogflowcx",
+      "chatbotsecurity",
+      "cloudsecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "Rogue Agent Alert: Chatbot Hijack on Google Cloud!",
+        "imageQuery": "alarming red warning symbol"
+      },
+      {
+        "type": "body",
+        "heading": "Critical Flaw in Google Chatbots",
+        "text": "A flaw called 'Rogue Agent' allowed attackers to hijack Google Dialogflow CX conversations, launching undetected phishing campaigns.",
+        "imageQuery": "worried person looking at laptop"
+      },
+      {
+        "type": "body",
+        "heading": "Exploiting Code Blocks",
+        "text": "Attackers injected persistent malicious code into Google's Dialogflow CX 'Code Blocks,' a feature used for custom Python logic in chatbots.",
+        "imageQuery": "complex code lines glowing screen"
+      },
+      {
+        "type": "body",
+        "heading": "Invisible Compromise",
+        "text": "By overwriting a core file, attackers accessed live conversations and impersonated agents. Critically, these actions were invisible in Cloud Logging.",
+        "imageQuery": "sneaky hacker dark room keyboard"
+      },
+      {
+        "type": "body",
+        "heading": "Bypassing Security & Data Exposure",
+        "text": "The flaw also allowed attackers to bypass data exfiltration protections (VPC-SC) and expose sensitive service account credentials (IMDS).",
+        "imageQuery": "broken security lock digital"
+      },
+      {
+        "type": "body",
+        "heading": "Patched & No Exploitation",
+        "text": "Google fully resolved the 'Rogue Agent' vulnerability by June 2026. Thankfully, there's no evidence of it being exploited in the wild before the patch.",
+        "imageQuery": "relief calm person looking forward"
+      },
+      {
+        "type": "body",
+        "heading": "Protect Your Chatbots Now",
+        "text": "Enable DATA_WRITE audit logs, review Playbook updates for suspicious activity, and manually check Code Block configurations for unapproved code.",
+        "imageQuery": "IT professional confident office screen"
+      },
+      {
+        "type": "cta",
+        "text": "Stay Informed, Stay Secure! Follow CyberShield Alerts for crucial cyber updates!",
+        "imageQuery": "confident person using phone looking"
+      }
+    ],
+    "generatedAt": "2026-07-08T06:13:39.478Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-rogue-agent-flaw-lets-attackers-hijack-google-dialogflow-cx-chatbots-slide-01.png",
+      "cyberpress-rogue-agent-flaw-lets-attackers-hijack-google-dialogflow-cx-chatbots-slide-02.png",
+      "cyberpress-rogue-agent-flaw-lets-attackers-hijack-google-dialogflow-cx-chatbots-slide-03.png",
+      "cyberpress-rogue-agent-flaw-lets-attackers-hijack-google-dialogflow-cx-chatbots-slide-04.png",
+      "cyberpress-rogue-agent-flaw-lets-attackers-hijack-google-dialogflow-cx-chatbots-slide-05.png",
+      "cyberpress-rogue-agent-flaw-lets-attackers-hijack-google-dialogflow-cx-chatbots-slide-06.png",
+      "cyberpress-rogue-agent-flaw-lets-attackers-hijack-google-dialogflow-cx-chatbots-slide-07.png",
+      "cyberpress-rogue-agent-flaw-lets-attackers-hijack-google-dialogflow-cx-chatbots-slide-08.png"
+    ],
+    "renderedAt": "2026-07-08T06:14:19.260Z",
+    "reelVideo": "cyberpress-rogue-agent-flaw-lets-attackers-hijack-google-dialogflow-cx-chatbots-reel.mp4",
+    "reelDurationSeconds": 40.112472,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "90b3bef304f493d8",
+  "notifiedAt": "2026-07-08T06:18:53.271Z"
+}
