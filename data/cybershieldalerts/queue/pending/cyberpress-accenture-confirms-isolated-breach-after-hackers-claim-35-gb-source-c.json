@@ -1,7 +1,7 @@
 {
   "id": "cyberpress-accenture-confirms-isolated-breach-after-hackers-claim-35-gb-source-c",
   "accountId": "cybershieldalerts",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "CyberPress",
     "category": "News"
@@ -16,6 +16,76 @@
   },
   "score": 0.9976179722222223,
   "selectedAt": "2026-07-08T05:36:14.554Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Your digital security might just have a new concern. Cybersecurity giant Accenture has confirmed an 'isolated matter' after a hacker alias, '888,' claimed to steal 35 GB of source code and credentials. Accenture states the issue is remediated with no impact on operations, but the full scope of the claim remains unverified. This highlights the constant threat even major players face. Stay vigilant!\n\nSave and share this post, and follow @CyberShieldAlerts for daily updates.",
+    "script": "Accenture just confirmed a breach. Is your source code safe? A threat actor claims to have stolen 35 gigabytes of critical source code, including RSA keys, SSH keys, and Azure access tokens, from their Azure DevOps environments. Even though Accenture calls it an isolated incident with no operational impact, this type of data theft can have serious downstream consequences for clients and partners. It's a critical warning for everyone. If you use Azure DevOps, you need to act now. Rotate your Azure Personal Access Tokens, audit your storage access keys, and rigorously review your repository access logs for any suspicious activity. Stay vigilant.",
+    "hashtags": [
+      "accenture",
+      "azuredevops",
+      "sourcecodetheft",
+      "databreach",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "Accenture in Spotlight: Source Code Theft Claimed",
+        "imageQuery": "alarming red digital screen"
+      },
+      {
+        "type": "body",
+        "heading": "Major Breach Allegation",
+        "text": "A threat actor named \"888\" posted on a cybercrime forum, claiming to have stolen 35 GB of source code and credentials from Accenture in July 2026.",
+        "imageQuery": "hacker dark room typing"
+      },
+      {
+        "type": "body",
+        "heading": "What Data is Allegedly Stolen?",
+        "text": "The alleged haul includes sensitive data like source code, RSA and SSH keys, Azure Personal Access Tokens (PATs), Azure Storage Access Keys, and configuration files.",
+        "imageQuery": "tangled network cables confusion"
+      },
+      {
+        "type": "body",
+        "heading": "Accenture's Official Response",
+        "text": "Accenture confirmed an \"isolated matter\" and stated they have \"remediated its source.\" They maintain there's \"no impact to Accenture operations and service delivery.\"",
+        "imageQuery": "confident IT professional solving problem"
+      },
+      {
+        "type": "body",
+        "heading": "Your Action Plan: Azure DevOps Users",
+        "text": "Organizations using Azure DevOps should proactively rotate Azure Personal Access Tokens, audit storage access keys, and review repository access logs for unusual activity.",
+        "imageQuery": "person thinking focused laptop"
+      },
+      {
+        "type": "body",
+        "heading": "Beyond the Breach: Wider Implications",
+        "text": "Despite Accenture calling it \"isolated,\" its global scale means clients and partners whose codebases intersect with Accenture-managed Azure DevOps environments should also remain vigilant.",
+        "imageQuery": "concerned business team meeting"
+      },
+      {
+        "type": "cta",
+        "text": "Stay informed! Follow CyberShield Alerts for crucial cybersecurity updates and threat intelligence.",
+        "imageQuery": "person scrolling news phone"
+      }
+    ],
+    "generatedAt": "2026-07-09T02:38:32.172Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-accenture-confirms-isolated-breach-after-hackers-claim-35-gb-source-c-slide-01.png",
+      "cyberpress-accenture-confirms-isolated-breach-after-hackers-claim-35-gb-source-c-slide-02.png",
+      "cyberpress-accenture-confirms-isolated-breach-after-hackers-claim-35-gb-source-c-slide-03.png",
+      "cyberpress-accenture-confirms-isolated-breach-after-hackers-claim-35-gb-source-c-slide-04.png",
+      "cyberpress-accenture-confirms-isolated-breach-after-hackers-claim-35-gb-source-c-slide-05.png",
+      "cyberpress-accenture-confirms-isolated-breach-after-hackers-claim-35-gb-source-c-slide-06.png",
+      "cyberpress-accenture-confirms-isolated-breach-after-hackers-claim-35-gb-source-c-slide-07.png"
+    ],
+    "renderedAt": "2026-07-09T02:39:49.096Z",
+    "reelVideo": "cyberpress-accenture-confirms-isolated-breach-after-hackers-claim-35-gb-source-c-reel.mp4",
+    "reelDurationSeconds": 39.903492,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "97966ceca3f16dc5",
+  "notifiedAt": "2026-07-09T02:43:22.267Z"
 }
