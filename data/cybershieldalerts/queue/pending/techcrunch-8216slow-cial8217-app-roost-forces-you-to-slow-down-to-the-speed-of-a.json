@@ -1,0 +1,77 @@
+{
+  "id": "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "TechCrunch",
+    "category": "Technology"
+  },
+  "article": {
+    "title": "&#8216;Slow-cial&#8217; app Roost forces you to slow down to the speed of a carrier pigeon",
+    "link": "https://techcrunch.com/2026/07/08/slow-cial-app-roost-forces-you-to-slow-down-to-the-speed-of-a-carrier-pigeon/",
+    "description": "This developer didn't expect his side project to grow to 300,000 users, but people love Roost because it's an alternative to an always-on, fast-paced online culture.",
+    "content": "",
+    "pubDate": "Wed, 08 Jul 2026 19:22:11 +0000",
+    "image": ""
+  },
+  "score": 0.9596406172839507,
+  "selectedAt": "2026-07-09T02:38:03.880Z",
+  "generated": {
+    "caption": "Feeling overwhelmed by the constant online hustle? 😫\n\nA new \"slow-social\" app called Roost is offering a calmer alternative. It intentionally slows down interactions, mimicking the speed of a carrier pigeon, and has already attracted 300,000 users tired of fast-paced digital life.\n\nSave this post and share it with a friend! Follow @CyberShieldAlerts for daily updates.",
+    "script": "Are you overwhelmed by the relentless speed of social media? A new 'slow-cial' app called Roost is attracting 300,000 users seeking a different pace. This side project, designed for mindful interaction, literally slows you down to the speed of a carrier pigeon. It's gained popularity as a powerful alternative to our always-on, fast-paced online culture. Roost shows us there's a demand for connection without the constant pressure. Ready for a break from the digital rush? Look into Roost now.",
+    "hashtags": [
+      "roostapp",
+      "slowsocial",
+      "socialmedia",
+      "appsecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "Tired of the Digital Rush? Meet Roost, the 'Slow-cial' App!",
+        "imageQuery": "curious person looking phone"
+      },
+      {
+        "type": "body",
+        "heading": "Overwhelmed by Always-On?",
+        "text": "Many feel exhausted by the constant demand for instant connection in our fast-paced online world.",
+        "imageQuery": "stressed person looking laptop"
+      },
+      {
+        "type": "body",
+        "heading": "Slowing Down, Like a Pigeon",
+        "text": "Roost offers a unique alternative, forcing you to communicate at the unhurried speed of a carrier pigeon.",
+        "imageQuery": "peaceful person using phone outdoor"
+      },
+      {
+        "type": "body",
+        "heading": "An Unexpected Success Story",
+        "text": "What started as a developer's side project has unexpectedly grown to attract 300,000 users!",
+        "imageQuery": "celebrating person computer screen"
+      },
+      {
+        "type": "cta",
+        "text": "Ready for a break from the fast lane? Follow CyberShield Alerts for more mindful tech discoveries!",
+        "imageQuery": "confident person using phone"
+      }
+    ],
+    "generatedAt": "2026-07-09T02:39:13.496Z"
+  },
+  "render": {
+    "slideImages": [
+      "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-slide-01.png",
+      "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-slide-02.png",
+      "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-slide-03.png",
+      "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-slide-04.png",
+      "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-slide-05.png"
+    ],
+    "renderedAt": "2026-07-09T02:39:55.039Z",
+    "reelVideo": "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-reel.mp4",
+    "reelDurationSeconds": 28.456053999999998,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "6453a35560815466",
+  "notifiedAt": "2026-07-09T02:43:25.964Z"
+}
