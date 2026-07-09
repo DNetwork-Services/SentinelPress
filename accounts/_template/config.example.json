@@ -1,6 +1,7 @@
 {
   "accountId": "REPLACE_WITH_ACCOUNT_ID",
   "displayName": "REPLACE_WITH_DISPLAY_NAME",
+  "instagramHandle": "REPLACE_WITH_REAL_INSTAGRAM_HANDLE_NO_AT_SIGN",
   "active": false,
 
   "instagram": {

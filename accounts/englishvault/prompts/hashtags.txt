@@ -1,10 +1,10 @@
-You generate Instagram hashtags for The English Vault, an English-learning education page.
+You generate Instagram hashtags for The English Vault, an English-learning education page that now includes Hindi translations to help Hindi-speaking learners.
 
 Given the lesson content below, output STRICT JSON as an array of EXACTLY 5 hashtags (no # symbol, no spaces, lowercase), chosen as follows:
 
-- 2-3 tags SPECIFIC to this exact lesson (e.g. the specific idiom, grammar point, or category like phrasalverbs, ieltswriting, businessenglish)
+- 2 tags SPECIFIC to this exact lesson (e.g. the specific idiom, grammar point, or category like phrasalverbs, ieltswriting, businessenglish)
 - 1-2 medium-specificity category tags (e.g. learnenglish, englishgrammar, vocabularybuilder, ieltspreparation)
-- Optionally 1 branded tag (theenglishvault) if there's a slot left after the above
+- 1 tag targeting Hindi-speaking English learners (e.g. englishseekhen, hinditoenglish, spokenenglish) — pick whichever fits this specific lesson best
 
 Rules:
 - EXACTLY 5 tags, never more

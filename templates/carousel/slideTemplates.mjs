@@ -93,7 +93,10 @@ function footer(brand, index, total, photoCredit) {
               },
               // Small, unobtrusive on-image credit — satisfies Pexels' API
               // attribution requirement without cluttering the caption.
-              photoCredit
+              // Only shown for real Pexels photos (photographer field
+              // present) — Pollinations illustrations have no attribution
+              // requirement, so no credit line for those.
+              photoCredit?.photographer
                 ? {
                     type: 'div',
                     props: {
@@ -238,6 +241,79 @@ export function buildBodySlide(slide, { brand, accountHandle, categoryLabel, ind
               children: slide.text,
             },
           },
+          // Hindi meaning, when present (English Vault) — uses the Hind
+          // font specifically, since Poppins has no Devanagari glyphs.
+          slide.hindiMeaning
+            ? {
+                type: 'div',
+                props: {
+                  style: {
+                    fontSize: 34,
+                    fontWeight: 400,
+                    fontFamily: 'Hind',
+                    color: brand.secondaryColor,
+                    marginTop: 24,
+                    display: 'flex',
+                    textShadow: TEXT_SHADOW,
+                  },
+                  children: slide.hindiMeaning,
+                },
+              }
+            : { type: 'div', props: { children: '' } },
+        ],
+      },
+    },
+    footer(brand, index, total, backgroundPhoto),
+  ];
+  return { element: buildFrame(brand, children, slide.imageQuery, backgroundPhoto), canvas: CANVAS };
+}
+
+/**
+ * "Wrong vs Right" comparison slide — a high-engagement format for
+ * language learning: a struck-through/red wrong usage next to a
+ * highlighted correct one, side by side.
+ */
+export function buildComparisonSlide(slide, { brand, accountHandle, categoryLabel, index, total, backgroundPhoto }) {
+  const card = (label, text, color, bgTint) => ({
+    type: 'div',
+    props: {
+      style: {
+        display: 'flex',
+        flexDirection: 'column',
+        backgroundColor: bgTint,
+        border: `2px solid ${color}`,
+        borderRadius: 20,
+        padding: 28,
+        marginBottom: 24,
+      },
+      children: [
+        {
+          type: 'div',
+          props: {
+            style: { fontSize: 30, fontWeight: 700, color, marginBottom: 10, display: 'flex' },
+            children: label,
+          },
+        },
+        {
+          type: 'div',
+          props: {
+            style: { fontSize: 32, fontWeight: 400, color: '#FFFFFF', display: 'flex', lineHeight: 1.35 },
+            children: text,
+          },
+        },
+      ],
+    },
+  });
+
+  const children = [
+    header(brand, accountHandle, categoryLabel),
+    {
+      type: 'div',
+      props: {
+        style: { display: 'flex', flexDirection: 'column', flex: 1, justifyContent: 'center', position: 'relative' },
+        children: [
+          card('❌ WRONG', slide.wrong, '#FF3B3B', 'rgba(255,59,59,0.12)'),
+          card('✅ RIGHT', slide.right, '#00FF88', 'rgba(0,255,136,0.12)'),
         ],
       },
     },
@@ -301,5 +377,6 @@ export function buildCtaSlide(slide, { brand, accountHandle, categoryLabel, inde
 export function buildSlideElement(slide, ctx) {
   if (slide.type === 'title') return buildTitleSlide(slide, ctx);
   if (slide.type === 'cta') return buildCtaSlide(slide, ctx);
+  if (slide.type === 'comparison') return buildComparisonSlide(slide, ctx);
   return buildBodySlide(slide, ctx); // default: 'body'
 }

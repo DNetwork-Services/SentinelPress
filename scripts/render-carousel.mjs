@@ -5,7 +5,7 @@ import { Resvg } from '@resvg/resvg-js';
 import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, writePendingPost, queueDir } from './lib/queue.mjs';
 import { buildSlideElement } from '../templates/carousel/slideTemplates.mjs';
-import { fetchTopicPhoto } from './lib/stockphoto.mjs';
+import { fetchTopicPhoto, fetchAiIllustration } from './lib/stockphoto.mjs';
 import { alertFailure } from './lib/alert.mjs';
 
 const FONTS_DIR = path.join(process.cwd(), 'assets', 'fonts');
@@ -15,6 +15,8 @@ function loadFonts() {
     { name: 'Poppins', data: fs.readFileSync(path.join(FONTS_DIR, 'Poppins-Regular.ttf')), weight: 400, style: 'normal' },
     { name: 'Poppins', data: fs.readFileSync(path.join(FONTS_DIR, 'Poppins-SemiBold.ttf')), weight: 600, style: 'normal' },
     { name: 'Poppins', data: fs.readFileSync(path.join(FONTS_DIR, 'Poppins-Bold.ttf')), weight: 700, style: 'normal' },
+    { name: 'Hind', data: fs.readFileSync(path.join(FONTS_DIR, 'Hind-Regular.ttf')), weight: 400, style: 'normal' },
+    { name: 'Hind', data: fs.readFileSync(path.join(FONTS_DIR, 'Hind-SemiBold.ttf')), weight: 600, style: 'normal' },
   ];
 }
 
@@ -25,16 +27,21 @@ async function renderPost(account, post, fonts, pexelsApiKey) {
   }
 
   const outDir = queueDir(account.accountId, 'pending');
-  const accountHandle = `@${account.accountId}`;
+  const accountHandle = `@${account.instagramHandle || account.accountId}`;
   const categoryLabel = post.source?.category;
 
   const imagePaths = [];
   for (let i = 0; i < slides.length; i++) {
-    const backgroundPhoto = await fetchTopicPhoto(slides[i], categoryLabel, pexelsApiKey);
+    let backgroundPhoto = await fetchTopicPhoto(slides[i], categoryLabel, pexelsApiKey);
     if (backgroundPhoto) {
       console.log(`    Slide ${i + 1} photo: "${slides[i].imageQuery}" — by ${backgroundPhoto.photographer}`);
     } else {
-      console.log(`    Slide ${i + 1}: no photo match — using mood background.`);
+      backgroundPhoto = await fetchAiIllustration(slides[i]);
+      if (backgroundPhoto) {
+        console.log(`    Slide ${i + 1}: no photo match — using AI illustration (Pollinations).`);
+      } else {
+        console.log(`    Slide ${i + 1}: no photo or illustration available — using mood background.`);
+      }
     }
 
     const { element, canvas } = buildSlideElement(slides[i], {

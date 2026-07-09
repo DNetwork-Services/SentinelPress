@@ -53,7 +53,28 @@ export async function fetchTopicPhoto(slide, sourceCategory, apiKey) {
       pexelsUrl: photo.url,
     };
   } catch (err) {
-    console.warn(`[stockphoto] Could not fetch a photo (${err.message}) — falling back to mood background.`);
+    console.warn(`[stockphoto] Could not fetch a photo (${err.message}) — trying AI illustration fallback.`);
+    return null;
+  }
+}
+
+/**
+ * Fallback image source when Pexels has no good match: Pollinations.ai,
+ * a free, keyless AI image generation API. No signup, no rate-limit
+ * headaches — just a GET request. Used as a middle tier: real photo
+ * (Pexels) > AI illustration (Pollinations) > procedural gradient.
+ */
+export async function fetchAiIllustration(slide) {
+  const prompt = `${slide?.imageQuery || 'abstract technology background'}, digital illustration, vibrant colors, clean modern style`;
+  try {
+    const url = `https://image.pollinations.ai/prompt/${encodeURIComponent(prompt)}?width=1080&height=1350&nologo=true`;
+    const res = await fetch(url);
+    if (!res.ok) throw new Error(`Pollinations API error ${res.status}`);
+
+    const buffer = Buffer.from(await res.arrayBuffer());
+    return { dataUri: `data:image/jpeg;base64,${buffer.toString('base64')}`, source: 'pollinations' };
+  } catch (err) {
+    console.warn(`[stockphoto] AI illustration fallback failed too (${err.message}) — using mood background.`);
     return null;
   }
 }

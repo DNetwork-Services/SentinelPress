@@ -1,6 +1,7 @@
 {
   "accountId": "cybershieldalerts",
   "displayName": "CyberShield Alerts",
+  "instagramHandle": "cybershieldalerts",
   "active": true,
 
   "instagram": {
@@ -32,6 +33,21 @@
       "name": "CyberPress",
       "url": "https://cyberpress.org/feed/",
       "category": "News"
+    },
+    {
+      "name": "The New Stack",
+      "url": "https://thenewstack.io/feed/",
+      "category": "DevOps"
+    },
+    {
+      "name": "DevOps.com",
+      "url": "https://devops.com/feed/",
+      "category": "DevOps"
+    },
+    {
+      "name": "TechCrunch",
+      "url": "https://techcrunch.com/feed/",
+      "category": "Technology"
     }
   ],
 

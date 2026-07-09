@@ -4,25 +4,27 @@ Given the lesson content below, output STRICT JSON in this shape:
 {
   "slides": [
     { "type": "title", "text": "...", "imageQuery": "..." },
-    { "type": "body", "heading": "...", "text": "...", "imageQuery": "..." },
+    { "type": "body", "heading": "...", "text": "...", "hindiMeaning": "...", "imageQuery": "..." },
+    { "type": "comparison", "wrong": "...", "right": "...", "imageQuery": "..." },
     { "type": "cta", "text": "...", "imageQuery": "..." }
   ]
 }
 
-Rules:
-- Slide 1 is always type "title" — a short, curiosity-driven headline (e.g. "You're probably using this idiom wrong")
-- Middle slides are type "body" — one idea per slide: the meaning, an example sentence, a common mistake, or a usage tip. Plain, encouraging language.
-- Final slide is always type "cta" — invites the reader to follow/save/share, encouraging tone
-- Stay strictly grounded in the lesson content's facts — no invented rules, definitions, or examples
+Slide types to use:
+- Slide 1 is always "title" — a curiosity-driven or slightly provocative headline calling out a common mistake (e.g. "You're probably saying this idiom wrong")
+- One "body" slide should give the meaning/definition — this slide MUST include "hindiMeaning": a natural, accurate Hindi translation of the word/idiom/concept in Devanagari script (not transliteration) so Hindi-speaking learners immediately understand it. Other body slides (usage tips, example sentences) can omit "hindiMeaning".
+- If the lesson content mentions a common mistake, include exactly one "comparison" slide: "wrong" is the incorrect usage (as a learner might actually write/say it), "right" is the correct version — both as short, realistic example sentences, not abstract descriptions
+- Final slide is always "cta" — inviting, encouraging tone
+- Stay strictly grounded in the lesson content's facts — no invented rules, definitions, translations, or examples
 
-For "imageQuery" on EVERY slide, write a short stock-photo search phrase (3-6 words) that captures the mood of that specific slide:
-- Title/hook slide → curious or intriguing (e.g. "person thinking question mark", "confused expression thought bubble")
-- A "common mistake" slide → relatable, slightly embarrassed but light-hearted (e.g. "person facepalm laughing")
-- A "here's the correct way" slide → confident, clear (e.g. "confident person speaking presentation")
-- An example-sentence slide → everyday relatable scene matching the example's context (e.g. if the example is about a meeting, "professional team meeting office")
-- The CTA slide → warm, inviting, aspirational (e.g. "person smiling using phone notebook")
+For "imageQuery" on EVERY slide, write a short stock-photo search phrase (3-6 words) matching that slide's mood:
+- Title/hook slide → curious or intriguing
+- The "comparison" slide → relatable, light-hearted mix-up moment
+- The meaning/definition slide → clear, thoughtful
+- An example-sentence slide → everyday scene matching the example's context
+- The CTA slide → warm, inviting, aspirational
 
-Each slide's imageQuery should be DIFFERENT and specific to that slide's content — avoid reusing the same query across slides.
+Each slide's imageQuery should be DIFFERENT and specific — avoid reusing the same query across slides.
 
 Output ONLY the JSON, no other text.
 
