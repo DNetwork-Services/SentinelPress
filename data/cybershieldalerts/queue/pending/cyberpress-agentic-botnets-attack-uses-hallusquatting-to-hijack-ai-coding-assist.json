@@ -1,0 +1,91 @@
+{
+  "id": "cyberpress-agentic-botnets-attack-uses-hallusquatting-to-hijack-ai-coding-assist",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Agentic Botnets Attack Uses HalluSquatting to Hijack AI Coding Assistants",
+    "link": "https://cyberpress.org/agentic-botnets-hallusquatting-ai-coding/",
+    "description": "A newly disclosed attack technique, called adversarial hallucination squatting (HalluSquatting), developed by researchers at Tel Aviv University and Technion, exploits the predictable tendency of large language models to hallucinate resource identifiers. According to Google, enabling attackers to hijack popular AI coding assistants at scale and assemble them into a botnet. HalluSquatting works by having attackers [&#8230;] The post Agentic Botnets Attack Uses HalluSquatting to Hijack AI Coding Assistants appeared first on Cyber Security News.",
+    "content": "A newly disclosed attack technique, called adversarial hallucination squatting (HalluSquatting), developed by researchers at Tel Aviv University and Technion, exploits the predictable tendency of large language models to hallucinate resource identifiers. According to Google, enabling attackers to hijack popular AI coding assistants at scale and assemble them into a botnet. HalluSquatting works by having attackers preemptively register resources such as repository names or AI &#8220;skills&#8221; that LLMs are statistically likely to hallucinate when responding to common developer prompts like &#8220;clone repository&#8221; or &#8220;install skill&#8221;. By probing foundational models to compute a distribution of the most probable hallucinated names, attackers identify high-probability &#8220;universal squatting candidates&#8221; and plant adversarial prompts inside those fake resources before a real user ever asks. Agentic Botnets Attack Uses HalluSquatting This approach is conceptually similar to slopsquatting, in which attackers publish malicious packages under names that AI coding tools frequently invent, but HalluSquatting extends the concept beyond software packages to a broader class of agentic resources and demonstrates its use for full botnet recruitment. The attack unfolds in a chain: an attacker first tracks trending repositories or skills and probes an oracle to build a hallucination distribution, then registers the highest-probability fake resource embedded with malicious instructions. When a legitimate user later asks an AI coding assistant to perform a routine task, the application&#8217;s planner hallucinates a reference to the squatted resource instead of the real one, retrieves it, and the poisoned content hijacks the agent&#8217;s context, triggering an unauthorized tool invocation. Attack Flow (Source: google) Tel Aviv University demonstrated hallucination rates as high as 85 percent in repository-cloning scenarios and up to 100 percent in skill-installation scenarios, with hallucinations transferring reliably across different foundational models and prompts. Affected Tools The technique was shown to enable remote tool and remote code execution across a wide range of production AI coding assistants and agentic platforms, exposing a supply-chain-style risk for tools that rely on integrated terminals. CategoryAffected ToolsAI coding assistantsCursor, Cursor CLI, Windsurf, GitHub Copilot, ClineCLIsGemini CLIAutonomous assistantsOpenClaw, ZeroClaw, NanoClaw Technion team noted that &#8220;auto-run&#8221; or permission-bypass modes, such as skip-permissions flags or &#8220;yolo mode&#8221; in some CLIs, significantly widen the exposure window, since they allow an agent to execute fetched code without human review. Unlike traditional targeted prompt injection delivered via emails or calendar invites, HalluSquatting is untargeted and pull-based: it requires no direct channel to the victim application, since the victim&#8217;s own agent &#8220;pulls&#8221; the poisoned resource from the internet during normal operation. This shifts prompt injection from a bespoke, one-target-at-a-time technique into a scalable mechanism resembling classic botnet propagation, where a single squatted resource can compromise any agent that happens to hallucinate its way to it. Mitigations The Tel Aviv University and Technion team responsibly disclosed the findings to affected vendors, model providers, and marketplace maintainers, and proposed layered mitigations rather than a single fix. Require a search-tool invocation before any fetch operation, biasing planners toward verifying resource names rather than trusting hallucinated ones Analyze user prompts and generated execution plans for retrieval-intent keywords (&#8220;clone,&#8221; &#8220;install,&#8221; &#8220;fetch&#8221;) to enforce a mandatory verification step Disable auto-run and permission-skipping modes when agents handle freshly fetched, unverified content The findings underscore that as AI coding assistants gain more autonomy and terminal access, their own hallucinations are becoming an exploitable attack surface one that mirrors, and could eventually surpass, the scale of traditional botnet infrastructure. Follow us on Google News , LinkedIn and X to Get More Instant Updates. Set Cyberpress as a Preferred Source in Google. The post Agentic Botnets Attack Uses HalluSquatting to Hijack AI Coding Assistants appeared first on Cyber Security News.",
+    "pubDate": "Thu, 09 Jul 2026 05:31:25 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/07/agentic-botnets-attack-uses-hallusquatting-to-hijack-ai-coding-assistants-6a4f2ba7adc8e.webp"
+  },
+  "score": 0.9947865540123457,
+  "selectedAt": "2026-07-09T06:27:43.314Z",
+  "generated": {
+    "caption": "Your AI coding assistant could be secretly building a botnet!\n\nResearchers found a new attack, 'HalluSquatting,' that tricks AI coding tools into downloading malicious instructions. It works by exploiting how AI models sometimes 'hallucinate' fake resource names when asked for common tasks. Attackers register these names, turning your AI into a scalable botnet. Some tests showed 100% hallucination rates, hijacking tools like GitHub Copilot.\n\nSave this post & share to warn others! Follow @CyberShieldAlerts for daily security updates.",
+    "script": "Your AI coding assistant could be building botnets for hackers right now! Researchers uncovered HalluSquatting, a new attack exploiting how AI models hallucinate. Attackers register fake resources that AI coding tools are likely to invent. When your assistant tries to access a resource, it hallucinates the fake one, retrieves malicious code, and gets hijacked. This creates scalable 'agentic botnets,' exposing a critical supply-chain risk. Hallucination rates can be as high as 100% in some scenarios. Turn off auto-run modes and always verify resource names before your agents execute code.",
+    "hashtags": [
+      "hallusquatting",
+      "agenticbotnets",
+      "aicodeassistantvulnerabilities",
+      "cyberattack",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "Agentic Botnets Attack Uses HalluSquatting to Hijack AI Coding Assistants",
+        "imageQuery": "hacker dark room typing"
+      },
+      {
+        "type": "body",
+        "heading": "What is HalluSquatting?",
+        "text": "HalluSquatting is a new attack technique that exploits the predictable tendency of large language models to hallucinate resource identifiers, enabling attackers to hijack popular AI coding assistants at scale.",
+        "imageQuery": "red warning alert screen"
+      },
+      {
+        "type": "body",
+        "heading": "How Does it Work?",
+        "text": "Attackers preemptively register resources that LLMs are likely to hallucinate, and then plant adversarial prompts inside those fake resources, allowing them to hijack AI coding assistants and assemble them into a botnet.",
+        "imageQuery": "close up circuit board glowing"
+      },
+      {
+        "type": "body",
+        "heading": "Impact and Scale",
+        "text": "The technique can enable remote tool and remote code execution across a wide range of production AI coding assistants and agentic platforms, exposing a supply-chain-style risk for tools that rely on integrated terminals.",
+        "imageQuery": "worried person looking at laptop"
+      },
+      {
+        "type": "body",
+        "heading": "Mitigations",
+        "text": "The Tel Aviv University and Technion team proposed layered mitigations, including requiring search-tool invocation, analyzing user prompts, and disabling auto-run and permission-skipping modes.",
+        "imageQuery": "person smiling relieved laptop"
+      },
+      {
+        "type": "body",
+        "heading": "The Future of AI Security",
+        "text": "The findings underscore that as AI coding assistants gain more autonomy and terminal access, their own hallucinations are becoming an exploitable attack surface, one that mirrors, and could eventually surpass, the scale of traditional botnet infrastructure.",
+        "imageQuery": "magnifying glass code screen"
+      },
+      {
+        "type": "cta",
+        "text": "Stay ahead of the latest cybersecurity threats and follow us for instant updates!",
+        "imageQuery": "confident person using phone"
+      }
+    ],
+    "generatedAt": "2026-07-09T06:28:21.425Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-agentic-botnets-attack-uses-hallusquatting-to-hijack-ai-coding-assist-slide-01.png",
+      "cyberpress-agentic-botnets-attack-uses-hallusquatting-to-hijack-ai-coding-assist-slide-02.png",
+      "cyberpress-agentic-botnets-attack-uses-hallusquatting-to-hijack-ai-coding-assist-slide-03.png",
+      "cyberpress-agentic-botnets-attack-uses-hallusquatting-to-hijack-ai-coding-assist-slide-04.png",
+      "cyberpress-agentic-botnets-attack-uses-hallusquatting-to-hijack-ai-coding-assist-slide-05.png",
+      "cyberpress-agentic-botnets-attack-uses-hallusquatting-to-hijack-ai-coding-assist-slide-06.png",
+      "cyberpress-agentic-botnets-attack-uses-hallusquatting-to-hijack-ai-coding-assist-slide-07.png"
+    ],
+    "renderedAt": "2026-07-09T06:29:42.891Z",
+    "reelVideo": "cyberpress-agentic-botnets-attack-uses-hallusquatting-to-hijack-ai-coding-assist-reel.mp4",
+    "reelDurationSeconds": 35.015692,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "b0cec10f015e74c8",
+  "notifiedAt": "2026-07-09T06:33:20.773Z"
+}

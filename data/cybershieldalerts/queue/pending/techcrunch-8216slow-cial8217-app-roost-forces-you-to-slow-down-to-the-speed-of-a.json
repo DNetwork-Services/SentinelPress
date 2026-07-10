@@ -14,49 +14,55 @@
     "pubDate": "Wed, 08 Jul 2026 19:22:11 +0000",
     "image": ""
   },
-  "score": 0.9596406172839507,
-  "selectedAt": "2026-07-09T02:38:03.880Z",
+  "score": 0.956834912037037,
+  "selectedAt": "2026-07-09T03:08:21.977Z",
   "generated": {
-    "caption": "Feeling overwhelmed by the constant online hustle? 😫\n\nA new \"slow-social\" app called Roost is offering a calmer alternative. It intentionally slows down interactions, mimicking the speed of a carrier pigeon, and has already attracted 300,000 users tired of fast-paced digital life.\n\nSave this post and share it with a friend! Follow @CyberShieldAlerts for daily updates.",
-    "script": "Are you overwhelmed by the relentless speed of social media? A new 'slow-cial' app called Roost is attracting 300,000 users seeking a different pace. This side project, designed for mindful interaction, literally slows you down to the speed of a carrier pigeon. It's gained popularity as a powerful alternative to our always-on, fast-paced online culture. Roost shows us there's a demand for connection without the constant pressure. Ready for a break from the digital rush? Look into Roost now.",
+    "caption": "Feeling overwhelmed by the speed of the digital world? A new 'slow-cial' app called Roost is gaining traction by offering a deliberate alternative to constant online activity. It's designed to slow you down, providing a break from fast-paced social media. This side project has already attracted 300,000 users seeking a different online experience.\n\nSave this post, share it with a friend, and follow @CyberShieldAlerts for daily updates on staying secure and savvy online.",
+    "script": "300,000 users are flocking to a new 'slow-cial' app. But what are the digital implications? Meet Roost. This app, initially a developer's side project, unexpectedly exploded in popularity. It's designed as an alternative to our fast-paced online culture, forcing users to slow down. That unique approach has resonated, attracting 300,000 users. But whenever an app grows this quickly, it's crucial to understand its data practices and security measures. Always be aware. Check app privacy settings before you join any new online flock.",
     "hashtags": [
-      "roostapp",
-      "slowsocial",
-      "socialmedia",
-      "appsecurity",
+      "roost",
+      "slowcial",
+      "cybersecurity",
+      "infosec",
       "cybershieldalerts"
     ],
     "slides": [
       {
         "type": "title",
-        "text": "Tired of the Digital Rush? Meet Roost, the 'Slow-cial' App!",
-        "imageQuery": "curious person looking phone"
+        "text": "Tired of the Digital Rat Race? Meet Roost!",
+        "imageQuery": "calm person looking peaceful screen"
       },
       {
         "type": "body",
-        "heading": "Overwhelmed by Always-On?",
-        "text": "Many feel exhausted by the constant demand for instant connection in our fast-paced online world.",
-        "imageQuery": "stressed person looking laptop"
+        "heading": "What is Roost?",
+        "text": "It's a 'slow-cial' app designed to be an alternative to our always-on, fast-paced online world.",
+        "imageQuery": "curious hand holding phone glowing"
       },
       {
         "type": "body",
-        "heading": "Slowing Down, Like a Pigeon",
-        "text": "Roost offers a unique alternative, forcing you to communicate at the unhurried speed of a carrier pigeon.",
-        "imageQuery": "peaceful person using phone outdoor"
+        "heading": "Why Slow Down?",
+        "text": "People love Roost because it offers a much-needed break from the constant pressure of instant digital communication.",
+        "imageQuery": "stressed person looking at phone"
       },
       {
         "type": "body",
-        "heading": "An Unexpected Success Story",
-        "text": "What started as a developer's side project has unexpectedly grown to attract 300,000 users!",
-        "imageQuery": "celebrating person computer screen"
+        "heading": "The 'Carrier Pigeon' Approach",
+        "text": "This app actively forces you to slow down, mimicking the deliberate speed of sending a message via carrier pigeon.",
+        "imageQuery": "pigeon flying with message scroll"
+      },
+      {
+        "type": "body",
+        "heading": "An Unexpected Hit!",
+        "text": "What began as a simple side project quickly exploded to an impressive 300,000 users, showing a real need for slow tech.",
+        "imageQuery": "person surprised happy phone screen"
       },
       {
         "type": "cta",
-        "text": "Ready for a break from the fast lane? Follow CyberShield Alerts for more mindful tech discoveries!",
-        "imageQuery": "confident person using phone"
+        "text": "Ready to slow down and savor your digital connections? Follow @CyberShieldAlerts for more tech insights!",
+        "imageQuery": "person relaxing confident with tablet"
       }
     ],
-    "generatedAt": "2026-07-09T02:39:13.496Z"
+    "generatedAt": "2026-07-09T03:09:16.396Z"
   },
   "render": {
     "slideImages": [
@@ -64,14 +70,15 @@
       "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-slide-02.png",
       "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-slide-03.png",
       "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-slide-04.png",
-      "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-slide-05.png"
+      "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-slide-05.png",
+      "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-slide-06.png"
     ],
-    "renderedAt": "2026-07-09T02:39:55.039Z",
+    "renderedAt": "2026-07-09T03:09:55.232Z",
     "reelVideo": "techcrunch-8216slow-cial8217-app-roost-forces-you-to-slow-down-to-the-speed-of-a-reel.mp4",
-    "reelDurationSeconds": 28.456053999999998,
+    "reelDurationSeconds": 33.134874999999994,
     "hasVoiceover": true,
     "musicTrack": null
   },
   "approvalHash": "6453a35560815466",
-  "notifiedAt": "2026-07-09T02:43:25.964Z"
+  "notifiedAt": "2026-07-09T03:11:48.878Z"
 }

@@ -11,59 +11,53 @@
     "link": "topic://englishvault/phrasal-look-forward-to",
     "description": "Meaning: to feel excited about something that is going to happen. Example: 'I'm looking forward to the weekend.' Grammar note: 'to' here is a preposition, not part of an infinitive — so it's followed by a noun or gerund (-ing), never a base verb. Common mistake: 'I look forward to see you' is incorrect; correct is 'I look forward to seeing you'.",
     "content": "Meaning: to feel excited about something that is going to happen. Example: 'I'm looking forward to the weekend.' Grammar note: 'to' here is a preposition, not part of an infinitive — so it's followed by a noun or gerund (-ing), never a base verb. Common mistake: 'I look forward to see you' is incorrect; correct is 'I look forward to seeing you'.",
-    "pubDate": "2026-07-09T02:38:03.882Z",
+    "pubDate": "2026-07-09T03:08:21.978Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-07-09T02:38:03.882Z",
+  "selectedAt": "2026-07-09T03:08:21.979Z",
   "generated": {
-    "caption": "Ever said \"I look forward to see you\" and wondered if it sounded quite right? 🤔\n\nWhen you 'look forward to' something, you're excited for it! The trick? 'To' here is a preposition, so it's followed by a noun or gerund (-ing), never a base verb.\n\nSo, say 'I'm looking forward to the weekend' or 'I look forward to seeing you'! ✨\n\nSave this tip, share, and follow @TheEnglishVault for daily lessons!",
-    "script": "Stop saying 'I look forward to see you!' That's a common mistake. The phrase 'look forward to' means to feel excited about something that is going to happen. But here's the important grammar note: the 'to' in 'look forward to' is a preposition, not part of an infinitive. This means it must always be followed by a noun or a gerund, which is the -ing form of a verb. For instance, you'd say, 'I'm looking forward to the weekend.' So, remember to say 'I look forward to seeing you,' never 'I look forward to see you.' Try using 'look forward to' correctly today! Follow The English Vault for more quick English tips.",
+    "caption": "Ever said \"I look forward to see you\" and gotten a strange look? Don't worry, it's an easy mistake! \"Look forward to\" is a preposition phrase where we use a gerund (-ing) like \"I look forward to seeing you\" or \"I'm looking forward to the weekend\". Follow us for daily English tips and save this for later! #EnglishVault",
+    "script": "Are you making this common mistake when talking about upcoming events, saying 'I look forward to see' instead of 'I look forward to seeing'? Look forward to is a phrasal verb that means to feel excited about something that is going to happen, and it's followed by a noun or a gerund, that's a verb ending in -ing. For example, I'm looking forward to the weekend. Remember, 'to' here is a preposition, so use it with a noun or a gerund, like 'I look forward to seeing you', and use this phrase today to sound more natural in English, and follow us for more tips like this.",
     "hashtags": [
-      "lookforwardto",
-      "phrasalverbs",
-      "englishgrammar",
-      "learnenglish",
-      "englishseekhen"
+      "phrasalverblookforwardto",
+      "learnenglishphrasalverbs",
+      "englishgrammarprepositions",
+      "vocabularybuilder",
+      "hinditoenglish"
     ],
     "slides": [
       {
         "type": "title",
-        "text": "You're Probably Misusing \"Look forward to\"!",
-        "imageQuery": "person scratching head confused"
+        "text": "You're probably getting this idiom wrong",
+        "imageQuery": "confused person thinking"
       },
       {
         "type": "body",
         "heading": "What does it mean?",
-        "text": "To feel excited about something that is going to happen.",
-        "hindiMeaning": "किसी आने वाली चीज़ के लिए उत्साहित महसूस करना।",
-        "imageQuery": "person looking happy anticipating"
-      },
-      {
-        "type": "body",
-        "heading": "The Key Grammar Rule!",
-        "text": "In 'look forward to', 'to' is a preposition. This means it MUST be followed by a noun or a gerund (-ing verb). It's NOT part of an infinitive here!",
-        "imageQuery": "grammar rule book open"
-      },
-      {
-        "type": "body",
-        "heading": "See it in action!",
-        "text": "I'm looking forward to the weekend. (Here, 'weekend' is a noun.)\n\nI'm looking forward to seeing you. (Here, 'seeing' is a gerund.)",
-        "imageQuery": "relaxing weekend scene"
+        "text": "to feel excited about something that is going to happen",
+        "hindiMeaning": "किसी होने वाली चीज़ के बारे में उत्साहित महसूस करना",
+        "imageQuery": "clear calendar planning"
       },
       {
         "type": "comparison",
-        "wrong": "I look forward to see you.",
-        "right": "I look forward to seeing you.",
-        "imageQuery": "lightbulb moment mistake solved"
+        "wrong": "I look forward to see you",
+        "right": "I look forward to seeing you",
+        "imageQuery": "laughing at mistake moment"
+      },
+      {
+        "type": "body",
+        "heading": "Example usage",
+        "text": "I'm looking forward to the weekend.",
+        "imageQuery": "relaxing weekend scene"
       },
       {
         "type": "cta",
-        "text": "Ready to level up your English? Follow @TheEnglishVault for daily lessons!",
-        "imageQuery": "person reaching for success"
+        "text": "Practice with us and improve your English skills!",
+        "imageQuery": "smiling friends learning together"
       }
     ],
-    "generatedAt": "2026-07-09T02:39:42.942Z"
+    "generatedAt": "2026-07-09T06:29:33.795Z"
   },
   "render": {
     "slideImages": [
@@ -71,15 +65,14 @@
       "the-english-vault-curriculum-look-forward-to-slide-02.png",
       "the-english-vault-curriculum-look-forward-to-slide-03.png",
       "the-english-vault-curriculum-look-forward-to-slide-04.png",
-      "the-english-vault-curriculum-look-forward-to-slide-05.png",
-      "the-english-vault-curriculum-look-forward-to-slide-06.png"
+      "the-english-vault-curriculum-look-forward-to-slide-05.png"
     ],
-    "renderedAt": "2026-07-09T02:39:59.801Z",
+    "renderedAt": "2026-07-09T06:29:51.163Z",
     "reelVideo": "the-english-vault-curriculum-look-forward-to-reel.mp4",
-    "reelDurationSeconds": 31.880998000000005,
+    "reelDurationSeconds": 29.965350999999995,
     "hasVoiceover": true,
     "musicTrack": null
   },
   "approvalHash": "a223957fc969b3fb",
-  "notifiedAt": "2026-07-09T02:43:29.551Z"
+  "notifiedAt": "2026-07-09T06:33:29.326Z"
 }
