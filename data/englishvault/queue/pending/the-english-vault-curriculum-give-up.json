@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-give-up",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Phrasal Verbs"
+  },
+  "article": {
+    "title": "Give up",
+    "link": "topic://englishvault/phrasal-give-up",
+    "description": "Meaning: to stop trying, or to quit a habit. Example 1: 'Don't give up, you're almost finished!' Example 2: 'He gave up smoking last year.' Grammar note: separable phrasal verb — 'give it up' is also correct, 'give up it' is not.",
+    "content": "Meaning: to stop trying, or to quit a habit. Example 1: 'Don't give up, you're almost finished!' Example 2: 'He gave up smoking last year.' Grammar note: separable phrasal verb — 'give it up' is also correct, 'give up it' is not.",
+    "pubDate": "2026-07-10T12:11:14.029Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-10T12:11:14.029Z",
+  "generated": {
+    "caption": "Ever feel like quitting when things get tough? We've all been there!\n\nToday, let's learn \"give up\"! This phrasal verb means to stop trying or to quit a habit. For example, \"Don't give up, you're almost finished!\" You can also say \"give it up\" because it's separable.\n\nKeep going with your English journey! Save this lesson & follow @EnglishVault for more daily tips!",
+    "script": "Are you saying 'give up it' instead of 'give it up'? The phrasal verb 'give up' has two main meanings. It can mean to stop trying, or to quit a habit. It's a separable phrasal verb, so 'give it up' is correct, but 'give up it' is not. For instance, 'Don't give up, you're almost finished!' Try using 'give up' correctly today, and follow The English Vault for more tips!",
+    "hashtags": [
+      "giveup",
+      "phrasalverbs",
+      "learnenglish",
+      "englishgrammar",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Give up",
+        "headlineRest": "— What It Really Means",
+        "body": "The phrasal verb \"give up\" means to stop trying to do something, or to quit a habit. For example, you might encourage someone with \"Don't give up, you're almost finished!\" It's also used when someone stops a routine, like \"He gave up smoking last year.\" This is a separable phrasal verb, meaning you can correctly say \"give it up,\" but \"give up it\" is grammatically incorrect.",
+        "hindiSummary": "किसी चीज़ को करना छोड़ देना या कोई आदत छोड़ देना 'गिव अप' कहलाता है।",
+        "imageQuery": "person quitting trying"
+      }
+    ],
+    "generatedAt": "2026-07-10T12:12:21.854Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-give-up-slide-01.png"
+    ],
+    "renderedAt": "2026-07-10T12:12:25.469Z",
+    "reelVideo": "the-english-vault-curriculum-give-up-reel.mp4",
+    "reelDurationSeconds": 19.771791,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "059165c2af275b03",
+  "notifiedAt": "2026-07-10T12:13:45.052Z"
+}
