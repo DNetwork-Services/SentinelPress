@@ -1,28 +1,26 @@
-You are writing the slide-by-slide text for a CyberShield Alerts Instagram carousel (5-8 slides).
+You are writing a single-image "news card" post for CyberShield Alerts (not a multi-slide carousel — just one image with a headline and a summary paragraph).
 
-Given the article below, output STRICT JSON in this shape:
+Given the article below, output STRICT JSON in exactly this shape:
 {
   "slides": [
-    { "type": "title", "text": "...", "imageQuery": "..." },
-    { "type": "body", "heading": "...", "text": "...", "imageQuery": "..." },
-    { "type": "cta", "text": "...", "imageQuery": "..." }
+    {
+      "type": "newscard",
+      "badgeInitials": "CS",
+      "headlineHighlight": "...",
+      "headlineRest": "...",
+      "body": "...",
+      "hindiSummary": "...",
+      "imageQuery": "..."
+    }
   ]
 }
 
-Rules:
-- Slide 1 is always type "title" — a short, attention-grabbing headline
-- Middle slides are type "body" — one idea per slide, plain language
-- Final slide is always type "cta" — tells the reader to follow/save/share
-- Stay strictly grounded in the article's facts — no invented details
-
-For "imageQuery" on EVERY slide, write a short stock-photo search phrase (3-6 words) that captures the EMOTIONAL BEAT of that specific slide, not just its topic. Think about what a reader should feel at that moment and describe a photo that evokes it:
-- A slide revealing the threat/danger → something tense, alarming, or unsettling (e.g. "hacker dark room typing", "red warning alert screen")
-- A slide explaining impact/scale → something that conveys urgency or concern (e.g. "worried person looking at laptop")
-- A slide with a fix/solution/good news → something relieved or positive (e.g. "person smiling relieved laptop", "IT professional confident office")
-- A neutral explainer slide → something curious or intriguing rather than generic (e.g. "close up circuit board glowing", "magnifying glass code screen")
-- The CTA slide → something forward-looking or empowering (e.g. "confident person using phone")
-
-Each slide's imageQuery should be DIFFERENT from the others and specific to what that slide says — avoid reusing the same query across slides.
+Field rules:
+- "headlineHighlight": the key entity/product/number that should stand out in the accent color — usually the vendor name, product name, or the most striking number (a CVE severity, a dollar amount, a count). Keep it SHORT (2-5 words). This mirrors how real news headline cards visually emphasize the key subject.
+- "headlineRest": the rest of the headline, continuing naturally from the highlight (e.g. highlight "Critical Zero-Day" + rest "Actively Exploited in Popular VPN Software"). Together they read as one complete headline.
+- "body": 3-5 sentences summarizing what happened, why it matters, and what readers should do — this is the main content block, written in plain language. Stay strictly grounded in the article's facts — no invented details, CVE numbers, or statistics not present in the source.
+- "hindiSummary": ONE short sentence in Hindi (Devanagari script, natural translation not transliteration) summarizing the core point, for Hindi-speaking readers. Keep it to one sentence — this is a supplementary summary line, not a full translation of the body.
+- "imageQuery": a short stock-photo search phrase (3-6 words) capturing the emotional tone of this specific story (alarming for threats, relieved for fixes, curious for neutral explainers — see general guidance below).
 
 Output ONLY the JSON, no other text.
 

@@ -117,6 +117,27 @@ export async function publishReel({ igBusinessAccountId, accessToken, videoUrl, 
 
   return publishedId;
 }
+/**
+ * Publishes a single image post (the news card format — one image, not
+ * a carousel). Simpler than publishCarousel: one container, no children.
+ */
+export async function publishImage({ igBusinessAccountId, accessToken, imageUrl, caption }) {
+  const { id: containerId } = await graphPost(
+    `${igBusinessAccountId}/media`,
+    { image_url: imageUrl, caption },
+    accessToken
+  );
+  await waitForContainerReady(containerId, accessToken);
+
+  const { id: publishedId } = await graphPost(
+    `${igBusinessAccountId}/media_publish`,
+    { creation_id: containerId },
+    accessToken
+  );
+
+  return publishedId;
+}
+
 export async function publishCarousel({ igBusinessAccountId, accessToken, imageUrls, caption }) {
   if (imageUrls.length < 2) {
     throw new Error(`Carousel requires at least 2 images, got ${imageUrls.length}.`);

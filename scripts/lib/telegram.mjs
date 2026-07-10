@@ -29,6 +29,18 @@ async function telegramCall(botToken, method, body) {
 }
 
 /**
+ * Sends a single photo (Telegram's sendMediaGroup requires 2-10 items,
+ * so a single-image post — the news card format — needs sendPhoto instead).
+ */
+export async function sendSinglePhoto(botToken, chatId, imageAbsolutePath) {
+  const form = new FormData();
+  form.append('chat_id', String(chatId));
+  const buf = fs.readFileSync(imageAbsolutePath);
+  form.append('photo', new Blob([buf], { type: 'image/png' }), 'card.png');
+  return telegramCall(botToken, 'sendPhoto', form);
+}
+
+/**
  * Sends the rendered slide images as a Telegram media group (album).
  * No caption here — Telegram's media-group captions are capped at 1024
  * chars and don't support inline buttons, so the full caption + approval
@@ -63,8 +75,8 @@ export function computeApprovalHash(accountId, postId) {
   return crypto.createHash('sha1').update(`${accountId}:${postId}`).digest('hex').slice(0, 16);
 }
 
-function buildApprovalKeyboard(approvalHash, hasReel) {
-  const row = [{ text: '📱 Post Carousel', callback_data: `sp:carousel:${approvalHash}` }];
+function buildApprovalKeyboard(approvalHash, hasReel, isSingleImage) {
+  const row = [{ text: isSingleImage ? '🖼️ Post Image' : '📱 Post Carousel', callback_data: `sp:carousel:${approvalHash}` }];
   if (hasReel) {
     row.push({ text: '🎬 Post Reel', callback_data: `sp:reel:${approvalHash}` });
   }
@@ -137,7 +149,11 @@ export async function sendWeeklySummary(botToken, chatId, account, summary) {
  * Returns the approvalHash so the caller can persist it on the post.
  */
 export async function sendPostForApproval(botToken, chatId, post, imageAbsolutePaths, reelAbsolutePath) {
-  await sendMediaGroup(botToken, chatId, imageAbsolutePaths);
+  if (imageAbsolutePaths.length === 1) {
+    await sendSinglePhoto(botToken, chatId, imageAbsolutePaths[0]);
+  } else {
+    await sendMediaGroup(botToken, chatId, imageAbsolutePaths);
+  }
 
   if (reelAbsolutePath) {
     await sendReelPreview(botToken, chatId, reelAbsolutePath);
@@ -149,7 +165,7 @@ export async function sendPostForApproval(botToken, chatId, post, imageAbsoluteP
   await telegramCall(botToken, 'sendMessage', {
     chat_id: chatId,
     text,
-    reply_markup: buildApprovalKeyboard(approvalHash, Boolean(reelAbsolutePath)),
+    reply_markup: buildApprovalKeyboard(approvalHash, Boolean(reelAbsolutePath), imageAbsolutePaths.length === 1),
   });
 
   return approvalHash;

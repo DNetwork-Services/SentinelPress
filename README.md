@@ -235,6 +235,14 @@ Both are installed fresh in each workflow run rather than assumed pre-installed.
 
 ---
 
+## Post formats
+
+**CyberShieldAlerts** uses a single-image "news card" format (not a multi-slide carousel): a centered account badge, a two-tone headline (key entity highlighted in the accent color), a divider, a summary paragraph, and a one-line Hindi summary — all in one image, faster to render than a multi-slide carousel and matches proven high-engagement news-card layouts. The Reel version still gets full Ken Burns motion and burned-in captions; with only one image there's no crossfade needed, so it's just one continuous zoom for the whole duration.
+
+**The English Vault** keeps the multi-slide carousel format (title → meaning → wrong/right comparison → CTA), since a language lesson benefits from that structure in a way a single news headline doesn't.
+
+Both formats — and both the single-image and multi-image cases — are fully supported end-to-end: Telegram correctly switches between `sendPhoto` (one image) and `sendMediaGroup` (multiple), and Instagram publishing correctly switches between a plain `IMAGE` post and a `CAROUSEL` post based on actual image count.
+
 ## Watch time optimization
 
 Instagram's own ranking signals (confirmed by Adam Mosseri) prioritize watch time, completion rate, and rewatches above almost everything else — and captions are an explicit ranking factor since most viewers watch muted. Reels now include:

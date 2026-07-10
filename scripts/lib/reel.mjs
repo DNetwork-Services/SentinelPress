@@ -9,7 +9,7 @@ const CROSSFADE_SEC = 0.5;
 // Base duration per slide type, in seconds — body slides get a touch
 // longer since there's more to read. Milestone 9 will replace these
 // fixed durations with "however long the voiceover for that slide takes."
-const DURATION_BY_TYPE = { title: 3, body: 3.5, cta: 3 };
+const DURATION_BY_TYPE = { title: 3, body: 3.5, cta: 3, newscard: 8 };
 
 function durationForSlide(slide) {
   return DURATION_BY_TYPE[slide.type] ?? 3;
@@ -90,22 +90,30 @@ export async function assembleReel(slideImagePaths, slides, outputPath, { audioP
   if (slideImagePaths.length !== slides.length) {
     throw new Error('slideImagePaths and slides must be the same length.');
   }
-  if (slideImagePaths.length < 2) {
-    throw new Error('Need at least 2 slides to build a reel with transitions.');
+  if (slideImagePaths.length < 1) {
+    throw new Error('Need at least 1 slide to build a reel.');
   }
 
+  const isSingleSlide = slideImagePaths.length === 1;
   const baseDurations = slides.map(durationForSlide);
   const n = baseDurations.length;
   const baseSum = baseDurations.reduce((a, b) => a + b, 0);
 
+  // With only one slide there's no crossfade overlap to account for —
+  // the whole duration is just that one Ken-Burns clip.
   const scale = targetTotalDuration
-    ? (targetTotalDuration + CROSSFADE_SEC * (n - 1)) / baseSum
+    ? isSingleSlide
+      ? targetTotalDuration / baseSum
+      : (targetTotalDuration + CROSSFADE_SEC * (n - 1)) / baseSum
     : 1;
   const durations = baseDurations.map((d) => d * scale);
 
   const inputArgs = slideImagePaths.flatMap((p) => ['-loop', '1', '-i', p]);
   const perSlideFilters = slideImagePaths.map((_, i) => buildSlideClipFilter(i, durations[i]));
-  const xfadeChain = buildXfadeChain(durations);
+
+  // Single slide: the one Ken-Burns clip IS the output, just relabel it.
+  // Multiple slides: chain crossfades between them as before.
+  const transitionChain = isSingleSlide ? '[clip0]copy[outv]' : buildXfadeChain(durations);
 
   // Burned-in captions are an explicit Instagram ranking factor (most
   // viewers watch muted) — chained onto the final [outv] label as a
@@ -123,13 +131,15 @@ export async function assembleReel(slideImagePaths, slides, outputPath, { audioP
         return `[${inLabel}]${filter}[${outLabel}]`;
       })
       .join(';');
-    filterComplex = [...perSlideFilters, xfadeChain, captionChain].join(';');
+    filterComplex = [...perSlideFilters, transitionChain, captionChain].join(';');
     finalLabel = 'captioned';
   } else {
-    filterComplex = [...perSlideFilters, xfadeChain].join(';');
+    filterComplex = [...perSlideFilters, transitionChain].join(';');
   }
 
-  const totalDuration = durations.reduce((a, b) => a + b, 0) - CROSSFADE_SEC * (n - 1);
+  const totalDuration = isSingleSlide
+    ? durations[0]
+    : durations.reduce((a, b) => a + b, 0) - CROSSFADE_SEC * (n - 1);
 
   const audioInputArgs = audioPath
     ? ['-i', audioPath]

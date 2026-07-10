@@ -1,6 +1,6 @@
 import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, movePost } from './lib/queue.mjs';
-import { publishCarousel, publishReel } from './lib/instagram.mjs';
+import { publishCarousel, publishImage, publishReel } from './lib/instagram.mjs';
 import { alertFailure } from './lib/alert.mjs';
 
 function requireEnv(name) {
@@ -45,9 +45,15 @@ async function publishForAccount(account, imageBaseUrl) {
         const imageUrls = post.render.slideImages.map(
           (fileName) => `${imageBaseUrl}/${account.accountId}/queue/approved/${fileName}`
         );
-        console.log(`  Publishing "${post.article.title}" as a CAROUSEL (${imageUrls.length} slides)...`);
-        igMediaId = await publishCarousel({ igBusinessAccountId, accessToken, imageUrls, caption });
-        console.log(`  Carousel published! Instagram media ID: ${igMediaId}`);
+        if (imageUrls.length === 1) {
+          console.log(`  Publishing "${post.article.title}" as a single IMAGE...`);
+          igMediaId = await publishImage({ igBusinessAccountId, accessToken, imageUrl: imageUrls[0], caption });
+          console.log(`  Image published! Instagram media ID: ${igMediaId}`);
+        } else {
+          console.log(`  Publishing "${post.article.title}" as a CAROUSEL (${imageUrls.length} slides)...`);
+          igMediaId = await publishCarousel({ igBusinessAccountId, accessToken, imageUrls, caption });
+          console.log(`  Carousel published! Instagram media ID: ${igMediaId}`);
+        }
       } else {
         if (!post.render.reelVideo) {
           throw new Error('Post was approved as "reel" but has no rendered reel video.');

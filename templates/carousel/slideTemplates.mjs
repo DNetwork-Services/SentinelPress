@@ -374,7 +374,120 @@ export function buildCtaSlide(slide, { brand, accountHandle, categoryLabel, inde
   return { element: buildFrame(brand, children, slide.imageQuery, backgroundPhoto), canvas: CANVAS };
 }
 
+/**
+ * "News card" — a single-image post format (not a multi-slide carousel):
+ * a centered monogram badge at top, a two-tone headline (highlight word(s)
+ * in the accent color, rest in white — mirrors how real news headline
+ * cards style the key entity), a divider, then a body paragraph filling
+ * the rest of the frame, with small branding in the bottom-left corner.
+ */
+export function buildNewsCardSlide(slide, { brand, accountHandle, backgroundPhoto }) {
+  const badge = {
+    type: 'div',
+    props: {
+      style: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        width: 140,
+        height: 140,
+        borderRadius: 28,
+        backgroundColor: brand.primaryColor,
+        marginBottom: 40,
+        alignSelf: 'center',
+      },
+      children: {
+        type: 'div',
+        props: {
+          style: { fontSize: 56, fontWeight: 700, color: brand.backgroundColor, display: 'flex' },
+          children: (slide.badgeInitials || accountHandle.replace('@', '').slice(0, 2)).toUpperCase(),
+        },
+      },
+    },
+  };
+
+  const headline = {
+    type: 'div',
+    props: {
+      style: {
+        fontSize: 58,
+        fontWeight: 700,
+        lineHeight: 1.2,
+        display: 'flex',
+        flexWrap: 'wrap',
+        textShadow: TEXT_SHADOW,
+        marginBottom: 28,
+      },
+      children: [
+        slide.headlineHighlight
+          ? { type: 'span', props: { style: { color: brand.secondaryColor }, children: `${slide.headlineHighlight} ` } }
+          : null,
+        { type: 'span', props: { style: { color: '#FFFFFF' }, children: slide.headlineRest || slide.text || '' } },
+      ].filter(Boolean),
+    },
+  };
+
+  const divider = {
+    type: 'div',
+    props: {
+      style: { width: '100%', height: 4, backgroundColor: brand.secondaryColor, display: 'flex', marginBottom: 32 },
+    },
+  };
+
+  const body = {
+    type: 'div',
+    props: {
+      style: {
+        fontSize: 32,
+        fontWeight: 400,
+        lineHeight: 1.5,
+        color: 'rgba(255,255,255,0.92)',
+        display: 'flex',
+        textShadow: TEXT_SHADOW,
+      },
+      children: slide.body || slide.text || '',
+    },
+  };
+
+  const hindiSummary = slide.hindiSummary
+    ? {
+        type: 'div',
+        props: {
+          style: {
+            fontSize: 28,
+            fontWeight: 400,
+            fontFamily: 'Hind',
+            color: brand.secondaryColor,
+            marginTop: 24,
+            display: 'flex',
+            textShadow: TEXT_SHADOW,
+          },
+          children: slide.hindiSummary,
+        },
+      }
+    : null;
+
+  const brandFooter = {
+    type: 'div',
+    props: {
+      style: {
+        display: 'flex',
+        alignItems: 'center',
+        marginTop: 'auto',
+        fontSize: 24,
+        fontWeight: 600,
+        color: brand.primaryColor,
+      },
+      children: accountHandle,
+    },
+  };
+
+  const children = [badge, headline, divider, body, hindiSummary, brandFooter].filter(Boolean);
+  return { element: buildFrame(brand, children, slide.imageQuery, backgroundPhoto), canvas: CANVAS };
+}
+
 export function buildSlideElement(slide, ctx) {
+  if (slide.type === 'newscard') return buildNewsCardSlide(slide, ctx);
   if (slide.type === 'title') return buildTitleSlide(slide, ctx);
   if (slide.type === 'cta') return buildCtaSlide(slide, ctx);
   if (slide.type === 'comparison') return buildComparisonSlide(slide, ctx);
