@@ -1,0 +1,86 @@
+{
+  "id": "the-english-vault-curriculum-put-off",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Phrasal Verbs"
+  },
+  "article": {
+    "title": "Put off",
+    "link": "topic://englishvault/phrasal-put-off",
+    "description": "Meaning: to postpone or delay something. Example: 'We had to put off the meeting until next week.' Grammar note: separable — 'put the meeting off' is also correct. Second meaning: to make someone dislike something — 'The bad reviews put me off that restaurant.'",
+    "content": "Meaning: to postpone or delay something. Example: 'We had to put off the meeting until next week.' Grammar note: separable — 'put the meeting off' is also correct. Second meaning: to make someone dislike something — 'The bad reviews put me off that restaurant.'",
+    "pubDate": "2026-07-10T03:44:07.453Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-10T03:44:07.453Z",
+  "generated": {
+    "caption": "Ever need to postpone something? Or been made to dislike an idea? That's where 'put off' comes in!\n\nThis versatile phrasal verb means to delay something, like \"We had to put off the meeting.\" It can also mean to make someone dislike something: \"The bad reviews put me off that restaurant.\" Super useful, right?\n\nSave this and follow @EnglishVault for daily English growth!",
+    "script": "Tired of always saying \"delay\" or \"I don't like it\"? Let's learn the versatile phrasal verb \"put off.\" It has two main meanings. First, \"put off\" means to postpone or delay something. For example, \"We had to put off the meeting until next week.\" You can also say \"We had to put the meeting off until next week\" because it's separable. The second meaning of \"put off\" is to make someone dislike something. Like, \"The bad reviews put me off that restaurant.\" Now, try using \"put off\" in your conversations today, and follow The English Vault for more useful phrases!",
+    "hashtags": [
+      "phrasalverbs",
+      "putoff",
+      "learnenglish",
+      "englishgrammar",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "Are you using 'put off' correctly?",
+        "imageQuery": "confused person thinking"
+      },
+      {
+        "type": "body",
+        "heading": "Meaning",
+        "text": "to postpone or delay something",
+        "hindiMeaning": "किसी चीज़ को स्थगित या विलंबित करना",
+        "imageQuery": "clear calendar page"
+      },
+      {
+        "type": "body",
+        "heading": "Example Sentence",
+        "text": "We had to put off the meeting until next week. (Alternatively, 'put the meeting off' is also correct.)",
+        "imageQuery": "office meeting room table"
+      },
+      {
+        "type": "body",
+        "heading": "Second Meaning",
+        "text": "to make someone dislike something",
+        "hindiMeaning": "किसी को कुछ नापसंद करना",
+        "imageQuery": "person reading bad reviews"
+      },
+      {
+        "type": "comparison",
+        "wrong": "The meeting is put off tomorrow.",
+        "right": "The meeting has been put off until tomorrow.",
+        "imageQuery": "frustrated person checking schedule"
+      },
+      {
+        "type": "cta",
+        "text": "Improve your English skills and use 'put off' like a pro!",
+        "imageQuery": "smiling person learning online"
+      }
+    ],
+    "generatedAt": "2026-07-10T03:45:05.237Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-put-off-slide-01.png",
+      "the-english-vault-curriculum-put-off-slide-02.png",
+      "the-english-vault-curriculum-put-off-slide-03.png",
+      "the-english-vault-curriculum-put-off-slide-04.png",
+      "the-english-vault-curriculum-put-off-slide-05.png",
+      "the-english-vault-curriculum-put-off-slide-06.png"
+    ],
+    "renderedAt": "2026-07-10T03:45:12.547Z",
+    "reelVideo": "the-english-vault-curriculum-put-off-reel.mp4",
+    "reelDurationSeconds": 30.03501099999999,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "d9efcee27488cf25",
+  "notifiedAt": "2026-07-10T03:47:25.815Z"
+}

@@ -1,0 +1,92 @@
+{
+  "id": "the-english-vault-curriculum-professional-email-closing-phrases",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Business English"
+  },
+  "article": {
+    "title": "Professional email closing phrases",
+    "link": "topic://englishvault/business-english-email-closings",
+    "description": "Common closings by formality level: Formal — 'I look forward to your reply.', 'Please do not hesitate to contact me.' Neutral — 'Let me know if you have any questions.', 'Thanks in advance.' Common mistake: mixing very formal openings with casual closings (e.g. 'Dear Sir' followed by 'Cheers') creates an inconsistent tone.",
+    "content": "Common closings by formality level: Formal — 'I look forward to your reply.', 'Please do not hesitate to contact me.' Neutral — 'Let me know if you have any questions.', 'Thanks in advance.' Common mistake: mixing very formal openings with casual closings (e.g. 'Dear Sir' followed by 'Cheers') creates an inconsistent tone.",
+    "pubDate": "2026-07-10T06:25:55.353Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-10T06:25:55.353Z",
+  "generated": {
+    "caption": "Ever send an email and wonder if your closing sounds quite right? 🤔 Your email ending sets the tone! Always match its formality to your message.\n\n'I look forward to your reply' is formal, while 'Let me know if you have any questions' is neutral. Avoid mixing a formal opening like 'Dear Sir' with a casual closing to keep your tone consistent.\n\nSave this tip & follow @EnglishVault for daily English lessons!",
+    "script": "Still ending your professional emails with 'Cheers' after 'Dear Sir'? This creates an inconsistent tone by mixing very formal openings with casual closings. Let's fix that. For formal emails, use 'I look forward to your reply' or 'Please do not hesitate to contact me.' For a neutral tone, try 'Let me know if you have any questions' or 'Thanks in advance.' For example, you could write, 'I look forward to your reply.' Match your closing to your email's opening to keep your tone consistent. Try these today and follow The English Vault for more business English tips!",
+    "hashtags": [
+      "emailclosings",
+      "professionalemail",
+      "businessenglish",
+      "writingtips",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "title",
+        "text": "Are You Making This Common Email Mistake?",
+        "imageQuery": "curious person, email error"
+      },
+      {
+        "type": "body",
+        "heading": "What's a Professional Email Closing?",
+        "text": "It's the final phrase before your signature, setting the tone for your message. It should always match your email's formality.",
+        "hindiMeaning": "यह आपके हस्ताक्षर से पहले का अंतिम वाक्यांश होता है, जो आपके संदेश का टोन निर्धारित करता है। इसे हमेशा आपके ईमेल की औपचारिकता से मेल खाना चाहिए।",
+        "imageQuery": "thoughtful person writing email"
+      },
+      {
+        "type": "body",
+        "heading": "Formal & Polished",
+        "text": "For official communications or when addressing someone senior: 'I look forward to your reply.' 'Please do not hesitate to contact me.'",
+        "imageQuery": "elegant professional office"
+      },
+      {
+        "type": "body",
+        "heading": "Neutral & Courteous",
+        "text": "Great for everyday professional correspondence: 'Let me know if you have any questions.' 'Thanks in advance.'",
+        "imageQuery": "friendly office collaboration"
+      },
+      {
+        "type": "comparison",
+        "wrong": "Dear Sir, I am writing to you regarding... Cheers, [Your Name]",
+        "right": "Dear Sir, I am writing to you regarding... I look forward to your reply, [Your Name]",
+        "imageQuery": "person looking confused at two emails"
+      },
+      {
+        "type": "body",
+        "heading": "Maintain Consistency!",
+        "text": "The key is to match your closing phrase to your opening and the overall tone of your email. A formal opening needs a formal closing!",
+        "imageQuery": "jigsaw puzzle fitting together perfectly"
+      },
+      {
+        "type": "cta",
+        "text": "Elevate your email etiquette! Follow The English Vault for more expert tips to master professional English communication.",
+        "imageQuery": "inspiring person reaching for success"
+      }
+    ],
+    "generatedAt": "2026-07-10T06:27:04.577Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-professional-email-closing-phrases-slide-01.png",
+      "the-english-vault-curriculum-professional-email-closing-phrases-slide-02.png",
+      "the-english-vault-curriculum-professional-email-closing-phrases-slide-03.png",
+      "the-english-vault-curriculum-professional-email-closing-phrases-slide-04.png",
+      "the-english-vault-curriculum-professional-email-closing-phrases-slide-05.png",
+      "the-english-vault-curriculum-professional-email-closing-phrases-slide-06.png",
+      "the-english-vault-curriculum-professional-email-closing-phrases-slide-07.png"
+    ],
+    "renderedAt": "2026-07-10T06:27:12.471Z",
+    "reelVideo": "the-english-vault-curriculum-professional-email-closing-phrases-reel.mp4",
+    "reelDurationSeconds": 30.61551,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "d1926b206bab45b6",
+  "notifiedAt": "2026-07-10T06:29:15.000Z"
+}
