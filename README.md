@@ -1,8 +1,5 @@
 # SentinelPress
 
-<img width="1774" height="887" alt="ChatGPT Image Jul 9, 2026, 08_35_29 AM" src="https://github.com/user-attachments/assets/dd032005-c4df-43ec-82c2-6e50ea765e7f" />
-
-
 An AI content automation engine that researches sources, drafts Instagram content (carousel + Reel with voiceover), sends it to you on Telegram for a one-tap review, and publishes only what you approve. Runs entirely on free infrastructure — no server to keep running, no hosting bill.
 
 Currently powers two accounts: **CyberShieldAlerts** (cybersecurity/DevOps/tech news) and **The English Vault** (English lessons with Hindi translations).
@@ -165,7 +162,17 @@ If Gemini fails or its key is missing, the pipeline automatically retries with G
 1. pexels.com/api → sign up → key is issued instantly, no card.
 2. Add secret: `PEXELS_API_KEY`.
 
-If this is unset, or a search comes back empty, slides automatically fall back to a free AI illustration (**Pollinations.ai** — no signup needed at all, used automatically, nothing to configure) and finally to a procedurally-generated gradient background if even that fails. You always get *something* visually rich — never a blank slide.
+### 8. Puter.js — high-quality AI illustrations (optional, recommended)
+
+A real quality upgrade over the old Pollinations-only fallback — gives access to production models (FLUX, GPT Image, Imagen 4, Stable Diffusion 3) for free through a Puter account.
+
+1. Sign up at puter.com (free).
+2. puter.com/dashboard → **Create token**.
+3. Add secret: `PUTER_AUTH_TOKEN`.
+
+**Real uncertainty worth knowing:** Puter's free-tier rate limits aren't clearly documented anywhere I could find. If it starts failing consistently, that's likely why — the fallback chain (photo → Puter.js → Pollinations → procedural gradient) means posts still render fine either way.
+
+If `PEXELS_API_KEY` and `PUTER_AUTH_TOKEN` are both unset, or a search/generation comes back empty, slides automatically fall back to Pollinations.ai (no signup needed at all) and finally to a procedurally-generated gradient background. You always get *something* visually rich — never a blank slide.
 
 ---
 
@@ -240,11 +247,23 @@ Both are installed fresh in each workflow run rather than assumed pre-installed.
 
 ## Post formats
 
-**CyberShieldAlerts** uses a single-image "news card" format (not a multi-slide carousel): a centered account badge, a two-tone headline (key entity highlighted in the accent color), a divider, a summary paragraph, and a one-line Hindi summary — all in one image, faster to render than a multi-slide carousel and matches proven high-engagement news-card layouts. The Reel version still gets full Ken Burns motion and burned-in captions; with only one image there's no crossfade needed, so it's just one continuous zoom for the whole duration.
+Both accounts now use a single-image "page/news card" format (not a multi-slide carousel): a centered account badge, a two-tone headline (key entity/word highlighted in the accent color), a divider, a summary paragraph, and a Hindi one-liner — faster to render than a multi-slide carousel and matches proven high-engagement layouts. The Reel version still gets full Ken Burns motion and burned-in captions; with only one image there's no crossfade needed, so it's just one continuous zoom for the whole duration.
 
-**The English Vault** keeps the multi-slide carousel format (title → meaning → wrong/right comparison → CTA), since a language lesson benefits from that structure in a way a single news headline doesn't.
+**The English Vault's weekly content plan** (`accounts/englishvault/topics.json`'s `weekday` field drives this automatically — `research.mjs` prefers today's themed topics before falling back to the general pool):
 
-Both formats — and both the single-image and multi-image cases — are fully supported end-to-end: Telegram correctly switches between `sendPhoto` (one image) and `sendMediaGroup` (multiple), and Instagram publishing correctly switches between a plain `IMAGE` post and a `CAROUSEL` post based on actual image count.
+| Day | Theme |
+|---|---|
+| Monday | Word of the Day (Vocabulary) |
+| Tuesday | Translation (Hindi ↔ English) |
+| Wednesday | Grammar Tip |
+| Thursday | Daily Conversation |
+| Friday | Idiom or Phrasal Verb |
+| Saturday | Vocabulary Quiz |
+| Sunday | Common Mistakes & Corrections |
+
+38 topics currently in the bank, covering all 7 themes (this is a representative starting set, not the full 100 headline ideas — easy to extend by adding more entries to `topics.json` with the same shape, each new one automatically enters the rotation).
+
+Both the single-image and multi-image cases are fully supported end-to-end regardless: Telegram correctly switches between `sendPhoto` (one image) and `sendMediaGroup` (multiple), and Instagram publishing correctly switches between a plain `IMAGE` post and a `CAROUSEL` post based on actual image count.
 
 ## Watch time optimization
 

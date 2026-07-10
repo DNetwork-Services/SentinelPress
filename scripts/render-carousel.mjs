@@ -6,6 +6,7 @@ import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, writePendingPost, queueDir } from './lib/queue.mjs';
 import { buildSlideElement } from '../templates/carousel/slideTemplates.mjs';
 import { fetchTopicPhoto, fetchAiIllustration } from './lib/stockphoto.mjs';
+import { fetchPuterIllustration } from './lib/puterImage.mjs';
 import { alertFailure } from './lib/alert.mjs';
 
 const FONTS_DIR = path.join(process.cwd(), 'assets', 'fonts');
@@ -36,11 +37,16 @@ async function renderPost(account, post, fonts, pexelsApiKey) {
     if (backgroundPhoto) {
       console.log(`    Slide ${i + 1} photo: "${slides[i].imageQuery}" — by ${backgroundPhoto.photographer}`);
     } else {
-      backgroundPhoto = await fetchAiIllustration(slides[i]);
+      backgroundPhoto = await fetchPuterIllustration(slides[i]);
       if (backgroundPhoto) {
-        console.log(`    Slide ${i + 1}: no photo match — using AI illustration (Pollinations).`);
+        console.log(`    Slide ${i + 1}: no photo match — using AI illustration (Puter.js).`);
       } else {
-        console.log(`    Slide ${i + 1}: no photo or illustration available — using mood background.`);
+        backgroundPhoto = await fetchAiIllustration(slides[i]);
+        if (backgroundPhoto) {
+          console.log(`    Slide ${i + 1}: Puter.js unavailable — using AI illustration (Pollinations).`);
+        } else {
+          console.log(`    Slide ${i + 1}: no photo or illustration available — using mood background.`);
+        }
       }
     }
 

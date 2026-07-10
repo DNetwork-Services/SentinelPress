@@ -1,30 +1,26 @@
-You are writing the slide-by-slide text for a The English Vault Instagram carousel (5-7 slides).
+You are writing a single-image "page" post for The English Vault (not a multi-slide carousel — just one image, like a page from a vocabulary notebook).
 
-Given the lesson content below, output STRICT JSON in this shape:
+Given the lesson content below, output STRICT JSON in exactly this shape:
 {
   "slides": [
-    { "type": "title", "text": "...", "imageQuery": "..." },
-    { "type": "body", "heading": "...", "text": "...", "hindiMeaning": "...", "imageQuery": "..." },
-    { "type": "comparison", "wrong": "...", "right": "...", "imageQuery": "..." },
-    { "type": "cta", "text": "...", "imageQuery": "..." }
+    {
+      "type": "newscard",
+      "badgeInitials": "EV",
+      "headlineHighlight": "...",
+      "headlineRest": "...",
+      "body": "...",
+      "hindiSummary": "...",
+      "imageQuery": "..."
+    }
   ]
 }
 
-Slide types to use:
-- Slide 1 is always "title" — a curiosity-driven or slightly provocative headline calling out a common mistake (e.g. "You're probably saying this idiom wrong")
-- One "body" slide should give the meaning/definition — this slide MUST include "hindiMeaning": a natural, accurate Hindi translation of the word/idiom/concept in Devanagari script (not transliteration) so Hindi-speaking learners immediately understand it. Other body slides (usage tips, example sentences) can omit "hindiMeaning".
-- If the lesson content mentions a common mistake, include exactly one "comparison" slide: "wrong" is the incorrect usage (as a learner might actually write/say it), "right" is the correct version — both as short, realistic example sentences, not abstract descriptions
-- Final slide is always "cta" — inviting, encouraging tone
-- Stay strictly grounded in the lesson content's facts — no invented rules, definitions, translations, or examples
-
-For "imageQuery" on EVERY slide, write a short stock-photo search phrase (3-6 words) matching that slide's mood:
-- Title/hook slide → curious or intriguing
-- The "comparison" slide → relatable, light-hearted mix-up moment
-- The meaning/definition slide → clear, thoughtful
-- An example-sentence slide → everyday scene matching the example's context
-- The CTA slide → warm, inviting, aspirational
-
-Each slide's imageQuery should be DIFFERENT and specific — avoid reusing the same query across slides.
+Field rules:
+- "headlineHighlight": the word, phrase, or idiom being taught — SHORT (1-4 words), this is the star of the page (e.g. "Break the Ice", "Ubiquitous", "Discuss About").
+- "headlineRest": a short curiosity hook continuing the headline naturally (e.g. highlight "Break the Ice" + rest "— What It Really Means"). For a "Common Mistakes" topic, frame it as the correction (e.g. highlight "Discuss About" + rest "Is Actually Wrong — Here's Why").
+- "body": 3-5 sentences teaching the concept clearly and warmly — the meaning, one example sentence, and (if the lesson content includes a common mistake) the wrong vs. right contrast written naturally into the paragraph. Stay strictly grounded in the lesson content's facts below — never invent definitions, translations, or examples not present in the source.
+- "hindiSummary": ONE natural Hindi sentence (Devanagari script, not transliteration) giving the core meaning or translation — this is central to this format, not a minor addition, since many lessons ARE Hindi-English translation practice.
+- "imageQuery": a short stock-photo search phrase (3-6 words) matching the mood — curious/intriguing for a new word, light-hearted for a common mistake, everyday-relatable for a conversation/translation example.
 
 Output ONLY the JSON, no other text.
 

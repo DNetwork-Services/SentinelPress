@@ -16,6 +16,7 @@
     "analytics": "node scripts/analytics.mjs"
   },
   "dependencies": {
+    "@heyputer/puter.js": "^2.5.4",
     "@resvg/resvg-js": "^2.6.2",
     "satori": "^0.26.0"
   },
