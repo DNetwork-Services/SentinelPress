@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-new-trojan-turns-visual-studio-projects-into-a-software-supply-chain",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "New Trojan Turns Visual Studio Projects Into a Software Supply Chain Attack Vector",
+    "link": "https://cyberpress.org/trojan-visual-studio-supply-chain-attack/",
+    "description": "A multi-stage Trojan is turning ordinary software development workflows into a supply chain attack vector by weaponizing Visual Studio project files. Documented by Doctor Web researchers, first detected in Q4 2025, and note that it has since undergone continuous upgrades, now combining data theft, clipboard hijacking, backdoor access, cryptomining, and self-propagating file infection into a [&#8230;] The post New Trojan Turns Visual Studio Projects Into a Software Supply Chain Attack Vector appeared first on Cyber Security News.",
+    "content": "A multi-stage Trojan is turning ordinary software development workflows into a supply chain attack vector by weaponizing Visual Studio project files. Documented by Doctor Web researchers, first detected in Q4 2025, and note that it has since undergone continuous upgrades, now combining data theft, clipboard hijacking, backdoor access, cryptomining, and self-propagating file infection into a single package. The attack begins with Trojan.DownLoader49.35384, which uses PEB walking and the initterm function table inside trojanized executables to trigger a hidden PowerShell payload, sometimes encrypted for evasion. A parallel variant, Python.Downloader.255, hides Fernet-encrypted code behind whitespace obfuscation in Python scripts distributed alongside infected binaries. Trojan Turns Visual Studio Into Supply Chain Vector Once this initial stage executes, it downloads Trojan.DownLoader49.35687, which performs sandbox checks, creates the mutex Global\\PFNMX, and retrieves C2 addresses from public GitHub repositories and Steam profiles where attackers post plaintext or Base64/XOR-encrypted domains. C2 domain name (Source: drweb) This second-stage component then injects itself into one of 41 legitimate System32 processes before passing control to BackDoor.Siggen2.5906, the core payload. This final stage persists by overwriting DLLs, including Microsoft Edge components and Discord&#8217;s profapi.dll , and by escalating privileges via a UAC bypass that exploits the ms-settings registry handler. Once established, the backdoor carries out five principal functions. It steals Discord tokens, browser credentials and cookies from Chrome, Edge, Brave, and Yandex, Telegram Desktop data, and Exodus wallet files, and, in some cases, swaps the wallet&#8217;s app.asar file to intercept recovery phrases directly. It continuously monitors clipboard content to hijack bank card numbers and silently swap cryptocurrency wallet addresses with attacker-controlled ones. Infected file (Source: drweb) It accepts a range of remote commands enabling file exfiltration, reverse proxying, directory listing, and even user-harassment functions such as screamers and forced audio playback. It deploys idle-triggered cryptomining using open-source tools including XMRig, T-Rex, and TeamRedMiner. And most notably, it infects development files, spreading itself further across connected systems and codebases. This file-infection capability is what makes the trojan particularly dangerous for the developer community. It targets imgui_impl_win32.cpp from the Dear ImGui library by injecting a payload line alongside a launch line, replaces Visual Studio&#8217;s .suo user-settings files with infected versions pulled from the C2 server, and embeds malicious code into winnetwk.h within the Windows SDK to compromise networking functionality. Account page hosting the encrypted URL (Source: drweb) It also injects the initterm-based first-stage payload into standard .exe files and, critically, adds malicious pre-build events into .vcxproj and .csproj project files so that the malicious command runs automatically before every compilation. This design exploits a natural trust chain in software development. When a developer shares an infected repository, anyone who clones, builds, or opens the project in Visual Studio automatically triggers the malicious pre-build event. An embedded ActiveX script, silently re-infecting their own machine and potentially any software they subsequently compile and distribute to end users. Mitigation Dr.Web has confirmed detection and remediation capability, including disinfection routines that strip malicious code from .vcxproj, .csproj, and imgui files without disrupting legitimate project functionality. Security teams should prioritize monitoring for the Global\\PFNMX and global\\PFNX_side mutexes, unexpected pre-build events in shared project files, and outbound connections to GitHub raw content or Steam profile pages that function as C2 dead-drop resolvers. Given the trojan&#8217;s active development cycle since late 2025, organizations relying on shared C++ or C# codebases should audit build pipelines and apply the same scrutiny to third-party project files that they would to any executable download. Follow us on Google News , LinkedIn and X to Get More Instant Updates. Set Cyberpress as a Preferred Source in Google. The post New Trojan Turns Visual Studio Projects Into a Software Supply Chain Attack Vector appeared first on Cyber Security News.",
+    "pubDate": "Sat, 11 Jul 2026 05:20:22 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/07/new-trojan-turns-visual-studio-projects-into-a-software-supply-chain-attack-vector-6a51cf3148114.webp"
+  },
+  "score": 0.9994380262345679,
+  "selectedAt": "2026-07-11T05:26:26.160Z",
+  "generated": {
+    "caption": "Software you use or create could be secretly compromised!\n\nA sophisticated new Trojan is infecting Visual Studio project files, turning them into a supply chain attack vector. It steals credentials, hijacks crypto wallets, mines cryptocurrency, and spreads itself through shared code. This means applications built from infected projects can be dangerous.\n\nProtect yourself! Save this post, share it with developers, and follow @CyberShieldAlerts for daily updates!",
+    "script": "Your Visual Studio projects could be silently infecting your entire supply chain! A new multi-stage Trojan is weaponizing software development workflows. First detected in late 2025, this evolving malware steals Discord tokens, browser credentials, Telegram data, and even hijacks crypto wallet addresses. The real danger? It infects development files like .vcxproj and .csproj, embedding malicious pre-build events. This means simply cloning, building, or opening an infected project automatically triggers the attack, spreading itself across connected systems and codebases. It exploits the trust inherent in shared development. Audit your build pipelines immediately, scrutinize all third-party project files, and monitor for unexpected pre-build events. Protect your code, protect your users.",
+    "hashtags": [
+      "visualstudio",
+      "supplychainattack",
+      "trojan",
+      "cybersecurity",
+      "malware"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Visual Studio Projects",
+        "headlineRest": "Turned Into Software Supply Chain Attack Vector by New Trojan",
+        "body": "A multi-stage Trojan is weaponizing Visual Studio project files, transforming ordinary software development workflows into a dangerous supply chain attack vector. Discovered by Doctor Web, this malware, continuously upgraded since Q4 2025, now combines data theft, clipboard hijacking, backdoor access, cryptomining, and self-propagating file infection. It specifically injects malicious pre-build events into .vcxproj and .csproj files, ensuring the malware runs automatically before every compilation when developers share or build infected projects. This can lead to re-infection of other machines and compromise of distributed software. Organizations should monitor for specific mutexes, audit build pipelines, and scrutinize third-party project files to mitigate risks.",
+        "hindiSummary": "एक नया ट्रोजन विजुअल स्टूडियो प्रोजेक्ट फाइलों को निशाना बनाकर सॉफ्टवेयर सप्लाई चेन पर हमला कर रहा है, जो विकास कार्यप्रवाहों को जोखिम में डाल रहा है।",
+        "imageQuery": "software supply chain attack visual studio"
+      }
+    ],
+    "generatedAt": "2026-07-11T05:26:47.017Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-new-trojan-turns-visual-studio-projects-into-a-software-supply-chain-slide-01.png"
+    ],
+    "renderedAt": "2026-07-11T05:27:19.043Z",
+    "reelVideo": "cyberpress-new-trojan-turns-visual-studio-projects-into-a-software-supply-chain-reel.mp4",
+    "reelDurationSeconds": 50.364082,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "8546f41635b72e1b",
+  "notifiedAt": "2026-07-11T05:28:48.577Z"
+}

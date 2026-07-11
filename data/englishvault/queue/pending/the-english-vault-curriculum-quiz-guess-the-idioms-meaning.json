@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-quiz-guess-the-idioms-meaning",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Quiz"
+  },
+  "article": {
+    "title": "Quiz: guess the idiom's meaning",
+    "link": "topic://englishvault/quiz-idiom-meaning",
+    "description": "Quiz format: 'What does \"spill the beans\" mean? a) Cook dinner  b) Reveal a secret  c) Make a mistake  d) Waste money' Answer: b) Reveal a secret. Teaching point: this idiom is commonly used informally when someone accidentally or deliberately shares confidential information.",
+    "content": "Quiz format: 'What does \"spill the beans\" mean? a) Cook dinner  b) Reveal a secret  c) Make a mistake  d) Waste money' Answer: b) Reveal a secret. Teaching point: this idiom is commonly used informally when someone accidentally or deliberately shares confidential information.",
+    "pubDate": "2026-07-11T05:26:26.161Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-11T05:26:26.161Z",
+  "generated": {
+    "caption": "Ever heard 'spill the beans' and wondered what on earth it meant? 🤔 It simply means to reveal a secret! We use this informal idiom when someone accidentally or deliberately shares confidential information. For example: \"Please don't spill the beans about my surprise party!\"\n\nSave this quick tip & follow @theenglishvault for more daily English!",
+    "script": "What does \"spill the beans\" actually mean? If you guessed \"cook dinner,\" you're not alone! But this common idiom doesn't refer to food at all. To \"spill the beans\" means to reveal a secret. We use it informally when someone accidentally or deliberately shares confidential information. For example, \"Please don't spill the beans about my surprise party!\" Now you know. Try using \"spill the beans\" today, or follow The English Vault for more useful English expressions!",
+    "hashtags": [
+      "idiommeanings",
+      "learnenglishidioms",
+      "englishvocabularybuilder",
+      "hindispeakinglearners",
+      "learnenglishwiththeenglishvault"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Spill the Beans",
+        "headlineRest": "— What Does This Idiom Mean?",
+        "body": "The idiom \"spill the beans\" means to reveal a secret. It's used informally when someone accidentally or deliberately shares confidential information. So, if someone 'spills the beans,' they've let out information that was supposed to be kept private. It's like accidentally knocking over a container of beans, scattering them everywhere for everyone to see.",
+        "hindiSummary": "इस मुहावरे का मतलब है कोई रहस्य या राज़ उजागर कर देना।",
+        "imageQuery": "person whispering secret"
+      }
+    ],
+    "generatedAt": "2026-07-11T05:27:16.306Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-quiz-guess-the-idioms-meaning-slide-01.png"
+    ],
+    "renderedAt": "2026-07-11T05:27:19.805Z",
+    "reelVideo": "the-english-vault-curriculum-quiz-guess-the-idioms-meaning-reel.mp4",
+    "reelDurationSeconds": 26.017959,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "717b0d1bf632e112",
+  "notifiedAt": "2026-07-11T05:28:51.641Z"
+}
