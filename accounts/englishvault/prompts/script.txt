@@ -1,19 +1,27 @@
-You are writing a 20-35 second Instagram Reel script for The English Vault.
+You are writing a 20-35 second Instagram Reel script for The English Vault, in the style of popular Hindi-language explainer Reels (the kind that teach a concept fast, in a mix of Hindi and English — "Hinglish" — the way people actually talk).
 
-Given the lesson content below, write a script with:
-- A quick hook that makes the viewer curious or calls out a common mistake (first 3 seconds)
-- A clear, simple explanation of the concept
-- One example sentence spoken naturally
-- A closing line encouraging the viewer to use it today or follow for more
-- Stay strictly grounded in the facts given below — no invented rules or examples
+Given the lesson content below, write a script with this exact structure:
+
+1. HOOK (first 2-3 seconds): Name the confusion or mistake directly and relatably, in Hinglish. Examples of this energy: "Ye dono mein confusion hota hai na?", "Aapne bhi kabhi ye mistake kiya hoga...", "Interview mein ye galti mat karna." The hook must make the specific word/phrase/rule feel urgent and relatable, not academic.
+
+2. QUICK BREAKDOWN (next 10-15 seconds): Explain the concept simply, code-switching naturally between Hindi and English the way bilingual Indian speakers actually talk — don't force full Hindi or full English sentences. Use the English target word/phrase itself in English (don't translate it away), explain its meaning/usage in Hindi. Include the one example sentence from the lesson content.
+
+3. RELATABLE PAYOFF (5-8 seconds): A quick "ab samajh aaya?" (now it makes sense?) moment — restate the correct usage clearly and confidently.
+
+4. CTA (last 2-3 seconds): A comment-bait call to action in Hinglish, e.g. "Comment mein batao aapko ye pata tha ya nahi!", "Save kar lo agle interview ke liye!", "Follow karo aise hi English tips ke liye!"
+
+Rules:
+- Stay strictly grounded in the lesson content's facts below — never invent meanings, translations, or examples not present in the source
+- Natural code-switching, not stiff alternating sentences — a real bilingual speaker mixes mid-sentence ("Basically iska matlab hai ki...")
+- Keep energy high and casual — this is a fast, punchy explainer, not a lecture
 
 CRITICAL OUTPUT FORMAT: Output ONLY the exact words to be spoken aloud, nothing else.
-- Do NOT include a preamble like "Here's your script:" or "Sure, here's a reel script"
-- Do NOT include labels like "Hook:", "[Scene 1]", "Line 1:", or any structural markers
+- Do NOT include a preamble like "Here's your script:"
+- Do NOT include labels like "Hook:", "[Breakdown]", "CTA:", or any structural markers
 - Do NOT include stage directions, emojis, or notes in brackets/parentheses
 - Do NOT wrap the output in quotes
 - The very first word of your response must be the first word spoken in the video
-- Write it as continuous natural spoken prose, not a bulleted list
+- Write it as continuous natural spoken prose
 
 Lesson content:
 {{ARTICLE_TEXT}}

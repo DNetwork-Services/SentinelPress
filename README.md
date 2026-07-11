@@ -245,6 +245,14 @@ Both are installed fresh in each workflow run rather than assumed pre-installed.
 
 ---
 
+## Hindi/Hinglish reels (The English Vault)
+
+English Vault's reels now follow a Hindi-explainer-Reel format (hook naming a common confusion → quick Hinglish breakdown → relatable example → comment-bait CTA), with genuine Hindi voiceover via **Edge TTS** — Microsoft's free online neural voice service, called over the network (no local model, no GPU).
+
+**Why not Svara-TTS** (a genuinely excellent open Indic TTS model, considered and researched in depth): every deployment path for it — the standard FP8 variant, the MLX port — explicitly requires a CUDA GPU (6-8GB VRAM even in the "efficient" configuration) or Apple Silicon. GitHub Actions' free runners have neither. Edge TTS trades a bit of voice-cloning flexibility for something that actually runs on free CPU-only infrastructure today, and as a bonus its `--write-subtitles` output gives real per-phrase timing for captions — more accurate than the word-count estimate Piper's output requires.
+
+**Caption font also switches per account**: Hind (Devanagari-capable) for edge-tts accounts, Poppins for Piper/English-only accounts — verified directly in ffmpeg's `drawtext` filter, which is a different rendering engine than the carousel slides' Satori-based text and needed its own check.
+
 ## Post formats
 
 Both accounts now use a single-image "page/news card" format (not a multi-slide carousel): a centered account badge, a two-tone headline (key entity/word highlighted in the accent color), a divider, a summary paragraph, and a Hindi one-liner — faster to render than a multi-slide carousel and matches proven high-engagement layouts. The Reel version still gets full Ken Burns motion and burned-in captions; with only one image there's no crossfade needed, so it's just one continuous zoom for the whole duration.

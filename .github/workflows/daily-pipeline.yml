@@ -57,6 +57,9 @@ jobs:
       - name: Install Piper TTS
         run: pip install piper-tts --break-system-packages
 
+      - name: Install Edge TTS (for Hindi/Hinglish voiceover)
+        run: pip install edge-tts --break-system-packages
+
       - name: Cache Piper voice model
         uses: actions/cache@v4
         with:

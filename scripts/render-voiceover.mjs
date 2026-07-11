@@ -3,13 +3,40 @@ import fs from 'fs';
 import { loadActiveAccounts } from './lib/config.mjs';
 import { listQueue, writePendingPost, queueDir } from './lib/queue.mjs';
 import { synthesizeSpeech } from './lib/tts.mjs';
+import { synthesizeSpeechEdge } from './lib/edgetts.mjs';
 import { mixNarrationWithMusic } from './lib/audiomix.mjs';
 import { getDurationSeconds } from './lib/media.mjs';
 import { assembleReel } from './lib/reel.mjs';
 import { chunkScriptForCaptions } from './lib/captions.mjs';
 import { alertFailure } from './lib/alert.mjs';
 
-const CAPTION_FONT_PATH = path.join(process.cwd(), 'assets', 'fonts', 'Poppins-Bold.ttf');
+const CAPTION_FONT_ENGLISH = path.join(process.cwd(), 'assets', 'fonts', 'Poppins-Bold.ttf');
+const CAPTION_FONT_HINDI = path.join(process.cwd(), 'assets', 'fonts', 'Hind-SemiBold.ttf');
+
+/**
+ * Synthesizes narration using whichever engine the account is configured
+ * for. Piper (default) is English-only but fast and fully offline. Edge
+ * TTS is used for Hindi/Hinglish accounts — Piper has no Hindi voice at
+ * all, and the alternative (a heavy local Indic model like Svara-TTS)
+ * needs a CUDA GPU even in its efficient variant, which GitHub Actions'
+ * free runners don't have. Edge TTS is just a network call to Microsoft's
+ * free service, so it's CPU-friendly and also gives real per-phrase
+ * caption timing (via its subtitle output) instead of the word-count
+ * estimate Piper's output requires.
+ */
+async function synthesizeNarration(account, text, outputPathBase) {
+  const engine = account.tts?.engine || 'piper';
+
+  if (engine === 'edge-tts') {
+    const audioPath = `${outputPathBase}.mp3`;
+    const { captionChunks } = await synthesizeSpeechEdge(text, audioPath, account.tts?.voice);
+    return { audioPath, captionChunks };
+  }
+
+  const audioPath = `${outputPathBase}.wav`;
+  await synthesizeSpeech(text, audioPath);
+  return { audioPath, captionChunks: null };
+}
 
 // Backstop cleanup in case the LLM still slips in a conversational
 // preamble or structural label despite the prompt now explicitly
@@ -65,31 +92,34 @@ async function addVoiceoverForAccount(account) {
       console.log(`  Adding voiceover for: "${post.article.title}"`);
 
       const narrationText = cleanScriptForNarration(post.generated.script);
-      const narrationPath = path.join(dir, `${post.id}-narration.wav`);
-      await synthesizeSpeech(narrationText, narrationPath);
+      const narrationPathBase = path.join(dir, `${post.id}-narration`);
+      const { audioPath: narrationPath, captionChunks: realCaptionChunks } = await synthesizeNarration(account, narrationText, narrationPathBase);
       const narrationDuration = await getDurationSeconds(narrationPath);
-      console.log(`    Narration: ${narrationDuration.toFixed(1)}s`);
+      console.log(`    Narration (${account.tts?.engine || 'piper'}): ${narrationDuration.toFixed(1)}s`);
 
       const mixedAudioPath = path.join(dir, `${post.id}-audio-mixed.wav`);
       const { usedMusic, trackName } = await mixNarrationWithMusic(narrationPath, narrationDuration, mixedAudioPath);
       if (usedMusic) console.log(`    Mixed with music: ${trackName}`);
 
       // Burned-in captions — an explicit Instagram ranking factor, and
-      // most viewers watch muted. Timed proportionally by word count
-      // across the narration's real duration (see captions.mjs for why
-      // this approximation is reasonable without word-level timestamps).
-      const captionChunks = chunkScriptForCaptions(narrationText, narrationDuration);
+      // most viewers watch muted. Real per-phrase timing from edge-tts's
+      // subtitle output when available (accurate); otherwise falls back
+      // to word-count-proportional estimation (Piper has no timing output).
+      const captionChunks = realCaptionChunks && realCaptionChunks.length > 0
+        ? realCaptionChunks
+        : chunkScriptForCaptions(narrationText, narrationDuration);
 
       // Rebuild the reel video at the narration's actual length (silent
       // durations were an arbitrary guess in Milestone 8) using the real
       // mixed audio track instead of silence.
       const slideImagePaths = post.render.slideImages.map((f) => path.join(dir, f));
       const reelPath = path.join(dir, post.render.reelVideo);
+      const captionFontPath = account.tts?.engine === 'edge-tts' ? CAPTION_FONT_HINDI : CAPTION_FONT_ENGLISH;
       const { durationSeconds } = await assembleReel(slideImagePaths, post.generated.slides, reelPath, {
         audioPath: mixedAudioPath,
         targetTotalDuration: narrationDuration,
         captionChunks,
-        fontPath: CAPTION_FONT_PATH,
+        fontPath: captionFontPath,
       });
 
       // Clean up intermediate files — only the final reel + queue JSON
