@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-vocabulary-quiz-pick-the-correct-synonym",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Quiz"
+  },
+  "article": {
+    "title": "Vocabulary quiz: pick the correct synonym",
+    "link": "topic://englishvault/quiz-synonym-challenge",
+    "description": "Quiz format: 'Which word is closest in meaning to HAPPY? a) Content  b) Furious  c) Exhausted  d) Confused' Answer: a) Content. Teaching point: 'content' means satisfied/happy with one's situation — a common IELTS/vocabulary-test synonym pairing.",
+    "content": "Quiz format: 'Which word is closest in meaning to HAPPY? a) Content  b) Furious  c) Exhausted  d) Confused' Answer: a) Content. Teaching point: 'content' means satisfied/happy with one's situation — a common IELTS/vocabulary-test synonym pairing.",
+    "pubDate": "2026-07-11T14:48:58.181Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-11T14:48:58.181Z",
+  "generated": {
+    "caption": "Feeling good and want another way to say it? 🤔 While 'happy' is great, 'content' is a wonderful synonym! It means you're satisfied and pleased with your situation. For example: 'She felt content after a productive day.' Master your English vocab! Save this, share with a friend, and follow @TheEnglishVault for daily tips! ✨",
+    "script": "IELTS ya kisi bhi vocabulary test mein Happy ka synonym pucha jaye toh kya choose karoge? Aksar log yahaan confuse ho jaate hain!\n\nToh suno! Agar quiz mein pucha jaye 'Which word is closest in meaning to HAPPY?', the correct answer is 'Content'. Kyunki 'content' ka matlab hai satisfied ya happy with one's situation. Ye ek bohot common synonym pairing hai jo tests mein aata hai.\n\nToh next time jab Happy ka closest meaning choose karna ho, toh 'Content' ko yaad rakhna. Simple!\n\nSave kar lo ye reel aur comment karke batao aapko ye tip pata thi ya nahi!",
+    "hashtags": [
+      "vocabularyquiz",
+      "ieltssynonyms",
+      "learnenglish",
+      "englishvocabularybuilder",
+      "hinditoenglish"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Content",
+        "headlineRest": "— A Key Synonym for Happy",
+        "body": "The word 'content' is a common synonym for 'happy', meaning satisfied or pleased with one's situation. For example, 'She felt content with her new job and was enjoying the challenges it brought.' In vocabulary tests like IELTS, understanding such synonym pairs is crucial. Remember, 'content' is the closest in meaning to 'happy', not 'furious', 'exhausted', or 'confused', which have very different connotations.",
+        "hindiSummary": "संतुष्ट या खुश होने की भावना को व्यक्त करने के लिए 'संतुष्ट' शब्द का प्रयोग किया जाता है",
+        "imageQuery": "smiling woman at workplace"
+      }
+    ],
+    "generatedAt": "2026-07-11T14:49:51.384Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-vocabulary-quiz-pick-the-correct-synonym-slide-01.png"
+    ],
+    "renderedAt": "2026-07-11T14:49:53.815Z",
+    "reelVideo": "the-english-vault-curriculum-vocabulary-quiz-pick-the-correct-synonym-reel.mp4",
+    "reelDurationSeconds": 43.776,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "29cf82838c06b0d6",
+  "notifiedAt": "2026-07-11T14:51:18.919Z"
+}

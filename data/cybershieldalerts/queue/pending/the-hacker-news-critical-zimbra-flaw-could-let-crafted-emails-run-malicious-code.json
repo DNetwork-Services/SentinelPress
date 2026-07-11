@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-critical-zimbra-flaw-could-let-crafted-emails-run-malicious-code",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Critical Zimbra Flaw Could Let Crafted Emails Run Malicious Code in User Sessions",
+    "link": "https://thehackernews.com/2026/07/critical-zimbra-flaw-could-let-crafted_0483473395.html",
+    "description": "Zimbra is urging customers to apply updates to address a critical security vulnerability impacting the Classic Web Client that could result in arbitrary code execution. The vulnerability has been described as a case of stored cross-site scripting (XSS) that could allow specially crafted emails to execute malicious scripts in a user's session. It has yet to be assigned a CVE identifier. \"The",
+    "content": "",
+    "pubDate": "Sat, 11 Jul 2026 12:15:55 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirVz95zYTg61VRro9unfJCWWwwUrv3pQdtyNT7rPL8iCg6n0S6bky4dqPiluQHfSvQMIO9cyYgrz-07ZCx8yG_qND_J9XJ_0BoUON9p3zj0etafNvjg45txAeu4uCDEMxGDNv2tIxNuqrC0OsKG_sWZp5QIlEkbqZ_g_EEcAdXUQbuo_EgsXwT3mERTTk/s1600/zimbra-email-hack.jpg"
+  },
+  "score": 0.9552729058641976,
+  "selectedAt": "2026-07-11T14:48:58.158Z",
+  "generated": {
+    "caption": "Opening an email could compromise your account! 🚨 A critical flaw in Zimbra's Classic Web Client allows specially crafted emails to run malicious code in your session. This means a simple email could execute harmful scripts without you knowing. Zimbra urges all users to update immediately to stay safe!\n\nStay informed! Save this post, share with someone who uses Zimbra, and follow @CyberShieldAlerts for daily threat intelligence!",
+    "script": "Zimbra users: your email could be running malicious code! A critical security flaw in Zimbra's Classic Web Client allows specially crafted emails to execute arbitrary code directly within your user session. This stored cross-site scripting vulnerability means a simple malicious email could give attackers control. It's a serious threat to your data and system integrity. Don't wait. Zimbra is urging all customers to apply the necessary updates immediately.",
+    "hashtags": [
+      "zimbra",
+      "xss",
+      "arbitrarycodeexecution",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Zimbra Flaw",
+        "headlineRest": "Allows Crafted Emails to Run Malicious Code",
+        "body": "Zimbra is urging customers to apply updates to address a critical security vulnerability found in its Classic Web Client. This flaw, described as stored cross-site scripting (XSS), could allow specially crafted emails to execute malicious scripts within a user's session. Such a vulnerability can lead to arbitrary code execution, posing a significant risk to user data and system integrity. Users should update their Zimbra installations immediately to mitigate this severe threat.",
+        "hindiSummary": "ज़िम्बरा के क्लासिक वेब क्लाइंट में एक गंभीर सुरक्षा खामी पाई गई है जो ईमेल के ज़रिए दुर्भावनापूर्ण कोड चलाने की अनुमति देती है, ग्राहकों को तुरंत अपडेट करना चाहिए।",
+        "imageQuery": "malicious email security warning"
+      }
+    ],
+    "generatedAt": "2026-07-11T14:49:19.629Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-critical-zimbra-flaw-could-let-crafted-emails-run-malicious-code-slide-01.png"
+    ],
+    "renderedAt": "2026-07-11T14:49:52.931Z",
+    "reelVideo": "the-hacker-news-critical-zimbra-flaw-could-let-crafted-emails-run-malicious-code-reel.mp4",
+    "reelDurationSeconds": 26.296599,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "0a772acf37aa8608",
+  "notifiedAt": "2026-07-11T14:51:15.027Z"
+}
