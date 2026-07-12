@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-hackers-weaponize-balochistan-police-portal-in-multi-group-espio",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Hackers Weaponize Balochistan Police Portal in Multi-Group Espionage Campaigns",
+    "link": "https://thehackernews.com/2026/07/hackers-weaponize-balochistan-police.html",
+    "description": "Cybersecurity researchers have disclosed details of sustained cyber espionage activity against several Pakistani law enforcement organizations undertaken by suspected China- and India-aligned threat actors between February 2024 and April 2026. \"At Balochistan Police, the compromised assets included servers hosting web applications that manage police and citizen data, such as criminal and",
+    "content": "",
+    "pubDate": "Sat, 11 Jul 2026 23:19:31 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimRVwRIhs54UhNHyRll9YzVxICmTpgqwjAK1Sy7vYt6FAzb9oImcFpuM0J8dOWdtdjCdlROkternhP9r5jZD9HNvwVwcyRzhesdYgbVjUpJk7p4rxDDJSdEUibs1Gk-Ihy1bTcxs8fA7kgG49ImfTWEZO6068Ui-_X6sTTraCg8lFuucYJrUJi2RhdXyG2/s1600/pakistan.jpg"
+  },
+  "score": 0.934021987654321,
+  "selectedAt": "2026-07-12T05:42:04.753Z",
+  "generated": {
+    "caption": "\"Pakistani law enforcement agencies were hacked, putting sensitive citizen data at risk. Suspected China- and India-aligned groups carried out the cyber espionage campaign from 2024 to 2026, targeting police data. Learn more in our carousel. Save & share, and follow us for daily cybersecurity updates!\" #CyberShieldAlerts",
+    "script": "Your personal data is at risk, hackers have infiltrated a police portal, exposing sensitive information of citizens and law enforcement, this breach has been ongoing since February 2024, with suspected China- and India-aligned threat actors behind the attack, the compromised servers host web applications that manage police and citizen data, update your security settings now",
+    "hashtags": [
+      "cyberespionage",
+      "balochistanpolice",
+      "chinathreatactors",
+      "indiaalignedthreatactors",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Balochistan Police",
+        "headlineRest": " Portal Hacked in Espionage Campaigns",
+        "body": "Cybersecurity researchers have found evidence of a sustained cyber espionage campaign targeting Pakistani law enforcement organizations, including the Balochistan Police. The campaign, which is believed to be carried out by threat actors aligned with China and India, compromised servers hosting sensitive police and citizen data. This breach has significant implications for the security of sensitive information and highlights the need for robust cybersecurity measures. Users are advised to be cautious when interacting with online portals and to ensure their personal data is protected. The incident occurred between February 2024 and April 2026.",
+        "hindiSummary": "पाकिस्तानी पुलिस组织ों के खिलाफ साइबर जासूसी अभियान में बलोचिस्तान पुलिस पोर्टल का उपयोग किया गया",
+        "imageQuery": "hacking sensitive data breach"
+      }
+    ],
+    "generatedAt": "2026-07-12T05:42:48.011Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-hackers-weaponize-balochistan-police-portal-in-multi-group-espio-slide-01.png"
+    ],
+    "renderedAt": "2026-07-12T05:43:21.583Z",
+    "reelVideo": "the-hacker-news-hackers-weaponize-balochistan-police-portal-in-multi-group-espio-reel.mp4",
+    "reelDurationSeconds": 22.163447,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "113fa247ffb3ed20",
+  "notifiedAt": "2026-07-12T05:44:41.696Z"
+}

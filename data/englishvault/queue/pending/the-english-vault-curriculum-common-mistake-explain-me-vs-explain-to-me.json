@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-common-mistake-explain-me-vs-explain-to-me",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Common Mistakes"
+  },
+  "article": {
+    "title": "Common mistake: 'explain me' vs 'explain to me'",
+    "link": "topic://englishvault/mistakes-explain-me",
+    "description": "Wrong: 'Can you explain me this?' Right: 'Can you explain this to me?' Teaching point: 'explain' takes the thing being explained as its direct object, and the person needs 'to' before them — unlike 'tell me' which doesn't need 'to'.",
+    "content": "Wrong: 'Can you explain me this?' Right: 'Can you explain this to me?' Teaching point: 'explain' takes the thing being explained as its direct object, and the person needs 'to' before them — unlike 'tell me' which doesn't need 'to'.",
+    "pubDate": "2026-07-12T05:42:04.754Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-12T05:42:04.755Z",
+  "generated": {
+    "caption": "Ever said \"explain me\" and gotten a strange look? 'Explain' needs 'to' before the person, so it's \"explain to me\". Try: \"Can you explain this to me?\" Save & share, and follow us for daily English tips! #EnglishVault",
+    "script": "Aapne bhi kabhi ye mistake kiya hoga, explain me ya explain to me, dono mein confusion hota hai na? Basically iska matlab hai ki explain ke baad direct object aata hai, jaise ki 'Can you explain this to me?' mein 'this' ko explain kiya ja raha hai, aur 'to me' iska matlab hai ki uss explanation ko kiske liye diya ja raha hai, jaise ki 'Can you explain this to me?' mein 'this' ko explain karke mujhe bataya ja raha hai. Ab samajh aaya ki explain ke baad to ki zarurat hai? Comment mein batao aapko ye pata tha ya nahi!",
+    "hashtags": [
+      "explainto",
+      "englishmistakes",
+      "englishgrammar",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Explain to Me",
+        "headlineRest": "Is Actually Correct — Here's Why",
+        "body": "Many English learners make the mistake of saying 'explain me' instead of 'explain to me.' The correct phrase is 'explain to me' because the verb 'explain' takes the thing being explained as its direct object, and the person being explained to needs 'to' before them. For example, you can say 'Can you explain this to me?' to ask someone to clarify something. Notice the difference between 'explain to me' and 'tell me,' where 'tell' doesn't require 'to' before the person being addressed.",
+        "hindiSummary": "किसी को कुछ समझाने के लिए 'explain to me' का उपयोग किया जाता है",
+        "imageQuery": "confused person asking for clarification"
+      }
+    ],
+    "generatedAt": "2026-07-12T05:43:19.900Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-common-mistake-explain-me-vs-explain-to-me-slide-01.png"
+    ],
+    "renderedAt": "2026-07-12T05:43:22.475Z",
+    "reelVideo": "the-english-vault-curriculum-common-mistake-explain-me-vs-explain-to-me-reel.mp4",
+    "reelDurationSeconds": 37.584,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "c25d850069d4becc",
+  "notifiedAt": "2026-07-12T05:44:44.791Z"
+}
