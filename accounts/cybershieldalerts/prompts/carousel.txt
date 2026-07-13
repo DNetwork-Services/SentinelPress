@@ -1,26 +1,36 @@
-You are writing a single-image "news card" post for CyberShield Alerts (not a multi-slide carousel — just one image with a headline and a summary paragraph).
+You are writing a whiteboard/doodle animation explainer sequence for CyberShield Alerts. You must split the topic/story into EXACTLY 8 to 10 logical slides (scenes).
 
 Given the article below, output STRICT JSON in exactly this shape:
 {
   "slides": [
     {
-      "type": "newscard",
-      "badgeInitials": "CS",
-      "headlineHighlight": "...",
-      "headlineRest": "...",
-      "body": "...",
-      "hindiSummary": "...",
+      "type": "whiteboard",
+      "title": "...",
+      "text": "...",
+      "doodleType": "...",
+      "accentColor": "...",
       "imageQuery": "..."
     }
   ]
 }
 
-Field rules:
-- "headlineHighlight": the key entity/product/number that should stand out in the accent color — usually the vendor name, product name, or the most striking number (a CVE severity, a dollar amount, a count). Keep it SHORT (2-5 words). This mirrors how real news headline cards visually emphasize the key subject.
-- "headlineRest": the rest of the headline, continuing naturally from the highlight (e.g. highlight "Critical Zero-Day" + rest "Actively Exploited in Popular VPN Software"). Together they read as one complete headline.
-- "body": 3-5 sentences summarizing what happened, why it matters, and what readers should do — this is the main content block, written in plain language. Stay strictly grounded in the article's facts — no invented details, CVE numbers, or statistics not present in the source.
-- "hindiSummary": ONE short sentence in Hindi (Devanagari script, natural translation not transliteration) summarizing the core point, for Hindi-speaking readers. Keep it to one sentence — this is a supplementary summary line, not a full translation of the body.
-- "imageQuery": a short stock-photo search phrase (3-6 words) capturing the emotional tone of this specific story (alarming for threats, relieved for fixes, curious for neutral explainers — see general guidance below).
+Field rules for each slide:
+- "type": MUST be "whiteboard".
+- "title": A very short, punchy title/headline for the step (2-5 words, e.g. "Step 1: The Phishing Mail" or "How it works").
+- "text": A short, clear sentence (8-12 words) describing what is happening in this step. Keep it simple and direct.
+- "doodleType": Choose EXACTLY one of these supported types:
+  * "confused_user": a stick figure scratching head / confused (e.g. for general questions, user confusion, or the initial hook)
+  * "hacker": a stick figure in a black hoodie / typing on laptop (e.g. for hacker activities, threat actors, phishing launch)
+  * "server_network": stack of server boxes connected in a network (e.g. for networks, data streams, cloud setup)
+  * "secured": a shield with a checkmark or lock (e.g. for encryption, security fixes, safe systems, patching)
+  * "attack": a computer monitor with lightning bolt/warning (e.g. for exploits, cyber attacks, malware execution)
+  * "cloud_database": cloud connected to a database (e.g. cloud storage, database leaks, SaaS)
+  * "ransomware": locked screen with a sad stick figure (e.g. ransomware, locked files, extortion)
+  * "phishing": envelope hanging on a fish hook (e.g. phishing emails, fake links, social engineering)
+  * "explainer": stick figure holding a pointer stick pointing to a board (e.g. teaching a concept, explaining mechanism)
+  * "summary": checklist/checkmarks (e.g. final takeaway, checklist, recap slide)
+- "accentColor": Choose EXACTLY one of: "blue" (for informational/secured/cloud), "orange" (for warnings/hackers/phishing), or "red" (for critical attacks/ransomware/exploits).
+- "imageQuery": A short search term (3-6 words) representing the scene, as a fallback (e.g. "confused person computer", "hacker coding").
 
 Output ONLY the JSON, no other text.
 

@@ -33,21 +33,26 @@ async function renderPost(account, post, fonts, pexelsApiKey) {
 
   const imagePaths = [];
   for (let i = 0; i < slides.length; i++) {
-    let backgroundPhoto = await fetchTopicPhoto(slides[i], categoryLabel, pexelsApiKey);
-    if (backgroundPhoto) {
-      console.log(`    Slide ${i + 1} photo: "${slides[i].imageQuery}" — by ${backgroundPhoto.photographer}`);
-    } else {
-      backgroundPhoto = await fetchPuterIllustration(slides[i]);
+    let backgroundPhoto = null;
+    if (slides[i].type !== 'whiteboard') {
+      backgroundPhoto = await fetchTopicPhoto(slides[i], categoryLabel, pexelsApiKey);
       if (backgroundPhoto) {
-        console.log(`    Slide ${i + 1}: no photo match — using AI illustration (Puter.js).`);
+        console.log(`    Slide ${i + 1} photo: "${slides[i].imageQuery}" — by ${backgroundPhoto.photographer}`);
       } else {
-        backgroundPhoto = await fetchAiIllustration(slides[i]);
+        backgroundPhoto = await fetchPuterIllustration(slides[i]);
         if (backgroundPhoto) {
-          console.log(`    Slide ${i + 1}: Puter.js unavailable — using AI illustration (Pollinations).`);
+          console.log(`    Slide ${i + 1}: no photo match — using AI illustration (Puter.js).`);
         } else {
-          console.log(`    Slide ${i + 1}: no photo or illustration available — using mood background.`);
+          backgroundPhoto = await fetchAiIllustration(slides[i]);
+          if (backgroundPhoto) {
+            console.log(`    Slide ${i + 1}: Puter.js unavailable — using AI illustration (Pollinations).`);
+          } else {
+            console.log(`    Slide ${i + 1}: no photo or illustration available — using mood background.`);
+          }
         }
       }
+    } else {
+      console.log(`    Slide ${i + 1} is whiteboard style — using procedurally rendered vector doodle.`);
     }
 
     const { element, canvas } = buildSlideElement(slides[i], {

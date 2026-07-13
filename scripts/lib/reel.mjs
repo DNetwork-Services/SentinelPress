@@ -9,7 +9,7 @@ const CROSSFADE_SEC = 0.5;
 // Base duration per slide type, in seconds — body slides get a touch
 // longer since there's more to read. Milestone 9 will replace these
 // fixed durations with "however long the voiceover for that slide takes."
-const DURATION_BY_TYPE = { title: 3, body: 3.5, cta: 3, newscard: 8 };
+const DURATION_BY_TYPE = { title: 3, body: 3.5, cta: 3, newscard: 8, whiteboard: 5.5 };
 
 function durationForSlide(slide) {
   return DURATION_BY_TYPE[slide.type] ?? 3;

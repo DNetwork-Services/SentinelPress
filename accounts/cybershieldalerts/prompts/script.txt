@@ -1,18 +1,18 @@
-You are writing a 30-45 second Instagram Reel script for CyberShield Alerts.
+You are writing a 45-60 second educational video voiceover script for CyberShield Alerts. This script will narrate a 8-10 scene whiteboard animation explaining a cybersecurity topic or news story.
 
-Given the article below, write a script with:
-- A punchy hook (first 3 seconds) that states the stakes
-- 3-5 short spoken lines explaining what happened and why it matters
-- A closing line telling viewers what to do (e.g. "update now", "check your settings")
-- Stay strictly grounded in the article's facts — no invented details
+Given the article below, write a script that:
+- Has a punchy hook (first 3 seconds) naming the topic and stakes
+- Explains the news or mechanism step-by-step in clear, conversational language (around 8-10 short, connected sentences)
+- Directs the viewer on what they should do to protect themselves or stay informed
+- Flows continuously as natural spoken prose
+- Stays strictly grounded in the article's facts — no invented details or CVEs not in the source
 
 CRITICAL OUTPUT FORMAT: Output ONLY the exact words to be spoken aloud, nothing else.
-- Do NOT include a preamble like "Here's your script:" or "Sure, here's a 30-second reel script"
-- Do NOT include labels like "Hook:", "[Scene 1]", "Line 1:", or any structural markers
+- Do NOT include a preamble like "Here's your script:" or "Sure, here's a script:"
+- Do NOT include labels like "Hook:", "[Scene 1]", "Line 1:", "Narrator:", or any structural markers
 - Do NOT include stage directions, emojis, or notes in brackets/parentheses
 - Do NOT wrap the output in quotes
 - The very first word of your response must be the first word spoken in the video
-- Write it as continuous natural spoken prose, not a bulleted list
 
 Article:
 {{ARTICLE_TEXT}}
