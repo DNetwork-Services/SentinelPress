@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-resilient",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Vocabulary"
+  },
+  "article": {
+    "title": "Resilient",
+    "link": "topic://englishvault/vocab-resilient",
+    "description": "Meaning: able to recover quickly from difficulties; tough. Example: 'Despite the setback, the team remained resilient and finished the project on time.' Common in IELTS essays about personal development, and in workplace/interview English describing how you handle challenges.",
+    "content": "Meaning: able to recover quickly from difficulties; tough. Example: 'Despite the setback, the team remained resilient and finished the project on time.' Common in IELTS essays about personal development, and in workplace/interview English describing how you handle challenges.",
+    "pubDate": "2026-07-13T05:52:34.927Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-13T05:52:34.928Z",
+  "generated": {
+    "caption": "Ever wish you had a word for bouncing back from tough times? That word is **resilient**!\n\nIt means you're tough and can recover quickly from difficulties. This is a powerful word for IELTS essays or job interviews!\n\nExample: \"Despite the setback, the team remained resilient and finished the project on time.\"\n\nSave this for later! Follow @englishvault for daily lessons!",
+    "script": "Jab tough times ko describe karna ho, toh sahi word dhundhne mein mushkil hoti hai na? Don't worry, aaj ek aisa powerful word seekhenge jo aapke English ko elevate kar dega! Toh 'resilient'. Iska matlab hota hai 'able to recover quickly from difficulties' ya 'tough'. Basically, agar koi insaan ya team resilient hai, toh kitni bhi mushkil aaye, woh jaldi se recover kar jaate hain, strong rehte hain. Example dekho: 'Despite the setback, the team remained resilient and finished the project on time.' Matlab, setback ke baad bhi team ne himmat nahi haari aur project time par complete kiya. Ye word aap IELTS essays aur interviews mein use kar sakte ho apni ability dikhane ke liye. Toh next time jab bhi aapko bolna ho ki koi insaan ya team mushkilon ke baad bhi strong rehti hai, haar nahi maanti, toh use karo 'resilient'. Ab samajh aaya? Comment mein batao aap kab resilient feel karte ho! Aur aise hi English tips ke liye The English Vault ko follow karo!",
+    "hashtags": [
+      "resilient",
+      "ieltsvocabulary",
+      "learnenglish",
+      "vocabularybuilder",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Resilient",
+        "headlineRest": "— What It Means to Be Truly Tough",
+        "body": "To be resilient means you are able to recover quickly from difficulties and are inherently tough. For example, 'Despite the setback, the team remained resilient and finished the project on time.' This powerful word is often used in IELTS essays when discussing personal development, and it's excellent for workplace or interview settings to describe how you handle challenges.",
+        "hindiSummary": "इसका अर्थ है कठिनाइयों से जल्दी उबरने की क्षमता वाला और मजबूत होना।",
+        "imageQuery": "person overcoming challenge determined"
+      }
+    ],
+    "generatedAt": "2026-07-13T05:53:18.108Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-resilient-slide-01.png"
+    ],
+    "renderedAt": "2026-07-13T05:53:22.531Z",
+    "reelVideo": "the-english-vault-curriculum-resilient-reel.mp4",
+    "reelDurationSeconds": 74.52,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "3a1c2c6f3a24075e",
+  "notifiedAt": "2026-07-13T05:55:25.917Z"
+}
