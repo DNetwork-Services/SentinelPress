@@ -1,0 +1,54 @@
+{
+  "id": "the-new-stack-prefect-just-bought-dagster-another-big-airflow-rival-and-it8217s",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The New Stack",
+    "category": "DevOps"
+  },
+  "article": {
+    "title": "Prefect just bought Dagster, another big Airflow rival — and it&#8217;s not a data pipeline story",
+    "link": "https://thenewstack.io/prefect-acquires-dagster-orchestrator/",
+    "description": "Prefect, best known for the eponymous open-source data pipeline and workflow orchestrator, has announced that it&#8217;s acquiring Dagster, one of The post Prefect just bought Dagster, another big Airflow rival — and it&#8217;s not a data pipeline story appeared first on The New Stack.",
+    "content": "Prefect, best known for the eponymous open-source data pipeline and workflow orchestrator, has announced that it&#8217;s acquiring Dagster, one of the biggest alternatives to Apache Airflow alongside Prefect itself. The deal, which has yet to formally close, folds two of the most established Airflow challengers into a single company. Dagster, the open-source orchestrator, and Dagster+, the fully managed cloud incarnation, will keep their existing names, pricing, and product roadmaps, with some 40 people from the Dagster team moving over to Prefect as part of the deal. In a LinkedIn post published on Monday, Prefect founder and CEO Jeremiah Lowin explains that the acquisition is a bet on the various components an AI agent needs to run reliably: clearly defined goals, paired with the flexibility to improvise when its own decisions send it down a path nobody scripted. Dagster, according to Lowin, handles the goal-setting side by defining and tracking outcomes; Prefect handles the improvising by running the work itself; and FastMCP, Prefect&#8217;s own tool for connecting agents to outside systems, controls what those agents are allowed to touchd along the way. &#8220;The modern orchestration category has a new center of gravity.&#8221; For Lowin, the acquisition is all about creating scale. &#8220;The modern orchestration category has a new center of gravity,&#8221; Lowin writes. Two become one That &#8220;scale&#8221; pitch comes some seven years after Prefect and Dagster competed, both emerging as challengers to Airflow, the default tool most teams used to schedule and run their data pipelines. Prefect set out to simplify and make production workflow orchestration more reliable for Python developers. Dagster, for its part, focused on making data pipelines easier to define, understand, and verify, placing greater emphasis on what a pipeline should produce rather than simply running a sequence of tasks. &#8220;For years, Prefect and Dagster have raised the bar for each other and our category. That competition produced two exceptional products and two of the strongest open-source communities in the data ecosystem.&#8221; &#8220;For years, Prefect and Dagster have raised the bar for each other and our category,&#8221; Lowin writes. &#8220;That competition produced two exceptional products and two of the strongest open-source communities in the data ecosystem.&#8221; The strengths each company built for running pipelines are now being stretched to cover something bigger, with Prefect betting those same strengths are what agentic workloads will need next. The AI transition Both companies have been repositioning around AI agents for a while. Back in 2024, Prefect 3.0 landed with an explicit focus on supporting agentic workflows. A year later, Dagster debuted Components, pitched as a way to build pipelines using reusable, YAML-based building blocks rather than hand-written Python. Shortly after, Dagster went further with Compass, a tool that lets analysts query data using plain-language prompts sent through Slack instead of writing SQL. None of that matches the reach of what Prefect built with FastMCP. The framework works with the Model Context Protocol (MCP), the open standard Anthropic released in late 2024, which lets AI models discover and call external tools and data, allowing developers to build MCP servers by writing plain Python functions instead of hand-coding the protocol directly. Prefect shipped FastMCP the same month that MCP itself launched, and Anthropic later adopted it as the official Python SDK for MCP. That evolution of both companies has now led to a very strategic acquisition, but the deal has ramifications for those who have been steering Dagster since its earliest days. Nick Schrock, who founded Dagster and moved from CEO to CTO in 2022 to make way for Pete Hunt, is named alongside Hunt in the official acquisition announcement as staying on to &#8220;serve as strategic advisors to Prefect&#8221; while remaining &#8220;active in the open-source community.&#8221; However, Schrock&#8217;s own blog post, published on Monday, reads far more like a clean break from Dagster. &#8220;I want to share that I&#8217;ll be moving on from the project and company,&#8221; Schrock writes. Schrock&#8217;s departure closes one chapter for Dagster. The acquisition itself, however, opens another, with Prefect betting that the ideas both companies spent years developing for data orchestration will prove just as valuable as AI agents move into production. The post Prefect just bought Dagster, another big Airflow rival — and it&#8217;s not a data pipeline story appeared first on The New Stack.",
+    "pubDate": "Mon, 13 Jul 2026 22:08:55 +0000",
+    "image": ""
+  },
+  "score": 0.960624462962963,
+  "selectedAt": "2026-07-14T05:14:10.348Z",
+  "generated": {
+    "caption": "Your future AI agents just got a major upgrade! 🚀 Prefect, a key player in workflow orchestration, is acquiring Dagster, another big name. This isn't just about data; it's a strategic move to build more reliable and scalable AI agents. They're combining strengths to help AI define goals, improvise tasks, and connect safely with outside systems.\n\nSave this post and share with your tech friends! Follow @CyberShieldAlerts for daily updates!",
+    "script": "Major news in AI! How your AI agents run and interact with the world is about to change significantly. Open-source orchestrator Prefect just acquired rival Dagster, bringing together two giants in workflow automation. This isn't just about data pipelines. It's a strategic move to build the core infrastructure for reliable AI agents. Prefect's CEO explains Dagster will handle goal-setting, while Prefect manages the work itself, all controlled by Prefect's FastMCP framework, the official Python SDK for Anthropic's Model Context Protocol. This creates a new \"center of gravity\" for agentic workloads moving into production. As AI agents gain new capabilities and touch external systems, stay vigilant and follow CyberShield Alerts for essential security insights.",
+    "hashtags": [
+      "prefect",
+      "dagster",
+      "dataengineering",
+      "artificialintelligence",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Prefect Acquires Dagster",
+        "headlineRest": "for AI Orchestration Leap",
+        "body": "Prefect, a leading open-source workflow orchestrator, is acquiring Dagster, another major rival to Apache Airflow. This strategic deal merges two established competitors, creating a new \"center of gravity\" in the orchestration category. The acquisition's primary focus is not traditional data pipelines, but rather building robust platforms for AI agents. Prefect plans to combine Dagster's goal-setting capabilities with its own execution strengths and FastMCP tool to support reliable AI agent operations. While the Dagster team joins Prefect, co-founder Nick Schrock is departing the project, marking a new chapter for both companies in the evolving AI landscape.",
+        "hindiSummary": "प्रीफेक्ट ने डैगस्टर का अधिग्रहण किया है, जिसका मुख्य लक्ष्य एआई एजेंट ऑर्केस्ट्रेशन को मजबूत करना है।",
+        "imageQuery": "AI orchestration tech merger"
+      }
+    ],
+    "generatedAt": "2026-07-14T05:14:44.453Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-new-stack-prefect-just-bought-dagster-another-big-airflow-rival-and-it8217s-slide-01.png"
+    ],
+    "renderedAt": "2026-07-14T05:15:18.848Z",
+    "reelVideo": "the-new-stack-prefect-just-bought-dagster-another-big-airflow-rival-and-it8217s-reel.mp4",
+    "reelDurationSeconds": 45.487891,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "7471868d3f60c360",
+  "notifiedAt": "2026-07-14T05:17:10.837Z"
+}
