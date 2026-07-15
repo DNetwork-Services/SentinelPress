@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-a-an-the-when-to-use-which",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Grammar"
+  },
+  "article": {
+    "title": "A / An / The — when to use which",
+    "link": "topic://englishvault/grammar-articles-a-an-the",
+    "description": "'A/an' introduces something for the first time or something non-specific: 'I saw a dog.' 'The' refers to something already mentioned or uniquely known: 'The dog was barking.' Use 'an' before vowel SOUNDS (not just vowel letters): 'an hour' (silent h), but 'a university' (starts with a 'yoo' sound). Common mistake: 'a hour' instead of 'an hour'.",
+    "content": "'A/an' introduces something for the first time or something non-specific: 'I saw a dog.' 'The' refers to something already mentioned or uniquely known: 'The dog was barking.' Use 'an' before vowel SOUNDS (not just vowel letters): 'an hour' (silent h), but 'a university' (starts with a 'yoo' sound). Common mistake: 'a hour' instead of 'an hour'.",
+    "pubDate": "2026-07-15T05:14:48.866Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-15T05:14:48.866Z",
+  "generated": {
+    "caption": "Ever wondered when to use 'a', 'an', or 'the'? 🤔 It's simpler than you think!\n\nUse 'a' or 'an' for something non-specific or when you mention it for the first time, like \"I saw a dog.\" Then, use 'the' when it's already known: \"The dog was barking.\" Crucially, use 'an' before vowel *sounds*, not just vowel letters! Think \"an hour\" (silent h!).\n\nSave this tip for later! Follow @TheEnglishVault for daily English lessons!",
+    "script": "A, An aur The... bohot log ismein confuse hote hain na? Aapne bhi kabhi 'a hour' bola hoga, right? Chalo, aaj ye confusion khatam karte hain! Dekho, simple hai. Jab aap kisi cheez ko *first time* mention kar rahe ho ya woh *non-specific* hai, tab 'A' ya 'An' lagate hain. Jaise, 'I saw a dog.' Theek hai? Ab, jab wohi dog *already mentioned* ho chuka hai ya woh *uniquely known* hai, tab 'The' aata hai. Jaise, 'The dog was barking.' Samajh aaya? Aur sabse important: 'An' sirf vowel *sounds* ke pehle aata hai, letters ke nahi. Jaise 'an hour' (h silent hai), but 'a university' (kyunki 'yoo' sound hai). Toh next time, first mention ya non-specific ke liye 'A/An', aur already known ke liye 'The' lagana. Aur 'An' for vowel sounds, pakka? Comment karke batao, yeh trick aapko pata thi ya nahi! Aur aise hi useful English tips ke liye The English Vault ko follow karo!",
+    "hashtags": [
+      "englisharticles",
+      "aanandthe",
+      "englishgrammar",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "A / An / The",
+        "headlineRest": "— When to Use Which",
+        "body": "Articles like 'a', 'an', and 'the' might seem small, but using them correctly makes a big difference. 'A' and 'an' introduce something for the first time or refer to something non-specific, as in 'I saw a dog.' Remember, you use 'an' before a vowel SOUND—not just a vowel letter—so it's 'an hour' (silent 'h') but 'a university' ('yoo' sound). Many often say 'a hour', but the correct form is 'an hour' due to the vowel sound. On the other hand, 'the' refers to something already mentioned or uniquely known, like in 'The dog was barking,' referring to that specific dog.",
+        "hindiSummary": "'A' और 'An' का प्रयोग सामान्य चीज़ों के लिए होता है, 'The' का प्रयोग ख़ास चीज़ों के लिए; 'An' स्वर ध्वनि से पहले आता है।",
+        "imageQuery": "Confused person learning grammar articles"
+      }
+    ],
+    "generatedAt": "2026-07-15T05:16:06.368Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-a-an-the-when-to-use-which-slide-01.png"
+    ],
+    "renderedAt": "2026-07-15T05:16:10.275Z",
+    "reelVideo": "the-english-vault-curriculum-a-an-the-when-to-use-which-reel.mp4",
+    "reelDurationSeconds": 73.728,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "56246ce64460f7a4",
+  "notifiedAt": "2026-07-15T05:18:09.916Z"
+}
