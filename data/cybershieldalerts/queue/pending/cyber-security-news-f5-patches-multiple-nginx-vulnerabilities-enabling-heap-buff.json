@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-f5-patches-multiple-nginx-vulnerabilities-enabling-heap-buff",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "F5 Patches Multiple NGINX Vulnerabilities Enabling Heap Buffer Overflow and Code Execution Attacks",
+    "link": "https://cybersecuritynews.com/f5-patches-multiple-nginx-vulnerabilities/",
+    "description": "F5 has disclosed three high-severity vulnerabilities affecting NGINX Plus and NGINX Open Source, warning that unauthenticated attackers could exploit them to trigger memory corruption, crash worker processes, or, in the worst case, execute arbitrary code. The vulnerabilities, published on July 15, 2026, affect widely used NGINX components, including the Ingress Controller, Gateway Fabric, App Protect [&#8230;] The post F5 Patches Multiple NGINX Vulnerabilities Enabling Heap Buffer Overflow and Code Execution Attacks appeared first on Cyber Security News.",
+    "content": "F5 has disclosed three high-severity vulnerabilities affecting NGINX Plus and NGINX Open Source, warning that unauthenticated attackers could exploit them to trigger memory corruption, crash worker processes, or, in the worst case, execute arbitrary code. The vulnerabilities, published on July 15, 2026, affect widely used NGINX components, including the Ingress Controller, Gateway Fabric, App Protect WAF, and Instance Manager. CVE-2026-42533: Heap Buffer Overflow The most serious of the three, CVE-2026-42533, carries a CVSS v3.1 score of 8.1 (High) and a CVSS v4.0 score of 9.2 (Critical). It stems from how the map directive handles regex matching when a string expression references capture variables before the map&#8217;s output variable. An attacker can send crafted HTTP requests to trigger a heap buffer overflow (CWE-122) in the NGINX worker process. Beyond crashing the service, F5 warns attackers could achieve code execution on systems where Address Space Layout Randomization (ASLR) is disabled or bypassed. F5 recommends switching to named regex captures instead of unnamed ones as a mitigation. CVE-2026-60005: Uninitialized Memory Disclosure This flaw (CVSS 8.2/8.8) affects the ngx_http_slice_module, which isn&#8217;t enabled by default and requires the --with-http_slice_module build flag. When the slice directive is paired with unnamed regex captures, or during background cache updates, attackers can access uninitialized memory, causing limited data leakage or a worker restart. Mitigation again involves using named captures. CVE-2026-56434: Use-After-Free Rated Medium/High (6.5 CVSS v3.1, 8.3 CVSS v4.0), this bug affects the ngx_http_ssi_module when Server-Side Includes are used alongside proxy_pass and proxy_buffering off. A man-in-the-middle attacker controlling upstream responses could trigger a use-after-free (CWE-416), leading to limited memory modification or a crash. No mitigation exists beyond patching. All three vulnerabilities affect the same range of products: NGINX Plus (37.x): fixed in 37.0.3.1 NGINX Open Source (1.x): fixed in 1.31.3 / 1.30.4 NGINX Ingress Controller, Gateway Fabric, App Protect WAF, and Instance Manager are also affected, with fixes rolling out per branch (some branches still awaiting patches) Notably, BIG-IP, BIG-IQ, F5 Distributed Cloud, F5OS, and F5 AI Gateway are not vulnerable; the issues are confined to NGINX&#8217;s data plane components. NGINX powers a massive share of internet-facing infrastructure, making these flaws attractive targets for opportunistic attackers, especially CVE-2026-42533 given its code-execution potential. Organizations running affected NGINX Plus, Ingress Controller, or Gateway Fabric deployments should prioritize patching immediately, particularly if map directives with regex captures, or the SSI module are in active use. F5 credited over a dozen independent researchers — including teams from AntAISecurityLab, EVO.company, and Vodafone Türkiye — for responsibly disclosing CVE-2026-42533, while CVE-2026-60005 was found internally and CVE-2026-56434 was reported by researcher p4p3r. Strengthen Your SOC by Accelerating Threat Detection & Rapid Investigations. -> Integrate ANY.RUN With Your SOC Now. The post F5 Patches Multiple NGINX Vulnerabilities Enabling Heap Buffer Overflow and Code Execution Attacks appeared first on Cyber Security News.",
+    "pubDate": "Thu, 16 Jul 2026 03:31:09 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/07/F5-Patches-Multiple-NGINX-Vulnerabilities.webp"
+  },
+  "score": 0.989467799382716,
+  "selectedAt": "2026-07-16T05:24:53.866Z",
+  "generated": {
+    "caption": "A critical flaw in NGINX, which powers much of the internet, could let attackers take over. F5 has patched three high-severity vulnerabilities affecting NGINX Plus & Open Source. The most serious allows attackers to crash systems or execute malicious code. Update your NGINX deployments ASAP!\n\nSave & share this alert to keep others informed. Follow @CyberShieldAlerts for daily updates!",
+    "script": "Urgent NGINX alert! Attackers can now execute code on vulnerable systems. F5 just disclosed three high-severity flaws in NGINX Plus and Open Source. The most critical, CVE-2026-42533, allows unauthenticated attackers to trigger a heap buffer overflow, leading to arbitrary code execution. These vulnerabilities affect widely used components like NGINX Ingress Controller and App Protect WAF, impacting a massive share of internet infrastructure. Other flaws can cause data leakage or memory modification. Because NGINX powers so much of the internet, these are prime targets for opportunistic attackers. Prioritize patching your NGINX deployments immediately, especially if you use map directives with regex captures or the SSI module.",
+    "hashtags": [
+      "f5",
+      "nginx",
+      "heapbufferoverflow",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "NGINX",
+        "headlineRest": "Patches Fix Critical Heap Buffer Overflow & Code Execution",
+        "body": "F5 has released patches for multiple high-severity vulnerabilities affecting NGINX Plus and NGINX Open Source. These flaws could allow unauthenticated attackers to trigger memory corruption, crash worker processes, or, in the worst case, execute arbitrary code. The most critical vulnerability, a heap buffer overflow, carries a CVSS v4.0 score of 9.2 (Critical) and impacts widely used components like the Ingress Controller and App Protect WAF. Organizations using affected NGINX deployments are urged to prioritize immediate patching, especially if map directives with regex captures or the SSI module are in active use.",
+        "hindiSummary": "F5 ने NGINX में कई गंभीर कमजोरियों के लिए पैच जारी किए हैं, जो कोड निष्पादन और मेमोरी भ्रष्टाचार का कारण बन सकती हैं।",
+        "imageQuery": "NGINX critical vulnerability alert"
+      }
+    ],
+    "generatedAt": "2026-07-16T05:25:12.960Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-f5-patches-multiple-nginx-vulnerabilities-enabling-heap-buff-slide-01.png"
+    ],
+    "renderedAt": "2026-07-16T05:25:53.189Z",
+    "reelVideo": "cyber-security-news-f5-patches-multiple-nginx-vulnerabilities-enabling-heap-buff-reel.mp4",
+    "reelDurationSeconds": 47.078458,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "5dd4438523d49376",
+  "notifiedAt": "2026-07-16T05:28:13.538Z"
+}
