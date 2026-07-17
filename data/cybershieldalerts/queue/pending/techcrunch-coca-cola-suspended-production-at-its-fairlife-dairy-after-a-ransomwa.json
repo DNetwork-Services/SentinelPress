@@ -1,0 +1,54 @@
+{
+  "id": "techcrunch-coca-cola-suspended-production-at-its-fairlife-dairy-after-a-ransomwa",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "TechCrunch",
+    "category": "Technology"
+  },
+  "article": {
+    "title": "Coca-Cola suspended production at its Fairlife dairy after a ransomware attack",
+    "link": "https://techcrunch.com/2026/07/16/coca-cola-suspended-production-at-its-fairlife-dairy-after-a-ransomware-attack/",
+    "description": "Coca Cola said dairy production at its Fairlife unit will \"remain suspended\" in the United States following a hack.",
+    "content": "",
+    "pubDate": "Thu, 16 Jul 2026 21:22:31 +0000",
+    "image": ""
+  },
+  "score": 0.9551591589506173,
+  "selectedAt": "2026-07-17T05:26:47.865Z",
+  "generated": {
+    "caption": "Your everyday essentials are at risk! 🥛 Coca-Cola's Fairlife dairy unit has suspended production across the United States after falling victim to a ransomware attack. This incident highlights how critical infrastructure, even food supply chains, can be directly impacted by cyber threats.\n\nStay updated on these evolving risks. Save this post, share it with your network, and follow @CyberShieldAlerts for daily threat intelligence.",
+    "script": "Production halted at Coca-Cola Fairlife! A ransomware attack just stopped dairy output in the US. Coca-Cola's Fairlife unit has completely suspended all production. This isn't a typical supply chain issue; it's a crippling ransomware attack that took their systems offline. Operations remain suspended, showing how critical infrastructure, even our food supply, is vulnerable to cyber threats. Don't wait for a crisis. Fortify your cybersecurity defenses today.",
+    "hashtags": [
+      "cocalogicracompromise",
+      "fairliferansomware",
+      "dairyindustryattacks",
+      "cyberattack",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Coca-Cola",
+        "headlineRest": "Suspended Production After Ransomware Attack",
+        "body": "Coca-Cola has suspended dairy production at its Fairlife unit in the United States due to a ransomware attack. The attack forced the company to halt operations, and production remains suspended. This incident highlights the risk of cyberattacks on critical infrastructure and the need for robust cybersecurity measures. The suspension may impact Fairlife dairy product availability in the US. Consumers and businesses should be aware of potential supply chain disruptions.",
+        "hindiSummary": "कोका-कोला पर रैनसमवेयर हामले के बाद उत्पादन बंद",
+        "imageQuery": "cyber attack on factory production"
+      }
+    ],
+    "generatedAt": "2026-07-17T05:27:35.352Z"
+  },
+  "render": {
+    "slideImages": [
+      "techcrunch-coca-cola-suspended-production-at-its-fairlife-dairy-after-a-ransomwa-slide-01.png"
+    ],
+    "renderedAt": "2026-07-17T05:28:09.312Z",
+    "reelVideo": "techcrunch-coca-cola-suspended-production-at-its-fairlife-dairy-after-a-ransomwa-reel.mp4",
+    "reelDurationSeconds": 27.504036,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "d845d488ec2a9766",
+  "notifiedAt": "2026-07-17T05:29:45.663Z"
+}
