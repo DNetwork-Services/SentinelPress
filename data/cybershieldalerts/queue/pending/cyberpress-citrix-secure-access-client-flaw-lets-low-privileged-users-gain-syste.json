@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-citrix-secure-access-client-flaw-lets-low-privileged-users-gain-syste",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Citrix Secure Access Client Flaw Lets Low-Privileged Users Gain SYSTEM Privileges",
+    "link": "https://cyberpress.org/citrix-secure-access-client-flaw/",
+    "description": "Cloud Software Group has disclosed two security vulnerabilities affecting Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows, the more severe of which allows a standard user to escalate privileges to SYSTEM level. The flaws are tracked as CVE-2026-53565 and CVE-2026-53566, detailed in Citrix Security Bulletin CTX696734, published on July 14, [&#8230;] The post Citrix Secure Access Client Flaw Lets Low-Privileged Users Gain SYSTEM Privileges appeared first on Cyber Security News.",
+    "content": "Cloud Software Group has disclosed two security vulnerabilities affecting Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows, the more severe of which allows a standard user to escalate privileges to SYSTEM level. The flaws are tracked as CVE-2026-53565 and CVE-2026-53566, detailed in Citrix Security Bulletin CTX696734, published on July 14, 2026. Citrix Secure Access Client Flaw The higher-severity flaw, CVE-2026-53565, stems from improper privilege management (CWE-269) and carries a CVSS v4.0 base score of 8.5 (High). It affects both Citrix Secure Access Client for Windows and Citrix Endpoint Analysis Client for Windows. An attacker only needs standard user access on the local machine to exploit this vulnerability; no user interaction or elevated privileges are required beforehand. Successful exploitation grants the attacker full SYSTEM-level control, effectively handing over complete control of the compromised host&#8217;s confidentiality, integrity, and availability. This makes the flaw particularly dangerous in enterprise environments where these clients are widely deployed for VPN and endpoint compliance checks. The second vulnerability, CVE-2026-53566, is an out-of-bounds read issue (CWE-125) affecting only Citrix Secure Access Client for Windows. It carries a CVSS v4.0 score of 6.8 (Medium-High). Exploitation requires standard user access and a specific precondition: the DNE (Deterministic Network Enhancer) driver must not be installed on the target system. While less severe than the privilege escalation bug, this flaw could still expose sensitive memory contents to unauthorized processes, potentially aiding further attacks. Affected Versions Citrix Secure Access Client for Windows: versions before 26.6.1.20 (affected by both CVEs) Citrix Endpoint Analysis Client for Windows: versions before 26.5.1.7 (affected by CVE-2026-53565 only) Cloud Software Group strongly urges immediate patching. Affected customers should upgrade to: Citrix Secure Access Client for Windows 26.6.1.20 or later Citrix Endpoint Analysis Client for Windows 26.5.1.7 or later No workarounds have been published for either flaw, making version upgrades the only reliable mitigation path. Citrix credited Carlos Garrido of Pentraze Cybersecurity for responsibly disclosing the issues. Citrix has published the bulletin through its Knowledge Center. Local privilege escalation bugs like CVE-2026-53565 are especially attractive to attackers in post-exploitation scenarios. Even if an adversary gains only low-privileged access through phishing or credential theft, a flaw like this can be the final step needed to achieve full system compromise, deploy ransomware, or move laterally across a network. Organizations using Citrix Secure Access or Endpoint Analysis Clients should audit their deployed versions immediately and coordinate with IT teams to roll out the patched releases across all endpoints without delay. Prevent critical incidents and financial loss with stronger proactive defense. Integrate a live threat feed from 15K SOCs The post Citrix Secure Access Client Flaw Lets Low-Privileged Users Gain SYSTEM Privileges appeared first on Cyber Security News.",
+    "pubDate": "Sat, 18 Jul 2026 04:15:33 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/07/citrix-secure-access-client-flaw-lets-low-privileged-users-gain-system-privileges-6a5afd1b8ecd5.webp"
+  },
+  "score": 0.9950461280864198,
+  "selectedAt": "2026-07-18T05:09:03.109Z",
+  "generated": {
+    "caption": "A critical flaw in Citrix software could give hackers full control of your computer systems! 🚨\n\nNew vulnerabilities in Citrix Secure Access and Endpoint Analysis Client software let low-level users gain full SYSTEM privileges. This means attackers can take complete control, posing a serious risk to businesses. Update your Citrix software immediately!\n\nSave this post & share with your team! Follow @CyberShieldAlerts for daily cybersecurity updates!",
+    "script": "Your Citrix VPN could be handing attackers full system control! A critical flaw in Citrix Secure Access and Endpoint Analysis Clients for Windows allows low-privileged users to gain SYSTEM access. This high-severity vulnerability means an attacker with basic local user access can completely hijack your device. It's especially dangerous for businesses, turning a simple compromise into a full network takeover for ransomware or data theft. Audit your systems now and update your Citrix clients to the latest versions immediately. There are no workarounds, so patch without delay!",
+    "hashtags": [
+      "citrix",
+      "privilegeescalation",
+      "secureaccessclient",
+      "cybersecurity",
+      "vulnerability"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "SYSTEM Privileges",
+        "headlineRest": "Gained by Low-Privilege Users via Citrix Flaw",
+        "body": "Cloud Software Group has revealed two security vulnerabilities impacting Citrix Secure Access Client and Citrix Endpoint Analysis Client for Windows. The primary flaw allows standard users to escalate their privileges to full SYSTEM-level control, giving attackers complete access to a compromised host. This is particularly dangerous for organizations, as it can be exploited with only basic user access. To mitigate this critical risk, users must promptly upgrade their clients to the latest patched versions, as no workarounds are currently available.",
+        "hindiSummary": "Citrix क्लाइंट में एक कमी से सामान्य उपयोगकर्ता सिस्टम विशेषाधिकार प्राप्त कर सकते हैं; तुरंत अपडेट करें।",
+        "imageQuery": "Broken digital lock cybersecurity"
+      }
+    ],
+    "generatedAt": "2026-07-18T05:09:30.898Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-citrix-secure-access-client-flaw-lets-low-privileged-users-gain-syste-slide-01.png"
+    ],
+    "renderedAt": "2026-07-18T05:10:01.135Z",
+    "reelVideo": "cyberpress-citrix-secure-access-client-flaw-lets-low-privileged-users-gain-syste-reel.mp4",
+    "reelDurationSeconds": 33.750204,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "8993b1c0a49dd95e",
+  "notifiedAt": "2026-07-18T05:11:50.967Z"
+}
