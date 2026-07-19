@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-common-mistake-i-am-agree-vs-i-agree",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Common Mistakes"
+  },
+  "article": {
+    "title": "Common mistake: 'I am agree' vs 'I agree'",
+    "link": "topic://englishvault/mistakes-i-am-agree",
+    "description": "Wrong: 'I am agree with you.' Right: 'I agree with you.' Teaching point: 'agree' is already a verb in English, unlike some languages where the equivalent is an adjective/state requiring 'to be'. No 'am/is/are' needed before 'agree'.",
+    "content": "Wrong: 'I am agree with you.' Right: 'I agree with you.' Teaching point: 'agree' is already a verb in English, unlike some languages where the equivalent is an adjective/state requiring 'to be'. No 'am/is/are' needed before 'agree'.",
+    "pubDate": "2026-07-19T05:37:00.732Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-19T05:37:00.732Z",
+  "generated": {
+    "caption": "Ever found yourself saying \"I am agree\" and wondering if it sounded quite right? 🤔 You're not alone! Many learners make this common mistake.\n\nIn English, 'agree' is a verb all by itself, unlike some languages. This means you don't need 'am', 'is', or 'are' before it. Simply say: \"I agree with you.\"\n\nIt's an easy fix! ✨ Save this lesson, share it with a friend, and follow @theenglishvault for more daily tips!",
+    "script": "Ye common mistake aapne bhi ki hogi, 'I am agree'! Sunne mein sahi lagta hai na? Par actually, ye galat hai.\nEnglish mein 'agree' already ek verb hai, theek hai? Isko 'am', 'is', 'are' ki zaroorat nahi hoti. Jaise aap 'I walk' bolte ho, 'I eat' bolte ho, waise hi 'I agree' bolna hai. 'I am walk' ya 'I am eat' toh nahi bolte na? Same logic apply hota hai. Toh jab aapko bolna ho ki aap kisi se sehmat ho, you just say 'I agree'. For example, 'I agree with you.'\nToh next time se, 'I am agree' nahi, sirf 'I agree'! Ab samajh aaya?\nComment mein batao, aapko ye mistake pehle se pata thi ya nahi! Aur aise hi quick English tips ke liye follow The English Vault!",
+    "hashtags": [
+      "iagree",
+      "englishmistakes",
+      "englishgrammar",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "I Agree",
+        "headlineRest": "Is Actually Wrong — Here's Why",
+        "body": "When expressing agreement in English, it's common to see the mistake 'I am agree'. However, the correct phrase is simply 'I agree'. This is because 'agree' is already a verb in English, so there's no need to use 'am' or any other form of 'to be' before it. For example, you can say 'I agree with your opinion on this topic.' The mistake likely comes from languages where the equivalent of 'agree' is an adjective or state that requires 'to be', but in English, 'agree' stands alone as a verb.",
+        "hindiSummary": "अंग्रेजी में सहमति व्यक्त करते समय 'आई एग्री' का उपयोग किया जाता है",
+        "imageQuery": "people in agreement in a meeting"
+      }
+    ],
+    "generatedAt": "2026-07-19T05:37:59.097Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-common-mistake-i-am-agree-vs-i-agree-slide-01.png"
+    ],
+    "renderedAt": "2026-07-19T05:38:02.990Z",
+    "reelVideo": "the-english-vault-curriculum-common-mistake-i-am-agree-vs-i-agree-reel.mp4",
+    "reelDurationSeconds": 58.824,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "da9dd08db631f4aa",
+  "notifiedAt": "2026-07-19T05:39:59.491Z"
+}
