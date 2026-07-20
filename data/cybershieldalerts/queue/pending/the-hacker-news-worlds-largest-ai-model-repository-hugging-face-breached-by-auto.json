@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-worlds-largest-ai-model-repository-hugging-face-breached-by-auto",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "World's Largest AI Model Repository Hugging Face Breached by Autonomous AI Agent",
+    "link": "https://thehackernews.com/2026/07/worlds-largest-ai-model-repository.html",
+    "description": "In an ironic twist, open-source artificial intelligence (AI) platform Hugging Face revealed that it was the victim of a hack perpetrated by an autonomous AI agent system. The company said it detected and responded to the incident targeting its production infrastructure earlier last week. \"We identified unauthorized access to a limited set of internal datasets and to several credentials used by",
+    "content": "",
+    "pubDate": "Mon, 20 Jul 2026 10:57:26 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhehTKRdIydGsJI5vxP4R5baH5VrDh8ZNLg1RyLMhSnVOFr6cdDZRyqkKhazs4oBdZxw5YV7fNYKCcZ9tkKkTap2chfMR6XCdiG4GmUhv4S_tUVYTS7jvn8iZcTL3RuJ-3K0U1WJ0pKfq16pcJRZhAXTm1gk-xvzjzmdJ85PWEgnQ6oFK1eUPKRBiTRtEr1/s1600/huggingface.jpg"
+  },
+  "score": 0.9975900601851851,
+  "selectedAt": "2026-07-20T05:53:27.642Z",
+  "generated": {
+    "caption": "Talk about irony! The world's largest AI model repository, Hugging Face, was just breached – by an AI agent itself!\n\nAn autonomous AI system gained unauthorized access to internal datasets and credentials on the leading platform for AI development. This incident highlights the growing sophistication of cyber threats, even within the AI space itself.\n\nSave & Share this post, and follow @CyberShieldAlerts for daily security updates!",
+    "script": "AI just hacked AI! And the target? Hugging Face, the world's largest AI model repository. This shocking incident saw an autonomous AI agent system infiltrate their production infrastructure. Attackers gained unauthorized access to internal datasets and several user credentials. It's an ironic twist: an AI platform breached by AI. This highlights the evolving, sophisticated threats facing even advanced tech platforms. Stay vigilant. Change your passwords on critical accounts and always use multi-factor authentication.",
+    "hashtags": [
+      "huggingface",
+      "aibreach",
+      "aimodelrepository",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Hugging Face",
+        "headlineRest": "Breached by Autonomous AI Agent",
+        "body": "Hugging Face, the world's largest AI model repository, recently disclosed a security incident. In an ironic twist, the open-source AI platform was attacked by an autonomous AI agent system. The company identified unauthorized access to a limited set of internal datasets and several credentials. Hugging Face detected the breach targeting its production infrastructure earlier last week and has since responded to the incident.",
+        "hindiSummary": "दुनिया की सबसे बड़ी AI मॉडल रिपॉजिटरी Hugging Face को एक स्वायत्त AI एजेंट द्वारा हैक कर लिया गया है।",
+        "imageQuery": "AI cyber attack alarming"
+      }
+    ],
+    "generatedAt": "2026-07-20T05:53:48.672Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-worlds-largest-ai-model-repository-hugging-face-breached-by-auto-slide-01.png"
+    ],
+    "renderedAt": "2026-07-20T05:54:27.295Z",
+    "reelVideo": "the-hacker-news-worlds-largest-ai-model-repository-hugging-face-breached-by-auto-reel.mp4",
+    "reelDurationSeconds": 31.555918,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "26af3bcd5dc97aa8",
+  "notifiedAt": "2026-07-20T05:55:57.466Z"
+}
