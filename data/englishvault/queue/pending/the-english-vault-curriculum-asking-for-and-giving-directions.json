@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-asking-for-and-giving-directions",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Daily Conversation"
+  },
+  "article": {
+    "title": "Asking for and giving directions",
+    "link": "topic://englishvault/conversation-asking-directions",
+    "description": "Asking: 'Excuse me, could you tell me how to get to the station?' Giving: 'Go straight for two blocks, then turn left. It'll be on your right.' Common mistake: learners often say 'How can I go to...' instead of the more natural 'How do I get to...' or 'How can I get to...'.",
+    "content": "Asking: 'Excuse me, could you tell me how to get to the station?' Giving: 'Go straight for two blocks, then turn left. It'll be on your right.' Common mistake: learners often say 'How can I go to...' instead of the more natural 'How do I get to...' or 'How can I get to...'.",
+    "pubDate": "2026-07-23T05:39:21.540Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-23T05:39:21.540Z",
+  "generated": {
+    "caption": "Ever said \"How can I go to...\" and gotten a confused look? 🤔 It's a common mistake! For natural-sounding English, try \"How do I get to...\" or \"How can I get to...\" when asking for directions. For instance: \"Excuse me, could you tell me how to get to the station?\" Sounds more natural, right?\nSave this for your next adventure! Follow @EnglishVault for daily lessons!",
+    "script": "How can I go to...? Iss sentence mein aapne bhi galti ki hogi na? Dekho, \"How can I go to...?\" technically incorrect nahi hai, but thoda unnatural sound karta hai. Sahi tareeka hai \"How do I get to...?\" ya \"How can I get to...?\" \"Get to\" ka matlab hai kisi jagah tak pahunchna. For example, \"Excuse me, could you tell me how to get to the station?\" Sunne mein kitna smooth lag raha hai na? Toh next time, raasta poochte waqt, yaad rakhna: \"How do I get to?\" ya \"How can I get to?\" Ab aaya samajh? Comments mein batao aapko ye pata tha ya nahi, aur save kar lo reel ko, future ke liye!",
+    "hashtags": [
+      "askingfordirections",
+      "givingdirections",
+      "learnenglish",
+      "dailyenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "How do I get to...",
+        "headlineRest": "...— The Natural Way to Ask for Directions",
+        "body": "When you need to find your way, asking for directions naturally is key. The most common and polite phrases are 'How do I get to...' or 'How can I get to...'. For instance, you might ask, 'Excuse me, could you tell me how to get to the station?' It's important to avoid saying 'How can I go to...', as this sounds less natural to native speakers. Once you've asked, a helpful response might be, 'Go straight for two blocks, then turn left. It'll be on your right.'",
+        "hindiSummary": "दिशाएँ पूछते समय 'How do I get to...' या 'How can I get to...' का उपयोग करें, 'How can I go to...' से बचें।",
+        "imageQuery": "Asking for directions city street"
+      }
+    ],
+    "generatedAt": "2026-07-23T05:40:30.820Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-asking-for-and-giving-directions-slide-01.png"
+    ],
+    "renderedAt": "2026-07-23T05:40:33.941Z",
+    "reelVideo": "the-english-vault-curriculum-asking-for-and-giving-directions-reel.mp4",
+    "reelDurationSeconds": 48.648,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "49ba2403a400317f",
+  "notifiedAt": "2026-07-23T05:42:20.754Z"
+}
