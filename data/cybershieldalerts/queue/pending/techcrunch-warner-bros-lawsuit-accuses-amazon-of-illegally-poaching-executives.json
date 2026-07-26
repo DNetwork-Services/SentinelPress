@@ -1,0 +1,54 @@
+{
+  "id": "techcrunch-warner-bros-lawsuit-accuses-amazon-of-illegally-poaching-executives",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "TechCrunch",
+    "category": "Technology"
+  },
+  "article": {
+    "title": "Warner Bros. lawsuit accuses Amazon of illegally poaching executives",
+    "link": "https://techcrunch.com/2026/07/25/warner-bros-lawsuit-accuses-amazon-of-illegally-poaching-executives/",
+    "description": "The lawsuit will likely renew debates about whether term employment agreements are enforceable under California. law",
+    "content": "",
+    "pubDate": "Sat, 25 Jul 2026 20:55:11 +0000",
+    "image": ""
+  },
+  "score": 0.9508839027777778,
+  "selectedAt": "2026-07-26T05:45:38.231Z",
+  "generated": {
+    "caption": "Big tech employment laws are under the microscope!\n\nWarner Bros. is suing Amazon, alleging illegal executive poaching. This high-profile case could reignite debates over term employment agreement enforceability in California law, highlighting challenges companies face protecting their key talent.\n\nStay informed on corporate security and legal tech trends. Save & share this update, and follow @CyberShieldAlerts for daily insights!",
+    "script": "Is your employment contract truly secure? Warner Bros. just sued Amazon, challenging the enforceability of key agreements. Warner Bros. alleges Amazon illegally poached its executives. This lawsuit isn't just a corporate spat; it's reigniting a critical debate. It questions whether term employment agreements are legally binding under California law, potentially impacting how businesses operate and how talent moves. Stay informed on this pivotal legal debate affecting employment security. Follow CyberShield Alerts for crucial updates.",
+    "hashtags": [
+      "warnerbros",
+      "amazon",
+      "executivepoaching",
+      "employmentlaw",
+      "legalnews"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Warner Bros.",
+        "headlineRest": "sues Amazon over alleged executive poaching",
+        "body": "Warner Bros. has initiated legal action against Amazon, filing a lawsuit that accuses the tech giant of illegally poaching its executives. This lawsuit alleges that Amazon unlawfully recruited key personnel from Warner Bros., sparking a significant corporate dispute. The legal battle is anticipated to reignite crucial debates surrounding the enforceability of term employment agreements. Specifically, it will bring renewed scrutiny to these types of contracts under California law.",
+        "hindiSummary": "वार्नर ब्रदर्स ने अमेजन पर अवैध रूप से अधिकारियों को नौकरी पर रखने का आरोप लगाते हुए मुकदमा दायर किया है।",
+        "imageQuery": "corporate lawsuit dispute"
+      }
+    ],
+    "generatedAt": "2026-07-26T05:46:10.833Z"
+  },
+  "render": {
+    "slideImages": [
+      "techcrunch-warner-bros-lawsuit-accuses-amazon-of-illegally-poaching-executives-slide-01.png"
+    ],
+    "renderedAt": "2026-07-26T05:46:45.712Z",
+    "reelVideo": "techcrunch-warner-bros-lawsuit-accuses-amazon-of-illegally-poaching-executives-reel.mp4",
+    "reelDurationSeconds": 31.079909,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "d730f475333e7b88",
+  "notifiedAt": "2026-07-26T05:48:57.702Z"
+}
