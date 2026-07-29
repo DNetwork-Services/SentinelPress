@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-nginx-heap-overflow-flaw-could-let-unauthenticated-attackers-execute",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "NGINX Heap Overflow Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code",
+    "link": "https://cyberpress.org/nginx-heap-overflow-flaw/",
+    "description": "A newly disclosed critical pre-authentication heap buffer overflow in NGINX&#8217;s Stream module, tracked as CVE-2026-42533, could allow unauthenticated remote attackers to crash worker processes and potentially achieve arbitrary code execution. The vulnerability carries a CVSS v4.0 score of 9.2 and affects nearly every deployed NGINX Open Source version from 0.9.6 through 1.31.2, along with NGINX [&#8230;] The post NGINX Heap Overflow Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code appeared first on Cyber Security News.",
+    "content": "A newly disclosed critical pre-authentication heap buffer overflow in NGINX&#8217;s Stream module, tracked as CVE-2026-42533, could allow unauthenticated remote attackers to crash worker processes and potentially achieve arbitrary code execution. The vulnerability carries a CVSS v4.0 score of 9.2 and affects nearly every deployed NGINX Open Source version from 0.9.6 through 1.31.2, along with NGINX Plus builds prior to 37.0.3.1 and R36 P7. The flaw resides in ngx_stream_script.c (line 940) within the ngx_stream_script_copy_capture_code function, which handles regex capture copying during complex value evaluation in the Stream module. NGINX Heap Overflow Flaw NGINX&#8217;s ssl_preread module extracts TLS handshake metadata including the Server Name Indication (SNI) into internal variables before TLS termination occurs, so these values can be used in stream-level directives like return. When such a value is processed as a &#8220;complex value,&#8221; the script engine runs a two-pass algorithm: it first calculates the required buffer length, then performs the actual data copy. The vulnerability arises because evaluating a regex-based variable (such as one defined in a map block) between these two passes can mutate the global PCRE capture state. This class of two-pass timing inconsistency in NGINX&#8217;s script engine has proven to be a recurring root-cause pattern, as similar logic flaws in the HTTP rewrite module&#8217;s script engine were separately identified in CVE-2026-42945, dubbed &#8220;Nginx Rift&#8221;. In that case, the length-calculation pass and copy pass diverged due to state changes in the engine, leading to comparable heap corruption. An attacker connecting to a stream listener with ssl_preread on and a configuration combining a regex map on $ssl_preread_server_name with a return directive referencing both a capture group and the mapped variable can trigger the bug. By sending a crafted TLS ClientHello with an oversized SNI field, the attacker forces a mismatch: the engine calculates a short buffer during the length pass, but the capture state updates before the copy pass, causing more data to be written than was allocated. Because this occurs entirely during ssl_preread, the corruption happens before any TLS handshake completion or authentication check, making internet-facing TCP/UDP proxies particularly exposed. Proof-of-Concept Markakd validated the flaw using an AddressSanitizer-instrumented NGINX build with stream_ssl_preread_module enabled. A Python-based PoC sent a TLS ClientHello containing a 1,000-byte SNI hostname to a server configured with map $ssl_preread_server_name $m { ~^(.*)$ ok; } and return \"$1$m\". The test confirmed a heap-buffer-overflow WRITE of size 1000 bytes, occurring exactly one byte past a 256-byte heap region allocated via ngx_palloc_block, with the crash traced directly to the memcpy call inside ngx_stream_script_copy_capture_code at line 940. Mitigation Administrators using regex-based maps on preread variables within stream {} blocks should audit configurations, restrict exposure of such listeners, and monitor for upstream NGINX patches addressing script-engine capture-state handling, given the precedent set by similar two-pass overflow fixes in the HTTP module. Cut SOC investigation blind spots and contain threats earlier to reduce response costs and business disruption with ANY.RUN. The post NGINX Heap Overflow Flaw Could Let Unauthenticated Attackers Execute Arbitrary Code appeared first on Cyber Security News.",
+    "pubDate": "Wed, 29 Jul 2026 04:59:23 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/07/nginx-heap-overflow-flaw-could-let-unauthenticated-attackers-execute-arbitrary-code-6a698859690b3.webp"
+  },
+  "score": 0.9965434336419753,
+  "selectedAt": "2026-07-29T05:36:42.856Z",
+  "generated": {
+    "caption": "A critical flaw (CVE-2026-42533) in NGINX's Stream module could allow attackers to crash servers or run their own code without authentication. This impacts many NGINX Open Source and Plus versions, with internet-facing proxies being especially vulnerable. Ensure your systems are patched and configurations audited.\n\nSave this post to remember to check your systems. Share with anyone managing NGINX! Follow @CyberShieldAlerts for daily threat intel.",
+    "script": "CRITICAL NGINX ALERT! Unauthenticated attackers can execute arbitrary code on your servers. A newly disclosed critical pre-authentication heap buffer overflow, CVE-2026-42533, affects nearly every NGINX Open Source version from 0.9.6 to 1.31.2, plus many NGINX Plus builds. This vulnerability resides in the Stream module and allows remote attackers to crash worker processes and potentially gain full control, all before any authentication check. The flaw stems from a timing inconsistency in how NGINX handles complex values and regex captures, especially when ssl_preread is enabled with certain configurations. Internet-facing TCP and UDP proxies are particularly exposed to this risk. You must act now! Audit your NGINX stream configurations, restrict exposure of affected listeners, and monitor for urgent upstream patches.",
+    "hashtags": [
+      "nginx",
+      "heapoverflow",
+      "cve202642533",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "NGINX",
+        "headlineRest": "Critical Heap Overflow Allows Remote Code Execution",
+        "body": "A newly disclosed critical pre-authentication heap buffer overflow (CVE-2026-42533) in NGINX's Stream module could allow unauthenticated remote attackers to crash processes and potentially achieve arbitrary code execution. With a CVSS v4.0 score of 9.2, it affects nearly all NGINX Open Source versions from 0.9.6 to 1.31.2, along with specific NGINX Plus builds. The vulnerability arises from a timing inconsistency when evaluating regex-based variables within the `ssl_preread` module, leading to buffer overflow during data copying. Attackers can trigger this by sending a crafted TLS ClientHello with an oversized SNI field to internet-facing TCP/UDP proxies configured with specific regex maps. Administrators should audit configurations with regex-based maps on preread variables within `stream {}` blocks, restrict listener exposure, and monitor for upcoming patches.",
+        "hindiSummary": "एनजीआईएनएक्स के स्ट्रीम मॉड्यूल में एक गंभीर हीप ओवरफ्लो खामी हमलावरों को बिना प्रमाणीकरण के दूरस्थ कोड निष्पादन की अनुमति दे सकती है।",
+        "imageQuery": "digital threat code execution alert"
+      }
+    ],
+    "generatedAt": "2026-07-29T05:37:13.532Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-nginx-heap-overflow-flaw-could-let-unauthenticated-attackers-execute-slide-01.png"
+    ],
+    "renderedAt": "2026-07-29T05:37:56.689Z",
+    "reelVideo": "cyberpress-nginx-heap-overflow-flaw-could-let-unauthenticated-attackers-execute-reel.mp4",
+    "reelDurationSeconds": 56.737959,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "f2261dc2d3984578",
+  "notifiedAt": "2026-07-29T05:39:56.404Z"
+}
