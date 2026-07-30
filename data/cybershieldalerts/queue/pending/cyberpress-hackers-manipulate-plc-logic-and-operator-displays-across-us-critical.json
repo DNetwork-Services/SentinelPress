@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-hackers-manipulate-plc-logic-and-operator-displays-across-us-critical",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Hackers Manipulate PLC Logic and Operator Displays Across U.S. Critical Infrastructure",
+    "link": "https://cyberpress.org/hackers-manipulate-plc-logic-operator-displays/",
+    "description": "Six federal agencies have updated a joint cybersecurity advisory warning that Iranian-affiliated threat actors are actively exploiting internet-exposed programmable logic controllers (PLCs) across U.S. government facilities, water systems, and energy infrastructure. The advisory, tracked as AA26-097A, was first published in April 2026 and revised on July 22, 2026, expanding its scope significantly. The threat actors [&#8230;] The post Hackers Manipulate PLC Logic and Operator Displays Across U.S. Critical Infrastructure appeared first on Cyber Security News.",
+    "content": "Six federal agencies have updated a joint cybersecurity advisory warning that Iranian-affiliated threat actors are actively exploiting internet-exposed programmable logic controllers (PLCs) across U.S. government facilities, water systems, and energy infrastructure. The advisory, tracked as AA26-097A, was first published in April 2026 and revised on July 22, 2026, expanding its scope significantly. The threat actors scan the internet for exposed PLCs and connect using legitimate engineering software, mirroring the workflow of an authorized technician rather than exploiting a software vulnerability. Hackers Manipulate PLC Logic and Operator Once inside, attackers alter controller logic and, in some cases, manipulate operator display screens so that human-machine interface (HMI) operators cannot detect anomalies in real time. This activity is attributed to actors consistent with the IRGC-affiliated group previously identified in a 2023 campaign, though the current intrusions show markedly improved tradecraft. The July update widens manufacturer scope beyond Rockwell Automation and Allen-Bradley CompactLogix and Micro850 controllers, initially named in April, to now include Schneider Electric and Siemens equipment. New detection guidance also addresses malicious modifications hidden inside shared, reusable code modules a supply-chain-style risk where a single tampered module can propagate changes across an entire operational environment. The 2023 intrusions, affecting Unitronics PLCs, relied on simple default-credential abuse and were largely disruption-free. The 2026 activity is far more sophisticated: attackers use legitimate engineering software with valid, working credentials rather than default passwords, making connections appear indistinguishable from routine technician access. Where the earlier campaign had a simple fix, changing passwords, this ongoing exploitation stems from an architectural weakness in network exposure and access control, and it has produced confirmed operational disruption and financial loss for some victim organizations. Malicious traffic was observed across five ports commonly used in industrial protocols: 22 (SSH), 102 (ISO-TSAP/S7comm), 502 (Modbus TCP), 2222, and 44818 (EtherNet/IP). Trend Micro notes that none of this traffic relies on an exploitable bug; the underlying issue is insufficient network segmentation and remote-access hardening rather than a patchable flaw. Public scan data shows tens of thousands of ICS devices remain directly reachable from the open internet, many still running default or absent credentials. Mitigations CISA and co-signing agencies, including the FBI, NSA, EPA, Department of Energy, and U.S. Cyber Command, recommend immediate and near-term actions: Remove PLCs from direct internet exposure and route remote access through secured, MFA-gated gateways. Set physical mode switches to RUN status during normal operations, reserving PROGRAM/REMOTE for supervised maintenance. Search firewall and IDS logs for the advisory&#8217;s published IP indicators on the affected ports, with attention to overseas hosting providers. The advisory also pushes accountability toward manufacturers, urging vendors to eliminate default internet-facing administrative interfaces and stop charging extra for baseline security features like MFA. IOCs IoCDetection185.82.73[.]17591 &#8211; C&C server141.11.164[.]15391 &#8211; C&C server175.110.121[.]4291 &#8211; C&C server175.110.121[.]3991 &#8211; C&C server175.110.121[.]4138 &#8211; Computers/Internet175.110.121[.]10791 &#8211; C&C server192.142.54[.]7938 &#8211; Computers/Internet84.200.205[.]16538 &#8211; Computers/Internet185.225.17[.]22591 &#8211; C&C server79.133.46[.]20991 &#8211; C&C server88.80.150[.]19991 &#8211; C&C server88.80.150[.]20091 &#8211; C&C server88.80.150[.]20291 &#8211; C&C server185.82.73[.]16291 &#8211; C&C server185.82.73[.]16491 &#8211; C&C server185.82.73[.]16591 &#8211; C&C server185.82.73[.]16791 &#8211; C&C server185.82.73[.]16891 &#8211; C&C server185.82.73[.]17091 &#8211; C&C server185.82.73[.]17191 &#8211; C&C server135.136.1[.]13391 &#8211; C&C serverocferda[.]com91 &#8211; C&C serveruuokhhfsdlk[.]tylarion867mino[.]com91 &#8211; C&C servertylarion867mino[.]com91 &#8211; C&C server Note: IP addresses and domains are intentionally defanged (e.g., [.]) to prevent accidental resolution or hyperlinking. Re-fang only within controlled threat intelligence platforms such as MISP, VirusTotal, or your SIEM. Cut SOC investigation blind spots and contain threats earlier to reduce response costs and business disruption with ANY.RUN. The post Hackers Manipulate PLC Logic and Operator Displays Across U.S. Critical Infrastructure appeared first on Cyber Security News.",
+    "pubDate": "Sat, 25 Jul 2026 04:25:36 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/07/hackers-manipulate-plc-logic-and-operator-displays-across-us-critical-infrastructure-6a643aa913a41.webp"
+  },
+  "score": 0.9941837700617284,
+  "selectedAt": "2026-07-25T05:28:24.917Z",
+  "generated": {
+    "caption": "🚨 **Your water and power could be at risk!** Six federal agencies warn that Iranian-affiliated hackers are actively exploiting internet-exposed industrial controllers (PLCs) across U.S. critical infrastructure. These attackers use legitimate software to alter system logic and operator displays, causing real operational disruption. It's a sophisticated attack exploiting network exposure, not just simple bugs.\n\nSave this post and share to spread awareness! Follow @CyberShieldAlerts for daily updates.",
+    "script": "Your water and power grids are being silently compromised right now. Iranian-affiliated hackers are actively exploiting internet-exposed industrial controllers across U.S. critical infrastructure. They're using legitimate engineering software and valid credentials, then altering system logic and manipulating operator displays to hide their actions. This isn't a software bug or a simple password fix; it's a deep architectural weakness causing confirmed operational disruptions and financial losses. With tens of thousands of these devices still exposed, the threat is urgent. Remove your PLCs from direct internet exposure and secure all remote access with multi-factor authentication immediately.",
+    "hashtags": [
+      "criticalinfrastructure",
+      "plc",
+      "otsecurity",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "U.S. Critical Infrastructure",
+        "headlineRest": "targeted by sophisticated PLC manipulation.",
+        "body": "Six federal agencies warn that Iranian-affiliated threat actors are actively manipulating internet-exposed Programmable Logic Controllers (PLCs) across U.S. government facilities, water systems, and energy infrastructure. These actors use legitimate engineering software to alter controller logic and manipulate operator displays, making anomalies hard to detect and causing confirmed operational disruption and financial loss. Unlike previous simple attacks, this campaign shows improved tradecraft, exploiting architectural weaknesses like insufficient network segmentation rather than software vulnerabilities. Authorities recommend immediately removing PLCs from direct internet exposure, routing remote access through MFA-gated gateways, and setting physical mode switches to RUN during normal operations. Manufacturers are also urged to eliminate default internet-facing administrative interfaces and provide baseline security features without extra cost.",
+        "hindiSummary": "ईरानी-संबद्ध हैकरों ने अमेरिकी महत्वपूर्ण बुनियादी ढांचे में पीएलसी लॉजिक और डिस्प्ले में हेरफेर किया है।",
+        "imageQuery": "Industrial control system cyberattack"
+      }
+    ],
+    "generatedAt": "2026-07-25T05:28:48.346Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-hackers-manipulate-plc-logic-and-operator-displays-across-us-critical-slide-01.png"
+    ],
+    "renderedAt": "2026-07-25T05:29:24.569Z",
+    "reelVideo": "cyberpress-hackers-manipulate-plc-logic-and-operator-displays-across-us-critical-reel.mp4",
+    "reelDurationSeconds": 39.415873,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "7c2a180739070d71",
+  "notifiedAt": "2026-07-25T05:31:08.723Z"
+}

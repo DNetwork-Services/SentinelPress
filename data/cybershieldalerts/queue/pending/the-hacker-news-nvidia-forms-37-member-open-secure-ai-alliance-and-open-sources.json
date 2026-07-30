@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-nvidia-forms-37-member-open-secure-ai-alliance-and-open-sources",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "NVIDIA Forms 37-Member Open Secure AI Alliance and Open-Sources NOOA Framework",
+    "link": "https://thehackernews.com/2026/07/nvidia-forms-37-member-open-secure-ai.html",
+    "description": "NVIDIA and 36 other organizations have formed the Open Secure AI Alliance to develop and share open technologies, techniques, and tools for securing software and artificial intelligence (AI) agents. The 37-member group spans cloud, security, enterprise software, and AI companies, including Microsoft, Cisco, Cloudflare, CrowdStrike, Hugging Face, IBM, Palo Alto Networks, Red Hat, and the Linux",
+    "content": "",
+    "pubDate": "Mon, 27 Jul 2026 23:40:05 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEij-O7sLARD9c2QGCheTeoamew1jlKiNe2KRKqw4_8f6VTxZo0MHNIQdizHhyphenhyphen-Bchq9tTzlYBJrJcJDhhhzNB17wPMHDT00pAikN61fAgOh7AdibxKPt5fQ_1KwMvkUXx1J7IzZBbtONSSIAOjRV74KSkmlsKYB7hFWy17AaQu02BqwngqCzlubslSbKvg/s1600/nvidia.jpg"
+  },
+  "score": 0.936941887345679,
+  "selectedAt": "2026-07-28T05:31:06.657Z",
+  "generated": {
+    "caption": "Worried about the future of AI safety? Big news! NVIDIA, joined by 36 other tech leaders (like Microsoft & Cisco), just launched the Open Secure AI Alliance. Their goal is to develop and share open tools to make software and AI agents safer for everyone. This is a huge step for industry-wide AI security!\n\nSave this & share with a friend! Follow @CyberShieldAlerts for daily updates.",
+    "script": "The future of AI security is on the line, and 37 tech giants just teamed up to save it! NVIDIA, with powerhouses like Microsoft and Cisco, has launched the Open Secure AI Alliance. Their goal: develop and share open tools and techniques to secure software and AI agents. This 37-member group pools expertise from cloud, security, and AI companies. It's a critical step to protect our rapidly evolving AI landscape from emerging threats. Stay informed on these vital security advancements. Follow CyberShield Alerts now for all the latest updates!",
+    "hashtags": [
+      "nvidia",
+      "opensecureaialliance",
+      "aisecurity",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Open Secure AI Alliance",
+        "headlineRest": "formed by NVIDIA and 36 partners to secure AI",
+        "body": "NVIDIA, alongside 36 other major organizations, has established the Open Secure AI Alliance. This new coalition aims to foster the development and sharing of open technologies, techniques, and tools for robustly securing software and artificial intelligence agents. Members include industry giants from cloud, security, enterprise software, and AI sectors like Microsoft, Cisco, and IBM. The initiative addresses the growing need for collaborative efforts to build secure and trustworthy AI ecosystems.",
+        "hindiSummary": "NVIDIA और 36 अन्य संगठनों ने AI को सुरक्षित करने के लिए ओपन सिक्योर एआई अलायंस का गठन किया है।",
+        "imageQuery": "AI security collaboration alliance"
+      }
+    ],
+    "generatedAt": "2026-07-28T05:31:27.625Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-nvidia-forms-37-member-open-secure-ai-alliance-and-open-sources-slide-01.png"
+    ],
+    "renderedAt": "2026-07-28T05:31:54.922Z",
+    "reelVideo": "the-hacker-news-nvidia-forms-37-member-open-secure-ai-alliance-and-open-sources-reel.mp4",
+    "reelDurationSeconds": 32.763356,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "b6fd4ab19e7037c7",
+  "notifiedAt": "2026-07-28T05:33:29.061Z"
+}

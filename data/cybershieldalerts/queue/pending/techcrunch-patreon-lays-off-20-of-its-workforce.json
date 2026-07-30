@@ -1,0 +1,54 @@
+{
+  "id": "techcrunch-patreon-lays-off-20-of-its-workforce",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "TechCrunch",
+    "category": "Technology"
+  },
+  "article": {
+    "title": "Patreon lays off 20% of its workforce",
+    "link": "https://techcrunch.com/2026/07/23/patreon-lays-off-off-20-of-its-workforce/",
+    "description": "In a memo to staff that was posted online, Conte said the company's core business is strong, but the platform has to respond to market changes and adjust its cost structure to remain stable.",
+    "content": "",
+    "pubDate": "Thu, 23 Jul 2026 20:30:07 +0000",
+    "image": ""
+  },
+  "score": 0.9494897885802469,
+  "selectedAt": "2026-07-24T05:35:37.617Z",
+  "generated": {
+    "caption": "Job security for creators on platforms like Patreon just took a hit. Patreon has announced a 20% layoff of its workforce. According to CEO Jack Conte, while their core business is strong, these cuts are a response to market changes and necessary cost adjustments to remain stable.\n\nKeep up with crucial tech news. Save this post and follow @CyberShieldAlerts for daily updates!",
+    "script": "Your Patreon experience could be changing! Patreon has just laid off twenty percent of its workforce. CEO Conte's online memo states these cuts are to adapt to market changes and stabilize the company's cost structure. While Patreon's core business is strong, significant platform shifts like this mean you need to stay informed about the health and direction of services that hold your data. Keep vigilant about updates from the platforms you use.",
+    "hashtags": [
+      "patreon",
+      "insiderrisk",
+      "cybersecurity",
+      "infosec",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Patreon",
+        "headlineRest": "lays off 20% of its workforce",
+        "body": "Patreon has announced a significant reduction in its workforce, laying off 20% of its employees. CEO Jack Conte explained in an internal memo that this decision, while painful, is necessary to adapt to market changes. Despite asserting the strength of the company's core business, the move aims to adjust cost structures for long-term stability. These layoffs reflect the ongoing economic pressures affecting various companies within the tech and creator economy sectors.",
+        "hindiSummary": "Patreon ने अपनी 20% कर्मचारी संख्या में कटौती की घोषणा की है।",
+        "imageQuery": "Workforce reduction economic impact"
+      }
+    ],
+    "generatedAt": "2026-07-24T05:36:32.728Z"
+  },
+  "render": {
+    "slideImages": [
+      "techcrunch-patreon-lays-off-20-of-its-workforce-slide-01.png"
+    ],
+    "renderedAt": "2026-07-24T05:36:55.819Z",
+    "reelVideo": "techcrunch-patreon-lays-off-20-of-its-workforce-reel.mp4",
+    "reelDurationSeconds": 25.309751,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "a4b6f77ccfa5f119",
+  "notifiedAt": "2026-07-24T05:38:23.846Z"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-english-to-hindi-expressing-feelings",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Translation"
+  },
+  "article": {
+    "title": "English to Hindi: Expressing feelings",
+    "link": "topic://englishvault/translation-feelings",
+    "description": "English: 'I'm really looking forward to the weekend.' Hindi: 'मुझे सप्ताहांत का बेसब्री से इंतज़ार है।' Teaching point: 'looking forward to' has no single-word Hindi equivalent — 'बेसब्री से इंतज़ार' (eagerly waiting) captures the same excited-anticipation meaning.",
+    "content": "English: 'I'm really looking forward to the weekend.' Hindi: 'मुझे सप्ताहांत का बेसब्री से इंतज़ार है।' Teaching point: 'looking forward to' has no single-word Hindi equivalent — 'बेसब्री से इंतज़ार' (eagerly waiting) captures the same excited-anticipation meaning.",
+    "pubDate": "2026-07-28T05:31:06.659Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-28T05:31:06.659Z",
+  "generated": {
+    "caption": "Ever feel super excited for something to happen? 🎉 Knowing how to perfectly express that eager anticipation in English makes you sound really natural. Use \"looking forward to\" to show you're eagerly waiting for something good! For example: \"I'm really looking forward to the weekend.\"\n\nSave this lesson and follow @TheEnglishVault for more daily tips!",
+    "script": "Achha batao, 'looking forward to' ko Hindi mein ekdum sahi se kaise explain karoge? Thoda confusion hota hai na? Dekho, 'looking forward to' ka matlab hai kisi cheez ka bahut excited hoke, बेसब्री से इंतज़ार karna. Iska koi direct ek word ka Hindi translation nahi hai. Jaise, 'I'm really looking forward to the weekend.' iska matlab hai 'मुझे सप्ताहांत का बेसब्री से इंतज़ार है'. Toh ab jab bhi aapko kisi cheez ka eagerly wait karna ho, toh simply bolo 'I'm looking forward to it'. Matlab hai aapko uska बेसब्री से इंतज़ार hai. Comment mein batao aapko ye tip pata thi ya nahi! Aur aise hi English tips ke liye The English Vault ko follow karo!",
+    "hashtags": [
+      "lookingforwardto",
+      "englishphrases",
+      "vocabularybuilder",
+      "learnenglish",
+      "hinditoenglish"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Looking Forward To",
+        "headlineRest": "— How to Express Eager Anticipation",
+        "body": "'Looking forward to' means to anticipate something with excitement or pleasure. Unlike some English phrases, it doesn't have a single-word Hindi equivalent. Instead, you can use the phrase 'बेसब्री से इंतज़ार' (besabri se intazar), which means 'eagerly waiting,' to perfectly capture this feeling. For example, if you say \"I'm really looking forward to the weekend,\" in Hindi, it becomes 'मुझे सप्ताहांत का बेसब्री से इंतज़ार है।', expressing that eager anticipation.",
+        "hindiSummary": "किसी चीज़ का बेसब्री से इंतज़ार करने के लिए 'looking forward to' का इस्तेमाल होता है।",
+        "imageQuery": "eagerly waiting anticipation weekend"
+      }
+    ],
+    "generatedAt": "2026-07-28T05:31:52.802Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-english-to-hindi-expressing-feelings-slide-01.png"
+    ],
+    "renderedAt": "2026-07-28T05:31:56.167Z",
+    "reelVideo": "the-english-vault-curriculum-english-to-hindi-expressing-feelings-reel.mp4",
+    "reelDurationSeconds": 52.248,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "baa83fdad4cb9144",
+  "notifiedAt": "2026-07-28T05:33:32.902Z"
+}

@@ -1,0 +1,54 @@
+{
+  "id": "the-new-stack-musk-open-sourced-grok-build-to-fight-anthropic-anthropic-pays-him",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The New Stack",
+    "category": "DevOps"
+  },
+  "article": {
+    "title": "Musk open-sourced Grok Build to fight Anthropic. Anthropic pays him $1.25 billion a month.",
+    "link": "https://thenewstack.io/musk-spacexai-grok-open-source/",
+    "description": "I&#8217;m Matt Burns, Chief Content Officer at Insight Media Group. Each week, I round up the most important AI developments, The post Musk open-sourced Grok Build to fight Anthropic. Anthropic pays him $1.25 billion a month. appeared first on The New Stack.",
+    "content": "I&#8217;m Matt Burns, Chief Content Officer at Insight Media Group. Each week, I round up the most important AI developments, explaining what they mean for people and organizations putting this technology to work. The thesis is simple: Workers who learn to use AI will define the next era of their industries, and this newsletter is here to help you be one of them. Last week I told you the AI frontier was dropping the price of intelligence toward a dollar. This week, Elon Musk took one part of the stack to zero. On Wednesday, SpaceXAI open-sourced Grok Build, its terminal coding agent, under an Apache 2.0 license. &ldquo;Grok Build is now open source,&rdquo; Musk posted. The move looks like a direct attack on Claude Code and Codex: Give developers the harness for free, reset usage limits, and make competing tools defend their prices. Then Bloomberg gave the number that explains why SpaceXAI can afford the open source move. Anthropic, the company behind Claude Code, reportedly pays SpaceXAI $1.25 billion a month for compute. Across Anthropic, Google, and Reflection, SpaceXAI&rsquo;s compute agreements total roughly $2.3 billion a month. Musk is competing with Anthropic for developers while renting Anthropic the machines it needs to compete. Grok does not have to beat Claude for SpaceXAI to benefit from Claude&rsquo;s growth. Open-sourcing the harness may expand the market for coding agents. SpaceXAI is unusually positioned to make money if that happens, even when developers choose Claude instead. Musk can lose the coding-agent race and still get paid Coding agents have become more capable, more autonomous, and more token-thirsty throughout 2026. Musk has now made one of the major agent harnesses open source, even though the model powering it still costs money to run. Grok Build is a terminal coding agent in the same category as Claude Code and OpenAI&rsquo;s Codex. As our own Janakiram MSV wrote in a six-months-in comparison, the contest stopped being about raw model quality a while ago: &ldquo;Once everyone accepted the shape, the contest moved to the platform around it.&rdquo; Grok Build entered the platform war in May with a local-first design and a roughly 70% score on SWE-bench. The model behind it is not a joke, either: Artificial Analysis placed the newly launched Grok 4.5 near the frontier on its independent benchmarks while measuring it as one of the cheapest models at that performance level. OpenAI noticed. Greg Brockman, its president, replied: &ldquo;If you&rsquo;re able to get better price/perf on any workload, would love to hear the details,&rdquo; and published his email address. So why give the coding agent away? Because SpaceXAI can afford to fight this war differently from OpenAI and Anthropic. Musk can open-source the harness, price Grok aggressively, and still earn infrastructure revenue from Anthropic, the company behind the coding agent it&rsquo;s trying to undercut. Musk has enough compute to make this move. According to Bloomberg Businessweek, SpaceXAI&rsquo;s own models were using just 11% of its available computing power in April, so it has room to spare and rarely caps its customers, even as Anthropic is reportedly scrambling through a compute crunch. SpaceX&rsquo;s CFO put the strategy plainly: &ldquo;Elon felt the constraint was going to be compute and power. We are already seeing that.&rdquo; That is the strange shape of it. SpaceXAI can subsidize the product competing against one of its largest infrastructure customers. The business model is stronger than the organization running it A second economic position is worth nothing if the company can&rsquo;t run the product. This is where the story gets harder for Musk. That same Bloomberg piece is a portrait of an operation in disarray: All eleven of xAI&rsquo;s co-founders have left, and an internal survey found the most common complaint was that management &ldquo;didn&rsquo;t seem to know what it wanted.&rdquo; The most damning detail for a company selling coding tools is that xAI&rsquo;s own engineers reportedly won&rsquo;t use them, reaching for Anthropic&rsquo;s and OpenAI&rsquo;s tools instead. If the people building Grok don&rsquo;t trust it to code, it&rsquo;s fair to ask why outside developers should. That trust problem got worse the week of the open-source release. Grok Build was open-sourced the day after developers discovered it was quietly uploading entire directories to SpaceXAI&rsquo;s cloud. One user watched it grab &ldquo;my SSH keys, my password manager database, my documents, photos, videos, everything.&rdquo; Musk promised the data would be &ldquo;completely and utterly deleted.&rdquo; In that context, whatever strategic value the open-source release had, it also became damage control. Then the world read the Grok Build code. As Simon Willison writes, parts of Grok Build&rsquo;s tooling were ported from other coding agents, including OpenAI&rsquo;s Codex and the open-source OpenCode. So the tool positioned against Codex incorporates openly licensed work derived from Codex. That is not necessarily a scandal. It is how open source is supposed to work. But opening the repository exposed two things at once: The privacy mechanism Musk had just disabled, and how quickly the coding-agent layer is becoming portable. Our own Paul Sawers made the case months ago that the harness is where coding agents differentiate themselves. Grok Build shows how difficult it may be to keep that differentiation proprietary. Strip away the organizational chaos, and the economic move is narrow and smart. Musk does not need to win developers away from Anthropic. Open-sourcing Grok Build can expand the market for coding agents, and SpaceXAI can benefit even when developers choose Claude. Anthropic pays for the compute beneath that growth. That&rsquo;s the strange shape of Musk&rsquo;s position. Anthropic has to make Claude beat Grok, and Musk can get paid when it does. The post Musk open-sourced Grok Build to fight Anthropic. Anthropic pays him $1.25 billion a month. appeared first on The New Stack.",
+    "pubDate": "Sat, 18 Jul 2026 10:39:00 +0000",
+    "image": ""
+  },
+  "score": 0.8946285030864197,
+  "selectedAt": "2026-07-19T05:37:00.730Z",
+  "generated": {
+    "caption": "Imagine your competitor paying you $1.25 billion a month while you fight them! That's Elon Musk's move with Grok Build.\n\nHe just open-sourced his AI coding agent to compete, but his company also earns massive revenue by providing compute to rivals like Anthropic. This means Musk profits regardless of whose AI comes out on top.\n\nStay smart, save this post & follow @CyberShieldAlerts for daily insights!",
+    "script": "Your sensitive data was being uploaded without your knowledge! Elon Musk's SpaceXAI open-sourced Grok Build, a coding agent meant to compete with giants like Anthropic. But developers quickly found Grok Build secretly uploading user files, including SSH keys and password databases, directly to SpaceXAI's cloud. Musk promised all uploaded data would be deleted, but the incident sparked major privacy concerns. Always scrutinize the privacy practices of new AI tools before you integrate them into your workflow.",
+    "hashtags": [
+      "grokbuild",
+      "spacexai",
+      "anthropic",
+      "artificialintelligence",
+      "dataprivacy"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "$1.25 Billion Monthly",
+        "headlineRest": "Anthropic Pays Musk While He Open-Sources Grok Build to Compete With Them",
+        "body": "Elon Musk's SpaceXAI open-sourced Grok Build, a terminal coding agent, under an Apache 2.0 license. This strategic move aims to compete with products like Anthropic's Claude Code by offering a free harness to developers. The unusual part of the strategy is that Anthropic reportedly pays SpaceXAI $1.25 billion each month for compute resources, essentially funding a competitor. While economically shrewd, the move comes amidst internal disarray at xAI, where engineers reportedly prefer competitors' tools, and recent controversy over Grok Build quietly uploading user directories, which Musk promised to delete.",
+        "hindiSummary": "एलन मस्क ने अपने ग्रोव बिल्ड को ओपन-सोर्स किया है ताकि एंथ्रोपिक से मुकाबला किया जा सके, जबकि एंथ्रोपिक उन्हें $1.25 बिलियन प्रति माह का भुगतान करता है।",
+        "imageQuery": "Musk AI business paradox"
+      }
+    ],
+    "generatedAt": "2026-07-19T05:37:25.100Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-new-stack-musk-open-sourced-grok-build-to-fight-anthropic-anthropic-pays-him-slide-01.png"
+    ],
+    "renderedAt": "2026-07-19T05:38:02.013Z",
+    "reelVideo": "the-new-stack-musk-open-sourced-grok-build-to-fight-anthropic-anthropic-pays-him-reel.mp4",
+    "reelDurationSeconds": 30.336871,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "7fc599f24db268bd",
+  "notifiedAt": "2026-07-19T05:39:55.081Z"
+}

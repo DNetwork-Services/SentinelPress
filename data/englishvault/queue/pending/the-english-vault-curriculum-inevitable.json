@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-inevitable",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Vocabulary"
+  },
+  "article": {
+    "title": "Inevitable",
+    "link": "topic://englishvault/vocab-inevitable",
+    "description": "Meaning: certain to happen; unavoidable. Example: 'With the current trends, further automation seems inevitable.' Common in IELTS essays discussing technology, climate, and social change. Adverb form: inevitably.",
+    "content": "Meaning: certain to happen; unavoidable. Example: 'With the current trends, further automation seems inevitable.' Common in IELTS essays discussing technology, climate, and social change. Adverb form: inevitably.",
+    "pubDate": "2026-07-20T05:53:27.643Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-20T05:53:27.643Z",
+  "generated": {
+    "caption": "Ever feel like something *just has to happen*, no matter what? 🤔 That's exactly what 'inevitable' means: certain to happen and unavoidable. It's fantastic for IELTS essays when discussing big changes!\n\nFor example: 'With the current trends, further automation seems inevitable.'\n\nSave this vocab boost and follow @EnglishVault for daily lessons! #Vocabulary",
+    "script": "Inevitable! Is word ka sahi matlab pata hai? Aksar log isme confuse hote hain, par ye bahut important hai!\n\nInevitable ka matlab hai jo cheez pakka hone wali hai, jise roka nahi ja sakta. It's certain to happen, unavoidable. For example, 'With the current trends, further automation seems inevitable.' Matlab, aajkal ke trends dekhe toh automation ka aage badhna pakka hai. Ye word IELTS essays mein technology, climate change ya social topics discuss karte waqt bahut kaam aata hai. Iska adverb form hai inevitably.\n\nToh ab next time jab koi cheez fix ho, hone hi wali ho, jo avoid nahi kar sakte, use inevitable bolo!\n\nComment mein batao aapko ye word pata tha ya nahi!",
+    "hashtags": [
+      "ieltsvocabulary",
+      "inevitablemeaning",
+      "learnenglish",
+      "englishforielts",
+      "hinditoenglish"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Inevitable",
+        "headlineRest": "— Why You Can't Avoid It",
+        "body": "The word 'inevitable' describes something that is certain to happen and cannot be avoided. It's a powerful term to use when discussing outcomes that are bound to occur, such as future trends or significant changes. For instance, 'With the current trends, further automation seems inevitable.' You'll find this word particularly useful in academic contexts, especially in IELTS essays, when discussing topics like technology, climate change, or social transformations. Don't forget its adverb form: 'inevitably'.",
+        "hindiSummary": "जो निश्चित रूप से होगा, जिसे टाला नहीं जा सकता।",
+        "imageQuery": "Future certainty unavoidable"
+      }
+    ],
+    "generatedAt": "2026-07-20T05:54:24.786Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-inevitable-slide-01.png"
+    ],
+    "renderedAt": "2026-07-20T05:54:28.142Z",
+    "reelVideo": "the-english-vault-curriculum-inevitable-reel.mp4",
+    "reelDurationSeconds": 57.168,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "990027e0bdda627f",
+  "notifiedAt": "2026-07-20T05:56:00.442Z"
+}
