@@ -6,7 +6,8 @@ import { synthesizeSpeech } from './lib/tts.mjs';
 import { synthesizeSpeechEdge } from './lib/edgetts.mjs';
 import { mixNarrationWithMusic } from './lib/audiomix.mjs';
 import { getDurationSeconds } from './lib/media.mjs';
-import { assembleReel } from './lib/reel.mjs';
+import { assembleReel, muxAudioAndCaptions } from './lib/reel.mjs';
+import { renderWhiteboardVideo } from './lib/whiteboard.mjs';
 import { chunkScriptForCaptions } from './lib/captions.mjs';
 import { alertFailure } from './lib/alert.mjs';
 
@@ -112,15 +113,31 @@ async function addVoiceoverForAccount(account) {
       // Rebuild the reel video at the narration's actual length (silent
       // durations were an arbitrary guess in Milestone 8) using the real
       // mixed audio track instead of silence.
-      const slideImagePaths = post.render.slideImages.map((f) => path.join(dir, f));
       const reelPath = path.join(dir, post.render.reelVideo);
       const captionFontPath = account.tts?.engine === 'edge-tts' ? CAPTION_FONT_HINDI : CAPTION_FONT_ENGLISH;
-      const { durationSeconds } = await assembleReel(slideImagePaths, post.generated.slides, reelPath, {
-        audioPath: mixedAudioPath,
-        targetTotalDuration: narrationDuration,
-        captionChunks,
-        fontPath: captionFontPath,
-      });
+
+      let durationSeconds;
+      if (account.reelStyle === 'whiteboard') {
+        // Whiteboard-style: a completely different renderer (Manim, stick
+        // figures + boxes) instead of the Ken-Burns zoom on the static
+        // card image — see NOTES.md for why this style was chosen for
+        // The English Vault specifically.
+        const slide = post.generated.slides[0];
+        const silentPath = path.join(dir, `${post.id}-whiteboard-silent.mp4`);
+        await renderWhiteboardVideo(slide, account.content.brand, `@${account.instagramHandle}`, narrationDuration, silentPath);
+        await muxAudioAndCaptions(silentPath, mixedAudioPath, reelPath, { captionChunks, fontPath: captionFontPath });
+        fs.unlinkSync(silentPath);
+        durationSeconds = narrationDuration;
+      } else {
+        const slideImagePaths = post.render.slideImages.map((f) => path.join(dir, f));
+        const result = await assembleReel(slideImagePaths, post.generated.slides, reelPath, {
+          audioPath: mixedAudioPath,
+          targetTotalDuration: narrationDuration,
+          captionChunks,
+          fontPath: captionFontPath,
+        });
+        durationSeconds = result.durationSeconds;
+      }
 
       // Clean up intermediate files — only the final reel + queue JSON
       // need to be committed to git.

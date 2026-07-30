@@ -2,3 +2,6 @@ node_modules/
 .env
 *.log
 .DS_Store
+assets/manim/__pycache__/
+assets/manim/media/
+assets/manim/params.json

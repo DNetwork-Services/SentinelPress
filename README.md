@@ -273,6 +273,16 @@ Both accounts now use a single-image "page/news card" format (not a multi-slide 
 
 Both the single-image and multi-image cases are fully supported end-to-end regardless: Telegram correctly switches between `sendPhoto` (one image) and `sendMediaGroup` (multiple), and Instagram publishing correctly switches between a plain `IMAGE` post and a `CAROUSEL` post based on actual image count.
 
+## Whiteboard-style animated reels (The English Vault)
+
+Based on studying a successful Hindi-language explainer account's format (stick figures, boxes, arrows, white background, minimal color — commonly called "whiteboard/doodle animation"), English Vault's reels now use **Manim** (a real animation engine, not a slideshow) instead of the Ken-Burns zoom-on-a-static-card approach CyberShieldAlerts uses.
+
+- `assets/manim/whiteboard_scene.py` — fixed choreography (5 beats: intro question → headline reveal → explanation → Hindi summary → CTA), with the LLM only filling in **text content**, not animation code — arbitrary LLM-generated Python would be a real code-execution risk.
+- Beat timing scales proportionally to match however long the real Hindi/Hinglish narration actually is (same "solve for the right duration" approach used elsewhere in this project, not a fixed guess).
+- Controlled per-account via `"reelStyle": "whiteboard"` in config — CyberShieldAlerts is unaffected, still uses the Ken-Burns news-card style, since that account's content (news headlines) doesn't fit a cartoon explainer format.
+
+**Verified concretely, not just "it ran":** rendered real frames at multiple timestamps and checked pixel-level signatures — confirmed the output is genuinely white-background whiteboard content (not the old dark news-card background), confirmed the semi-transparent caption box's exact expected blended color is present, and confirmed Devanagari text renders correctly through Manim's Pango-based text engine (a third, separate text-rendering pipeline from Satori and ffmpeg's `drawtext`, both already verified elsewhere in this project — each needed its own check since font support doesn't transfer between them).
+
 ## Watch time optimization
 
 Instagram's own ranking signals (confirmed by Adam Mosseri) prioritize watch time, completion rate, and rewatches above almost everything else — and captions are an explicit ranking factor since most viewers watch muted. Reels now include:

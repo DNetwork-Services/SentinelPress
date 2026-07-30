@@ -18,6 +18,8 @@
     "voice": "hi-IN-SwaraNeural"
   },
 
+  "reelStyle": "whiteboard",
+
   "posting": {
     "postsPerDay": 1,
     "scheduleCronUTC": "30 2 * * *"

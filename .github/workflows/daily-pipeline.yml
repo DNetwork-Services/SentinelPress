@@ -60,6 +60,12 @@ jobs:
       - name: Install Edge TTS (for Hindi/Hinglish voiceover)
         run: pip install edge-tts --break-system-packages
 
+      - name: Install Manim (whiteboard-style reels for English Vault)
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y libcairo2-dev libpango1.0-dev pkg-config python3-dev fonts-noto
+          pip install manim --break-system-packages
+
       - name: Cache Piper voice model
         uses: actions/cache@v4
         with:

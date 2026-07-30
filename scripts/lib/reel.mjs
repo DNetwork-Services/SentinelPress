@@ -160,3 +160,37 @@ export async function assembleReel(slideImagePaths, slides, outputPath, { audioP
 
   return { durationSeconds: totalDuration };
 }
+
+/**
+ * Muxes audio + burned-in captions onto an already-rendered video (used
+ * for the whiteboard/Manim reel style — that video is produced by a
+ * different renderer entirely, so this just adds the same audio/caption
+ * treatment the Ken-Burns path gets, without redoing any visual assembly.
+ */
+export async function muxAudioAndCaptions(silentVideoPath, audioPath, outputPath, { captionChunks, fontPath } = {}) {
+  let filterComplex = null;
+  let videoMapLabel = null;
+
+  if (captionChunks && captionChunks.length > 0 && fontPath) {
+    const captionFilters = buildCaptionFilters(captionChunks, fontPath, REEL_WIDTH, REEL_HEIGHT);
+    const captionChain = captionFilters
+      .map((filter, i) => {
+        const inLabel = i === 0 ? '0:v' : `cap${i - 1}`;
+        const outLabel = i === captionFilters.length - 1 ? 'captioned' : `cap${i}`;
+        return `[${inLabel}]${filter}[${outLabel}]`;
+      })
+      .join(';');
+    filterComplex = captionChain;
+    videoMapLabel = '[captioned]';
+  }
+
+  const args = ['-i', silentVideoPath, '-i', audioPath];
+  if (filterComplex) {
+    args.push('-filter_complex', filterComplex, '-map', videoMapLabel, '-map', '1:a');
+  } else {
+    args.push('-map', '0:v', '-map', '1:a');
+  }
+  args.push('-c:v', 'libx264', '-pix_fmt', 'yuv420p', '-r', String(FPS), '-c:a', 'aac', '-shortest', outputPath);
+
+  await runFfmpeg(args);
+}
