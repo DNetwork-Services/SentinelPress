@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-run-into",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Phrasal Verbs"
+  },
+  "article": {
+    "title": "Run into",
+    "link": "topic://englishvault/phrasal-run-into",
+    "description": "Meaning 1: to meet someone unexpectedly. Example: 'I ran into an old friend at the mall.' Meaning 2: to encounter a problem. Example: 'We ran into some issues with the schedule.' Grammar note: inseparable phrasal verb — the object always comes after 'into'.",
+    "content": "Meaning 1: to meet someone unexpectedly. Example: 'I ran into an old friend at the mall.' Meaning 2: to encounter a problem. Example: 'We ran into some issues with the schedule.' Grammar note: inseparable phrasal verb — the object always comes after 'into'.",
+    "pubDate": "2026-07-31T05:50:18.422Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-07-31T05:50:18.422Z",
+  "generated": {
+    "caption": "Ever bumped into someone you know when you least expect it? 👋 That's when you \"run into\" them!\n\nThis phrasal verb has two key meanings:\n1️⃣ To meet someone unexpectedly: \"I ran into an old friend at the mall.\"\n2️⃣ To encounter a problem: \"We ran into some issues with the schedule.\"\nRemember, the object always comes right after 'into'.\n\nSave this tip & follow @TheEnglishVault for more daily lessons!",
+    "script": "Run into ka matlab pata hai ya confuse ho jaate ho?\n\nRun into ke do meanings hain. Pehla, to meet someone unexpectedly. For example: 'I ran into an old friend at the mall.' Matlab, mall mein main apne ek puraane dost se unexpectedly mil gaya. Dusra, to encounter a problem. Example: 'We ran into some issues with the schedule.' Yaani, humein schedule ke saath kuch problems face karni padi. Aur haan, 'run into' ek inseparable phrasal verb hai, toh object hamesha 'into' ke baad hi aata hai.\n\nToh next time jab unexpectedly kisi se milo ya kisi problem mein pad jaao, toh \"run into\" use karna. Ab clear hua na?\n\nComment karke batao aapko ye meanings pehle pata the ya nahi! Aur aise hi English tips ke liye follow The English Vault!",
+    "hashtags": [
+      "phrasalverbs",
+      "runinto",
+      "learnenglish",
+      "vocabularybuilder",
+      "hinditoenglish"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Run into",
+        "headlineRest": "— Two Important Meanings",
+        "body": "\"Run into\" is a versatile phrasal verb with two main meanings. Firstly, it means to meet someone unexpectedly. For example, you might say, 'I ran into an old friend at the mall.' Secondly, it means to encounter or experience a problem. For instance, 'We ran into some issues with the schedule.' Remember, 'run into' is an inseparable phrasal verb, meaning the object always comes after 'into'.",
+        "hindiSummary": "\"Run into\" का मतलब होता है किसी से अचानक मिलना या किसी समस्या का सामना करना।",
+        "imageQuery": "unexpected encounter meeting problem"
+      }
+    ],
+    "generatedAt": "2026-07-31T05:51:25.940Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-run-into-slide-01.png"
+    ],
+    "renderedAt": "2026-07-31T05:51:29.488Z",
+    "reelVideo": "the-english-vault-curriculum-run-into-reel.mp4",
+    "reelDurationSeconds": 61.656,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "8e1ee225ff1c76c3",
+  "notifiedAt": "2026-07-31T05:54:51.725Z"
+}
