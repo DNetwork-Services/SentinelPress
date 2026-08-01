@@ -1,0 +1,54 @@
+{
+  "id": "devopscom-open-source-code-just-as-secure-as-proprietary-softwareif-you-manage-i",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "DevOps.com",
+    "category": "DevOps"
+  },
+  "article": {
+    "title": "Open Source Code Just as Secure as Proprietary Software—If You Manage It Right, Says CISA",
+    "link": "https://devops.com/open-source-code-just-as-secure-as-proprietary-software-if-you-manage-it-right-says-cisa/",
+    "description": "Open source can be just as safe as proprietary software, though government agencies (and private enterprises) should take additional measures to secure it properly, according to a new guide published by the U.S. Cybersecurity and Infrastructure Security Agency (CISA). The report, “Open Source Software: Security Principles and Practices,” provides with guidance to help agencies comply [&#8230;]",
+    "content": "Open source can be just as safe as proprietary software, though government agencies (and private enterprises) should take additional measures to secure it properly, according to a new guide published by the U.S. Cybersecurity and Infrastructure Security Agency (CISA). The report, “Open Source Software: Security Principles and Practices,” provides with guidance to help agencies comply with two Presidential Executive Orders (14144 and 14306) which both urged them to do a more thorough job securing the software they use, a response to recent exploits like Log4Shell and XZ utils. CISA acknowledges that open source can provide immeasurable benefits to government agencies, not merely because it is available without licensing fees, but also because agencies can extend the software to meet their own requirements. But at the same time, open source software must be managed differently than proprietary software. Malicious hackers (and increasingly AI agents) use vulnerabilities to gain entry and exploit systems. In the case of the vendor software, it is the vendor’s responsibility to provide timely updates should a software vulnerability be found, which agencies should apply as soon as possible. With open source software, however, agencies need to take a more proactive role in patching and understand the dependencies, or additional software components, that an open source package relies on. Those components also need to be secured, the guidance advises. The guidance describes established principles for patching. It also provides a framework to evaluate trustworthiness and risk tolerance of software packages, as well as a set of best practices to procure, deploy and maintain open source software. In practical terms, agencies wishing to use open source should establish a process that supports staff in choosing the software that meets the agency’s needs but minimizes risks to the agency. For instance, an agency’s Office of the Chief Information Officer may set up a system to pre-approve certain software libraries for use in the agency. Automated tools could help verify safe software packages, and reviews would consider potential risk exposure. The CIO could still individually sign off on higher-risk components, such as operating systems. To help agencies, CISA produced the C4 Framework, which can be used to assess the trustworthiness of a software package. It looks at four factors (the four Cs): Codebase: Take a look at the actual source code and dependencies that make up the software component of interest. How recently was the last update committed? How many vulnerabilities have been found? How many out-of-date dependencies does it rely on? Community: How robust is the community that maintains and contributes to the project? Is it part of a foundation, or managed by a private company? Conduct: How is the project managed? Is there a vulnerability disclosure process? Do the project leaders follow their own code of conduct? Configuration: Is the default configuration secure? Are there guides for use in highly-sensitive environments? Open source AI systems should go through additional checks, CISA recommends. Agents should get sufficient transparency into the training data, in addition to the software itself. “Only with transparency and access can agencies understand and study the software, analyze it for vulnerabilities, and remediate any found vulnerabilities or risks,” the guide recommends. CISA has targeted this report to U.S. federal agencies, though the advice here is rock-solid for use in the industrial sector as well. Many businesses in finance and health care, for instance, routinely follow government guidance. So if your organization uses open source in any capacity, this report may be worth checking out.",
+    "pubDate": "Fri, 31 Jul 2026 21:18:29 +0000",
+    "image": ""
+  },
+  "score": 0.9534828935185186,
+  "selectedAt": "2026-08-01T05:40:52.086Z",
+  "generated": {
+    "caption": "How secure is the software powering government and critical services?\n\nCISA just released guidance stating open-source software can be as secure as proprietary, but only with proactive management. Organizations must actively patch and understand software dependencies. They even offer a C4 Framework to help assess trustworthiness. This advice is critical for all organizations!\n\nSave this post & share! Follow @CyberShieldAlerts for daily updates.",
+    "script": "Think your open source software is completely secure? Recent exploits like Log4Shell and XZ utils prove otherwise. CISA just released crucial guidance: Open source can be just as safe as proprietary software, but only if you manage it correctly. Unlike proprietary where vendors provide updates, with open source, you need to be proactive in patching and understanding dependencies. Their new report provides established principles for patching, evaluating trustworthiness, and best practices for deployment and maintenance. If your organization uses open source, this CISA report is a must-read. Secure your systems today!",
+    "hashtags": [
+      "opensource",
+      "cisa",
+      "c4framework",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "CISA",
+        "headlineRest": "Says Open Source As Secure As Proprietary With Right Management",
+        "body": "The U.S. Cybersecurity and Infrastructure Security Agency (CISA) has released new guidance, 'Open Source Software: Security Principles and Practices,' stating that open source can be as secure as proprietary software. The report emphasizes that government agencies and private enterprises must take proactive measures to properly secure it. Unlike proprietary software where vendors handle updates, organizations using open source need to manage patching and understand dependencies themselves. The guidance provides principles, a framework (C4), and best practices for evaluating, procuring, deploying, and maintaining open source software to minimize risks. This advice, initially targeted at federal agencies, is also highly relevant for the industrial sector.",
+        "hindiSummary": "CISA का कहना है कि सही प्रबंधन के साथ ओपन सोर्स उतना ही सुरक्षित हो सकता है जितना कि प्रोप्रायटरी सॉफ्टवेयर।",
+        "imageQuery": "secure open source software guidelines"
+      }
+    ],
+    "generatedAt": "2026-08-01T05:41:13.002Z"
+  },
+  "render": {
+    "slideImages": [
+      "devopscom-open-source-code-just-as-secure-as-proprietary-softwareif-you-manage-i-slide-01.png"
+    ],
+    "renderedAt": "2026-08-01T05:41:51.937Z",
+    "reelVideo": "devopscom-open-source-code-just-as-secure-as-proprietary-softwareif-you-manage-i-reel.mp4",
+    "reelDurationSeconds": 36.466939,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "6175bc25b06a032d",
+  "notifiedAt": "2026-08-01T05:45:40.226Z"
+}
