@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-common-mistake-from-vs-since-for-time",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Common Mistakes"
+  },
+  "article": {
+    "title": "Common mistake: 'from' vs 'since' for time",
+    "link": "topic://englishvault/mistakes-since-from",
+    "description": "Wrong: 'I have lived here from 2015.' Right: 'I have lived here since 2015.' Teaching point: use 'since' with present perfect for a starting point still relevant now; 'from' is used with a defined start AND end point, like 'The offer is valid from Monday to Friday.'",
+    "content": "Wrong: 'I have lived here from 2015.' Right: 'I have lived here since 2015.' Teaching point: use 'since' with present perfect for a starting point still relevant now; 'from' is used with a defined start AND end point, like 'The offer is valid from Monday to Friday.'",
+    "pubDate": "2026-08-02T05:41:19.539Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-08-02T05:41:19.539Z",
+  "generated": {
+    "caption": "Ever said \"I have lived here from 2015\" and felt unsure? 🤔\n\nFor a starting point still relevant now, use 'since' with the present perfect: \"I have lived here since 2015.\" 'From' is for a defined start AND end point, like \"The offer is valid from Monday to Friday.\"\n\nSave this tip! Follow @TheEnglishVault for daily lessons!",
+    "script": "Aap bhi galti karte ho na jab time batate ho 'from' use karke? Okay, so when you're talking about a starting point jo abhi bhi relevant hai, something that's still continuing, tab use karo since with present perfect tense. Jaise, 'I have lived here since 2015.' Matlab 2015 se ab tak. But from comes into play jab ek start aur end point dono defined ho. Jaise, 'The offer is valid from Monday to Friday.' Toh, next time jab aapko bolna ho ki aap 2015 se kahin reh rahe ho, toh bolo 'I have lived here since 2015.' Not 'from'! Ab clear ho gaya na? Comment mein batao, aapko bhi ye galti lagti thi kya? Save kar lo aur follow The English Vault for more!",
+    "hashtags": [
+      "presentperfecttenses",
+      "englishprepositions",
+      "learnglishgrammar",
+      "englishmistakes",
+      "hinditoenglish"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Since vs From",
+        "headlineRest": "— What's the Difference in Time?",
+        "body": "When talking about time, it's common to get confused between 'since' and 'from'. The key is to use 'since' with the present perfect tense to indicate a starting point that is still relevant now. For example, 'I have lived here since 2015' is correct because it shows that you started living there in 2015 and you're still living there. On the other hand, 'from' is used when there's a defined start and end point, like 'The offer is valid from Monday to Friday'. So, the wrong sentence 'I have lived here from 2015' should be corrected to 'I have lived here since 2015' to convey the intended meaning.",
+        "hindiSummary": "हम 'सिन्स' का प्रयोग वर्तमान पूर्ण काल के साथ करते हैं जब कोई काम अभी भी जारी है।",
+        "imageQuery": "confused person with calendar"
+      }
+    ],
+    "generatedAt": "2026-08-02T05:42:15.284Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-common-mistake-from-vs-since-for-time-slide-01.png"
+    ],
+    "renderedAt": "2026-08-02T05:42:18.958Z",
+    "reelVideo": "the-english-vault-curriculum-common-mistake-from-vs-since-for-time-reel.mp4",
+    "reelDurationSeconds": 56.568,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "70c12c2d91eaf6a6",
+  "notifiedAt": "2026-08-02T05:45:17.785Z"
+}
