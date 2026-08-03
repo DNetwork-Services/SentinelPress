@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-adobe-campaign-classic-cvss-100-flaw-could-run-code-without-user",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Adobe Campaign Classic CVSS 10.0 Flaw Could Run Code Without User Interaction",
+    "link": "https://thehackernews.com/2026/08/adobe-campaign-classic-cvss-100-flaw.html",
+    "description": "Adobe has released security updates to address a maximum-severity security flaw in Campaign Classic (ACC), its enterprise-focused marketing automation platform, that could result in arbitrary code execution. The vulnerability, tracked as CVE-2026-48449, carries a severity score of 10.0 on the CVSS scoring system. It has been described as a case of incorrect authorization that could result in",
+    "content": "",
+    "pubDate": "Sat, 01 Aug 2026 12:42:42 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgL4TR-PlW4MehiF4iAbWafpNUQrSuhhTuEZwgwba7Gi0mF-PfixGSlFmpsBm51WbJYfkA69ZYNjO2aWl8eE8tqdSPdJL7mvLOaYL9O6VWkfxw96YFF0Qxt1ggCurqVd2J2muf6SAjW0cCrt2UwnOO3rK76X-mBWHW1e8-2Mk6FERpS1yPrSVScImJ0TmKW/s1600/adobe-flaw.jpg"
+  },
+  "score": 0.7403334444444445,
+  "selectedAt": "2026-08-03T05:57:05.929Z",
+  "generated": {
+    "caption": "Here's your Instagram caption:\n\nImagine attackers running code on your systems without you even clicking a link! A maximum-severity flaw (CVSS 10.0) has been found in Adobe Campaign Classic, an enterprise marketing platform. This critical vulnerability could let bad actors execute their own code remotely without any user interaction. Adobe has released urgent security updates to fix it. Stay secure! Save this post & share with your team. Follow @CyberShieldAlerts for daily updates.",
+    "script": "Critical alert! A perfect 10.0 security flaw just dropped, allowing hackers to run code on your systems without you even clicking anything. This maximum-severity vulnerability affects Adobe Campaign Classic, their enterprise marketing automation platform. Tracked as CVE-2026-48449, this critical flaw is an incorrect authorization issue with a CVSS score of 10.0. It means arbitrary code execution is possible on affected systems, requiring zero user interaction. This puts sensitive enterprise data at extreme risk. Adobe has released security updates to address this. Apply them immediately to protect your systems.",
+    "hashtags": [
+      "adobe",
+      "campaignclassic",
+      "cybersecurity",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Adobe Campaign Classic",
+        "headlineRest": "Fixes Critical CVSS 10.0 Arbitrary Code Execution Flaw.",
+        "body": "Adobe has issued urgent security updates for its enterprise marketing platform, Campaign Classic. A critical vulnerability, rated 10.0 on the CVSS scale, could allow attackers to execute arbitrary code on affected systems. This high-severity flaw stems from incorrect authorization and does not require any user interaction to be exploited. It is crucial for all users of Adobe Campaign Classic to apply these security patches without delay to safeguard against potential threats.",
+        "hindiSummary": "एडोब कैंपेन क्लासिक में CVSS 10.0 की गंभीर खामी को ठीक करने के लिए सुरक्षा अपडेट जारी किए गए हैं।",
+        "imageQuery": "Critical software vulnerability patch"
+      }
+    ],
+    "generatedAt": "2026-08-03T05:57:35.020Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-adobe-campaign-classic-cvss-100-flaw-could-run-code-without-user-slide-01.png"
+    ],
+    "renderedAt": "2026-08-03T05:58:11.576Z",
+    "reelVideo": "the-hacker-news-adobe-campaign-classic-cvss-100-flaw-could-run-code-without-user-reel.mp4",
+    "reelDurationSeconds": 40.565261,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "2092cf4036120c95",
+  "notifiedAt": "2026-08-03T06:01:03.063Z"
+}
