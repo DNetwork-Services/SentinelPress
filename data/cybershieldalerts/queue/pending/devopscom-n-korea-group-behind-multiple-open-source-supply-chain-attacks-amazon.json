@@ -1,0 +1,54 @@
+{
+  "id": "devopscom-n-korea-group-behind-multiple-open-source-supply-chain-attacks-amazon",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "DevOps.com",
+    "category": "DevOps"
+  },
+  "article": {
+    "title": "N. Korea Group Behind Multiple Open Source Supply-Chain Attacks: Amazon",
+    "link": "https://devops.com/n-korea-group-behind-multiple-open-source-supply-chain-attacks-amazon/",
+    "description": "Amazon’s recent report attributing a series of compromises of open source software libraries to a North Korea-backed threat group encapsulates many of the expanding cyber risks increasingly facing developers, from the growing use of generative AI by bad actors and targeting of code repositories to financially focused attacks by nation-state hackers and the abuse of [&#8230;]",
+    "content": "Amazon’s recent report attributing a series of compromises of open source software libraries to a North Korea-backed threat group encapsulates many of the expanding cyber risks increasingly facing developers, from the growing use of generative AI by bad actors and targeting of code repositories to financially focused attacks by nation-state hackers and the abuse of trust by development teams. It also is the latest report to point to the group – known by such names as Sapphire Sleet, Stardust Chollima, BlueNoroff, CageyChameleon, and Alluring Pisces – linked to the Democratic People’s Republic of Korea (DPRK) to supply chain attacks over the past couple of years that involve placing malicious code into packages in the npm repository. “When an attacker compromises a widely used open source package, every organization that depends on that package is potentially affected,” CJ Moses, CISO of Amazon Integrated Security, wrote in the report, adding that they have “observed the volume and sophistication of software supply chain attacks increase, driven in large part by DPRK‑linked threat actors and cybercriminal groups.” Supply chain attacks are increasingly popular because groups that compromise a small number of popular packages can gain access to thousands of downstream operations at the same time, a more efficient process than targeting organizations individually, Moses wrote. North Korea and Package Compromises Others are seeing similar trends. Socket researchers in March noted that the North Korean-linked Famous Chollima – the nation-state actor behind the long-running Contagious Interview scam – was using dozens of malicious npm packages to steal credentials and secrets from developers. GitHub earlier this year said that in 2025, it banned an average of 11 accounts each month for distributing malware or loaders linked to DPRK-linked threat groups. A researcher from Pusan National University in South Korea wrote in a report in March that North Korea’s cyber operations are now “a central pillar of its asymmetric national strategy and survival logic.” “Facing chronic resource shortages, diplomatic isolation, and sustained sanctions, the regime has increasingly turned to cybercrime, espionage, and digital disruption to sustain both its economy and strategic leverage,” the researcher wrote. “These operations &#8230; illustrate a form of asymmetric power projection in which code, rather than conventional force, is weaponized to offset economic weakness and international marginalization.” A Consistent Drumbeat Amazon’s Moses wrote that in March 2025, the North Korean group compromised the npm typo-crypto package, and followed that in September 2025 by abusing the debug and chalk packages. In March, the group compromised the axios package, a popular JavaScript library that is downloaded 100 million times a week. It’s the first time researchers have linked all three attacks to the single North Korean group. The attacks are the same in each case. The threat actor uses social engineering techniques against the maintainer of the package, and then publishes a software update that includes malicious code. When an organization automatically pulls in the latest version of the packages, they also bring in the malicious code. The typo-crypto compromise was relatively small, suggesting the group was using it as a testing ground for future operations, according to Moses. Microsoft in April attributed the axios campaign to Sapphire Sleet. Days earlier, Google Threat Intelligence Group pointed to a North Korean group, UNC1069, as the culprit. UNC1069 is the same threat cluster as Sapphire Sleet. Wiz found that about one in 10 cloud environments were impacted by the debug and chalk compromises during a two-hour timeframe. Threat Groups Evolve Their Operations Moses noted that the package compromises are illustrative of the evolving nature of attackers’ tradecraft. The shifts include bad actors splitting a single malicious workflow across multiple ordinary packages as a way of hiding the threat, which only becomes evident when the components are inadvertently put back together in particular sequences. They also take the time to establish – and then abuse – the trust that developers put into open source packages. They’ll publish and maintain useful packages for months to gain confidence among developers, then introduce malware once their packages become popular. In addition, multi-stage payloads are using strong cryptographic techniques rather than just obfuscation, payloads don’t launch within sandboxes, and generative AI is increasingly being used to generate code and scale their campaigns. “Generative AI is changing what attackers can produce and what defenders can rely on,” the Amazon researchers wrote. “Historically, many malicious packages were caught because they looked wrong, with broken language, thin documentation, obvious copy-paste, or a telltale function reused across samples. Generative AI erases many of those signals.” Developers, Packages Under Attack Software engineers are increasingly attractive targets for bad actors. “Developers hold cloud credentials, npm publish tokens, and direct access to source code, and their work requires installing packages and running third-party code on their workstations,” Wiz researchers wrote. “AI coding agents now do the same at machine speed. As AI expands who builds software, others are joining that group, each pulling packages, IDE extensions, and AI tools onto workstations that reach directly into cloud environments and deployment pipelines.” Open repositories are in the crosshairs because they’re trusted by the community, are often automatically updated, and are maintained by communities that encourage new contributors to their projects, according to Moses.",
+    "pubDate": "Mon, 03 Aug 2026 20:37:06 +0000",
+    "image": ""
+  },
+  "score": 0.9505267824074074,
+  "selectedAt": "2026-08-04T05:31:24.645Z",
+  "generated": {
+    "caption": "Software you use daily could be exposed to hidden threats. Amazon reports a North Korea-backed group compromised popular open-source software libraries. They tricked maintainers to insert malicious code into updates, potentially affecting thousands of systems downstream.\n\nSave this post & follow @CyberShieldAlerts for daily updates!",
+    "script": "Your next software update could be a North Korean cyberattack! Amazon reports North Korea-backed groups are actively compromising popular open-source packages. They trick maintainers through social engineering, then inject malicious code directly into software updates. When you pull these updates, you're unknowingly downloading malware designed to steal credentials and secrets. These supply chain attacks efficiently hit thousands of organizations at once. Even worse, attackers are now using generative AI to create convincing malicious code, making detection far tougher than before. Don't just update. Scrutinize your open-source dependencies and verify all changes. Stay vigilant!",
+    "hashtags": [
+      "supplychainattack",
+      "northkorea",
+      "npm",
+      "malware",
+      "cybersecurity"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "North Korea Group",
+        "headlineRest": "Behind Open Source Supply-Chain Attacks",
+        "body": "Amazon reports that a North Korea-backed threat group, known as Sapphire Sleet, is orchestrating multiple supply-chain attacks on open-source software libraries. These sophisticated attacks involve compromising popular npm packages like axios and debug by using social engineering to inject malicious code into updates. This strategy allows attackers to affect thousands of downstream organizations simultaneously, offering an efficient alternative to individual targeting. Threat actors are evolving their tradecraft, splitting malicious workflows, abusing developer trust, and increasingly leveraging generative AI to scale campaigns and evade detection. Developers are critical targets due to their access to cloud credentials and source code.",
+        "hindiSummary": "अमेज़न की रिपोर्ट के अनुसार, उत्तर कोरिया समर्थित समूह ओपन-सोर्स सप्लाई-चेन हमलों में शामिल है।",
+        "imageQuery": "Digital supply chain attack"
+      }
+    ],
+    "generatedAt": "2026-08-04T05:31:54.320Z"
+  },
+  "render": {
+    "slideImages": [
+      "devopscom-n-korea-group-behind-multiple-open-source-supply-chain-attacks-amazon-slide-01.png"
+    ],
+    "renderedAt": "2026-08-04T05:32:35.935Z",
+    "reelVideo": "devopscom-n-korea-group-behind-multiple-open-source-supply-chain-attacks-amazon-reel.mp4",
+    "reelDurationSeconds": 38.556735,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "1686553e3e99b517",
+  "notifiedAt": "2026-08-04T05:36:18.281Z"
+}

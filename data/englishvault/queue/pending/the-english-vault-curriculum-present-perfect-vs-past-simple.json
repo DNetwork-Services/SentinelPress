@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-present-perfect-vs-past-simple",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Grammar"
+  },
+  "article": {
+    "title": "Present Perfect vs. Past Simple",
+    "link": "topic://englishvault/grammar-present-perfect-vs-past-simple",
+    "description": "Present Perfect (have/has + past participle) is used for actions with a connection to now, or when the exact time isn't stated: 'I have visited Paris.' Past Simple is used for finished actions at a specific, stated past time: 'I visited Paris in 2019.' Common mistake: using Present Perfect with a specific past time marker, e.g. 'I have visited Paris in 2019' is incorrect — should be Past Simple.",
+    "content": "Present Perfect (have/has + past participle) is used for actions with a connection to now, or when the exact time isn't stated: 'I have visited Paris.' Past Simple is used for finished actions at a specific, stated past time: 'I visited Paris in 2019.' Common mistake: using Present Perfect with a specific past time marker, e.g. 'I have visited Paris in 2019' is incorrect — should be Past Simple.",
+    "pubDate": "2026-08-04T05:31:24.750Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-08-04T05:31:24.750Z",
+  "generated": {
+    "caption": "Ever wondered if you should say \"I visited\" or \"I have visited\"? 🤔 Here's the key!\n\nUse Past Simple for finished actions at a specific time: 'I visited Paris in 2019.' 🗓️ But for actions connected to now or when the time isn't stated, use Present Perfect: 'I have visited Paris.' ✨\n\nSave this for later and follow @theenglishvault for daily English tips!",
+    "script": "\"I have visited\" aur \"I visited\" mein confusion hota hai na? Ye galti interview mein mat karna!\n\nDekho, Present Perfect, yaani 'have/has' ke saath Past Participle, tab use karte hain jab action ka connection abhi se ho, ya fir exact time nahi bataya ho. Jaise, 'I have visited Paris.' Matlab, main Paris ghoom chuka hoon, kab gaya exact time matter nahi karta. Lekin, Past Simple use hota hai finished actions ke liye, jab time specifically bataya ho. Jaise, 'I visited Paris in 2019.' Yahan time mentioned hai, right? 2019. Yehi common mistake hoti hai, log bol dete hain 'I have visited Paris in 2019'. Ye galat hai! Specific time ke saath hamesha Past Simple aayega.\n\nToh ab yaad rakho, jab time mention ho toh Past Simple, aur agar time nahi bataya ya present se connection hai, toh Present Perfect. Ab samajh aaya?\n\nComment mein batao aapko ye rule pehle pata tha ya nahi! Aur aise hi English tips ke liye The English Vault ko follow kar lo!",
+    "hashtags": [
+      "presentperfect",
+      "pastsimple",
+      "englishgrammar",
+      "englishtenses",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Have Visited in 2019",
+        "headlineRest": "— Is Actually Wrong, Here's Why",
+        "body": "Have you ever wondered about the precise difference between 'I have visited Paris' and 'I visited Paris in 2019'? The Present Perfect tense (have/has + past participle) connects a past action to the present, or is used when the exact time isn't stated, like in 'I have visited Paris' (at some point in my life). In contrast, the Past Simple describes actions completed at a specific, stated past time, as in 'I visited Paris in 2019.' A crucial common mistake is using Present Perfect with a specific past time marker. For example, 'I have visited Paris in 2019' is incorrect; for a specific past time, you must use the Past Simple, so 'I visited Paris in 2019' is the correct form.",
+        "hindiSummary": "जब आप किसी विशिष्ट भूतकाल के समय की बात करें, तो 'I have visited in 2019' कहना गलत है; सही रूप 'I visited in 2019' है।",
+        "imageQuery": "confused person comparing calendars"
+      }
+    ],
+    "generatedAt": "2026-08-04T05:32:34.187Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-present-perfect-vs-past-simple-slide-01.png"
+    ],
+    "renderedAt": "2026-08-04T05:32:37.388Z",
+    "reelVideo": "the-english-vault-curriculum-present-perfect-vs-past-simple-reel.mp4",
+    "reelDurationSeconds": 81.528,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "2136e53856329db5",
+  "notifiedAt": "2026-08-04T05:36:21.260Z"
+}
