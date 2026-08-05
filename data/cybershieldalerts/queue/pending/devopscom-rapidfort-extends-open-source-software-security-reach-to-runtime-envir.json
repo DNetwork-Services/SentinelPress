@@ -1,0 +1,54 @@
+{
+  "id": "devopscom-rapidfort-extends-open-source-software-security-reach-to-runtime-envir",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "DevOps.com",
+    "category": "DevOps"
+  },
+  "article": {
+    "title": "RapidFort Extends Open Source Software Security Reach to Runtime Environments",
+    "link": "https://devops.com/rapidfort-extends-open-source-software-security-reach-to-runtime-environments/",
+    "description": "RapidFort today at the Black Hat USA conference announced it has extended its ability to secure open source software to the runtimes that DevOps teams deploy in production environments. Michael Wood, chief marketing officer for RapidFort, said the RapidFort Runtime platform makes it possible to now monitor open source software deployed within a container image [&#8230;]",
+    "content": "RapidFort today at the Black Hat USA conference announced it has extended its ability to secure open source software to the runtimes that DevOps teams deploy in production environments. Michael Wood, chief marketing officer for RapidFort, said the RapidFort Runtime platform makes it possible to now monitor open source software deployed within a container image to detect unauthorized or unexpected changes, and proactively assess the impact any report of a newly discovered Common Vulnerabilities and Exposures (CVE) might have. The overall goal is to make it simpler for DevOps teams to run the curated open source software packages that RapidFort already provides in their production environments, adds Wood. At the core of RapidFort Runtime is a Runtime Bill of Materials (RBOM) capability that integrates with pipelines in continuous integration/continuous delivery (CI/CD) platforms and uses application programming interfaces (APIs) and instrumentation to map system calls, network and memory usage, and process execution. The RapidFort Runtime platform is then able in a read-only mode to continuously monitor those environments in a way that both tracks changes and surfaces actionable mitigation recommendations as production environments are updated, said Wood. Additionally, RapidFort can be used to discover any unused files within an application that only serve to increase the overall size of the attack surface that might be exploited, he added. RapidFort has also integrated code scanning tools from ReversingLabs to identify vulnerabilities in binaries before and after software is deployed in a production environment. RapidFort is also one of the founding members of an Akrites initiative launched by the Linux Foundation that seeks to disclose and remediate vulnerabilities in critical open source software via a shared Security Incident Response Team (SIRT) and a Coordinated Vulnerability Disclosure (CVD) process. In general, RapidFort is making a case for deploying a curated set of open source software packages that have been patched to remove known vulnerabilities in a way that also seamlessly integrates with most existing package managers, said Wood. That approach enables DevSecOps teams to rapidly update applications that include open source software components at a time when artificial intelligence (AI) models are now discovering thousands of vulnerabilities in legacy software. The issue is that most DevOps teams lack the resources required to apply patches to all their legacy applications before many of those vulnerabilities are exploited. More challenging still, any vulnerability discovered in an open source component requires the maintainers of that project to issue an update. RapidFort removes the overhead associated with managing the process by providing curated instances of those components that it continues to maintain as updates are made. It’s not clear how quickly vulnerabilities in applications are now being exploited, but the amount of time cybercriminals need to create an exploit for a vulnerability is now measured in hours. As such, it’s now only a matter of time before a much higher percentage of vulnerabilities found in applications are exploited. In effect, DevSecOps teams, whether they like it or not, are now locked in a race against time in the AI era whenever a new vulnerability is discovered.",
+    "pubDate": "Tue, 04 Aug 2026 19:44:09 +0000",
+    "image": ""
+  },
+  "score": 0.9456895848765432,
+  "selectedAt": "2026-08-05T05:30:42.149Z",
+  "generated": {
+    "caption": "Cybercriminals are exploiting vulnerabilities in *hours*! ⏱️\n\nRapidFort just announced a new platform at Black Hat USA that extends security for open-source software directly into live systems. It monitors your running applications for unexpected changes and helps assess new threats, making it easier for teams to patch quickly. This is crucial as AI speeds up vulnerability discovery.\n\nSave this post and follow for daily security updates!",
+    "script": "Cybercriminals can exploit vulnerabilities in hours. This isn't just a threat, it's a critical race. AI is now discovering thousands of vulnerabilities, but patching them manually is nearly impossible for most teams. RapidFort just announced a game-changer: extending open source software security directly into your production runtime environments. Their new platform monitors deployed open source software, detects unauthorized changes, and proactively assesses new vulnerabilities. It even finds unused files that increase your attack surface, cutting down risk where you didn't even know it existed. They provide curated, pre-patched open source packages, removing the burden of constant manual updates. The clock is ticking. Act now to secure your open source runtime environments and shrink your attack surface.",
+    "hashtags": [
+      "rapidfort",
+      "runtimesecurity",
+      "opensourcesecurity",
+      "devsecops",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "RapidFort",
+        "headlineRest": "Extends Open Source Security to Runtime Environments",
+        "body": "RapidFort announced at Black Hat USA its new Runtime platform, extending open source software security to production runtime environments. This platform actively monitors software within containers for unexpected changes and proactively assesses the impact of new CVEs. By providing a Runtime Bill of Materials (RBOM) and continuous monitoring, it helps DevOps teams run curated, patched open source packages more securely. This innovation aims to simplify managing open source updates and reduce attack surfaces in an era where vulnerabilities are rapidly discovered and exploited, helping DevSecOps teams stay ahead in the race against time.",
+        "hindiSummary": "रैपिडफोर्ट ने रनटाइम वातावरण में ओपन सोर्स सॉफ्टवेयर सुरक्षा का विस्तार किया है, जिससे डेवलप्स टीमों के लिए सुरक्षित तैनाती आसान हो गई है।",
+        "imageQuery": "Secure software runtime protection"
+      }
+    ],
+    "generatedAt": "2026-08-05T05:31:08.996Z"
+  },
+  "render": {
+    "slideImages": [
+      "devopscom-rapidfort-extends-open-source-software-security-reach-to-runtime-envir-slide-01.png"
+    ],
+    "renderedAt": "2026-08-05T05:31:41.467Z",
+    "reelVideo": "devopscom-rapidfort-extends-open-source-software-security-reach-to-runtime-envir-reel.mp4",
+    "reelDurationSeconds": 46.509569,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "61bbabc15cd4caac",
+  "notifiedAt": "2026-08-05T05:35:50.240Z"
+}
