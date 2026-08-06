@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-giving-constructive-feedback-professionally",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Business English"
+  },
+  "article": {
+    "title": "Giving constructive feedback professionally",
+    "link": "topic://englishvault/business-english-giving-feedback",
+    "description": "Useful framework: start positive, then the specific issue, then a suggestion. Phrases: 'One thing that worked really well was...', 'One area to consider improving is...', 'Going forward, it might help to...'. Avoid absolute negative language like 'this is wrong' — softer framing keeps the conversation constructive.",
+    "content": "Useful framework: start positive, then the specific issue, then a suggestion. Phrases: 'One thing that worked really well was...', 'One area to consider improving is...', 'Going forward, it might help to...'. Avoid absolute negative language like 'this is wrong' — softer framing keeps the conversation constructive.",
+    "pubDate": "2026-08-06T05:33:05.443Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-08-06T05:33:05.443Z",
+  "generated": {
+    "caption": "Ever struggle to give feedback without sounding harsh? Keep it constructive! Start positive, then address the specific issue, and finish with a helpful suggestion. Use phrases like 'One thing that worked really well was...' and 'Going forward, it might help to...' for professional conversations.\n\nSave this for professional feedback! Follow @theenglishvault for more daily English tips!",
+    "script": "Kisi ko feedback dete time, 'yeh galat hai' bol dete ho, aur woh bura maan jaata hai?\nToh suno! Professional feedback dene ke liye ek simple framework follow karo. Pehle shuru karo positive se. Bolo: 'One thing that worked really well was...' Isse saamne waala comfortable ho jaata hai. Phir, specific issue ko soft tarike se batao: 'One area to consider improving is...' Aur end mein do ek suggestion: 'Going forward, it might help to...' Ye sab use karke, aap positive aur constructive feedback de sakte ho.\nAb samajh aaya ki professional feedback kaise dete hain? Isse saamne waale ko bura bhi nahi lagega, aur woh improve bhi karega.\nToh next time feedback aise hi dena! Save kar lo ye reel, aur follow karo The English Vault ko aise hi useful tips ke liye!",
+    "hashtags": [
+      "constructivefeedback",
+      "businessenglish",
+      "businesscommunication",
+      "learnenglish",
+      "spokenenglish"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Constructive Feedback",
+        "headlineRest": "Professionally: A Simple Framework",
+        "body": "Giving constructive feedback professionally is crucial for fostering growth and clear communication. A useful framework involves starting with a positive observation, then addressing the specific issue, and finally offering a helpful suggestion for improvement. You can use phrases like 'One thing that worked really well was...', 'One area to consider improving is...', and 'Going forward, it might help to...'. Always avoid absolute negative language like 'this is wrong' to maintain a supportive and constructive tone.",
+        "hindiSummary": "पेशेवर तरीके से रचनात्मक प्रतिक्रिया देने के लिए, सकारात्मक शुरुआत करें, फिर मुद्दे पर आएं और सुझाव दें।",
+        "imageQuery": "Professional feedback discussion"
+      }
+    ],
+    "generatedAt": "2026-08-06T05:34:17.197Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-giving-constructive-feedback-professionally-slide-01.png"
+    ],
+    "renderedAt": "2026-08-06T05:34:20.334Z",
+    "reelVideo": "the-english-vault-curriculum-giving-constructive-feedback-professionally-reel.mp4",
+    "reelDurationSeconds": 62.856,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "4d93474a2d461533",
+  "notifiedAt": "2026-08-06T05:37:33.333Z"
+}

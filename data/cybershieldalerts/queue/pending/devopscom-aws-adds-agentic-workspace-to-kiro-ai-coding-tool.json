@@ -1,0 +1,54 @@
+{
+  "id": "devopscom-aws-adds-agentic-workspace-to-kiro-ai-coding-tool",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "DevOps.com",
+    "category": "DevOps"
+  },
+  "article": {
+    "title": "AWS Adds Agentic Workspace to Kiro AI Coding Tool",
+    "link": "https://devops.com/aws-adds-agentic-workspace-to-kiro-ai-coding-tool/",
+    "description": "Amazon Web Services (AWS) this week added an open source workspace for its Kiro artificial intelligence (AI) coding tool that enables application developers to asynchronously assign tasks to an AI agent that is capable of autonomously performing tasks, such as testing code as it is created, in a way that maintains context across multiple sessions. [&#8230;]",
+    "content": "Amazon Web Services (AWS) this week added an open source workspace for its Kiro artificial intelligence (AI) coding tool that enables application developers to asynchronously assign tasks to an AI agent that is capable of autonomously performing tasks, such as testing code as it is created, in a way that maintains context across multiple sessions. Darko Mesaros, a distinguished developer advocate at AWS, said the Kiro Crew workspace is also capable of creating reusable AI skills by observing the tasks developers assign to Kiro as they write code. Kiro Crew orchestrates agents using the Agent Client Protocol (ACP) to ensure every step is observable in real time as sub-agents are spawned. For example, developers can also hand off a ticket queue to Kiro Crew for it to triage issues and flag what needs their attention or ask it to investigate the root cause of an incident while a developer continues to work on another task. An Activity view shows each agent’s reasoning, every tool call, and the results as they happen, with one card per agent on the dashboard. The overall goal is to remove more of the toil that takes time away from ensuring that the underlying architecture of the application being created is optimized for a specific use case, said Mesaros. In many ways, Kiro Crew provides many of the same capabilities as a general-purpose AI agent such as OpenClaw that has been designed for application developers, said Mesaros. Unlike a general-purpose AI agent, however, Kiro Crew provides an operating system-level sandbox, denied-by-default commands, suspicious-pattern blocking, input validation, sensitive-path blocking, credential redaction, and a signed audit log of every action. Any time, for example, an external AI agent seeks to install a tool it will be denied access, noted Mesaros. In general, most of the AI skills that developers create today will increasingly become capabilities that are embedded within the next generation of large language models (LLMs). However, there will always be a unique set of AI skills that individual developers will require to build applications for a particular IT environment. Rather than having to build those AI skills themselves, Kiro Crew monitors how code is being developed and then makes a recommendation to add an AI skill that will automatically generate on behalf of the application developer. Kiro Crew is designed to be an extension of the command line interface (CLI) that AWS developed for Kiro. More than 500 internal AWS developers contributed to a project that is now used by thousands of AWS developers, said Mesaros. Next up, AWS plans to make an edition of Kiro available on Windows platforms, he added. At this juncture, just about every developer is, to one degree or another, making use of AI coding tools. The challenge now is taking those efforts to the next level by embracing more advanced agentic engineering tools to not just write code faster but also regain the simple joy that comes from building an application that solves a problem for the business.",
+    "pubDate": "Wed, 05 Aug 2026 20:11:20 +0000",
+    "image": ""
+  },
+  "score": 0.9479854305555555,
+  "selectedAt": "2026-08-06T05:33:05.441Z",
+  "generated": {
+    "caption": "Developers, imagine an AI teammate that tests code and triages issues for you! 🤖 AWS just upgraded its Kiro AI coding tool with 'Kiro Crew.'\n\nThis new \"agentic workspace\" allows AI agents to autonomously handle tasks like testing code, triaging issues, and even creating reusable AI skills. Crucially, it comes with built-in security features like sandboxing and denied-by-default commands to protect your projects.\n\nSave this post & share with a developer! Follow @CyberShieldAlerts for daily updates.",
+    "script": "Is your AI coding assistant a hidden security risk? AWS just released Kiro Crew, an agentic workspace for their Kiro AI coding tool. This innovation lets AI agents autonomously perform tasks like testing code and triaging issues, accelerating development. But here's the cybersecurity game-changer: Kiro Crew is built with an OS-level sandbox, denied-by-default commands, and credential redaction. Crucially, it actively prevents external AI agents from installing unauthorized tools. This protects your environment from suspicious patterns and ensures a signed audit log of every action. Ensure your AI tools meet these rigorous security standards. Demand true protection now!",
+    "hashtags": [
+      "kirocrew",
+      "aiagents",
+      "devsecops",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "AWS Kiro",
+        "headlineRest": "Gets Agentic AI Workspace",
+        "body": "Amazon Web Services (AWS) has introduced Kiro Crew, an agentic workspace for its Kiro AI coding tool. This new open-source addition allows developers to asynchronously assign tasks to an AI agent, which can autonomously perform functions like code testing and incident investigation, maintaining context across sessions. Kiro Crew aims to reduce development toil, enabling developers to focus on optimizing application architecture. It also boasts robust security measures, including an OS-level sandbox and denied-by-default commands. This innovation helps developers leverage AI to build applications more efficiently and securely.",
+        "hindiSummary": "AWS Kiro AI कोडिंग टूल में नया एजेंटिक वर्कस्पेस जोड़ा गया है, जिससे डेवलपर्स का काम और भी आसान हो जाएगा।",
+        "imageQuery": "AI developer workspace innovation future"
+      }
+    ],
+    "generatedAt": "2026-08-06T05:33:40.513Z"
+  },
+  "render": {
+    "slideImages": [
+      "devopscom-aws-adds-agentic-workspace-to-kiro-ai-coding-tool-slide-01.png"
+    ],
+    "renderedAt": "2026-08-06T05:34:18.793Z",
+    "reelVideo": "devopscom-aws-adds-agentic-workspace-to-kiro-ai-coding-tool-reel.mp4",
+    "reelDurationSeconds": 40.611701,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "7f2e9a39a1a93622",
+  "notifiedAt": "2026-08-06T05:37:30.236Z"
+}
