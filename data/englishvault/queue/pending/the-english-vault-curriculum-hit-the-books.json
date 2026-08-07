@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-hit-the-books",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Idioms"
+  },
+  "article": {
+    "title": "Hit the books",
+    "link": "topic://englishvault/idiom-hit-the-books",
+    "description": "Meaning: to study hard, usually before an exam. Example: 'I can't go out tonight, I need to hit the books for tomorrow's test.' Register: informal, common among students. Similar idiom: 'cram for an exam' (study intensively at the last minute).",
+    "content": "Meaning: to study hard, usually before an exam. Example: 'I can't go out tonight, I need to hit the books for tomorrow's test.' Register: informal, common among students. Similar idiom: 'cram for an exam' (study intensively at the last minute).",
+    "pubDate": "2026-08-07T04:36:45.720Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-08-07T04:36:45.720Z",
+  "generated": {
+    "caption": "Got a big exam coming up? Then it's time to \"hit the books\"! This common, informal idiom simply means to study hard, usually before a test. It's how students often say they need to focus intensely.\n\nFor example: \"I can't go out tonight, I need to hit the books for tomorrow's test.\"\n\nSave this idiom for later! Share it with a friend and follow @EnglishVault for daily lessons.",
+    "script": "Ye 'Hit the books' sunke confusion hota hai na? Lagta hai kitaabon ko maaro, but actually iska matlab hai... study hard! Jab aapko exams ke pehle bohot padhai karni hoti hai, tab aap use karte ho 'Hit the books'. Jaise, 'I can't go out tonight, I need to hit the books for tomorrow's test.' Matlab aaj raat bahar nahi ja sakta, kal ke test ke liye bohot padhai karni hai. Yeh students mein bohot common hai, ek informal idiom hai. Basically kitaabon ko maarna nahi, unko ache se padhna hai. Toh next time jab bhi aapko bolna ho ki yaar bohot padhna hai, especially exam ke liye, toh bolo 'I need to hit the books'. Ab clear ho gaya na? Comment mein batao, aapko ye idiom pata tha ya nahi? Aur follow karo The English Vault ko aise hi quick English tips ke liye!",
+    "hashtags": [
+      "hitthebooks",
+      "englishidioms",
+      "learnenglish",
+      "englishvocabulary",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Hit the Books",
+        "headlineRest": "— What It Means",
+        "body": "The idiom \"Hit the books\" means to study very hard, usually in preparation for an exam. It's an informal phrase, often used among students. For example, you might say, 'I can't go out tonight, I need to hit the books for tomorrow's test.' A similar idiom is 'cram for an exam,' which means to study intensively at the last minute.",
+        "hindiSummary": "\"Hit the books\" मुहावरे का मतलब है परीक्षा से पहले बहुत मेहनत से पढ़ाई करना।",
+        "imageQuery": "student studying hard"
+      }
+    ],
+    "generatedAt": "2026-08-07T04:37:44.810Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-hit-the-books-slide-01.png"
+    ],
+    "renderedAt": "2026-08-07T04:37:48.780Z",
+    "reelVideo": "the-english-vault-curriculum-hit-the-books-reel.mp4",
+    "reelDurationSeconds": 61.2,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "661b0e7d3d60daf6",
+  "notifiedAt": "2026-08-07T04:41:02.336Z"
+}
