@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-meticulous",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Vocabulary"
+  },
+  "article": {
+    "title": "Meticulous",
+    "link": "topic://englishvault/vocab-meticulous",
+    "description": "Meaning: showing great attention to detail; very careful and precise. Example: 'She kept meticulous records of every transaction.' Synonyms: thorough, painstaking, precise. Useful in describing work habits — common in job interview English.",
+    "content": "Meaning: showing great attention to detail; very careful and precise. Example: 'She kept meticulous records of every transaction.' Synonyms: thorough, painstaking, precise. Useful in describing work habits — common in job interview English.",
+    "pubDate": "2026-08-08T03:55:26.810Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-08-08T03:55:26.810Z",
+  "generated": {
+    "caption": "Want to impress with your professional English? 🚀 The word is **meticulous**!\n\nIt means showing great attention to detail; being very careful and precise. Use it to describe excellent work habits, especially in job interviews!\n\nFor example: \"She kept meticulous records of every transaction.\"\n\nSave this for your next interview! Follow @TheEnglishVault for daily lessons.",
+    "script": "Job interview mein ye word sunke confuse ho jaate ho na? Meticulous! Toh dekho, meticulous ka matlab hai, jab aap koi kaam itni detail aur carefully karte ho ki usme koi galti ki gunjaish hi na ho. Har chhoti se chhoti cheez pe dhyan dena. Basically, showing great attention to detail, very careful and precise. Example ke liye: 'She kept meticulous records of every transaction.' Matlab usne har transaction ka bohot detailed aur careful record rakha. So, agar aap apne work habits describe kar rahe ho, ya kisi ke kaam ko describe kar rahe ho, toh ye word bohot useful hai. Toh ab samajh aaya? Meticulous matlab super careful, super detailed, aur precise kaam karna. Ab next time koi puchega, toh pata hoga! Comment mein batao, aap meticulous ho ya nahi! Aur aise hi aur English tips ke liye follow karo The English Vault!",
+    "hashtags": [
+      "meticulous",
+      "jobinterviewenglish",
+      "englishvocabulary",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Meticulous",
+        "headlineRest": "— The Key to Perfection",
+        "body": "Being meticulous means showing great attention to detail and being very careful and precise in one's work or activities. For instance, 'She kept meticulous records of every transaction.' This quality is highly valued in professional settings, making it a useful descriptor for work habits, especially during job interviews. Synonyms for meticulous include thorough, painstaking, and precise, all of which convey a sense of carefulness and attention to detail.",
+        "hindiSummary": "मeticulous का अर्थ विस्तार से ध्यान देना और बहुत सावधानी से काम करना है",
+        "imageQuery": "person carefully organizing files"
+      }
+    ],
+    "generatedAt": "2026-08-08T03:56:18.489Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-meticulous-slide-01.png"
+    ],
+    "renderedAt": "2026-08-08T03:56:22.032Z",
+    "reelVideo": "the-english-vault-curriculum-meticulous-reel.mp4",
+    "reelDurationSeconds": 69,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "082c23647fdbf7a7",
+  "notifiedAt": "2026-08-08T03:59:29.676Z"
+}

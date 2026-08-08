@@ -1,0 +1,54 @@
+{
+  "id": "techcrunch-openai-says-it-slowed-astra-model-development-over-security-concerns",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "TechCrunch",
+    "category": "Technology"
+  },
+  "article": {
+    "title": "OpenAI says it slowed Astra model development over security concerns",
+    "link": "https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/",
+    "description": "OpenAI said this model, which is still in development, reached its \"critical cybersecurity threshold,\" meaning it could independently identify and carry out cyberattacks against traditionally well-protected real-world systems.",
+    "content": "",
+    "pubDate": "Fri, 07 Aug 2026 22:48:24 +0000",
+    "image": ""
+  },
+  "score": 0.9715697422839507,
+  "selectedAt": "2026-08-08T03:55:26.808Z",
+  "generated": {
+    "caption": "AI hacking just got a lot more serious. OpenAI has paused development on its Astra model due to major security concerns. This AI reached a \"critical cybersecurity threshold,\" meaning it could independently identify and carry out cyberattacks against real-world systems.\n\nSave this post & share with your network! Follow @CyberShieldAlerts for daily cybersecurity insights.",
+    "script": "An AI that can launch cyberattacks, autonomously? OpenAI just hit the brakes on their Astra model over a terrifying discovery. Their new AI, Astra, reached a critical cybersecurity threshold. This means it could independently identify and carry out cyberattacks against traditionally well-protected real-world systems. Think about that: an AI developing and executing hacks all on its own. This isn't just a threat; it's a game-changer for digital security. The implications for businesses and personal data are massive. Cybersecurity just got a whole lot more complex. Ensure your current defenses are robust and stay ahead of emerging AI threats.",
+    "hashtags": [
+      "openai",
+      "astramodel",
+      "aicyberattacks",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Astra Model",
+        "headlineRest": "Development Slowed by OpenAI Over Cyber Attack Risk",
+        "body": "OpenAI has announced it has slowed the development of its advanced Astra model. The decision stems from the model reaching a \"critical cybersecurity threshold.\" This means Astra demonstrated the ability to independently identify and carry out cyberattacks against traditionally well-protected real-world systems. The company is taking a precautionary measure, highlighting its commitment to safety and responsible AI development amidst such powerful capabilities.",
+        "hindiSummary": "सुरक्षा चिंताओं के कारण OpenAI ने अपने एस्ट्रा मॉडल का विकास धीमा कर दिया है, क्योंकि यह स्वतंत्र रूप से साइबर हमले करने में सक्षम पाया गया था।",
+        "imageQuery": "AI security threat warning"
+      }
+    ],
+    "generatedAt": "2026-08-08T03:55:47.611Z"
+  },
+  "render": {
+    "slideImages": [
+      "techcrunch-openai-says-it-slowed-astra-model-development-over-security-concerns-slide-01.png"
+    ],
+    "renderedAt": "2026-08-08T03:56:21.029Z",
+    "reelVideo": "techcrunch-openai-says-it-slowed-astra-model-development-over-security-concerns-reel.mp4",
+    "reelDurationSeconds": 37.802086,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "8819c1845706510a",
+  "notifiedAt": "2026-08-08T03:59:27.080Z"
+}
