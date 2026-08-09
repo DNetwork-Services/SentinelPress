@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-piece-of-cake",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "Idioms"
+  },
+  "article": {
+    "title": "Piece of cake",
+    "link": "topic://englishvault/idiom-piece-of-cake",
+    "description": "Meaning: something very easy to do. Example: 'Don't worry about the test, it'll be a piece of cake.' Register: informal. Similar idioms: 'a walk in the park', 'easy as pie'.",
+    "content": "Meaning: something very easy to do. Example: 'Don't worry about the test, it'll be a piece of cake.' Register: informal. Similar idioms: 'a walk in the park', 'easy as pie'.",
+    "pubDate": "2026-08-09T04:02:57.072Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-08-09T04:02:57.072Z",
+  "generated": {
+    "caption": "Ever need a fun, natural way to say something is incredibly easy? 🤔\n\nOur idiom today, \"piece of cake,\" means just that: something very easy to do! It's an informal phrase perfect for describing effortless tasks.\n\nFor example: \"Don't worry about the test, it'll be a piece of cake.\" You might also hear 'a walk in the park' or 'easy as pie' with a similar meaning!\n\nSave this, share with a friend, and follow @EnglishVault for daily English tips!",
+    "script": "Jab koi bole 'Oh, that was a piece of cake!', toh aap confuse ho jaate ho na? Actually, 'piece of cake' ka matlab hota hai 'something very easy to do'. Jab koi kaam bahut aasaan ho, jismein koi mushkil na ho, tab hum use bolte hain 'a piece of cake'. Jaise ki, 'Don't worry about the test, it'll be a piece of cake.' Matlab, test bahut aasaan hoga, tension mat lo. Toh next time, agar koi kaam aapke liye bahut easy ho, toh bolna 'It was a piece of cake!' Simple, right? Ab comment mein batao, aapko ye idiom pehle se pata tha ya nahi?",
+    "hashtags": [
+      "pieceofcake",
+      "englishidioms",
+      "englishexpressions",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Piece of cake",
+        "headlineRest": "— It's Easier Than You Think!",
+        "body": "'Piece of cake' is an informal idiom used to describe something that is very easy to do. When you say something is 'a piece of cake,' you mean it requires minimal effort or skill. For instance, 'Don't worry about the test, it'll be a piece of cake!' is a way of saying the test will be very simple. This idiom is similar to phrases like 'a walk in the park' or 'easy as pie' and highlights how effortless something can be.",
+        "hindiSummary": "कोई भी काम जो बहुत आसान हो, उसे 'piece of cake' कहा जाता है।",
+        "imageQuery": "Effortless success happy person"
+      }
+    ],
+    "generatedAt": "2026-08-09T04:04:14.377Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-piece-of-cake-slide-01.png"
+    ],
+    "renderedAt": "2026-08-09T04:04:16.765Z",
+    "reelVideo": "the-english-vault-curriculum-piece-of-cake-reel.mp4",
+    "reelDurationSeconds": 45.696,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "fcfae3594fb25d52",
+  "notifiedAt": "2026-08-09T04:06:55.527Z"
+}

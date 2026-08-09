@@ -1,0 +1,54 @@
+{
+  "id": "techcrunch-planned-amazon-data-center-could-become-the-biggest-climate-polluter",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "TechCrunch",
+    "category": "Technology"
+  },
+  "article": {
+    "title": "Planned Amazon data center could become the biggest climate polluter in the U.S.",
+    "link": "https://techcrunch.com/2026/08/08/planned-amazon-data-center-could-become-the-biggest-climate-polluter-in-the-u-s/",
+    "description": "As part of a planned Texas data center, Amazon is investing in an on-site power plant that could reportedly become the largest source of climate pollution in the United States.",
+    "content": "",
+    "pubDate": "Sat, 08 Aug 2026 21:24:02 +0000",
+    "image": ""
+  },
+  "score": 0.9630631635802469,
+  "selectedAt": "2026-08-09T04:02:57.071Z",
+  "generated": {
+    "caption": "A future Amazon data center could become the biggest climate polluter in the U.S.!\n\nAmazon is planning a new data center in Texas that includes an on-site power plant. Reports suggest this plant could become the largest source of climate pollution in the entire United States.\n\nSave this post and share to raise awareness! Follow @CyberShieldAlerts for daily tech & threat intel.",
+    "script": "Did you know Amazon's planned data center in Texas could become the *biggest* climate polluter in the entire U.S.? This isn't just another tech facility. Amazon is investing in a new on-site power plant as part of this project. Industry reports indicate this very plant has the potential to become the single largest source of climate pollution in the United States. This expansion could drastically increase emissions, setting a concerning precedent for large-scale energy consumption and its environmental footprint. It impacts us all. Stay aware of major corporate developments and advocate for greener energy solutions.",
+    "hashtags": [
+      "amazon",
+      "datacenter",
+      "climatepollution",
+      "cloudcomputing",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Amazon",
+        "headlineRest": "Data Center Could Be U.S.'s Biggest Climate Polluter.",
+        "body": "Amazon is planning a new data center in Texas that includes an on-site power plant. Reports indicate this facility could become the single largest source of climate pollution in the United States. This significant investment raises major concerns about its potential environmental impact. The project highlights the growing challenge of balancing technological expansion with corporate sustainability responsibilities.",
+        "hindiSummary": "अमेज़न का नया डेटा सेंटर अमेरिका में सबसे बड़ा जलवायु प्रदूषक बन सकता है।",
+        "imageQuery": "data center environmental pollution"
+      }
+    ],
+    "generatedAt": "2026-08-09T04:03:48.386Z"
+  },
+  "render": {
+    "slideImages": [
+      "techcrunch-planned-amazon-data-center-could-become-the-biggest-climate-polluter-slide-01.png"
+    ],
+    "renderedAt": "2026-08-09T04:04:15.900Z",
+    "reelVideo": "techcrunch-planned-amazon-data-center-could-become-the-biggest-climate-polluter-reel.mp4",
+    "reelDurationSeconds": 35.491701,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "865628be7b20b28b",
+  "notifiedAt": "2026-08-09T04:06:53.009Z"
+}
