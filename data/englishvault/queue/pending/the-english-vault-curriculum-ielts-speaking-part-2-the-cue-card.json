@@ -1,0 +1,54 @@
+{
+  "id": "the-english-vault-curriculum-ielts-speaking-part-2-the-cue-card",
+  "accountId": "englishvault",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The English Vault Curriculum",
+    "category": "IELTS"
+  },
+  "article": {
+    "title": "IELTS Speaking Part 2 (the cue card)",
+    "link": "topic://englishvault/ielts-speaking-part2-tips",
+    "description": "You get 1 minute to prepare notes, then speak for 1-2 minutes on a given topic (the 'cue card'). Structure: describe what/who/when/where first, then explain why it matters to you or how you felt. Use the full 1-2 minutes — stopping early costs points on Fluency and Coherence. Tip: use linking words like 'what's more', 'the reason I say this is', 'looking back'.",
+    "content": "You get 1 minute to prepare notes, then speak for 1-2 minutes on a given topic (the 'cue card'). Structure: describe what/who/when/where first, then explain why it matters to you or how you felt. Use the full 1-2 minutes — stopping early costs points on Fluency and Coherence. Tip: use linking words like 'what's more', 'the reason I say this is', 'looking back'.",
+    "pubDate": "2026-08-10T04:13:12.778Z",
+    "image": ""
+  },
+  "score": 1,
+  "selectedAt": "2026-08-10T04:13:12.779Z",
+  "generated": {
+    "caption": "Ever feel like you run out of things to say in IELTS Speaking Part 2? 🤔\n\nYou get 1 minute to plan, then 1-2 minutes to speak! Use that full time – stopping early can actually cost you points. Structure your answer by first describing *what/who/when/where*, then explaining *why it matters to you*. For example: \"Describe a special event, then explain why it was memorable.\"\n\nSave this tip & follow @TheEnglishVault for daily lessons!",
+    "script": "IELTS Speaking Part 2 mein cue card dekh ke confusion hota hai na? Ya aap bhi kabhi jaldi bolna band kar dete ho? Toh suno! Part 2 mein aapko ek cue card milta hai, jiske liye 1 minute milta hai notes prepare karne ke liye. Phir 1 se 2 minutes tak bolna hota hai. Iska structure important hai: pehle describe karo what/who/when/where, aur phir explain karo why it matters to you ya how you felt. Remember, pura 1 se 2 minute use karna. Agar aap jaldi ruk gaye, toh Fluency aur Coherence mein points cut ho sakte hain. Aur haan, 'what's more', 'the reason I say this is', 'looking back' jaise linking words use karna mat bhoolna. Toh ab samajh aaya? Pura time use karna aur sahi structure follow karna hi secret hai! Comment mein batao aapko ye tip pata thi ya nahi! Aur aise hi English tips ke liye The English Vault ko follow karo!",
+    "hashtags": [
+      "ieltsspeaking",
+      "cuecard",
+      "ieltspreparation",
+      "englishspeaking",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "The Cue Card",
+        "headlineRest": "— Mastering IELTS Speaking Part 2",
+        "body": "In IELTS Speaking Part 2, you're given a 'cue card' with a topic to speak on for 1-2 minutes after 1 minute of preparation. The key is to structure your response by first describing the what, who, when, or where, then elaborating on why it matters to you or how you felt. It's crucial to speak for the full 1-2 minutes, as stopping early can cost points on Fluency and Coherence. Remember to use linking words like 'what's more,' 'the reason I say this is,' and 'looking back' to maintain flow.",
+        "hindiSummary": "आईईएलटीएस स्पीकिंग पार्ट 2 में, आपको 1 मिनट की तैयारी के बाद एक क्यू कार्ड पर 1-2 मिनट तक बोलना होता है।",
+        "imageQuery": "student practicing IELTS speaking"
+      }
+    ],
+    "generatedAt": "2026-08-10T04:14:21.167Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-ielts-speaking-part-2-the-cue-card-slide-01.png"
+    ],
+    "renderedAt": "2026-08-10T04:14:24.125Z",
+    "reelVideo": "the-english-vault-curriculum-ielts-speaking-part-2-the-cue-card-reel.mp4",
+    "reelDurationSeconds": 67.152,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "95d878bbcf3bf965",
+  "notifiedAt": "2026-08-10T04:18:07.924Z"
+}
