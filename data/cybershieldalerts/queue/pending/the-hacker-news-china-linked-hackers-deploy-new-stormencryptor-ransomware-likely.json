@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-china-linked-hackers-deploy-new-stormencryptor-ransomware-likely",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "China-Linked Hackers Deploy New StormEncryptor Ransomware, Likely via N-central Flaw",
+    "link": "https://thehackernews.com/2026/08/china-linked-hackers-deploy-new.html",
+    "description": "Microsoft has disclosed that Storm-1175, a financially motivated threat actor linked to China, has deployed a previously undocumented ransomware strain called StormEncryptor. The use of StormEncryptor marks a shift from the adversary's previous use of Medusa ransomware, the Microsoft Threat Intelligence Team said. \"StormEncryptor is written in C++ and appends the file name extension .encrypted",
+    "content": "",
+    "pubDate": "Mon, 10 Aug 2026 22:08:37 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjNv5C82jT_6YlarerdXnoAR_tT3E8xP65ZWuJfpvOKU9baBT5UACUTb88XvDQgQA6RrYuqPK3FstaqwacR9gDjD0qwk3HUYl0wK848phyphenhyphenFuqRrOA1AqdISQaA6tpEqg0n2XJIA22NeNNbhei1bAgcyghnc2qaVfSvh4fd9J1oD4xVi-DQcNSOYWQovyUst/s1600/strom-ransomware.jpg"
+  },
+  "score": 0.9368359104938272,
+  "selectedAt": "2026-08-11T04:00:47.331Z",
+  "generated": {
+    "caption": "Imagine your business data suddenly locked, demanding a ransom. 🚨 China-linked hackers (Storm-1175) are deploying a *new* ransomware, StormEncryptor. This financially motivated group previously used Medusa ransomware and likely exploits vulnerabilities, such as the N-central flaw, to encrypt victim files.\n\nStay informed! Save this post, share with your network, and follow @CyberShieldAlerts for daily threat intelligence.",
+    "script": "Heads up! China-linked hackers just dropped a dangerous new ransomware. The group, known as Storm-1175, is financially motivated and linked to China. They've unveiled StormEncryptor, a brand-new, previously undocumented ransomware strain. This isn't their old Medusa ransomware; StormEncryptor is written in C++ and tacks '.encrypted' onto your files. This shift means new defenses are needed, and reports suggest it's likely deploying via an N-central flaw. Protect yourself. Update your systems and enhance your security protocols immediately.",
+    "hashtags": [
+      "stormencryptor",
+      "storm1175",
+      "chinalinkedhackers",
+      "ransomware",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "StormEncryptor",
+        "headlineRest": "China-Linked Hackers Deploy New Ransomware",
+        "body": "Microsoft has disclosed that Storm-1175, a financially motivated threat actor linked to China, has deployed a previously undocumented ransomware strain called StormEncryptor. This new ransomware marks a shift from the adversary's previous use of Medusa ransomware. StormEncryptor is written in C++ and appends the file name extension .encrypted to compromised files. Organizations should be aware of this evolving threat from the China-linked group.",
+        "hindiSummary": "चीन से जुड़े हैकर्स StormEncryptor नामक एक नया रैंसमवेयर इस्तेमाल कर रहे हैं।",
+        "imageQuery": "Ransomware cyber attack alert"
+      }
+    ],
+    "generatedAt": "2026-08-11T04:01:19.809Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-china-linked-hackers-deploy-new-stormencryptor-ransomware-likely-slide-01.png"
+    ],
+    "renderedAt": "2026-08-11T04:01:49.410Z",
+    "reelVideo": "the-hacker-news-china-linked-hackers-deploy-new-stormencryptor-ransomware-likely-reel.mp4",
+    "reelDurationSeconds": 34.679002,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "3792258ba759ba2b",
+  "notifiedAt": "2026-08-11T04:04:26.713Z"
+}
