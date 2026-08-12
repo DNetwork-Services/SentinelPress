@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-microsoft-patches-398-flaws-including-a-windows-driver-zero-day",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Microsoft Patches 398 Flaws Including a Windows Driver Zero-Day Under Active Attack",
+    "link": "https://thehackernews.com/2026/08/microsoft-patches-398-flaws-including.html",
+    "description": "Microsoft released its monthly security updates on Tuesday, and one of the flaws it closed is already being used in attacks. The bug sits in a core Windows kernel driver that handles network socket operations. An attacker with code already running on a machine can use it to escalate to SYSTEM. That patch goes out first. The flaw is tracked as CVE-2026-68820 (CVSS score: 7.0) and is the only",
+    "content": "",
+    "pubDate": "Wed, 12 Aug 2026 01:40:55 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg4HtkIdWjqoYaSkO4edq9d5ZotqTE-LNMM14UlVoPaVKw2hwBahFYrPkB3jttURH0gcBXxCDtyHhiGMAIrxCX74gYCb_ivX4INmfRzt7HRb-bPTNt1lV-nUQm_pHQQHrhUwx4JWS7DtAzOZ1etx-yjPAVrNJXGBltqXjHPSI5NcfnWQqYurz0LK-dRRMo/s1600/aug-ms-patch.jpg"
+  },
+  "score": 0.9544875848765432,
+  "selectedAt": "2026-08-12T04:22:27.045Z",
+  "generated": {
+    "caption": "Attackers are *already* exploiting a critical Windows flaw!\n\nMicrosoft just released security updates, patching hundreds of vulnerabilities. Among them is a serious bug in a core Windows driver. This flaw allows attackers who've gained initial access to take full control of your system. Make sure your systems are updated ASAP.\n\nSave this post & share to keep others informed. Follow @CyberShieldAlerts for daily security updates!",
+    "script": "Urgent Windows security alert! There's a critical flaw actively being exploited right now. Microsoft just released a patch for a zero-day vulnerability in a core Windows driver. Attackers are using this bug to escalate privileges and gain SYSTEM access on infected machines. This gives them the power to take full control of your PC. Don't wait. Update your Windows system immediately to stay protected!",
+    "hashtags": [
+      "microsoft",
+      "windows",
+      "zeroday",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Windows Zero-Day",
+        "headlineRest": "Under Active Attack, Microsoft Patches 398 Flaws",
+        "body": "Microsoft has issued its latest monthly security updates, addressing a total of 398 vulnerabilities. Notably, one of these patches targets a critical Windows kernel driver flaw that is already being actively exploited in attacks. This zero-day vulnerability allows an attacker with existing code access on a machine to escalate privileges to the highest level, SYSTEM. Users are strongly advised to apply these security updates without delay to secure their systems against this immediate threat.",
+        "hindiSummary": "माइक्रोसॉफ्ट ने सक्रिय रूप से हमला किए जा रहे एक विंडोज जीरो-डे को ठीक किया है, साथ ही 398 अन्य कमजोरियों को भी पैच किया है।",
+        "imageQuery": "Urgent security patch computer"
+      }
+    ],
+    "generatedAt": "2026-08-12T04:22:50.822Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-microsoft-patches-398-flaws-including-a-windows-driver-zero-day-slide-01.png"
+    ],
+    "renderedAt": "2026-08-12T04:23:30.719Z",
+    "reelVideo": "the-hacker-news-microsoft-patches-398-flaws-including-a-windows-driver-zero-day-reel.mp4",
+    "reelDurationSeconds": 22.860045,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "f029ec0dad57c172",
+  "notifiedAt": "2026-08-12T04:27:35.684Z"
+}
