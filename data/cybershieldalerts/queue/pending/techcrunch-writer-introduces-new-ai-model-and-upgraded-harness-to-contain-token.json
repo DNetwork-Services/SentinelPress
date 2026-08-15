@@ -1,0 +1,54 @@
+{
+  "id": "techcrunch-writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "TechCrunch",
+    "category": "Technology"
+  },
+  "article": {
+    "title": "Writer introduces new AI model and upgraded harness to contain token costs",
+    "link": "https://techcrunch.com/2026/08/13/writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-costs/",
+    "description": "Built as a post-training variation on Z.ai's open source model GLM-5.2, Writer says the new system should provide deployment-ready capabilities at a much lower price.",
+    "content": "",
+    "pubDate": "Thu, 13 Aug 2026 21:13:24 +0000",
+    "image": ""
+  },
+  "score": 0.8329591327160494,
+  "selectedAt": "2026-08-15T03:17:26.483Z",
+  "generated": {
+    "caption": "Cutting your AI spending just got easier!\n\nWriter just unveiled a new AI model and system, aiming to slash the cost of using advanced AI. Built on Z.ai's open-source GLM-5.2, this means businesses can get powerful AI tools for much less.\n\nSave this post & share it with your team! Follow @CyberShieldAlerts for daily threat intelligence.",
+    "script": "Your AI strategy is about to get a major shake-up. Writer just unveiled a groundbreaking new AI model and an upgraded system designed to slash your token costs. Built as a post-training variation on Z.ai's open-source GLM-5.2, this innovation promises to make deployment-ready AI capabilities far more affordable. This isn't just about saving money; it's about a significant shift in AI accessibility and how companies can integrate advanced intelligence. Stay informed on these critical developments impacting the future of AI.",
+    "hashtags": [
+      "writer",
+      "glm52",
+      "aimodel",
+      "artificialintelligence",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Writer",
+        "headlineRest": "Unveils New AI Model to Slash Token Costs",
+        "body": "Writer has unveiled a new artificial intelligence model and an upgraded 'harness' system. This innovative offering is built as a post-training variation on Z.ai's open-source GLM-5.2 model. The primary goal is to provide deployment-ready AI capabilities at a significantly lower price point. This aims to help businesses contain token costs and make advanced AI more accessible and affordable.",
+        "hindiSummary": "राइटर ने टोकन लागत कम करने के लिए नया एआई मॉडल पेश किया है।",
+        "imageQuery": "AI cost reduction technology"
+      }
+    ],
+    "generatedAt": "2026-08-15T03:17:57.640Z"
+  },
+  "render": {
+    "slideImages": [
+      "techcrunch-writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-slide-01.png"
+    ],
+    "renderedAt": "2026-08-15T03:18:34.692Z",
+    "reelVideo": "techcrunch-writer-introduces-new-ai-model-and-upgraded-harness-to-contain-token-reel.mp4",
+    "reelDurationSeconds": 29.953741,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "3fd0943eeb344116",
+  "notifiedAt": "2026-08-15T03:21:30.610Z"
+}
