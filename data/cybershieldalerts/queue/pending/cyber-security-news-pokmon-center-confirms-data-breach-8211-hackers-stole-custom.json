@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-pokmon-center-confirms-data-breach-8211-hackers-stole-custom",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Pokémon Center Confirms Data Breach &#8211; Hackers Stole Customers&#8217; Personal Data",
+    "link": "https://cybersecuritynews.com/pokemon-center-confirms-data-breach/",
+    "description": "Pokémon Center has begun notifying customers in the United Kingdom and Germany that their personal information was exposed in a third-party data breach, and that the incident has forced the company to cancel a batch of pending orders. The retailer confirmed that the exposure did not originate on its own website but instead traced back [&#8230;] The post Pokémon Center Confirms Data Breach &#8211; Hackers Stole Customers&#8217; Personal Data appeared first on Cyber Security News.",
+    "content": "Pokémon Center has begun notifying customers in the United Kingdom and Germany that their personal information was exposed in a third-party data breach, and that the incident has forced the company to cancel a batch of pending orders. The retailer confirmed that the exposure did not originate on its own website but instead traced back to CEVA Logistics, the shipping vendor Pokémon Center relies on to fulfill Pokémon Center orders across the UK and Germany. In breach notification emails sent to affected shoppers, Pokémon Center apologized for canceling recent orders &#8220;due to an unforeseen fulfilment issue,&#8221; before explaining the real cause: a cyberattack against its logistics partner. According to the notice, CEVA Logistics informed Pokémon Center that it had been the victim of a cyberattack that began on 30 July 2026. The intrusion compromised systems CEVA uses to process delivery information for retail clients, and Pokémon Center customer records were caught in the fallout. Pokémon Center Confirms Data Breach Pokémon Center says the information unauthorized parties may have accessed includes customers&#8217; full names, mailing addresses, phone numbers, email addresses, and details about the contents of their PokemonCenter.com orders. The company was careful to note what was not affected, stating that CEVA does not have access to customers&#8217; payment card details, and that other account information was not impacted by the incident. Still, the combination of names, home addresses, and order contents gives attackers enough material for convincing phishing or social engineering attempts targeting Pokémon collectors. Pokémon Center&#8217;s UK website is currently displaying a notice warning shoppers that some orders are experiencing delays and may take longer than usual to process, dispatch, and deliver. Despite that messaging, a number of customers report their orders were outright canceled rather than simply delayed, and it remains unclear why the breach necessitated cancellations instead of processing slowdowns. The Pokémon Center incident is one piece of a much larger breach at CEVA Logistics, one of the world&#8217;s largest shipping and contract logistics firms. CEVA confirmed to TechCrunch that the intrusion most likely began on 29 July 2026 and disrupted at least eight warehouses across Europe. The company activated its security protocols upon discovery and told affected customers on 1 August that a cyber intrusion was impacting part of its European contract logistics operations, while stressing that the operational impact stayed contained to those eight sites and that no other CEVA systems globally were affected. The ripple effects have reached well beyond Pokémon merchandise. Reporting indicates the breach also touched customer data tied to banks, other retailers, and gaming companies, including Steam parent company Valve, which said passwords and payment credentials were not exposed since CEVA never had access to them. Dutch data protection authorities and other law enforcement agencies are now investigating the incident, and CEVA has not publicly disclosed the attack vector or attributed the intrusion to a specific threat actor. For Pokémon Center shoppers in the UK and Germany, the exposed data is enough to fuel targeted phishing emails or fraudulent delivery scam texts referencing real order numbers. Security-conscious customers should treat any unsolicited message about a Pokémon Center order with suspicion, verify shipment or refund communications only through official Pokémon Center channels, and stay alert for spoofed emails impersonating couriers. The incident also underscores a recurring theme in 2026&#8217;s threat landscape: attackers increasingly go after logistics and fulfillment vendors as a single point of entry into dozens of downstream retail brands, turning one warehouse compromise into a multi-company data exposure event. Strengthen Your SOC by Accelerating Threat Detection & Rapid Investigations. -> Integrate ANY.RUN With Your SOC Now. The post Pokémon Center Confirms Data Breach &#8211; Hackers Stole Customers&#8217; Personal Data appeared first on Cyber Security News.",
+    "pubDate": "Tue, 18 Aug 2026 02:38:19 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/08/Pokemon-Center-Confirms-Data-Breach.webp"
+  },
+  "score": 0.9958218472222222,
+  "selectedAt": "2026-08-18T03:23:26.444Z",
+  "generated": {
+    "caption": "Did your Pokémon order get canceled or delayed in the UK/Germany? 🚨 Pokémon Center customers there had personal data exposed in a breach involving their shipping partner, CEVA Logistics. Names, addresses, emails, and order contents were compromised. Payment info was NOT affected. Stay vigilant against phishing scams!\n\nSave this post and follow @CyberShieldAlerts for daily security updates.",
+    "script": "Attention Pokémon fans in the UK and Germany: your personal data has been exposed! Pokémon Center confirms a data breach impacting customers, but the cyberattack actually hit their shipping partner, CEVA Logistics, back in July 2026. This incident compromised systems CEVA uses for delivery information, affecting customer records. Hackers accessed full names, mailing addresses, phone numbers, email addresses, and details about your orders. While payment card data wasn't touched, this stolen information is perfect for targeted phishing and social engineering attacks. Treat any unsolicited messages about Pokémon Center orders with suspicion. Verify all shipment or refund communications ONLY through official Pokémon Center channels and stay alert for spoofed emails impersonating couriers.",
+    "hashtags": [
+      "pokemoncenter",
+      "cevalogistics",
+      "databreach",
+      "cyberattack",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Pokémon Center",
+        "headlineRest": "confirms data breach via logistics partner",
+        "body": "Pokémon Center customers in the UK and Germany are being notified of a data breach originating from its shipping partner, CEVA Logistics. The incident exposed personal information including names, addresses, phone numbers, email addresses, and order details, leading to canceled orders. While payment information remains secure, the compromised data could fuel targeted phishing and social engineering attempts. Customers should exercise caution with unsolicited communications and verify any order-related messages directly through official Pokémon Center channels. This incident highlights a growing trend of attackers targeting logistics firms for broad impact.",
+        "hindiSummary": "पोकेमॉन सेंटर ने पुष्टि की है कि उसके शिपिंग पार्टनर के जरिए ग्राहकों का निजी डेटा लीक हुआ है।",
+        "imageQuery": "customer data breach alert"
+      }
+    ],
+    "generatedAt": "2026-08-18T03:23:59.116Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-pokmon-center-confirms-data-breach-8211-hackers-stole-custom-slide-01.png"
+    ],
+    "renderedAt": "2026-08-18T03:24:31.947Z",
+    "reelVideo": "cyber-security-news-pokmon-center-confirms-data-breach-8211-hackers-stole-custom-reel.mp4",
+    "reelDurationSeconds": 46.881088,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "7e0612aae1296605",
+  "notifiedAt": "2026-08-18T03:28:17.300Z"
+}
