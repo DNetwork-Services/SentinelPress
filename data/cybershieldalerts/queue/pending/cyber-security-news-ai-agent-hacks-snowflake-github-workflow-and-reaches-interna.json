@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-ai-agent-hacks-snowflake-github-workflow-and-reaches-interna",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "AI Agent Hacks Snowflake GitHub Workflow and Reaches Internal Jira",
+    "link": "https://cybersecuritynews.com/ai-agent-hacks-snowflake-github-workflow/",
+    "description": "An autonomous AI security agent built by Wiz Research has demonstrated how quickly a single overlooked line of shell code can cascade into a full credential leak. The tool, known as Wiz Red Agent, independently discovered, exploited, and validated a critical GitHub Actions injection flaw in Snowflake&#8217;s public repository, snowflake-connector-net, ultimately gaining read access to [&#8230;] The post AI Agent Hacks Snowflake GitHub Workflow and Reaches Internal Jira appeared first on Cyber Security News.",
+    "content": "An autonomous AI security agent built by Wiz Research has demonstrated how quickly a single overlooked line of shell code can cascade into a full credential leak. The tool, known as Wiz Red Agent, independently discovered, exploited, and validated a critical GitHub Actions injection flaw in Snowflake&#8217;s public repository, snowflake-connector-net, ultimately gaining read access to Snowflake&#8217;s internal Jira instance without any human steering the attack. The vulnerability lived inside a workflow file called jira_issue.yml, which was designed to automatically create Jira tickets whenever someone opened a GitHub issue. The flaw traces back to pull request #1218, merged on June 18, 2026, which replaced a previously safe pattern using environment variables and jq parsing with direct interpolation of the untrusted issue title into a shell script. AI Agent Hacks Snowflake GitHub Workflow Because GitHub&#8217;s template expansion happens before shell escaping runs, a single quote in the issue title was enough to break out of the script and inject arbitrary commands. Making matters worse, a conditional check that was supposed to gate access always evaluated to true on issue-opened events, meaning any GitHub user could trigger the exploit. Notably, GitHub Advanced Security scanned the exact revision containing the vulnerable code and failed to flag it, even though a Copilot-assisted change touched a related file, jira_close.yml, in the same pull request. Wiz later clarified that Copilot&#8217;s documented contribution was limited to that separate file and that it reviewed the merged PR without catching the critical flaw. Red Agent found the weakness just five days after it went live, on June 23, 2026. It crafted a malicious issue title that used a base64-encoded, out-of-band callback to exfiltrate Jira credentials from the GitHub Actions runner. When its first payload attempt using a comment character broke the shell syntax, the agent autonomously diagnosed the bash error and rewrote the payload to properly close the script, succeeding on its second attempt. Within seconds, Wiz&#8217;s listener received a callback from an Azure-hosted runner containing base64-encoded Jira API tokens, tied to a service account, qa@snowflake.net. That token authenticated successfully with Snowflake&#8217;s Atlassian instance, granting visibility into engineering, security compliance, and bug-bounty tracking projects a serious blast radius for a single misconfigured CI workflow. Snowflake responded the same day the flaw was reported through HackerOne, patching the workflow, rotating the exposed Jira token, and confirming through audit logs that Wiz&#8217;s testing traffic was the only activity during the exposure window. All data accessed during proof-of-concept testing was deleted. The incident underscores a growing concern in software security: AI-assisted coding can just as easily reintroduce insecure patterns as it can catch them, and existing static analysis tools may not keep pace. It also signals a shift in the threat landscape itself, where autonomous AI agents can compress discovery-to-exploitation timelines from weeks to hours. For security teams, the takeaway is clear: CI/CD pipelines need explicit enforcement of safe coding patterns, short-lived credentials, and scrutiny of AI-generated code that matches, not lags behind, the speed at which both attackers and defenders are now automating their work. Strengthen Your SOC by Accelerating Threat Detection & Rapid Investigations. -> Integrate ANY.RUN With Your SOC Now. The post AI Agent Hacks Snowflake GitHub Workflow and Reaches Internal Jira appeared first on Cyber Security News.",
+    "pubDate": "Thu, 20 Aug 2026 02:32:50 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/08/AI-Agent-Hacks-Snowflake-GitHub-Workflow.webp"
+  },
+  "score": 0.9951684567901234,
+  "selectedAt": "2026-08-20T03:25:00.840Z",
+  "generated": {
+    "caption": "AI agents are making cyberattacks faster than ever before! A research AI agent autonomously exploited a flaw in Snowflake's GitHub workflow, gaining read access to their internal Jira system. This exposed sensitive project data without any human steering the attack. It highlights the evolving challenge of AI-assisted coding and rapid automated threats.\n\nSave for later, share with your network, and follow @CyberShieldAlerts for daily updates!",
+    "script": "An autonomous AI agent just hacked Snowflake's GitHub workflow and reached their internal Jira! Wiz Research's Red Agent exploited a single line of shell code within a public GitHub Actions workflow. This critical flaw in jira_issue.yml allowed direct injection of untrusted issue titles. The agent quickly gained read access to Snowflake's internal Jira instance, exposing crucial engineering and security data by exfiltrating API tokens. Alarmingly, existing static analysis tools failed to flag this vulnerability. This incident proves how autonomous AI agents can compress discovery-to-exploitation timelines from weeks to mere hours, turning minor misconfigurations into serious credential leaks with unprecedented speed. Secure your CI/CD pipelines now: enforce safe coding patterns, use short-lived credentials, and rigorously scrutinize all AI-generated code.",
+    "hashtags": [
+      "snowflake",
+      "githubactions",
+      "aiagent",
+      "vulnerability",
+      "cybersecurity"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "AI Agent",
+        "headlineRest": "Hacks Snowflake GitHub Workflow, Accesses Internal Jira",
+        "body": "An autonomous AI security agent, Wiz Red Agent, exploited a critical GitHub Actions injection flaw in Snowflake's public repository. This vulnerability allowed the AI to gain read access to Snowflake's internal Jira instance without human intervention. The flaw, which went unnoticed by GitHub Advanced Security, involved direct interpolation of untrusted input into a shell script within a workflow file. This incident underscores the speed at which AI agents can discover and exploit vulnerabilities, compressing attack timelines significantly. Organizations must enforce safe coding patterns in CI/CD, use short-lived credentials, and rigorously scrutinize AI-generated code.",
+        "hindiSummary": "एक AI एजेंट ने स्नोफ्लेक के गिटहब वर्कफ़्लो को हैक कर आंतरिक जीरा तक पहुँच प्राप्त कर ली है।",
+        "imageQuery": "AI cyber attack alarm"
+      }
+    ],
+    "generatedAt": "2026-08-20T03:26:20.710Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-ai-agent-hacks-snowflake-github-workflow-and-reaches-interna-slide-01.png"
+    ],
+    "renderedAt": "2026-08-20T03:26:51.319Z",
+    "reelVideo": "cyber-security-news-ai-agent-hacks-snowflake-github-workflow-and-reaches-interna-reel.mp4",
+    "reelDurationSeconds": 53.707755,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "e1d4646b67a023fa",
+  "notifiedAt": "2026-08-20T03:30:00.871Z"
+}

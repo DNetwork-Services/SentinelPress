@@ -11,44 +11,44 @@
     "link": "topic://englishvault/conversation-phone-calls",
     "description": "Answering: 'Hello, this is [name] speaking.' Asking to hold: 'Could you hold on a second?' Ending: 'Thanks for calling, talk soon!' Common mistake: 'I am [name]' on the phone sounds unnatural in English — 'This is [name]' is the standard phone convention.",
     "content": "Answering: 'Hello, this is [name] speaking.' Asking to hold: 'Could you hold on a second?' Ending: 'Thanks for calling, talk soon!' Common mistake: 'I am [name]' on the phone sounds unnatural in English — 'This is [name]' is the standard phone convention.",
-    "pubDate": "2026-07-16T05:24:53.937Z",
+    "pubDate": "2026-08-20T03:25:00.842Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-07-16T05:24:53.937Z",
+  "selectedAt": "2026-08-20T03:25:00.842Z",
   "generated": {
-    "caption": "Ever said \"I am John\" on the phone and felt it sounded a bit off? 🤔\n\nThe standard way to answer is \"Hello, this is John speaking.\" Need to pause the call? Just say \"Could you hold on a second?\" And to end politely, try \"Thanks for calling, talk soon!\"\n\nMaster your phone calls! Save this post and follow @EnglishVault for daily lessons!",
-    "script": "Aap bhi phone pe 'I am [name]' bolte ho? Ye common mistake hai!\n\nSo, phone pe jab koi poochta hai 'Who is this?', 'I am [name]' sounds unnatural. Iska standard correct usage hai 'Hello, this is [name] speaking.' For example, 'Hello, this is Raj speaking.' Aur agar kisi ko hold pe rakhna hai, toh simply bolna 'Could you hold on a second?' Call end karne ke liye, say 'Thanks for calling, talk soon!'\n\nToh next time phone pe, 'I am [name]' nahi, always use 'This is [name] speaking.' Samajh aaya ab?\n\nYe tip pata thi ya nahi? Comment mein batao! Aur aise hi English tips ke liye The English Vault ko follow karo!",
+    "caption": "Ever said \"I am [name]\" on a phone call and felt it sounded a bit off? 🤔\n\nOn the phone, \"This is [name] speaking\" is the standard and most natural way to introduce yourself! For instance: \"Hello, this is Sarah speaking.\"\n\nTo ask someone to wait, say \"Could you hold on a second?\". And to end a call politely, \"Thanks for calling, talk soon!\" works perfectly.\n\nSave this for your next call! Follow @TheEnglishVault for daily English tips.",
+    "script": "Phone pe bolte time 'I am [name]' bolna thoda weird lagta hai na? Aapne bhi kabhi ye mistake kiya hoga. Toh suno!\n\nJab bhi phone pe baat karte hain, bohot log bolte hain 'Hello, I am Rohan.' But English mein, ye thoda unnatural sound karta hai. The correct way to answer a call is 'Hello, this is [name] speaking.' Jaise, 'Hello, this is Riya speaking.' This is the standard phone convention. Agar aapko kisi ko hold pe rakhna hai, you can say 'Could you hold on a second?' Aur jab call finish karna ho, just say 'Thanks for calling, talk soon!'\n\nAb samajh aaya? Next time phone uthao toh remember: 'This is [name] speaking' hi bolna hai!\n\nSave kar lo ye tips! Aur comment mein batao aapko ye pehle se pata tha ya nahi.",
     "hashtags": [
-      "phonephrases",
-      "telephoningenglish",
-      "englishconversation",
-      "dailyenglish",
-      "spokenenglish"
+      "phonecallphrases",
+      "everydayenglish",
+      "learnenglish",
+      "spokenenglish",
+      "englishseekhen"
     ],
     "slides": [
       {
         "type": "newscard",
         "badgeInitials": "EV",
-        "headlineHighlight": "This is [name]",
-        "headlineRest": "Is Actually the Standard Phone Greeting",
-        "body": "When answering a phone call, it's common to introduce yourself by saying 'This is [name] speaking.' This is a polite and professional way to let the caller know who they're talking to. For example, 'Hello, this is John speaking.' A common mistake is to say 'I am [name],' which can sound unnatural in English. Instead, use the phrase 'This is [name]' to sound more natural and fluent.",
-        "hindiSummary": "फ़ोन पर अपना परिचय देने के लिए 'यह [नाम] बोल रहा हूँ' जैसे वाक्य का उपयोग किया जाता है",
-        "imageQuery": "person answering phone call"
+        "headlineHighlight": "This is [name] speaking.",
+        "headlineRest": "— Master Phone Introductions Naturally!",
+        "body": "When answering a phone call in English, the standard and most natural way to introduce yourself is by saying, 'Hello, this is [name] speaking.' It's a common mistake to say, 'I am [name],' but this actually sounds unnatural in English phone conversations. For example, if someone calls for you, you'd answer: 'Hello, this is Sarah speaking.' Remember other useful phrases like 'Could you hold on a second?' if you need a moment, and 'Thanks for calling, talk soon!' to end the conversation politely. Mastering these will make your phone calls sound much more natural.",
+        "hindiSummary": "फोन पर अपना परिचय देने का प्राकृतिक तरीका 'Hello, this is [नाम] speaking' है।",
+        "imageQuery": "person smiling talking on phone"
       }
     ],
-    "generatedAt": "2026-07-16T05:25:49.224Z"
+    "generatedAt": "2026-08-20T03:26:49.612Z"
   },
   "render": {
     "slideImages": [
       "the-english-vault-curriculum-everyday-phone-call-phrases-slide-01.png"
     ],
-    "renderedAt": "2026-07-16T05:25:54.269Z",
+    "renderedAt": "2026-08-20T03:26:52.817Z",
     "reelVideo": "the-english-vault-curriculum-everyday-phone-call-phrases-reel.mp4",
-    "reelDurationSeconds": 55.368,
+    "reelDurationSeconds": 61.92,
     "hasVoiceover": true,
     "musicTrack": null
   },
   "approvalHash": "cc01ba56154ba870",
-  "notifiedAt": "2026-07-16T05:28:17.100Z"
+  "notifiedAt": "2026-08-20T03:30:03.903Z"
 }
