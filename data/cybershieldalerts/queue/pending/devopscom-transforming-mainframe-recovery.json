@@ -1,0 +1,54 @@
+{
+  "id": "devopscom-transforming-mainframe-recovery",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "DevOps.com",
+    "category": "DevOps"
+  },
+  "article": {
+    "title": "Transforming Mainframe Recovery",
+    "link": "https://devops.com/transforming-mainframe-recovery/",
+    "description": "Moving beyond disaster recovery, organizations can ensure business-critical mainframe environments. Over decades, the mainframe has earned a reputation for being synonymous with reliability. Many enterprise organizations continue to rely on the mainframe precisely because of the redundancy, automatic recovery, and availability that leads to “nine nines” reliability or 31.56 milliseconds of unplanned annual downtime per [&#8230;]",
+    "content": "Moving beyond disaster recovery, organizations can ensure business-critical mainframe environments. Over decades, the mainframe has earned a reputation for being synonymous with reliability. Many enterprise organizations continue to rely on the mainframe precisely because of the redundancy, automatic recovery, and availability that leads to “nine nines” reliability or 31.56 milliseconds of unplanned annual downtime per server. However, this reliability can lead to blind spots in planning and resourcing for recovery, with IT leaders perhaps counting on their mainframe being shielded from downtime. Platform availability is not the same thing as recoverability, and organizations need to quickly and confidently recover mainframe data when the surrounding environment or backup estate is compromised. This is especially true as organizations turn to the mainframe for more business-critical workloads. While some incorrectly view the mainframe as an outdated technology supporting a few holdover legacy apps, the truth is very different. According to BMC research, 72% of IT leaders say general-purpose capacity is growing for their organization’s mainframe, with 35% attributing that growth to new (or both new and legacy) applications. Nearly three-quarters say that GenAI is extremely or very important to their mainframe strategy. The challenge: Even as organizations use their mainframe environments for modern workloads, these environments may be saddled with legacy disaster recovery tools and processes. These practices, largely designed for hardware failures or site outages, have not been updated to address today’s cyberattacks that can simultaneously compromise production systems, administrative credentials, and recovery copies. In these scenarios, leaders need to ensure not only that a backup exists, but also that it is a clean, uncompromised copy that can be quickly restored to a trusted environment. Many organizations have taken steps to modernize their mainframe environments in recent years to support modern workloads. As these environments become more critical to the business, leaders must make sure their disaster recovery tools and practices keep pace. Mainframe Resilience Meets the Cloud Many organizations are understandably cautious about tinkering with mainframe environments that have, in many cases, served them well for decades. While mainframe engineers have long been among the most innovative technologists in the enterprise (for example, embracing advances like virtual tape libraries decades ago), many have been more wary of adopting cloud-enabled object storage, which has become foundational across the broader IT landscape. This isn’t because mainframe engineers are unwilling or unable to innovate to achieve the organization’s goals. After all, the mainframe still offers superior operational efficiency. In today’s environment, though, data management and storage decisions also carry cybersecurity, regulatory, and business continuity implications. Typically, when mainframe engineers see that transformation can be done safely and incrementally, they understand that this process will reduce risk, not increase it. BMC AMI Cloud simplifies Z platform secondary data management, moving mainframe backup and recovery workflows away from traditional tape infrastructure and toward cloud object storage. The mainframe remains the transactional system, with secondary data stored and managed in the cloud. Integrated with AWS S3 and AWS Mainframe Modernization services, BMC AMI Cloud not only simplifies mainframe backup and accelerates recovery; it also provides cyber protection through immutable, air-gapped copies of mainframe data that enable clean-room and bare-metal restores directly from cloud object storage. Mainframe data can also be copied to object storage while being added and converted off-platform into open formats, allowing the data to be used for AI and analytics. Real-World Results We worked with Nedbank, one of the largest banks in South Africa, to bring cloud resources to the organization’s most critical capabilities. Leaders knew that leveraging the cloud would increase agility, but they were worried about a long, complicated migration process. “When you ask any infrastructure person what they hate most about the job, it’s migrating from one solution to another,” said Ashwin Naidu, IT Manager at Nedbank. “It normally takes 12 to 18 months to migrate anything. Fortunately, with our approach, it took us just eight months.” After deploying BMC AMI Cloud to facilitate cloud backups, Nedbank experienced a 98% reduction in backup times. Before the move, a single backup would run for 48 hours. Today, that same backup runs in just 36 minutes. Join Us to Learn More At 9 a.m. Eastern on September 2, experts from BMC and AWS will participate in a webinar hosted by Techstrong, where we’ll discuss how organizations can navigate an increasingly complex risk environment without disrupting their mainframe environments. Together, they’ll explore: How organizations can leverage a proven, low-risk path to cybersecurity in the cloud, cutting tape-related cost and complexity without rewriting their mainframe environments. How immutable backups can keep organizations safe even from ransomware attackers who hold admin credentials. How AWS’s global infrastructure delivers geographic redundancy, and how organizations can prove recoverability under regulations like DORA. How leaders can safely integrate mainframe data into AI/ML models to improve business insights. I hope you’ll join us. To register, click here.",
+    "pubDate": "Fri, 21 Aug 2026 19:59:32 +0000",
+    "image": ""
+  },
+  "score": 0.9590706651234568,
+  "selectedAt": "2026-08-22T03:21:34.210Z",
+  "generated": {
+    "caption": "Even the most reliable systems can be vulnerable! 🚨 Mainframes, powering critical business operations & even #GenAI, are facing new cyber threats that can compromise even their backups. Old recovery tools designed for hardware failures aren't enough. Modern solutions now move mainframe backups to the cloud, offering unalterable, isolated copies for quick, secure recovery. Nedbank saw backup times drop by 98%!\n\nSave & share! Follow @CyberShieldAlerts for daily threat intel.",
+    "script": "Your mainframe's legendary reliability has a critical blind spot. Mainframes are more critical than ever, powering 72% of organizations and new GenAI initiatives. But many are still stuck with legacy disaster recovery tools, designed for hardware failures, not today's sophisticated cyberattacks. Modern attacks can compromise your production systems, admin credentials, and your recovery copies simultaneously. You need clean, immutable, air-gapped backups to ensure real recoverability. Organizations are already reducing backup times by 98% with cloud-enabled mainframe recovery solutions. Don't let outdated tools leave your most vital data vulnerable. Modernize your mainframe recovery strategy now.",
+    "hashtags": [
+      "mainframe",
+      "bmcamicloud",
+      "immutablebackups",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "BMC AMI Cloud",
+        "headlineRest": "Modernizes Mainframe Recovery for Cyber Resilience",
+        "body": "Mainframes are vital for enterprises, but their traditional disaster recovery methods often fall short against sophisticated cyberattacks that can compromise both production systems and backups. Relying solely on high availability can create blind spots, as recoverability from a clean, uncompromised state is paramount. Solutions like BMC AMI Cloud integrate mainframe backup with cloud object storage, moving away from tape infrastructure. This approach not only accelerates recovery but also provides cyber protection through immutable, air-gapped data copies, as demonstrated by Nedbank's 98% reduction in backup times.",
+        "hindiSummary": "आधुनिक साइबर खतरों के खिलाफ मेनफ्रेम रिकवरी को क्लाउड-आधारित समाधानों से मजबूत करना आवश्यक है।",
+        "imageQuery": "Secure cloud mainframe resilience"
+      }
+    ],
+    "generatedAt": "2026-08-22T03:22:01.340Z"
+  },
+  "render": {
+    "slideImages": [
+      "devopscom-transforming-mainframe-recovery-slide-01.png"
+    ],
+    "renderedAt": "2026-08-22T03:23:09.571Z",
+    "reelVideo": "devopscom-transforming-mainframe-recovery-reel.mp4",
+    "reelDurationSeconds": 43.351655,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "a9901ec245968464",
+  "notifiedAt": "2026-08-22T03:26:16.003Z"
+}
