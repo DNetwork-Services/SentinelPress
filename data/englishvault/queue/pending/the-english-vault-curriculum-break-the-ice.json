@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-break-the-ice",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Idioms"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-08-21T03:30:05.287Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever felt a bit awkward meeting new people? 👋\n\nThat's when you need to **break the ice**! This idiom means to say or do something to relieve tension and make everyone feel more comfortable, especially at the start.\n\nFor example: \"She told a joke to break the ice at the start of the meeting.\"\n*Remember: always use 'the ice', not just 'ice'!*\n\nSave this tip for later! Follow @TheEnglishVault for daily lessons.",
+    "script": "Ye 'break ice' aur 'break THE ice' mein confusion hota hai na? Basically, 'break the ice' ka matlab hai ki jab aap naye logon se milte ho, aur wahan thodi awkwardness ya tension ho, to usko door karne ke liye kuch bolna ya karna. 'The' lagana bahut zaroori hai yahan. Jaise, 'She told a joke to break the ice at the start of the meeting.' Toh next time jab bhi awkward silence ya tension todni ho, it's always 'break THE ice', not just 'break ice'. Got it? Kaisi lagi ye tip? Comment mein batao aur follow karo The English Vault ko aise hi tips ke liye!",
+    "hashtags": [
+      "breaktheice",
+      "englishidioms",
+      "learnenglish",
+      "englishvocabulary",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Break the ice",
+        "headlineRest": "— What it Really Means",
+        "body": "To 'break the ice' means to say or do something that relieves tension or awkwardness, especially when meeting people for the first time. It's about making the initial social interaction more comfortable. For example, 'She told a joke to break the ice at the start of the meeting.' Remember, it's always 'break *the* ice', not just 'break ice' without the article, to correctly use this common idiom.",
+        "hindiSummary": "इसका मतलब है किसी नई मुलाकात या स्थिति में शुरुआती झिझक या असहजता को दूर करना।",
+        "imageQuery": "People meeting first time conversation"
+      }
+    ],
+    "generatedAt": "2026-08-23T03:31:21.054Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-break-the-ice-slide-01.png"
+    ],
+    "renderedAt": "2026-08-23T03:33:23.335Z",
+    "reelVideo": "the-english-vault-curriculum-break-the-ice-reel.mp4",
+    "reelDurationSeconds": 43.68,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "f51235bfcffd7e05",
+  "notifiedAt": "2026-08-23T03:37:21.405Z"
 }

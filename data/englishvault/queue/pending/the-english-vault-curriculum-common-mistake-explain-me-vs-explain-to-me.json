@@ -11,44 +11,44 @@
     "link": "topic://englishvault/mistakes-explain-me",
     "description": "Wrong: 'Can you explain me this?' Right: 'Can you explain this to me?' Teaching point: 'explain' takes the thing being explained as its direct object, and the person needs 'to' before them — unlike 'tell me' which doesn't need 'to'.",
     "content": "Wrong: 'Can you explain me this?' Right: 'Can you explain this to me?' Teaching point: 'explain' takes the thing being explained as its direct object, and the person needs 'to' before them — unlike 'tell me' which doesn't need 'to'.",
-    "pubDate": "2026-07-12T05:42:04.754Z",
+    "pubDate": "2026-08-23T03:29:22.778Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-07-12T05:42:04.755Z",
+  "selectedAt": "2026-08-23T03:29:22.778Z",
   "generated": {
-    "caption": "Ever said \"explain me\" and gotten a strange look? 'Explain' needs 'to' before the person, so it's \"explain to me\". Try: \"Can you explain this to me?\" Save & share, and follow us for daily English tips! #EnglishVault",
-    "script": "Aapne bhi kabhi ye mistake kiya hoga, explain me ya explain to me, dono mein confusion hota hai na? Basically iska matlab hai ki explain ke baad direct object aata hai, jaise ki 'Can you explain this to me?' mein 'this' ko explain kiya ja raha hai, aur 'to me' iska matlab hai ki uss explanation ko kiske liye diya ja raha hai, jaise ki 'Can you explain this to me?' mein 'this' ko explain karke mujhe bataya ja raha hai. Ab samajh aaya ki explain ke baad to ki zarurat hai? Comment mein batao aapko ye pata tha ya nahi!",
+    "caption": "Have you ever said 'explain me' and gotten a strange look? 🤔 It's a common English mix-up!\n\nWith 'explain', you always talk about the *thing* directly, then use 'to' for the *person*. It's different from 'tell', where you just 'tell me' something.\n\nSo, 'Can you explain this to me?' is the correct way to ask. ✨\n\nSave for later & follow @theenglishvault for daily English tips! #EnglishVault #LearnEnglish",
+    "script": "\"Can you explain me this?\" Ye sunke kuch ajeeb laga na? Ya phir aapne bhi kabhi ye mistake kiya hoga! Basically, 'explain' ke baad jo cheez explain karni hai, wo direct object hoti hai. Aur jisko explain karna hai, usse pehle 'to' lagta hai. Simple words mein, you *explain something* to *someone*. Jaise, 'tell me' mein 'to' nahi lagta, but 'explain' ke saath person se pehle 'to' aata hai. The correct way to say it is: \"Can you explain this to me?\" Toh ab yaad rakhna, you explain *something* to *someone*. Kabhi mat bolna 'explain me', hamesha bolna 'explain to me'! Ab samajh aaya? Comment mein batao aapko ye rule pata tha ya nahi! Save kar lo aur follow karo The English Vault ko aise hi useful tips ke liye!",
     "hashtags": [
-      "explainto",
-      "englishmistakes",
+      "explainme",
+      "commonmistake",
       "englishgrammar",
-      "learnenglish",
-      "englishseekhen"
+      "englishtips",
+      "spokenenglish"
     ],
     "slides": [
       {
         "type": "newscard",
         "badgeInitials": "EV",
-        "headlineHighlight": "Explain to Me",
-        "headlineRest": "Is Actually Correct — Here's Why",
-        "body": "Many English learners make the mistake of saying 'explain me' instead of 'explain to me.' The correct phrase is 'explain to me' because the verb 'explain' takes the thing being explained as its direct object, and the person being explained to needs 'to' before them. For example, you can say 'Can you explain this to me?' to ask someone to clarify something. Notice the difference between 'explain to me' and 'tell me,' where 'tell' doesn't require 'to' before the person being addressed.",
-        "hindiSummary": "किसी को कुछ समझाने के लिए 'explain to me' का उपयोग किया जाता है",
-        "imageQuery": "confused person asking for clarification"
+        "headlineHighlight": "Explain Me",
+        "headlineRest": "Is Wrong — Here's Why",
+        "body": "Many English learners commonly say 'explain me,' but this is a frequent mistake. The correct phrasing requires the preposition 'to' before the person receiving the explanation, making it 'explain to me.' This is because 'explain' directly takes the concept or thing being explained as its object, not the person. For example, instead of asking 'Can you explain me this?', you should say 'Can you explain this to me?' Remember, this structure is different from verbs like 'tell,' where you can say 'Can you tell me a story?' without 'to'.",
+        "hindiSummary": "'Explain me' कहना गलत है; सही उपयोग 'explain to me' है।",
+        "imageQuery": "person confused asking question"
       }
     ],
-    "generatedAt": "2026-07-12T05:43:19.900Z"
+    "generatedAt": "2026-08-23T03:33:19.178Z"
   },
   "render": {
     "slideImages": [
       "the-english-vault-curriculum-common-mistake-explain-me-vs-explain-to-me-slide-01.png"
     ],
-    "renderedAt": "2026-07-12T05:43:22.475Z",
+    "renderedAt": "2026-08-23T03:33:24.434Z",
     "reelVideo": "the-english-vault-curriculum-common-mistake-explain-me-vs-explain-to-me-reel.mp4",
-    "reelDurationSeconds": 37.584,
+    "reelDurationSeconds": 58.656,
     "hasVoiceover": true,
     "musicTrack": null
   },
   "approvalHash": "c25d850069d4becc",
-  "notifiedAt": "2026-07-12T05:44:44.791Z"
+  "notifiedAt": "2026-08-23T03:37:24.642Z"
 }
