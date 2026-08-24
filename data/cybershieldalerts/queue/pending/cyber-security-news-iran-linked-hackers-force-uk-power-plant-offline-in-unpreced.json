@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-iran-linked-hackers-force-uk-power-plant-offline-in-unpreced",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Iran-Linked Hackers Force UK Power Plant Offline in Unprecedented Four-Day Cyberattack",
+    "link": "https://cybersecuritynews.com/hackers-force-uk-power-plant-offline/",
+    "description": "A cyberattack attributed to hackers linked to Iran forced a British power plant offline for four consecutive days last month, marking what officials describe as the first successful attack of its kind against UK energy infrastructure. The incident, first reported by The Telegraph, has raised fresh alarm over the vulnerability of critical infrastructure amid heightened [&#8230;] The post Iran-Linked Hackers Force UK Power Plant Offline in Unprecedented Four-Day Cyberattack appeared first on Cyber Security News.",
+    "content": "A cyberattack attributed to hackers linked to Iran forced a British power plant offline for four consecutive days last month, marking what officials describe as the first successful attack of its kind against UK energy infrastructure. The incident, first reported by The Telegraph, has raised fresh alarm over the vulnerability of critical infrastructure amid heightened tensions between the UK, US, and Tehran. According to the UK government, the affected facility was a small-scale energy generator, and officials have stressed that at no point was there any risk to the broader national grid. A spokesperson for the Department for Energy Security and Net Zero (DESNZ) said the incident &#8220;impacted a small-scale energy generator&#8221; and reiterated that &#8220;the UK has a highly resilient energy system,&#8221; adding that the government works closely with the energy sector to maintain the highest security standards. A government source went further, telling reporters that the targeted site was &#8220;less than a rounding error compared to grid capacity&#8221; and fell well below the legal thresholds that require significant generators to report cyber incidents. Despite the reassurances, security analysts view the attack as a notable escalation. It is believed to be the first time hackers affiliated with the Iranian regime have successfully forced a UK power facility to shut down entirely, and it comes shortly after London granted the United States permission to launch defensive military operations against Iran from British bases. Hackers Force UK Power Plant Offline The attackers&#8217; likely goal was not to cause widespread harm but to demonstrate that groups linked to Iran&#8217;s Islamic Revolutionary Guard Corps can penetrate UK infrastructure and disable it at will, calling the incident a &#8220;successful proof of concept&#8221; even though it went largely unnoticed outside the energy industry. The outage reportedly occurred in July, around the same time that US agencies, including the FBI, CISA, and the EPA, issued warnings about Iran-linked actors targeting water utilities across multiple states, according to The Telegraph report. That parallel timing has fueled speculation that Tehran-affiliated groups are conducting a broader, coordinated campaign against Western critical infrastructure rather than isolated, opportunistic intrusions. The National Cyber Security Center (NCSC), which is responsible for defending the UK&#8217;s critical infrastructure and operates under GCHQ, has not publicly confirmed details of the specific incident and did not identify the facility involved, citing security concerns. However, it is understood that no outages were formally reported by regulated operators of major power stations, reinforcing the government&#8217;s position that the wider electricity supply was never threatened. Following the incident, DESNZ briefed energy sector chief executives and issued written guidance to companies on strengthening their defenses, and officials have indicated that cybersecurity regulations for the sector are now being updated. GCHQ&#8217;s NCSC chief executive, Richard Horne, has separately warned that the agency now handles at least four &#8220;nationally significant&#8221; cyberattacks every week, cautioning that such incidents could increase sharply if the UK becomes more directly entangled in the wider Iran conflict. Prevent incidents due to slow investigations. Power your Tier 1 with threat intelligence from 15K SOCs: Integrate TI Lookup in your SOC The post Iran-Linked Hackers Force UK Power Plant Offline in Unprecedented Four-Day Cyberattack appeared first on Cyber Security News.",
+    "pubDate": "Sun, 23 Aug 2026 17:21:38 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/08/Hackers-Force-UK-Power-Plant-Offline.webp"
+  },
+  "score": 0.9435255200617284,
+  "selectedAt": "2026-08-24T03:31:33.464Z",
+  "generated": {
+    "caption": "A UK power plant was forced offline for four days by Iran-linked hackers. This marks the first successful attack of its kind on UK energy infrastructure. While officials stated the broader grid wasn't at risk, experts view it as a significant 'proof of concept' attack, demonstrating the ability to disrupt.\n\nStay informed! Save this post & follow @CyberShieldAlerts for daily updates.",
+    "script": "Iran-linked hackers just forced a UK power plant offline for four days! This is the first successful attack of its kind against UK energy infrastructure, raising fresh alarm. While it was a small generator and didn't threaten the national grid, officials call it a \"successful proof of concept.\" It shows groups linked to Iran's Islamic Revolutionary Guard Corps can penetrate and disable UK infrastructure at will. This comes as US agencies also warn of Iran-linked actors targeting water utilities, fueling speculation of a broader campaign. Officials are now updating cybersecurity regulations. Keep your defenses strong and stay vigilant!",
+    "hashtags": [
+      "iranlinkedhackers",
+      "ukpowerplant",
+      "criticalinfrastructure",
+      "cyberattack",
+      "otsecurity"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Iran-Linked Hackers",
+        "headlineRest": "Force UK Power Plant Offline for Four Days",
+        "body": "A British power plant was forced offline for four consecutive days last month due to a cyberattack attributed to Iran-linked hackers, marking a significant escalation against UK energy infrastructure. While officials reassured that the broader national grid was not at risk, security analysts consider this a successful \"proof of concept\" demonstrating the ability to penetrate and disable critical systems. The incident raises fresh concerns about the vulnerability of essential services amid heightened international tensions. This attack parallels other recent Iran-linked intrusions targeting Western utilities, suggesting a potentially coordinated campaign against critical infrastructure. Operators are urged to bolster their cybersecurity defenses against persistent state-sponsored threats.",
+        "hindiSummary": "ईरान से जुड़े हैकरों ने एक ब्रिटिश बिजली संयंत्र को चार दिनों तक बंद कर दिया, जिससे गंभीर चिंताएं बढ़ गई हैं।",
+        "imageQuery": "Critical infrastructure cyber threat"
+      }
+    ],
+    "generatedAt": "2026-08-24T03:31:57.062Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-iran-linked-hackers-force-uk-power-plant-offline-in-unpreced-slide-01.png"
+    ],
+    "renderedAt": "2026-08-24T03:32:34.779Z",
+    "reelVideo": "cyber-security-news-iran-linked-hackers-force-uk-power-plant-offline-in-unpreced-reel.mp4",
+    "reelDurationSeconds": 37.442177,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "8ae348356ed1afaa",
+  "notifiedAt": "2026-08-24T03:34:16.192Z"
+}
