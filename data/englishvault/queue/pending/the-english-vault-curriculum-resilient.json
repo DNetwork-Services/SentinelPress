@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-resilient",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Vocabulary"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-08-24T03:31:33.466Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever wonder how to describe someone who *always* bounces back quickly? That's being **resilient**!\n\nIt means you're tough and can recover fast from difficulties. This word is great for IELTS essays or discussing challenges at work. For example: 'Despite the setback, the team remained resilient and finished the project on time.'\n\nSave this word, share it with a friend, and follow for daily English lessons!",
+    "script": "Apni tough personality describe karne mein difficulty hoti hai na?\n\nToh aaj ek powerful word seekhte hain: Resilient. Iska matlab hota hai, jo insaan ya cheez mushkil situations se jaldi recover kar sake, jo tough ho. Workplace mein aur IELTS essays mein ye word bahut useful hai. Jaise, 'Despite the setback, the team remained resilient and finished the project on time.' Matlab, setback ke baad bhi team ne himmat nahi haari aur project time pe khatam kiya.\n\nToh next time jab bhi aapki himmat ya kisi ki tenacity ki baat ho, use karo word resilient! Ye word use karke aapki English next level lagegi!\n\nComment mein batao, aap kitne resilient ho! Aur aise hi amazing English tips ke liye, follow The English Vault!",
+    "hashtags": [
+      "resilient",
+      "ieltsvocabulary",
+      "vocabularybuilder",
+      "ieltspreparation",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Resilient",
+        "headlineRest": "— The Power of Bouncing Back",
+        "body": "The word 'resilient' describes someone or something able to recover quickly from difficulties, showing a strong, tough character. For example, 'Despite the setback, the team remained resilient and finished the project on time.' This term is highly valuable in IELTS essays discussing personal development, and it's perfect for workplace or interview contexts when you need to describe how you handle challenges and setbacks.",
+        "hindiSummary": "जो व्यक्ति मुश्किलों या चुनौतियों से जल्दी उबर सके, उसे लचीला या दृढ़ कहते हैं।",
+        "imageQuery": "person overcoming obstacles resilience"
+      }
+    ],
+    "generatedAt": "2026-08-25T03:27:47.091Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-resilient-slide-01.png"
+    ],
+    "renderedAt": "2026-08-25T03:27:51.137Z",
+    "reelVideo": "the-english-vault-curriculum-resilient-reel.mp4",
+    "reelDurationSeconds": 58.32,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "3a1c2c6f3a24075e",
+  "notifiedAt": "2026-08-25T03:32:41.407Z"
 }

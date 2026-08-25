@@ -1,0 +1,54 @@
+{
+  "id": "techcrunch-amazon-hikes-hardware-prices-by-60-blaming-memory-shortage",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "TechCrunch",
+    "category": "Technology"
+  },
+  "article": {
+    "title": "Amazon hikes hardware prices by 60%, blaming memory shortage",
+    "link": "https://techcrunch.com/2026/08/24/amazon-hikes-hardware-prices-by-60-percent-blaming-memory-shortage/",
+    "description": "As the memory shortage continues to cause trouble for hardware makers, Amazon says it is now being forced to pass on the costs to its consumers.",
+    "content": "",
+    "pubDate": "Mon, 24 Aug 2026 19:54:50 +0000",
+    "image": ""
+  },
+  "score": 0.9582042345679013,
+  "selectedAt": "2026-08-25T03:26:13.657Z",
+  "generated": {
+    "caption": "Get ready to pay more for your tech! 💸 Amazon is hiking hardware prices by 60%, blaming an ongoing memory shortage. This means consumers will see higher costs for their hardware purchases.\n\nSave this post to stay informed, share with a friend, and follow @CyberShieldAlerts for daily security updates!",
+    "script": "Heads up! Amazon just hiked hardware prices by a massive 60%! They're blaming a continuing global memory shortage that's impacting hardware makers worldwide. This isn't just a small bump; Amazon is directly passing these significantly higher costs onto consumers for their hardware products. So, if you're looking at a new smart home device or other Amazon-branded hardware, be prepared to pay much more. Stay informed on market changes and always check current prices before making your next Amazon hardware purchase.",
+    "hashtags": [
+      "amazon",
+      "hardware",
+      "memoryshortage",
+      "supplychain",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Amazon Hardware",
+        "headlineRest": "Prices Jump 60% Citing Memory Shortage",
+        "body": "Amazon has announced a significant price increase for its hardware products. Consumers will see prices soar by 60% due to this adjustment. The company attributes this sharp rise directly to the ongoing global memory shortage affecting hardware makers. Amazon stated that it is now forced to pass these increased costs directly onto its customers.",
+        "hindiSummary": "मेमोरी की कमी के कारण अमेज़न ने हार्डवेयर की कीमतें 60% बढ़ा दी हैं।",
+        "imageQuery": "Rising hardware costs impact"
+      }
+    ],
+    "generatedAt": "2026-08-25T03:26:46.327Z"
+  },
+  "render": {
+    "slideImages": [
+      "techcrunch-amazon-hikes-hardware-prices-by-60-blaming-memory-shortage-slide-01.png"
+    ],
+    "renderedAt": "2026-08-25T03:27:48.773Z",
+    "reelVideo": "techcrunch-amazon-hikes-hardware-prices-by-60-blaming-memory-shortage-reel.mp4",
+    "reelDurationSeconds": 29.477732,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "2b02ba4c93ecf4a7",
+  "notifiedAt": "2026-08-25T03:32:34.545Z"
+}
