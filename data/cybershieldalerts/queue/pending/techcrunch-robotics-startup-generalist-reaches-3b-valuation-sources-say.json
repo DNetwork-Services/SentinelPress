@@ -1,0 +1,54 @@
+{
+  "id": "techcrunch-robotics-startup-generalist-reaches-3b-valuation-sources-say",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "TechCrunch",
+    "category": "Technology"
+  },
+  "article": {
+    "title": "Robotics startup Generalist reaches $3B valuation, sources say",
+    "link": "https://techcrunch.com/2026/08/25/robotics-startup-generalist-reaches-3b-valuation-sources-say/",
+    "description": "The $200 million extension comes just months after the physical AI startup reached a $2 billion valuation.",
+    "content": "",
+    "pubDate": "Wed, 26 Aug 2026 00:40:59 +0000",
+    "image": ""
+  },
+  "score": 0.9840851481481482,
+  "selectedAt": "2026-08-26T03:32:51.824Z",
+  "generated": {
+    "caption": "Think AI is moving fast? It's speeding up! Robotics startup Generalist just soared to a $3 BILLION valuation.\n\nThis physical AI company secured a $200 million extension just months after hitting $2B, showing explosive growth in intelligent automation. This rapid investment fuels the AI tech shaping our world.\n\nSave this post and follow @CyberShieldAlerts for daily updates on cybersecurity and AI.",
+    "script": "A three billion dollar robotics startup just became a prime target for hackers! Generalist, the physical AI startup, rapidly hit a three billion dollar valuation, up from two billion dollars just months ago, boosted by a two hundred million dollar extension. This massive growth and influx of capital makes them an irresistible target for cybercriminals. More money means more valuable data, intellectual property, and financial assets ripe for exploitation. Rapid expansion often leaves security teams scrambling to keep up with new vulnerabilities. Every rapidly growing company needs a robust cybersecurity strategy now. Check your own digital defenses.",
+    "hashtags": [
+      "generalist",
+      "roboticsstartup",
+      "physicalai",
+      "startup",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "$3B Valuation",
+        "headlineRest": "Achieved by Robotics Startup Generalist",
+        "body": "Robotics startup Generalist has reportedly achieved a $3 billion valuation. This significant milestone comes just months after the physical AI company was valued at $2 billion. The latest valuation follows a $200 million funding extension. This rapid growth highlights strong investor confidence in the robotics and physical AI sector.",
+        "hindiSummary": "रोबोटिक्स स्टार्टअप जनरलसिस्ट $3 बिलियन के मूल्यांकन तक पहुँच गया है।",
+        "imageQuery": "AI robotics innovation success"
+      }
+    ],
+    "generatedAt": "2026-08-26T03:33:24.175Z"
+  },
+  "render": {
+    "slideImages": [
+      "techcrunch-robotics-startup-generalist-reaches-3b-valuation-sources-say-slide-01.png"
+    ],
+    "renderedAt": "2026-08-26T03:34:06.677Z",
+    "reelVideo": "techcrunch-robotics-startup-generalist-reaches-3b-valuation-sources-say-reel.mp4",
+    "reelDurationSeconds": 38.220045,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "cbef6d88ce0298ae",
+  "notifiedAt": "2026-08-26T03:37:33.624Z"
+}
