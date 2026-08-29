@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-supply-chain-worm-hits-popular-tanstack-query-code-generator-to-steal",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Supply Chain Worm Hits Popular TanStack Query Code Generator to Steal Developer Credentials",
+    "link": "https://cyberpress.org/supply-chain-worm-hits-popular-tanstack-query-code/",
+    "description": "A supply-chain worm has compromised multiple releases of @7nohe/openapi-react-query-codegen, an npm package that generates type-safe TanStack Query hooks, exposing developer and CI systems to credential theft, repository backdoors, and package poisoning. Aikido Security said it identified 10 malicious versions published within 20 minutes. The package records more than 150,000 weekly downloads, making the incident consequential [&#8230;] The post Supply Chain Worm Hits Popular TanStack Query Code Generator to Steal Developer Credentials appeared first on Cyber Security News.",
+    "content": "A supply-chain worm has compromised multiple releases of @7nohe/openapi-react-query-codegen, an npm package that generates type-safe TanStack Query hooks, exposing developer and CI systems to credential theft, repository backdoors, and package poisoning. Aikido Security said it identified 10 malicious versions published within 20 minutes. The package records more than 150,000 weekly downloads, making the incident consequential for developers installing JavaScript dependencies. The payload identifies itself as “Trinitite: Sponsored by Preview 2 Effects,” and researchers said its tradecraft resembles TeamPCP-linked activity, although attribution remains unresolved. Supply Chain Worm Hits Popular TanStack Query Code Generator The compromise reportedly affected both the npm package and its GitHub repository. Attackers are believed to have abused a weakness in a GitHub Actions workflow, meaning releases retained valid provenance attestations. That detail is significant: attestations confirm that a release originated from an authorized workflow, but cannot establish safety when the workflow itself has been altered or compromised. Most affected versions weaponized binding.gyp, a Node.js native-addon build configuration file. During installation, node-gyp evaluates its conditions using Python. Exfiltration repos (Source: Aikido) The malicious file abuses Python’s class hierarchy to locate catch_warnings, regain access to built-in functions, import the os module, and run an obfuscated Node.js payload. No legitimate native build occurs; the configuration exists solely as an installation-time execution mechanism. Some prerelease builds instead used explicit preinstall scripts, while later versions combined both techniques. The primary payload, 3FWCvzduYZg.js, is a 5.4 MB, single-line file layered with XOR, AES-GCM, and JavaScript obfuscation. It silently downloads the Bun runtime before executing credential-harvesting functions. It also checks for Russian locale settings, security-tool directories, known scanner decoy credentials, research accounts, and StepSecurity’s harden-runner, exiting when analysis conditions are detected. Stolen data includes GitHub, npm, PyPI, and RubyGems tokens; AWS, Azure, GCP, and HashiCorp Vault credentials; Kubernetes service account and kubeconfig files; SSH keys; Docker configuration; environment files; Git credentials; shell history; cryptocurrency wallets; messaging session data; VPN configurations; and Claude AI files. Aikido Security said the malware can query cloud metadata services and validate cloud credentials before exfiltration. Collected information is encrypted and committed to attacker-created GitHub repositories, typically named after Touhou Project characters and marked with the Trinitite description. The worm can then use stolen publishing tokens to inject malicious files into packages on npm, PyPI, and RubyGems. With GitHub tokens, it can poison accessible repositories with backdoored VS Code tasks, Claude Code hooks, fake CodeQL workflows, and configuration files targeting other developer tools. Organizations should identify installations of affected versions, revoke and rotate developer, CI, cloud, and registry credentials exposed on systems that ran npm install, inspect repositories for unauthorized commits and configuration files, and review GitHub Actions workflows. Teams should also pin dependencies, enforce least-privilege publishing tokens, and treat provenance as one layer of assurance, not proof that an upstream build pipeline remains uncompromised. IOCs IOC TypeIndicatorDescriptionMalicious npm package@7nohe/openapi-react-query-codegen@0.5.4Confirmed compromised releaseMalicious npm package@7nohe/openapi-react-query-codegen@0.5.5Confirmed compromised releaseMalicious npm package@7nohe/openapi-react-query-codegen@1.6.3Confirmed compromised releaseMalicious npm package@7nohe/openapi-react-query-codegen@1.6.4Confirmed compromised releaseMalicious npm package@7nohe/openapi-react-query-codegen@2.2.1Confirmed compromised releaseMalicious npm package@7nohe/openapi-react-query-codegen@2.2.2Confirmed compromised releaseMalicious npm package@7nohe/openapi-react-query-codegen@3.0.3Confirmed compromised releaseMalicious npm package@7nohe/openapi-react-query-codegen@3.0.4Confirmed compromised releaseMalicious payload file3FWCvzduYZg.jsObfuscated Node.js credential harvester and worm payload placed in the package rootSHA-2568e5d1af68ca340ae0c6e8132cb00c686ec2d60502c1994d94ce353d1472ad5a3Identified malicious package or payload hash Note: IP addresses and domains are intentionally defanged (e.g., [.]) to prevent accidental resolution or hyperlinking. Re-fang only within controlled threat intelligence platforms such as MISP, VirusTotal, or your SIEM. Give your security team the visibility and context to investigate suspicious activity faster and contain threats before business impact grows. Strengthen Your Investigations with ANY.RUN The post Supply Chain Worm Hits Popular TanStack Query Code Generator to Steal Developer Credentials appeared first on Cyber Security News.",
+    "pubDate": "Sat, 29 Aug 2026 06:04:27 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/08/supply-chain-worm-hits-popular-tanstack-query-code-generator-to-steal-developer-credentials-6a92748c18f67.webp"
+  },
+  "score": 0.982158561728395,
+  "selectedAt": "2026-08-29T09:17:08.252Z",
+  "generated": {
+    "caption": "Developers, beware! A popular code package you use might be stealing your credentials.\n\nThe @7nohe/openapi-react-query-codegen npm package, with 150K+ weekly downloads, was hit by a supply-chain worm. It's stealing GitHub, AWS, crypto wallet data, and more. Attackers can even use stolen access to poison other repositories.\n\nSave this post & follow @CyberShieldAlerts for crucial daily updates!",
+    "script": "Developer alert! Credentials stolen! A worm hit TanStack Query's code generator. Ten malicious versions of `@7nohe/openapi-react-query-codegen` were published, affecting over 150,000 weekly downloads. Attackers exploited GitHub Actions, bypassing provenance to install a payload during `npm install`. This worm steals GitHub, npm, and cloud credentials like AWS, Azure, and GCP, plus SSH keys and crypto wallets. It then uses these tokens to inject malicious files into other packages or poison your repositories. Immediately identify and remove affected versions. Revoke and rotate ALL exposed developer, CI, and cloud credentials. Inspect your repositories and review GitHub Actions workflows now!",
+    "hashtags": [
+      "supplychainattack",
+      "credentialtheft",
+      "tanstackquery",
+      "malware",
+      "devsecops"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Supply Chain Worm",
+        "headlineRest": "Hits Popular TanStack Query Code Generator",
+        "body": "A supply-chain worm has compromised multiple releases of the popular npm package @7nohe/openapi-react-query-codegen, which generates TanStack Query hooks. This attack, dubbed \"Trinitite,\" exploited a GitHub Actions workflow weakness, leading to credential theft from developer and CI systems. The malware targets various tokens and sensitive data, including GitHub, npm, cloud, SSH, and cryptocurrency wallets. Organizations should identify affected installations, immediately revoke and rotate all exposed credentials, and inspect repositories for unauthorized changes. Additionally, review GitHub Actions workflows and strengthen dependency management practices.",
+        "hindiSummary": "एक सप्लाई-चेन वर्म ने एक लोकप्रिय एनपीएम पैकेज को प्रभावित किया है, जिससे डेवलपर क्रेडेंशियल चोरी हो रहे हैं।",
+        "imageQuery": "Developer supply chain attack"
+      }
+    ],
+    "generatedAt": "2026-08-29T09:18:17.425Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-supply-chain-worm-hits-popular-tanstack-query-code-generator-to-steal-slide-01.png"
+    ],
+    "renderedAt": "2026-08-29T09:18:49.387Z",
+    "reelVideo": "cyberpress-supply-chain-worm-hits-popular-tanstack-query-code-generator-to-steal-reel.mp4",
+    "reelDurationSeconds": 44.779683,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "87fe25f5c8b902de",
+  "notifiedAt": "2026-08-29T09:22:07.324Z"
+}
