@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-composer-flaw-lets-malicious-dependencies-expose-ssh-keys-an",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Composer Flaw Lets Malicious Dependencies Expose SSH Keys and Sensitive Files",
+    "link": "https://cybersecuritynews.com/composer-flaw-expose-ssh-keys/",
+    "description": "A newly disclosed security flaw in Composer, the widely used dependency manager for PHP, could allow a malicious or compromised package to alter permissions on files located outside its own installation directory. The issue, tracked as CVE-2026-59944, can expose sensitive files on shared or multi-tenant systems when vulnerable Composer versions process unsafe package binary paths. [&#8230;] The post Composer Flaw Lets Malicious Dependencies Expose SSH Keys and Sensitive Files appeared first on Cyber Security News.",
+    "content": "A newly disclosed security flaw in Composer, the widely used dependency manager for PHP, could allow a malicious or compromised package to alter permissions on files located outside its own installation directory. The issue, tracked as CVE-2026-59944, can expose sensitive files on shared or multi-tenant systems when vulnerable Composer versions process unsafe package binary paths. The advisory is rated Moderate and affects Composer versions from 2.3.0 through versions before 2.10.3, as well as versions from 1.0 through versions before 2.2.30. Composer has released fixes in versions 2.10.3 and 2.2.30. The vulnerability stems from a path traversal and symbolic-link handling weakness in the way Composer manages package binaries. Composer Vulnerability Exposure A malicious package can declare a binary file that is a symbolic link resolving to a target outside the package’s directory. During installation, Composer may follow that link, change the permissions of the external file, and register it as a runnable command under the project’s vendor/bin directory. An attacker does not gain direct remote code execution or immediate access to a victim’s data through this flaw alone. However, the permission change can make a file that was previously readable only by its owner become world-readable and executable. On a shared hosting environment, multi-user server, or build platform, other local users or processes may then be able to access the exposed content. The issue bypasses protections introduced in a previous Composer advisory, GHSA-gjfg-22fp-rrxx. Earlier hardening rejected literal “..” path segments in declared package binaries, but the validation was applied only in one stage of dependency resolution. Security researchers found that the validation could be skipped when Composer handled symbolic links or dependency metadata restored from an earlier environment. Risk is highest when organizations reuse a vendor directory from an untrusted or lower-trust source. Examples include vendor folders restored through shared CI caches, copied from an earlier container build stage, retained from older Composer versions, or modified by a less trusted build process. The GitHub Advisory states that a normal composer install command in a build or deployment pipeline can silently apply the dangerous permission modification using the privileges of the account running Composer. Composer now validates that every declared binary resolves within the directory of the package being installed. If a binary points outside the package path, Composer skips it and displays a warning rather than touching the target file. Administrators and developers should upgrade immediately to Composer 2.10.3 or 2.2.30. Rebuilding vendor directories from trusted sources is also important, particularly for CI/CD pipelines, cached dependencies, container builds, and deployment systems. The flaw is associated with CWE-22 path traversal, CWE-59 improper link resolution, and CWE-732 incorrect permission assignment for critical resources. The advisory’s CVSS vector indicates low attack complexity and high confidentiality impact; however, exploitation requires local execution of the dependency installation process and user interaction. Prevent incidents due to slow investigations. Power your Tier 1 with threat intelligence from 15K SOCs: Integrate TI Lookup in your SOC The post Composer Flaw Lets Malicious Dependencies Expose SSH Keys and Sensitive Files appeared first on Cyber Security News.",
+    "pubDate": "Mon, 31 Aug 2026 08:11:56 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/08/Composer-Flaw-Lets-Malicious-Dependencies-Expose-SSH-Keys-and-Sensitive-Files-.webp"
+  },
+  "score": 0.9965260154320987,
+  "selectedAt": "2026-08-31T08:49:27.143Z",
+  "generated": {
+    "caption": "Heads up, developers! Your sensitive files, like SSH keys, could be at risk.\n\nA newly discovered flaw in Composer, the widely used PHP dependency manager, allows malicious packages to alter file permissions *outside* their own directory. This means private files could become world-readable on shared systems or CI/CD pipelines. Ensure you upgrade to Composer versions 2.10.3 or 2.2.30 immediately to secure your projects.\n\nSave this post & share with your team! Follow @CyberShieldAlerts for daily updates.",
+    "script": "SSH keys exposed! New Composer flaw. This vulnerability, CVE-2026-59944, lets malicious packages change file permissions outside their own folder. Sensitive files, like SSH keys, could become world-readable on shared systems. It bypasses previous protections. Risk is highest with untrusted vendor directories or CI caches. A regular `composer install` can silently apply these dangerous changes. Upgrade Composer to 2.10.3 or 2.2.30 immediately, and rebuild vendor directories from trusted sources.",
+    "hashtags": [
+      "composer",
+      "sshkeys",
+      "pathtraversal",
+      "vulnerability",
+      "cybersecurity"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Composer Flaw",
+        "headlineRest": "Exposes Sensitive Files & SSH Keys",
+        "body": "A new moderate-rated security flaw in Composer, PHP's dependency manager, allows malicious packages to change file permissions outside their directory. This vulnerability could expose sensitive files like SSH keys, making them world-readable on shared or multi-tenant systems. While not granting direct remote code execution, it poses a high risk, especially in CI/CD pipelines or cached environments. Users must upgrade Composer to versions 2.10.3 or 2.2.30 and rebuild vendor directories immediately to mitigate the risk.",
+        "hindiSummary": "Composer में एक नई सुरक्षा कमी संवेदनशील फ़ाइलों और SSH कुंजियों को उजागर कर सकती है।",
+        "imageQuery": "Developer tools security risk"
+      }
+    ],
+    "generatedAt": "2026-08-31T08:50:06.415Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-composer-flaw-lets-malicious-dependencies-expose-ssh-keys-an-slide-01.png"
+    ],
+    "renderedAt": "2026-08-31T08:50:37.245Z",
+    "reelVideo": "cyber-security-news-composer-flaw-lets-malicious-dependencies-expose-ssh-keys-an-reel.mp4",
+    "reelDurationSeconds": 36.641088,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "93e7488a0d73256e",
+  "notifiedAt": "2026-08-31T08:55:18.616Z"
+}
