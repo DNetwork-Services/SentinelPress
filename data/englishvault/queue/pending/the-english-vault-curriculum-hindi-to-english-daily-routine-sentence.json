@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-hindi-to-english-daily-routine-sentence",
   "accountId": "englishvault",
-  "status": "awaiting_approval",
+  "status": "researched",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Translation"
@@ -11,44 +11,11 @@
     "link": "topic://englishvault/translation-daily-routine",
     "description": "Hindi: 'मैं सुबह जल्दी उठता हूं और टहलने जाता हूं।' English: 'I wake up early in the morning and go for a walk.' Teaching point: Hindi often omits the subject pronoun context that English requires explicitly; also note 'जाता हूं' (habitual present) maps to English simple present, not present continuous.",
     "content": "Hindi: 'मैं सुबह जल्दी उठता हूं और टहलने जाता हूं।' English: 'I wake up early in the morning and go for a walk.' Teaching point: Hindi often omits the subject pronoun context that English requires explicitly; also note 'जाता हूं' (habitual present) maps to English simple present, not present continuous.",
-    "pubDate": "2026-08-18T03:23:26.446Z",
+    "pubDate": "2026-09-01T07:56:38.951Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-08-18T03:23:26.446Z",
-  "generated": {
-    "caption": "Ever wonder why a sentence sounds off even after translating word-for-word? 🤔 It's often about missing subjects! Hindi can imply who's doing the action, but English needs an explicit subject like 'I'. Plus, for daily habits (like 'जाता हूं'), we use the simple present.\n\nExample: \"I wake up early in the morning and go for a walk.\"\n\nEasy, right? Save this tip, share with a friend, and follow @EnglishVault for more daily English!",
-    "script": "Apni morning routine batate waqt ye galti karte ho? Dekho, Hindi mein hum aksar 'मैं सुबह जल्दी उठता हूं और टहलने जाता हूं' bolte hain. Yahan 'main' clear hai. Lekin English mein, aapko 'I' explicitly mention karna padega. English needs the subject pronoun, chahe Hindi mein obvious ho ya skip ho jaaye. Aur 'uth-ta hoon', 'ja-ta hoon' — ye sab habitual present tense hain, toh English mein simple present tense use hoga. Jaise 'wake up' and 'go'. 'Am waking up' ya 'am going' nahi aayega. So, the correct way to say it is: 'I wake up early in the morning and go for a walk.' Toh ab yaad rakhna, routine sentences mein 'I' zarur lagana, aur simple present tense hi use karna. Got it? Save kar lo ye reel aur follow karo The English Vault for more such easy English tips!",
-    "hashtags": [
-      "dailyroutine",
-      "simplepresent",
-      "learnenglish",
-      "englishgrammar",
-      "hinditoenglish"
-    ],
-    "slides": [
-      {
-        "type": "newscard",
-        "badgeInitials": "EV",
-        "headlineHighlight": "I Wake Up Early",
-        "headlineRest": "— Translating Your Daily Routine",
-        "body": "Let's learn to translate a common Hindi phrase about daily habits: 'मैं सुबह जल्दी उठता हूं और टहलने जाता हूं।' The direct English translation is 'I wake up early in the morning and go for a walk.' A key point here is that while Hindi often implies the subject pronoun (like 'I'), English requires it to be explicitly stated. Additionally, the Hindi 'जाता हूं' signifies a habitual present action, which correctly translates to the simple present tense in English, not the present continuous. Mastering these small grammatical distinctions helps ensure natural and accurate translations.",
-        "hindiSummary": "मैं सुबह जल्दी उठता हूं और टहलने जाता हूं।",
-        "imageQuery": "person on morning walk sunrise"
-      }
-    ],
-    "generatedAt": "2026-08-18T03:24:30.046Z"
-  },
-  "render": {
-    "slideImages": [
-      "the-english-vault-curriculum-hindi-to-english-daily-routine-sentence-slide-01.png"
-    ],
-    "renderedAt": "2026-08-18T03:24:33.146Z",
-    "reelVideo": "the-english-vault-curriculum-hindi-to-english-daily-routine-sentence-reel.mp4",
-    "reelDurationSeconds": 62.64,
-    "hasVoiceover": true,
-    "musicTrack": null
-  },
-  "approvalHash": "9ea0e87dffe53b10",
-  "notifiedAt": "2026-08-18T03:28:20.629Z"
+  "selectedAt": "2026-09-01T07:56:38.952Z",
+  "generated": null,
+  "render": null
 }
