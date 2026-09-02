@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-hugging-face-flaw-lets-malicious-ai-models-plant-python-code",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Hugging Face Flaw Lets Malicious AI Models Plant Python Code on User Systems",
+    "link": "https://cybersecuritynews.com/hugging-face-flaw/",
+    "description": "A newly disclosed vulnerability in Hugging Face Transformers could allow malicious AI model repositories to place attacker-controlled Python files on a user’s system before the user approves remote code execution. Tracked as CVE-2026-80047, the issue affects Hugging Face Transformers versions 4.49.0 through 5.8.1. The flaw lies in the library’s custom generation-loading process. It can allow [&#8230;] The post Hugging Face Flaw Lets Malicious AI Models Plant Python Code on User Systems appeared first on Cyber Security News.",
+    "content": "A newly disclosed vulnerability in Hugging Face Transformers could allow malicious AI model repositories to place attacker-controlled Python files on a user’s system before the user approves remote code execution. Tracked as CVE-2026-80047, the issue affects Hugging Face Transformers versions 4.49.0 through 5.8.1. The flaw lies in the library’s custom generation-loading process. It can allow remote Python code to be written to the local Hugging Face module cache without authorization. Hugging Face Transformers is widely used to train, deploy, and run machine learning models for natural language processing, computer vision, audio, video, and multimodal AI tasks. Because the framework is commonly integrated into developer workstations, research environments, cloud notebooks, and production ML pipelines, the vulnerability could expose a broad range of users to untrusted content from model repositories. The issue occurs in GenerativePreTrainedModel.load_custom_generate(), which is used to load custom text-generation logic from model repositories. When a user attempts to load a model containing a custom_generate/generate.py file, Transformers retrieves the file from the remote repository and stores it locally through get_cached_module_file(). However, the library performs this remote fetch and local cache write before checking whether the user has approved trust_remote_code. The trust_remote_code prompt is intended to prevent a model repository from running arbitrary Python code unless the user explicitly accepts the risk. In the vulnerable code path, execution remains gated by the consent prompt. However, the remote Python file is already copied to disk before resolve_trust_remote_code () evaluates the prompt. Hugging Face Vulnerability As a result, a user can decline the prompt and still end up with attacker-controlled Python content stored under the Hugging Face cache directory, typically ~/.cache/huggingface/modules. The behavior differs from other dynamic module-loading functions in the Transformers library. Components such as AutoConfig, AutoModel, AutoTokenizer, and AutoImageProcessor validate trust_remote_code before downloading or writing remote Python modules. The affected custom generation workflow violates that security expectation by placing the file write operation before consent verification. An attacker could exploit the flaw by publishing a model repository with a malicious custom_generate/generate.py file. Any user loading the model reference through the affected function may trigger the local file write without requiring administrator privileges or additional interaction beyond the initial model load attempt. The risk is greater in environments that reuse Hugging Face cache directories. A malicious file left behind in the cache could later be accessed during a trusted model load, potentially creating an unintended execution path for previously cached code. No vendor-provided patch or advisory was available at the time of disclosure. Users should avoid calling load_custom_generate() on untrusted Hugging Face model repositories and inspect the local module cache for unexpected files. Organizations using shared notebooks, CI/CD pipelines, ML workstations, or persistent container volumes should consider clearing ~/.cache/huggingface/modules regularly until a fix is released. Developers should also ensure that remote-code consent checks occur before any remote download or local file write operation. Security researcher Prasanna Dabi reported the vulnerability. CERT/CC published the vulnerability record on September 1, 2026, with Hugging Face listed as having an unknown vendor status. Prevent incidents due to slow investigations. Power your Tier 1 with threat intelligence from 15K SOCs: Integrate TI Lookup in your SOC The post Hugging Face Flaw Lets Malicious AI Models Plant Python Code on User Systems appeared first on Cyber Security News.",
+    "pubDate": "Wed, 02 Sep 2026 06:58:08 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/09/Hugging-Face-Flaw-Lets-Malicious-AI-Models-Plant-Python-Code-on-User-Systems.webp"
+  },
+  "score": 0.9983629891975309,
+  "selectedAt": "2026-09-02T07:15:48.783Z",
+  "generated": {
+    "caption": "🚨 Imagine downloading an AI model and malicious code ends up on your system before you even give permission!\n\nA new flaw in Hugging Face Transformers lets malicious AI models plant Python files into your local cache without your explicit consent. Even if you decline the security prompt, the harmful file is already saved, creating a potential risk. Protect your systems by avoiding untrusted model sources.\n\nSave this post and share it to inform others! Follow @CyberShieldAlerts for daily threat intel.",
+    "script": "Malicious AI models can plant dangerous code on your system even if you say NO! A critical flaw, CVE-2026-80047, has been found in Hugging Face Transformers versions 4.49.0 through 5.8.1. This vulnerability allows remote Python files to be written directly to your local module cache before you approve remote code execution. Even if you decline the security prompt, malicious content can still be stored. This bypasses a critical safeguard, leaving developer workstations, research environments, and ML pipelines exposed. To stay safe, avoid using load_custom_generate() with untrusted repositories. Regularly inspect and clear your Hugging Face cache directory.",
+    "hashtags": [
+      "huggingface",
+      "cve202680047",
+      "mlsecurity",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Hugging Face",
+        "headlineRest": "Flaw Plants Malicious AI Code Before Consent",
+        "body": "A critical vulnerability in Hugging Face Transformers allows malicious AI model repositories to write Python files to a user's local system cache without prior authorization. This flaw affects versions 4.49.0 through 5.8.1 and bypasses the `trust_remote_code` prompt, allowing attacker-controlled code to be stored even if the user declines. Given its wide adoption in ML development and production, this exposes users to untrusted content, with risks of unintended code execution from cached files. Users should avoid untrusted model repositories, regularly clear their cache, and inspect directories for unexpected files until a fix is released.",
+        "hindiSummary": "Hugging Face में एक खामी दुर्भावनापूर्ण AI मॉडलों को उपयोगकर्ता की सहमति के बिना उनके सिस्टम पर कोड डालने की अनुमति देती है।",
+        "imageQuery": "Malicious AI code vulnerability"
+      }
+    ],
+    "generatedAt": "2026-09-02T07:16:17.263Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-hugging-face-flaw-lets-malicious-ai-models-plant-python-code-slide-01.png"
+    ],
+    "renderedAt": "2026-09-02T07:21:23.301Z",
+    "reelVideo": "cyber-security-news-hugging-face-flaw-lets-malicious-ai-models-plant-python-code-reel.mp4",
+    "reelDurationSeconds": 43.003356,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "29a949f5749683b4",
+  "notifiedAt": "2026-09-02T07:32:46.102Z"
+}
