@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-cisco-nexus-9000-series-switches-flaw-allows-remote-attacker",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Cisco Nexus 9000 Series Switches Flaw Allows Remote Attackers to Execute Malicious Code",
+    "link": "https://cybersecuritynews.com/cisco-nexus-9000-series-switches-vulnerability/",
+    "description": "Cisco has disclosed a critical vulnerability in Cisco Nexus 9000 Series Switches that could allow an unauthenticated remote attacker to execute arbitrary code with root privileges. Tracked as CVE-2026-20212, the flaw has received a CVSS score of 9.8 out of 10 and affects Nexus 9000 models that use a Silicon One ASIC. The security issue, [&#8230;] The post Cisco Nexus 9000 Series Switches Flaw Allows Remote Attackers to Execute Malicious Code appeared first on Cyber Security News.",
+    "content": "Cisco has disclosed a critical vulnerability in Cisco Nexus 9000 Series Switches that could allow an unauthenticated remote attacker to execute arbitrary code with root privileges. Tracked as CVE-2026-20212, the flaw has received a CVSS score of 9.8 out of 10 and affects Nexus 9000 models that use a Silicon One ASIC. The security issue, identified as CWE-1327, is detailed in Cisco advisory cisco-sa-n9k-s1-rce-EH8dEtr, published on September 2, 2026. Cisco said the vulnerability was discovered while resolving a Technical Assistance Center support case. At the time of publication, Cisco PSIRT said it was not aware of public exploitation or malicious activity involving the flaw. The vulnerability exists because TCP ports 43210 and 43211 are reachable through the default Layer 3 virtual routing and forwarding configuration on affected devices. An attacker does not need valid credentials to target the vulnerable service. By connecting to an exposed switch and sending specially crafted input, an attacker could cause that input to be executed as code with root-level privileges. Cisco Nexus 9000 Series Switches Vulnerability Root access would give an attacker broad control over the targeted switch. This could enable changes to network configuration, traffic monitoring, service disruption, data interception, or movement to other systems connected to the network. Successful exploitation can also crash the S1HAL process, Cisco warned, potentially forcing the affected device to reload and causing a network outage. The issue affects Cisco Nexus 9000 Series Switches that include a Silicon One ASIC. Cisco listed several affected product identifiers, including N9324C-SE1U, N9348Y2C6D-SE1U, N9364E-SG2-O, N9364E-SG2-Q, N9396T12C-SE1, N9348Y12C-SE1, N9396Y12C-SE1, N9336C-SE1, N9K-C9804, and N9K-C9808. Administrators can identify the installed module and product identifier by running the show module command on the switch. Organizations should compare the returned model number against Cisco’s affected-product list and then verify whether their current NX-OS release is vulnerable through the Cisco Software Checker. Cisco confirmed that other Nexus 9000 models not listed in the advisory are not affected. Nexus 9000 Fabric Switches operating in ACI mode are also not vulnerable. Other confirmed unaffected products include Nexus 3000 and Nexus 7000 Series Switches, MDS 9000 Series Multilayer Switches, Cisco Firepower appliances, Secure Firewall products, and several UCS Fabric Interconnect platforms. Cisco has released software updates to address CVE-2026-20212 and strongly recommends upgrading to a fixed NX-OS release. Until patching is complete, organizations can apply infrastructure access control lists to permit only necessary management and control-plane traffic to the device. As an additional mitigation, administrators can configure iACLs to explicitly deny TCP traffic sent to locally configured switch IP addresses on destination ports 43210 and 43211. Cisco also released a Live Protect shield for temporary protection, but stressed that it should only serve as a bridge until a full software upgrade is deployed. Learn 7 Metric-Gated AI SOC Deployment Phases &#8211; Download Free AI SOC Deployment Playbook 2026. The post Cisco Nexus 9000 Series Switches Flaw Allows Remote Attackers to Execute Malicious Code appeared first on Cyber Security News.",
+    "pubDate": "Thu, 03 Sep 2026 07:08:41 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/09/Critical-Cisco-Nexus-9000-Series-Switches-Vulnerability-Enables-RCE-Attacks.webp"
+  },
+  "score": 0.9990073734567901,
+  "selectedAt": "2026-09-03T07:19:24.222Z",
+  "generated": {
+    "caption": "Your network's backbone could be exposed! 😱 Cisco Nexus 9000 switches have a critical vulnerability allowing remote attackers to take full control without credentials. This could lead to network disruptions, traffic monitoring, or data interception. Cisco has released software updates and recommends immediate patching. Stay secure! Save this, share with your team, and follow @CyberShieldAlerts for daily updates.",
+    "script": "Critical vulnerability alert! Cisco Nexus 9000 Series Switches are exposed. An unauthenticated remote attacker can execute arbitrary code with root privileges on affected devices. This critical flaw, with a CVSS score of 9.8, gives attackers broad control. They could change network configuration, intercept data, or even force a complete network outage. This affects Nexus 9000 models that use a Silicon One ASIC. Don't let your network become a target. Run 'show module' to identify affected switches. Upgrade to a fixed NX-OS release immediately, or apply the recommended ACL mitigations by denying TCP traffic to ports 43210 and 43211.",
+    "hashtags": [
+      "cisco",
+      "nexus9000",
+      "remotecodeexecution",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Cisco Nexus 9000",
+        "headlineRest": "Series Switches Face Critical RCE Flaw",
+        "body": "Cisco has disclosed a critical vulnerability in its Nexus 9000 Series Switches, rated 9.8 CVSS, allowing unauthenticated remote attackers to execute arbitrary code with root privileges. This flaw, affecting models with Silicon One ASICs, stems from reachable TCP ports 43210 and 43211, requiring no credentials for exploitation. Successful exploitation grants attackers broad control over targeted switches, potentially leading to network configuration changes, data interception, or service disruptions. While no active exploitation is known, Cisco urges administrators to upgrade to fixed NX-OS releases and apply temporary mitigation strategies like iACLs.",
+        "hindiSummary": "सिस्को नेक्सस 9000 स्विच में एक गंभीर भेद्यता है जिससे दूरस्थ हमलावर कोड निष्पादित कर सकते हैं।",
+        "imageQuery": "critical network vulnerability"
+      }
+    ],
+    "generatedAt": "2026-09-03T07:21:09.718Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-cisco-nexus-9000-series-switches-flaw-allows-remote-attacker-slide-01.png"
+    ],
+    "renderedAt": "2026-09-03T07:21:41.166Z",
+    "reelVideo": "cyber-security-news-cisco-nexus-9000-series-switches-flaw-allows-remote-attacker-reel.mp4",
+    "reelDurationSeconds": 43.119456,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "599baf3369c978e6",
+  "notifiedAt": "2026-09-03T07:25:34.381Z"
+}
