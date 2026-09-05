@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-ai-agents-breach-enterprise-network-in-under-10-hours-and-steal-root",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "AI Agents Breach Enterprise Network in Under 10 Hours and Steal Root Credentials",
+    "link": "https://cyberpress.org/ai-agents-breach-enterprise-network/",
+    "description": "A threat actor used frontier AI models and attack-specific agentic frameworks to breach an enterprise environment, harvest root credentials, and hijack cloud AI infrastructure in under 10 hours. Documented by Palo Alto Networks Unit 42, the incident demonstrates how AI-assisted automation can compress an intrusion that might normally require multiple human red-team operators and roughly [&#8230;] The post AI Agents Breach Enterprise Network in Under 10 Hours and Steal Root Credentials appeared first on Cyber Security News.",
+    "content": "A threat actor used frontier AI models and attack-specific agentic frameworks to breach an enterprise environment, harvest root credentials, and hijack cloud AI infrastructure in under 10 hours. Documented by Palo Alto Networks Unit 42, the incident demonstrates how AI-assisted automation can compress an intrusion that might normally require multiple human red-team operators and roughly two weeks of work into a single machine-speed campaign. The attacker reportedly used an automated loop in which specialized AI agents monitored tool output, evaluated options, executed actions, and replanned their next steps. AI Agents Breach Enterprise Network Rather than relying on a previously unknown vulnerability or exceptionally novel tradecraft, the actor used existing attack methods at a far higher operational tempo. Unit 42 observed indicators of coordinated AI-agent use, including parallel large language model calls, structured Markdown files used to exchange context between agents and sessions, and custom automation scripts believed to be AI-generated. The agents collectively performed more than 50 techniques aligned with the MITRE ATT&CK framework. The attacker retained responsibility for setting objectives and consequential decisions, while individual agents performed reconnaissance, credential collection, privilege escalation, and persistence activities. The campaign began by exploiting a publicly accessible web service, enabling the actor to establish a tunnel into the enterprise network. AI-orchestrated intrusion workflow (Source: unit42) An automated reconnaissance agent then mapped internal microservices and discovered reachable services across the environment. After mapping the environment, sub-agents searched enterprise source-code repositories for hard-coded credentials, service passwords and tokens. The exposed secrets reportedly allowed the attacker to access the organization’s secrets-management platform and harvest master administrative credentials, ultimately gaining root-level system access. The actor also targeted the victim’s DevOps environment. They abused custom workflows in an enterprise code application to exfiltrate cloud access keys and attempted to insert backdoors into Terraform configurations. Strong branch-protection controls prevented the infrastructure-as-code modification attempt, underscoring the value of immutable protections and mandatory review gates. Using stolen cloud credentials, the attacker invoked the victim’s AI endpoints and repurposed the organization’s compute resources as post-compromise infrastructure. This tactic could allow adversaries to blend orchestration activity into otherwise legitimate AI-service traffic while shifting compute costs to the compromised organization. The attacker additionally left an 80-page technical report describing the victim’s security posture and dozens of exploited weaknesses. Unit 42 said defenders should treat AI systems as core enterprise infrastructure rather than isolated experimental tools. Organizations should inventory model endpoints, API keys, Model Context Protocol gateways and AI integrations, then apply least-privilege access controls, rate limits and comprehensive diagnostic logging. Security teams should also watch for agentic behavioral patterns, including bursty API activity, rapid HTTP authentication-state changes, parallel login attempts and abnormal model usage from unexpected identities. Incident-response playbooks need synchronized containment across identity, cloud, and DevOps systems. Recommended actions include revoking credentials, terminating OAuth sessions, freezing CI/CD pipelines, and simultaneously isolating affected cloud accounts. Finally, enterprises should protect code repositories and infrastructure-as-code workflows with multi-party review, strong branch protection and secret-scanning controls. Give your security team the visibility and context to investigate suspicious activity faster and contain threats before business impact grows. Strengthen Your Investigations with ANY.RUN The post AI Agents Breach Enterprise Network in Under 10 Hours and Steal Root Credentials appeared first on Cyber Security News.",
+    "pubDate": "Sat, 05 Sep 2026 05:30:45 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/09/ai-agents-breach-enterprise-network-in-under-10-hours-and-steal-root-credentials23-6a9ba8d1a2422.webp"
+  },
+  "score": 0.9913770277777778,
+  "selectedAt": "2026-09-05T07:03:52.686Z",
+  "generated": {
+    "caption": "🚨 AI just hacked an enterprise network in under 10 hours! 🚨\n\nThis isn't sci-fi: AI agents used existing attack methods to quickly breach a company, steal root credentials, and even hijack cloud AI infrastructure. This task, typically taking human teams weeks, was done in under 10 hours thanks to AI-powered automation.\n\nSave this post & share with your team! Follow @CyberShieldAlerts for daily updates.",
+    "script": "AI agents just obliterated enterprise security, stealing root credentials and hijacking cloud infrastructure in under ten hours! Threat actors used frontier AI models to automate an attack that normally takes human red-team operators two weeks, compressing it into a single machine-speed campaign. These AI agents autonomously mapped networks, discovered hard-coded credentials, and harvested master administrative access. They even repurposed the victim’s cloud AI compute resources for post-compromise activity, shifting attack costs and blending into legitimate traffic. This incident proves AI systems are now prime targets and critical infrastructure. Don't wait. Inventory all your AI endpoints, apply least-privilege access, and strengthen code repository protections immediately.",
+    "hashtags": [
+      "aiagents",
+      "rootcredentials",
+      "cloudsecurity",
+      "cyberattack",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "AI Agents",
+        "headlineRest": "Breach Enterprise Network, Steal Root Credentials in Under 10 Hours",
+        "body": "A threat actor utilized frontier AI models and agentic frameworks to breach an enterprise environment, harvest root credentials, and hijack cloud AI infrastructure in less than 10 hours. Documented by Palo Alto Networks Unit 42, this incident demonstrates how AI-assisted automation can compress a two-week intrusion into a machine-speed campaign, executing over 50 MITRE ATT&CK techniques. The attacker used existing methods but at a far higher operational tempo, leveraging specialized AI agents for reconnaissance, credential collection, and privilege escalation. Organizations should treat AI systems as core enterprise infrastructure, implementing least-privilege access, comprehensive logging, and monitoring for agentic behavioral patterns like bursty API activity. Strengthening code repositories and infrastructure-as-code workflows with multi-party review and strong branch protection is also crucial.",
+        "hindiSummary": "एआई एजेंटों ने 10 घंटे से भी कम समय में एक एंटरप्राइज नेटवर्क में सेंध लगाकर रूट क्रेडेंशियल चुरा लिए हैं।",
+        "imageQuery": "AI cyber attack speed"
+      }
+    ],
+    "generatedAt": "2026-09-05T07:04:18.677Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-ai-agents-breach-enterprise-network-in-under-10-hours-and-steal-root-slide-01.png"
+    ],
+    "renderedAt": "2026-09-05T07:05:30.306Z",
+    "reelVideo": "cyberpress-ai-agents-breach-enterprise-network-in-under-10-hours-and-steal-root-reel.mp4",
+    "reelDurationSeconds": 46.532789,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "f6f09b8db2689404",
+  "notifiedAt": "2026-09-05T07:09:11.624Z"
+}
