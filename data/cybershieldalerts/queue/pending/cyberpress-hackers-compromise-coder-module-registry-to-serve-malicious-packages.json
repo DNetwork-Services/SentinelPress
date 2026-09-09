@@ -1,7 +1,7 @@
 {
   "id": "cyberpress-hackers-compromise-coder-module-registry-to-serve-malicious-packages",
   "accountId": "cybershieldalerts",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "CyberPress",
     "category": "News"
@@ -16,6 +16,33 @@
   },
   "score": 0.9977808024691358,
   "selectedAt": "2026-09-08T07:22:59.040Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Your dev environment could be at risk! 🚨\n\nCoder's module registry was compromised, serving malicious packages to users who downloaded Terraform templates on August 31, 2026. This supply chain attack aimed to steal credentials from cloud, CI/CD, and AI tooling environments. If affected, update Coder versions and rotate exposed credentials immediately.\n\nSave this post & follow @CyberShieldAlerts for daily threat intel!",
+    "script": "Hackers breached Coder's module registry, potentially exposing your sensitive credentials! An unidentified threat actor compromised Coder's Cloudflare infrastructure, distributing trojanized artifacts to a subset of users. If you downloaded or updated Terraform-based template components from registry.coder.com on August 31, 2026, between 7:35 AM and 9:45 PM UTC, you could be affected. The malicious packages aimed to discover and exfiltrate cloud, CI/CD, AI tooling, and user authentication credentials to a lookalike domain. Update your Coder deployment to a patched version immediately. Crucially, purge all potentially malicious cached Terraform modules *before* updating. Then, rotate *all* credentials accessible by provisioners and inspect your firewall and DNS logs for outbound traffic to coder-infra[.]com.",
+    "hashtags": [],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Coder Supply-Chain",
+        "headlineRest": "Compromise Exposes User Credentials",
+        "body": "Coder has disclosed a critical supply-chain compromise after an unidentified threat actor gained access to its Cloudflare infrastructure and distributed malicious packages. This intrusion, occurring on August 31, 2026, aimed to steal credentials from affected cloud, CI/CD, and AI tooling environments. The malicious code could access environment variables, SSH keys, OIDC tokens, and potentially Coder configuration variables depending on execution context. Users who downloaded or updated Terraform-based templates during the exposure window are at risk. Administrators must update to patched Coder versions (2.37.0+) *after* removing cached malicious modules, inspect logs for suspicious traffic, and rotate all potentially exposed credentials.",
+        "hindiSummary": "कोडर मॉड्यूल रजिस्ट्री में सेंधमारी हुई, जिससे उपयोगकर्ताओं के क्रेडेंशियल चोरी होने का खतरा है।",
+        "imageQuery": "Supply chain attack data theft"
+      }
+    ],
+    "generatedAt": "2026-09-09T07:32:04.819Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-hackers-compromise-coder-module-registry-to-serve-malicious-packages-slide-01.png"
+    ],
+    "renderedAt": "2026-09-09T07:34:21.879Z",
+    "reelVideo": "cyberpress-hackers-compromise-coder-module-registry-to-serve-malicious-packages-reel.mp4",
+    "reelDurationSeconds": 54.682993,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "0baee77acebf2f1c",
+  "notifiedAt": "2026-09-09T07:36:42.622Z"
 }
