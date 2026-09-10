@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-second-conditional",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Grammar"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-09-09T07:31:11.671Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever dreamt about what you'd do if you won the lottery? 🤩 That's the Second Conditional! We use it for unlikely or hypothetical present/future situations. The structure is simple: If + past simple, ... would + base verb. So it's 'If I won the lottery, I would travel the world,' NOT 'If I would win.' Keep that 'would' out of the 'if' clause! 😉\n\nSave this tip for later & follow @theenglishvault for daily English lessons!",
+    "script": "If I would win... Ye galti aapne bhi kari hogi, right? Dekho, English mein ek hota hai Second Conditional. Ise hum use karte hain for hypothetical ya unlikely situations jo present ya future mein ho sakti hain. Iska correct structure hai: If, then past simple, aur uske baad, would + base verb. Jaise, 'If I won the lottery, I would travel the world.' Matlab, agar main lottery jeet jata, toh poori duniya ghoomta. Par bohot log galti karte hain. 'If I would win' bol dete hain. Remember, if-clause mein 'would' kabhi nahi aata. Always past simple! Toh ab yaad rakhna, hypothetical situations ke liye, 'if' ke saath hamesha past simple use karna hai. No 'would' in the if-clause! Simple! Comment karke batao aapne ye galti ki hai ya nahi! Aur aise hi English tips ke liye The English Vault ko follow karna mat bhoolna!",
+    "hashtags": [
+      "secondconditional",
+      "englishconditionals",
+      "englishgrammar",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Second Conditional",
+        "headlineRest": "— Master Hypothetical Situations",
+        "body": "The Second Conditional is used to talk about hypothetical or unlikely situations in the present or future. Its structure is 'If + past simple, ... would + base verb'. For instance, 'If I won the lottery, I would travel the world' means winning is unlikely, but if it happened, traveling would be the result. A common error is using 'would' in the 'if'-clause, like 'If I would win the lottery'. Remember, the 'if'-clause always uses the past simple, not 'would'.",
+        "hindiSummary": "यह किसी काल्पनिक या असंभव वर्तमान या भविष्य की स्थिति के बारे में बात करने के लिए इस्तेमाल किया जाता है।",
+        "imageQuery": "person imagining possibilities"
+      }
+    ],
+    "generatedAt": "2026-09-10T07:37:06.945Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-second-conditional-slide-01.png"
+    ],
+    "renderedAt": "2026-09-10T07:39:24.565Z",
+    "reelVideo": "the-english-vault-curriculum-second-conditional-reel.mp4",
+    "reelDurationSeconds": 69.912,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "e7be359a2c2c509c",
+  "notifiedAt": "2026-09-10T07:44:28.481Z"
 }
