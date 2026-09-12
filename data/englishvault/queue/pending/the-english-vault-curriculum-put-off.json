@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-put-off",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Phrasal Verbs"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-09-11T07:25:42.932Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever found yourself delaying tasks? Don't just \"delay\" – learn to \"put off\"!\n\nThis useful phrasal verb means to postpone something. For example: *We had to put off the meeting until next week.* It can also mean making someone dislike something. Imagine: *The bad reviews put me off that restaurant.*\n\nSave this handy lesson and follow @EnglishVault for more daily English insights!",
+    "script": "Kya aapko bhi 'put off' ka matlab sirf postpone karna lagta hai? Agar haan, toh suno. 'Put off' ke do main meanings hain. Pehla, jab aap kisi cheez ko postpone ya delay karte ho. Jaise, 'We had to put off the meeting until next week.' Matlab meeting ko aage badha diya. Aur iska dusra matlab hai to make someone dislike something. Matlab, kisi ko kisi cheez se na pasand karwana ya door kar dena. Toh next time, 'put off' ka matlab yaad rakhna. Ya toh postpone karna, ya kisi cheez ko na pasand karwana. Samajh aaya? Comment mein batao, ye tip aapko kaisi lagi? Aur follow karo The English Vault for more such easy English tips!",
+    "hashtags": [
+      "putoff",
+      "phrasalverbs",
+      "englishvocabulary",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Put off",
+        "headlineRest": "— Two Important Meanings",
+        "body": "The versatile phrasal verb 'put off' primarily means to postpone or delay something. For example, 'We had to put off the meeting until next week.' This phrasal verb is separable, so 'put the meeting off' is also grammatically correct. Additionally, 'put off' can mean to cause someone to dislike something or lose interest. If 'The bad reviews put me off that restaurant,' it means the reviews made me not want to go there anymore.",
+        "hindiSummary": "\"Put off\" का अर्थ है किसी काम को टालना या किसी को किसी चीज़ से विमुख करना।",
+        "imageQuery": "person putting off task"
+      }
+    ],
+    "generatedAt": "2026-09-12T07:18:53.902Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-put-off-slide-01.png"
+    ],
+    "renderedAt": "2026-09-12T07:19:24.709Z",
+    "reelVideo": "the-english-vault-curriculum-put-off-reel.mp4",
+    "reelDurationSeconds": 54.312,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "d9efcee27488cf25",
+  "notifiedAt": "2026-09-12T07:23:23.104Z"
 }
