@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-revolut-data-breach-exposes-customers8217-passport-copies-an",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Revolut Data Breach Exposes Customers&#8217; Passport Copies and Full Transaction Histories to Hackers",
+    "link": "https://cybersecuritynews.com/revolut-data-breach/",
+    "description": "Revolut has disclosed a data-security incident in which sensitive customer information was released after the financial technology company received a fraudulent request that appeared to originate from a legitimate government agency. The incident reportedly exposed highly sensitive Know Your Customer (KYC) documentation and detailed financial records belonging to a limited number of users, including passport [&#8230;] The post Revolut Data Breach Exposes Customers&#8217; Passport Copies and Full Transaction Histories to Hackers appeared first on Cyber Security News.",
+    "content": "Revolut has disclosed a data-security incident in which sensitive customer information was released after the financial technology company received a fraudulent request that appeared to originate from a legitimate government agency. The incident reportedly exposed highly sensitive Know Your Customer (KYC) documentation and detailed financial records belonging to a limited number of users, including passport or driver’s license copies, identity-verification selfies, account statements, and complete transaction histories that included Bitcoin-related activity. According to Revolut’s explanation, the disclosure did not result from a compromise of its core systems, mobile application, or customer accounts. Instead, the company said it was targeted through a sophisticated impersonation operation involving an unauthorized email account operating under an official government agency’s email domain. Because the message carried valid domain-authentication credentials, Revolut believed it was handling an authentic legal or government information request and fulfilled it. The response provided extensive information. It included customers’ full names, dates of birth, occupations, postal addresses, email addresses, and telephone numbers. The exposed document and verification data reportedly included copies of identity documents, such as passports and driving licenses, along with facial-verification images submitted during onboarding. Revolut highlighted that biometric facial telemetry was not involved or compromised, although the loss of document scans and verification selfies could still create serious identity-theft and impersonation risks for affected individuals. Financial data included account statements containing IBANs, account status information, account-opening dates, wallet reference numbers, withdrawal records, and full transaction histories. The inclusion of cryptocurrency transaction records, including Bitcoin activity, is particularly sensitive because it could help criminals profile victims’ wealth, trading behavior, wallet usage, and potential exposure to targeted scams. Revolut described the event as a sophisticated social-engineering attack rather than a breach of its internal infrastructure. The company said it moved quickly to block the unauthorized email source, notify relevant authorities, and contact affected customers. It also maintained that customer funds remained safe and that its systems were not compromised. However, the incident has triggered renewed concern over the security implications of mandatory KYC data collection across banks, fintech platforms, and cryptocurrency services. On-chain investigator ZachXBT and other cryptocurrency community figures highlighted claims that the operation targeted high-net-worth users, a group that faces elevated risks of phishing, SIM-swapping, extortion, physical threats, and highly tailored cryptocurrency theft attempts. For impacted Revolut customers, the combination of identity documents, contact details, account information, and transaction history could provide attackers with the material needed to construct convincing social-engineering lures. Fraudsters may impersonate Revolut support staff, law-enforcement agencies, exchanges, or tax authorities while using personal information to make messages appear legitimate. The case also demonstrates how trusted email domains can be abused when an attacker gains access to, or misuses, a legitimate organization’s mail infrastructure. Even properly authenticated email can be malicious when the sender account itself is unauthorized. The incident underscores the need for organizations handling sensitive customer records to independently validate high-risk information requests through out-of-band channels, rather than relying solely on domain authentication or sender identity. Learn 7 Metric-Gated AI SOC Deployment Phases &#8211; Download Free AI SOC Deployment Playbook 2026. The post Revolut Data Breach Exposes Customers&#8217; Passport Copies and Full Transaction Histories to Hackers appeared first on Cyber Security News.",
+    "pubDate": "Sun, 13 Sep 2026 05:09:27 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/09/Revolut-Data-Breach.webp"
+  },
+  "score": 0.9864003842592592,
+  "selectedAt": "2026-09-13T07:36:19.552Z",
+  "generated": {
+    "caption": "Identity theft risk just got real for some Revolut users.\n\nRevolut experienced a data security incident where a sophisticated impersonation scam led to sensitive customer data being released. This included passport copies, transaction histories (even crypto), and personal details for a limited number of users. The exposure creates serious risks for identity theft and targeted scams.\n\nSave this post to stay informed. Share with friends! Follow @CyberShieldAlerts for daily updates.",
+    "script": "Revolut data breach exposes customer passport copies and full transaction histories to hackers. The financial tech company released sensitive information after a sophisticated social engineering attack. Hackers used a fraudulent request impersonating a government agency, tricking Revolut into fulfilling it. Exposed data includes copies of passports, driver's licenses, identity verification selfies, full names, contact details, and all your transaction history, even Bitcoin activity. This puts affected users at severe risk of identity theft, impersonation, and highly targeted cryptocurrency scams based on their wealth profile. Revolut says core systems weren't compromised, but this highlights how easily trusted email domains can be abused. Stay vigilant and be aware of personalized phishing attempts.",
+    "hashtags": [
+      "revolut",
+      "socialengineering",
+      "kycexposed",
+      "cybersecurity",
+      "identitytheft"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Revolut",
+        "headlineRest": "Data Breach Exposes Passport Copies & Transaction Histories",
+        "body": "Revolut has disclosed a data security incident where sensitive customer information was released due to a sophisticated impersonation operation, not a compromise of its core systems. A fraudulent request, appearing to be from a legitimate government agency, led Revolut to disclose highly sensitive Know Your Customer (KYC) documentation and detailed financial records for a limited number of users. This exposed data includes passport copies, identity verification selfies, account statements, and complete transaction histories, including cryptocurrency activity. This incident poses serious identity theft and impersonation risks, particularly for high-net-worth individuals who may face increased threats of phishing and targeted scams. Organizations are advised to validate high-risk information requests through out-of-band channels.",
+        "hindiSummary": "रेवोल्यूट (Revolut) में एक डेटा सुरक्षा घटना के कारण ग्राहकों के पासपोर्ट और वित्तीय लेनदेन का विवरण उजागर हुआ है।",
+        "imageQuery": "digital identity theft risk"
+      }
+    ],
+    "generatedAt": "2026-09-13T07:36:39.865Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-revolut-data-breach-exposes-customers8217-passport-copies-an-slide-01.png"
+    ],
+    "renderedAt": "2026-09-13T07:37:13.484Z",
+    "reelVideo": "cyber-security-news-revolut-data-breach-exposes-customers8217-passport-copies-an-reel.mp4",
+    "reelDurationSeconds": 47.798277,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "95e0f80d43b3e46b",
+  "notifiedAt": "2026-09-13T07:39:33.520Z"
+}
