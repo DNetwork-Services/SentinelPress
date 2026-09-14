@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-critical-aws-flaw-lets-attackers-bypass-port-forwarding-restrictions",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Critical AWS Flaw Lets Attackers Bypass Port Forwarding Restrictions and Steal IAM Credentials",
+    "link": "https://cyberpress.org/critical-aws-flaw/",
+    "description": "A critical vulnerability in the AWS Systems Manager (SSM) Agent could allow authorized attackers to bypass Session Manager port-forwarding restrictions, access link-local services, and steal temporary IAM credentials assigned to Amazon EC2 instances. Tracked as CVE-2026-89049, the issue affects AWS Systems Manager Agent versions earlier than 3.3.4851.0. GitHub Security Advisory GHSA-w9jw-h72g-6hxc3 classifies the flaw as [&#8230;] The post Critical AWS Flaw Lets Attackers Bypass Port Forwarding Restrictions and Steal IAM Credentials appeared first on Cyber Security News.",
+    "content": "A critical vulnerability in the AWS Systems Manager (SSM) Agent could allow authorized attackers to bypass Session Manager port-forwarding restrictions, access link-local services, and steal temporary IAM credentials assigned to Amazon EC2 instances. Tracked as CVE-2026-89049, the issue affects AWS Systems Manager Agent versions earlier than 3.3.4851.0. GitHub Security Advisory GHSA-w9jw-h72g-6hxc3 classifies the flaw as critical, with a CVSS v3.1 score reflecting network accessibility, low attack complexity, low privilege requirements, no user interaction, and high impact. Critical AWS Flaw The vulnerability exists in the AWS-StartPortForwardingSessionToRemoteHost capability of AWS Session Manager. SSM Agent runs on managed AWS nodes and enables administrators and authorized users to establish remote management sessions without exposing SSH or RDP services directly to the internet. Session Manager’s remote-host port-forwarding feature includes restrictions intended to prevent users from tunneling traffic to link-local addresses. These addresses are particularly sensitive in AWS environments because the EC2 Instance Metadata Service (IMDS) is typically reachable through the link-local address 169.254.169.254. According to AWS, the SSM Agent did not properly validate equivalent representations of blocked destination addresses. An attacker could use an alternative IP address representation to evade the denylist, causing the agent to establish a connection to a link-local endpoint that should have been blocked. The flaw is categorized as CWE-918, or Server-Side Request Forgery, and CWE-1289, improper validation of unsafe equivalence in input. The weakness effectively turns the managed instance into a proxy that can access internal destinations on behalf of a Session Manager user. An authenticated principal with permission to start remote-host port-forwarding sessions could exploit the flaw to query the Instance Metadata Service. If the affected EC2 instance has an attached IAM role, the attacker may retrieve the role’s temporary AWS access credentials. These credentials can be used outside the compromised instance to make AWS API calls permitted by the instance profile’s IAM policy. The practical impact therefore depends heavily on the permissions attached to the EC2 role. For example, an instance profile with permissions to read Amazon S3 buckets, retrieve AWS Secrets Manager values, enumerate IAM resources, or access databases could give an attacker a path to wider cloud-account compromise. Although exploitation requires authenticated access and Session Manager permissions, organizations should not treat the issue as low priority. SSM access is commonly delegated to developers, operations teams, automation accounts, and third-party support personnel. Patch and Mitigation AWS has addressed the vulnerability in SSM Agent version 3.3.4851.0. Organizations should upgrade affected managed nodes immediately and ensure internally maintained forks or derivative implementations incorporate the fix. Until upgrades are complete, defenders should restrict access to the AWS-StartPortForwardingSessionToRemoteHost SSM document. IAM policies should limit ssm:StartSession permissions to trusted administrators and tightly scoped operational roles. Security teams should also review CloudTrail logs for unexpected Session Manager activity, particularly remote-host port-forwarding sessions initiated by unusual users, roles, source IPs, or automation identities. Detect 58% more threats with fresh intelligence from 16K+ organizations. Integrate TI Feeds in you SOC The post Critical AWS Flaw Lets Attackers Bypass Port Forwarding Restrictions and Steal IAM Credentials appeared first on Cyber Security News.",
+    "pubDate": "Mon, 14 Sep 2026 06:23:36 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/09/critical-aws-flaw-lets-attackers-bypass-port-forwarding-restrictions-and-steal-iam-credentials-6aa78bc2a2ce9.webp"
+  },
+  "score": 0.9907862191358024,
+  "selectedAt": "2026-09-14T08:03:06.531Z",
+  "generated": {
+    "caption": "🚨 Heads up, AWS users! A critical flaw in AWS Systems Manager Agent allows attackers to bypass security features. This lets them steal temporary credentials from your EC2 instances, potentially giving them access to sensitive cloud data like S3 buckets or databases. Upgrade your SSM Agent today.\n\nSave this post & follow @CyberShieldAlerts for daily updates!",
+    "script": "Your AWS EC2 instances could be leaking critical IAM credentials! A severe vulnerability, CVE-2026-89049, has been found in the AWS Systems Manager Agent. This critical flaw allows authorized attackers to bypass Session Manager port-forwarding restrictions. The agent failed to properly validate blocked destination addresses, effectively turning your managed instance into a proxy. Attackers can then query the EC2 Instance Metadata Service, steal temporary IAM credentials, and potentially gain wide access to your cloud environment, including S3 buckets or Secrets Manager. While exploitation requires authenticated access, SSM permissions are often broadly delegated across teams, making this a serious concern. Upgrade your AWS Systems Manager Agent to version 3.3.4851.0 or newer immediately to patch this vulnerability.",
+    "hashtags": [
+      "aws",
+      "ssmagent",
+      "iamcredentials",
+      "cloudsecurity",
+      "vulnerability"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Critical AWS Flaw",
+        "headlineRest": "Allows Credential Theft and Restriction Bypass",
+        "body": "A critical vulnerability in the AWS Systems Manager (SSM) Agent allows authorized attackers to bypass port-forwarding restrictions. This flaw enables access to sensitive link-local services and the theft of temporary IAM credentials from Amazon EC2 instances. These stolen credentials can be used to make AWS API calls, potentially leading to broader cloud-account compromise depending on the instance's permissions. Organizations must immediately upgrade their SSM Agent to version 3.3.4851.0 or later. Additionally, restrict `ssm:StartSession` permissions and monitor CloudTrail logs for suspicious Session Manager activity.",
+        "hindiSummary": "AWS में एक गंभीर सुरक्षा खामी से हमलावर IAM क्रेडेंशियल चुरा सकते हैं।",
+        "imageQuery": "Cloud security vulnerability data breach"
+      }
+    ],
+    "generatedAt": "2026-09-14T08:05:37.747Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-critical-aws-flaw-lets-attackers-bypass-port-forwarding-restrictions-slide-01.png"
+    ],
+    "renderedAt": "2026-09-14T08:06:01.637Z",
+    "reelVideo": "cyberpress-critical-aws-flaw-lets-attackers-bypass-port-forwarding-restrictions-reel.mp4",
+    "reelDurationSeconds": 55.518912,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "206f9dde5eb3daa7",
+  "notifiedAt": "2026-09-14T08:09:05.283Z"
+}
