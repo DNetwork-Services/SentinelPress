@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-critical-docker-sandboxes-flaw-lets-malicious-guests-escape-isolation",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Critical Docker Sandboxes Flaw Lets Malicious Guests Escape Isolation and Access Host Files",
+    "link": "https://cyberpress.org/critical-docker-sandboxes-flaw/",
+    "description": "Docker has released security fixes for two serious vulnerabilities in Docker Sandboxes that could allow a malicious guest environment to break workspace isolation and reach sensitive host-side resources. The flaws, tracked as CVE-2026-77179 and CVE-2026-79994, were fixed in Docker Sandboxes version 0.42.0, released on September 7. Docker Sandboxes isolate development agents, automated workflows, and untrusted [&#8230;] The post Critical Docker Sandboxes Flaw Lets Malicious Guests Escape Isolation and Access Host Files appeared first on Cyber Security News.",
+    "content": "Docker has released security fixes for two serious vulnerabilities in Docker Sandboxes that could allow a malicious guest environment to break workspace isolation and reach sensitive host-side resources. The flaws, tracked as CVE-2026-77179 and CVE-2026-79994, were fixed in Docker Sandboxes version 0.42.0, released on September 7. Docker Sandboxes isolate development agents, automated workflows, and untrusted workloads while allowing selective access to a host workspace. Critical Docker Sandboxes Flaw However, both newly disclosed issues stem from a time-of-check-to-time-of-use (TOCTOU) weakness involving filesystem path validation. In both cases, Docker Sandboxes validated that a requested pathname belonged to an approved shared workspace. A malicious process inside the sandbox could then alter part of that path, such as by replacing a directory with a symbolic link, before the host performed the subsequent file or socket operation. CVE-2026-77179 is the most severe issue and carries a Critical severity rating. It affects Docker Sandboxes versions 0.28.0 through versions prior to 0.42.0 on macOS. The vulnerability exists in the macOS virtio-fs host server, which could incorrectly follow symbolic links when reopening an unlinked file using a previously stored path. An attacker controlling code within a guest sandbox could race the host operation by replacing a parent directory after the original path had passed authorization checks. This could redirect a host-side file operation outside the intended shared directory. According to Docker, successful exploitation may allow a malicious guest to read or modify arbitrary files that are accessible to the virtual machine monitor (VMM) user. In certain environments, that level of access could potentially be leveraged toward host code execution. The risk is especially relevant to AI-assisted development and automated coding environments, where sandboxes may process untrusted repositories, generated scripts, third-party packages, or dependency installation routines. The second issue, CVE-2026-79994, is rated High and affects Docker Sandboxes versions 0.37.0 through versions before 0.42.0. This vulnerability impacts the guest-to-host Unix domain socket relay. While the relay initially confirmed that a requested socket path resided in an authorized workspace, it later connected using the original path string. A malicious guest could replace an intermediate directory with a symbolic link between validation and connection. As a result, the host could be redirected to an arbitrary AF_UNIX socket outside the approved workspace. Depending on the targeted local service, the flaw could expose sensitive data or enable unintended interactions with privileged host-side applications, developer tools, or platform services. CVEProduct / ComponentSeverityAffected VersionsSecurity ImpactFixed VersionCVE-2026-77179Docker Sandboxes virtio-fs host server on macOSCritical0.28.0 to before 0.42.0Symlink race enables workspace escape, arbitrary VMM-user file read/write, and possible host code execution0.42.0CVE-2026-79994Docker Sandboxes guest-to-host Unix socket relayHigh0.37.0 to before 0.42.0Symlink race can redirect host connections to unauthorized AF_UNIX sockets0.42.0CVE-2026-17106Docker Desktop docker container cpNot statedBefore 4.86.0Destination-escape flaw4.86.0CVE-2026-5843Docker Model Runner MLX backendNot statedBefore 4.71.0Container-to-host code execution4.71.0CVE-2026-5817Docker Model Runner vllm-metal backendNot statedBefore 4.68.0Container-to-host code execution4.68.0CVE-2026-33990Docker Model Runner OCI Registry ClientNot statedBefore 4.67.0Server-side request forgery4.67.0CVE-2026-28400Docker Model RunnerNot statedBefore 4.62.0Runtime flag injection4.62.0CVE-2026-2664gRPC-FUSE kernel moduleNot statedBefore 4.62.0Out-of-bounds read4.62.0 Organizations should immediately upgrade Docker Sandboxes to version 0.42.0 or later. Docker Sandboxes 0.43.0 also includes additional security hardening and workspace-related improvements. Until updates can be deployed, teams should use clone mode where possible and avoid read-write host mounts. Security teams should minimize shared directories, keep credentials and sensitive repositories outside mounted workspaces, and treat sandboxes processing untrusted code as potentially hostile. Join 16,000+ SOC teams using ANY.RUN to streamline threat investigations and reduce manual effort. Explore for your team The post Critical Docker Sandboxes Flaw Lets Malicious Guests Escape Isolation and Access Host Files appeared first on Cyber Security News.",
+    "pubDate": "Thu, 17 Sep 2026 07:49:31 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/09/critical-docker-sandboxes-flaw-lets-malicious-guests-escape-isolation-and-access-host-files-6aab98603ca91.webp"
+  },
+  "score": 0.999447461419753,
+  "selectedAt": "2026-09-17T07:55:29.046Z",
+  "generated": {
+    "caption": "Heads up, developers! A critical Docker flaw could put your AI-assisted projects at risk. Docker has fixed serious vulnerabilities in Docker Sandboxes that allowed malicious code to break out of isolation and access sensitive files on your host system. This is especially relevant for AI development and automated coding. Update your Docker Sandboxes to version 0.42.0 immediately.\n\nSave this post & share with your team. Follow @CyberShieldAlerts for daily threat intel!",
+    "script": "Malicious guests could escape Docker Sandboxes! Two critical flaws let attackers break isolation and access your host files. Docker just patched serious vulnerabilities, CVE-2026-77179 and CVE-2026-79994, in Docker Sandboxes. These flaws, especially critical on macOS, exploited a time-of-check-to-time-of-use weakness. Attackers could redirect file operations or socket connections outside approved workspaces by racing symbolic link changes. This means they could read or modify sensitive data, even leading to host code execution. This is especially risky for AI development and automated coding environments handling untrusted code. Immediately upgrade Docker Sandboxes to version 0.42.0 or later. Minimize shared directories and avoid read-write host mounts until updated.",
+    "hashtags": [
+      "dockersandboxes",
+      "workspaceescape",
+      "symlinkrace",
+      "cybersecurity",
+      "vulnerability"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Critical Docker Sandboxes Flaw",
+        "headlineRest": "Lets Malicious Guests Escape Isolation and Access Host Files",
+        "body": "Docker has issued crucial security fixes for two serious vulnerabilities in Docker Sandboxes, identified as CVE-2026-77179 (Critical) and CVE-2026-79994 (High). These flaws could enable a malicious guest environment to bypass workspace isolation, granting access to sensitive host-side resources. The most severe issue, affecting macOS, could lead to arbitrary file read/write and potentially host code execution, particularly impacting AI-assisted development environments. Organizations are strongly advised to upgrade Docker Sandboxes to version 0.42.0 or later immediately. Until patched, teams should use clone mode, avoid read-write host mounts, and minimize shared directories to mitigate risks.",
+        "hindiSummary": "डॉकर सैंडबॉक्स में गंभीर खामियाँ ठीक की गईं, जो दुर्भावनापूर्ण मेहमानों को होस्ट फ़ाइलों तक पहुँचने की अनुमति देती थीं।",
+        "imageQuery": "Digital sandbox escape security"
+      }
+    ],
+    "generatedAt": "2026-09-17T07:56:06.176Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-critical-docker-sandboxes-flaw-lets-malicious-guests-escape-isolation-slide-01.png"
+    ],
+    "renderedAt": "2026-09-17T07:58:57.629Z",
+    "reelVideo": "cyberpress-critical-docker-sandboxes-flaw-lets-malicious-guests-escape-isolation-reel.mp4",
+    "reelDurationSeconds": 54.682993,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "a98ecd70eab9bcf4",
+  "notifiedAt": "2026-09-17T08:02:14.762Z"
+}
