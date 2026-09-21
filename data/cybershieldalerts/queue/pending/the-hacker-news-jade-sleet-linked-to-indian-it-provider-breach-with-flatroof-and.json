@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-jade-sleet-linked-to-indian-it-provider-breach-with-flatroof-and",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Jade Sleet Linked to Indian IT Provider Breach With FLATROOF and ROOFDECK Backdoors",
+    "link": "https://thehackernews.com/2026/09/jade-sleet-linked-to-indian-it-provider.html",
+    "description": "The North Korean threat actor known as Jade Sleet has been attributed to the compromise of an India-based \"much smaller organization\" in the information technology (IT) services industry, once again highlighting how the adversary continues to target developers to breach target networks. Cybersecurity company SentinelOne, which disclosed details of the activity, said it involved the use of Apple",
+    "content": "",
+    "pubDate": "Mon, 21 Sep 2026 11:36:44 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi-xFiujwBJLdl6_4wZSMCWdeyCgev2EqszOLkIJ5I9Kbanu6YNmQ36nM615XmLQ-sq2aqldOHfl47jaMNRtDd80RT8k5f6I7eQuszf7wsIg49sEdMW36hsEKUtVUkZabRlGvvDxn7H7COmRCV8qP2pzQm9LNo5QKRnnptxmxTlJ8BMcPxuiqdaMjn-are0/s1600/it-services.jpg"
+  },
+  "score": 0.9887407160493827,
+  "selectedAt": "2026-09-21T08:08:20.017Z",
+  "generated": {
+    "caption": "Your data could be at risk if the companies you trust are compromised.\n\nNorth Korean group Jade Sleet breached an Indian IT provider, using backdoors called FLATROOF and ROOFDECK. This highlights their tactic of targeting developers to infiltrate other networks.\n\nStay vigilant! Save and share this post, and follow @CyberShieldAlerts for daily updates.",
+    "script": "Supply chain alert! North Korean hackers just breached an IT services provider. The threat actor, known as Jade Sleet, compromised an India-based IT services organization. They used advanced backdoors named FLATROOF and ROOFDECK to gain access. This highlights a dangerous trend: targeting smaller IT firms and their developers to breach larger systems and networks. Protect your networks. Update your security protocols and secure your developer environments now.",
+    "hashtags": [
+      "jadesleet",
+      "flatroof",
+      "roofdeck",
+      "cyberattack",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Jade Sleet",
+        "headlineRest": "Linked to Indian IT Provider Breach",
+        "body": "The North Korean threat actor known as Jade Sleet has been attributed to the compromise of an India-based IT services provider. This incident, disclosed by cybersecurity company SentinelOne, highlights the adversary's ongoing strategy to target developers to breach networks. The activity reportedly involved the use of Apple technologies in the attack. This emphasizes the critical need for robust security measures within the IT services industry, especially for smaller organizations.",
+        "hindiSummary": "उत्तर कोरियाई खतरा अभिनेता जेड स्लीट ने एक भारतीय आईटी प्रदाता को हैक कर लिया है।",
+        "imageQuery": "North Korean cyber attack India"
+      }
+    ],
+    "generatedAt": "2026-09-21T08:09:33.559Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-jade-sleet-linked-to-indian-it-provider-breach-with-flatroof-and-slide-01.png"
+    ],
+    "renderedAt": "2026-09-21T08:09:58.609Z",
+    "reelVideo": "the-hacker-news-jade-sleet-linked-to-indian-it-provider-breach-with-flatroof-and-reel.mp4",
+    "reelDurationSeconds": 27.678186,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "645cd0b010727db9",
+  "notifiedAt": "2026-09-21T08:13:00.083Z"
+}
