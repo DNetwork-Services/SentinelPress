@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-wordpress-comment2shell-flaw-can-turn-anonymous-comment-xss-into",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "WordPress Comment2Shell Flaw Can Turn Anonymous Comment XSS Into RCE via Admin Session",
+    "link": "https://thehackernews.com/2026/09/wordpress-comment2shell-flaw-can-turn.html",
+    "description": "A new flaw in WordPress core let an anonymous visitor leave a comment that planted a hidden script on the page. If a logged-in administrator later opened that page, the script could run code on the site's server. WordPress fixed the flaw, tracked as CVE-2026-93485 and dubbed \"Comment2Shell,\" on September 17 in version 7.1.1 and told site owners to update right away. There is",
+    "content": "",
+    "pubDate": "Tue, 22 Sep 2026 11:33:14 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiPBWV1XNsTGB5ImLNRGJTygk0-82k7xTHmuOr7lTivRRDcF83ddu4jLOpdkQYMq7VB3j5SMpA9zBRvM3-SUkDLBhN5-j-Z6UltcTnVfXOxHDzfBYWiw_fRiRefAYa1XSiFu5JMzb06dwqV4PhKaZkPt3vKZFHQjdVFUgbr2B3nOEoFs_qHe6zwGayHM2I/s1600/wordpress-comment.jpg"
+  },
+  "score": 0.9898155370370371,
+  "selectedAt": "2026-09-22T07:53:13.533Z",
+  "generated": {
+    "caption": "Imagine a comment on your website giving hackers full control.\n\nA critical flaw, dubbed \"Comment2Shell,\" let anonymous users plant hidden scripts in comments. If a logged-in admin viewed it, the script could run code on the site's server. WordPress fixed this in version 7.1.1 on Sept 17. Update immediately!\n\nSave this post & share with fellow site owners! Follow @CyberShieldAlerts for daily updates.",
+    "script": "Your WordPress site could be hacked just by someone leaving a comment. A critical new flaw, dubbed 'Comment2Shell,' allowed an anonymous visitor to plant a hidden script within a comment. If a logged-in administrator later opened that page, this script could run code directly on your site's server, turning simple comment XSS into full Remote Code Execution. WordPress fixed this vulnerability, tracked as CVE-2026-93485, on September 17th. You need to update your WordPress site to version 7.1.1 immediately to protect against this threat.",
+    "hashtags": [
+      "wordpress",
+      "comment2shell",
+      "rce",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Comment2Shell",
+        "headlineRest": "Flaw in WordPress Could Lead to Remote Code Execution",
+        "body": "A recently discovered vulnerability, dubbed \"Comment2Shell,\" in WordPress core allowed anonymous visitors to plant hidden scripts via comments. If a logged-in administrator later viewed the affected page, the script could execute code on the site's server, potentially leading to Remote Code Execution (RCE).\n\nThis flaw posed a significant risk, allowing unauthorized command execution on vulnerable sites. WordPress addressed this critical issue in version 7.1.1 on September 17.\n\nSite owners are strongly advised to update their WordPress installations immediately to protect against potential exploitation.",
+        "hindiSummary": "वर्डप्रेस में 'कमेंट2शेल' नामक एक बड़ी खामी पाई गई थी जो अज्ञात टिप्पणियों के माध्यम से रिमोट कोड एग्जीक्यूशन का कारण बन सकती थी; इसे ठीक कर दिया गया है, इसलिए तुरंत अपडेट करें।",
+        "imageQuery": "WordPress security vulnerability fix"
+      }
+    ],
+    "generatedAt": "2026-09-22T07:53:38.118Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-wordpress-comment2shell-flaw-can-turn-anonymous-comment-xss-into-slide-01.png"
+    ],
+    "renderedAt": "2026-09-22T07:54:14.131Z",
+    "reelVideo": "the-hacker-news-wordpress-comment2shell-flaw-can-turn-anonymous-comment-xss-into-reel.mp4",
+    "reelDurationSeconds": 33.796644,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "bad2442974f77d2d",
+  "notifiedAt": "2026-09-22T07:56:01.258Z"
+}
