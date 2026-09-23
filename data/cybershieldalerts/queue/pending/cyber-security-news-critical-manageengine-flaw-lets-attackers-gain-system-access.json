@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-critical-manageengine-flaw-lets-attackers-gain-system-access",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Critical ManageEngine Flaw Lets Attackers Gain SYSTEM Access Through Windows Login Screen",
+    "link": "https://cybersecuritynews.com/critical-manageengine-flaw/",
+    "description": "ManageEngine has fixed a critical remote code execution vulnerability in ADSelfService Plus that could allow an unauthenticated attacker to run code as NT AUTHORITY\\SYSTEM through a Windows device’s login screen. The flaw, tracked as CVE-2026-74849, affects the product’s GINA client in builds 7000 and earlier. Organizations should upgrade to build 7001 or later immediately. The [&#8230;] The post Critical ManageEngine Flaw Lets Attackers Gain SYSTEM Access Through Windows Login Screen appeared first on Cyber Security News.",
+    "content": "ManageEngine has fixed a critical remote code execution vulnerability in ADSelfService Plus that could allow an unauthenticated attacker to run code as NT AUTHORITY\\SYSTEM through a Windows device’s login screen. The flaw, tracked as CVE-2026-74849, affects the product’s GINA client in builds 7000 and earlier. Organizations should upgrade to build 7001 or later immediately. The issue resides in the GINA client, a component that places ADSelfService Plus password-reset and account-unlock functions directly on the Windows logon screen. It presents these functions in an embedded kiosk-style browser before a user signs in, allowing employees to reset passwords or unlock accounts without reaching the Windows desktop. Critical ManageEngine Flaw According to ManageEngine’s advisory, an attacker with access to the Windows login screen could abuse the embedded browser to execute arbitrary code in the SYSTEM security context. SYSTEM is one of the most privileged local accounts on Windows. Code running under this context can modify protected files, create or alter user accounts, install services, turn off security tooling, access sensitive local data, and establish persistent control over the endpoint. The vulnerability is classified as a remote code execution issue in the GINA client. Public vulnerability records identify the underlying weakness as CWE-78, Improper Neutralization of Special Elements used in an OS Command, commonly known as OS command injection. The ManageEngine-assigned CVSS v3.1 score is 9.8 out of 10, rated Critical, with a network attack vector, low attack complexity, no privileges required, and no user interaction required. Although the vendor advisory describes exploitation as requiring access to the Windows logon screen, defenders should treat affected systems as high risk. Login-screen software operates before normal user authentication and may run with elevated permissions. A successful compromise could give an attacker complete control of a workstation or server hosting the vulnerable GINA component. CVE-2026-74849 affects ManageEngine ADSelfService Plus builds 7000 and below. ManageEngine resolved the issue in build 7001, released on August 24, 2026. The update corrects the application’s error handling and hardens the embedded browser exposed at the Windows login screen. Security teams should identify all endpoints using the ADSelfService Plus GINA client and confirm the installed product build. Any instance below build 7001 should be updated through ManageEngine’s ADSelfService Plus service pack process. Administrators should also review endpoint logs for unexpected processes, suspicious command execution, newly created services, changes to local administrator accounts, and unusual activity originating around logon-screen use. Where an immediate update is not possible, organizations should limit physical and remote access to affected Windows login screens, restrict exposure of the GINA-related service to untrusted networks, and closely monitor the affected hosts. These measures reduce exposure but do not replace the vendor update. Marouane Belabbassi and Amjad E Alhejaili reported the vulnerability through the Zoho BugBounty program. With a working pathway to SYSTEM-level code execution on vulnerable systems, patching remains the most important remediation step. Cut every SOC alert investigation by 21 min. Power your SOC with instant IOC context for immediate response: Integrate TI Lookup in your SOC The post Critical ManageEngine Flaw Lets Attackers Gain SYSTEM Access Through Windows Login Screen appeared first on Cyber Security News.",
+    "pubDate": "Wed, 23 Sep 2026 07:53:01 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/09/Critical-ManageEngine-Flaw-Lets-Attackers-Gain-SYSTEM-Access-Through-Windows-Login-Screen.webp"
+  },
+  "score": 0.9998356635802469,
+  "selectedAt": "2026-09-23T07:54:47.490Z",
+  "generated": {
+    "caption": "Your Windows login screen could be a gateway for attackers!\n\nA critical flaw in ManageEngine ADSelfService Plus allows unauthenticated attackers to gain full system control just from the login screen. This means they can modify files, create accounts, and even disable security tools. If you use builds 7000 or earlier, update to build 7001 immediately.\n\nStay safe! Save this post, share with your team, and follow @CyberShieldAlerts for daily security updates.",
+    "script": "Your Windows login screen could be giving attackers SYSTEM-level control! A critical flaw in ManageEngine ADSelfService Plus allows unauthenticated attackers to execute code with the highest privileges. This remote code execution vulnerability, CVE-2026-74849, targets the GINA client on builds 7000 and earlier. Attackers can exploit an embedded browser on the login screen, giving them complete control over your workstation or server. They could modify files, disable security, or even create new user accounts without ever logging in. Update your ManageEngine ADSelfService Plus to build 7001 or later immediately!",
+    "hashtags": [
+      "manageengine",
+      "adselfserviceplus",
+      "cve202674849",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "ManageEngine",
+        "headlineRest": "Critical Flaw Grants SYSTEM Access via Windows Login Screen",
+        "body": "A critical remote code execution vulnerability has been discovered in ManageEngine's ADSelfService Plus. This flaw, affecting the GINA client in builds 7000 and earlier, allows an unauthenticated attacker with access to the Windows login screen to execute code as NT AUTHORITY\\SYSTEM. Such highly privileged access grants complete control over affected endpoints, enabling attackers to modify files, create accounts, or disable security tools.\n\nOrganizations must immediately upgrade to build 7001 or later to patch the vulnerability. Additionally, security teams should identify all endpoints using the ADSelfService Plus GINA client, review logs for suspicious activity, and limit access to affected login screens if an immediate update is not feasible.",
+        "hindiSummary": "ManageEngine के ADSelfService Plus में एक गंभीर खामी मिली है, जिससे हमलावर Windows लॉगिन स्क्रीन के ज़रिए SYSTEM एक्सेस प्राप्त कर सकते हैं।",
+        "imageQuery": "hacker compromising login screen"
+      }
+    ],
+    "generatedAt": "2026-09-23T07:55:11.416Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-critical-manageengine-flaw-lets-attackers-gain-system-access-slide-01.png"
+    ],
+    "renderedAt": "2026-09-23T07:56:17.208Z",
+    "reelVideo": "cyber-security-news-critical-manageengine-flaw-lets-attackers-gain-system-access-reel.mp4",
+    "reelDurationSeconds": 40.228571,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "35e621d32445bb34",
+  "notifiedAt": "2026-09-23T08:00:23.403Z"
+}
