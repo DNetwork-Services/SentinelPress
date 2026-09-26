@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-look-forward-to",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Phrasal Verbs"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-09-25T08:05:35.769Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever felt unsure after saying \"I look forward to...\"? 🤔\n\nThis phrase means you're excited about something happening soon! Remember, the 'to' here is a preposition, so it's followed by a noun or an -ing verb (gerund), never a base verb.\n\nFor example: \"I'm looking forward to the weekend!\" or \"I look forward to seeing you!\" ✨\n\nSave this tip & follow @EnglishVault for daily lessons!",
+    "script": "I look forward to see you ya I look forward to seeing you? Ye confusion hota hai na?\n\nDekho, look forward to ka matlab hai kisi future event ke liye excited feel karna. Jaise, 'I'm looking forward to the weekend.' Matlab main weekend ka excited hoon. Yahaan pe jo 'to' hai na, wo ek preposition hai, not an infinitive. Toh iske baad hamesha ek noun ya fir verb ki -ing form yaani gerund aata hai, kabhi bhi base verb nahi.\n\nToh 'I look forward to see you' completely wrong hai. Sahi tareeka hai 'I look forward to seeing you.' Ab samajh aaya?\n\nAb comment mein batao, aapko ye rule pata tha ya nahi? Aur aise hi English tips ke liye The English Vault ko follow karo!",
+    "hashtags": [
+      "lookforwardto",
+      "phrasalverbs",
+      "englishgrammar",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Look forward to",
+        "headlineRest": "— Mastering Its Correct Use",
+        "body": "'Look forward to' means to feel excited about something that is going to happen. For instance, 'I'm looking forward to the weekend' perfectly captures this anticipation. A crucial point to remember is that 'to' in this phrase acts as a preposition, not part of an infinitive. This means it must be followed by a noun or a gerund (-ing form of a verb), never a base verb. So, while 'I look forward to see you' is a common mistake, the correct usage is 'I look forward to seeing you'.",
+        "hindiSummary": "किसी आने वाली चीज़ के लिए उत्साहित महसूस करना, इसका मतलब है।",
+        "imageQuery": "Excited anticipation future event"
+      }
+    ],
+    "generatedAt": "2026-09-26T07:57:52.547Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-look-forward-to-slide-01.png"
+    ],
+    "renderedAt": "2026-09-26T07:58:29.055Z",
+    "reelVideo": "the-english-vault-curriculum-look-forward-to-reel.mp4",
+    "reelDurationSeconds": 54.696,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "a223957fc969b3fb",
+  "notifiedAt": "2026-09-26T08:02:26.119Z"
 }
