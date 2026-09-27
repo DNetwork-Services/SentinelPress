@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-warning-two-unpatched-citrix-netscaler-rce-zero-days-under-activ",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Warning: Two Unpatched Citrix NetScaler RCE Zero-Days Under Active Exploitation",
+    "link": "https://thehackernews.com/2026/09/warning-two-unpatched-citrix-netscaler.html",
+    "description": "Two new unpatched zero-day vulnerabilities in Citrix NetScaler ADC and NetScaler Gateway appliances that allow remote code execution are being actively exploited in the wild, security firm watchTowr said on September 26. Citrix has not confirmed the flaws or published a fix. Some administrators say they have taken appliances offline rather than wait for one to be available. NetScaler ADC and",
+    "content": "",
+    "pubDate": "Sun, 27 Sep 2026 13:17:57 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhrnnWi_EE_zogEngdPWZDYXQTXqcArqvXtXYDj7_yLDzfVamEw9Nx7taRyM1SQf8-78qtxnt3nhNzcn36WnzYwZvFDQNvglCilw0Ltb4NjVkjjC8GH2nOUTnxIBPvRn8JVPcXJaidmbU0A6z-1RiX_OKgcpkzvL6xV7aM_YpQj6XdYIfalQH3h6o3b7pQ/s1600/citrix-zero-day.jpg"
+  },
+  "score": 0.9962598688271604,
+  "selectedAt": "2026-09-27T08:28:20.606Z",
+  "generated": {
+    "caption": "Your organization's critical systems could be at risk! 🚨\n\nTwo new, unpatched zero-day vulnerabilities in Citrix NetScaler ADC and Gateway appliances are being actively exploited. These flaws allow attackers to execute code remotely, potentially taking full control. Citrix hasn't confirmed the issues or released a fix, prompting some admins to take systems offline.\n\nSave & Share this alert to keep others informed! Follow @CyberShieldAlerts for daily updates.",
+    "script": "Cybersecurity alert! Two critical Citrix zero-days are under active attack right now! Security firm watchTowr just reported these unpatched vulnerabilities affecting NetScaler ADC and NetScaler Gateway appliances. They allow remote code execution, giving attackers dangerous access to your systems. These zero-days are being actively exploited in the wild, meaning your network could be targeted right now. Citrix has not yet confirmed the flaws or published a fix, leaving many organizations vulnerable. Some administrators are choosing to take their appliances offline. Assess your exposure and prioritize immediate action to protect your network.",
+    "hashtags": [
+      "citrix",
+      "netscaler",
+      "zeroday",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Citrix NetScaler",
+        "headlineRest": "Zero-Days Actively Exploited",
+        "body": "Two unpatched zero-day vulnerabilities in Citrix NetScaler ADC and Gateway appliances are currently under active exploitation. These critical flaws allow for remote code execution (RCE) and pose a significant threat to organizations using these devices. Security firm watchTowr confirmed the active attacks, though Citrix has not yet officially acknowledged the issues or released a patch. Some administrators have responded by taking their affected appliances offline to prevent potential compromise.",
+        "hindiSummary": "सक्रिय रूप से दो बिना पैच वाले सिट्रिक्स नेटस्केलर ज़ीरो-डे कमजोरियों का फायदा उठाया जा रहा है।",
+        "imageQuery": "network security alert critical"
+      }
+    ],
+    "generatedAt": "2026-09-27T08:28:40.504Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-warning-two-unpatched-citrix-netscaler-rce-zero-days-under-activ-slide-01.png"
+    ],
+    "renderedAt": "2026-09-27T08:29:19.995Z",
+    "reelVideo": "the-hacker-news-warning-two-unpatched-citrix-netscaler-rce-zero-days-under-activ-reel.mp4",
+    "reelDurationSeconds": 37.314467,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "6e6e7c6a3eb91bbc",
+  "notifiedAt": "2026-09-27T08:32:04.068Z"
+}
