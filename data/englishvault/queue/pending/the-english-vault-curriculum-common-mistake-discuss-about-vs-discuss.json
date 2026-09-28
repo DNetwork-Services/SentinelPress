@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-common-mistake-discuss-about-vs-discuss",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Common Mistakes"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-09-27T08:28:20.607Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever caught yourself saying 'discuss about'? 👋 It's a common mistake!\n\n'Discuss' already means 'talk about,' so adding 'about' is redundant. Just remember: 'discuss' stands alone.\n\nFor example, instead of 'Let's discuss about the plan,' say 'Let's discuss the plan.'\n\nEasy, right? Save this tip & follow @EnglishVault for more daily lessons! #EnglishVault #LearnEnglish",
+    "script": "\"Discuss about\" aur \"discuss\" – in dono mein confusion hota hai na? Basically, 'discuss' ek aisa verb hai jiska matlab already 'talk about' hota hai. Toh iske saath 'about' lagana poori tarah se galat hai, redundant hai. Ye ek transitive verb hai, iske baad seedha object aata hai. Jaise, 'Let's discuss the plan.' Ye sahi hai. 'Let's discuss about the plan' galat hai. Toh remember, 'discuss' ke baad kabhi bhi 'about' nahi aayega. Seedha object. 'Let's discuss the plan!' Ab samajh aaya? Comment mein batao aapko ye pata tha ya nahi! Aur aise hi English tips ke liye The English Vault ko follow karo!",
+    "hashtags": [
+      "discussabout",
+      "commonmistakes",
+      "englishgrammar",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Discuss About",
+        "headlineRest": "Is Actually Wrong — Here's Why",
+        "body": "Many English learners often make a common mistake by saying 'discuss about'. However, the verb 'discuss' is already transitive, meaning 'to talk about' a subject. Adding 'about' after it is therefore redundant and incorrect. For example, instead of the common error 'Let's discuss about the plan,' the grammatically correct sentence is 'Let's discuss the plan.' Always remember to use 'discuss' directly with the topic you are talking about.",
+        "hindiSummary": "\"Discuss\" शब्द का अर्थ 'किसी विषय पर चर्चा करना' होता है, इसलिए इसके साथ 'about' लगाना अनावश्यक और गलत है।",
+        "imageQuery": "grammar mistake correction"
+      }
+    ],
+    "generatedAt": "2026-09-28T08:54:13.790Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-common-mistake-discuss-about-vs-discuss-slide-01.png"
+    ],
+    "renderedAt": "2026-09-28T08:54:37.850Z",
+    "reelVideo": "the-english-vault-curriculum-common-mistake-discuss-about-vs-discuss-reel.mp4",
+    "reelDurationSeconds": 51.072,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "f720e9d8647a8e56",
+  "notifiedAt": "2026-09-28T08:59:03.381Z"
 }
