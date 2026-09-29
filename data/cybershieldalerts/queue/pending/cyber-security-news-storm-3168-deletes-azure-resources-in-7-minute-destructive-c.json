@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-storm-3168-deletes-azure-resources-in-7-minute-destructive-c",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Storm-3168 Deletes Azure Resources in 7-Minute Destructive Cloud Attack",
+    "link": "https://cybersecuritynews.com/storm-3168/",
+    "description": "Storm-3168 used compromised cloud identities to carry out a destructive attack against an Azure environment in minutes. The operation shows how a stolen application credential can give an intruder broad control over hosted data, services, and recovery protections. It also highlights the growing threat from automated cloud attacks. The activity is linked to JADEPUFFER agentic [&#8230;] The post Storm-3168 Deletes Azure Resources in 7-Minute Destructive Cloud Attack appeared first on Cyber Security News.",
+    "content": "Storm-3168 used compromised cloud identities to carry out a destructive attack against an Azure environment in minutes. The operation shows how a stolen application credential can give an intruder broad control over hosted data, services, and recovery protections. It also highlights the growing threat from automated cloud attacks. The activity is linked to JADEPUFFER agentic ransomware operations, documented earlier in a different intrusion. Researchers found two compromised service principals inside one tenant, with one mapping the environment and the other destroying resources and collecting storage keys. Microsoft tracks the actor as Storm-3168. Researchers did not establish that AI directly controlled these Azure operations. Microsoft analysts identified the Azure activity. Microsoft said in a report shared with Cyber Security News (CSN) that the campaign targeted Azure Storage accounts, SQL databases, Key Vaults, Function Apps, App Services, and recovery controls. The investigation did not confirm a ransom note or successful data theft, but the combination points to a likely extortion-focused objective. The case underlines a cloud security problem that begins long before a deletion command is issued. The client ID, secret, and tenant ID for one service principal had appeared in plaintext in a public GitHub issue, although researchers could not verify that this secret was used. Removing a secret from a post does not revoke it or erase its history. Storm-3168 Deletes Azure Resources In early June 2026, the first compromised identity spent about 15 hours and 30 minutes performing more than 300 successful read operations. It listed virtual machines, subscriptions, resource groups, and other resources. About 90 minutes later, the second identity checked virtual machines and groups across two subscriptions in only five seconds. That second service principal later examined App Service configuration stores, possibly searching for exposed credentials, and unsuccessfully queried Azure OpenSearch resources. Seventy seconds after its last inventory action, it attempted to retrieve a key from a storage account that did not exist. Less than a second later, the destructive sequence began. Over roughly seven minutes, Storm-3168 made more than 100 attempts to delete storage accounts, with most targeted accounts successfully removed. Timeline (Source &#8211; Microsoft) It also deleted a Key Vault, Function App, and App Service plan tied to the same resource group. Resource locks and account-level deletion protection stopped several attempts, showing that independent safeguards can limit damage. The intruder also tried to delete several Azure SQL databases in parallel, but every attempt failed because it used an unsupported API version. It separately targeted Site Recovery and Azure Backup protection locks. Earlier reporting on Azure API role flaws shows why narrowly named cloud roles still require careful permission reviews. Stolen Identities Raise Recovery Risks Around 30 minutes after the final destructive actions, the same identity sent more than 30 successful ListKeys requests for Azure Storage accounts, including accounts related to Site Recovery. Access keys can expose sensitive data and create a path for later collection. The sequence also targeted storage accounts with terraform and backup-themed names, increasing the risk of impaired recovery. The timing and use of multiple identities suggest coordinated automation. Microsoft observed five distinct tokens for the service principal used in deletion and key collection; four supported deletion, while one handled storage inventory and key retrieval. Two deletion tokens were active during the same 70-second window, distributing operations between storage and SQL targets. Organizations should promptly revoke and rotate every publicly exposed credential, then investigate its previous use. They should keep secrets out of source code, tickets, repositories, and configuration files, while applying least privilege to workload identities. A separate report on Azure Arc credential exposure demonstrates how accessible deployment secrets can become powerful entry points. Administrators should restrict access to backups and recovery controls, monitor attempts to change or remove protections, and review identity permissions regularly. Security teams should also hunt for unexpected resource discovery, high-volume key retrieval, and unusual deletion activity. Related reporting on Key Vault access risks illustrates the importance of tracking risky credential use across the tenant. Indicators of compromise (IoCs):- TypeIndicatorDescriptionIPv445.131.66[.]106App Service probing and malicious Azure Resource Manager requestsIPv434.153.223[.]102App Service probingIPv464.20.53[.]230App Service probing Note: IP addresses and domains are intentionally defanged (e.g., [.]) to prevent accidental resolution or hyperlinking. Re-fang only within controlled threat intelligence platforms such as MISP, VirusTotal, or your SIEM. Cut every SOC alert investigation by 21 min. Power your SOC with instant IOC context for immediate response: Integrate TI Lookup in your SOC The post Storm-3168 Deletes Azure Resources in 7-Minute Destructive Cloud Attack appeared first on Cyber Security News.",
+    "pubDate": "Tue, 29 Sep 2026 08:48:40 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/09/Storm-3168-Deletes-Azure-Resources-in-7-Minute-Destructive-Cloud-Attack.webp"
+  },
+  "score": 0.9995371913580247,
+  "selectedAt": "2026-09-29T08:53:39.901Z",
+  "generated": {
+    "caption": "Your cloud data could vanish in minutes! 😱\n\nThreat group Storm-3168 leveraged stolen cloud credentials to rapidly delete vital Azure resources in a destructive 7-minute attack. This incident highlights the growing danger of automated cloud attacks and exposed secrets, showing how quickly attackers can gain broad control.\n\nSave this post and follow @CyberShieldAlerts for daily updates!",
+    "script": "Your cloud infrastructure could be gone in just seven minutes. That’s how fast Storm-3168 launched a destructive attack on an Azure environment. They used compromised cloud identities to delete storage accounts, SQL databases, Key Vaults, and recovery controls. This shows how quickly a stolen credential can give an intruder broad control, threatening your entire cloud environment and recovery efforts. It's a stark reminder of the growing threat from automated cloud attacks. Protect yourself: revoke and rotate all publicly exposed credentials, apply least privilege, and regularly monitor identity permissions.",
+    "hashtags": [
+      "storm3168",
+      "azuresecurity",
+      "cloudattack",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Storm-3168",
+        "headlineRest": "Launches Destructive 7-Minute Azure Cloud Attack",
+        "body": "Storm-3168 executed a rapid, destructive attack on an Azure environment, using compromised cloud identities to delete resources and attempt to collect storage keys in just seven minutes. This incident underscores the critical risk posed by automated cloud attacks and how easily stolen credentials can grant intruders extensive control over hosted data and recovery protections. While no ransom note or data theft was confirmed, the operation points to a likely extortion objective, originating from a publicly exposed credential. Organizations must immediately revoke and rotate all exposed credentials, apply least privilege principles, secure backup controls, and actively monitor for unusual discovery, key retrieval, or deletion activity.",
+        "hindiSummary": "Storm-3168 ने समझौता किए गए क्रेडेंशियल्स का उपयोग करके Azure संसाधनों को नष्ट कर दिया।",
+        "imageQuery": "Cloud security breach destructive"
+      }
+    ],
+    "generatedAt": "2026-09-29T08:54:02.726Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-storm-3168-deletes-azure-resources-in-7-minute-destructive-c-slide-01.png"
+    ],
+    "renderedAt": "2026-09-29T08:54:53.623Z",
+    "reelVideo": "cyber-security-news-storm-3168-deletes-azure-resources-in-7-minute-destructive-c-reel.mp4",
+    "reelDurationSeconds": 36.455329,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "efaa2d1709fe3736",
+  "notifiedAt": "2026-09-29T08:57:53.494Z"
+}

@@ -11,16 +11,16 @@
     "link": "topic://englishvault/translation-work-context",
     "description": "Hindi: 'मुझे यह प्रोजेक्ट कल तक पूरा करना है।' English: 'I have to finish this project by tomorrow.' Teaching point: 'करना है' (have to do) is obligation, translated with 'have to' not 'must' here since it's a deadline-driven task obligation, not a personal rule.",
     "content": "Hindi: 'मुझे यह प्रोजेक्ट कल तक पूरा करना है।' English: 'I have to finish this project by tomorrow.' Teaching point: 'करना है' (have to do) is obligation, translated with 'have to' not 'must' here since it's a deadline-driven task obligation, not a personal rule.",
-    "pubDate": "2026-09-15T07:57:51.631Z",
+    "pubDate": "2026-09-29T08:53:39.902Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-09-15T07:57:51.631Z",
+  "selectedAt": "2026-09-29T08:53:39.902Z",
   "generated": {
-    "caption": "Got a deadline looming? 🗓️ When you need to express an obligation for a deadline-driven task, 'have to' is your best choice! It clearly shows it's a task with a deadline, not a personal rule. We use 'have to' here, not 'must'.\n\nFor example: 'I have to finish this project by tomorrow.'\n\nSave this for later and follow @TheEnglishVault for daily lessons!",
-    "script": "मुझे यह प्रोजेक्ट कल तक पूरा करना है — yahan 'have to' aayega ya 'must'? Ye confusion bahut logon ko hota hai na?\n\nDekho, 'करना है' ka matlab hai obligation. Jab kisi deadline-driven task ki zimmedari ho, use 'have to'. For example, 'मुझे यह प्रोजेक्ट कल तक पूरा करना है।' Isko hum bolenge 'I have to finish this project by tomorrow.' Yahan 'must' use nahi karenge, kyunki ye deadline hai, personal rule nahi.\n\nToh next time jab task ki obligation ya deadline ho, 'have to' use karna. 'Must' nahi! Clear ho gaya na?\n\nComment karke batao aapko ye chhoti si tip pehle pata thi ya nahi!",
+    "caption": "Got a work deadline looming? ⏰\n\nTo express a task-based obligation, especially when it's deadline-driven like 'करना है', use 'have to'. It's the natural choice for tasks you need to complete by a specific time.\n\nFor example: \"I have to finish this project by tomorrow.\" Simple and correct!\n\nSave this tip & share, and follow @EnglishVault for daily lessons!",
+    "script": "\"Mujhe yeh kaam karna hai.\" Isko English mein 'must' bolte hain ya 'have to'? Aksar log yahaan galti karte hain, right? Dekho, jab bhi koi kaam aapko karna hai because it's a deadline-driven obligation, like office work, tab hum 'have to' use karte hain. 'Must' use karna thoda incorrect ho jaayega. Jaise, 'मुझे यह प्रोजेक्ट कल तक पूरा करना है' isko hum bolenge 'I have to finish this project by tomorrow.' Yahaan 'have to' shows an obligation related to a task and its deadline. Toh next time jab koi deadline wala kaam ho, always remember to use 'have to'. Ab confusion nahi hogi na? Comment karke batao ye tip aapko already pata thi ya nahi! Aur save kar lo!",
     "hashtags": [
-      "mustvshaveto",
+      "haveto",
       "englishforwork",
       "englishgrammar",
       "learnenglish",
@@ -30,25 +30,25 @@
       {
         "type": "newscard",
         "badgeInitials": "EV",
-        "headlineHighlight": "Have to",
-        "headlineRest": "— Why It's Not 'Must' Here",
-        "body": "Let's translate 'मुझे यह प्रोजेक्ट कल तक पूरा करना है.' which correctly becomes 'I have to finish this project by tomorrow.' The Hindi phrase 'करना है' expresses an obligation or a task that needs completion. In English, 'have to' is the perfect choice for conveying external obligations, like a project with a deadline. We use 'have to' instead of 'must' because 'must' typically implies a stronger internal rule or personal necessity, whereas 'have to' fits perfectly for tasks driven by external requirements.",
-        "hindiSummary": "'मुझे यह प्रोजेक्ट कल तक पूरा करना है' में 'करना है' बाहरी दायित्व को दर्शाता है, जिसके लिए 'have to' का प्रयोग उचित है।",
-        "imageQuery": "person working deadline project"
+        "headlineHighlight": "Have To",
+        "headlineRest": "— The Deadline Difference",
+        "body": "The Hindi phrase 'मुझे यह प्रोजेक्ट कल तक पूरा करना है' directly translates to 'I have to finish this project by tomorrow.' Here, 'करना है' signifies an obligation, specifically one driven by an external factor like a deadline. While 'must' also expresses obligation, 'have to' is the more natural choice for tasks imposed by circumstances or external requirements. Use 'have to' for deadlines and external duties, reserving 'must' for personal rules or strong internal convictions.",
+        "hindiSummary": "किसी काम की समय-सीमा या बाहरी बाध्यता बताने के लिए 'have to' का प्रयोग करें, न कि 'must' का।",
+        "imageQuery": "Work deadline calendar focus"
       }
     ],
-    "generatedAt": "2026-09-15T07:58:57.677Z"
+    "generatedAt": "2026-09-29T08:54:52.133Z"
   },
   "render": {
     "slideImages": [
       "the-english-vault-curriculum-hindi-to-english-work-context-sentence-slide-01.png"
     ],
-    "renderedAt": "2026-09-15T07:59:00.684Z",
+    "renderedAt": "2026-09-29T08:54:54.458Z",
     "reelVideo": "the-english-vault-curriculum-hindi-to-english-work-context-sentence-reel.mp4",
-    "reelDurationSeconds": 49.416,
+    "reelDurationSeconds": 52.68,
     "hasVoiceover": true,
     "musicTrack": null
   },
   "approvalHash": "6cf55f4795c68912",
-  "notifiedAt": "2026-09-15T08:01:57.078Z"
+  "notifiedAt": "2026-09-29T08:57:56.475Z"
 }
