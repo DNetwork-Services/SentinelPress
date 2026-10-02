@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-under-the-weather",
   "accountId": "englishvault",
-  "status": "awaiting_approval",
+  "status": "researched",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Idioms"
@@ -11,44 +11,11 @@
     "link": "topic://englishvault/idiom-under-the-weather",
     "description": "Meaning: feeling slightly ill. Example: 'I'm feeling a bit under the weather today, I might stay home.' Register: informal, commonly used with close colleagues or friends rather than in very formal writing.",
     "content": "Meaning: feeling slightly ill. Example: 'I'm feeling a bit under the weather today, I might stay home.' Register: informal, commonly used with close colleagues or friends rather than in very formal writing.",
-    "pubDate": "2026-07-17T05:26:47.867Z",
+    "pubDate": "2026-10-02T08:50:43.660Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-07-17T05:26:47.867Z",
-  "generated": {
-    "caption": "Ever said you're not feeling well and struggled to find the right words? \"Under the weather\" means feeling slightly ill. For example, 'I'm feeling a bit under the weather today.' Save and share to learn more informal English expressions! Follow us for daily lessons #EnglishVault",
-    "script": "Kya aapko bhi 'under the weather' sunke lagta hai ki ye mausam ki baat ho rahi hai? Ye confusion hota hai na?\n\nToh suno, 'under the weather' ka matlab weather se bilkul nahi hai. Iska matlab hai feeling slightly ill. Jab aapko thoda bimaar feel ho, ya tabiyat theek na lage, tab ye phrase use karte hain. Jaise, halka fever ya low energy. Ye informal idiom hai, friends ya colleagues ke saath use karna. Example: 'I'm feeling a bit under the weather today, I might stay home.'\n\nAb samjha? 'Under the weather' means you're feeling a bit unwell, not literally bimaar because of weather.\n\nComment mein batao, aapko bhi kabhi 'under the weather' feel hua hai? Aur aise hi English tips ke liye The English Vault ko follow karo!",
-    "hashtags": [
-      "undertheweather",
-      "englishidioms",
-      "learnenglish",
-      "englishvocabulary",
-      "englishseekhen"
-    ],
-    "slides": [
-      {
-        "type": "newscard",
-        "badgeInitials": "EV",
-        "headlineHighlight": "Under the weather",
-        "headlineRest": "— What it really means",
-        "body": "When someone says they are 'under the weather,' it's an informal idiom indicating they are feeling slightly ill or unwell. It's not for serious sickness, but more like a mild cold or general feeling of being off. For example, you might say, 'I'm feeling a bit under the weather today, I might stay home.' Remember, this phrase is commonly used in informal settings with close colleagues or friends, rather than in very formal writing.",
-        "hindiSummary": "इसका मतलब है थोड़ा अस्वस्थ या बीमार महसूस करना।",
-        "imageQuery": "person feeling slightly unwell at home"
-      }
-    ],
-    "generatedAt": "2026-07-17T05:28:07.783Z"
-  },
-  "render": {
-    "slideImages": [
-      "the-english-vault-curriculum-under-the-weather-slide-01.png"
-    ],
-    "renderedAt": "2026-07-17T05:28:10.200Z",
-    "reelVideo": "the-english-vault-curriculum-under-the-weather-reel.mp4",
-    "reelDurationSeconds": 56.784,
-    "hasVoiceover": true,
-    "musicTrack": null
-  },
-  "approvalHash": "f5837f900c25bff1",
-  "notifiedAt": "2026-07-17T05:29:49.351Z"
+  "selectedAt": "2026-10-02T08:50:43.660Z",
+  "generated": null,
+  "render": null
 }
