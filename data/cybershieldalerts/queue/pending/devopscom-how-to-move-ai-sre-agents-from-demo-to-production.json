@@ -1,0 +1,54 @@
+{
+  "id": "devopscom-how-to-move-ai-sre-agents-from-demo-to-production",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "DevOps.com",
+    "category": "DevOps"
+  },
+  "article": {
+    "title": "How to Move AI SRE Agents From Demo to Production",
+    "link": "https://devops.com/how-to-move-ai-sre-agents-from-demo-to-production/",
+    "description": "An AI agent that works on an engineer’s laptop can feel like a breakthrough. It can read logs, query observability tools, inspect cloud resources and connect a failed deployment to a bad configuration change in minutes. For a single investigation, under close human supervision, that is real progress. It is also the easy part. The [&#8230;]",
+    "content": "An AI agent that works on an engineer’s laptop can feel like a breakthrough. It can read logs, query observability tools, inspect cloud resources and connect a failed deployment to a bad configuration change in minutes. For a single investigation, under close human supervision, that is real progress. It is also the easy part. The hard part is making that same capability available across production environments. On a laptop, an agent does not have to manage concurrent sessions, preserve investigation history, control token spend or enforce scoped permissions. It can act with borrowed access and temporary context. The same setup can break down quickly once the agent becomes part of real incident response. In production, the agent has to keep working after the first session, leave behind evidence others can trust, and stay inside the access, cost and automation guardrails the business has set. A Supervised Session Is Not a Production System Local agent frameworks make experimentation accessible. An engineer can connect familiar tools, authenticate with personal credentials and prompt an agent through an issue. When it stalls, the user supplies another instruction or adds missing logs. Human intervention provides orchestration, quality control and recovery. That works for a single supervised session, but production issues arrive through monitoring systems at all hours, not through an engineer already sitting at a laptop. The agent has to live somewhere beyond the user’s machine, respond to alerts, keep multiple investigations separate and clean up after itself when the work is done. Once the agent moves into production, it becomes part of the reliability system it is supposed to support. If it doesn’t start, loses access to a tool, or stops halfway through an investigation, the team has a new operational problem. When the agent reaches the wrong conclusion, engineers need to know whether the problem was weak evidence, model behavior or a failure in the surrounding system. AI Recommendations Need an Investigation Trail A laptop session is easy to lose. Once a terminal closes, the prompts, tool calls, tool responses and final recommendation may disappear with it. That history becomes essential when an agent influences production decisions. During an incident, engineers need to understand what the agent saw and how it reached its conclusion. A useful record connects the starting alert to the evidence reviewed, tools used, actions taken and final recommendation. Without that trail, the team is left with an answer but no reliable way to evaluate the work behind it. The record also helps the team improve the agent over time. Repeated investigations reveal missing data sources, unreliable tools and common reasoning errors. If an agent regularly stops at a symptom because it lacks deployment history, infrastructure events or application logs, the team knows it has a specific integration problem to correct. Token Spend Is a Reliability Metric General-purpose agent frameworks often have capabilities that a focused SRE workflow rarely uses. At production volume, that extra context and reasoning can consume substantial tokens. Costs also vary by model, incident complexity, tool behavior and the number of retries. Teams should measure cost per session and per use case alongside latency, success rate and tool-call volume. Those metrics make tradeoffs visible. A newer model may produce a modest quality improvement while taking longer and costing considerably more. The right choice depends on the use cases and the cost of being slow or wrong. Cost monitoring also detects abnormal behavior. A looping tool call, oversized context window or failing integration can drive spending upward before anyone notices a quality problem. Budget alerts, usage limits and circuit breakers belong in the production design rather than a later optimization project. Demo Scenarios Do Not Prove Production Readiness It is hard to judge agent changes from a few successful demonstrations. A prompt revision that helps in one investigation may make the agent less reliable in another. A model upgrade may find a better root cause, but only by adding latency and cost that make it harder to use in production investigations. Successful local runs on an engineer’s machine do not validate whether the agent is getting better. Testing has to reflect the work it will actually perform: known failures from past investigations, recurring production patterns and synthetic cases that exercise edge conditions. A polished answer is not the ultimate goal. The agent has to find the triggering change, use the available evidence correctly, reach the right root cause and recommend a response the team would trust. Humans still have to define what a good investigation looks like, while automation can apply that standard across enough cases to show whether the agent is actually improving. Agents Should Not Inherit Human Permissions Local experiments often run with the engineer&#8217;s existing access. That makes setup easy, but it creates a risky model for production. An autonomous agent investigating issues across shared infrastructure should not be using a human’s credentials or carrying broad access from one task into the next. A sensible starting point is read-only investigations. From there, autonomy can expand carefully, beginning with low-risk actions before moving to higher-impact changes with tighter limits, explicit approval or policy checks in place. Each action also needs a clear record so engineers can see which session made the call, what evidence supported it and why the action was allowed. SRE runs through live alerts, handoffs, policies and business constraints. Agents have to work within those workflows, keep a usable record for the next responder, and stay within approved cost and access limits. That is what separates a laptop AI experiment from something cloud engineering teams can rely on in production. About the Author: Andrey Pokhilko is an Innovation Researcher in the CTO Office at Komodor, where he focuses on AI-driven SRE, Kubernetes operations and rapid prototyping of new platform capabilities. He leads open source efforts for Kubernetes troubleshooting, including Helm Dashboard and Komoplane. Andrey previously co-founded UP9 and held technical leadership roles at BlazeMeter, CA Technologies and Yandex.",
+    "pubDate": "Fri, 02 Oct 2026 21:38:55 +0000",
+    "image": ""
+  },
+  "score": 0.9399315679012346,
+  "selectedAt": "2026-10-03T08:27:39.344Z",
+  "generated": {
+    "caption": "An AI agent can find IT problems in minutes on a laptop, but making it reliable and secure in real production environments is a huge leap. Moving these tools means tackling challenges like managing costs, creating clear audit trails, and ensuring they have strictly scoped permissions, not broad human access. Proper testing beyond simple demos is vital before these AI agents handle critical incidents.\n\nSave this post to remember these points, and share it with your team! Follow @CyberShieldAlerts for daily cybersecurity insights.",
+    "script": "Your AI agent's breakthrough on a laptop is just the start. Deploying it to production without proper guardrails could create massive security and reliability risks. That brilliant AI SRE agent, tested under supervision, cannot manage concurrent sessions, control token spend, or enforce scoped permissions in production. Without an investigation trail, you can't trust an AI's recommendations or evaluate its critical decisions for improvement. Even worse, many agents inherit human permissions, creating a dangerously broad access model across your shared infrastructure. This setup breaks down during real incident response, turning your solution into a new operational problem. Demo success doesn't prove production readiness. You need robust testing for real-world scenarios. Implement strong security, access controls, cost monitoring, and audit trails for your AI SRE agents before you deploy.",
+    "hashtags": [
+      "aisre",
+      "productionai",
+      "aireliability",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "AI SRE Agents",
+        "headlineRest": "Moving from Demo to Production: Key Challenges",
+        "body": "Transitioning AI agents from a laptop demo to a production SRE environment presents significant hurdles beyond initial breakthroughs. While an agent on a local machine can easily access tools and operate with temporary context, production systems demand managing concurrent sessions, preserving detailed investigation histories, controlling token spend, and enforcing scoped permissions. Without careful design, these agents can become a new operational problem, failing to integrate with existing workflows or provide verifiable evidence for their conclusions. Teams must establish robust testing, cost monitoring, and strict access controls to ensure AI agents are reliable and trustworthy in live incident response scenarios.",
+        "hindiSummary": "एआई एसआरई एजेंटों को डेमो से उत्पादन तक ले जाने में सुरक्षा, लागत और विश्वसनीयता संबंधी गंभीर चुनौतियाँ आती हैं।",
+        "imageQuery": "AI production readiness challenges"
+      }
+    ],
+    "generatedAt": "2026-10-03T08:28:12.005Z"
+  },
+  "render": {
+    "slideImages": [
+      "devopscom-how-to-move-ai-sre-agents-from-demo-to-production-slide-01.png"
+    ],
+    "renderedAt": "2026-10-03T08:29:07.099Z",
+    "reelVideo": "devopscom-how-to-move-ai-sre-agents-from-demo-to-production-reel.mp4",
+    "reelDurationSeconds": 54.044444,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "cba250ccecc62f78",
+  "notifiedAt": "2026-10-03T08:32:57.652Z"
+}

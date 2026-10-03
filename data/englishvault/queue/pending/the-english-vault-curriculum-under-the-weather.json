@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-under-the-weather",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Idioms"
@@ -16,6 +16,33 @@
   },
   "score": 1,
   "selectedAt": "2026-10-02T08:50:43.660Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever felt a little unwell but not quite sick enough for a full-blown explanation? 🤒 We have the perfect idiom for you: \"under the weather.\"\n\nThis simply means you're feeling slightly ill. It's an informal phrase, commonly used when chatting with friends or close colleagues. For instance: \"I'm feeling a bit under the weather today, I might stay home.\"\n\nSave this helpful tip for later & follow @englishvault for daily lessons!",
+    "script": "Koi bole 'I'm under the weather' toh kya samajhte ho? Iska literal meaning nahi hota! Toh 'under the weather' ka matlab hota hai ki aap thoda unwell feel kar rahe ho. Basically, you're feeling slightly ill. Thoda beemar. For example, 'I'm feeling a bit under the weather today, I might stay home.' Ye ek informal phrase hai, dosto aur colleagues ke beech commonly use hota hai. Toh next time jab bhi aapki tabiyat thodi kharab lage, toh bolna 'I'm feeling under the weather.' Simple, right? Ab koi confusion nahi! Comment mein batao aapko ye idiom pata tha ya nahi! Aur aise hi tips ke liye follow karo The English Vault!",
+    "hashtags": [],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Under the weather",
+        "headlineRest": "— What it Means When You're Not Feeling Well",
+        "body": "Have you ever heard someone say they're 'under the weather'? This common English idiom means feeling slightly ill or unwell. For example, you might say, 'I'm feeling a bit under the weather today, I might stay home.' It's an informal phrase, best used when talking to friends or close colleagues, rather than in very formal writing. So, next time you're not feeling your best, you know just what to say!",
+        "hindiSummary": "Under the weather का मतलब है थोड़ा बीमार या अस्वस्थ महसूस करना।",
+        "imageQuery": "Person feeling slightly ill"
+      }
+    ],
+    "generatedAt": "2026-10-03T08:28:45.069Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-under-the-weather-slide-01.png"
+    ],
+    "renderedAt": "2026-10-03T08:29:08.220Z",
+    "reelVideo": "the-english-vault-curriculum-under-the-weather-reel.mp4",
+    "reelDurationSeconds": 51.84,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "f5837f900c25bff1",
+  "notifiedAt": "2026-10-03T08:33:01.086Z"
 }
