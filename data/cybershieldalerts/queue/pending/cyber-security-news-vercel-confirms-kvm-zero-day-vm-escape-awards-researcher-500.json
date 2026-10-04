@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-vercel-confirms-kvm-zero-day-vm-escape-awards-researcher-500",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Vercel Confirms KVM Zero-Day VM Escape, Awards Researcher $50,000",
+    "link": "https://cybersecuritynews.com/kvm-zero-day-vm-escape/",
+    "description": "Vercel has confirmed a KVM zero-day vulnerability after security researcher Paulos Yibelo reported a full virtual machine escape that, he says, allows code inside a guest to gain root access on the host. The discovery came through the Vercel Sandbox bug bounty program, raising concerns about a security boundary used to contain untrusted workloads and [&#8230;] The post Vercel Confirms KVM Zero-Day VM Escape, Awards Researcher $50,000 appeared first on Cyber Security News.",
+    "content": "Vercel has confirmed a KVM zero-day vulnerability after security researcher Paulos Yibelo reported a full virtual machine escape that, he says, allows code inside a guest to gain root access on the host. Full VM escape zeroday (guest>host root in industry standard hypervisors)! More soon pic.twitter.com/dt9AsDO0De&mdash; Paulos Yibelo (@PaulosYibelo) October 3, 2026 The discovery came through the Vercel Sandbox bug bounty program, raising concerns about a security boundary used to contain untrusted workloads and AI agents. Yibelo announced the finding on October 3, 2026, describing it as a “Full VM escape zeroday” involving “guest>host root” in industry-standard hypervisors. Vercel CEO Guillermo Rauch separately confirmed a KVM zero-day and said a full technical write-up would follow. Neither statement explained the exploit chain or identified affected versions. KVM Zero-Day VM Escape A bounty notification shared with the announcement shows Vercel awarding Yibelo $50,000, the program’s maximum payment for one report. The message describes the highest award as reserved for vulnerabilities that let an attacker read or change another Vercel customer&#8217;s information. Its critical category includes microVM escapes to an EC2 host and access to another customer’s data or code execution. However, that award description should not be treated as a public demonstration of customer data theft. The screenshot hides the report’s root cause, and the available statements do not establish that real customer information was accessed. Vercel’s $1 million Sandbox challenge opened on August 18, 2026, with a scheduled closing date of September 1. Its published rules require a live proof of concept showing a broken security boundary, rather than a report based only on reviewing code. KVM, short for Kernel-based Virtual Machine, provides Linux virtualization. A guest virtual machine should remain separate from the host that runs it. A successful guest-to-host escape breaks that separation; root access gives an attacker the highest level of control on the host. Vercel’s published architecture places each sandbox inside its own Firecracker microVM on a bare-metal Amazon EC2 host. Each microVM has a dedicated guest kernel, while a Linux container inside it runs the user’s code. Vercel explicitly identifies the microVM, not the container, as the main security boundary. This distinction matters for AI agents that execute generated or downloaded code. Moving from a container into its guest operating system is not the same as reaching the underlying host. Yibelo’s claim describes the more serious boundary crossing, although the exact technical steps remain undisclosed. The announcement does not identify a CVE, affected kernel releases, processor requirements, or a patch. It also does not establish whether guest administrator access is required. Rauch’s reference to KVM does not prove that every KVM deployment, Firecracker installation, or cloud provider is vulnerable. The missing details also prevent an independent assessment of exploit reliability across different host configurations. For background, Cybersecuritynews previously covered the separate Januscape KVM vulnerability, which involved host memory corruption through nested virtualization. There is no disclosed evidence linking that issue to Yibelo’s finding, so its exploit conditions and fixes should not be applied to this report. Until the technical disclosure arrives, operators should follow Vercel and their Linux vendors for guidance, rather than assume an unrelated patch addresses this flaw. The immediate takeaway is a confirmed vulnerability report and a claimed host-root escape, not confirmed widespread exploitation. The promised write-up should clarify the root cause, affected systems, and available protections, allowing defenders to assess exposure without guessing. Those details will determine which deployments actually need urgent action. Cut every SOC alert investigation by 21 min. Power your SOC with instant IOC context for immediate response: Integrate TI Lookup into your SOC The post Vercel Confirms KVM Zero-Day VM Escape, Awards Researcher $50,000 appeared first on Cyber Security News.",
+    "pubDate": "Sun, 04 Oct 2026 02:05:48 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/10/KVM-Zero-Day-VM-Escape.webp"
+  },
+  "score": 0.9633599953703704,
+  "selectedAt": "2026-10-04T08:41:30.723Z",
+  "generated": {
+    "caption": "A critical security layer for cloud services and AI agents just revealed a major flaw! Vercel confirmed a newly discovered 'zero-day' vulnerability in KVM virtualization, reported by a researcher who demonstrated a virtual machine escape. This means code in a virtual guest could potentially gain full control of the host server, raising concerns for isolating untrusted workloads and AI agents. Vercel awarded $50,000 for the finding, with more technical details promised soon. Save this post to stay informed, and follow @CyberShieldAlerts for daily threat intelligence!",
+    "script": "Major security alert! A KVM zero-day vulnerability allows virtual machines to escape and gain root control of their host! Vercel has confirmed this critical flaw, reported by a security researcher, which allows a guest virtual machine to perform a full escape, gaining root access on its underlying host system. This breaks a fundamental security boundary, giving attackers the highest level of control and raising serious concerns for virtualized environments and AI agents. Until full technical details are released, follow Vercel and your Linux vendors for guidance on this confirmed threat.",
+    "hashtags": [
+      "vercel",
+      "kvm",
+      "vmescape",
+      "zeroday",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "KVM Zero-Day VM Escape",
+        "headlineRest": "Confirmed by Vercel, Researcher Awarded $50,000",
+        "body": "Vercel has confirmed a KVM zero-day virtual machine escape vulnerability after researcher Paulos Yibelo reported it via their bug bounty program. Yibelo claims this flaw allows code inside a guest VM to gain root access on the host, potentially compromising the security boundary for untrusted workloads. Vercel awarded him $50,000, the maximum payment for such a critical report. A detailed technical write-up explaining the exploit chain and affected versions is expected soon. Until then, operators should monitor Vercel and their Linux vendors for official guidance and patches.",
+        "hindiSummary": "वर्चेल ने KVM जीरो-डे VM एस्केप की पुष्टि की और शोधकर्ता को $50,000 का पुरस्कार दिया।",
+        "imageQuery": "Virtual machine escape threat"
+      }
+    ],
+    "generatedAt": "2026-10-04T08:42:12.884Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-vercel-confirms-kvm-zero-day-vm-escape-awards-researcher-500-slide-01.png"
+    ],
+    "renderedAt": "2026-10-04T08:42:43.833Z",
+    "reelVideo": "cyber-security-news-vercel-confirms-kvm-zero-day-vm-escape-awards-researcher-500-reel.mp4",
+    "reelDurationSeconds": 34.353923,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "72d957694d122822",
+  "notifiedAt": "2026-10-04T08:45:17.708Z"
+}
