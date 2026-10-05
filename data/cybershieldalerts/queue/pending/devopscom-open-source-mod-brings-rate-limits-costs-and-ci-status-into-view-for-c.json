@@ -1,0 +1,54 @@
+{
+  "id": "devopscom-open-source-mod-brings-rate-limits-costs-and-ci-status-into-view-for-c",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "DevOps.com",
+    "category": "DevOps"
+  },
+  "article": {
+    "title": "Open Source Mod Brings Rate Limits, Costs and CI Status Into View for Claude Code Users",
+    "link": "https://devops.com/open-source-mod-brings-rate-limits-costs-and-ci-status-into-view-for-claude-code-users/",
+    "description": "Claude Statuspane gives developers real-time visibility into Claude Code context use, rate limits, costs and CI status, highlighting a growing need for agent observability.",
+    "content": "AI coding agents burn through resources in ways that are hard to see. A developer starts a long task in Claude Code, and the session quietly eats into a context window, a five-hour rate limit, a weekly cap, and a budget. Most of the time, nobody notices until something runs out. An open-source project called Claude Statuspane takes a crack at that problem. Built by developer Anji Xu and published on GitHub under an MIT license, it adds a floating status card above the Claude Code prompt in the terminal. The card shows the active model and reasoning effort level, how much of the context window is in use, progress against five-hour and seven-day rate limits with reset countdowns, the current directory and git branch, and the session&#8217;s running cost. It&#8217;s a small tool. But it points to a bigger issue for DevOps teams. As AI agents take on longer, more autonomous work, the people running them need the same kind of telemetry they already expect from build systems and production services. Claude Code already supports a statusLine setting that runs a shell script and prints a single line of text. Statuspane goes further by using Claude Code&#8217;s new mod system, which lets plugins draw interface elements inside a terminal session. That system is still in early access, and the project&#8217;s README warns that the API may change between Claude Code releases. Instead of plain text, the card uses gauges. A context bar might show 42%, or 222,000 of 1 million tokens. Bars shift to a warning color at 60% and an error color at 85%. A compact button sits next to the context gauge, so a developer can trigger /compact before a session hits its limit. The card follows Claude Code&#8217;s themes and collapses to a single button when it&#8217;s in the way. It requires Claude Code 2.1.287 or later and a terminal at least 70 columns wide. It doesn&#8217;t run in the Claude Code desktop app, which has its own status display. The most useful feature for DevOps teams may be the GitHub CI integration. With the GitHub CLI signed in, the card can show the latest GitHub Actions run for the current branch. It checks every minute, and every 10 seconds while a run is active. A second option tracks runs triggered by a git push or gh pr merge and keeps them on screen for 10 minutes after they finish. The card shows whether a job is running, failed, or deployed, and how long ago. That closes a loop that agents often leave open. An agent pushes a change, and the developer switches to a browser tab to see whether the pipeline passed. Putting build status beside the prompt keeps the human and the agent looking at the same result. Statuspane also includes a simple progress API. Any script can write a small JSON file to a progress folder with a label, a percentage, a short text field, a time-to-live, and a state of running, ok, or error. The card watches the 20 most recently written files and refreshes every second. Rows disappear when their TTL expires, so stale jobs don&#8217;t pile up. Shell and Python helpers are included, and other mods can call the API directly. The author also built in some sensible guardrails. The progress folder accepts only JSON files up to 64 KB, and it strips control characters, bidirectional marks, and zero-width characters from text fields. That matters. Anything that renders text inside an agent&#8217;s terminal is a possible path for injected content. Everything runs locally, and CI lookups use the developer&#8217;s own GitHub CLI credentials rather than a third-party service. The project is brand new, has little adoption so far, and depends on an early-access API that a Claude Code update could break. Teams should treat it as an experiment. But the idea behind it is sound. Usage-based limits and token costs are now part of daily developer work. A team that can&#8217;t see per-session costs can&#8217;t manage them. And as agents run longer jobs on their own, the human in the loop needs a quick way to see what&#8217;s happening without digging through logs. Still, one developer&#8217;s view only goes so far. &#8220;Statuspane gives one developer a gauge, which is useful and stops short of governance,&#8221; said Mitch Ashley, vice president and practice lead for CIO & Technology Buyers and Software Lifecycle Engineering at The Futurum Group. &#8220;Agent deployment pace is set by what an organization can observe, control, and prove, and a personal status card shows a team none of those.&#8221; Ashley said the real measure lies elsewhere. &#8220;The test is whether spend, limits, and pipeline outcomes per agent session can be collected centrally and audited. Watch whether agent platforms ship that telemetry natively.&#8221; Expect more tools like this as coding agents become extensible platforms. Statuspane solves a real problem for the person at the keyboard. The bigger job for DevOps and platform teams is getting the same data into shared systems, where every agent session&#8217;s spend, limits, and pipeline results can be tracked and reviewed. Until agent platforms provide that, a personal status card is a useful start, not the finish line.",
+    "pubDate": "Mon, 05 Oct 2026 08:14:44 +0000",
+    "image": ""
+  },
+  "score": 0.9930477716049383,
+  "selectedAt": "2026-10-05T09:29:49.044Z",
+  "generated": {
+    "caption": "AI coding agents silently consume resources and hit unexpected limits! 💸 Developers using Claude Code often don't see resource consumption (like context, rate limits, or cost) until it's too late. Now, a new open-source tool, Claude Statuspane, helps. It provides real-time visibility into usage, costs, and even CI status right in your terminal.\n\nSave this post and share it with a developer! Follow @CyberShieldAlerts for daily updates.",
+    "script": "Your AI coding agent is silently burning through resources and hitting limits you can't see. AI coding agents often use up context windows, rate limits, and budgets invisibly, leading to unexpected costs and disruptions. But now, an open-source mod called Claude Statuspane brings crucial clarity. It adds a floating card to your Claude Code terminal, showing real-time token usage, session cost, and even GitHub CI status for your current branch. This means you can finally see exactly what resources your agent is consuming, manage your spend, and avoid hitting those hidden caps. Explore Claude Statuspane to gain visibility into your AI agent's hidden activity.",
+    "hashtags": [
+      "claudecode",
+      "claudestatuspane",
+      "aicodingagent",
+      "devops",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Claude Statuspane",
+        "headlineRest": "brings real-time visibility to AI agent usage.",
+        "body": "Claude Statuspane is a new open-source mod designed for Claude Code users, addressing the challenge of monitoring resource consumption by AI coding agents. It provides a floating status card in the terminal, displaying crucial metrics such as context window usage, active rate limits with countdowns, and real-time session costs. The tool also integrates with GitHub Actions, showing the latest CI run status for the current branch directly within the developer's view, and includes a progress API for custom script tracking. While currently an early-access experiment, Claude Statuspane highlights the growing need for better telemetry for AI agents to manage usage-based limits and costs. This personal tool marks an important step toward greater visibility in AI-driven development workflows, though centralized solutions are still needed for broader team governance.",
+        "hindiSummary": "क्लाउड स्टेटसपेन एआई एजेंटों के संसाधन उपयोग और सीआई स्थिति की वास्तविक समय पर जानकारी प्रदान करता है।",
+        "imageQuery": "Developer viewing AI code status"
+      }
+    ],
+    "generatedAt": "2026-10-05T09:30:18.940Z"
+  },
+  "render": {
+    "slideImages": [
+      "devopscom-open-source-mod-brings-rate-limits-costs-and-ci-status-into-view-for-c-slide-01.png"
+    ],
+    "renderedAt": "2026-10-05T09:30:48.732Z",
+    "reelVideo": "devopscom-open-source-mod-brings-rate-limits-costs-and-ci-status-into-view-for-c-reel.mp4",
+    "reelDurationSeconds": 39.381043,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "ea93b27ebbc9311f",
+  "notifiedAt": "2026-10-05T09:32:52.327Z"
+}
