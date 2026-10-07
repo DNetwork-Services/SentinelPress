@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-critical-wordpress-vulnerabilities-enable-xss-sql-injection",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Critical WordPress Vulnerabilities Enable XSS, SQL Injection and Data Disclosure Attacks",
+    "link": "https://cybersecuritynews.com/wordpress-vulnerabilities/",
+    "description": "WordPress released version 7.1.3 on October 6, 2026, addressing vulnerabilities involving cross-site scripting, SQL injection, information disclosure, and other security weaknesses. The project recommends immediate updates, with fixes also available for older affected branches. Only the latest WordPress version remains actively supported. The release documentation lists seven security issues, although its introductory sentence describes “one [&#8230;] The post Critical WordPress Vulnerabilities Enable XSS, SQL Injection and Data Disclosure Attacks appeared first on Cyber Security News.",
+    "content": "WordPress released version 7.1.3 on October 6, 2026, addressing vulnerabilities involving cross-site scripting, SQL injection, information disclosure, and other security weaknesses. The project recommends immediate updates, with fixes also available for older affected branches. Only the latest WordPress version remains actively supported. The release documentation lists seven security issues, although its introductory sentence describes “one security fix.” It provides no CVE identifiers, severity scores, or confirmed exploitation details. Consequently, the headline’s critical wording should not be interpreted as an official severity classification for every vulnerability. One vulnerability involves stored cross-site scripting on the Comments administration page. Pending comments provide the attack surface, potentially exposing administrators when they review submitted content. Thomas Chauchefoin of Trail of Bits reported this issue. The disclosure does not describe the malicious payload or precise conditions required for successful exploitation. A separate cross-site scripting weakness affects Imgur embeds. WordPress credits Zhengyu Liu, Jingcheng Yang, and Gavin Zhong with reporting it. These two findings concern different content pathways: comment moderation and embedded media. Both make the update relevant to sites that process user content or display externally sourced material. WordPress Vulnerabilities Anthropic reported a second-order SQL injection vulnerability in WordPress WXR export. The release identifies the export component but does not explain the injection sequence, required permissions, or database impact. Administrators should therefore avoid assuming that the issue enables unrestricted database access or that every export operation is exploitable. Another vulnerability allows unauthenticated disclosure of comments associated with private and unpublished posts. Reported by Ananda Dhakal of Patchstack, this issue affects information expected to remain outside public access. The announcement identifies comments as the exposed data it does not claim that attackers can retrieve complete private posts. Anthropic also reported a weakness that lets users with the Author role make posts sticky. This represents an authorization problem involving a publishing capability. Separately, Alex Concha of the WordPress security team reported forgeable parameters passed to the {status}_{type} hook that can produce action name collisions. The announcement leaves the broader exploitation consequences unspecified. A denial-of-service issue affects the WP_Http::make_absolute_url() method. Anthropic reported this finding as well, but WordPress provides no request pattern, resource-consumption measurements, or detailed attack prerequisites in the release notes. Administrators can install WordPress 7.1.3 through Dashboard > Updates or obtain it from the official releases page. WordPress explicitly recommends updating sites immediately because this is a security release. Older affected branches also receive these fixes, but that doesn&#8217;t change the project’s stated support policy. The revised files span administration JavaScript, export handling, REST posts, customization, HTTP processing, embeds, queries, and post operations. No packages were revised. Stops threats before impact with 21 min faster MTTR. Integrate ANYRUN’s Sandbox in your SOC The post Critical WordPress Vulnerabilities Enable XSS, SQL Injection and Data Disclosure Attacks appeared first on Cyber Security News.",
+    "pubDate": "Wed, 07 Oct 2026 08:53:57 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/10/Critical-Wordpress-Vulnerabilities-Enable-XSS-SQL-Injection-and-Data-Disclosure-Attacks-1.webp"
+  },
+  "score": 0.9989588580246913,
+  "selectedAt": "2026-10-07T09:05:11.661Z",
+  "generated": {
+    "caption": "Is your WordPress site updated? 🚨 WordPress just released version 7.1.3 to fix multiple security vulnerabilities including cross-site scripting (XSS), SQL injection, and data disclosure. These flaws could expose admin accounts, leak private comments, or impact user content. Update your site immediately to protect your data!\n\nSave this post & follow @CyberShieldAlerts for daily security updates.",
+    "script": "Is your WordPress site at risk? Critical vulnerabilities have been found! WordPress just released version 7.1.3 to fix major security flaws like cross-site scripting, SQL injection, and data disclosure. These issues could expose administrator data, leak comments from private posts, or allow unauthorized changes to your site. The vulnerabilities affect sites that process user content, display embeds, or use WordPress export features. Researchers from Trail of Bits, Anthropic, and Patchstack helped uncover these threats. WordPress strongly recommends updating your site immediately. Don't wait, update now!",
+    "hashtags": [
+      "wordpress",
+      "xss",
+      "sqlinjection",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Critical WordPress Vulnerabilities",
+        "headlineRest": "Enable XSS, SQL Injection and Data Disclosure Attacks",
+        "body": "WordPress has released version 7.1.3 to address several security vulnerabilities, including cross-site scripting (XSS), SQL injection, and information disclosure flaws. These issues could potentially expose administrators, compromise user content, or reveal private post comments. Specific vulnerabilities include stored XSS on the Comments administration page, a second-order SQL injection in WXR export, and unauthorized disclosure of comments on private posts. The project strongly recommends immediate updates for all affected installations, with fixes also available for older branches. Users should update via Dashboard > Updates to ensure their sites are protected against these threats.",
+        "hindiSummary": "WordPress में गंभीर सुरक्षा कमजोरियों को ठीक किया गया है; उपयोगकर्ताओं को तुरंत संस्करण 7.1.3 में अपडेट करना चाहिए।",
+        "imageQuery": "WordPress security patch update"
+      }
+    ],
+    "generatedAt": "2026-10-07T09:05:38.593Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-critical-wordpress-vulnerabilities-enable-xss-sql-injection-slide-01.png"
+    ],
+    "renderedAt": "2026-10-07T09:09:35.822Z",
+    "reelVideo": "cyber-security-news-critical-wordpress-vulnerabilities-enable-xss-sql-injection-reel.mp4",
+    "reelDurationSeconds": 38.254875,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "580b8ff9e52b8ff9",
+  "notifiedAt": "2026-10-07T09:11:59.743Z"
+}
