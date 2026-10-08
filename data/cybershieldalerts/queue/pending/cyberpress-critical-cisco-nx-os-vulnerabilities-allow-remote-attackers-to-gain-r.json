@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-critical-cisco-nx-os-vulnerabilities-allow-remote-attackers-to-gain-r",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Critical Cisco NX-OS Vulnerabilities Allow Remote Attackers to Gain Root Access",
+    "link": "https://cyberpress.org/critical-cisco-nx-os-vulnerabilities/",
+    "description": "Cisco has disclosed three critical vulnerabilities in Cisco NX-OS Software that could allow unauthenticated remote attackers to execute arbitrary code with root privileges on affected Nexus switches. Published on October 7, 2026, advisory cisco-sa-ngoam-rce-LWKQ4BU covers CVE-2026-76485, CVE-2026-76486, and CVE-2026-76501, with a CVSS severity score of 9.8. Successful exploitation could also trigger process crashes, device reloads, [&#8230;] The post Critical Cisco NX-OS Vulnerabilities Allow Remote Attackers to Gain Root Access appeared first on Cyber Security News.",
+    "content": "Cisco has disclosed three critical vulnerabilities in Cisco NX-OS Software that could allow unauthenticated remote attackers to execute arbitrary code with root privileges on affected Nexus switches. Published on October 7, 2026, advisory cisco-sa-ngoam-rce-LWKQ4BU covers CVE-2026-76485, CVE-2026-76486, and CVE-2026-76501, with a CVSS severity score of 9.8. Successful exploitation could also trigger process crashes, device reloads, and denial of service. The vulnerabilities affect the Next Generation Operation, Administration, and Maintenance feature, known as NGOAM. Cisco attributes the flaws to improper validation of incoming IP traffic when the feature is enabled. Critical Cisco NX-OS Vulnerabilities Attackers can exploit affected configurations by sending specially crafted packets to an IP interface, without needing credentials or user interaction. The vulnerabilities are classified under CWE-121, indicating stack-based buffer overflows. Affected platforms include Cisco Nexus 3000 and Nexus 9000 Series switches operating in standalone NX-OS mode. However, exposure differs across the three vulnerabilities, so configuration checks are essential when assessing which devices need urgent remediation. CVE-2026-76485 requires only that NGOAM be enabled. CVE-2026-76486 additionally requires either Segment Routing over IPv6, or SRv6, or Network Virtualization Overlay. For the overlay configuration, a VXLAN Ethernet VPN network identifier must be mapped to a Network Virtualization Endpoint interface with at least one learned peer VXLAN Tunnel Endpoint. CVE-2026-76501 requires both NGOAM and SRv6. Cisco notes that Nexus 3000 switches do not support SRv6, while support exists only on a subset of Nexus 9000 switches. Consequently, the SRv6-dependent exposure does not apply uniformly across the affected switch families. Nexus 9000 switches running in ACI mode are explicitly excluded. NGOAM provides operational diagnostics for overlay and SRv6 networks. Its VXLAN functionality supports loop detection and mitigation, while SRv6 capabilities use IPv6 ping and path tracing to check connectivity and isolate forwarding problems. These legitimate monitoring functions therefore become the attack surface when vulnerable packet processing is exposed. Administrators can check NGOAM status using show feature | include ngoam. Related checks include show feature | include nve and show feature | include srv6. To assess the VXLAN conditions associated with CVE-2026-76486, Cisco lists show running-config | begin \"interface nve\", show nve vni, and show nve peers. Cisco has released software updates and recommends upgrading to a fixed release. Organizations should use Cisco Software Checker to identify affected versions and the appropriate first fixed release for their platform. The advisory does not provide a universal fixed version applicable to every deployment. Although Cisco lists no workarounds, disabling unnecessary NGOAM with no feature ngoam in global configuration mode removes the attack vector for all three flaws. Administrators must evaluate operational consequences before applying this mitigation. Cisco also provides Live Protect shields as temporary protection until permanent software upgrades can be scheduled. Cisco discovered the vulnerabilities during internal security testing. At publication, its Product Security Incident Response Team reported no known malicious exploitation or public announcements concerning the flaws. That assessment does not eliminate the need to promptly remediate exposed configurations. Join 16,000+ SOC teams using ANY.RUN to streamline threat investigations and reduce manual effort. Explore for your team The post Critical Cisco NX-OS Vulnerabilities Allow Remote Attackers to Gain Root Access appeared first on Cyber Security News.",
+    "pubDate": "Thu, 08 Oct 2026 09:14:43 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/10/critical-cisco-nx-os-vulnerabilities-allow-remote-attackers-to-gain-root-access3-6ac75caadfaf7.webp"
+  },
+  "score": 0.9994755138888889,
+  "selectedAt": "2026-10-08T09:20:22.868Z",
+  "generated": {
+    "caption": "Imagine hackers gaining full control over your network switches! Cisco has just revealed critical vulnerabilities in their NX-OS software for Nexus switches. These flaws allow remote attackers to get root access without credentials, simply by sending specially crafted packets if a specific feature (NGOAM) is enabled. Urgent software updates are available to protect your systems.\n\nSave this post to inform your team & follow @CyberShieldAlerts for daily updates!",
+    "script": "Immediate alert! Critical Cisco NX-OS vulnerabilities expose your network. Unauthenticated remote attackers can gain root access on Nexus switches with a severity score of 9.8! Cisco just disclosed three critical flaws in NX-OS Software, affecting Nexus 3000 and 9000 Series switches running in standalone mode. These vulnerabilities allow arbitrary code execution and can trigger device reloads or denial of service. The attack simply requires sending specially crafted packets when the Next Generation Operation, Administration, and Maintenance, or NGOAM, feature is enabled. No credentials or user interaction are needed. This is a direct path to a full system compromise. Act fast! Update your Cisco NX-OS to a fixed release, evaluate disabling the NGOAM feature, and use Cisco Software Checker to identify affected versions now!",
+    "hashtags": [
+      "ciscovulnerability",
+      "nxos",
+      "ngoam",
+      "remotecodeexecution",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Critical Cisco NX-OS",
+        "headlineRest": "Vulnerabilities Allow Root Access",
+        "body": "Cisco has revealed three critical vulnerabilities (CVSS 9.8) in its NX-OS Software, affecting Nexus 3000 and 9000 Series switches. These flaws allow unauthenticated remote attackers to gain root access and execute arbitrary code by sending specially crafted packets to devices with the NGOAM feature enabled. No credentials or user interaction are required for exploitation, making them highly severe. Cisco recommends upgrading to fixed software releases and advises checking affected configurations using their Software Checker. As a temporary measure, disabling the NGOAM feature can remove the attack vector, though operational impact must be considered.",
+        "hindiSummary": "सिस्को NX-OS में गंभीर कमजोरियाँ मिलीं, जिससे दूरस्थ हमलावर रूट एक्सेस पा सकते हैं; तत्काल अपडेट करें।",
+        "imageQuery": "critical network switch security alert"
+      }
+    ],
+    "generatedAt": "2026-10-08T09:20:53.729Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-critical-cisco-nx-os-vulnerabilities-allow-remote-attackers-to-gain-r-slide-01.png"
+    ],
+    "renderedAt": "2026-10-08T09:21:27.583Z",
+    "reelVideo": "cyberpress-critical-cisco-nx-os-vulnerabilities-allow-remote-attackers-to-gain-r-reel.mp4",
+    "reelDurationSeconds": 51.606349,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "335f6ae8096f8c0c",
+  "notifiedAt": "2026-10-08T09:25:08.640Z"
+}
