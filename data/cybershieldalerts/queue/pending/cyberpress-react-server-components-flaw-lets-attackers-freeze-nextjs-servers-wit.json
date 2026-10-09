@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-react-server-components-flaw-lets-attackers-freeze-nextjs-servers-wit",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "React Server Components Flaw Lets Attackers Freeze Next.js Servers With a Single Request",
+    "link": "https://cyberpress.org/react-server-components-flaw-2/",
+    "description": "A high-severity denial-of-service vulnerability in React Server Components can allow attackers to stall vulnerable Next.js servers using a single specially crafted HTTP POST request. Tracked as CVE-2026-23870, the flaw carries a CVSS score of 7.5 and affects React Server Component packages used by React 19 applications, including many Next.js deployments with reachable Server Actions. The [&#8230;] The post React Server Components Flaw Lets Attackers Freeze Next.js Servers With a Single Request appeared first on Cyber Security News.",
+    "content": "A high-severity denial-of-service vulnerability in React Server Components can allow attackers to stall vulnerable Next.js servers using a single specially crafted HTTP POST request. Tracked as CVE-2026-23870, the flaw carries a CVSS score of 7.5 and affects React Server Component packages used by React 19 applications, including many Next.js deployments with reachable Server Actions. The issue resides in React’s server-side reconstruction of form data submitted to Server Actions. Before an action executes, React parses user-controlled multipart form data and resolves references embedded within the request. React Server Components Flaw One reference type, represented internally as $K, identifies a nested form-data structure. For every $K reference, the vulnerable parser enumerates every field included in the request and checks for names matching the relevant prefix. That creates quadratic computational complexity: O(n2)O(n^2)O(n2). An attacker can submit thousands of $K references alongside thousands of otherwise harmless filler fields. With 10,000 references and 10,000 fields, React may perform roughly 100 million string-prefix checks while handling one request. Because this work runs synchronously on the Node.js event loop, the process can be effectively blocked until parsing completes. Legitimate requests queue behind the malicious request, producing application timeouts or service disruption. React Server Actions enable developers to bind a form directly to a server-side function. They are widely used in modern React and Next.js applications for tasks such as account updates, contact forms, purchases, and content submissions. The vulnerable request parsing takes place before the Server Action’s application logic is reached. As a result, conventional protections inside an action, such as authentication checks, CSRF validation, origin checks, or authorization logic, do not mitigate the parsing workload itself. An attacker generally needs to identify a Server Action endpoint and action identifier. Public-facing applications may expose action metadata through delivered page content or JavaScript bundles, making discovery feasible without privileged access. Simonkoeck stated that the impact is availability-only: the assigned CVSS vector indicates network reachability, low attack complexity, no required privileges or user interaction, and high impact on availability. Affected React packages and versions Meta’s advisory identifies the following vulnerable packages: PackageVulnerable versionsFixed releasereact-server-dom-webpack19.0.0–19.0.5; 19.1.0–19.1.6; 19.2.0–19.2.519.0.6, 19.1.7, 19.2.6react-server-dom-turbopack19.0.0–19.0.5; 19.1.0–19.1.6; 19.2.0–19.2.519.0.6, 19.1.7, 19.2.6react-server-dom-parcel19.0.0–19.0.5; 19.1.0–19.1.6; 19.2.0–19.2.519.0.6, 19.1.7, 19.2.6 The upstream fix removes the repeated full-request scans that enable the CPU spike. Instead of restarting from the beginning of form data for every nested reference, the patched implementation tracks parsing progress and processes fields through a shared traversal. This changes the attacker-controlled workload from repeated rescanning toward a linear parsing model, preventing a small request from multiplying into millions of repeated comparisons. Organizations running Next.js or other React Server Component deployments should immediately audit transitive dependencies not only the top-level react package and upgrade the relevant react-server-dom-* package family to React 19.0.6, 19.1.7, 19.2.6, or later. Until patching is complete, teams should apply request-size and multipart-field-count controls at reverse proxies or web application firewalls, although these controls are compensating measures rather than substitutes for the upstream fix. Join 16,000+ SOC teams using ANY.RUN to streamline threat investigations and reduce manual effort. Explore for your team The post React Server Components Flaw Lets Attackers Freeze Next.js Servers With a Single Request appeared first on Cyber Security News.",
+    "pubDate": "Fri, 09 Oct 2026 09:24:01 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/10/react-server-components-flaw-lets-attackers-freeze-nextjs-servers-with-a-single-request23r-6ac8b28c03f90.webp"
+  },
+  "score": 0.999605637345679,
+  "selectedAt": "2026-10-09T09:28:16.548Z",
+  "generated": {
+    "caption": "Next.js websites could be frozen by a single attack! 🚨 A critical flaw in React Server Components allows attackers to stall Next.js servers with one specially crafted request. This causes websites to time out and disrupts services for users. If your site uses React Server Actions, upgrade your `react-server-dom-*` packages immediately.\n\nStay safe! Save & share this info. Follow @CyberShieldAlerts for daily updates!",
+    "script": "Your Next.js server could freeze solid with just one request. A critical denial-of-service flaw, CVE-2026-23870, impacts React Server Components in Next.js applications. Attackers can stall your servers with a single crafted HTTP POST request, causing service disruption. This bypasses typical security checks because the parsing happens before your application logic. The issue creates quadratic computational complexity, forcing millions of string checks and blocking legitimate requests. Immediately audit and upgrade your react-server-dom packages to versions 19.0.6, 19.1.7, or 19.2.6.",
+    "hashtags": [
+      "reactservercomponents",
+      "nextjs",
+      "denialofservice",
+      "vulnerability",
+      "websecurity"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "React Server Components",
+        "headlineRest": "flaw lets attackers freeze Next.js servers with a single request.",
+        "body": "A high-severity denial-of-service vulnerability has been discovered in React Server Components, impacting Next.js applications. Attackers can exploit this flaw with a single specially crafted HTTP POST request, causing servers to stall. The issue creates quadratic computational complexity during form data parsing, effectively blocking the Node.js event loop and leading to application timeouts or service disruption. This pre-authentication vulnerability bypasses conventional security checks, making Server Action endpoints vulnerable to discovery and exploitation. Organizations should immediately upgrade affected `react-server-dom-*` packages to versions 19.0.6, 19.1.7, 19.2.6, or later.",
+        "hindiSummary": "React Server Components में एक उच्च-गंभीरता वाली भेद्यता मिली है जो Next.js सर्वर को एक ही अनुरोध से ठप कर सकती है, इसलिए तुरंत अपडेट करें।",
+        "imageQuery": "Frozen server critical vulnerability"
+      }
+    ],
+    "generatedAt": "2026-10-09T09:28:42.352Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-react-server-components-flaw-lets-attackers-freeze-nextjs-servers-wit-slide-01.png"
+    ],
+    "renderedAt": "2026-10-09T09:32:48.435Z",
+    "reelVideo": "cyberpress-react-server-components-flaw-lets-attackers-freeze-nextjs-servers-wit-reel.mp4",
+    "reelDurationSeconds": 42.887256,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "8ea3665fcf29385e",
+  "notifiedAt": "2026-10-09T09:35:51.794Z"
+}
