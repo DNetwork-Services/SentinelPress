@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-quiz-fill-in-the-correct-preposition",
   "accountId": "englishvault",
-  "status": "awaiting_approval",
+  "status": "researched",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Quiz"
@@ -11,44 +11,11 @@
     "link": "topic://englishvault/quiz-fill-in-blank-preposition",
     "description": "Quiz format: 'She has been working ___ this company ___ five years. a) at / for  b) in / since  c) at / since  d) on / for' Answer: a) 'at this company' and 'for five years' (duration). Teaching point: use 'since' with a starting point in time, 'for' with a duration.",
     "content": "Quiz format: 'She has been working ___ this company ___ five years. a) at / for  b) in / since  c) at / since  d) on / for' Answer: a) 'at this company' and 'for five years' (duration). Teaching point: use 'since' with a starting point in time, 'for' with a duration.",
-    "pubDate": "2026-08-22T03:21:34.211Z",
+    "pubDate": "2026-10-10T08:49:00.396Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-08-22T03:21:34.211Z",
-  "generated": {
-    "caption": "Ever mix up 'for' and 'since' when talking about time? You're not alone!\n\nHere's a quick tip: Use 'for' to talk about a *duration* of time. Use 'since' when you're referring to a *starting point*.\n\nFor instance, \"She has been working *for* five years.\"\n\nEasy, right? Save this post and follow @TheEnglishVault for more English tips every day!",
-    "script": "For aur since mein hamesha confusion hoti hai na? Is sentence mein aap kya bharenge? \"She has been working ___ this company ___ five years.\" Dekho, for hum use karte hain duration ke liye, ki kitne time ke liye kuch hua. Jaise for five years – paanch saalon ki duration. Aur since use hota hai starting point ke liye, ki kab se kuch shuru hua. Like since 2010 ya since morning. Is sentence mein five years ek duration hai, toh for aayega. Aur this company ke liye at. Toh correct sentence hai: \"She has been working at this company for five years.\" Ab samajh aaya? For duration ke liye, aur since starting point ke liye. Simple! Ab kabhi galti nahi hogi. Comment mein batao aapko ye rule pata tha ya nahi! Aur aise hi English tips ke liye follow karo The English Vault!",
-    "hashtags": [
-      "prepositions",
-      "englishgrammarquiz",
-      "englishgrammar",
-      "learnenglish",
-      "englishseekhen"
-    ],
-    "slides": [
-      {
-        "type": "newscard",
-        "badgeInitials": "EV",
-        "headlineHighlight": "At / For",
-        "headlineRest": "— Correct Prepositions in Action",
-        "body": "In the sentence 'She has been working ___ this company ___ five years,' the correct prepositions are 'at' and 'for'. We use 'at' to refer to a specific place of work or location, such as 'at this company.' For durations, like 'five years,' 'for' is the correct choice. Remember, 'for' is used to indicate a period of time, while 'since' is used to specify a starting point in time.",
-        "hindiSummary": "वह इस कंपनी में पाँच साल से काम कर रही है।",
-        "imageQuery": "person thinking about time"
-      }
-    ],
-    "generatedAt": "2026-08-22T03:23:06.220Z"
-  },
-  "render": {
-    "slideImages": [
-      "the-english-vault-curriculum-quiz-fill-in-the-correct-preposition-slide-01.png"
-    ],
-    "renderedAt": "2026-08-22T03:23:10.455Z",
-    "reelVideo": "the-english-vault-curriculum-quiz-fill-in-the-correct-preposition-reel.mp4",
-    "reelDurationSeconds": 64.536,
-    "hasVoiceover": true,
-    "musicTrack": null
-  },
-  "approvalHash": "6dcfa4a97ee80d02",
-  "notifiedAt": "2026-08-22T03:26:18.925Z"
+  "selectedAt": "2026-10-10T08:49:00.397Z",
+  "generated": null,
+  "render": null
 }
