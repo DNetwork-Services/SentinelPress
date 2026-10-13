@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-quiz-fill-in-the-correct-preposition",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "rendered",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Quiz"
@@ -16,6 +16,35 @@
   },
   "score": 1,
   "selectedAt": "2026-10-10T08:49:00.397Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Talking about how long you've done something can be tricky! 🤔\n\nRemember, use 'for' to talk about a *duration* (like five years). Use 'since' when you refer to a specific *starting point* in time (like 2018).\n\nFor example: \"She has been working *at* this company *for* five years.\"\n\nSave this for later and follow @EnglishVault for daily tips!",
+    "script": "Ye 'for' aur 'since' mein bahut confusion hota hai na? Aur company ke liye 'at' ya 'in'? Dekho, is sentence mein: 'She has been working ___ this company ___ five years.' Company ke liye, hum usually 'at' use karte hain, so correct hai 'at this company'. Aur 'five years' ek duration hai. Jab bhi hum duration ki baat karte hain, we use 'for'. So it's 'for five years'. Agar koi starting point hota, jaise '2010', toh hum 'since' lagate. Toh next time, yaad rakhna, 'at this company' aur 'for five years'. The correct sentence is 'She has been working at this company for five years'. Ab samajh aaya? Comment mein batao aapko ye pata tha ya nahi! Aur aise hi quick English tips ke liye The English Vault ko follow karo!",
+    "hashtags": [
+      "prepositions",
+      "forvssince",
+      "englishgrammar",
+      "englishquiz",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "At / For",
+        "headlineRest": "— Mastering Prepositions of Time and Place",
+        "body": "Let's correctly fill in the prepositions for: 'She has been working ___ this company ___ five years.' For location, like a company or workplace, we correctly use 'at', making it 'at this company'. When indicating a duration of time, such as 'five years', 'for' is the right choice. Remember, 'since' is used for a specific starting point in time (e.g., 'since 2018'), not for the total length of time. Thus, the complete correct sentence is: 'She has been working at this company for five years.'",
+        "hindiSummary": "'At' का प्रयोग किसी स्थान के लिए, और 'for' का प्रयोग समय की अवधि (duration) बताने के लिए किया जाता है, जबकि 'since' किसी शुरुआती समय बिंदु को दर्शाता है।",
+        "imageQuery": "person thinking about grammar rules"
+      }
+    ],
+    "generatedAt": "2026-10-13T09:46:42.592Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-quiz-fill-in-the-correct-preposition-slide-01.png"
+    ],
+    "renderedAt": "2026-10-13T09:46:47.184Z",
+    "reelVideo": "the-english-vault-curriculum-quiz-fill-in-the-correct-preposition-reel.mp4",
+    "reelDurationSeconds": 8
+  }
 }

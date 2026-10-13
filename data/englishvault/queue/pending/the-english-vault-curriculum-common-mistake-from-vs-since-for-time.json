@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-common-mistake-from-vs-since-for-time",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "rendered",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Common Mistakes"
@@ -16,6 +16,35 @@
   },
   "score": 1,
   "selectedAt": "2026-10-11T09:11:04.616Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever said \"I've lived here from 2015\" and wondered if it sounded right? 🤔\n\nThe trick is to use 'since' with the present perfect to show a starting point that's still relevant now: \"I have lived here since 2015.\" 'From' needs both a start AND an end point, like: \"The offer is valid from Monday to Friday.\"\n\nGot it? Save this for later! Follow @EnglishVault for daily English lessons!",
+    "script": "From aur since mein hamesha confusion hota hai na? Toh suno, jab hum kisi past point ki baat karte hain jo abhi tak relevant hai, tab hum 'since' use karte hain. Jaise, 'I have lived here since 2015.' Matlab, 2015 se main yahan reh raha hoon aur abhi bhi reh raha hoon. Lekin 'from' kab use hota hai? Jab koi defined start aur end point ho. Jaise, 'The offer is valid from Monday to Friday.' Yahan start bhi hai aur end bhi. Toh yaad rakho, jab bhi koi kaam past mein shuru hua aur abhi bhi chal raha hai, tab use karo 'since'. Clear hai? Ye tip save kar lo aur The English Vault ko follow karo aise hi English tips ke liye!",
+    "hashtags": [
+      "fromvssince",
+      "presentperfect",
+      "englishgrammar",
+      "commonmistakes",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Since vs From",
+        "headlineRest": "— The Time Difference Explained",
+        "body": "Many English learners confuse 'since' and 'from' when talking about time. Use 'since' with the present perfect to indicate a starting point that continues up to the present moment, like in 'I have lived here since 2015.' In contrast, 'from' is used to define a period with both a clear start and an end point. For example, 'The offer is valid from Monday to Friday.' Remember, saying 'I have lived here from 2015' is incorrect; 'since' is the right choice for ongoing actions.",
+        "hindiSummary": "'Since' का प्रयोग किसी काम के शुरू होने के समय से अब तक के लिए होता है, जबकि 'from' एक निर्धारित अवधि के लिए इस्तेमाल किया जाता है।",
+        "imageQuery": "Time distinction grammar"
+      }
+    ],
+    "generatedAt": "2026-10-13T09:45:38.841Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-common-mistake-from-vs-since-for-time-slide-01.png"
+    ],
+    "renderedAt": "2026-10-13T09:46:45.103Z",
+    "reelVideo": "the-english-vault-curriculum-common-mistake-from-vs-since-for-time-reel.mp4",
+    "reelDurationSeconds": 8
+  }
 }

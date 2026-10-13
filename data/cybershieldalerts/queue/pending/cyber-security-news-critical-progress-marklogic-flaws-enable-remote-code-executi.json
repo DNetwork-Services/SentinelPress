@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-critical-progress-marklogic-flaws-enable-remote-code-executi",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Critical Progress MarkLogic Flaws Enable Remote Code Execution and Admin Takeover",
+    "link": "https://cybersecuritynews.com/progress-marklogic-flaws/",
+    "description": "Progress released urgent security updates for MarkLogic Server to fix a broad set of critical and high-severity flaws that could let attackers gain elevated access, create unauthorized administrator accounts, execute code on servers, steal credentials, and access protected data. The security alert, published on October 12, 2026, affects MarkLogic Server 12.0 through 12.0.3 and MarkLogic [&#8230;] The post Critical Progress MarkLogic Flaws Enable Remote Code Execution and Admin Takeover appeared first on Cyber Security News.",
+    "content": "Progress released urgent security updates for MarkLogic Server to fix a broad set of critical and high-severity flaws that could let attackers gain elevated access, create unauthorized administrator accounts, execute code on servers, steal credentials, and access protected data. The security alert, published on October 12, 2026, affects MarkLogic Server 12.0 through 12.0.3 and MarkLogic Server 11.0 through 11.3.6. Progress has released MarkLogic Server 12.1 and 11.3.7 to address the issues. Organizations running retired MarkLogic versions, including version 10 and earlier, should move to a supported fixed release because those versions were not fully assessed and will not receive fixes. The most serious MarkLogic flaws involve improper privilege management, where a user with limited access may be able to perform actions reserved for an administrator. CVE-2026-85947 affects forest-management operations and could let a remote user with forest-management permissions create a persistent, unauthorized administrator account. Progress MarkLogic Flaws Another issue, CVE-2026-85948, is an XQuery injection flaw in a deprecated Management API package path. A remote user with manage-user-level permissions could use the flaw to gain persistent administrative control. These weaknesses matter because a low-level account can become a long-term entry point into the database platform. CVE-2026-85955 may allow a user with query-execution access to invoke an XQuery evaluation function without the required extra privilege. Progress said this could result in server-side code execution with elevated permissions. CVE-2026-85960 also creates a code execution path through predictable cross-site request forgery tokens in Query Console. A malicious webpage could send unauthorized requests when opened by an authenticated Query Console user, causing server-side code to run with that user’s permissions. This pattern resembles other recent Progress product security issues, including the Progress OpenEdge AdminServer flaw that allowed authenticated users to inject operating-system commands through remote administration features. Cyber Security News has also reported on Progress ShareFile vulnerabilities that could be chained to obtain remote code execution on affected customer-managed deployments. Several vulnerabilities could expose cloud services and authentication material. CVE-2026-85951 affects Azure-based installations and could enable server-side request forgery, or SSRF, allowing an authenticated user to request internal cloud services and potentially obtain credentials or tokens. CVE-2026-85952 presents a similar risk on Linux systems. Progress also fixed CVE-2026-85962, an improper SAML authentication issue. In deployments that use SAML, an unauthenticated remote attacker could cause MarkLogic to accept an assertion that should have been rejected, opening a path to unauthorized access. Other notable issues include XML external entity processing flaws, path traversal weaknesses, sensitive data written to logs, unsafe TLS certificate hostname validation, and cleartext transport for certain cluster-management and Amazon S3 connections. The bulletin also lists memory-safety flaws that could cause process crashes, limited memory disclosure, or data modification. Progress strongly recommends upgrading MarkLogic Server 12.0–12.0.3 to version 12.1 and upgrading the 11.x branch through 11.3.6 to version 11.3.7. The vendor says Progress Data Cloud customers have already been patched. Administrators should review administrator accounts, forest-management permissions, Query Console access, REST and XDBC evaluation paths, authentication events, diagnostic logs, and unexpected outbound connections. The company warned that affected servers may operate normally and that missing indicators do not prove a system has not been compromised. Before upgrading, teams should back up content and security databases. Progress notes that MarkLogic Server does not support downgrades, so an upgrade cannot simply be reversed after installation. Older MarkLogic Content Pump clients should also be upgraded to versions that match MarkLogic Server 12.1 or 11.3.7. The large number of fixed flaws makes this more than a routine patch cycle. Organizations should prioritize exposed management interfaces, privileged MarkLogic users, cloud-connected deployments, and SAML-enabled environments when applying the vendor’s updates. Update defenses against new malware as soon as it appears. Integrate TI Feeds with data from 16K SOCs. The post Critical Progress MarkLogic Flaws Enable Remote Code Execution and Admin Takeover appeared first on Cyber Security News.",
+    "pubDate": "Tue, 13 Oct 2026 09:30:58 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/10/Critical-Progress-MarkLogic-Flaws-Enable-Remote-Code-Execution-and-Admin-Takeover.webp"
+  },
+  "score": 0.9991645787037037,
+  "selectedAt": "2026-10-13T09:39:59.354Z",
+  "generated": {
+    "caption": "Heads up! Critical flaws in Progress MarkLogic Server could let attackers take over your systems. Urgent updates fix issues allowing unauthorized admin accounts, data theft, and remote code execution. If you use MarkLogic Server versions 12.0-12.0.3 or 11.0-11.3.6, upgrade immediately to 12.1 or 11.3.7.\n\nSave this post & share to keep others informed! Follow @CyberShieldAlerts for daily threat intelligence.",
+    "script": "Urgent security alert for MarkLogic users! Critical flaws let attackers remotely take over your server and steal data. Progress released urgent updates to fix a broad set of critical and high-severity flaws in MarkLogic Server. These vulnerabilities affect versions 12.0 through 12.0.3 and 11.0 through 11.3.6. Attackers could exploit these issues to create unauthorized administrator accounts, execute code, and steal credentials. This means even low-level user access could lead to full server takeover and expose sensitive data, including on Azure-based installations and via SAML authentication. Update your MarkLogic Server immediately to version 12.1 or 11.3.7. If you're on a retired version, move to a supported fixed release now.",
+    "hashtags": [
+      "progress",
+      "marklogic",
+      "rce",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Progress MarkLogic",
+        "headlineRest": "Critical Flaws Enable RCE & Admin Takeover",
+        "body": "Progress has released urgent security updates for MarkLogic Server to address critical and high-severity flaws. These vulnerabilities could allow attackers to gain elevated access, create unauthorized administrator accounts, execute code remotely, and steal sensitive data. The most serious issues involve improper privilege management, enabling low-level users to achieve persistent administrative control. Organizations running affected versions (12.0-12.0.3 and 11.0-11.3.6) should upgrade to MarkLogic Server 12.1 or 11.3.7 immediately. Administrators are also advised to review accounts, permissions, and logs, as compromised systems may not show obvious indicators.",
+        "hindiSummary": "प्रोग्रेस मार्क लॉजिक सर्वर में गंभीर खामियां पाई गई हैं जो हमलावरों को रिमोट कोड निष्पादन और व्यवस्थापक नियंत्रण प्राप्त करने में मदद कर सकती हैं; उपयोगकर्ताओं को तत्काल अपडेट करने की सलाह दी जाती है।",
+        "imageQuery": "critical server vulnerability alert"
+      }
+    ],
+    "generatedAt": "2026-10-13T09:45:02.041Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-critical-progress-marklogic-flaws-enable-remote-code-executi-slide-01.png"
+    ],
+    "renderedAt": "2026-10-13T09:46:43.927Z",
+    "reelVideo": "cyber-security-news-critical-progress-marklogic-flaws-enable-remote-code-executi-reel.mp4",
+    "reelDurationSeconds": 48.076916,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "d7caccd586fb9636",
+  "notifiedAt": "2026-10-13T09:48:38.765Z"
+}
