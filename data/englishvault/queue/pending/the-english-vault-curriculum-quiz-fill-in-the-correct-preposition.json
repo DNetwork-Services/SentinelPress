@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-quiz-fill-in-the-correct-preposition",
   "accountId": "englishvault",
-  "status": "rendered",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Quiz"
@@ -45,6 +45,10 @@
     ],
     "renderedAt": "2026-10-13T09:46:47.184Z",
     "reelVideo": "the-english-vault-curriculum-quiz-fill-in-the-correct-preposition-reel.mp4",
-    "reelDurationSeconds": 8
-  }
+    "reelDurationSeconds": 57.456,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "6dcfa4a97ee80d02",
+  "notifiedAt": "2026-10-14T08:04:04.496Z"
 }

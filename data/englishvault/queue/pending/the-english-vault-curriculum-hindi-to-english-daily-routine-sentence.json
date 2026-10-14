@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-hindi-to-english-daily-routine-sentence",
   "accountId": "englishvault",
-  "status": "rendered",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Translation"
@@ -45,6 +45,10 @@
     ],
     "renderedAt": "2026-10-13T09:46:46.262Z",
     "reelVideo": "the-english-vault-curriculum-hindi-to-english-daily-routine-sentence-reel.mp4",
-    "reelDurationSeconds": 8
-  }
+    "reelDurationSeconds": 52.512,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "9ea0e87dffe53b10",
+  "notifiedAt": "2026-10-14T08:04:01.531Z"
 }

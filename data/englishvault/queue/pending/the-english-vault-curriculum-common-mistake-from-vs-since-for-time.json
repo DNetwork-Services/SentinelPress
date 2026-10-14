@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-common-mistake-from-vs-since-for-time",
   "accountId": "englishvault",
-  "status": "rendered",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Common Mistakes"
@@ -45,6 +45,10 @@
     ],
     "renderedAt": "2026-10-13T09:46:45.103Z",
     "reelVideo": "the-english-vault-curriculum-common-mistake-from-vs-since-for-time-reel.mp4",
-    "reelDurationSeconds": 8
-  }
+    "reelDurationSeconds": 53.568,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "70c12c2d91eaf6a6",
+  "notifiedAt": "2026-10-14T08:03:58.528Z"
 }
