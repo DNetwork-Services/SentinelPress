@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-palo-alto-networks-patches-pan-os-authenticated-rce-flaw-amid-ac",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Palo Alto Networks Patches PAN-OS Authenticated RCE Flaw Amid Active Exploitation",
+    "link": "https://thehackernews.com/2026/10/palo-alto-networks-patches-pan-os.html",
+    "description": "Palo Alto Networks on Wednesday issued security updates for a high-severity flaw in PAN-OS software that has come under active exploitation. The vulnerability, tracked as CVE-2026-0322 (CVSS score: 8.6), is a case of remote code execution in the management interface. \"A remote code execution (RCE) vulnerability in the management interface of Palo Alto Networks PAN-OS software enables an",
+    "content": "",
+    "pubDate": "Thu, 15 Oct 2026 11:47:58 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEj4G5JAIF-hCnKf9QyWLzWIWxTrUIjqshujDHf0-_9m84O9f4S0Z-IQ4Jg-T11Ph_rwZvzsFU8Z-pI3uRsnvPSE-FK_VtrUx0pNZgHKf3PuMJCQmwopiE5hyMRSObeV7_VSrF7WC_iiG9T8wMNivOOBC12F7bLK8WI-MNjCffolAJnnhk-X-v1ecxwYtrQz/s1600/palo.jpg"
+  },
+  "score": 0.992446100308642,
+  "selectedAt": "2026-10-15T07:39:32.927Z",
+  "generated": {
+    "caption": "Is your network protected? 🚨 Palo Alto Networks just patched a critical flaw in its PAN-OS software that was under *active exploitation*. This vulnerability allowed attackers to remotely take control of affected systems through the management interface. Update now!\n\nStay secure! Save & share this update. Follow @CyberShieldAlerts for daily threat intelligence.",
+    "script": "Urgent alert for Palo Alto Networks users: a critical flaw is being exploited right now! Palo Alto Networks has issued security updates for a high-severity remote code execution vulnerability in their PAN-OS software. This flaw, CVE-2026-0322, affects the management interface. The critical detail? It's already under active exploitation. This vulnerability puts your network at serious risk if left unpatched. Update your PAN-OS software immediately to stay secure.",
+    "hashtags": [
+      "paloaltonetworks",
+      "panos",
+      "rce",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Palo Alto Networks",
+        "headlineRest": "Patches Actively Exploited RCE Flaw",
+        "body": "Palo Alto Networks has released security updates for a high-severity vulnerability in its PAN-OS software. This flaw, identified as a remote code execution (RCE) vulnerability in the management interface, poses a significant risk. Crucially, the company confirms that this vulnerability is already under active exploitation by attackers. Users are urged to apply the security updates immediately to protect their systems from potential compromise.",
+        "hindiSummary": "Palo Alto Networks ने PAN-OS सॉफ्टवेयर में सक्रिय रूप से शोषण किए जा रहे एक गंभीर RCE दोष के लिए सुरक्षा अपडेट जारी किए हैं।",
+        "imageQuery": "cybersecurity urgent patch vulnerability"
+      }
+    ],
+    "generatedAt": "2026-10-15T07:44:38.179Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-palo-alto-networks-patches-pan-os-authenticated-rce-flaw-amid-ac-slide-01.png"
+    ],
+    "renderedAt": "2026-10-15T07:45:39.937Z",
+    "reelVideo": "the-hacker-news-palo-alto-networks-patches-pan-os-authenticated-rce-flaw-amid-ac-reel.mp4",
+    "reelDurationSeconds": 31.184399,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "308d872bfbd86553",
+  "notifiedAt": "2026-10-15T07:49:08.829Z"
+}

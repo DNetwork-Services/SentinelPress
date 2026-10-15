@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-present-perfect-vs-past-simple",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Grammar"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-10-14T07:54:52.528Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever said \"I have visited Paris in 2019\"? Here's the trick!\n\nUse Present Perfect (have + past participle) for actions connected to now or when the exact time isn't stated, like \"I have visited Paris.\" But for finished actions at a *specific* past time, always use Past Simple: \"I visited Paris in 2019.\"\n\nEasy, right? Save this for later and follow @theenglishvault for daily English lessons!",
+    "script": "I have visited Paris in 2019, ye bolte ho aap bhi? Dekho, Present Perfect (have/has + past participle) use karte hain jab action ka connection now se ho, ya time na bataya ho. Example: 'I have visited Paris.' Correct. Par agar time bataya hai, jaise 'in 2019', tab Past Simple use hota hai. Example: 'I visited Paris in 2019.' Correct. Toh 'I have visited Paris in 2019' bolna incorrect hai. Toh yaad rakho, specific time batana hai toh Past Simple. Aur agar exact time nahi bataya ya action ka connection abhi se hai, toh Present Perfect. Ab clear hua na? Comment mein batao, ye mistake aap bhi karte the kya? Aur follow karo The English Vault ko!",
+    "hashtags": [
+      "presentperfect",
+      "pastsimple",
+      "englishgrammar",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "I have visited in 2019",
+        "headlineRest": "— Why This Is Incorrect",
+        "body": "The Present Perfect (have/has + past participle) is used for actions connected to the present, or when the exact time isn't stated, like 'I have visited Paris.' In contrast, the Past Simple describes finished actions at a specific, stated past time, for example, 'I visited Paris in 2019.' A common mistake is using the Present Perfect with a specific past time marker. Therefore, 'I have visited Paris in 2019' is incorrect; you should use the Past Simple: 'I visited Paris in 2019.'",
+        "hindiSummary": "प्रेजेंट परफेक्ट का इस्तेमाल तब होता है जब समय निश्चित न हो या अभी से जुड़ा हो, जबकि पास्ट सिंपल का इस्तेमाल निश्चित बीते हुए समय के लिए होता है।",
+        "imageQuery": "confused person timeline"
+      }
+    ],
+    "generatedAt": "2026-10-15T07:45:37.881Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-present-perfect-vs-past-simple-slide-01.png"
+    ],
+    "renderedAt": "2026-10-15T07:45:42.252Z",
+    "reelVideo": "the-english-vault-curriculum-present-perfect-vs-past-simple-reel.mp4",
+    "reelDurationSeconds": 62.088,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "2136e53856329db5",
+  "notifiedAt": "2026-10-15T07:49:17.886Z"
 }
