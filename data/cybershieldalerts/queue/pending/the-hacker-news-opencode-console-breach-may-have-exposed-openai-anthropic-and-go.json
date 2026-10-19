@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-opencode-console-breach-may-have-exposed-openai-anthropic-and-go",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "OpenCode Console Breach May Have Exposed OpenAI, Anthropic, and Google API Keys",
+    "link": "https://thehackernews.com/2026/10/opencode-console-breach-may-have.html",
+    "description": "An intruder reached a legacy system at OpenCode on the night of October 16 and may have exposed the third-party AI provider keys that users had saved in OpenCode Console, the company said. Console is OpenCode's optional hosted service: a workspace saves its own OpenAI, Anthropic, or Google key there, and Console uses that key to call the provider so team members can use the models without",
+    "content": "",
+    "pubDate": "Mon, 19 Oct 2026 11:37:08 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgzRSuvywT7bfHRl45krYywOIqL__Cw1hXchChbx5ylDNZaHxVDEf8O1pmzajCnItG1rwxKq0k2GHdMeDW_DvQP8Wk5MEiwlE2dZXn9grvDpAOpViWonNWsFMkTXoKpcFj8lk0UuMrGx-xVHRU_KufidsDcY7e0RUSG62aapDC9y9opt8V_rmgxkCG9v6A/s1600/opencode.jpg"
+  },
+  "score": 0.9894435092592593,
+  "selectedAt": "2026-10-19T08:01:08.607Z",
+  "generated": {
+    "caption": "Your AI projects could be at risk! OpenCode Console, an AI development service, announced a breach of a legacy system on Oct 16. This incident may have exposed OpenAI, Anthropic, or Google API keys saved by users. If you used OpenCode Console to store your keys, be aware.\n\nStay informed. Save this post, share it, and follow @CyberShieldAlerts for daily updates!",
+    "script": "Your AI API keys for OpenAI, Anthropic, or Google might be compromised! On October 16th, OpenCode Console suffered a breach. An intruder accessed a legacy system, potentially exposing third-party AI provider keys that users had saved. These aren't just passwords; these keys give access to powerful AI models. If you used OpenCode Console to save your API keys, revoke them immediately.",
+    "hashtags": [
+      "opencode",
+      "api_keys_exposed",
+      "openai",
+      "databreach",
+      "cybersecurity"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "OpenCode Console",
+        "headlineRest": "Breach May Expose AI Provider API Keys",
+        "body": "On the night of October 16, an intruder accessed a legacy system at OpenCode, leading to a potential security incident. This breach may have exposed third-party AI provider keys that users had saved within OpenCode Console, the company's optional hosted service. These keys are used by the Console to call providers like OpenAI, Anthropic, or Google, allowing team members to utilize their AI models. The company has acknowledged the intrusion and the potential exposure of these critical API keys. Users should be aware of this incident.",
+        "hindiSummary": "ओपनकोड कंसोल में सेंधमारी से OpenAI, एंथ्रोपिक और गूगल जैसी AI प्रोवाइडर की API कुंजियाँ उजागर हो सकती हैं।",
+        "imageQuery": "data breach API keys alarming"
+      }
+    ],
+    "generatedAt": "2026-10-19T08:06:09.246Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-opencode-console-breach-may-have-exposed-openai-anthropic-and-go-slide-01.png"
+    ],
+    "renderedAt": "2026-10-19T08:06:27.992Z",
+    "reelVideo": "the-hacker-news-opencode-console-breach-may-have-exposed-openai-anthropic-and-go-reel.mp4",
+    "reelDurationSeconds": 24.682812,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "e96ed532492907bf",
+  "notifiedAt": "2026-10-19T08:08:25.901Z"
+}
