@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-common-mistake-i-am-agree-vs-i-agree",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Common Mistakes"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-10-18T07:22:12.600Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever said 'I am agree' and wondered if it sounded quite right? 🤔\n\nIn English, 'agree' is already a verb, so you don't need 'am' before it! Just say 'I agree' to sound natural and confident.\n\nFor example: 'I agree with you.' ✅\n\nSave this common mistake for later! Follow @EnglishVault for daily English lessons!",
+    "script": "Aapne bhi kabhi 'I am agree' bol diya hai kya? Ye common mistake hai! Dekho, 'agree' is a verb. Jaise 'eat' ya 'sleep', waise hi 'agree'. Iske pehle 'am', 'is', 'are' lagane ki zaroorat nahi hoti. Hum 'I am eat' nahi bolte na? Toh 'I am agree' bhi galat hai. Right hai: 'I agree with you'. Toh ab jab bhi aap kisi se sehmat ho, seedha bolo 'I agree'. No 'am'! Ab samajh aaya? Comment mein batao, ye mistake pata thi ya nahi? Follow The English Vault for more!",
+    "hashtags": [
+      "iamagree",
+      "englishmistakes",
+      "englishgrammar",
+      "learnenglish",
+      "spokenenglish"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "I Am Agree",
+        "headlineRest": "Is Incorrect — Here's Why",
+        "body": "Many English learners mistakenly say \"I am agree\" when they want to express agreement. However, 'agree' is already a verb in English. Unlike some languages where the equivalent might be an adjective or a state requiring a form of 'to be,' English does not need 'am,' 'is,' or 'are' before 'agree.' So, instead of the incorrect \"I am agree with you,\" the correct phrasing is simply \"I agree with you.\" Always remember that 'agree' functions as a standalone verb.",
+        "hindiSummary": "'Agree' एक क्रिया है, इसलिए इसके साथ 'am/is/are' का उपयोग नहीं किया जाता है।",
+        "imageQuery": "Lighthearted grammar correction"
+      }
+    ],
+    "generatedAt": "2026-10-21T07:57:26.078Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-common-mistake-i-am-agree-vs-i-agree-slide-01.png"
+    ],
+    "renderedAt": "2026-10-21T07:57:56.395Z",
+    "reelVideo": "the-english-vault-curriculum-common-mistake-i-am-agree-vs-i-agree-reel.mp4",
+    "reelDurationSeconds": 43.176,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "da9dd08db631f4aa",
+  "notifiedAt": "2026-10-21T08:03:36.448Z"
 }
