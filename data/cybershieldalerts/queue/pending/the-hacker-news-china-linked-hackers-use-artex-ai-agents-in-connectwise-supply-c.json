@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-china-linked-hackers-use-artex-ai-agents-in-connectwise-supply-c",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "China-Linked Hackers Use ARTEX AI Agents in ConnectWise Supply Chain Attack",
+    "link": "https://thehackernews.com/2026/10/china-linked-hackers-use-artex-ai.html",
+    "description": "Microsoft on Wednesday disclosed that a China state-aligned actor dubbed Storm-0940 was behind the recent supply chain compromise of the ConnectWise Cloud Backup application. During the incident, Storm-0940 used ARTEX, a Go-based agentic AI penetration testing framework that was made closed-source in the wake of its abuse against South Korean financial institutions, to speed up scanning and",
+    "content": "",
+    "pubDate": "Thu, 22 Oct 2026 09:51:26 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgBGpr0x4Dn4VV8YVCO_s3CzzGvwmVUceHbt0llcvrzvBmWFaJcu9E9v3WntJGdez3PZ-53GAVSRiYc5FdSOgmyeCSXvpL2t5nCjhzJC50kTLhQygW8cCeFHqtZtDYHsG7Vx2uf1vVdobBbKJ5fcCKSNZDKpV00GRQKVlD444srM9L4rcPnTe28nABZ3pon/s1600/chinese-ai.jpg"
+  },
+  "score": 0.9805556311728395,
+  "selectedAt": "2026-10-22T07:51:25.952Z",
+  "generated": {
+    "caption": "🚨 Even trusted services aren't safe when hackers weaponize AI!\n\nMicrosoft revealed that China-linked actor Storm-0940 compromised ConnectWise Cloud Backup. They used ARTEX, an AI-powered framework, to speed up their scanning during the supply chain attack. This tool was previously abused against financial institutions.\n\nSave this post & follow @CyberShieldAlerts for daily updates on AI and cybersecurity threats!",
+    "script": "Alarming cyber threat! China-linked hackers are using AI to target your data. Microsoft just revealed a major supply chain attack. Storm-0940, a China state-aligned actor, compromised the ConnectWise Cloud Backup application. They leveraged ARTEX, an agentic AI penetration testing framework, to drastically speed up their scanning and exploits. This sophisticated AI tool, previously abused against South Korean financial institutions, now poses a significant risk to anyone relying on ConnectWise services. This isn't just a hack; it's a targeted AI-driven assault on critical infrastructure. If your organization uses ConnectWise Cloud Backup, review your security settings and logs immediately. Update all systems and stay hyper-vigilant.",
+    "hashtags": [
+      "connectwise",
+      "artexai",
+      "supplychainattack",
+      "cyberattack",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "ConnectWise",
+        "headlineRest": "Supply Chain Compromise Linked to China-Backed Storm-0940",
+        "body": "Microsoft has disclosed that the China state-aligned actor Storm-0940 was responsible for a recent supply chain compromise of the ConnectWise Cloud Backup application. During the incident, Storm-0940 utilized ARTEX, a Go-based agentic AI penetration testing framework. This framework, previously made closed-source due to its misuse, was employed to accelerate scanning operations during the attack. The sophisticated use of AI agents by a state-sponsored group underscores the evolving landscape of cyber threats.",
+        "hindiSummary": "चीन-समर्थित हैकर्स ने ConnectWise सप्लाई चेन हमले में ARTEX AI एजेंटों का उपयोग किया।",
+        "imageQuery": "AI cyber attack, supply chain"
+      }
+    ],
+    "generatedAt": "2026-10-22T07:51:52.502Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-china-linked-hackers-use-artex-ai-agents-in-connectwise-supply-c-slide-01.png"
+    ],
+    "renderedAt": "2026-10-22T07:52:21.951Z",
+    "reelVideo": "the-hacker-news-china-linked-hackers-use-artex-ai-agents-in-connectwise-supply-c-reel.mp4",
+    "reelDurationSeconds": 45.487891,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "a1bad47b949bcf53",
+  "notifiedAt": "2026-10-22T08:28:00.564Z"
+}
