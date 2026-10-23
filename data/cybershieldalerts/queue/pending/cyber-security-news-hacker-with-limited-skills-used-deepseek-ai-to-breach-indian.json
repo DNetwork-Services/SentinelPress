@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-hacker-with-limited-skills-used-deepseek-ai-to-breach-indian",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Hacker With Limited Skills Used DeepSeek AI to Breach Indian University and Steal Over 5,200 Records",
+    "link": "https://cybersecuritynews.com/hacker-with-limited-skills-used-deepseek-ai/",
+    "description": "A cybercriminal using the online handle BUGSTER used artificial intelligence tools to support attacks on Indian organizations, including two universities. In one confirmed intrusion, the attacker stole a MongoDB database containing more than 5,200 records, including personal information about students and staff, according to Palo Alto Networks’ Unit 42. The researchers did not name the [&#8230;] The post Hacker With Limited Skills Used DeepSeek AI to Breach Indian University and Steal Over 5,200 Records appeared first on Cyber Security News.",
+    "content": "A cybercriminal using the online handle BUGSTER used artificial intelligence tools to support attacks on Indian organizations, including two universities. In one confirmed intrusion, the attacker stole a MongoDB database containing more than 5,200 records, including personal information about students and staff, according to Palo Alto Networks’ Unit 42. The researchers did not name the universities. The actor’s setup combined Hermes Agent, an AI assistant framework, with DeepSeek V4 as its reasoning model and Cursor as a coding tool. Unit 42 said the attacker turned off safety controls and relied on AI-written scripts and reports. The case shows how AI can help a person with limited skills take on tasks that once demanded more experience, though it does not mean the model carried out the activity on its own. Analysts from Unit 42 identified and investigated the activity by examining the operator’s environment, tools and records. They found evidence of activity beyond the university intrusions, including credential theft, Wi-Fi password cracking, cryptocurrency research, and plans for phone-service fraud. Hacker With Limited Skills Used DeepSeek AI At one university, the actor used AI-assisted research to map an online education platform and its related services. The report described a WordPress site, a learning platform, a student portal and an administration dashboard. The actor then used the information to try account passwords, and the tool identified one working login. Unit 42 did not say that this activity led to the theft of the 5,200 records; that database came from a separate university intrusion. Example of a WordPress REST API enumeration report from the activity (Source &#8211; Unit42) In the second case, the actor accessed a public university’s database with an administrator account protected by a weak password. The stolen MongoDB data included student records from diploma, undergraduate and postgraduate programs, as well as faculty information. The actor’s records also showed details about parts of the university’s cloud and database setup. These incidents show why an exposed service or weak account can have serious effects, even without a newly discovered software flaw. The activity described by Unit 42 relied on basic tools, information gathered about the targets and access to an administrator account. Readers following DeepSeek-powered Hermes Agent attacks can compare this case with another report on AI-assisted activity involving the same tools. AI supported work across several schemes Unit 42 said the actor used AI-generated reports to organize research and produce scripts. Investigators also found a large credential-scanning toolkit designed to look for exposed secrets, such as cloud keys and private keys in files or logs. This kind of information can give criminals access to services if an organization has left it unprotected. The actor also built AI profiles for separate tasks. One profile was used to seek advice about VoIP fraud, while another researched phone carriers. Unit 42 found planning material but no call records or signs that the phone operation had become active. This distinction matters: the report documents preparation and research, not proof that the planned fraud was carried out. Other activity included an automated process for trying to crack Wi-Fi passwords. Unit 42 said it required a device near the target networks to collect authentication data, suggesting the actor had local access to the locations. The actor also collected information about large cryptocurrency holders, but researchers did not find evidence of follow-up activity against them. Using the pandarouter profile to investigate a carrier (Source &#8211; Unit42) Related reporting on DeepSeek safety research findings covers concerns about AI models producing harmful guidance. Unit 42’s findings add a different point: an attacker can combine an AI model with ordinary tools and weak account security to pursue several types of crime. Universities and other organizations should review administrator accounts, remove weak or reused passwords, and require multi-factor authentication where possible. They should also limit database access to approved systems and users, check internet-facing portals for unnecessary exposure, and monitor account activity for unusual login attempts or access to large sets of records. Organizations should protect secrets such as API keys and cloud credentials by keeping them out of public files and logs. If a credential may have been exposed, teams should revoke or rotate it, then review access records for signs of misuse. These steps address the security gaps described in the report; they do not depend on identifying a particular AI model. The activity also highlights the value of monitoring what AI agents can access. If AI tools are used for legitimate work, organizations should limit their permissions, keep safety and approval controls enabled, and review their actions. The case is part of a wider set of reported concerns about AI-enabled cybercrime, including DeepSeek-powered credential theft activity. Indicators of compromise (IoCs):- TypeIndicatorContextIP address162.243.3[.]92Actor infrastructure used to host several servicesIP address104.238.38[.]202Commercial proxy server Note: IP addresses and domains are intentionally defanged (e.g., [.]) to prevent accidental resolution or hyperlinking. Re-fang only within controlled threat intelligence platforms such as MISP, VirusTotal, or your SIEM. Update defenses against new malware as soon as it appears. Integrate TI Feeds with data from 16K SOCs. The post Hacker With Limited Skills Used DeepSeek AI to Breach Indian University and Steal Over 5,200 Records appeared first on Cyber Security News.",
+    "pubDate": "Fri, 23 Oct 2026 07:13:36 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/10/Hacker-With-Limited-Skills-Used-DeepSeek-AI-to-Breach-Indian-University-and-Steal-Over-5200-Records.webp"
+  },
+  "score": 0.9965550385802469,
+  "selectedAt": "2026-10-23T07:50:48.336Z",
+  "generated": {
+    "caption": "Your personal data could be at risk! 🚨 A hacker with \"limited skills\" used AI tools like DeepSeek V4 to breach an Indian university, stealing over 5,200 student and staff records. This breach happened due to a weak password on the database, showing how AI lowers the bar for cyberattacks even without new software flaws.\n\nStay informed! Save & share this post, and follow @CyberShieldAlerts for daily updates.",
+    "script": "A hacker with limited skills just used AI to steal over 5,200 records from an Indian university. A cybercriminal known as BUGSTER deployed DeepSeek AI and other tools to breach organizations. They stole a MongoDB database containing personal information of students and staff. This wasn't a sophisticated attack; it exploited weak administrator passwords and exposed services. It proves how AI can amplify basic tactics into major data breaches, enabling less experienced attackers to cause real harm. Organizations must review administrator accounts immediately, enforce strong, unique passwords, and implement multi-factor authentication. Protect your data now!",
+    "hashtags": [
+      "deepseekai",
+      "aiassistedattack",
+      "universitybreach",
+      "cybersecurity",
+      "databreach"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "DeepSeek AI",
+        "headlineRest": "Empowers Low-Skill Hacker in Indian University Data Breach",
+        "body": "A cybercriminal named BUGSTER utilized AI tools, including DeepSeek V4 and Hermes Agent, to target Indian organizations, successfully breaching a university and stealing over 5,200 student and staff records from a MongoDB database. This incident, investigated by Palo Alto Networks’ Unit 42, highlights how AI significantly lowers the barrier for individuals with limited technical skills to execute sophisticated attacks. The hacker exploited weak administrator account passwords and exposed services, not new software flaws, to gain access. Organizations, especially universities, must prioritize strengthening administrator account security, implementing strong passwords, enabling multi-factor authentication, and closely monitoring database access to protect sensitive data from such AI-assisted threats.",
+        "hindiSummary": "कम कौशल वाले हैकर ने डीपसीक एआई का उपयोग करके भारतीय विश्वविद्यालय से 5,200 से अधिक रिकॉर्ड चुराए।",
+        "imageQuery": "AI hacker data breach"
+      }
+    ],
+    "generatedAt": "2026-10-23T07:51:08.223Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-hacker-with-limited-skills-used-deepseek-ai-to-breach-indian-slide-01.png"
+    ],
+    "renderedAt": "2026-10-23T07:52:13.655Z",
+    "reelVideo": "cyber-security-news-hacker-with-limited-skills-used-deepseek-ai-to-breach-indian-reel.mp4",
+    "reelDurationSeconds": 39.636463,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "add78348e6675559",
+  "notifiedAt": "2026-10-23T07:56:58.896Z"
+}
