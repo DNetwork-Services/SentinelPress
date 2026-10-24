@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-quiz-fill-in-the-correct-preposition",
   "accountId": "englishvault",
-  "status": "awaiting_approval",
+  "status": "researched",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Quiz"
@@ -11,44 +11,11 @@
     "link": "topic://englishvault/quiz-fill-in-blank-preposition",
     "description": "Quiz format: 'She has been working ___ this company ___ five years. a) at / for  b) in / since  c) at / since  d) on / for' Answer: a) 'at this company' and 'for five years' (duration). Teaching point: use 'since' with a starting point in time, 'for' with a duration.",
     "content": "Quiz format: 'She has been working ___ this company ___ five years. a) at / for  b) in / since  c) at / since  d) on / for' Answer: a) 'at this company' and 'for five years' (duration). Teaching point: use 'since' with a starting point in time, 'for' with a duration.",
-    "pubDate": "2026-10-17T07:07:59.085Z",
+    "pubDate": "2026-10-24T07:31:56.955Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-10-17T07:07:59.085Z",
-  "generated": {
-    "caption": "Ever get 'for' and 'since' mixed up? 🤔 It's a common one!\n\nUse 'for' to talk about a *duration* of time. For example, \"She has been working *for* five years.\" Use 'since' when you're referring to a *starting point* in time.\n\nSave this tip for later! Follow @EnglishVault for daily English lessons!",
-    "script": "Aapko bhi 'at' aur 'in' mein, aur 'for' aur 'since' mein confusion hota hai na? Dekho, jab aap kisi company mein work karte ho, toh it's always 'at this company'. And 'for' hum use karte hain duration ke liye, jaise 'for five years', 'for two months'. 'Since' aata hai jab hum ek specific starting point ki baat karte hain, like 'since 2020', 'since last week'. Toh is sentence mein, 'She has been working at this company for five years'. Ab clear hua? Company ke liye 'at' aur duration ke liye 'for' use karna hai! Aise hi useful English tips ke liye English Vault ko follow karo!",
-    "hashtags": [
-      "englishprepositions",
-      "prepositionquiz",
-      "learnenglish",
-      "englishgrammar",
-      "englishseekhen"
-    ],
-    "slides": [
-      {
-        "type": "newscard",
-        "badgeInitials": "EV",
-        "headlineHighlight": "At / For",
-        "headlineRest": "— Correct Prepositions for Time & Place",
-        "body": "When discussing employment at a company, 'at' is the correct preposition, as in 'at this company'. For expressing a duration, like 'five years', we use 'for'. So, the complete phrase would be 'She has been working at this company for five years.' It's crucial to remember that 'for' denotes the length of a period (e.g., 'for three days'), whereas 'since' marks the specific starting point of an action or state (e.g., 'since Monday').",
-        "hindiSummary": "किसी कंपनी में काम करने के लिए 'at' और समय की अवधि बताने के लिए 'for' का प्रयोग करें, जबकि 'since' का प्रयोग समय के शुरुआती बिंदु के लिए होता है।",
-        "imageQuery": "Office worker clock calendar"
-      }
-    ],
-    "generatedAt": "2026-10-17T07:14:13.476Z"
-  },
-  "render": {
-    "slideImages": [
-      "the-english-vault-curriculum-quiz-fill-in-the-correct-preposition-slide-01.png"
-    ],
-    "renderedAt": "2026-10-17T07:14:17.902Z",
-    "reelVideo": "the-english-vault-curriculum-quiz-fill-in-the-correct-preposition-reel.mp4",
-    "reelDurationSeconds": 43.992,
-    "hasVoiceover": true,
-    "musicTrack": null
-  },
-  "approvalHash": "6dcfa4a97ee80d02",
-  "notifiedAt": "2026-10-17T07:18:00.307Z"
+  "selectedAt": "2026-10-24T07:31:56.955Z",
+  "generated": null,
+  "render": null
 }
