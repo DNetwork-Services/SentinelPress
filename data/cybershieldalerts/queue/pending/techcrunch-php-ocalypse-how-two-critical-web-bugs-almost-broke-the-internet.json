@@ -1,0 +1,54 @@
+{
+  "id": "techcrunch-php-ocalypse-how-two-critical-web-bugs-almost-broke-the-internet",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "TechCrunch",
+    "category": "Technology"
+  },
+  "article": {
+    "title": "PHP-ocalypse: How two critical web bugs almost broke the internet",
+    "link": "https://techcrunch.com/2026/10/24/php-ocalypse-how-two-critical-web-bugs-almost-broke-the-internet/",
+    "description": "Two critical bugs in the PHP web programming language, used by the majority of the internet, threatened to upend the internet — and it's unlikely to be the last major software scare.",
+    "content": "",
+    "pubDate": "Sat, 24 Oct 2026 15:30:00 +0000",
+    "image": ""
+  },
+  "score": 0.9096848564814815,
+  "selectedAt": "2026-10-25T07:45:24.213Z",
+  "generated": {
+    "caption": "Your favorite websites almost disappeared! Two severe bugs were discovered in PHP, the programming language that powers most of the internet. These critical flaws threatened to completely disrupt websites worldwide. It's a stark reminder that major software vulnerabilities can strike at any time.\n\nStay informed & safe! Save this post, share it, and follow @CyberShieldAlerts for daily cybersecurity updates.",
+    "script": "The internet almost broke! Seriously. Two critical bugs in PHP threatened to crash websites worldwide. PHP, the language powering most of the internet, had two major vulnerabilities. These weren't just minor glitches; they could have upended countless websites and online services. It highlights how critical unseen software components are to our daily digital lives. This 'PHP-ocalypse' was a close call, and it won't be the last major software scare. Stay vigilant. Ensure your web applications and systems are always updated to the latest secure versions.",
+    "hashtags": [
+      "php",
+      "phpbugs",
+      "cybersecurity",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "PHP",
+        "headlineRest": "Critical Web Bugs Almost Broke the Internet",
+        "body": "Two critical vulnerabilities were discovered in the PHP web programming language, which powers a significant portion of the internet. These bugs posed a severe threat, with the potential to cause widespread disruption across online services. While the immediate danger was averted, this incident highlights the ongoing risk of major software flaws. Experts suggest that similar scares from fundamental software components are likely to reoccur in the future.",
+        "hindiSummary": "PHP वेब प्रोग्रामिंग भाषा में दो गंभीर बग्स ने इंटरनेट को बाधित करने की धमकी दी थी, जिससे बड़े पैमाने पर व्यवधान का खतरा पैदा हो गया था।",
+        "imageQuery": "critical web bug threat"
+      }
+    ],
+    "generatedAt": "2026-10-25T07:45:43.053Z"
+  },
+  "render": {
+    "slideImages": [
+      "techcrunch-php-ocalypse-how-two-critical-web-bugs-almost-broke-the-internet-slide-01.png"
+    ],
+    "renderedAt": "2026-10-25T07:46:54.566Z",
+    "reelVideo": "techcrunch-php-ocalypse-how-two-critical-web-bugs-almost-broke-the-internet-reel.mp4",
+    "reelDurationSeconds": 33.041995,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "003855fc37947930",
+  "notifiedAt": "2026-10-25T07:50:13.749Z"
+}
