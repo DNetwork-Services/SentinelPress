@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-hindi-to-english-daily-routine-sentence",
   "accountId": "englishvault",
-  "status": "awaiting_approval",
+  "status": "researched",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Translation"
@@ -11,44 +11,11 @@
     "link": "topic://englishvault/translation-daily-routine",
     "description": "Hindi: 'मैं सुबह जल्दी उठता हूं और टहलने जाता हूं।' English: 'I wake up early in the morning and go for a walk.' Teaching point: Hindi often omits the subject pronoun context that English requires explicitly; also note 'जाता हूं' (habitual present) maps to English simple present, not present continuous.",
     "content": "Hindi: 'मैं सुबह जल्दी उठता हूं और टहलने जाता हूं।' English: 'I wake up early in the morning and go for a walk.' Teaching point: Hindi often omits the subject pronoun context that English requires explicitly; also note 'जाता हूं' (habitual present) maps to English simple present, not present continuous.",
-    "pubDate": "2026-10-13T09:39:59.355Z",
+    "pubDate": "2026-10-27T08:13:33.611Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-10-13T09:39:59.355Z",
-  "generated": {
-    "caption": "Ever wonder how to talk about your daily routine in English? It's a common point! When translating from Hindi, remember English *always* needs an explicit subject like 'I'. Also, 'जाता हूं' (for habits) becomes the simple present.\n\nFor example: \"I wake up early in the morning and go for a walk.\"\n\nSimple, right? Save this tip & follow @EnglishVault for daily English lessons!",
-    "script": "Daily routine bataate waqt na, log ye common mistake karte hain! Aap bhi karte ho kya? Jaise, 'मैं सुबह जल्दी उठता हूं और टहलने जाता हूं'। Hum Hindi mein 'main' sometimes omit kar dete hain, right? But English mein you must explicitly say 'I'. Aur kyunki ye ek regular habit hai, so we use the simple present tense. So, correct English mein ye hoga: 'I wake up early in the morning and go for a walk.' Toh yaad rakhna, daily routine batate waqt 'I' lagana mat bhoolna, aur habitual actions ke liye always use simple present. Ab samajh aaya? Comment mein batao, aapko ye mistake pehle pata thi ya nahi? Aur follow for more!",
-    "hashtags": [
-      "dailyroutine",
-      "simplepresent",
-      "learnenglish",
-      "englishgrammar",
-      "hinditoenglish"
-    ],
-    "slides": [
-      {
-        "type": "newscard",
-        "badgeInitials": "EV",
-        "headlineHighlight": "I wake up early...",
-        "headlineRest": "— Translating Your Daily Routine",
-        "body": "Let's break down the common Hindi sentence 'मैं सुबह जल्दी उठता हूं और टहलने जाता हूं।' Its English translation is 'I wake up early in the morning and go for a walk.' A key point to remember is that English almost always requires an explicit subject like 'I', even when it might be implied in Hindi conversational contexts. Furthermore, the Hindi 'जाता हूं' signifies a habitual present action, which correctly translates to the simple present 'go for a walk' in English, not the continuous tense. Understanding these nuances will help you sound more natural when expressing your daily routine in English.",
-        "hindiSummary": "यह वाक्य 'मैं सुबह जल्दी उठता हूं और टहलने जाता हूं' अंग्रेजी में 'I wake up early in the morning and go for a walk' बनता है, जहाँ कर्ता (subject) को स्पष्ट रूप से बताना आवश्यक है।",
-        "imageQuery": "Sunrise person walking park"
-      }
-    ],
-    "generatedAt": "2026-10-13T09:46:05.540Z"
-  },
-  "render": {
-    "slideImages": [
-      "the-english-vault-curriculum-hindi-to-english-daily-routine-sentence-slide-01.png"
-    ],
-    "renderedAt": "2026-10-13T09:46:46.262Z",
-    "reelVideo": "the-english-vault-curriculum-hindi-to-english-daily-routine-sentence-reel.mp4",
-    "reelDurationSeconds": 52.512,
-    "hasVoiceover": true,
-    "musicTrack": null
-  },
-  "approvalHash": "9ea0e87dffe53b10",
-  "notifiedAt": "2026-10-14T08:04:01.531Z"
+  "selectedAt": "2026-10-27T08:13:33.611Z",
+  "generated": null,
+  "render": null
 }
