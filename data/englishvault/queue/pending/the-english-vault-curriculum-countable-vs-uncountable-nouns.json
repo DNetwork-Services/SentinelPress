@@ -11,17 +11,17 @@
     "link": "topic://englishvault/grammar-countable-uncountable-nouns",
     "description": "Countable nouns have a singular/plural form and can follow numbers: 'one apple, two apples.' Uncountable nouns have no plural and can't follow numbers directly: 'information' (not 'informations'), 'advice', 'furniture', 'water'. Use 'much' with uncountable nouns and 'many' with countable: 'How much water?' vs 'How many apples?'",
     "content": "Countable nouns have a singular/plural form and can follow numbers: 'one apple, two apples.' Uncountable nouns have no plural and can't follow numbers directly: 'information' (not 'informations'), 'advice', 'furniture', 'water'. Use 'much' with uncountable nouns and 'many' with countable: 'How much water?' vs 'How many apples?'",
-    "pubDate": "2026-08-26T03:32:51.825Z",
+    "pubDate": "2026-10-28T08:52:06.518Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-08-26T03:32:51.826Z",
+  "selectedAt": "2026-10-28T08:52:06.518Z",
   "generated": {
-    "caption": "Ever wondered if you need 'an advice' or just 'advice'? 🤔 Let's clarify! Countable nouns have plurals and can use numbers (like 'one apple'). Uncountable nouns don't have plurals (think 'information' or 'water'). Use 'many' with countable and 'much' with uncountable. So, it's 'How much water?' and 'How many apples?'. Easy! Save this for later & follow @EnglishVault for daily tips! ✨",
-    "script": "How much water, how many apples? Ye dono mein confusion hota hai na?\n\nDekho, simple hai. Countable nouns matlab jinhe hum count kar sakte hain. Jaise 'one apple, two apples'. Inki singular aur plural form hoti hai. But uncountable nouns ko hum count nahi kar sakte directly. Jaise information, advice, furniture, water. Inka koi plural nahi hota. Information ko 'informations' nahi bolte. To jab uncountable noun ho, use karo 'much'. Aur countable ke liye 'many'. Jaise 'How much water?' aur 'How many apples?'\n\nToh ab samjha na? Countable nouns ke saath 'many', aur uncountable ke saath 'much'. Simple!\n\nYe reel save kar lo future reference ke liye, aur follow karo The English Vault ko aise hi tips ke liye!",
+    "caption": "Ever paused before asking \"how much\" or \"how many\"? 🤔\n\nHere's the quick difference! Countable nouns have singular/plural forms (like 'one apple, two apples'). Uncountable nouns don't (like 'information' or 'water'). Use \"many\" for countable things, and \"much\" for uncountable things.\n\nFor example: \"How many apples?\" vs. \"How much water?\" Easy! 😉\n\nSave this tip and follow @EnglishVault for daily lessons!",
+    "script": "Ye 'informations' kyun nahi bolte, kabhi socha hai? Dekho, English mein nouns do tarah ke hote hain. Countable nouns ko hum count kar sakte hain – jaise 'one apple', 'two apples'. Inki singular aur plural form hoti hai. Lekin uncountable nouns ko count nahi kar sakte. Inki koi plural form nahi hoti, jaise 'information', 'advice', 'furniture', 'water'. Isi liye, hum 'informations' nahi bolte. Uncountable nouns ke saath 'much' use karte hain – 'How much water?' aur countable ke saath 'many' – 'How many apples?'. Toh ab samjha? 'Information', 'advice', 'furniture', 'water' – ye sab uncountable hain. Inki plural form nahi hoti aur इनके साथ 'much' use karte hain. Jaise 'How much water?'. Aur jise count kar sakte ho uske saath 'many' – 'How many apples?'. Ab confusion nahi hoga! Ab ye mistake dobara mat karna! Save this reel aur follow The English Vault for more such tips!",
     "hashtags": [
-      "countablenouns",
-      "uncountablenouns",
+      "countableuncountable",
+      "muchmany",
       "englishgrammar",
       "learnenglish",
       "englishseekhen"
@@ -30,25 +30,25 @@
       {
         "type": "newscard",
         "badgeInitials": "EV",
-        "headlineHighlight": "Countable & Uncountable",
+        "headlineHighlight": "Countable vs. Uncountable",
         "headlineRest": "— The Essential Difference",
-        "body": "Nouns are divided into countable and uncountable categories based on how we quantify them. Countable nouns have both singular and plural forms and can be preceded by numbers, like 'one apple' or 'two apples'. In contrast, uncountable nouns have no plural form and cannot be directly counted with numbers; examples include 'information', 'advice', 'furniture', and 'water'. Remember to use 'many' with countable nouns (e.g., 'How many apples?') and 'much' with uncountable nouns (e.g., 'How much water?').",
-        "hindiSummary": "जिन संज्ञाओं को गिना जा सकता है वे 'countable' होती हैं, जबकि जिन्हें नहीं गिना जा सकता वे 'uncountable' कहलाती हैं।",
-        "imageQuery": "comparing countable uncountable items"
+        "body": "Countable nouns refer to things we can count individually and have both singular and plural forms, such as 'one apple' or 'two apples.' Uncountable nouns, on the other hand, cannot be counted individually and do not have a plural form; examples include 'information' (not 'informations'), 'advice', 'furniture', or 'water.' To express quantity, remember to use 'many' with countable nouns ('How many apples?') and 'much' with uncountable nouns ('How much water?').",
+        "hindiSummary": "गिनने योग्य संज्ञाएँ गिनी जा सकती हैं और इनके एकवचन और बहुवचन रूप होते हैं, जबकि अगणनीय संज्ञाएँ गिनी नहीं जा सकतीं और इनका बहुवचन नहीं होता।",
+        "imageQuery": "apples and water quantity comparison"
       }
     ],
-    "generatedAt": "2026-08-26T03:34:04.921Z"
+    "generatedAt": "2026-10-28T08:53:32.932Z"
   },
   "render": {
     "slideImages": [
       "the-english-vault-curriculum-countable-vs-uncountable-nouns-slide-01.png"
     ],
-    "renderedAt": "2026-08-26T03:34:07.978Z",
+    "renderedAt": "2026-10-28T08:54:03.924Z",
     "reelVideo": "the-english-vault-curriculum-countable-vs-uncountable-nouns-reel.mp4",
-    "reelDurationSeconds": 65.088,
+    "reelDurationSeconds": 74.256,
     "hasVoiceover": true,
     "musicTrack": null
   },
   "approvalHash": "106bb95722652e57",
-  "notifiedAt": "2026-08-26T03:37:36.827Z"
+  "notifiedAt": "2026-10-28T08:57:09.334Z"
 }

@@ -1,7 +1,7 @@
 {
   "id": "cyberpress-microsoft-authenticator-flaw-lets-malicious-android-apps-steal-login",
   "accountId": "cybershieldalerts",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "CyberPress",
     "category": "News"
@@ -16,6 +16,39 @@
   },
   "score": 0.9966535138888889,
   "selectedAt": "2026-10-26T08:01:00.524Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Your work emails and files might have been exposed! 🤯 A high-severity flaw in Microsoft Authenticator for Android allowed malicious apps to steal login tokens from work accounts. This meant attackers could access your Microsoft 365 email, files, and calendars without needing special permissions. Microsoft has already released a fix in Authenticator version 6.2606.4246 and later. Update your app now! Save this post and share to alert others. Follow @CyberShieldAlerts for daily updates.",
+    "script": "Your Microsoft 365 work account could be exposed! Malicious Android apps could steal your login tokens without any permissions. A high-severity flaw in Microsoft Authenticator for Android let rogue apps grab authentication tokens for signed-in work accounts. This exposed your Microsoft 365 email, files, calendars, and other enterprise resources, all without needing app permissions. Researchers found this vulnerability, tracked as CVE-2026-80097, where a malicious app could impersonate legitimate Microsoft clients like Teams. The flaw meant they could gain full access to your mailbox, files, SharePoint, and even Teams chat capabilities. Microsoft has since patched this issue. If you use Microsoft Authenticator on Android, update to version 6.2606.4246 or later immediately to protect your data!",
+    "hashtags": [
+      "microsoftauthenticator",
+      "cve202680097",
+      "tokenstealing",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Microsoft Authenticator",
+        "headlineRest": "Flaw Allowed Android Apps to Steal Login Tokens",
+        "body": "A high-severity flaw in Microsoft Authenticator for Android allowed malicious apps to steal authentication tokens from signed-in work accounts, even without requiring specific Android permissions. This vulnerability could expose sensitive Microsoft 365 data such as emails, files, and calendars. Microsoft has fixed the issue in Authenticator version 6.2606.4246 and later. Organizations must ensure managed Android devices are updated promptly and verify compliance, while security teams should monitor for suspicious Microsoft 365 token usage.",
+        "hindiSummary": "माइक्रोसॉफ्ट ऑथेंटिकेटर में एक उच्च-गंभीरता वाली खामी ने दुर्भावनापूर्ण ऐप्स को लॉगिन टोकन चुराने की अनुमति दी, जिससे कार्य खातों का डेटा खतरे में पड़ गया।",
+        "imageQuery": "Mobile security vulnerability token theft"
+      }
+    ],
+    "generatedAt": "2026-10-28T08:52:31.116Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-microsoft-authenticator-flaw-lets-malicious-android-apps-steal-login-slide-01.png"
+    ],
+    "renderedAt": "2026-10-28T08:54:02.314Z",
+    "reelVideo": "cyberpress-microsoft-authenticator-flaw-lets-malicious-android-apps-steal-login-reel.mp4",
+    "reelDurationSeconds": 52.628027,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "52809d53a96bc65a",
+  "notifiedAt": "2026-10-28T08:57:02.666Z"
 }

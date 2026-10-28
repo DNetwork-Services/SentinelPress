@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-japans-gmo-offers-1-million-bounty-to-catch-hackers-behind-fx-tr",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Japan's GMO Offers $1 Million Bounty to Catch Hackers Behind FX Trading Cloud Breach",
+    "link": "https://thehackernews.com/2026/10/japans-gmo-offers-1-million-bounty-to.html",
+    "description": "Japan's GMO Internet Group is offering up to $1 million in total for tips that help catch the attackers who breached its Onamae.com Desktop Cloud service, after refusing to pay an extortion demand. The reward program opened on October 28 and pays only if a tip helps lead to an arrest or an international wanted notice. The service hosts Windows desktops used for FX trading,",
+    "content": "",
+    "pubDate": "Wed, 28 Oct 2026 12:43:21 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEguDDZZalFBPLgf4YxDU_9FK46XXVkU3x0GKHeZHFd2WTdJ0cK5n1KCWDEOIvSgzHP4R14xmwLygLnnmyuBEVcHRVO7b9nIUZVcp5ehxIgFGrPyXZ3hZGwNa2bg8k4e_kkSHa2tyo05yPortQqRR_9g3yr-T0k0Tga9_26Pr0rs_MNIU8RndHMeq9r5Rr0/s1600/gmo.jpg"
+  },
+  "score": 0.9908556851851852,
+  "selectedAt": "2026-10-28T08:52:06.517Z",
+  "generated": {
+    "caption": "Cybercriminals targeting FX trading services now have a $1 million bounty on their heads! 🚨 Japan's GMO Internet Group is offering this reward for tips leading to the arrest of attackers who breached their Onamae.com Desktop Cloud service. This platform hosts Windows desktops used for FX trading, and GMO refused an extortion demand.\n\nHelp keep our digital world safe! Save this post & share with your network. Follow @CyberShieldAlerts for daily threat intel!",
+    "script": "A $1 million bounty! That's what Japan's GMO Internet Group is offering after hackers breached their Onamae.com Desktop Cloud service. This wasn't just any breach; it impacted Windows desktops used for crucial FX trading. GMO refused an extortion demand, then launched this massive reward program on October 28th to catch the culprits. This incident highlights the critical threat of cyber extortion targeting essential financial infrastructure. If you manage financial platforms, double-check your security protocols immediately.",
+    "hashtags": [
+      "gmointernetgroup",
+      "onamaecom",
+      "cyberbounty",
+      "databreach",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "$1 Million Bounty",
+        "headlineRest": "Offered by GMO After FX Trading Cloud Breach",
+        "body": "Japan's GMO Internet Group is offering up to $1 million for information leading to the arrest of hackers who breached its Onamae.com Desktop Cloud service. The company refused an extortion demand, prompting the launch of this reward program on October 28. The compromised service hosts Windows desktops primarily used for FX trading. Tips are eligible for a reward only if they result in an arrest or an international wanted notice.",
+        "hindiSummary": "जापान की GMO कंपनी ने अपनी क्लाउड सेवा में सेंध लगाने वाले हैकर्स को पकड़ने के लिए $1 मिलियन का इनाम घोषित किया है।",
+        "imageQuery": "digital bounty hunt cybersecurity reward"
+      }
+    ],
+    "generatedAt": "2026-10-28T08:52:53.852Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-japans-gmo-offers-1-million-bounty-to-catch-hackers-behind-fx-tr-slide-01.png"
+    ],
+    "renderedAt": "2026-10-28T08:54:03.058Z",
+    "reelVideo": "the-hacker-news-japans-gmo-offers-1-million-bounty-to-catch-hackers-behind-fx-tr-reel.mp4",
+    "reelDurationSeconds": 31.242449,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "5315b32cf04fd7ef",
+  "notifiedAt": "2026-10-28T08:57:06.009Z"
+}
