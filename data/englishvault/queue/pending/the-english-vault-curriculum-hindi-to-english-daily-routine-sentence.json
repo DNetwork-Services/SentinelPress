@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-hindi-to-english-daily-routine-sentence",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Translation"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-10-27T08:13:33.611Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Translating your daily routine from Hindi? Here's a quick tip! ✨\n\nEnglish always needs an explicit subject pronoun (like 'I'), even when Hindi implies it. Also, for regular habits like 'जाता हूं', use the simple present tense.\n\nFor example: 'I wake up early in the morning and go for a walk.'\n\nSave this tip! Follow @EnglishVault for daily lessons. 🚀",
+    "script": "अपनी daily routine की बातें इंग्लिश में बताते हुए ये mistake करते हो ना?\nHindi mein hum daily bolte hain 'मैं सुबह जल्दी उठता हूं और टहलने जाता हूं'। Ab isko English mein kaise bolna hai? Bahut log 'Wake up early and going for a walk' bol dete hain. Par English mein, you always need a subject, the 'I' is important. Aur 'जाता हूं' matlab ek habit hai, so simple present tense use hoga. Like 'go for a walk', not 'going'. So the perfect translation is: 'I wake up early in the morning and go for a walk'.\nToh basically, English mein 'I' ya subject miss mat karna, aur 'जाता हूं' jaise habitual actions ke liye always use simple present. Ab samajh aaya?\nComment mein batao aap ye mistake karte the ya nahi! Aur English Vault ko follow karo for more such amazing tips!",
+    "hashtags": [
+      "dailyroutinesentence",
+      "simplepresenttense",
+      "learnenglish",
+      "englishgrammar",
+      "hinditoenglish"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "मैं सुबह जल्दी उठता हूं...",
+        "headlineRest": "...How do you say that in English?",
+        "body": "Understanding how to translate daily routine sentences from Hindi to English is a key skill! The phrase 'मैं सुबह जल्दी उठता हूं और टहलने जाता हूं' is a perfect example. In English, this translates to 'I wake up early in the morning and go for a walk.' Pay attention to how the habitual present forms like 'उठता हूं' and 'जाता हूं' are naturally expressed using the simple present tense ('wake up' and 'go') in English, which is perfect for describing regular actions.",
+        "hindiSummary": "यह वाक्य आपकी सुबह की दिनचर्या बताने के लिए है।",
+        "imageQuery": "Morning routine, waking up, walk"
+      }
+    ],
+    "generatedAt": "2026-10-30T08:53:35.551Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-hindi-to-english-daily-routine-sentence-slide-01.png"
+    ],
+    "renderedAt": "2026-10-30T08:54:07.705Z",
+    "reelVideo": "the-english-vault-curriculum-hindi-to-english-daily-routine-sentence-reel.mp4",
+    "reelDurationSeconds": 63.048,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "9ea0e87dffe53b10",
+  "notifiedAt": "2026-10-30T08:58:32.494Z"
 }

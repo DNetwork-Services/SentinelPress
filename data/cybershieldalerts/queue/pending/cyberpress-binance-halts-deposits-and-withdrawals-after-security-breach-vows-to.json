@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-binance-halts-deposits-and-withdrawals-after-security-breach-vows-to",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Binance Halts Deposits and Withdrawals After Security Breach, Vows to Cover All Losses",
+    "link": "https://cyberpress.org/binance-halts-deposits-withdrawals/",
+    "description": "Binance temporarily suspended deposits and withdrawals following a security incident, pledging to cover all losses while investigators examine affected systems and coordinate asset freezes. The cryptocurrency exchange described the shutdown as a precautionary containment measure and said its security teams were working continuously with law enforcement and industry partners. “We are working non-stop to resolve [&#8230;] The post Binance Halts Deposits and Withdrawals After Security Breach, Vows to Cover All Losses appeared first on Cyber Security News.",
+    "content": "Binance temporarily suspended deposits and withdrawals following a security incident, pledging to cover all losses while investigators examine affected systems and coordinate asset freezes. The cryptocurrency exchange described the shutdown as a precautionary containment measure and said its security teams were working continuously with law enforcement and industry partners. “We are working non-stop to resolve this issue. Binance will cover all losses,” the company stated. It also reassured customers that user funds were safe and promised a full post-mortem once its investigation concludes. Binance Halts Deposits and Withdrawals The announcement did not specify a final loss figure or identify the attackers responsible. Subsequent reporting provided preliminary technical details about the suspected intrusion. According to a Binance statement reported by CoinDesk, investigators believe an attacker may have used a compromised DevOps engineer’s laptop to access a service container and submit unauthorized withdrawal transactions. This remains an initial assessment, not a completed root-cause determination. Binance separately said it had found no evidence of a wallet private key leak. That distinction matters: the preliminary account describes unauthorized access through an internal service, rather than establishing that attackers directly obtained the cryptographic keys controlling exchange wallets. The complete attack path remains under investigation. The exchange’s immediate response centers on containment, including security checks, restrictions on fund movements, and coordination with external organizations. Binance said ecosystem partners moved quickly to help freeze affected assets, describing the response as an industry-wide effort rather than one confined to its own infrastructure. Reuters reported that Binance initially verified $2.54 billion in frozen cryptocurrency assets, with stablecoin issuers Circle and Tether participating in the response. We are working non-stop to resolve this issue. Binance will cover all losses.As a precaution, all deposits and withdrawals are temporarily suspended while our team conducts security checks, freezes funds, and works with law enforcement.We are working around the clock and will… pic.twitter.com/zufWJ6V05D&mdash; Binance (@binance) October 30, 2026 The exchange said that figure could increase as law enforcement agencies, token issuers, blockchain intelligence firms, and other partners traced additional assets connected to the incident. Those freezes should not be confused with a finalized loss assessment or completed recovery. Separate reporting placed frozen assets at approximately $3 billion, illustrating how figures continued to evolve during the investigation. Binance’s commitment to absorb losses is therefore distinct from the amount already immobilized through partner intervention. Although Binance’s initial announcement suspended both deposits and withdrawals, later reports said deposits operated normally while withdrawals remained paused. The company said it expected to restore withdrawals within 48 hours while it completed security work on the withdrawal service and related addresses. That estimate was not confirmation that service had resumed. Binance urged customers to rely exclusively on official communications for verified updates. Its promised post-mortem is expected to explain the incident after investigators finish their work; attribution and definitive technical conclusions remain pending. Join 16,000+ SOC teams using ANY.RUN to streamline threat investigations and reduce manual effort. Explore for your team The post Binance Halts Deposits and Withdrawals After Security Breach, Vows to Cover All Losses appeared first on Cyber Security News.",
+    "pubDate": "Fri, 30 Oct 2026 08:51:10 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/10/binance-halts-deposits-and-withdrawals-after-security-breach-vows-to-cover-all-losses23-6ae4584c7d2e1.webp"
+  },
+  "score": 0.9998619182098766,
+  "selectedAt": "2026-10-30T08:52:39.478Z",
+  "generated": {
+    "caption": "Big crypto news: Binance temporarily halted deposits & withdrawals after a security incident! ⚠️ The exchange took this step as a precaution after unauthorized withdrawal transactions were suspected. Investigators believe an attacker may have accessed systems via a compromised engineer's laptop. Binance assures users their funds are safe and vows to cover all losses.\n\nSave this post to stay informed and follow @CyberShieldAlerts for daily updates on cybersecurity!",
+    "script": "Crypto exchange Binance just halted deposits and withdrawals due to a security breach! They described it as a precautionary measure, vowing to cover all losses and assuring users their funds are safe. Investigators suspect an attacker may have used a compromised DevOps engineer's laptop to access systems and submit unauthorized transactions. Industry partners have already helped freeze billions in affected assets as the investigation continues. This incident underscores the constant threat even major platforms face. Stay informed: always rely on official Binance communications for the latest verified updates.",
+    "hashtags": [
+      "binance",
+      "cryptosecurity",
+      "unauthorizedwithdrawal",
+      "securitybreach",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Binance",
+        "headlineRest": "Halts Services After Security Breach, Vows to Cover All Losses",
+        "body": "Cryptocurrency exchange Binance temporarily suspended deposits and withdrawals following a security incident, reassuring users that funds were safe and pledging to cover all losses. The company described the shutdown as a precautionary measure while investigators examine affected systems and coordinate asset freezes with partners. Initial assessments suggest an attacker may have used a compromised engineer’s laptop for unauthorized withdrawal transactions, though no wallet private keys were reportedly leaked. Binance expects to restore withdrawal services within 48 hours and urges customers to rely only on official communications for updates, promising a full post-mortem.",
+        "hindiSummary": "बिनेंस ने एक सुरक्षा उल्लंघन के बाद सेवाओं को निलंबित कर दिया है और सभी नुकसानों को कवर करने का वादा किया है।",
+        "imageQuery": "Cyber security incident cryptocurrency protection"
+      }
+    ],
+    "generatedAt": "2026-10-30T08:53:01.625Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-binance-halts-deposits-and-withdrawals-after-security-breach-vows-to-slide-01.png"
+    ],
+    "renderedAt": "2026-10-30T08:54:06.331Z",
+    "reelVideo": "cyberpress-binance-halts-deposits-and-withdrawals-after-security-breach-vows-to-reel.mp4",
+    "reelDurationSeconds": 35.096961,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "2e2e0579d82e3e83",
+  "notifiedAt": "2026-10-30T08:58:26.388Z"
+}
