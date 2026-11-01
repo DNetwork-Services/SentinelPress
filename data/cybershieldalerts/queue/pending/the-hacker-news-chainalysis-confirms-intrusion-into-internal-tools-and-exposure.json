@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-chainalysis-confirms-intrusion-into-internal-tools-and-exposure",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Chainalysis Confirms Intrusion Into Internal Tools and Exposure of Customer Identity Data",
+    "link": "https://thehackernews.com/2026/10/chainalysis-confirms-intrusion-into.html",
+    "description": "American blockchain analysis firm Chainalysis said it was the target of a cybersecurity incident in which an external actor accessed non-sensitive customer data. However, the company noted that the breach did not result in unauthorized access to its investigation content, authentication credentials, or session tokens. \"This month, Chainalysis detected an external actor using offensive agentic",
+    "content": "",
+    "pubDate": "Sat, 31 Oct 2026 17:31:56 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiFRN0kXDPnLLvRBYqNZG4BTyUK0EaSxRtepYOQ-msXGAqu1IW8t2cdnav4ANAO8fXwY_-ug6Ictj29WcseInPhJmYOwpgcinvc8KO36A8HK6Wo41lgztgyH2jb9hGg7bVyWZ4A-adjBYuTi-hOJxMALa7myG172BWKwB_SyvrfMeqxH_3DdcyJxYwXFIKG/s1600/chain.jpg"
+  },
+  "score": 0.8806055015432099,
+  "selectedAt": "2026-11-01T09:31:23.636Z",
+  "generated": {
+    "caption": "Your data is a target! 🎯 Blockchain analysis firm Chainalysis confirmed a cybersecurity incident where an external actor accessed non-sensitive customer data. Fortunately, their investigation content, login credentials, and session tokens remained secure.\n\nStay vigilant! Save this post & share for awareness. Follow @CyberShieldAlerts for daily updates.",
+    "script": "Customer identity data from blockchain firm Chainalysis has been exposed. American blockchain analysis firm Chainalysis confirmed an external actor accessed non-sensitive customer data this month. This breach means customer identity information was accessed. While investigation content and login credentials were safe, any exposure of identity data can increase your risk of targeted phishing attacks. Stay vigilant. Always verify all crypto-related communications independently before clicking or sharing information.",
+    "hashtags": [
+      "chainalysis",
+      "databreach",
+      "blockchainsecurity",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Chainalysis Confirms",
+        "headlineRest": "Customer Data Exposure After Intrusion",
+        "body": "American blockchain analysis firm Chainalysis has confirmed a cybersecurity incident affecting its internal tools. An external actor successfully accessed non-sensitive customer identity data, indicating a breach of personal information. However, the company clarified that the intrusion did not compromise critical assets such as investigation content, authentication credentials, or session tokens. While the exposed data is deemed non-sensitive, users are advised to stay alert for potential misuse or targeted communications.",
+        "hindiSummary": "ब्लॉकचेन फर्म Chainalysis ने अपने ग्राहक पहचान डेटा के अनावरण की पुष्टि की है।",
+        "imageQuery": "Cyber attack data exposure"
+      }
+    ],
+    "generatedAt": "2026-11-01T09:31:47.725Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-chainalysis-confirms-intrusion-into-internal-tools-and-exposure-slide-01.png"
+    ],
+    "renderedAt": "2026-11-01T09:32:14.899Z",
+    "reelVideo": "the-hacker-news-chainalysis-confirms-intrusion-into-internal-tools-and-exposure-reel.mp4",
+    "reelDurationSeconds": 30.197551,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "44bd185d6e5d1197",
+  "notifiedAt": "2026-11-01T09:34:14.093Z"
+}
