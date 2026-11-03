@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-crowdstrike-and-deloitte-spain-expand-cybersecurity-partnership-with",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "CrowdStrike and Deloitte Spain Expand Cybersecurity Partnership With AI-Powered Threat Detection",
+    "link": "https://cyberpress.org/crowdstrike-deloitte-spain-expand-cybersecurity-partnership/",
+    "description": "CrowdStrike and Deloitte Spain announced an expanded cybersecurity partnership on November 2, 2026, at Fal.Con Europe in Barcelona, extending their collaboration into AI-powered risk advisory. The alliance combines CrowdStrike’s Falcon platform with Deloitte’s consulting, implementation, and managed security capabilities. Its central addition, Falcon IQ, connects assessments of exploitable risk with executive investment decisions, security modernization, [&#8230;] The post CrowdStrike and Deloitte Spain Expand Cybersecurity Partnership With AI-Powered Threat Detection appeared first on Cyber Security News.",
+    "content": "CrowdStrike and Deloitte Spain announced an expanded cybersecurity partnership on November 2, 2026, at Fal.Con Europe in Barcelona, extending their collaboration into AI-powered risk advisory. The alliance combines CrowdStrike’s Falcon platform with Deloitte’s consulting, implementation, and managed security capabilities. Its central addition, Falcon IQ, connects assessments of exploitable risk with executive investment decisions, security modernization, and ongoing Security Operations Center operations. CrowdStrike and Deloitte Spain Expand Cybersecurity Partnership The expanded engagement follows three connected stages: Advise, Implement, and Operate. During advisory engagements, Falcon IQ provides a quantitative view of exploitable risk that complements Deloitte’s executive Innovation Workshops. Deloitte translates those findings into short-, medium-, and long-term security roadmaps aligned with business and regulatory priorities. This approach links boardroom discussions about exposure and investment with the technical changes required across enterprise security environments, rather than treating assessment and remediation as separate exercises. CrowdStrike launched Falcon IQ in August 2026 to operationalize Project QuiltWorks, its initiative for addressing frontier AI risk. Built on Falcon Foundry and Charlotte AI AgentWorks, the platform uses more than 50 specialized AI agents to automate assessment, prioritization, and remediation workflows. NVIDIA’s open Nemotron models power its agentic engine, while partners can build and tune custom agents for individual customer requirements. CrowdStrike describes these capabilities as reducing manual effort across security transformation engagements. Falcon IQ correlates customer telemetry, CrowdStrike threat intelligence, and Falcon OverWatch findings to assemble an organization’s risk picture. Partners can upload service catalogs, enabling agents to map findings to relevant services and generate attack narratives, investment priorities, and remediation roadmaps. Incorporating threat-hunting findings adds operational context to the assessment. A customer-facing dashboard presents findings, recommended actions, and remediation progress, connecting technical evidence with the delivery work the partner proposes. The implementation phase focuses on transforming complex security environments using the Falcon platform, including migrations to Falcon Next-Gen SIEM. CrowdStrike supplies the AI-native technology, while Deloitte contributes implementation expertise intended to improve detection, investigation, and response beyond legacy architectures. Falcon’s broader architecture uses a lightweight sensor and adversary intelligence to enrich security telemetry, providing a shared data foundation for investigations across endpoint, identity, cloud, and other enterprise domains. For ongoing operations, the collaboration builds on Falcon Next-Gen SIEM’s integration into MXDR by Deloitte. Deloitte’s EMEA Cybersphere Center in Madrid, its primary delivery center for SOC managed services, supports continuous threat monitoring, investigation, and response at scale. The operating model combines CrowdStrike’s detection and response capabilities with Deloitte’s managed security expertise, carrying priorities established during advisory work into implementation and sustained security operations for enterprise clients. Daniel Bernard, CrowdStrike’s chief business officer, framed the expansion as a shift from finding risk to fixing it while developing longer-term strategy. Edward James Moore, cybersecurity partner at Deloitte Spain, emphasized connecting risk management, technology, and business priorities. Their statements position the alliance as a coordinated delivery model: quantify exploitable exposure, prioritize investment, implement platform changes, and maintain monitoring and response through managed operations. Join 16,000+ SOC teams using ANY.RUN to streamline threat investigations and reduce manual effort. Explore for your team The post CrowdStrike and Deloitte Spain Expand Cybersecurity Partnership With AI-Powered Threat Detection appeared first on Cyber Security News.",
+    "pubDate": "Tue, 03 Nov 2026 09:51:50 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/11/crowdstrike-and-deloitte-spain-expand-cybersecurity-partnership-with-ai-powered-threat-detection23r-6ae9ae7cb91ea.webp"
+  },
+  "score": 0.9999306882716049,
+  "selectedAt": "2026-11-03T09:52:34.915Z",
+  "generated": {
+    "caption": "Imagine a cybersecurity solution that doesn't just *find* threats, but actively helps you *fix* them.\n\nCrowdStrike and Deloitte Spain are expanding their partnership, using AI-powered tools to connect risk assessment directly to security investments and remediation. This aims to help businesses prioritize and resolve vulnerabilities more efficiently, reducing manual effort.\n\nSave this post and follow @CyberShieldAlerts for daily updates on cybersecurity news!",
+    "script": "Is your business ready for the next wave of AI cyber threats? Because a powerful new partnership just armed up! CrowdStrike and Deloitte Spain have significantly expanded their cybersecurity alliance. They're now bringing advanced AI-powered threat detection and risk advisory services to enterprises. Their central addition, Falcon IQ, uses over 50 specialized AI agents to automate risk assessment, prioritization, and remediation workflows. This represents a critical shift: moving from just identifying vulnerabilities to proactively fixing them, directly linking security strategy with executive business decisions. It’s about more than just finding risks – it’s about fixing them. Ensure your defenses are evolving as fast as the threats. Stay informed and secure your enterprise.",
+    "hashtags": [
+      "crowdstrike",
+      "deloitte",
+      "falconiq",
+      "threatdetection",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "CrowdStrike & Deloitte",
+        "headlineRest": "Expand AI-Powered Cybersecurity Partnership",
+        "body": "CrowdStrike and Deloitte Spain have expanded their cybersecurity partnership, integrating AI-powered risk advisory, implementation, and managed security services. This collaboration leverages CrowdStrike's Falcon IQ platform, which uses over 50 specialized AI agents to automate assessment, prioritization, and remediation workflows. The alliance aims to provide a quantitative view of exploitable risk, directly linking boardroom investment decisions with technical security roadmaps. By correlating threat intelligence with operational context, it seeks to reduce manual effort and enhance an organization's overall detection, investigation, and response capabilities. This strategic move helps enterprises transition from merely finding risks to proactively fixing them and developing long-term security strategies.",
+        "hindiSummary": "CrowdStrike और Deloitte स्पेन ने AI-संचालित खतरे का पता लगाने के साथ अपनी साइबर सुरक्षा साझेदारी का विस्तार किया है।",
+        "imageQuery": "AI security collaboration"
+      }
+    ],
+    "generatedAt": "2026-11-03T09:53:07.019Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-crowdstrike-and-deloitte-spain-expand-cybersecurity-partnership-with-slide-01.png"
+    ],
+    "renderedAt": "2026-11-03T09:54:10.759Z",
+    "reelVideo": "cyberpress-crowdstrike-and-deloitte-spain-expand-cybersecurity-partnership-with-reel.mp4",
+    "reelDurationSeconds": 45.615601,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "bf64fecc339dffb4",
+  "notifiedAt": "2026-11-03T09:57:57.323Z"
+}

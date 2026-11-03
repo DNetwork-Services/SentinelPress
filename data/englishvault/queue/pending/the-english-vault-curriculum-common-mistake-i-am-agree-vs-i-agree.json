@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-common-mistake-i-am-agree-vs-i-agree",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Common Mistakes"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-11-01T09:31:23.637Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever found yourself saying \"I am agree\" and getting a puzzled look? You're not alone! 😉 The trick is that 'agree' is already a strong verb in English. It doesn't need an 'am/is/are' before it. Just say 'I agree with you' when you share someone's opinion. Easy, right? ✨\n\nSave this helpful tip for later and follow @theenglishvault for daily English lessons!",
+    "script": "Ye 'I am agree' wali galti aapne bhi ki hogi na? Dekho, 'agree' English mein already ek verb hai. Matlab, ye khud hi ek action word hai. Iske aage 'am', 'is', 'are' lagane ki koi need nahi hai. Jaise aap 'I walk' ya 'I eat' bolte ho, waise hi simply 'I agree' bolte hain. Correct usage hai 'I agree with you'. Toh ab confusion clear hai na? Next time se, 'I am agree' nahi, sirf 'I agree'. Yaad rahega na? Comment mein batao aapko ye mistake pehle pata thi ya nahi! Aur aise hi English tips ke liye follow karo The English Vault.",
+    "hashtags": [
+      "iamagree",
+      "iagree",
+      "englishgrammar",
+      "englishtips",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "I am agree",
+        "headlineRest": "Is Actually Wrong — Here's Why",
+        "body": "Many English learners often say 'I am agree' instead of 'I agree'. This is a common mistake because 'agree' is already a verb in English, meaning 'to have the same opinion'. Unlike some other languages where an equivalent might be an adjective or state requiring 'to be', English doesn't need 'am', 'is', or 'are' before 'agree'. The correct way to express your assent is simply 'I agree with you.'",
+        "hindiSummary": "सही अभिव्यक्ति 'मैं सहमत हूँ' है।",
+        "imageQuery": "Person realizing English mistake"
+      }
+    ],
+    "generatedAt": "2026-11-03T09:53:34.525Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-common-mistake-i-am-agree-vs-i-agree-slide-01.png"
+    ],
+    "renderedAt": "2026-11-03T09:54:11.655Z",
+    "reelVideo": "the-english-vault-curriculum-common-mistake-i-am-agree-vs-i-agree-reel.mp4",
+    "reelDurationSeconds": 46.416,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "da9dd08db631f4aa",
+  "notifiedAt": "2026-11-03T09:58:00.693Z"
 }
