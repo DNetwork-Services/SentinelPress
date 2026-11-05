@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-digicert-confirms-data-breach-exposing-customer-personal-information",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "DigiCert Confirms Data Breach Exposing Customer Personal Information, Including IDs and Passports",
+    "link": "https://cyberpress.org/digicert-confirms-data-breach/",
+    "description": "DigiCert has confirmed unauthorized access to an internal business system containing archived customer information, including identity documents. According to Mozilla Bugzilla, the certificate authority said exposed records primarily contained names, business email addresses, telephone numbers, and business addresses. A small minority of customer accounts also included documents such as driver’s licenses, passports, utility bills, or [&#8230;] The post DigiCert Confirms Data Breach Exposing Customer Personal Information, Including IDs and Passports appeared first on Cyber Security News.",
+    "content": "DigiCert has confirmed unauthorized access to an internal business system containing archived customer information, including identity documents. According to Mozilla Bugzilla, the certificate authority said exposed records primarily contained names, business email addresses, telephone numbers, and business addresses. A small minority of customer accounts also included documents such as driver’s licenses, passports, utility bills, or other records containing names and addresses. DigiCert described the affected archive portion as small but disclosed no customer count. DigiCert Confirms Data Breach The exposure originated on February 4, 2025, when an infrastructure migration moved the system from a VPN-restricted network segment into an externally accessible availability zone. Its account manager included a self-service registration feature intended for other implementations. That feature inadvertently became reachable on the internal system. Unlike staff accounts protected by multi-factor authentication, self-registered accounts without an assigned application did not undergo MFA and received read-only access to archived information. DigiCert’s internal team noticed external accounts on June 18, 2026, but incorrectly concluded that accounts without application assignments could not access data. The team placed the system behind a web application firewall, blocking new registrations through that path. A managed security research program reported external account creation on June 21. Investigators later found that unauthorized archive access occurred between June 27 and July 2, exposing a separate authorization failure beyond the registration issue. A July 2 production patch required account-manager token validation and rejected accounts lacking application assignments with HTTP 401 responses. DigiCert restricted system hostnames to VPN traffic on July 9, except approved external endpoints. Nevertheless, the company initially treated the incident as an account-creation problem rather than a data-access event. It first suspected archive access on October 12 and confirmed a reportable incident on October 19, following forensic review of file-access records and request volumes. The investigation identified insufficient monitoring for account creation and internal endpoint activity. A Security Information and Event Management alert covering blocked access existed by July 2, but the team added application-level file-access and request-volume alerts on October 15. Remediation included password resets, disabling self-registration across business-system instances, and moving remaining exposed endpoints behind private-IP load balancers. A subsequent access control review confirmed that each subsystem endpoint checked application assignment and role. DigiCert said its certificate authority services, CertCentral, and DigiCert ONE were unaffected. Investigators found no associated validation actions, certificate issuance, or revocation activity; the account could neither modify records nor approve validations. Customer login credentials and issued certificates remain secure, and customers do not need to replace active certificates. Auditing origin-server exposure and reviewing automated account alerts remained ongoing, with both scheduled for completion on November 6. Join 16,000+ SOC teams using ANY.RUN to streamline threat investigations and reduce manual effort. Explore for your team The post DigiCert Confirms Data Breach Exposing Customer Personal Information, Including IDs and Passports appeared first on Cyber Security News.",
+    "pubDate": "Thu, 05 Nov 2026 09:05:57 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/11/digicert-confirms-data-breach-exposing-customer-personal-information-including-ids-and-passports234r23r-6aec46a1cac30.webp"
+  },
+  "score": 0.9964122592592592,
+  "selectedAt": "2026-11-05T09:44:41.857Z",
+  "generated": {
+    "caption": "Your ID or passport details could be at risk! 🚨\n\nDigiCert, a leading certificate authority, confirmed a data breach exposing archived customer information from an internal system. This included names, emails, and for some, driver's licenses or passports. Importantly, their certificate services and your active certificates remain secure.\n\nSave this & share to keep others informed! Follow @CyberShieldAlerts for daily updates.",
+    "script": "Your ID, passport, or driver's license could be at risk! DigiCert, a major certificate authority, has confirmed a data breach. An internal system with archived customer information was exposed. This included names, business emails, phone numbers, and addresses. Crucially, a small number of accounts also had driver’s licenses, passports, or utility bills compromised. This happened after an infrastructure migration accidentally made an internal self-service feature externally accessible, granting read-only access to this sensitive data. While DigiCert's core certificate services and your login credentials remain secure, and you don't need to replace active certificates, your personal identity documents may have been exposed. Stay vigilant and monitor your personal accounts for any suspicious activity.",
+    "hashtags": [
+      "digicert",
+      "idexposure",
+      "personaldata",
+      "databreach",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "DigiCert",
+        "headlineRest": "Confirms Data Breach Exposing Customer IDs",
+        "body": "DigiCert has confirmed unauthorized access to an internal business system containing archived customer information. Exposed records primarily included names, business email addresses, telephone numbers, and business addresses. A small minority of customer accounts also included sensitive identity documents such as driver’s licenses or passports. The breach originated from an infrastructure migration that inadvertently made a self-service registration feature on an internal system externally accessible, followed by a separate authorization failure. While certificate authority services and issued certificates remain secure, and customers do not need to replace active certificates, the incident highlights risks in internal system monitoring.",
+        "hindiSummary": "DigiCert ने डेटा उल्लंघन की पुष्टि की है, जिसमें ग्राहकों की व्यक्तिगत जानकारी और पहचान पत्र उजागर हुए हैं।",
+        "imageQuery": "Identity documents exposed security"
+      }
+    ],
+    "generatedAt": "2026-11-05T09:45:07.527Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-digicert-confirms-data-breach-exposing-customer-personal-information-slide-01.png"
+    ],
+    "renderedAt": "2026-11-05T09:45:17.857Z",
+    "reelVideo": "cyberpress-digicert-confirms-data-breach-exposing-customer-personal-information-reel.mp4",
+    "reelDurationSeconds": 47.705397,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "4a78c374f5a79f1e",
+  "notifiedAt": "2026-11-05T09:48:08.378Z"
+}

@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-useful-phrases-for-starting-a-meeting",
   "accountId": "englishvault",
-  "status": "awaiting_approval",
+  "status": "researched",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Business English"
@@ -11,44 +11,11 @@
     "link": "topic://englishvault/business-english-meeting-phrases",
     "description": "Common professional openers: 'Shall we get started?', 'Let's dive right in.', 'Thanks everyone for making the time.', 'I'd like to run through today's agenda.' Register: professional but not overly formal — appropriate for most workplace meetings. Avoid overly casual openers like 'What's up guys' in a professional context.",
     "content": "Common professional openers: 'Shall we get started?', 'Let's dive right in.', 'Thanks everyone for making the time.', 'I'd like to run through today's agenda.' Register: professional but not overly formal — appropriate for most workplace meetings. Avoid overly casual openers like 'What's up guys' in a professional context.",
-    "pubDate": "2026-09-17T07:55:29.047Z",
+    "pubDate": "2026-11-05T09:44:41.858Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-09-17T07:55:29.047Z",
-  "generated": {
-    "caption": "Ever wondered how to start a work meeting smoothly? 🗣️ Kick off your meetings professionally, but not *overly* formally! These phrases help you set a clear, friendly tone right from the start.\n\nFor example, try: \"Let's dive right in!\"\n\nSave this post & follow @TheEnglishVault for more daily English lessons!",
-    "script": "Meeting shuru karte waqt what's up guys bolte ho? Stop! Interview mein ya meeting mein ye galti mat karna. Dekho, professional meetings mein 'what's up guys' avoid karo. Uski jagah use karo phrases like 'Shall we get started?' ya 'Let's dive right in.' Jo seedha kaam ki baat pe aa jaayenge. Aur agar aapko sabka time appreciate karna hai, toh bolo 'Thanks everyone for making the time.' For example, aap bol sakte ho, 'I'd like to run through today's agenda.' Matlab, 'Aaj ka agenda discuss karte hain.' Simple! Toh ab samajh aaya? Meeting shuru karne ke liye these phrases are professional but not overly formal. Ab aapki communication aur professional lagegi. Comment mein batao, aap pehle kaunsa phrase use karte the? Aur follow karo The English Vault ko aise hi tips ke liye!",
-    "hashtags": [
-      "meetingopeners",
-      "businessenglish",
-      "professionalenglish",
-      "spokenenglish",
-      "englishseekhen"
-    ],
-    "slides": [
-      {
-        "type": "newscard",
-        "badgeInitials": "EV",
-        "headlineHighlight": "Shall We Get Started?",
-        "headlineRest": "— Professional Ways to Open Your Meeting",
-        "body": "Starting a meeting effectively sets the tone. Phrases like 'Shall we get started?', 'Let's dive right in,' or 'I'd like to run through today's agenda' are perfect for professional workplace meetings. They convey readiness and respect for everyone's time without being overly formal. For instance, you might say, 'Thanks everyone for making the time; let's dive right in.' Remember to avoid overly casual openers like 'What's up guys' in a professional setting to maintain appropriate decorum.",
-        "hindiSummary": "मीटिंग शुरू करने के लिए ये पेशेवर और उपयुक्त वाक्यांश हैं।",
-        "imageQuery": "Professional meeting start conversation"
-      }
-    ],
-    "generatedAt": "2026-09-17T07:58:55.087Z"
-  },
-  "render": {
-    "slideImages": [
-      "the-english-vault-curriculum-useful-phrases-for-starting-a-meeting-slide-01.png"
-    ],
-    "renderedAt": "2026-09-17T07:58:58.887Z",
-    "reelVideo": "the-english-vault-curriculum-useful-phrases-for-starting-a-meeting-reel.mp4",
-    "reelDurationSeconds": 64.152,
-    "hasVoiceover": true,
-    "musicTrack": null
-  },
-  "approvalHash": "3614a0ac691d4e26",
-  "notifiedAt": "2026-09-17T08:02:18.353Z"
+  "selectedAt": "2026-11-05T09:44:41.859Z",
+  "generated": null,
+  "render": null
 }
