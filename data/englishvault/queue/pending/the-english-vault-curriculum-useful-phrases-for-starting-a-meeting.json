@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-useful-phrases-for-starting-a-meeting",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Business English"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-11-05T09:44:41.859Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever wonder how to start a meeting confidently? Ditch the overly casual greetings! Professional openers create a great impression.\n\nPhrases like \"Shall we get started?\" or \"Thanks everyone for making the time\" are perfect. They're professional but not too formal, setting the right tone.\n\nSave this for your next meeting and follow for more daily English lessons!\n\n#BusinessEnglish #MeetingPhrases",
+    "script": "Important meetings start karte waqt professional kaise sound karein, isme confusion hoti hai na? Toh suno, 'What's up guys' jaise casual openers bilkul avoid karo. Iski jagah professional but not overly formal phrases use karo. Jaise, next time aap bol sakte ho, 'I'd like to run through today's agenda'. Iska matlab hai, 'main aaj ka agenda discuss karna chahunga'. Ab samajh aaya? Apni meetings professional tareeke se start karo, aur sabko impress karo. Comment mein batao aapko aur kaunse meeting phrases seekhne hain, aur follow The English Vault for more!",
+    "hashtags": [
+      "meetingphrases",
+      "startingameeting",
+      "businessenglish",
+      "learnenglish",
+      "spokenenglish"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Meeting Openers",
+        "headlineRest": "— Professional Ways to Begin",
+        "body": "Starting a meeting professionally sets the right tone. Instead of overly casual greetings like 'What's up guys,' opt for phrases that are professional yet not too formal. Excellent choices include 'Shall we get started?' to prompt commencement, or 'Let's dive right in' to encourage immediate engagement. You can also thank participants with 'Thanks everyone for making the time' or introduce the plan with 'I'd like to run through today's agenda.' These expressions help ensure a smooth and respectful start to any workplace discussion.",
+        "hindiSummary": "किसी बैठक को पेशेवर तरीके से शुरू करने के लिए इन उपयोगी वाक्यांशों का उपयोग करें।",
+        "imageQuery": "People starting a meeting"
+      }
+    ],
+    "generatedAt": "2026-11-07T09:05:39.971Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-useful-phrases-for-starting-a-meeting-slide-01.png"
+    ],
+    "renderedAt": "2026-11-07T09:05:43.972Z",
+    "reelVideo": "the-english-vault-curriculum-useful-phrases-for-starting-a-meeting-reel.mp4",
+    "reelDurationSeconds": 44.832,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "3614a0ac691d4e26",
+  "notifiedAt": "2026-11-07T09:08:31.397Z"
 }
