@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-quiz-guess-the-idioms-meaning",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Quiz"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-11-07T09:03:50.206Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "🤫 Ever accidentally let slip a secret?\n\nTo \"spill the beans\" means you reveal confidential information. We use this idiom informally when someone shares a secret, either by accident or on purpose.\nExample: \"Don't spill the beans about the surprise party!\"\n\nSave this idiom for later! Follow @TheEnglishVault for more daily English lessons.",
+    "script": "Ye 'spill the beans' ka asli matlab kya hai, pata hai? Basically, 'spill the beans' ka matlab hota hai, ek secret reveal karna. Jaise, koi confidential information galti se ya jaan-boojhkar bata dena. Yeh hum informally use karte hain. Toh next time agar aapko koi secret batana ho, ya koi accidentally bata de, toh usne 'spill the beans' kiya hai. Ab clear hai na? Comment karke batao, aapne kabhi 'beans spill' kiye hain kya? Aur follow karo The English Vault ko aise hi tips ke liye!",
+    "hashtags": [
+      "spillthebeans",
+      "idiomquiz",
+      "learnenglish",
+      "englishvocabulary",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Spill the Beans",
+        "headlineRest": "— What Does It Mean?",
+        "body": "The idiom 'spill the beans' is an informal expression used when someone accidentally or deliberately reveals confidential information or a secret. It's like letting a cat out of the bag, but with beans! For instance, if you said, 'My friend almost spilled the beans about the surprise party,' it means they nearly revealed the secret. This phrase perfectly describes sharing information that was meant to be kept private.",
+        "hindiSummary": "इसका अर्थ है कोई रहस्य उजागर करना या गोपनीय जानकारी बताना।",
+        "imageQuery": "person revealing secret"
+      }
+    ],
+    "generatedAt": "2026-11-08T09:22:54.356Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-quiz-guess-the-idioms-meaning-slide-01.png"
+    ],
+    "renderedAt": "2026-11-08T09:22:57.826Z",
+    "reelVideo": "the-english-vault-curriculum-quiz-guess-the-idioms-meaning-reel.mp4",
+    "reelDurationSeconds": 40.152,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "717b0d1bf632e112",
+  "notifiedAt": "2026-11-08T09:26:31.134Z"
 }
