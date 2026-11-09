@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-veeam-warns-critical-98-linux-kernel-flaw-could-crash-backup",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Veeam Warns Critical 9.8 Linux Kernel Flaw Could Crash Backup Appliances and Disrupt Recovery Operations",
+    "link": "https://cybersecuritynews.com/veeam-warns-critical-linux-kernel-flaw/",
+    "description": "Veeam warned that a critical Linux kernel flaw with a CVSS score of 9.8, could cause denial of service or memory corruption across backup and recovery products. Veeam’s November 6 impact statement identified a Linux kernel use-after-free vulnerability (CVE-2026-98432) in TCP/IPv4 connection setup and outlined update paths for affected systems. Its security advisory does not [&#8230;] The post Veeam Warns Critical 9.8 Linux Kernel Flaw Could Crash Backup Appliances and Disrupt Recovery Operations appeared first on Cyber Security News.",
+    "content": "Veeam warned that a critical Linux kernel flaw with a CVSS score of 9.8, could cause denial of service or memory corruption across backup and recovery products. Veeam’s November 6 impact statement identified a Linux kernel use-after-free vulnerability (CVE-2026-98432) in TCP/IPv4 connection setup and outlined update paths for affected systems. Its security advisory does not report active exploitation or confirm remote code execution. The stated risks could interrupt backup and restore work if an affected appliance becomes unavailable. Affected products include Veeam Software Appliance 13.1 and Veeam Infrastructure Appliance 13.1. Infrastructure roles include backup proxies, hardened repositories, mount servers, gateways, and Cloud Connect components. Workers deployed through Veeam hypervisor plug-ins also need the updated kernel. Veeam Warns Critical Linux Kernel Flaw Windows-based Veeam Backup & Replication installations also require attention because they deploy Linux helper appliances. These support file recovery, virtual labs, and cloud restores. The advisory lists affected helper appliances in versions 13.1 and 12.3, rather than identifying the Windows kernel as vulnerable. The disclosure follows separate Veeam authorization bypass fixes and earlier Backup & Replication security updates. Those issues have different causes and patch requirements, so administrators should not assume earlier product updates resolve this kernel flaw. Veeam says a patched kernel has been available for Software Appliance and Infrastructure Appliance 13.1 since November 2. The fixed package is 5.14.0-570.60.1+27.2.el9_6_ciq, delivered through Veeam Updater. Administrators can install available updates from the Veeam Host Management console without waiting for the automatic schedule. A restart may be required. The updater checks repositories every 12 hours. Under default settings, mandatory updates install on the nearest Sunday at 14:00 in the backup server’s time zone. Teams should check update history to confirm installation. Systems using a local repository mirror receive the package only after that mirror synchronizes. For Windows deployments, the 13.1 private fix requires Backup & Replication 13.1.2.57. Repacked 13.1.2 installation media includes the fix. Veeam’s November 6 advisory says the private fix for version 12.3 will become available soon. Temporary helper appliances receive updated images when deployed again. At the same time, persistent virtual labs and Microsoft Azure helper appliances must be redeployed. Replace recovery media created before the update. Hypervisor plug-in workers receive the updated kernel on their next launch. AWS, Azure, and Google Cloud plug-in appliances receive Ubuntu kernel updates through Veeam Updater. Administrators should install available updates and review the Ubuntu CVE tracker for package status. Veeam Kasten container images do not include a kernel, but their Kubernetes nodes still need vendor checks. Customer-managed Linux proxies, repositories, and gateways also require distribution updates. Completing these separate checks helps teams avoid leaving recovery components unpatched after updating the main appliance itself. Give your SOC the alert context to stops incidents quickly. Integrate Threat Intel from 16K SOCs. The post Veeam Warns Critical 9.8 Linux Kernel Flaw Could Crash Backup Appliances and Disrupt Recovery Operations appeared first on Cyber Security News.",
+    "pubDate": "Mon, 09 Nov 2026 07:48:15 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/11/Veeam-Warns-Critical-9.8-Linux-Kernel-Flaw-Could-Crash-Backup-Appliances-and-Disrupt-Recovery-Operations.webp"
+  },
+  "score": 0.9872012453703704,
+  "selectedAt": "2026-11-09T10:06:28.593Z",
+  "generated": {
+    "caption": "Your data recovery could be at risk! Veeam has issued a critical warning about a Linux kernel flaw (CVSS 9.8). This vulnerability could crash backup appliances and disrupt vital data recovery operations. If you use Veeam products, especially those with Linux components, updates are crucial. A patched kernel has been available since November 2.\n\nStay safe! Save this post, share it with your team, and follow @CyberShieldAlerts for daily updates.",
+    "script": "Critical alert for your backups! A Linux kernel flaw with a CVSS score of 9.8 can crash Veeam backup appliances and disrupt your recovery operations. Veeam has warned about a use-after-free vulnerability, CVE-2026-98432. This affects Veeam Software Appliance 13.1, Infrastructure Appliance 13.1, and Linux helper appliances even for Windows installations. This flaw could cause denial of service or memory corruption, making your critical recovery systems unavailable when you need them most. While not actively exploited, your data's recoverability is at stake. Install available updates through Veeam Updater immediately. Check your update history and redeploy persistent virtual labs or helper appliances. For Windows, ensure Backup & Replication 13.1.2.57 is applied. Act now to secure your recovery operations!",
+    "hashtags": [
+      "veeam",
+      "linuxkernel",
+      "cve202698432",
+      "cybersecurity",
+      "vulnerability"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Critical 9.8 Flaw",
+        "headlineRest": "Threatens Veeam Backup Appliances, Recovery",
+        "body": "Veeam has issued a warning regarding a critical Linux kernel flaw, rated 9.8 CVSS, that could lead to denial of service or memory corruption. This vulnerability impacts numerous Veeam backup and recovery products, including Software and Infrastructure Appliances, and could disrupt crucial recovery operations. While no active exploitation has been reported, the flaw affects various infrastructure roles and Linux helper appliances in Windows deployments. Administrators must install available patched kernel updates through Veeam Updater promptly, ensuring all components, including hypervisor plug-ins and customer-managed Linux systems, are secured to prevent potential disruptions.",
+        "hindiSummary": "वीम ने एक गंभीर लिनक्स कर्नेल खामी की चेतावनी दी है जो बैकअप उपकरणों को प्रभावित कर सकती है, तुरंत अपडेट करें।",
+        "imageQuery": "Cybersecurity threat server warning"
+      }
+    ],
+    "generatedAt": "2026-11-09T10:06:55.449Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-veeam-warns-critical-98-linux-kernel-flaw-could-crash-backup-slide-01.png"
+    ],
+    "renderedAt": "2026-11-09T10:07:23.906Z",
+    "reelVideo": "cyber-security-news-veeam-warns-critical-98-linux-kernel-flaw-could-crash-backup-reel.mp4",
+    "reelDurationSeconds": 55.716281,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "c0bbf997cc0dccb0",
+  "notifiedAt": "2026-11-09T10:10:37.447Z"
+}
