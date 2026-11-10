@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-sap-patches-four-cvss-100-flaws-including-two-enabling-remote-co",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "SAP Patches Four CVSS 10.0 Flaws, Including Two Enabling Remote Code Execution",
+    "link": "https://thehackernews.com/2026/11/sap-patches-four-cvss-100-flaws.html",
+    "description": "Four flaws that attackers could exploit without logging in were fixed today as part of SAP's monthly Security Patch Day—the vendor rates all four 10.0, the maximum CVSS score. Three are in the SAP NetWeaver application server, the software SAP systems run on, and one is in the Web Dispatcher, which receives web requests from the internet and passes them on to that server. The flaws in the Web",
+    "content": "",
+    "pubDate": "Tue, 10 Nov 2026 15:32:40 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgo4snqwJ4uD_sRDyI8zs23mcfFTWfZoSrn9n1hbUrsHbyWy-1VFL8amxqQnLb7LSTPkuSwnsPofUJT6anObg-nU4Q5e01WBb3IixN_PdL-1MJ2nOip4qSTEoVDmePRlOgjSVjvtbH8vFlQgxtGuKuqmuHWLyzIavw2Sj4VtZBlTYhUqeySbQcDMEr4Wns/s1600/sap-flaws.jpg"
+  },
+  "score": 0.9989015895061728,
+  "selectedAt": "2026-11-10T10:14:31.771Z",
+  "generated": {
+    "caption": "Attackers could take full control of SAP systems *without logging in*! 🚨\n\nSAP just patched four maximum-severity (CVSS 10.0) flaws today. Attackers could exploit these without authentication, with two enabling remote code execution. These critical bugs affect SAP NetWeaver and Web Dispatcher components.\n\nStay safe: Save & share this update, and follow @CyberShieldAlerts for daily security news!",
+    "script": "Your SAP systems are vulnerable! Four maximum-severity flaws, all rated 10.0, allowed attackers to exploit systems without logging in. SAP just patched these critical vulnerabilities. Three affect SAP NetWeaver, and one is in the Web Dispatcher. Two of these flaws even allowed remote code execution, meaning attackers could gain complete control of your SAP infrastructure. This posed a critical threat to businesses globally. Secure your systems: Apply these essential SAP patches immediately!",
+    "hashtags": [
+      "sap",
+      "sapnetweaver",
+      "rce",
+      "vulnerabilities",
+      "infosec"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Four CVSS 10.0 Flaws",
+        "headlineRest": "Patched by SAP, Including Remote Code Execution",
+        "body": "SAP has released urgent patches for four critical vulnerabilities, all receiving the maximum CVSS score of 10.0. These severe flaws, found in SAP NetWeaver and Web Dispatcher, could allow attackers to exploit systems remotely without requiring any login credentials. Notably, two of these issues enable full remote code execution, posing an immediate and significant threat. Organizations are strongly advised to apply these security patches without delay to protect their SAP environments.",
+        "hindiSummary": "SAP ने चार अति-महत्वपूर्ण कमजोरियों को ठीक किया है, जिनमें से कुछ रिमोट कोड एक्सेक्यूशन को सक्षम करती हैं।",
+        "imageQuery": "Critical software vulnerability patch"
+      }
+    ],
+    "generatedAt": "2026-11-10T10:15:01.834Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-sap-patches-four-cvss-100-flaws-including-two-enabling-remote-co-slide-01.png"
+    ],
+    "renderedAt": "2026-11-10T10:15:33.223Z",
+    "reelVideo": "the-hacker-news-sap-patches-four-cvss-100-flaws-including-two-enabling-remote-co-reel.mp4",
+    "reelDurationSeconds": 30.302041,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "1825704c2600490f",
+  "notifiedAt": "2026-11-10T10:18:04.354Z"
+}
