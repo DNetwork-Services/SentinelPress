@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-hindi-to-english-shopping-context",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Translation"
@@ -16,6 +16,33 @@
   },
   "score": 1,
   "selectedAt": "2026-11-10T10:14:31.773Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever asked for a \"big size\" while shopping? 🤔 It's a common mistake! Instead of a literal translation, native speakers say \"a bigger size\" or \"a larger size.\" For example: \"Do you have this in a bigger size?\" Sounds much more natural!\n\nSave this tip for your next shopping trip and follow @TheEnglishVault for more daily English lessons!",
+    "script": "Shopping karte time, 'big size' bolne ki galti aap bhi karte ho kya? Sunne mein theek lagta hai, par ye galat hai! Basically, jab hume poochhna hota hai 'kya aapke paas iska bada size hai?', we often just translate it to 'Do you have this in a big size?'. But naturally, English speakers don't say 'big size' like that. They'll say 'a bigger size' or 'a larger size'. Iska matlab hai, 'bada size' ke liye proper phrase hai 'bigger size' ya 'larger size'. Jaise ye sentence: \"Do you have this in a bigger size?\" Toh next time, jab bhi kapde ya kuch bhi shopping kar rahe ho aur 'bada size' mangna ho, toh yaad rakhna, it's always 'a bigger size' or 'a larger size'. Ab hua confusion clear? Comment mein batao aapko ye tip pehle se pata thi ya nahi! Aur aise hi English tips ke liye The English Vault ko follow karo!",
+    "hashtags": [],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Big Size",
+        "headlineRest": "Is Actually Wrong — Here's Why",
+        "body": "When translating 'बड़ा साइज़' from Hindi to English, many learners might say 'big size'. However, this is not natural English. Native speakers typically use 'a bigger size' or 'a larger size' instead. For example, to ask 'क्या आपके पास इसका बड़ा साइज़ है?', the correct phrasing is 'Do you have this in a bigger size?' This subtle difference makes your English sound much more fluent and natural.",
+        "hindiSummary": "क्या आपके पास इसका बड़ा साइज़ है? का सही अनुवाद है Do you have this in a bigger size?",
+        "imageQuery": "customer asking for clothes size"
+      }
+    ],
+    "generatedAt": "2026-11-11T09:45:02.352Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-hindi-to-english-shopping-context-slide-01.png"
+    ],
+    "renderedAt": "2026-11-11T09:45:12.047Z",
+    "reelVideo": "the-english-vault-curriculum-hindi-to-english-shopping-context-reel.mp4",
+    "reelDurationSeconds": 63.24,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "c022ef97fd1ee793",
+  "notifiedAt": "2026-11-11T09:48:36.480Z"
 }
