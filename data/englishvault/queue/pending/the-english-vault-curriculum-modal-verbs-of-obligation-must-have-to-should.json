@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-modal-verbs-of-obligation-must-have-to-should",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Grammar"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-11-11T09:44:10.572Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever wonder when to use 'must' versus 'have to'? 🤔 Let's clarify!\n\nUse 'must' for your strong personal feeling or a rule you impose: \"I must finish this today.\"\n'Have to' is for external obligations or rules from others: \"I have to wear a uniform at work.\"\nAnd 'should' is for friendly advice, not a strict rule: \"You should see a doctor.\"\n\nMaster these for clear communication!\nSave this & follow @theenglishvault for daily lessons!",
+    "script": "Must, have to, should. In teeno modal verbs mein confusion hota hai na?\n\nDekho, *must* hum tab use karte hain jab koi strong personal obligation ho ya speaker ki authority se rule ho. Example: 'I must finish this today.' Ye meri personal strong obligation hai. Wahi, *have to* show karta hai external obligation. Matlab, jab koi rule ho ya kisi aur ne bola ho. Jaise, 'I have to wear a uniform at work.' Ye company ka rule hai. Aur *should*? Ye toh bas ek advice ya recommendation hai, koi strict obligation nahi. Example: 'You should see a doctor.' Ek simple advice, that's it.\n\nToh ab samajh aaya? *Must* for personal strong obligations. *Have to* for external rules. Aur *should* bas advice ke liye. Simple!\n\nComment mein batao aapko ye difference pehle se pata tha ya nahi! Aur aise hi quick English tips ke liye The English Vault ko follow karo!",
+    "hashtags": [
+      "modalverbs",
+      "obligation",
+      "englishgrammar",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Must, Have To, Should",
+        "headlineRest": "— Expressing Obligation & Advice",
+        "body": "Use 'must' for strong personal obligations or rules from your own authority, as in 'I must finish this today.' For external obligations, like rules set by others, use 'have to': 'I have to wear a uniform at work.' While 'must' and 'have to' are often both acceptable, 'have to' usually sounds more natural for rules imposed by others. Lastly, 'should' expresses advice or a recommendation, not a strict obligation: 'You should see a doctor.'",
+        "hindiSummary": "ये क्रियाएं (must, have to, should) हमें दायित्व, आवश्यकता और सलाह व्यक्त करने में मदद करती हैं।",
+        "imageQuery": "Decision choices path"
+      }
+    ],
+    "generatedAt": "2026-11-12T10:07:42.069Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-modal-verbs-of-obligation-must-have-to-should-slide-01.png"
+    ],
+    "renderedAt": "2026-11-12T10:07:45.349Z",
+    "reelVideo": "the-english-vault-curriculum-modal-verbs-of-obligation-must-have-to-should-reel.mp4",
+    "reelDurationSeconds": 75.792,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "54c49e4773fe48bd",
+  "notifiedAt": "2026-11-12T10:12:01.671Z"
 }
