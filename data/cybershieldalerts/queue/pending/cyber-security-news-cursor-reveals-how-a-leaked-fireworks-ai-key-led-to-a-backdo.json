@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-cursor-reveals-how-a-leaked-fireworks-ai-key-led-to-a-backdo",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Cursor Reveals How a Leaked Fireworks AI Key Led to a Backdoored Claude Code Extension",
+    "link": "https://cybersecuritynews.com/cursor-data-breach/",
+    "description": "Cursor has traced its October security breach to an access key exposed by Fireworks AI. The attacker used that key to steal historical coding agent records, find more credentials, and eventually place backdoored Claude Code extensions in Cursor’s marketplace cache. Its November 13 update connects the vendor exposure to the malicious packages discovered on October [&#8230;] The post Cursor Reveals How a Leaked Fireworks AI Key Led to a Backdoored Claude Code Extension appeared first on Cyber Security News.",
+    "content": "Cursor has traced its October security breach to an access key exposed by Fireworks AI. The attacker used that key to steal historical coding agent records, find more credentials, and eventually place backdoored Claude Code extensions in Cursor’s marketplace cache. Its November 13 update connects the vendor exposure to the malicious packages discovered on October 29. The stolen key, which Cursor had issued to Fireworks, provided read-only access to a shared storage bucket. It held limited coding agent traces, mostly from 2025, from sessions outside Privacy Mode that Cursor was permitted to use for model training. Some records contained credentials that had not been removed. Cursor said fewer than 0.05% of users had coding agent traces exposed, while less than 0.01% of customers had API credentials exposed. These figures describe different parts of the incident and should not be treated as the number of users who installed malware. Using credentials found in those records, the attacker reached selected software services used by Cursor. The exposed information included archived, non-production source repositories, limited support records and emails, usage metrics, contact details, conversation summaries, and some credentials customers had sent to support. On October 29, a credential stolen from exposed internal data allowed the attacker to place modified Claude Code packages directly into the cache serving Cursor’s VS Code extension marketplace. Cursor said Anthropic did not publish the packages, its product was not vulnerable, and Open VSX never hosted the malware. This corrects earlier reporting that placed the package on Open VSX. Claude Code Backdoor Worked According to Cursor’s incident update, at most 5,000 users requesting specific cached versions potentially received malicious builds during roughly 11 hours. The affected packages were Anthropic.claude-code 2.1.312 and 2.1.313 for Windows and macOS. That is a potential distribution count, not confirmation of 5,000 successful backdoor connections. Cyber Security News’ initial technical analysis described injected JavaScript that ran when the extension loaded, without requiring a Claude conversation. It collected host details, added an SSH key labeled svc-telemetry, and attempted a reverse SSH tunnel to 134[.]209[.]82[.]225. The initial data upload included environment variable names, not their values. Its follow-up on Cursor’s confirmation detailed macOS LaunchAgent persistence and a Windows scheduled task with a Startup-folder fallback. Scripts retried connections about every 60 seconds. Cursor said coding errors and missing administrator rights blocked remote login on most hosts, but did not prevent other malicious changes or host data collection. Wider Fireworks AI Breach Impact The Fireworks AI breach report covered broader exposure involving account and billing records, selected datasets, and incomplete model weights. Fireworks’ November security update also described access through a cloud provider hosting development machines. Those broader findings do not establish that every customer lost the same data. Other customers reported separate impacts. Notion’s disclosure involved AI chat transcripts used by Insights across fewer than 1% of workspaces, without a breach of Notion’s systems. Uber’s disclosure concerned personal information, including driver’s license details, belonging to thousands of U.S. drivers. Neither disclosure establishes involvement in Cursor’s extension attack. Cursor moved inference traffic away from Fireworks, revoked vendor access, rotated internal credentials, rebuilt the extension marketplace, and expanded secret scanning and network restrictions. It also redeployed production infrastructure as a precaution. The company believes the incident is contained and said the last observed attacker activity, on November 1, was blocked. Privacy Mode prompts, customer code repositories, and official Cursor updates were unaffected. Affected developers should follow Cursor’s cleanup notice. Removing the extension alone may leave SSH keys and startup scripts behind. Cursor advises checking endpoint evidence, isolating affected machines, removing persistence, rotating accessible credentials from a trusted system, and assessing whether rebuilding is needed. Give your SOC the alert context to stops incidents quickly. Integrate Threat Intel from 16K SOCs. The post Cursor Reveals How a Leaked Fireworks AI Key Led to a Backdoored Claude Code Extension appeared first on Cyber Security News.",
+    "pubDate": "Sat, 14 Nov 2026 09:09:31 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/11/Cursor-Data-Breach.webp"
+  },
+  "score": 0.9993986682098766,
+  "selectedAt": "2026-11-14T09:16:00.663Z",
+  "generated": {
+    "caption": "Don't let your AI tools betray your trust! 😬\n\nCursor traced its October security breach to a leaked Fireworks AI key. This allowed attackers to place backdoored Claude Code extensions in Cursor's marketplace, potentially affecting up to 5,000 users. The malware collected system details and attempted remote access.\n\nStay informed! Save this post, share with your network, and follow @CyberShieldAlerts for daily updates.",
+    "script": "Your AI coding extension might have a backdoor! A leaked Fireworks AI key led to backdoored Claude Code. Cursor's recent breach began with an exposed Fireworks AI access key. Attackers used it to steal coding agent records and credentials, then injected malicious Claude Code extensions directly into Cursor’s marketplace cache. For about eleven hours, up to five thousand Windows and macOS users potentially received these backdoored builds. The malicious code collected host details, added SSH keys, and tried to establish remote tunnels. If affected, simply removing the extension isn't enough. You must check endpoints, remove persistence, rotate credentials from a trusted system, and assess if a rebuild is needed. Act now!",
+    "hashtags": [
+      "cursor",
+      "fireworksai",
+      "claudecode",
+      "supplychainattack",
+      "malware"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Fireworks AI",
+        "headlineRest": "Key Led to Backdoored Claude Code Extension for Cursor",
+        "body": "Cursor has traced its October security breach to an access key exposed by Fireworks AI. This leaked key allowed an attacker to steal historical coding agent records and other credentials, which were then used to place backdoored Claude Code extensions in Cursor’s marketplace cache. At most 5,000 users requesting specific cached versions potentially received malicious builds that could collect host details and attempt reverse SSH tunnels.\n\nWhile coding errors often prevented full remote login, other malicious changes or data collection were possible. Cursor has taken steps to contain the incident, including revoking vendor access and rebuilding the marketplace. Affected users are advised to follow Cursor's cleanup notice, which includes checking endpoints, isolating machines, removing persistence, and rotating credentials beyond just uninstalling the extension.",
+        "hindiSummary": "Cursor की सुरक्षा में सेंध का कारण Fireworks AI की एक लीक हुई कुंजी थी, जिससे Claude Code एक्सटेंशन में बैकडोर डाल दिया गया।",
+        "imageQuery": "backdoored code, leaked credentials"
+      }
+    ],
+    "generatedAt": "2026-11-14T09:16:27.135Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-cursor-reveals-how-a-leaked-fireworks-ai-key-led-to-a-backdo-slide-01.png"
+    ],
+    "renderedAt": "2026-11-14T09:20:41.875Z",
+    "reelVideo": "cyber-security-news-cursor-reveals-how-a-leaked-fireworks-ai-key-led-to-a-backdo-reel.mp4",
+    "reelDurationSeconds": 42.898866,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "12f118b4d4827c35",
+  "notifiedAt": "2026-11-14T09:23:36.465Z"
+}
