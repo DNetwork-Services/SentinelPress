@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-stolen-fireworks-ai-key-led-to-cursor-data-breach-and-trojanized",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Stolen Fireworks AI Key Led to Cursor Data Breach and Trojanized Claude Code Extension",
+    "link": "https://thehackernews.com/2026/11/stolen-fireworks-ai-key-led-to-cursor.html",
+    "description": "The compromise of Anthropic's official Claude Code extension on Cursor's extension marketplace was the result of the theft of an access key that was exposed in the wake of a breach targeting Fireworks AI. \"An attacker obtained an access key we had issued to Fireworks,\" Cursor said in a Friday update. \"The key was exposed by Fireworks, and the attacker used it to copy data from a read-only",
+    "content": "",
+    "pubDate": "Sun, 15 Nov 2026 13:52:04 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg16ACawbG7rP_kT-8Boo4xdTje3BeTWyFSnNXwHhr5cvy2-1X3Ljhrc1IuZlseWd55tN8E1yjQ9ldhTnjWTU-GJBpX_Zen36YiLQGsRSRAoteqHyxx7mn_w0QgLfMKDLItA4p_jpHajucbglLnCR_zWBY_t82YvFkLa9dQFBfjP1BrTlrNdYufsGMSZiGn/s1600/cursor.jpg"
+  },
+  "score": 0.992247600308642,
+  "selectedAt": "2026-11-15T09:45:47.557Z",
+  "generated": {
+    "caption": "Here's your Instagram caption:\n\nYour AI security just got a wake-up call! 🚨 An access key issued to Fireworks AI was stolen following a breach, then used to compromise the official Claude Code extension on Cursor's marketplace. This resulted in a trojanized version of the AI code. Always check your AI tools! Save this post & follow @CyberShieldAlerts for daily updates.",
+    "script": "Urgent cyber alert: A stolen AI key has led to a major data breach! An access key, issued by Cursor to Fireworks AI, was stolen after a breach targeting Fireworks. This key allowed attackers to copy data and compromise Anthropic's official Claude Code extension on Cursor's marketplace. This means the extension was 'trojanized,' potentially exposing users to malicious code. Your data, and the integrity of your AI development tools, could be at risk. Check for official security advisories from Cursor and Anthropic immediately.",
+    "hashtags": [
+      "cursor",
+      "fireworksai",
+      "claudecode",
+      "databreach",
+      "aisecurity"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Fireworks AI",
+        "headlineRest": "Key Theft Leads to Cursor Data Breach & Trojanized Claude Code",
+        "body": "A stolen access key, initially issued to Fireworks AI, has been identified as the root cause of a recent data breach affecting Cursor. The key was exposed by Fireworks AI, allowing an attacker to compromise Anthropic's official Claude Code extension on Cursor's marketplace. This unauthorized access led to data being copied from a read-only source. The incident highlights the critical importance of secure key management and the potential ripple effects of third-party compromises in the AI ecosystem.",
+        "hindiSummary": "फायरवर्क्स एआई से चोरी हुई एक एक्सेस कुंजी के कारण कर्सर में डेटा उल्लंघन हुआ, जिससे क्लाउड कोड एक्सटेंशन प्रभावित हुआ।",
+        "imageQuery": "stolen access key cyber threat"
+      }
+    ],
+    "generatedAt": "2026-11-15T09:46:07.093Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-stolen-fireworks-ai-key-led-to-cursor-data-breach-and-trojanized-slide-01.png"
+    ],
+    "renderedAt": "2026-11-15T09:46:35.791Z",
+    "reelVideo": "the-hacker-news-stolen-fireworks-ai-key-led-to-cursor-data-breach-and-trojanized-reel.mp4",
+    "reelDurationSeconds": 31.927438,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "77556955841ae9bf",
+  "notifiedAt": "2026-11-15T09:50:06.417Z"
+}
