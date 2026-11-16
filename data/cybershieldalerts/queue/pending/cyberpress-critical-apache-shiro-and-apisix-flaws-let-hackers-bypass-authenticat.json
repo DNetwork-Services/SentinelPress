@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-critical-apache-shiro-and-apisix-flaws-let-hackers-bypass-authenticat",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Critical Apache Shiro and APISIX Flaws Let Hackers Bypass Authentication Without Login",
+    "link": "https://cyberpress.org/critical-apache-shiro-apisix-flaws/",
+    "description": "Two authentication-bypass defects disclosed on November 13 and 14, 2026, let remote attackers access protected resources without valid credentials. CVE-2026-129349 affects Apache Shiro and carries a CVSS 4.0 score of 9.1. CVE-2026-124679 affects Apache APISIX and scores 7.8. The Shiro defect sits in DefaultLdapRealm, which also covers JndiLdapRealm. When authenticationCachingEnabled is set to true, the [&#8230;] The post Critical Apache Shiro and APISIX Flaws Let Hackers Bypass Authentication Without Login appeared first on Cyber Security News.",
+    "content": "Two authentication-bypass defects disclosed on November 13 and 14, 2026, let remote attackers access protected resources without valid credentials. CVE-2026-129349 affects Apache Shiro and carries a CVSS 4.0 score of 9.1. CVE-2026-124679 affects Apache APISIX and scores 7.8. The Shiro defect sits in DefaultLdapRealm, which also covers JndiLdapRealm. When authenticationCachingEnabled is set to true, the user is cached after the first login. Later logins for that user then skip the LDAP bind. The default AllowAllCredentialsMatcher accepts any credential against the cached authentication info. Critical Apache Shiro and APISIX Flaws An attacker who knows only a valid username can therefore impersonate that account with an arbitrary password. Shiro 3.0.0 and earlier are affected, but only with caching enabled, which is not the default. Joshua Rogers found the flaw, and Lenny Primak developed the fix. Shiro 3.0.1 stops installing AllowAllCredentialsMatcher by default. Administrators can instead disable authentication caching on the LDAP realm or configure a matcher such as SimpleCredentialsMatcher. A matcher like that verifies credentials against the cached data. Teams should review realm configurations and audit logs for successful logins with mismatched passwords. Similar LDAP trust failures appeared in the FortiOS LDAP login bypass, where unauthenticated binds fooled the fnbamd daemon. The APISIX defect is an authentication bypass via spoofing, with CVSS:4.0/AV:N/AC:L/AT:N/PR:N/UI:N. It affects Apache APISIX 3.18.0 through 3.19.0. Siyang Wu reported it, and shreemaan-abhishek coordinated and developed the remediation. The jwe-decrypt plugin is exposed on routes configured with strict set to false and a forward_header distinct from the token header. An unauthenticated client can then supply the header value that the upstream treats as gateway-decrypted plaintext. The upstream trusts a forged identity assertion without any JWE validation. The forward-auth plugin has a similar failure mode. With allow_degradation set to true, an unavailable authentication service lets requests pass carrying a client-supplied identity header. An attacker can force or wait for an external authorizer outage and inject arbitrary identity claims. Upstream services that map such headers to user context may grant privileged access. Related token-forgery logic appeared in the pac4j-jwt bypass, where a null check skipped signature verification. Upgrade to APISIX 3.20.0 to fix the issue. Until then, set strict to true on jwe-decrypt routes. Disable allow_degradation on forward-auth routes. Configure the gateway to strip inbound identity headers before it forwards requests. Upstream applications should accept identity data only from trusted gateway channels, such as mutually authenticated connections. Both flaws show how fail-open defaults and unvalidated trust boundaries undermine credential checks. Teams should inventory Shiro realms and APISIX routes, then patch internet-facing deployments first. They should also monitor for requests that carry forged identity headers. The pattern echoes the OpenSSH authentication bypass, where an error condition was treated as a successful credential match. Join 16,000+ SOC teams using ANY.RUN to streamline threat investigations and reduce manual effort. Explore for your team The post Critical Apache Shiro and APISIX Flaws Let Hackers Bypass Authentication Without Login appeared first on Cyber Security News.",
+    "pubDate": "Mon, 16 Nov 2026 09:54:01 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/11/critical-apache-shiro-and-apisix-flaws-let-hackers-bypass-authentication-without-login23r-6afad24f2c324.webp"
+  },
+  "score": 0.999260899691358,
+  "selectedAt": "2026-11-16T10:01:59.937Z",
+  "generated": {
+    "caption": "🚨 Hackers can now bypass login screens without valid credentials!\n\nCritical flaws in Apache Shiro and APISIX let attackers access protected systems. For Shiro, a known username could be enough to log in with *any* password if caching is enabled. APISIX vulnerabilities allow identity spoofing under certain plugin configurations. Patching is essential!\n\nSave this for your team & follow @CyberShieldAlerts for daily updates.",
+    "script": "Warning! Your systems are vulnerable. Critical Apache Shiro and APISIX flaws let hackers bypass authentication without any login. These newly disclosed defects allow remote attackers to access your protected resources and impersonate users. Shiro vulnerabilities enable access with just a username and arbitrary password. APISIX flaws allow forged identities for privileged access. These aren't minor bugs; they exploit fail-open defaults and unvalidated trust to completely sidestep your security. Patch your internet-facing deployments now. Upgrade Shiro to 3.0.1, APISIX to 3.20.0, or implement crucial configuration fixes immediately.",
+    "hashtags": [
+      "apachesiro",
+      "apacheapisix",
+      "authenticationbypass",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Apache Shiro & APISIX",
+        "headlineRest": "Critical Flaws Allow Auth Bypass",
+        "body": "Critical authentication bypass vulnerabilities have been discovered in Apache Shiro and Apache APISIX, allowing remote attackers to access protected resources without valid credentials. The Shiro flaw affects LDAP realms with caching enabled, letting attackers impersonate users with just a username. Meanwhile, the APISIX defects involve authentication bypass via spoofing in specific plugin configurations, enabling forged identity assertions. These flaws could grant unauthenticated attackers privileged access to sensitive systems. Administrators must immediately upgrade to Shiro 3.0.1 and APISIX 3.20.0, or apply recommended mitigations like disabling caching or configuring strict settings on affected routes, and monitor for suspicious activity.",
+        "hindiSummary": "Apache Shiro और APISIX में गंभीर कमजोरियाँ मिली हैं, जिससे हमलावर बिना लॉगिन के प्रमाणीकरण (authentication) को बाईपास कर सकते हैं।",
+        "imageQuery": "Unauthorized access digital lock"
+      }
+    ],
+    "generatedAt": "2026-11-16T10:02:39.444Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-critical-apache-shiro-and-apisix-flaws-let-hackers-bypass-authenticat-slide-01.png"
+    ],
+    "renderedAt": "2026-11-16T10:03:16.012Z",
+    "reelVideo": "cyberpress-critical-apache-shiro-and-apisix-flaws-let-hackers-bypass-authenticat-reel.mp4",
+    "reelDurationSeconds": 40.344671,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "f0d64432b48e2bd7",
+  "notifiedAt": "2026-11-16T10:05:18.702Z"
+}
