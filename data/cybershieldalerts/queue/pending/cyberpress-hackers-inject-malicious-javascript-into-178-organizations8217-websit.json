@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-hackers-inject-malicious-javascript-into-178-organizations8217-websit",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Hackers Inject Malicious JavaScript Into 178 Organizations&#8217; Websites Through Optimizely Supply Chain Attack",
+    "link": "https://cyberpress.org/optimizely-attack-compromises-websites/",
+    "description": "Malicious JavaScript loading through a third-party script layer on November 16, exposing visitors to potential cryptocurrency theft, payment-data collection and device-targeted content. Browser captures showed the code on CNN, Zoom and Optimizely’s own website. The campaign was described as affecting 178 organizations, but the supplied evidence does not independently establish that total. Researchers also reported [&#8230;] The post Hackers Inject Malicious JavaScript Into 178 Organizations&#8217; Websites Through Optimizely Supply Chain Attack appeared first on Cyber Security News.",
+    "content": "Malicious JavaScript loading through a third-party script layer on November 16, exposing visitors to potential cryptocurrency theft, payment-data collection and device-targeted content. Browser captures showed the code on CNN, Zoom and Optimizely’s own website. The campaign was described as affecting 178 organizations, but the supplied evidence does not independently establish that total. Researchers also reported Salesforce, Fox News and Fox Sports among affected sites, although supporting request and response captures were unavailable for verification. The findings point to a suspected supply-chain delivery path involving Optimizely-hosted resources. However, investigators have not established how the code was inserted or confirmed that Optimizely’s infrastructure was breached. Optimizely Attack Compromises Websites The investigation began when Cynet endpoint detection and response tools flagged browser connections to 1688360[.]cc. Cyops analysts connected these alerts with browsing activity and examined the resources loaded by affected pages. Researchers traced the suspicious loading behavior to JavaScript served from cdn.optimizely[.]com. Captured code appended a script pointing to 1688360[.]cc/track.js. Earlier investigation notes separately identified 1688360[.]cc/script.js; available evidence does not establish whether both paths delivered identical code. Analysts reported that the primary JavaScript contained functionality to replace cryptocurrency wallet addresses and collect payment-form information. Such capabilities could redirect transactions or expose card details when executed in a relevant page context. The code also reportedly collected accessible cookies and page content. Its use of html2canvas could render accessible webpage content, but this does not demonstrate unrestricted desktop screenshots, access to other tabs or theft of HttpOnly cookies. Reported collection endpoints included 1688360[.]cc/hit.php and 1688360[.]cc/card.php. A separate browsing test on the Optimizely website shows JavaScript appending the same track.js destination. Naming the service does not establish that its platform or infrastructure was breached (Source: cynet) These capabilities indicate financial-theft risk, not confirmed losses. A malicious request, successful script execution and verified transmission of sensitive information are separate findings. Investigators have not demonstrated that every visitor exposed payment data or completed a transaction involving an attacker-controlled wallet. Researchers also recovered a secondary loader using a Safari-like iPhone browser profile and device emulation. Reported destinations included 5vobauua3ojpklx[.]icu/boot.js and eil786npto9u5bq[.]icu/boot.js. The loader reportedly checked iOS versions and used an iframe to select additional content, including JIUJIU888/weifile.html. This establishes conditional delivery to certain browser profiles, not successful exploitation of physical iPhones or iPads. No confirmed exploit vulnerability, affected iOS version range or threat-actor attribution was established in the supplied analysis. Website operators should review third-party scripts, tag configurations and Optimizely-hosted resources for unauthorized changes. Security teams should investigate historical DNS, proxy and browser records for the reported malicious destinations, distinguishing blocked attempts from successfully delivered content, cynet said. Responders should preserve timestamps, headers, script samples, hashes and request chains. Where delivery succeeded, they should determine whether scripts executed, additional resources loaded or sensitive information left the browser. Join 16,000+ SOC teams using ANY.RUN to streamline threat investigations and reduce manual effort. Explore for your team The post Hackers Inject Malicious JavaScript Into 178 Organizations&#8217; Websites Through Optimizely Supply Chain Attack appeared first on Cyber Security News.",
+    "pubDate": "Tue, 17 Nov 2026 10:09:00 +0000",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgZP-BjroR7dWW2BLUHbld1P6k_KJWh9Zy6T54j3H3oyfm5pMwOVSvyEBjlkqWb3ooyi_fhLogH0qqDj80EqKwA402cEbxZW-8jf-5agoFdsIUe_JaWaeFXsLJsuRbk-iJweiRMxlCvaMG6fSPdWtnNH6enhqtXaFQROkNUwMp6aTZHj38nAGnjhyPbHGvf/s1702/Untitled-7.webp"
+  },
+  "score": 0.995392975308642,
+  "selectedAt": "2026-11-17T10:58:45.352Z",
+  "generated": {
+    "caption": "Did you shop online recently? Your payment data might have been targeted! 🚨 Hackers injected malicious code into websites, including CNN and Zoom, via a third-party script. This exposed visitors to potential crypto theft and payment data collection. It's a suspected supply-chain attack involving Optimizely-hosted resources, though the exact breach source isn't confirmed.\n\nSave this post & share to warn others! Follow @CyberShieldAlerts for daily updates.",
+    "script": "Warning: Your payment data and cryptocurrency are under attack! On November 16th, hackers injected malicious JavaScript into 178 organizations' websites. This supply chain attack, linked to Optimizely resources, could steal payment details, replace crypto wallet addresses, and collect sensitive data as you browse. Sites like CNN and Zoom were reportedly affected, exposing visitors to potential financial theft. Website operators: review your third-party scripts and Optimizely resources for unauthorized changes.",
+    "hashtags": [
+      "optimizely",
+      "supplychainattack",
+      "webskimming",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Optimizely",
+        "headlineRest": "Supply Chain Attack Injects Malicious JavaScript",
+        "body": "Cybersecurity researchers have uncovered a supply chain attack involving Optimizely-hosted resources, which injected malicious JavaScript into numerous websites. This code, active since November 16, posed a risk of cryptocurrency theft and sensitive payment data collection from site visitors. Although the full scope is unconfirmed, the campaign was described as affecting 178 organizations, including major media and tech platforms. Website operators should urgently review all third-party scripts, tag configurations, and Optimizely-hosted resources for unauthorized changes. Security teams must investigate historical logs for connections to reported malicious destinations like 1688360[.]cc.",
+        "hindiSummary": "Optimizely आपूर्ति श्रृंखला हमले के माध्यम से कई वेबसाइटों में दुर्भावनापूर्ण जावास्क्रिप्ट डाला गया है, जिससे डेटा चोरी का खतरा बढ़ गया है।",
+        "imageQuery": "Malicious JavaScript website compromise"
+      }
+    ],
+    "generatedAt": "2026-11-17T10:59:15.664Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-hackers-inject-malicious-javascript-into-178-organizations8217-websit-slide-01.png"
+    ],
+    "renderedAt": "2026-11-17T10:59:47.845Z",
+    "reelVideo": "cyberpress-hackers-inject-malicious-javascript-into-178-organizations8217-websit-reel.mp4",
+    "reelDurationSeconds": 32.148027,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "1cb02b72fb3b16ec",
+  "notifiedAt": "2026-11-17T11:01:15.247Z"
+}
