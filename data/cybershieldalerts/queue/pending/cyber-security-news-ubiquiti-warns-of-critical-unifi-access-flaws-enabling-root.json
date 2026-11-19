@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-ubiquiti-warns-of-critical-unifi-access-flaws-enabling-root",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Ubiquiti Warns of Critical UniFi Access Flaws Enabling Root Code Execution Attacks",
+    "link": "https://cybersecuritynews.com/ubiquiti-warns-critical-unifi-access-flaws/",
+    "description": "Ubiquiti has disclosed seven vulnerabilities in its UniFi Access Application, including a critical flaw that could let an attacker with limited permissions run code as root on the host device. Security Advisory Bulletin 073, dated November 18, 2026, lists version 4.3.22 and earlier as affected. Ubiquiti advises administrators to update to UniFi Access Application 4.3.24 [&#8230;] The post Ubiquiti Warns of Critical UniFi Access Flaws Enabling Root Code Execution Attacks appeared first on Cyber Security News.",
+    "content": "Ubiquiti has disclosed seven vulnerabilities in its UniFi Access Application, including a critical flaw that could let an attacker with limited permissions run code as root on the host device. Security Advisory Bulletin 073, dated November 18, 2026, lists version 4.3.22 and earlier as affected. Ubiquiti advises administrators to update to UniFi Access Application 4.3.24 or later. Five of the seven vulnerabilities are rated critical, and two are rated high. All require network access, but not all require an account. The impact also varies. Some flaws affect the host running the application. In contrast, others affect adopted UniFi Access devices, meaning hardware already enrolled in and managed by the application. CVE-2026-132802, rated 9.9 out of 10, stems from how the application handles file links before opening files. An attacker who can reach the application over the network and already has limited permissions could run code with root privileges. Root is the highest level of access on the host, so the impact is not limited to the attacker’s original application account. Ubiquiti Warns of Critical UniFi Access Flaws A separate set of authenticated SQL injection flaws, tracked as CVE-2026-132803 and also rated 9.9, could let a low-privileged attacker gain more permissions on the host. SQL injection occurs when an application treats untrusted input as part of a database command. Another authenticated SQL injection flaw, CVE-2026-132806, scores 8.8 and could expose sensitive information or allow unauthorized changes within the application itself. Two flaws involve server-side request forgery, or SSRF, which occurs when an attacker causes a server to make requests it should not make. CVEVulnerabilityCVSS v3.1Access RequiredCVE-2026-132802Improper link resolution9.9 CriticalNetwork, low privilegesCVE-2026-132803Authenticated SQL injection9.9 CriticalNetwork, low privilegesCVE-2026-132804Server-side request forgery (SSRF)9.9 CriticalNetwork, low privilegesCVE-2026-132808Incorrect authorization9.9 CriticalNetwork, low privilegesCVE-2026-132807Improper certificate validation9.0 CriticalNetwork, conditionalCVE-2026-132806Authenticated SQL injection8.8 HighNetwork, low privilegesCVE-2026-132805Server-side request forgery (SSRF)8.3 HighNetwork only CVE-2026-132804, rated 9.9, requires limited privileges and could let an attacker gain more permissions within UniFi OS. CVE-2026-132805, rated 8.3, requires no account and could allow someone with network access to obtain information and make unauthorized changes on the host. The remaining critical flaws affect adopted devices. A certificate validation flaw, CVE-2026-132807, scores 9.0 and could expose sensitive information or allow unauthorized changes on an adopted device under certain conditions. CVE-2026-132808, rated 9.9, is an authorization flaw that could let a low-privileged attacker run commands on certain adopted devices. That is distinct from the root code execution flaw, which affects the application host. According to Security Advisory Bulletin 073, administrators must update the UniFi Access Application to version 4.3.24 or later, then verify the installed version on each host. The fix applies to the application, not individual reader or intercom firmware. Where an update cannot be applied immediately, restrict access to the management interface to trusted networks and authorized users. Network restrictions can reduce exposure, but they do not replace the update. The bulletin describes what attackers could do. It does not report confirmed exploitation. Administrators should not treat an affected version alone as evidence of a breach. Cyber Security News previously covered 21 Ubiquiti UniFi vulnerabilities, including earlier flaws in the Access application, and a separate command injection flaw in UniFi Access readers and intercoms. These disclosures involved different fixes. A deployment that received those earlier patches still needs to meet the minimum application version specified in Bulletin 073. Give your SOC the alert context on the latest threats to stop incidents quickly -> Integrate Threat Intel from 16K SOCs The post Ubiquiti Warns of Critical UniFi Access Flaws Enabling Root Code Execution Attacks appeared first on Cyber Security News.",
+    "pubDate": "Thu, 19 Nov 2026 10:26:01 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/11/Ubiquiti-Warns-of-Critical-UniFi-Access-Flaws-Enabling-Privilege-Escalation-and-Root-Code-Execution-Attacks.webp"
+  },
+  "score": 0.9988783287037037,
+  "selectedAt": "2026-11-19T10:38:07.844Z",
+  "generated": {
+    "caption": "🚨 **If you use Ubiquiti UniFi Access, listen up!** 🚨\n\nCritical flaws have been discovered that could give attackers deep control over your access systems. Ubiquiti has disclosed severe vulnerabilities in its UniFi Access Application (versions 4.3.22 and earlier). Some critical flaws could allow attackers to run code as root on host devices, potentially taking full control. Update to UniFi Access Application 4.3.24 or later NOW to secure your systems.\n\nSave this post & share with admins! Follow @CyberShieldAlerts for daily threat intel.",
+    "script": "UniFi Access users, your systems are at risk! Ubiquiti just disclosed critical vulnerabilities in its UniFi Access Application. Five of the seven flaws are rated critical, including one that could let attackers with limited network permissions run code as root on your host device. This means they get the absolute highest level of control, not just within their original account. Other severe flaws affect adopted UniFi Access devices, potentially exposing sensitive data or allowing unauthorized changes. Any UniFi Access Application version 4.3.22 and earlier is vulnerable. You must update to UniFi Access Application 4.3.24 or later immediately. Verify the update on each host, and if immediate patching isn't possible, restrict management interface access to trusted networks. Protect your systems now.",
+    "hashtags": [
+      "ubiquiti",
+      "unifiaccess",
+      "rootcodeexecution",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Ubiquiti",
+        "headlineRest": "Warns of Critical UniFi Access Flaws",
+        "body": "Ubiquiti has revealed multiple critical and high-severity vulnerabilities within its UniFi Access Application, impacting versions 4.3.22 and earlier. These flaws could allow attackers with limited network access to execute code as root on the host device, gain elevated privileges, or make unauthorized changes. Five of the seven disclosed vulnerabilities are rated critical, with CVSS scores up to 9.9. Administrators are strongly advised to update their UniFi Access Application to version 4.3.24 or later immediately. If an immediate update is not possible, restricting access to the management interface to trusted networks can help mitigate risk.",
+        "hindiSummary": "Ubiquiti ने UniFi Access में गंभीर कमजोरियों का खुलासा किया है; उपयोगकर्ताओं को तुरंत अपडेट करने की सलाह दी गई है।",
+        "imageQuery": "Critical cyber security alert server"
+      }
+    ],
+    "generatedAt": "2026-11-19T10:38:30.288Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-ubiquiti-warns-of-critical-unifi-access-flaws-enabling-root-slide-01.png"
+    ],
+    "renderedAt": "2026-11-19T10:39:30.765Z",
+    "reelVideo": "cyber-security-news-ubiquiti-warns-of-critical-unifi-access-flaws-enabling-root-reel.mp4",
+    "reelDurationSeconds": 49.702313,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "318224aa743c8c41",
+  "notifiedAt": "2026-11-19T10:43:07.762Z"
+}
