@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-researchers-demonstrate-ghostscript-sandbox-escape-rce-via-craft",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Researchers Demonstrate Ghostscript Sandbox-Escape RCE via Crafted File Uploads in Popular Apps",
+    "link": "https://thehackernews.com/2026/11/researchers-demonstrate-ghostscript.html",
+    "description": "A now-patched flaw in Ghostscript allows a crafted file to escape the program's security sandbox and run commands on the server that processes it. Ghostscript is the interpreter that many Linux servers use to convert uploaded PDFs, PostScript files, and images into other formats, often without the application calling it directly. Security firm pwn.ai showed this week that ordinary upload,",
+    "content": "",
+    "pubDate": "Sun, 22 Nov 2026 10:33:41 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg1BiCJUIrSJXNfKPZEkM46ynK6Rs7gba2xMaTUdoJ7yOK6Y8kcKMqJ_6PhbUIog_U1E8gRCpbj2HrkQ9UEpbPi1HOvkxdxCE5Afa5LbkNhUPvgU7Sa60IVHAWqSvgJaX1p6frMAN335QncL5UTZ3a4v1-agyb8ZXIlMGZTOtzsC0Gll2qRI0NJNMHTsf8/s1600/ghostscript.jpg"
+  },
+  "score": 0.9720336234567901,
+  "selectedAt": "2026-11-22T10:05:43.213Z",
+  "generated": {
+    "caption": "Imagine a simple file upload letting hackers take over a server! 🚨\n\nA recent flaw in Ghostscript, a tool servers use to convert PDFs and images, allowed attackers to run commands by uploading a specially crafted file. This could let them bypass security and gain control of the server. Good news: it's now patched!\n\nSave & share this alert, and follow @CyberShieldAlerts for daily updates!",
+    "script": "A single file upload could let hackers hijack your Linux server! A critical flaw in Ghostscript, used by many servers to process PDFs and images, allowed crafted files to escape its security sandbox. This meant an ordinary upload could execute malicious commands and give attackers full remote control. Even systems where applications don't directly call Ghostscript were vulnerable. The flaw is now patched. Update your Ghostscript installations immediately!",
+    "hashtags": [
+      "ghostscript",
+      "sandboxescape",
+      "vulnerability",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Ghostscript Flaw",
+        "headlineRest": "Allows Sandbox-Escape RCE, Now Patched",
+        "body": "A now-patched flaw in Ghostscript, an interpreter widely used by Linux servers for processing uploaded PDFs, PostScript files, and images, allowed for a critical security sandbox escape. Researchers from pwn.ai demonstrated that a specially crafted file could bypass Ghostscript's security measures and execute commands directly on the server. This vulnerability posed a significant risk for server applications that handle user-submitted files, potentially leading to remote code execution. The issue has since been addressed, with a patch mitigating the threat posed by this serious vulnerability.",
+        "hindiSummary": "Ghostscript में अब पैच किया गया एक दोष, क्राफ्टेड फाइल अपलोड के माध्यम से सैंडबॉक्स से बचकर रिमोट कोड निष्पादन की अनुमति देता था।",
+        "imageQuery": "Server vulnerability patched"
+      }
+    ],
+    "generatedAt": "2026-11-22T10:06:08.993Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-researchers-demonstrate-ghostscript-sandbox-escape-rce-via-craft-slide-01.png"
+    ],
+    "renderedAt": "2026-11-22T10:06:41.333Z",
+    "reelVideo": "the-hacker-news-researchers-demonstrate-ghostscript-sandbox-escape-rce-via-craft-reel.mp4",
+    "reelDurationSeconds": 27.167347,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "78e43542b6e870be",
+  "notifiedAt": "2026-11-22T10:09:28.481Z"
+}
