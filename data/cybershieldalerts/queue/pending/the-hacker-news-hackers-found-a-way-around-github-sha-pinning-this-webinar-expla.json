@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-hackers-found-a-way-around-github-sha-pinning-this-webinar-expla",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Hackers Found a Way Around GitHub SHA Pinning. This Webinar Explains How to Close the Gap",
+    "link": "https://thehackernews.com/2026/11/hackers-found-way-around-github-sha.html",
+    "description": "Pinning GitHub Actions to an exact version of their code, known as SHA pinning, has become the go-to defense against software supply chain attacks. Attackers have already found a way around it. In March 2026, the hackers who hijacked Trivy, a widely used open-source security scanner, planted malicious code that looked like it came from GitHub's official checkout tool. They even labeled it a",
+    "content": "",
+    "pubDate": "Tue, 24 Nov 2026 18:12:09 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgYUhfLA6wixTr6AiVmOSa8uxO2mHxPqG7rHalDaUtYlOaTwUSIzi3JAP78cfEUhwwaoijNe8vJ0ZFiBqDmfrG9LVOzItxMxCYcTCbEc4f7W8iWgKSvzR6DrT0XtK_cM4eTKQ2Edvz-QG5P8iXF_GV_-k6CXMN_-D_QAJags-LpeuXmJ5C6DDz7mDRSBMY/s1600/git-actions.jpg"
+  },
+  "score": 0.9993410262345679,
+  "selectedAt": "2026-11-24T12:49:16.016Z",
+  "generated": {
+    "caption": "That 'unbreakable' software defense? Hackers just found a way around it.\n\nGitHub SHA pinning, a common way to secure software development, has been bypassed. Hackers, like those in the March 2026 Trivy incident, are planting malicious code disguised as official GitHub tools. This compromises a crucial defense against supply chain attacks.\n\nSave this post, share it, and follow @CyberShieldAlerts for daily updates!",
+    "script": "Your go-to defense against supply chain attacks just got bypassed. GitHub SHA pinning is no longer enough! Hackers found a critical workaround for GitHub's SHA pinning, a technique many thought was unbreakable. In March 2026, they exploited this vulnerability to hijack Trivy, a widely used open-source security scanner. They planted malicious code disguised as GitHub's official checkout tool, even labeling it a trusted v4 release. This means a key layer of software supply chain security is now compromised, exposing countless projects. It's time to reassess your GitHub Actions security now.",
+    "hashtags": [
+      "githubshapinning",
+      "trivy",
+      "softwaresupplychain",
+      "cyberattack",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "GitHub SHA Pinning",
+        "headlineRest": "Circumvented by Attackers in Supply Chain Scheme",
+        "body": "GitHub SHA pinning, a key defense against software supply chain attacks, has been circumvented by malicious actors. In a notable incident from March 2026, hackers compromised the Trivy security scanner by implanting code that mimicked GitHub's official checkout tool. This tactic allows attackers to bypass seemingly secure version controls, reintroducing significant vulnerabilities into the software supply chain. Organizations must now reassess their defense strategies and implement new measures to protect against these evolving threats.",
+        "hindiSummary": "हैकरों ने GitHub SHA पिनिंग को दरकिनार कर दिया है, जिससे सप्लाई चेन में नया खतरा पैदा हो गया है।",
+        "imageQuery": "Hacker bypassing digital security supply chain"
+      }
+    ],
+    "generatedAt": "2026-11-24T12:49:40.054Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-hackers-found-a-way-around-github-sha-pinning-this-webinar-expla-slide-01.png"
+    ],
+    "renderedAt": "2026-11-24T12:50:41.479Z",
+    "reelVideo": "the-hacker-news-hackers-found-a-way-around-github-sha-pinning-this-webinar-expla-reel.mp4",
+    "reelDurationSeconds": 35.259501,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "b65aa6bc9feda8a6",
+  "notifiedAt": "2026-11-24T12:54:46.498Z"
+}

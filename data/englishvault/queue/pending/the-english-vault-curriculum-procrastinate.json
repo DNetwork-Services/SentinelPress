@@ -1,7 +1,7 @@
 {
   "id": "the-english-vault-curriculum-procrastinate",
   "accountId": "englishvault",
-  "status": "researched",
+  "status": "awaiting_approval",
   "source": {
     "name": "The English Vault Curriculum",
     "category": "Vocabulary"
@@ -16,6 +16,39 @@
   },
   "score": 1,
   "selectedAt": "2026-11-23T11:02:20.440Z",
-  "generated": null,
-  "render": null
+  "generated": {
+    "caption": "Ever find yourself delaying important tasks?\n\nThat's called **procrastinating**! It means to postpone something, often as a habit. For example: \"I always procrastinate when I have a big assignment due.\" The noun is **procrastination**. You can also say 'put something off'.\n\nHit save and follow @EnglishVault for more daily English!",
+    "script": "Aap bhi apne kaam ko aage badha dete ho na? Ki 'kal kar lunga'? Is habit ke liye ek perfect English word hai: Procrastinate. Basically, iska matlab hai jab aap kisi cheez ko delay karte ho ya postpone karte ho, especially out of habit. Jaise, 'I always procrastinate when I have a big assignment due.' Aur iska noun form hai procrastination. Toh next time jab aap apna homework ya koi bhi task delay kar rahe ho, toh aap 'procrastinate' kar rahe ho! Ab samajh aaya? Comment mein batao aap kitna procrastinate karte ho! Aur aise hi cool English tips ke liye follow The English Vault!",
+    "hashtags": [
+      "procrastinate",
+      "procrastination",
+      "vocabulary",
+      "learnenglish",
+      "englishseekhen"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "EV",
+        "headlineHighlight": "Procrastinate",
+        "headlineRest": "— Understand Its True Meaning",
+        "body": "To procrastinate means to delay or postpone doing something, especially out of habit or a lack of motivation. We often find ourselves procrastinating when faced with big assignments or challenging tasks. For instance, you might say, 'I always procrastinate when I have a big assignment due.' The noun form of this common tendency is 'procrastination', and a related idiom is 'put something off'.",
+        "hindiSummary": "प्रोक्रैस्टिनेट का मतलब है किसी काम को जानबूझकर या आदतवश टालना।",
+        "imageQuery": "Person avoiding work at desk"
+      }
+    ],
+    "generatedAt": "2026-11-24T12:50:39.769Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-english-vault-curriculum-procrastinate-slide-01.png"
+    ],
+    "renderedAt": "2026-11-24T12:50:43.621Z",
+    "reelVideo": "the-english-vault-curriculum-procrastinate-reel.mp4",
+    "reelDurationSeconds": 48.048,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "293b4650893bbdcb",
+  "notifiedAt": "2026-11-24T12:54:52.344Z"
 }
