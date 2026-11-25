@@ -11,44 +11,44 @@
     "link": "topic://englishvault/grammar-present-perfect-vs-past-simple",
     "description": "Present Perfect (have/has + past participle) is used for actions with a connection to now, or when the exact time isn't stated: 'I have visited Paris.' Past Simple is used for finished actions at a specific, stated past time: 'I visited Paris in 2019.' Common mistake: using Present Perfect with a specific past time marker, e.g. 'I have visited Paris in 2019' is incorrect — should be Past Simple.",
     "content": "Present Perfect (have/has + past participle) is used for actions with a connection to now, or when the exact time isn't stated: 'I have visited Paris.' Past Simple is used for finished actions at a specific, stated past time: 'I visited Paris in 2019.' Common mistake: using Present Perfect with a specific past time marker, e.g. 'I have visited Paris in 2019' is incorrect — should be Past Simple.",
-    "pubDate": "2026-11-18T10:30:28.520Z",
+    "pubDate": "2026-11-25T11:35:37.230Z",
     "image": ""
   },
   "score": 1,
-  "selectedAt": "2026-11-18T10:30:28.520Z",
+  "selectedAt": "2026-11-25T11:35:37.230Z",
   "generated": {
-    "caption": "Ever confused when to use \"I have visited\" vs. \"I visited\"? 🤔\n\nPresent Perfect (have + participle) connects actions to now, or when time isn't stated: \"I have visited Paris.\" Past Simple is for finished actions at a *specific* past time: \"I visited Paris in 2019.\" Crucially, don't use Present Perfect with specific past times!\n\nSave & follow @englishvault for daily English tips!",
-    "script": "I have visited Paris in 2019\" – sunke lagta hai sahi hai na? Par isme ek common mistake hai! Dekho, Present Perfect (have/has + past participle) tab use karte hain jab action ka connection abhi se ho ya time mention na ho. Jaise: 'I have visited Paris.' But agar specific past time hai, for example, \"in 2019\", toh Past Simple use karna hai. Matlab, 'I visited Paris in 2019.' Toh, simple! Jab exact time mention ho, like 'yesterday' ya 'last month', toh Past Simple. Aur agar time mention nahi hai ya connection abhi se hai, toh Present Perfect. Ab samajh aaya? Comment mein batao, ye rule pata tha? Follow English Vault for more!",
+    "caption": "Ever wondered when to say \"I visited\" versus \"I have visited\"? 🤔 It's simpler than you think!\n\nUse **Present Perfect** (have/has + past participle) for actions connected to now or when the exact time isn't stated. For finished actions at a *specific* past time, choose **Past Simple**.\n\nRemember: 'I have visited Paris' is great, but say 'I visited Paris in 2019' if you give a specific time!\n\nSave this for later! Follow @TheEnglishVault for daily English tips!",
+    "script": "Ye 'I have visited Paris in 2019' sunke kuch ajeeb laga na? Kyunki yeh galat hai!\n\nDekho, Present Perfect (have/has + past participle) tab use hota hai jab action ka connection present se ho, ya exact time mention na ho. For example, 'I have visited Paris.' Isme time specified nahi hai. Lekin Past Simple use karte hain jab action finished ho gaya ho aur uska ek specific past time bataya ho. Jaise, 'I visited Paris in 2019.' Yahan time ekdum clear hai. Isliye, 'I have visited Paris in 2019' incorrect hai. Kyunki 'in 2019' ek specific past time hai, aur uske saath sirf Past Simple!\n\nAb clear hua? Bottom line: agar exact past time bata rahe ho, toh Past Simple use karo. Jaise, 'I visited Paris in 2019.' Simple!\n\nComment mein batao, aapko bhi ye confusion hota tha kya? Aur follow karo The English Vault for daily English tips!",
     "hashtags": [
       "presentperfect",
       "pastsimple",
       "englishgrammar",
-      "englishtenses",
+      "learnenglish",
       "englishseekhen"
     ],
     "slides": [
       {
         "type": "newscard",
         "badgeInitials": "EV",
-        "headlineHighlight": "Present Perfect",
-        "headlineRest": "vs. Past Simple: The Key Difference",
-        "body": "The Present Perfect (have/has + past participle) connects past actions to the present, or is used when the exact time isn't mentioned. For example, 'I have visited Paris.' In contrast, the Past Simple describes actions completed at a specific, stated time in the past, like 'I visited Paris in 2019.' A common mistake is using the Present Perfect with a specific past time marker. For instance, 'I have visited Paris in 2019' is incorrect; the Past Simple 'I visited Paris in 2019' is the right choice when a precise time is given.",
-        "hindiSummary": "Present Perfect का उपयोग वर्तमान से जुड़े कार्यों के लिए होता है, जबकि Past Simple का उपयोग बीते हुए निश्चित समय के कार्यों के लिए होता है।",
-        "imageQuery": "Grammar choice time concepts"
+        "headlineHighlight": "Have visited in 2019",
+        "headlineRest": "— Why It's Grammatically Incorrect",
+        "body": "Many English learners often confuse the Present Perfect and Past Simple tenses. The phrase 'I have visited Paris in 2019' is grammatically incorrect because the Present Perfect (have + past participle) is used for actions with a connection to now, or when the exact time is not stated. For finished actions at a specific, stated past time like 'in 2019', you must use the Past Simple. Therefore, the correct sentence would be 'I visited Paris in 2019'. Remember this key difference to speak more accurately!",
+        "hindiSummary": "जब आप किसी निश्चित समय पर हुई पिछली घटना की बात करते हैं, तो Past Simple का उपयोग करें।",
+        "imageQuery": "Grammar mistake correction pen cross"
       }
     ],
-    "generatedAt": "2026-11-18T10:31:53.648Z"
+    "generatedAt": "2026-11-25T11:36:44.701Z"
   },
   "render": {
     "slideImages": [
       "the-english-vault-curriculum-present-perfect-vs-past-simple-slide-01.png"
     ],
-    "renderedAt": "2026-11-18T10:31:56.788Z",
+    "renderedAt": "2026-11-25T11:36:47.886Z",
     "reelVideo": "the-english-vault-curriculum-present-perfect-vs-past-simple-reel.mp4",
-    "reelDurationSeconds": 57.96,
+    "reelDurationSeconds": 77.496,
     "hasVoiceover": true,
     "musicTrack": null
   },
   "approvalHash": "2136e53856329db5",
-  "notifiedAt": "2026-11-18T10:34:52.142Z"
+  "notifiedAt": "2026-11-25T11:40:13.231Z"
 }
