@@ -1,0 +1,54 @@
+{
+  "id": "cyberpress-critical-geoserver-flaws-could-let-hackers-bypass-authentication-and",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "CyberPress",
+    "category": "News"
+  },
+  "article": {
+    "title": "Critical GeoServer Flaws Could Let Hackers Bypass Authentication and Execute Malicious Commands on Servers",
+    "link": "https://cyberpress.org/critical-geoserver-flaws/",
+    "description": "A five-stage exploit chain in GeoServer lets an anonymous attacker reach operating-system command execution on a default installation. watchTowr&#8217;s Attacker Eye honeypots observed in-the-wild exploitation on November 25, targeting CVE-2026-120705 and CVE-2026-129243 with error-based probes that create and invoke stored queries. GeoServer published five advisories on November 23, one for each independently fixable step. Affected [&#8230;] The post Critical GeoServer Flaws Could Let Hackers Bypass Authentication and Execute Malicious Commands on Servers appeared first on Cyber Security News.",
+    "content": "A five-stage exploit chain in GeoServer lets an anonymous attacker reach operating-system command execution on a default installation. watchTowr&#8217;s Attacker Eye honeypots observed in-the-wild exploitation on November 25, targeting CVE-2026-120705 and CVE-2026-129243 with error-based probes that create and invoke stored queries. GeoServer published five advisories on November 23, one for each independently fixable step. Affected builds are 2.27.6 and earlier, 2.28.0 through 2.28.5, and 3.0.0 through 3.0.1. Patches ship in 2.27.7, 2.28.6 and 3.0.2. Critical GeoServer Flaws Cryptocat assessed the CVSS 3.1 score for the combined chain as 9.8, with the vector AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H. The chain starts with CVE-2026-129244, a CVSS 4.0 6.9 path disclosure. Command execution (Source: cryptocat) An overlong stored-query identifier of about 4,092 characters breaks filesystem resolution. The WFS exception then returns the absolute data-directory path. The disclosure is minor alone, but it supplies the path needed to build file: references later. CVE-2026-129243 is the authorization bypass. The dispatcher strips the prefix from service=&#8221;x/WFS&#8221; and resolves the real WFS service. The request object keeps the raw string, so OperationSecurityCallback never matches the wfs.CreateStoredQuery and wfs.DropStoredQuery rules. Anonymous users can then create stored queries. The same prefix-handling logic resembles the Apache OFBiz authentication bypass leading to RCE, where flawed checks also exposed privileged operations. CVE-2026-120705 turns that access into a local file read through XInclude. The request carries escaped xi:include elements. GeoTools&#8217; CopyingHandler decodes them into literal markup, and QueryExpressionTextTypeBinding reparses the text as live XML. The reload parser has XInclude enabled, and the process-wide NullEntityResolver permits file: access. DescribeStoredQueries therefore returns security/config.xml and users.xml, exposing the remember-me key and the administrator password digest. Cryptocat stated that CVE-2026-129245 removes any need to crack the digest. The remember-me signature hashes the username, expiry, password digest and key, and the key ships as geoserver. CVE-2026-120705 and CVE-2026-129243(Source: watchtowrcyber) An attacker computes a valid SHA-256 signature for admin@default and swaps it for an administrator session. Comparable session-forgery paths drove the SolarWinds Web Help Desk authentication bypass and RCE flaws. CVE-2026-129242 completes the chain through insecure deserialization. The administrator registers a JDBC user service that points at an uploaded HSQLDB file. Watchtowrcyber said JDBCUserGroupService calls getObject(), and HSQLDB deserializes OTHER-typed values through an unfiltered ObjectInputStream. A gadget chain built on PriorityQueue, BeanComparator, and TemplatesImpl runs /bin/sh -c. The proof of concept returned uid=0 against the official 3.0.0 container. A similar gadget-driven pattern appeared in the Spring GraphQL deserialization flaw enabling remote code execution. The dispatcher rejects overlong identifiers and canonicalizes the service name before the security callback runs. The reload parser uses the catalog&#8217;s configured entity resolver, JDBC properties are read with getString(), and the remember-me key is randomized at startup or taken from GEOSERVER_REMEMBERME_KEY. Administrators should upgrade immediately, set a shared key across clustered nodes, and audit wfs/query directories for unrecognised stored queries. Where patching is delayed, they should block service values containing a slash at the proxy and remove rememberme from the web filter chain. Join 16,000+ SOC teams using ANY.RUN to streamline threat investigations and reduce manual effort. Explore for your team The post Critical GeoServer Flaws Could Let Hackers Bypass Authentication and Execute Malicious Commands on Servers appeared first on Cyber Security News.",
+    "pubDate": "Thu, 26 Nov 2026 10:54:39 +0000",
+    "image": "https://cyberpress.org/wp-content/uploads/2026/11/critical-geoserver-flaws-could-let-hackers-bypass-authentication-and-execute-malicious-commands-on-servers23-6b08103318be9.webp"
+  },
+  "score": 0.9977458595679012,
+  "selectedAt": "2026-11-26T11:18:59.683Z",
+  "generated": {
+    "caption": "Hackers are actively exploiting critical flaws in GeoServer! Anonymous attackers can bypass authentication and execute malicious commands on vulnerable servers. If your system uses GeoServer versions 2.27.6 and earlier, 2.28.0-2.28.5, or 3.0.0-3.0.1, update immediately to versions 2.27.7, 2.28.6, or 3.0.2.\n\nSave & share this alert. Follow @CyberShieldAlerts for daily updates!",
+    "script": "GeoServer users, anonymous attackers can now seize full control of your servers! A critical five-stage exploit chain, rated 9.8 CVSS, lets unauthenticated attackers bypass authentication and execute operating system commands on default GeoServer installations. In-the-wild exploitation was observed on November 25th, allowing hackers to gain full administrator control and even root access. This chain exposes sensitive data like administrator password digests and remember-me keys. Upgrade immediately to GeoServer 2.27.7, 2.28.6, or 3.0.2 to protect your systems from this critical threat.",
+    "hashtags": [
+      "geoserver",
+      "rce",
+      "cybersecurity",
+      "vulnerability",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "GeoServer",
+        "headlineRest": "Critical Flaws (CVSS 9.8) Actively Exploited in the Wild",
+        "body": "Critical, actively exploited flaws (CVSS 9.8) in GeoServer allow anonymous attackers to achieve operating-system command execution through a five-stage exploit chain. This vulnerability enables unauthorized access, authentication bypass, and the ability to execute malicious commands, potentially leading to full server control. GeoServer users are strongly advised to upgrade immediately to patched versions (2.27.7, 2.28.6, or 3.0.2) to mitigate the risk. For those unable to patch immediately, implement interim measures such as blocking service values containing a slash at the proxy and removing 'rememberme' from the web filter chain.",
+        "hindiSummary": "GeoServer में गंभीर कमजोरियाँ (CVSS 9.8) सक्रिय रूप से शोषित हो रही हैं, जिससे हमलावर कमांड निष्पादन कर सकते हैं; उपयोगकर्ताओं को तुरंत पैच करना चाहिए।",
+        "imageQuery": "Server critical vulnerability exploitation"
+      }
+    ],
+    "generatedAt": "2026-11-26T11:19:31.242Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyberpress-critical-geoserver-flaws-could-let-hackers-bypass-authentication-and-slide-01.png"
+    ],
+    "renderedAt": "2026-11-26T11:19:57.410Z",
+    "reelVideo": "cyberpress-critical-geoserver-flaws-could-let-hackers-bypass-authentication-and-reel.mp4",
+    "reelDurationSeconds": 40.193741,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "67bb290475caef60",
+  "notifiedAt": "2026-11-26T11:37:03.061Z"
+}
