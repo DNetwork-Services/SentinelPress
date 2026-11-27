@@ -1,0 +1,54 @@
+{
+  "id": "the-hacker-news-hackers-trojanize-official-q-dir-and-desktopok-downloads-to-deli",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "The Hacker News",
+    "category": "Hacking News"
+  },
+  "article": {
+    "title": "Hackers Trojanize Official Q-Dir and DesktopOK Downloads to Deliver Remote Access Malware",
+    "link": "https://thehackernews.com/2026/11/hackers-trojanize-official-q-dir-and.html",
+    "description": "Cybersecurity researchers have disclosed details of a software supply chain attack that has tampered with Q-Dir and DesktopOK installation files distributed via the official SoftwareOK website. \"Evidence indicates that malicious files were generated not only when users downloaded the programs directly from the official download page but also during the update process of previously installed",
+    "content": "",
+    "pubDate": "Fri, 27 Nov 2026 14:59:30 +0530",
+    "image": "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhSXVfewkMqSKHEHRrAVXFHFOsMisOpBVnJ_sWbNNQQXuSWTHU5Y8AZW18gdQq7eI5N4l1dXoeBXVuqGGNClEK0U55LHgLYUxmopN9JHaMrYtrt4QrtWmk3uIvX8FzE2jL7Rf-oOG2fiDzj4g99wYn1Ih9uAOmyD0DtWN7ZqkG5UTd3xRYSRnIurQuT437O/s1600/trojan.jpg"
+  },
+  "score": 0.9903665864197531,
+  "selectedAt": "2026-11-27T11:13:32.453Z",
+  "generated": {
+    "caption": "Your trusted software source could be compromised! Hackers tampered with official Q-Dir and DesktopOK installation files on the SoftwareOK website. This means users downloading or updating these programs unknowingly received remote access malware. Stay safe!\n\nSave this post to inform others and follow @CyberShieldAlerts for daily cyber updates.",
+    "script": "Using Q-Dir or DesktopOK? Your computer might be compromised right now! Hackers infiltrated the official SoftwareOK website, tampering with installation files for both Q-Dir and DesktopOK. This means when you downloaded or even updated these popular tools, you might have received dangerous remote access malware instead. This was a sophisticated software supply chain attack targeting unsuspecting users. Immediately uninstall Q-Dir and DesktopOK from your system. Verify official channels for clean versions or consider alternatives before reinstalling any software from SoftwareOK.",
+    "hashtags": [
+      "qdir",
+      "desktopok",
+      "softwaresupplychain",
+      "malware",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Q-Dir and DesktopOK",
+        "headlineRest": "Official Downloads Deliver Malware",
+        "body": "Cybersecurity researchers have revealed a software supply chain attack targeting Q-Dir and DesktopOK. Malicious files were found within the official installation files distributed via the SoftwareOK website. This compromise affected users downloading the programs directly and those updating previously installed versions. Users unknowingly installing these tampered files risk delivering remote access malware to their systems.",
+        "hindiSummary": "आधिकारिक Q-Dir और DesktopOK डाउनलोड मैलवेयर से संक्रमित पाए गए हैं।",
+        "imageQuery": "Software download malware alert"
+      }
+    ],
+    "generatedAt": "2026-11-27T11:13:51.342Z"
+  },
+  "render": {
+    "slideImages": [
+      "the-hacker-news-hackers-trojanize-official-q-dir-and-desktopok-downloads-to-deli-slide-01.png"
+    ],
+    "renderedAt": "2026-11-27T11:14:24.500Z",
+    "reelVideo": "the-hacker-news-hackers-trojanize-official-q-dir-and-desktopok-downloads-to-deli-reel.mp4",
+    "reelDurationSeconds": 35.75873,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "6a960883eedba892",
+  "notifiedAt": "2026-11-27T11:17:14.652Z"
+}
