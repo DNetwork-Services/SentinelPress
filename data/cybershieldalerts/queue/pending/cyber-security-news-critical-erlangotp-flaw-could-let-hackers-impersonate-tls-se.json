@@ -1,0 +1,54 @@
+{
+  "id": "cyber-security-news-critical-erlangotp-flaw-could-let-hackers-impersonate-tls-se",
+  "accountId": "cybershieldalerts",
+  "status": "awaiting_approval",
+  "source": {
+    "name": "Cyber Security News",
+    "category": "Cybersecurity"
+  },
+  "article": {
+    "title": "Critical Erlang/OTP Flaw Could Let Hackers Impersonate TLS Servers and Intercept Encrypted Traffic",
+    "link": "https://cybersecuritynews.com/critical-erlang-otp-flaw/",
+    "description": "A critical Erlang/OTP flaw, CVE-2026-124286 (CVSS 9.1), disclosed on November 24, 2026, allows attackers to impersonate trusted servers and intercept or modify TLS-protected traffic. The flaw affects TLS 1.2 clients, even those with server identity verification enabled, but does not impact TLS 1.3 connections. During the TLS handshake, clients use server certificates to verify the [&#8230;] The post Critical Erlang/OTP Flaw Could Let Hackers Impersonate TLS Servers and Intercept Encrypted Traffic appeared first on Cyber Security News.",
+    "content": "A critical Erlang/OTP flaw, CVE-2026-124286 (CVSS 9.1), disclosed on November 24, 2026, allows attackers to impersonate trusted servers and intercept or modify TLS-protected traffic. The flaw affects TLS 1.2 clients, even those with server identity verification enabled, but does not impact TLS 1.3 connections. During the TLS handshake, clients use server certificates to verify the intended service&#8217;s identity and establish an encrypted connection. On affected Erlang/OTP clients, some TLS 1.2 handshakes can finish without a server certificate, even though the client is configured to require server authentication. The connection is still encrypted, but the client has not proved whom it is talking to. An attacker who can position themselves between the client and the real server can use that gap to impersonate the intended service. The attacker could read or alter data sent over that connection, such as API tokens, requests, or responses. This is not a way to decrypt previously recorded traffic. It is a server impersonation flaw that puts the attacker at one end of a new encrypted connection. The advisory credits Philip Calvin with finding and privately reporting the issue. The default client configuration is exposed because it offers TLS 1.2 and affected key exchange options. The flaw does not affect Erlang/OTP when it acts as a TLS server. Critical Erlang/OTP Flaw However, an application that accepts inbound connections can still be exposed when it makes outbound connections as a client. That is what sets this issue apart from the earlier Erlang/OTP SSH server vulnerability. It is closer in impact to the OpenSSL server authentication flaw, although the two bugs affect different connection setups. The official Erlang/OTP security advisory traces the flaw back to OTP 17.0, and lists fixes in OTP 29.0.3, 28.5.0.9, and 27.3.4.14. The matching fixed versions of the bundled SSL application are 11.7.3, 11.6.0.8, and 11.2.12.10. Maintainers said earlier security hardening had already fixed the issue on the OTP 29 and 27 branches. However, that change was mistakenly omitted from the OTP 28 branch. The GitHub advisory recommends checking Erlang/OTP versions in production, including those bundled in container images and vendor packages. Prioritize applications that make outbound TLS connections to APIs, partner services, and internal systems. After updating, confirm that the running service uses the patched runtime. Leaving peer verification enabled is important, but that setting alone does not protect an unpatched client from this flaw. If an upgrade must wait, the project recommends restricting affected clients to TLS 1.3 only. Test that change against required services before rollout, since clients will no longer connect to endpoints that only support TLS 1.2. The advisory lists static RSA as a last resort for clients that cannot leave TLS 1.2, but it lacks forward secrecy, and many servers no longer accept it. Patching remains the preferred fix. What Are Leading Organizations Doing About AI and Cyber Risks? Find Out. View Details! The post Critical Erlang/OTP Flaw Could Let Hackers Impersonate TLS Servers and Intercept Encrypted Traffic appeared first on Cyber Security News.",
+    "pubDate": "Sat, 28 Nov 2026 10:09:43 +0000",
+    "image": "https://cybersecuritynews.com/wp-content/uploads/2026/11/Critical-Erlang_OTP-Flaw-Could-Let-Hackers-Impersonate-TLS-Servers-and-Intercept-Encrypted-Traffic.webp"
+  },
+  "score": 0.9967308271604938,
+  "selectedAt": "2026-11-28T10:45:01.425Z",
+  "generated": {
+    "caption": "🚨 **Hackers could impersonate trusted servers and steal your sensitive data!**\n\nA critical flaw in Erlang/OTP software allows attackers to intercept encrypted traffic, even when connections seem secure. This means they could read or change sensitive information like API tokens and requests. If your systems use Erlang/OTP for outbound connections, prioritize updating immediately.\n\nSave this for later & follow @CyberShieldAlerts for daily updates!",
+    "script": "Your encrypted traffic might not be safe! A critical flaw lets attackers impersonate trusted servers. A critical Erlang/OTP flaw, CVE-2026-124286, has been disclosed. This vulnerability lets attackers impersonate trusted TLS 1.2 servers. Even with server identity verification, they can intercept and modify sensitive data like API tokens. This impacts applications making outbound connections, risking data breaches. Patching is critical. Immediately update your Erlang/OTP clients to fixed versions, or restrict to TLS 1.3 if you can't.",
+    "hashtags": [
+      "erlangotp",
+      "cve2026124286",
+      "serverimpersonation",
+      "cybersecurity",
+      "cybershieldalerts"
+    ],
+    "slides": [
+      {
+        "type": "newscard",
+        "badgeInitials": "CS",
+        "headlineHighlight": "Critical Erlang/OTP Flaw",
+        "headlineRest": "Allows Server Impersonation & Traffic Interception",
+        "body": "A critical Erlang/OTP flaw (CVE-2026-124286) allows attackers to impersonate trusted TLS 1.2 servers during handshakes, even when server identity verification is enabled. This vulnerability enables interception and modification of encrypted traffic, potentially exposing sensitive data like API tokens from outbound client connections. The issue occurs because some TLS 1.2 handshakes can complete without proper server certificate verification. Users should update Erlang/OTP to patched versions like OTP 29.0.3 or 28.5.0.9. If an immediate upgrade isn't possible, restrict affected clients to TLS 1.3 only after testing compatibility.",
+        "hindiSummary": "Erlang/OTP में एक गंभीर खराबी से हैकर्स TLS सर्वर का प्रतिरूपण कर एन्क्रिप्टेड ट्रैफिक को रोक सकते हैं।",
+        "imageQuery": "Hacker intercepting encrypted data"
+      }
+    ],
+    "generatedAt": "2026-11-28T10:45:25.632Z"
+  },
+  "render": {
+    "slideImages": [
+      "cyber-security-news-critical-erlangotp-flaw-could-let-hackers-impersonate-tls-se-slide-01.png"
+    ],
+    "renderedAt": "2026-11-28T10:50:56.898Z",
+    "reelVideo": "cyber-security-news-critical-erlangotp-flaw-could-let-hackers-impersonate-tls-se-reel.mp4",
+    "reelDurationSeconds": 38.382585,
+    "hasVoiceover": true,
+    "musicTrack": null
+  },
+  "approvalHash": "4121d9131d37733d",
+  "notifiedAt": "2026-11-28T10:53:07.775Z"
+}
